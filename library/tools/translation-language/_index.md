@@ -68,7 +68,6 @@ kind: group-index
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
 - **`reddit-r-translator`** (low) — Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced la
-- **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
 - **`riverside-com`** (low) — OSINT tool: riverside.com.
 - **`scphillips-morse-code-translator`** (low) — Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibrati
@@ -84,7 +83,7 @@ kind: group-index
 - **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns
 - **`translate-com`** (low) — OSINT tool: Translate.com.
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
-- **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
+- **`tv-tropes`** (low) — Use when you hit an unfamiliar pop-culture reference, meme, or trope-derived handle and want it decoded — returns a crowd-written wiki expla
 - **`vizard-ai`** (low) — Use when you have a video/audio of a subject and want an AI transcript to search and quote what was said — a transcription tool, outputs tex
 - **`webopedia-com`** (low) — Use when you have unfamiliar SMS/chat/internet slang in collected messages and want its meaning — returns plain-English expansions of abbrev
 - **`yandex-translate`** (low) — Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation —

@@ -33,7 +33,6 @@ kind: group-index
 - **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as
 - **`carbon-dating-the-web`** (low) — Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shortener
 - **`changedetection-io-open-source`** (low) — Use when you have a `domain`/URL and want to be alerted when its content changes — returns diffs of monitored pages over time.
-- **`changedetection`** (low) — OSINT tool: ChangeDetection.
 - **`commoncrawl-org`** (medium) — Use when you have a `domain`/URL or a broad pattern and want to mine a massive open archive of the web at scale — returns historical page ca
 - **`cybdetective-com`** (medium) — Use when you have a `domain`/URL and want a fast year-by-year view of its history — pulls one Wayback Machine snapshot per year for side-by-
 - **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 

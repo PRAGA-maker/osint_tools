@@ -7706,42 +7706,6 @@
     "_file": "library/tools/ai-analysis-automation/ivre.md"
   },
   {
-    "id": "java-infovis-toolkit",
-    "name": "Java Infovis Toolkit",
-    "description": "OSINT tool: Java Infovis Toolkit.",
-    "url": "http://philogb.github.io/jit",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/java-infovis-toolkit.md"
-  },
-  {
     "id": "javascript-deobfuscator",
     "name": "JavaScript Deobfuscator",
     "description": "Use when a page (`domain`) runs obfuscated/minified JavaScript you need to read — this Firefox extension logs the actual code the page executes, exposing hidden URLs, trackers and logic.",
@@ -9077,38 +9041,45 @@
   },
   {
     "id": "master-password",
-    "name": "Master Password",
-    "description": "OSINT tool: Master Password.",
+    "name": "Master Password (Spectre)",
+    "description": "Use when you need per-account passwords for many sock-puppet identities without a stored vault — returns deterministic passwords generated on demand from one master secret.",
     "url": "http://masterpasswordapp.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Generating unique, reproducible sock-puppet passwords statelessly, with nothing to sync or breach.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (now branded \"Spectre\"); apps for desktop and mobile.",
+    "opsec": "passive",
+    "opsecNote": "An investigator-OPSEC utility, not a lookup tool. It computes passwords locally from your master secret and a site/account name — nothing is stored or transmitted, so there is no vault to leak. Protect the single master secret accordingly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source stateless password generator by Maarten Billemont; the algorithm is public and auditable. It is an OPSEC hygiene tool, unrelated to data collection.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Spectre",
+      "masterpasswordapp.com"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/master-password.md"
   },
   {
@@ -15177,43 +15148,54 @@
   },
   {
     "id": "storymap",
-    "name": "StoryMap",
-    "description": "OSINT tool: StoryMap.",
+    "name": "StoryMap (KnightLab)",
+    "description": "Use when you have a set of `geolocation` points and want to present a case as a guided map narrative — returns an embeddable slide-by-slide story plotted on a map.",
     "url": "https://storymap.knightlab.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Turning a sequence of locations/events into a shareable, guided map-based narrative for reporting.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tool from Northwestern University Knight Lab; authoring requires a (free) Google sign-in to save.",
+    "opsec": "passive",
+    "opsecNote": "A presentation tool used at the reporting stage — you assemble known findings into a map. Anything you publish is public, so scrub sensitive PII before sharing an exported story. Authoring stores your project under a Google account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by Northwestern University Knight Lab; widely used in journalism. It is a storytelling/visualization tool, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "timeline",
       "timeline-js3",
       "twxplorer"
     ],
+    "aliases": [
+      "StoryMapJS",
+      "Knight Lab StoryMap"
+    ],
+    "tags": [
+      "infographics-and-data-visualization",
+      "mapping"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/storymap.md"
   },
   {
@@ -19181,42 +19163,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/carbon-dating-the-web.md"
-  },
-  {
-    "id": "changedetection",
-    "name": "ChangeDetection",
-    "description": "OSINT tool: ChangeDetection.",
-    "url": "http://www.changedetection.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/changedetection.md"
   },
   {
     "id": "changedetection-io-open-source",
@@ -48343,43 +48289,6 @@
     "_file": "library/tools/documents-metadata/aware-online.md"
   },
   {
-    "id": "awesome-open-source",
-    "name": "Awesome Open Source",
-    "description": "OSINT tool: Awesome Open Source.",
-    "url": "https://awesomeopensource.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "osint-open-source-projects"
-    ],
-    "_file": "library/tools/documents-metadata/awesome-open-source.md"
-  },
-  {
     "id": "bazaarvoice-north-america",
     "name": "Bazaarvoice (North America)",
     "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
@@ -59646,50 +59555,55 @@
   },
   {
     "id": "visualorigins-digitaldigging-org",
-    "name": "visualorigins.digitaldigging.org",
-    "description": "OSINT tool: visualorigins.digitaldigging.org.",
+    "name": "Visual Origins (Digital Digging)",
+    "description": "Use when you have an `image` and want to find its earliest appearance online — returns date-scoped reverse-image leads to trace a photo back to its source.",
     "url": "https://visualorigins.digitaldigging.org/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a photo to its oldest/original online appearance to check provenance and recency.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool from Digital Digging (Henk van Ess); no account.",
+    "opsec": "passive",
+    "opsecNote": "You run reverse-image queries against public search engines via this helper — the subject is not contacted. If the image itself is sensitive, remember that submitting it to search engines may cache it; use a cropped/derived version where possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "By Henk van Ess / Digital Digging, a respected OSINT trainer; it orchestrates public reverse-image engines and date filters rather than holding its own index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "exifdata",
-      "EXIF Data Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ai-search-whisper",
       "deleted-tweet-finder-digital-digging-cache",
       "digitaldigging-org",
       "digitaldigging-org-2"
     ],
+    "aliases": [
+      "visualorigins.digitaldigging.org"
+    ],
+    "tags": [
+      "exifdata",
+      "EXIF Data Related Sites",
+      "reverse-image"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/visualorigins-digitaldigging-org.md"
   },
   {
@@ -108763,40 +108677,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/global-suppliers-online.md"
-  },
-  {
-    "id": "greylist-trace",
-    "name": "Greylist Trace",
-    "description": "OSINT tool: Greylist Trace.",
-    "url": "https://greylisttrace.com/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/greylist-trace.md"
   },
   {
     "id": "iban-com",
@@ -169833,46 +169713,6 @@
     "_file": "library/tools/opsec-investigator-tooling/canadian-anti-fraud-centre.md"
   },
   {
-    "id": "capture-explain-and-send-screenshots-extension-chrome",
-    "name": "Capture Explain and Send Screenshots Extension (Chrome)",
-    "description": "Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images",
-    "url": "https://chrome.google.com/webstore/detail/capture-explain-and-send/mdddabjhelpilpnpgondfmehhcplpiin",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/capture-explain-and-send-screenshots-extension-chrome.md"
-  },
-  {
     "id": "cardgenerator",
     "name": "CardGenerator",
     "description": "tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)",
@@ -179125,46 +178965,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/okcupid-social-networking-app-mobile-android.md"
-  },
-  {
-    "id": "openmedia",
-    "name": "OpenMedia",
-    "description": "Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian government's surveillance activities",
-    "url": "https://openmedia.org/en/ca",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/openmedia.md"
   },
   {
     "id": "opera",
@@ -342901,43 +342701,6 @@
     "_file": "library/tools/translation-language/reddit-r-translator.md"
   },
   {
-    "id": "resources-saferschoolstogether-com",
-    "name": "resources.saferschoolstogether.com",
-    "description": "OSINT tool: resources.saferschoolstogether.com.",
-    "url": "https://resources.saferschoolstogether.com/view/294238754/",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/resources-saferschoolstogether-com.md"
-  },
-  {
     "id": "reverso-free-online-translator",
     "name": "Reverso Translator",
     "description": "Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translations plus context/example sentences.",
@@ -343687,24 +343450,25 @@
   {
     "id": "tv-tropes",
     "name": "TV Tropes",
-    "description": "Language-related directories of writing devices, conventions, and stereotypes",
-    "url": "http://tvtropes.org",
+    "description": "Use when you hit an unfamiliar pop-culture reference, meme, or trope-derived handle and want it decoded — returns a crowd-written wiki explaining the device and its origins.",
+    "url": "https://tvtropes.org",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding cultural references, memes, and trope-based nicknames/handles that appear in a subject's content.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free community wiki; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of a public wiki; no case data is submitted and no subject is contacted. Standard browsing hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large crowd-edited pop-culture wiki; excellent for cultural context but community-written, so treat explanations as informative, not authoritative.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -343713,15 +343477,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tvtropes.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/tv-tropes.md"
   },
   {
@@ -347742,41 +347509,47 @@
   {
     "id": "flightwise",
     "name": "Flightwise",
-    "description": "OSINT tool: Flightwise.",
+    "description": "Use when you have a flight number or aircraft tail/N-number and want its position, route, or status — returns live/historical flight tracking and aircraft lookups.",
     "url": "http://flightwise.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking a specific flight or aircraft (by flight number or N-number) and reading its route/status.",
     "selectorsIn": [
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic flight tracking and N-number lookup; Extended/Premium subscription tiers add features.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query public flight-tracking data; the subject/aircraft owner is not contacted. No case data is submitted beyond the flight/tail number you look up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running independent aviation-tracking site; coverage/latency vary and it notes some subscriber services are limited. Best treated as one source among several trackers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "flightwise.com"
+    ],
     "tags": [
-      "aviation"
+      "aviation",
+      "flight-tracking"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/flightwise.md"
   },
   {

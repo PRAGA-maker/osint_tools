@@ -179,7 +179,6 @@ kind: group-index
 - **`intelhub`** (medium) — Use when you are investigating in-browser and have a `username`, `image`, url or block of text — a browser extension that runs Telegram prof
 - **`intellyweave`** (medium) — Use when you have a pile of documents (`document-id`, PDFs/DOCX) and want AI-driven entity extraction and link analysis — returns names, org
 - **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic
-- **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`jqplot`** (low) — OSINT tool: jqPlot.
 - **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
@@ -205,7 +204,7 @@ kind: group-index
 - **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
 - **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
-- **`master-password`** (low) — OSINT tool: Master Password.
+- **`master-password`** (low) — Use when you need per-account passwords for many sock-puppet identities without a stored vault — returns deterministic passwords generated o
 - **`merklemap`** (low) — Use when you have a `domain` and want to enumerate its subdomains and TLS certificates from certificate-transparency logs — returns linked s
 - **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
 - **`mihari`** (low) — Use when you have an `ip-address`/`domain` indicator and want to hunt and monitor related infrastructure across many OSINT sources at once —
@@ -328,7 +327,7 @@ kind: group-index
 - **`steganography-online-codec`** (low) — Use when you have an `image` you suspect hides a message (or want to embed one) and need to encode/decode LSB steganography with AES-256 — r
 - **`steganography-online`** (low) — Use when you have a PNG image and want to hide or recover a hidden text message in it, entirely in-browser — returns extracted hidden text (
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
-- **`storymap`** (low) — OSINT tool: StoryMap.
+- **`storymap`** (low) — Use when you have a set of `geolocation` points and want to present a case as a guided map narrative — returns an embeddable slide-by-slide 
 - **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai
 - **`tableau-public`** (low) — Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a

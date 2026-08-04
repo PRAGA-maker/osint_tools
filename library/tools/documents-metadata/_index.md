@@ -37,7 +37,6 @@ kind: group-index
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
-- **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
@@ -236,7 +235,7 @@ kind: group-index
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
 - **`upwork`** (low) — Use when you have a `name`/`username` and want a freelancer's public profile — skills, work history, portfolio, location and rates — returns
 - **`violation-tracker`** (low) — Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agenci
-- **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
+- **`visualorigins-digitaldigging-org`** (low) — Use when you have an `image` and want to find its earliest appearance online — returns date-scoped reverse-image leads to trace a photo back
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv

@@ -63,7 +63,6 @@ kind: group-index
 - **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
 - **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
-- **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
 - **`iban-com`** (low) — Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) a
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
 - **`importyeti`** (low) — Use when you have a company `name`/`employer-org` and want its overseas suppliers and shipment history from US customs data — returns suppli
