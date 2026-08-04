@@ -360,7 +360,7 @@ kind: group-index
 - **`nairaland-com-2`** (high) — Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's la
 - **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
 - **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
-- **`network-tool`** (low) — OSINT tool: Network Tool.
+- **`network-tool`** (low) — Use when you have a hashtag, keyword, or `username` and want to see how content spreads between accounts — returns an interactive diffusion/
 - **`nicolasconstant-github-io`** (high) — Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse
 - **`nitter-ca`** (high) — Use when you have a Twitter/X `username` and want to read the timeline without an X login — returns public tweets/profile via a lightweight,
 - **`nitter-it`** (high) — Use when you have a Twitter/X `username` and want to read their tweets/media without an X account or login — a Nitter privacy front-end retu

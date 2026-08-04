@@ -18,14 +18,13 @@ kind: group-index
 - **`search/`** — 4 skill(s) below.
 
 ## Skills here
-- **`1-free-online-ocr`** (low) — OSINT tool: 1- Free Online OCR.
+- **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
 - **`99designs`** (low) — Website related to outsourcing of jobs related to design logos
 - **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
 - **`acuris-risk-intelligence`** (low) — Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals
 - **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
-- **`adobe-photoshop-program`** (low) — Program that allows you to view, create and modify images in multiple document formats
 - **`advertise-com`** (low) — Website that offers social media advertising, marketing, and search engine optimization services
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
@@ -53,13 +52,11 @@ kind: group-index
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
-- **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
 - **`consumerreports-north-america`** (low) — Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
 - **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
 - **`copypastecharacter`** (low) — Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and t
-- **`crowdriff`** (low) — Visual marketing software platform
 - **`crowdspring`** (low) — Project outsourcing website
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
 - **`cylect-io`** (medium) — Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggre
@@ -72,7 +69,6 @@ kind: group-index
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
-- **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
 - **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
@@ -100,7 +96,6 @@ kind: group-index
 - **`filesec-io`** (low) — Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSe
 - **`find-pdf-doc`** (low) — Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `docum
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
-- **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
 - **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
 - **`forensicdots-de`** (low) — Use when you have a scanned printed `document-id` and want to reveal the hidden printer tracking dots (Machine Identification Code) — return
 - **`free-full-pdf`** (low) — Use when you have a subject's `name` or a research topic and want free full-text scientific PDFs they authored — returns document-id, employ
@@ -124,7 +119,6 @@ kind: group-index
 - **`google-to-search-profiles-on-github`** (low) — Use when you have a `name`, skill, or `employer-org` and want to find someone's GitHub profile — builds a Google X-ray search string to surf
 - **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
 - **`grep-for-osint`** (low) — Use when you have a text corpus or file directory (a dump, scraped pages, logs) and want to bulk-extract selectors — returns email, phone, i
-- **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
 - **`hispavista-spain`** (low) — Spain-based digital marketing service
 - **`identify-plans`** (low) — Use when you have an `image` of vegetation in a photo and want to identify the plant species — narrows the `geolocation` by matching flora t

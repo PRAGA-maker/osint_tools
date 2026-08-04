@@ -23,7 +23,6 @@ kind: group-index
 - **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 
 - **`binary-translator`** (low) — Use when you have binary (or other machine encodings) in collected data and want to convert it to text and back — returns decoded text/ASCII
 - **`bing-microsoft-translator`** (low) — Machine translation service.
-- **`clipto-com`** (low) — OSINT tool: clipto.com.
 - **`collinsdictionary`** (low) — Use when you have a foreign-language word or short phrase in a record and want an authoritative translation/definition — returns dictionary 
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na

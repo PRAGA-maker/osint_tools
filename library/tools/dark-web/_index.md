@@ -16,7 +16,6 @@ kind: group-index
 - **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
 - **`4-ever-proxy`** (low) — OSINT tool: 4 Ever Proxy.
 - **`activetk`** (low) — OSINT tool: ActiveTK.
-- **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
 - **`bitpharma`** (low) — OSINT tool: BitPharma.
@@ -26,7 +25,6 @@ kind: group-index
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
-- **`charlieuk`** (low) — OSINT tool: CharlieUK.
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
 - **`dargle`** (low) — Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s,

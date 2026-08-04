@@ -69,7 +69,6 @@ kind: group-index
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
 - **`canadian-anti-fraud-centre`** (low) — Use when you have a suspected scam/fraud pattern in Canada and want to identify the fraud type or report it — an official reference/reportin
 - **`cardgenerator-org`** (low) — Use when a signup/free-trial form demands a card number for a sock-puppet account — returns Luhn-valid test card numbers (no funds) plus fil
-- **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
@@ -313,7 +312,6 @@ kind: group-index
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
 - **`safari`** (low) — Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web 
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
-- **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
 - **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
@@ -407,7 +405,6 @@ kind: group-index
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
 - **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
-- **`urban-legends-online`** (low) — Searchable database of scam, fraud, hoax, phishing and misinformation articles
 - **`us-cop-reference-guide-app-mobile-android`** (low) — App for mobile devices for reference material for US-based LEO's
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.

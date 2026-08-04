@@ -27,7 +27,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- global-terrorism-database
+- start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism
 aliases:
 - DEA drug slang
 - drug code words reference

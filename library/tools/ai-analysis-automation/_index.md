@@ -145,7 +145,7 @@ kind: group-index
 - **`google-play-scraper`** (low) — Use when you have a `username` (developer handle) or an app package name and want to pull an app's full Google Play listing, developer catal
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Use when you have a suspect body of text and want to judge whether it was AI-generated — returns an AI-probability score with sentence-level
-- **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
+- **`grammarly-ai-detector`** (low) — Use when you have a block of text (a profile bio, message, or report) and want to gauge whether it was AI-generated — returns a percentage A
 - **`graphx`** (low) — OSINT tool: GraphX.
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
 - **`guardian-project`** (low) — Use when you need vetted privacy/anti-surveillance apps for OpSec — Guardian Project builds open-source tools (Orbot, ProofMode, Haven) for 
@@ -179,7 +179,6 @@ kind: group-index
 - **`intellyweave`** (medium) — Use when you have a pile of documents (`document-id`, PDFs/DOCX) and want AI-driven entity extraction and link analysis — returns names, org
 - **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
-- **`jqplot`** (low) — OSINT tool: jqPlot.
 - **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — OSINT tool: keyFinder.
@@ -205,7 +204,7 @@ kind: group-index
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
 - **`master-password`** (low) — Use when you need per-account passwords for many sock-puppet identities without a stored vault — returns deterministic passwords generated o
 - **`merklemap`** (low) — Use when you have a `domain` and want to enumerate its subdomains and TLS certificates from certificate-transparency logs — returns linked s
-- **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
+- **`microsoft-copilot`** (low) — Use when you have a pile of collected OSINT text and want it summarized, translated, or reasoned over with live web context — returns synthe
 - **`mihari`** (low) — Use when you have an `ip-address`/`domain` indicator and want to hunt and monitor related infrastructure across many OSINT sources at once —
 - **`mitaka`** (low) — Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel ser
 - **`mozilla-http-observatory`** (low) — Use when you have a `domain` and want to assess a site's HTTP security posture (headers, TLS, cookies) — returns a security grade and config
@@ -288,7 +287,6 @@ kind: group-index
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
 - **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
 - **`quickcode`** (low) — OSINT tool: QuickCode.
-- **`raphael`** (low) — OSINT tool: Raphael.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
@@ -315,7 +313,7 @@ kind: group-index
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — Use when you have `image` assets or findings to package and want a fast browser-based graphic editor — returns a composed `image` (report gr
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
-- **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
+- **`spf-explainer`** (low) — Use when you have a `domain` and want to read its SPF email-authentication record — returns the authorized sending IPs and third-party mail 
 - **`spidersuite`** (low) — Use when you have a `domain`/URL and want to crawl and map a site's full structure, links, and assets — returns discovered URLs, endpoints, 
 - **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.

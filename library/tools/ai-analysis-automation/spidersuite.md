@@ -29,7 +29,9 @@ auth: none
 api: false
 localInstall: true
 registration: false
-relatedTools: []
+relatedTools:
+- ote-osint-template-engine
+- sub3-suite
 aliases:
 - Spider Suite
 - 3nock SpiderSuite

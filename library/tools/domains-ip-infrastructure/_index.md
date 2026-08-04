@@ -155,7 +155,7 @@ kind: group-index
 - **`fierce`** (low) — Use when you have a `domain` and want to discover its subdomains and non-contiguous IP space via DNS reconnaissance — returns domain, ip-add
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
 - **`find-plus`** (low) — Regex Find-in-Page Tool
-- **`findmyass-hostspider`** (low) — Domain investigations toolkit
+- **`findmyass-hostspider`** (low) — Use when you have a `domain` and want a one-shot recon dump — returns subdomains, DNS records, WHOIS data, and Cloudflare detection.
 - **`focsec`** (low) — OSINT tool: Focsec.
 - **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
 - **`free-online-network-tools`** (low) — Use when you have a `domain`, `ip-address` or `email` and want a combined WHOIS/DNS/traceroute/email-validation dossier — returns registrati

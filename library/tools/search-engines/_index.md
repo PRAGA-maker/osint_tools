@@ -240,7 +240,6 @@ kind: group-index
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
 - **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
-- **`google-advanced-search-operators-guide`** (low) — Reference document listing Google advanced search operators.
 - **`google-adwords`** (low) — OSINT tool: Google Adwords.
 - **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
 - **`google-books-ngram-viewer`** (low) — Use when you want to date a word, phrase, name, or slang by its frequency in published books over time — returns a usage-over-time chart, a 
@@ -259,7 +258,7 @@ kind: group-index
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
 - **`google-search-scraper`** (low) — Use when you have a query and a target `geolocation`/language and want structured Google SERP data at scale (organic, ads, related) — return
-- **`google-search`** (low) — OSINT tool: Google Search.
+- **`google-search`** (low) — Use when you have almost any selector (name, username, email, phone, domain, address) and want the broadest first-pass web coverage — return
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia
 - **`google-unlocked`** (low) — Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into t
@@ -309,7 +308,6 @@ kind: group-index
 - **`itar-tass`** (low) — Use when you have a `name`, `employer-org`, or event and want how Russia's state news agency reported it — returns Russian-state-media cover
 - **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
 - **`ivmachiavelli-osint-team-links`** (medium) — Use when you need to find the right OSINT tool for a task — a large community-curated GitHub directory of OSINT links organized by category.
-- **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
 - **`ixigo`** (medium) — Use when you have an Indian train/flight/PNR or `geolocation` context and want travel-status and route info — returns `geolocation` schedule
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
 - **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
@@ -387,7 +385,6 @@ kind: group-index
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
 - **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
-- **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
 - **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere
 - **`national-geographic-kids`** (low) — National Geographic's website intended for kids

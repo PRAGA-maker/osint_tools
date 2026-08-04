@@ -5945,40 +5945,45 @@
   {
     "id": "grammarly-ai-detector",
     "name": "Grammarly AI Detector",
-    "description": "Detecting AI-written content in social media profiles, reports, and messages",
+    "description": "Use when you have a block of text (a profile bio, message, or report) and want to gauge whether it was AI-generated — returns a percentage AI-vs-human score.",
     "url": "https://www.grammarly.com/ai-detector",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Detecting AI-written content in social media profiles, reports, and messages",
-    "input": "Text up to 10,000 characters",
-    "output": "AI vs. human content percentage with highlighted sentences",
+    "bestFor": "Flagging likely AI-written text in a suspicious profile, review, or message during content/authenticity analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use with no login for basic detection; a paid Grammarly Pro subscription unlocks in-line explanations and the AI Detector agent.",
     "opsec": "active",
-    "opsecNote": "Text is submitted to Grammarly's servers; do not submit confidential investigation content.",
+    "opsecNote": "The text you paste is submitted to Grammarly's servers for analysis — do not submit confidential investigation content, verbatim victim/subject communications, or anything you cannot expose to a third-party SaaS.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Grammarly, an established writing-tools vendor; it claims high benchmark accuracy but no AI detector is reliable — treat the score as a weak signal, never proof of authorship.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Grammarly AI checker"
+    ],
+    "tags": [
+      "ai-detection",
+      "content-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/grammarly-ai-detector.md"
   },
   {
@@ -7800,42 +7805,6 @@
     "_file": "library/tools/ai-analysis-automation/jpgraph.md"
   },
   {
-    "id": "jqplot",
-    "name": "jqPlot",
-    "description": "OSINT tool: jqPlot.",
-    "url": "http://www.jqplot.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/jqplot.md"
-  },
-  {
     "id": "js-beautifier",
     "name": "JS Beautifier",
     "description": "Use when you have minified/obfuscated JavaScript from a `domain` and want it readable — returns formatted source so you can spot endpoints, keys, or tracking IDs.",
@@ -9140,40 +9109,47 @@
   {
     "id": "microsoft-copilot",
     "name": "Microsoft Copilot",
-    "description": "OSINT data summarization, research assistance, document drafting with web search context",
+    "description": "Use when you have a pile of collected OSINT text and want it summarized, translated, or reasoned over with live web context — returns synthesized answers with cited sources.",
     "url": "https://copilot.microsoft.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "OSINT data summarization, research assistance, document drafting with web search context",
-    "input": "Text prompts with optional web search queries",
-    "output": "AI-generated responses with cited web sources and follow-up suggestions",
+    "bestFor": "Summarizing, translating, and drafting from investigation notes, and quick web-grounded research with citations.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use in the browser; some advanced/agentic features require a Microsoft account or paid Copilot Pro.",
     "opsec": "active",
-    "opsecNote": "Microsoft logs conversation data; do not submit personally identifiable information about investigation subjects or sensitive operational content.",
+    "opsecNote": "Prompts are sent to and logged by Microsoft. Do NOT paste a subject's personally identifiable information, victim data, or sensitive operational detail — treat every prompt as retained by a third party. Work from anonymized/abstracted text.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Backed by Microsoft, but LLM output hallucinates and its citations can be wrong or fabricated; every fact it returns must be verified at the cited primary source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Bing Chat",
+      "Copilot"
+    ],
+    "tags": [
+      "ai-assistant",
+      "summarization",
+      "research-aid"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/microsoft-copilot.md"
   },
   {
@@ -13368,42 +13344,6 @@
     "_file": "library/tools/ai-analysis-automation/quickcode.md"
   },
   {
-    "id": "raphael",
-    "name": "Raphael",
-    "description": "OSINT tool: Raphael.",
-    "url": "http://dmitrybaranovskiy.github.io/raphael",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/raphael.md"
-  },
-  {
     "id": "rawgraphs",
     "name": "RAWGraphs",
     "description": "Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patterns in your data legible; not a data source.",
@@ -14652,43 +14592,53 @@
   },
   {
     "id": "spf-explainer",
-    "name": "SPF Explainer",
-    "description": "Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.",
+    "name": "SPF Explainer (DigitalOcean)",
+    "description": "Use when you have a `domain` and want to read its SPF email-authentication record — returns the authorized sending IPs and third-party mail providers it trusts.",
     "url": "https://www.digitalocean.com/community/tools/spf",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding a domain's SPF record to map its mail infrastructure and the third-party senders (Google, Microsoft, marketing platforms) it authorizes.",
     "selectorsIn": [
-      "email"
+      "domain"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free DigitalOcean Community tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The tool resolves the domain's public SPF TXT record via DNS — it does not email or otherwise contact the subject, so it is passive. Only your request to DigitalOcean is logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted by DigitalOcean; it simply parses the domain's own published DNS record, so the output is authoritative for what SPF is configured (not a claim about the domain owner).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "nginxconfig"
     ],
+    "aliases": [
+      "DigitalOcean SPF tool"
+    ],
+    "tags": [
+      "email-infrastructure",
+      "dns",
+      "spf"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/spf-explainer.md"
   },
   {
@@ -14766,7 +14716,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "ote-osint-template-engine",
+      "sub3-suite"
+    ],
     "aliases": [
       "Spider Suite",
       "3nock SpiderSuite"
@@ -19460,37 +19413,46 @@
   {
     "id": "deltafeed",
     "name": "Deltafeed",
-    "description": "OSINT tool: Deltafeed.",
+    "description": "Use when you have a `domain` or web page with no RSS feed and want to be alerted when it changes — returns an RSS/email feed of page-content deltas.",
     "url": "http://bitreading.com/deltafeed",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Monitoring a target's website or a specific page region for changes over the course of an investigation.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to register and use; account required.",
+    "opsec": "passive",
+    "opsecNote": "Deltafeed polls the target page from its own servers, so the fetches come from Deltafeed's infrastructure rather than your IP — good for standoff monitoring. Your account/login credentials sit with an obscure third party, so use a throwaway email and password unique to this tool.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Small, obscure service (bitreading.com) with a future-dated copyright notice suggesting little active maintenance; verify it still delivers change alerts before relying on it for time-critical monitoring.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
+    "relatedTools": [],
     "aliases": [],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "change-detection"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/deltafeed.md"
   },
   {
@@ -35173,49 +35135,6 @@
     "_file": "library/tools/communities-forums/subreddits-org.md"
   },
   {
-    "id": "suggest-me-a-subreddit",
-    "name": "Suggest me a subreddit",
-    "description": "Subreddit recommendation tool.",
-    "url": "https://nikas.praninskas.com/suggest-subreddit",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "Finding relevant subreddits for a topic/region",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit",
-      "subreddit-discovery"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/suggest-me-a-subreddit.md"
-  },
-  {
     "id": "svbtle",
     "name": "Svbtle",
     "description": "Use when you have a `username` and want to find a subject's minimalist blog on the Svbtle network — returns `social-profile`, long-form posts and disclosed personal detail.",
@@ -38131,48 +38050,6 @@
     "_file": "library/tools/dark-web/tor-search/ahmia.md"
   },
   {
-    "id": "alpha-card-seller",
-    "name": "Alpha Card Seller",
-    "description": "OSINT tool: Alpha Card Seller.",
-    "url": "http://ap3pxwidty2zfhpnxkiubmkdr5oysbhxigpt64lqkb7wdmlzuxwdc2id.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/alpha-card-seller.md"
-  },
-  {
     "id": "ancestor-search",
     "name": "Ancestor Search",
     "description": "Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other historical record databases.",
@@ -38591,48 +38468,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/dark-web/charity-navigator.md"
-  },
-  {
-    "id": "charlieuk",
-    "name": "CharlieUK",
-    "description": "OSINT tool: CharlieUK.",
-    "url": "http://charlyuklqm45jjwxwichotzub2ua4uflixvbioleyfuixz57q5lahqd.onion/charlieUK.html",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/charlieuk.md"
   },
   {
     "id": "cpic-stolen-property-search",
@@ -47212,45 +47047,55 @@
   },
   {
     "id": "1-free-online-ocr",
-    "name": "1- Free Online OCR",
-    "description": "OSINT tool: 1- Free Online OCR.",
+    "name": "Soda PDF Online OCR",
+    "description": "Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, address, document-id.",
     "url": "https://www.sodapdf.com/ocr-pdf",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a scanned ID card, letter, or screenshot into selectable text for further pivoting.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
+      "name",
+      "address",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier limited to files 3 MB or smaller and 2 conversions per day; unlimited use and larger files require a paid Soda PDF subscription.",
+    "opsec": "active",
+    "opsecNote": "The image/PDF is uploaded to Soda PDF's (LULU Software) servers for processing — never submit case-sensitive or classified material. Sanitize or crop first, and use a sock-puppet account/IP if the document itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial product from LULU Software (Soda PDF), a long-established PDF vendor; OCR accuracy varies with scan quality, so always verify extracted values against the source image.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "ocr"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "online-ocr-sodapdf"
     ],
+    "aliases": [
+      "Free Online OCR",
+      "Soda PDF OCR"
+    ],
+    "tags": [
+      "ocr",
+      "documents",
+      "text-extraction"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/1-free-online-ocr.md"
   },
   {
@@ -47500,50 +47345,6 @@
       "adobe-photoshop-program"
     ],
     "_file": "library/tools/documents-metadata/adobe-acrobat-reader-program.md"
-  },
-  {
-    "id": "adobe-photoshop-program",
-    "name": "Adobe Photoshop Program",
-    "description": "Program that allows you to view, create and modify images in multiple document formats",
-    "url": "http://www.adobe.com/products/photoshop.html",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "adobe-acrobat-program",
-      "adobe-acrobat-reader-program"
-    ],
-    "_file": "library/tools/documents-metadata/adobe-photoshop-program.md"
   },
   {
     "id": "advertise-com",
@@ -48967,46 +48768,6 @@
     "_file": "library/tools/documents-metadata/computer-weekly.md"
   },
   {
-    "id": "consumer-information",
-    "name": "Consumer Information",
-    "description": "The Federal Trade Commissions identity theft information, awareness and prevention webpage",
-    "url": "http://www.consumer.ftc.gov/features/feature-0014-identity-theft",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/consumer-information.md"
-  },
-  {
     "id": "consumeraffairs-north-america",
     "name": "ConsumerAffairs",
     "description": "Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate/contact leads and business reputation signals.",
@@ -49237,46 +48998,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/copypastecharacter.md"
-  },
-  {
-    "id": "crowdriff",
-    "name": "Crowdriff",
-    "description": "Visual marketing software platform",
-    "url": "https://crowdriff.com/platform/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/crowdriff.md"
   },
   {
     "id": "crowdspring",
@@ -49917,46 +49638,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/doppelme.md"
-  },
-  {
-    "id": "e-gg-timer-alarm-tool",
-    "name": "E.gg Timer Alarm Tool",
-    "description": "Tool for setting a count down timer that alerts you with beeps when the time runs out",
-    "url": "http://e.ggtimer.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/e-gg-timer-alarm-tool.md"
   },
   {
     "id": "easybib",
@@ -51353,46 +51034,6 @@
     "_file": "library/tools/documents-metadata/fitbit.md"
   },
   {
-    "id": "flashcard-machine",
-    "name": "Flashcard Machine",
-    "description": "Website that offers web-based flashcard creation, use and sharing",
-    "url": "http://www.flashcardmachine.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/flashcard-machine.md"
-  },
-  {
     "id": "forensic-analyzer",
     "name": "Forensic Analyzer",
     "description": "Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`, hashes, and an error-level-analysis map.",
@@ -52647,46 +52288,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/grep-for-osint.md"
-  },
-  {
-    "id": "grouptweet",
-    "name": "GroupTweet",
-    "description": "Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content",
-    "url": "https://grouptweet.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/grouptweet.md"
   },
   {
     "id": "guru-com",
@@ -58223,7 +57824,10 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "global-terrorism-database",
+      "start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism"
+    ],
     "aliases": [
       "DEA drug slang",
       "drug code words reference"
@@ -68332,43 +67936,56 @@
   },
   {
     "id": "findmyass-hostspider",
-    "name": "FindMyAss (HostSpider)",
-    "description": "Domain investigations toolkit",
+    "name": "HostSpider (FindMyAss)",
+    "description": "Use when you have a `domain` and want a one-shot recon dump — returns subdomains, DNS records, WHOIS data, and Cloudflare detection.",
     "url": "https://github.com/h3x0crypt/HostSpider",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A fast local first-pass on a domain that bundles subdomain discovery, DNS, and WHOIS into one command.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address",
+      "email",
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); the GitHub repo is archived/read-only, so install and run it locally.",
+    "opsec": "active",
+    "opsecNote": "HostSpider actively queries DNS, WHOIS, and enumerates subdomains against the target's infrastructure — these lookups can appear in the target's DNS/authoritative logs. Run from a VPN/attributable-free host, and prefer passive sources first if you need to stay quiet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-authored open-source tool, unmaintained since it was archived in 2022; the code is auditable but some data sources it queries may have changed — verify anything critical with a current tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HostSpider",
+      "FindMyAss"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
+      "domain-recon",
+      "subdomains",
+      "dns",
+      "whois"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/findmyass-hostspider.md"
   },
   {
@@ -105609,42 +105226,6 @@
       "translate-shell"
     ],
     "_file": "library/tools/evidence-capture/you-get.md"
-  },
-  {
-    "id": "z-history-dump",
-    "name": "Z History Dump",
-    "description": "Open chrome://history/ and download all links from browser history in json. This provides tremendous opportunities for visualization and analysis of information.",
-    "url": "https://chrome.google.com/webstore/detail/z-history-dump/ahpkicobhkchblogldpjchdhmdnblpkm/related",
-    "category": "evidence-capture",
-    "path": [
-      "evidence-capture"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Downloaders"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/evidence-capture/z-history-dump.md"
   },
   {
     "id": "527-explorer",
@@ -153866,44 +153447,53 @@
   },
   {
     "id": "mapa-sk",
-    "name": "Mapa.sk",
-    "description": "Mapping service for Slovakia",
+    "name": "Mapa.sk (Zoznam)",
+    "description": "Use when you have a Slovak `address` or `geolocation` and want to locate it on a detailed local map — returns coordinates, place context, and routing.",
     "url": "http://mapa.sk/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Pinpointing and contextualizing an address, street, or place inside Slovakia with local-quality map detail.",
     "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
       "geolocation",
       "address"
     ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public mapping portal from Zoznam; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You query Zoznam's map servers, not the subject — the target is never contacted. Standard web-request logging applies to you; use a VPN/sock-puppet browser if you want to avoid linking the lookup to your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Zoznam.sk, a major Slovak web portal; map data is authoritative for Slovakia but the UI is Slovak-language.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "sk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "mapa.zoznam.sk",
+      "Zoznam Mapy"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
+      "maps",
+      "slovakia",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mapa-sk.md"
   },
   {
@@ -169473,42 +169063,6 @@
     "_file": "library/tools/opsec-investigator-tooling/canadian-anti-fraud-centre.md"
   },
   {
-    "id": "cardgenerator",
-    "name": "CardGenerator",
-    "description": "tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)",
-    "url": "https://cardgenerator.io/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/cardgenerator.md"
-  },
-  {
     "id": "cardgenerator-org",
     "name": "Cardgenerator.org",
     "description": "Use when a signup/free-trial form demands a card number for a sock-puppet account — returns Luhn-valid test card numbers (no funds) plus filler details.",
@@ -181088,42 +180642,6 @@
     "_file": "library/tools/opsec-investigator-tooling/safetydetective-security-tools.md"
   },
   {
-    "id": "sales-navigator-for-gmail",
-    "name": "Sales Navigator for Gmail",
-    "description": "OSINT tool: Sales Navigator for Gmail.",
-    "url": "https://rapportive.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "sockpuppet"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/sales-navigator-for-gmail.md"
-  },
-  {
     "id": "scamwatch",
     "name": "Scamwatch",
     "description": "Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and reporting channel — returns fraud-context and reporting leads.",
@@ -185278,46 +184796,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/upload-files-to-ipfs-from-browser.md"
-  },
-  {
-    "id": "urban-legends-online",
-    "name": "Urban Legends Online",
-    "description": "Searchable database of scam, fraud, hoax, phishing and misinformation articles",
-    "url": "http://urbanlegendsonline.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/urban-legends-online.md"
   },
   {
     "id": "us-cop-reference-guide-app-mobile-android",
@@ -273257,45 +272735,6 @@
     "_file": "library/tools/search-engines/general-search/google-advanced-search.md"
   },
   {
-    "id": "google-advanced-search-operators-guide",
-    "name": "Google Advanced Search Operators (guide)",
-    "description": "Reference document listing Google advanced search operators.",
-    "url": "https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "Reference for building precise Google queries",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "Community reference document.",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "search-operators",
-      "reference"
-    ],
-    "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-advanced-search-operators-guide.md"
-  },
-  {
     "id": "google-adwords",
     "name": "Google Adwords",
     "description": "OSINT tool: Google Adwords.",
@@ -274461,37 +273900,60 @@
   {
     "id": "google-search",
     "name": "Google Search",
-    "description": "OSINT tool: Google Search.",
+    "description": "Use when you have almost any selector (name, username, email, phone, domain, address) and want the broadest first-pass web coverage — returns links to social-profiles, records, mentions, images.",
     "url": "https://www.google.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "The default first move on any selector, and precision dorking with advanced operators to surface indexed pages others miss.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "domain",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "phone",
+      "employer-org",
+      "associate",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account required for web search.",
+    "opsec": "passive",
+    "opsecNote": "Searching does not touch the subject's infrastructure — it is passive toward the target. Google logs your queries and IP, so run sensitive dorking from a sock-puppet browser/VPN, and never log in with an attributable account while investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The results index is Google's; the ranking is authoritative as an index but the linked pages are third-party — verify each source, and note Google personalizes and geo-localizes results.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "google.com",
+      "Google dorking"
+    ],
     "tags": [
-      "general-search"
+      "general-search",
+      "dorking",
+      "search-operators"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-search.md"
   },
   {
@@ -277190,46 +276652,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/ivmachiavelli-osint-team-links.md"
-  },
-  {
-    "id": "ivyjoy-list-of-kids-related-websites",
-    "name": "IvyJoy List of Kids-related Websites",
-    "description": "Search engine resources for kids",
-    "url": "http://ivyjoy.com/rayne/kidssearch.html",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/ivyjoy-list-of-kids-related-websites.md"
   },
   {
     "id": "ixigo",
@@ -281177,52 +280599,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/najdsi-slovenia.md"
-  },
-  {
-    "id": "nasa-kids-club",
-    "name": "NASA Kids Club",
-    "description": "Space-themed entertainment and information about NASA for kids",
-    "url": "http://www.nasa.gov/audience/forkids/kidsclub/flash/index.html",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "firms",
-      "nasa-earthdata-search",
-      "nasa-firms",
-      "nasa-worldview"
-    ],
-    "_file": "library/tools/search-engines/nasa-kids-club.md"
   },
   {
     "id": "nate-search-engine-south-korea",
@@ -295858,7 +295234,9 @@
     "api": true,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "wolfram-alpha-personal-analytics"
+    ],
     "aliases": [
       "Wolfram|Alpha",
       "wolframalpha.com"
@@ -317362,36 +316740,40 @@
   },
   {
     "id": "network-tool",
-    "name": "Network Tool",
-    "description": "OSINT tool: Network Tool.",
+    "name": "OSoMeNet (OSoMe Network Tool)",
+    "description": "Use when you have a hashtag, keyword, or `username` and want to see how content spreads between accounts — returns an interactive diffusion/co-occurrence network of social-profiles and associates.",
     "url": "https://osome.iu.edu/tools/networks/#/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Visualizing who amplifies whom around a topic or account to spot coordinated networks and key connectors.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free academic tool from Indiana University's Observatory on Social Media.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "OSoMeNet builds the graph via the platforms' own search APIs on the server side — you don't contact any subject directly, so it is passive toward targets. Your queries sit with a university research service; no login is required for the public tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by OSoMe at Indiana University, a reputable disinformation-research center; coverage depends on the platforms' search APIs, which can change and limit what's retrievable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "botometer",
       "botometer-by-osome",
@@ -317400,6 +316782,19 @@
       "osome-iu-edu",
       "trends-tool"
     ],
+    "aliases": [
+      "OSoMeNet",
+      "OSoMe Networks"
+    ],
+    "tags": [
+      "network-analysis",
+      "social-media",
+      "diffusion",
+      "disinformation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/network-tool.md"
   },
   {
@@ -340101,43 +339496,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/translation-language/text/cambridge-dictionary.md"
-  },
-  {
-    "id": "clipto-com",
-    "name": "clipto.com",
-    "description": "OSINT tool: clipto.com.",
-    "url": "https://www.clipto.com/transcribe-audio-video-to-text-free",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/clipto-com.md"
   },
   {
     "id": "collinsdictionary",

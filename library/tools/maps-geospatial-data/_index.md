@@ -67,7 +67,7 @@ kind: group-index
 - **`locust-hub`** (low) — Use when you have a `geolocation` in the desert-locust belt and want FAO survey/swarm data and maps for tracking infestations — returns geol
 - **`manhole-co-il`** (low) — Use when you have an `image` or `geolocation` and want to identify a manhole/utility cover's origin — returns geolocation clues (country/cit
 - **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th
-- **`mapa-sk`** (low) — Mapping service for Slovakia
+- **`mapa-sk`** (low) — Use when you have a Slovak `address` or `geolocation` and want to locate it on a detailed local map — returns coordinates, place context, an
 - **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage
 - **`maploco-com`** (medium) — Use when a subject has shared a "places I've visited" map graphic and you want to read their claimed travel — a widget generator you use to 
 - **`mapme-com`** (medium) — Use when a subject or org may publish a public interactive directory/map here — browse Mapme-hosted maps to place people, businesses or poin

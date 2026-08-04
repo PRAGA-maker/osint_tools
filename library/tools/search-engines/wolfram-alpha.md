@@ -29,7 +29,8 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- wolfram-alpha-personal-analytics
 aliases:
 - Wolfram|Alpha
 - wolframalpha.com
