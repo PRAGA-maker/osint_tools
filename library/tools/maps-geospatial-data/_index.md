@@ -84,7 +84,7 @@ kind: group-index
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
 - **`one-network`** (medium) — Use when you have a `geolocation`/`address` and a date and want the roadworks, closures, and traffic disruptions there — returns a live/plan
-- **`open-source-munitions-portal`** (low) — A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use a
+- **`open-source-munitions-portal`** (low) — Use when you have an `image` of a weapon/munition from a conflict scene and want to identify it — search a verified reference library to mat
 - **`openaerialmap`** (low) — Use when you have a `geolocation`/`address` and want openly-licensed aerial/drone imagery for that spot — returns downloadable georeferenced
 - **`openguessr-com`** (medium) — Use when you want to train `geolocation`-from-street-view skills — a free GeoGuessr-style game that drills recognising a place from visual c
 - **`openseamap`** (low) — Use when you have a maritime `geolocation` and want nautical context — sea marks, harbours, shipping lanes, depths — returns a nautical char

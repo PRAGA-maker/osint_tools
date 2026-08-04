@@ -165,7 +165,6 @@ kind: group-index
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
-- **`https-everywhere`** (low) — OSINT tool: HTTPs Everywhere.
 - **`httrack`** (low) — Use when you have a `domain`/website URL and want a complete offline copy for preservation and analysis — returns a local mirror of the site
 - **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
@@ -279,7 +278,7 @@ kind: group-index
 - **`privacy-badger`** (low) — Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a def
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
 - **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-
-- **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
+- **`probe-spider`** (medium) — Use when you have a mixed selector (username, email, phone, domain, IP, image) and want a single Python tool to run broad recon across each 
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
 - **`psn-monitor`** (low) — Use when you have a subject's PlayStation Network `username`/PSN ID and want to track their online presence — monitors online/offline status
 - **`pyba`** (low) — OSINT tool: Pyba.

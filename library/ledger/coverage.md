@@ -2,31 +2,31 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7101 total · 5998 full · 1103 stub (84% enriched)
+**Tools:** 7099 total · 6004 full · 1095 stub (84% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3103 · medium: 2034 · high: 1964
+low: 3100 · medium: 2035 · high: 1964
 
 ## Tools by trust
-community: 3445 · trusted: 1966 · unverified: 1684 · untrustworthy: 6
+community: 3443 · trusted: 1968 · unverified: 1682 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 232/401
-- `archives-cache` — 100/114
+- `ai-analysis-automation` — 233/400
+- `archives-cache` — 100/113
 - `communities-forums` — 255/285
 - `dark-web` — 58/93
 - `dating-classifieds` — 83/89
 - `documents-metadata` — 163/270
-- `domains-ip-infrastructure` — 502/625
+- `domains-ip-infrastructure` — 506/625
 - `email` — 246/246
 - `evidence-capture` — 22/28
 - `financial-crypto` — 80/93
 - `geolocation` — 316/332
 - `image-video-face` — 447/451
-- `maps-geospatial-data` — 111/123
+- `maps-geospatial-data` — 112/123
 - `messaging` — 182/184
 - `opsec-investigator-tooling` — 196/473
 - `people-search` — 256/257
@@ -46,7 +46,7 @@ community: 3445 · trusted: 1966 · unverified: 1684 · untrustworthy: 6
 - `library/tools/search-engines` — 690 leaves
 - `library/tools/opsec-investigator-tooling` — 467 leaves
 - `library/tools/domains-ip-infrastructure` — 423 leaves
-- `library/tools/ai-analysis-automation` — 377 leaves
+- `library/tools/ai-analysis-automation` — 376 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 318 leaves
 - `library/tools/communities-forums` — 282 leaves
@@ -57,7 +57,7 @@ community: 3445 · trusted: 1966 · unverified: 1684 · untrustworthy: 6
 - `library/tools/messaging` — 169 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
-- `library/tools/archives-cache` — 100 leaves
+- `library/tools/archives-cache` — 99 leaves
 - `library/tools/dating-classifieds` — 91 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/dark-web` — 83 leaves

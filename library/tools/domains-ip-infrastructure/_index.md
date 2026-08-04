@@ -133,7 +133,7 @@ kind: group-index
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links
 - **`domainbigdata`** (low) — Use when you have a registrant `name`, `email` or `domain` and want the other domains and contact details tied to it — returns reverse-WHOIS
-- **`domainrecon`** (low) — OSINT tool: DomainRecon.
+- **`domainrecon`** (low) — Use when you have a `domain` and want a one-shot recon report — DNS records, WHOIS/RDAP, SSL certs and discovered subdomains — returns infra
 - **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (medium) — Use when you have a `domain` and want the public documents Google has indexed on it — downloads them and returns their `metadata-exif`.
@@ -396,7 +396,7 @@ kind: group-index
 - **`tinyscan`** (low) — Use when you have a `domain`/URL and want a safe remote scan — screenshot, resolved IP/geolocation, tech stack, DNS/SSL/headers — without vi
 - **`tormap`** (low) — Use when you have an `ip-address` or `geolocation` and want to see whether it is a Tor relay and map/inspect the global Tor node network ove
 - **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact
-- **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
+- **`trickest-inventory`** (low) — Use when you have a company/`employer-org` running a bug-bounty program and want its known public asset surface — returns enumerated `domain
 - **`try-jsoup-org`** (low) — Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to p
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
 - **`turbolist3r`** (low) — Use when you have a `domain` and want to enumerate its subdomains plus DNS/CNAME analysis — returns discovered subdomains flagged for possib

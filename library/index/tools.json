@@ -6832,49 +6832,6 @@
     "_file": "library/tools/ai-analysis-automation/httpie-io.md"
   },
   {
-    "id": "https-everywhere",
-    "name": "HTTPs Everywhere",
-    "description": "OSINT tool: HTTPs Everywhere.",
-    "url": "https://www.eff.org/https-everywhere/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "coveryourtracks-eff-org",
-      "electronic-frontier-foundation-eff-tools",
-      "panopticlick",
-      "privacy-badger",
-      "surveilliance-self-defense"
-    ],
-    "_file": "library/tools/ai-analysis-automation/https-everywhere.md"
-  },
-  {
     "id": "httrack",
     "name": "HTTrack",
     "description": "Use when you have a `domain`/website URL and want a complete offline copy for preservation and analysis — returns a local mirror of the site's pages and assets.",
@@ -12915,34 +12872,39 @@
   {
     "id": "probe-spider",
     "name": "Probe_spider",
-    "description": "Python OSINT tool for reconnaissance.",
+    "description": "Use when you have a mixed selector (username, email, phone, domain, IP, image) and want a single Python tool to run broad recon across each — returns aggregated multi-source findings.",
     "url": "https://github.com/Aravindha1234u/Probe_spider",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "General reconnaissance automation",
+    "bestFor": "Running a quick all-in-one recon sweep over a username/email/phone/domain/IP/image from one CLI tool.",
     "selectorsIn": [
+      "username",
+      "email",
+      "phone",
       "domain",
       "ip-address",
-      "email",
-      "username"
+      "image"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address",
+      "social-profile",
+      "geolocation",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0); clone and run locally with Python 3.7+.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Modules vary in exposure — reverse image search, social-media scraping and domain scanning can touch third-party sites or the target's own infrastructure. Run from a sock-puppet environment/VPN, and know that some checks (e.g. domain vulnerability scanning) are active against the target and can be logged.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Small community recon tool (26 stars).",
-    "missingPersonsRelevance": "low",
+    "trustNote": "A small community OSINT project (~26 stars) aggregating many third-party services; results are only as good as the upstream sources, several of which may be rate-limited or stale. Read the code before running.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -12950,17 +12912,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "probespider"
+      "Aravindha1234u/Probe_spider"
     ],
     "tags": [
       "recon",
-      "automation",
-      "python"
+      "osint-framework",
+      "automation"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/probe-spider.md"
   },
   {
@@ -21714,45 +21677,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/swap-stanford-edu.md"
-  },
-  {
-    "id": "talkwalker",
-    "name": "Talkwalker",
-    "description": "OSINT tool: Talkwalker.",
-    "url": "http://www.talkwalker.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "talkwalker-social-media-search"
-    ],
-    "_file": "library/tools/archives-cache/talkwalker.md"
   },
   {
     "id": "textfiles-com",
@@ -66925,37 +66849,38 @@
   {
     "id": "domainrecon",
     "name": "DomainRecon",
-    "description": "OSINT tool: DomainRecon.",
+    "description": "Use when you have a `domain` and want a one-shot recon report — DNS records, WHOIS/RDAP, SSL certs and discovered subdomains — returns infrastructure `domain`/`ip-address` data.",
     "url": "https://kriztalz.sh/domain-recon/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting a fast consolidated domain recon report (DNS + WHOIS + certs + subdomains) from one web query.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "DNS, WHOIS/RDAP and certificate-transparency data are pulled from public registries and CT logs, so the query does not touch the subject's own web server — passive. Subdomain discovery here is CT/passive-sourced rather than active brute force, keeping your footprint off the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent developer-hosted recon front-end aggregating authoritative sources (registry WHOIS/RDAP, DNS, CT logs); the underlying data is verifiable, the aggregator is community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "faviconhash",
       "githubrecon",
@@ -66964,6 +66889,18 @@
       "searchdorks",
       "traceroutevisualizer"
     ],
+    "aliases": [
+      "kriztalz domain-recon"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "dns",
+      "whois",
+      "subdomains"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domainrecon.md"
   },
   {
@@ -85259,44 +85196,57 @@
   {
     "id": "tcp-ip-utils-domain-neighbors",
     "name": "TCP/IP Utils - Domain Neighbors",
-    "description": "Identify related domains on same IP",
+    "description": "Use when you have a `domain` or `ip-address` and want the other domains sharing that IP/host (reverse IP) — returns neighboring `domain`s for infrastructure clustering.",
     "url": "https://dnslytics.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "neighbor-domains"
     ],
-    "bestFor": "Identify related domains on same IP",
-    "input": "Domain or IP",
-    "output": "Neighbor domains, IP info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding co-hosted \"neighbor\" domains on the same IP to link a subject's related sites.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free web lookups and reports with a daily limit; more page views, monitoring and premium data require a paid plan. Ad-hoc reverse-IP checks are free.",
     "opsec": "passive",
-    "opsecNote": "Passive DNS and IP lookup data.",
+    "opsecNote": "DNSlytics answers from its own crawled/DNS database, so your lookup never touches the subject's server — it is passive. You do reveal the queried domain/IP to DNSlytics; use a sock-puppet account if you register for higher limits.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established DNS/IP intelligence provider with 10+ years of historical data; results are database-derived and should be corroborated, since shared hosting can co-locate unrelated sites.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "dnslytics-com",
       "search-dnslytics-com"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "DNSlytics",
+      "tcpiputils domain neighbors",
+      "reverse IP lookup"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "reverse-ip",
+      "neighbor-domains"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/neighbor-domains/tcp-ip-utils-domain-neighbors.md"
   },
   {
@@ -86209,28 +86159,30 @@
   {
     "id": "trickest-inventory",
     "name": "Trickest Inventory",
-    "description": "Asset inventory of 800+ public bug bounty programs.",
+    "description": "Use when you have a company/`employer-org` running a bug-bounty program and want its known public asset surface — returns enumerated `domain`s and hosts from a maintained inventory.",
     "url": "https://github.com/trickest/inventory",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Bug bounty scope and asset enumeration",
+    "bestFor": "Pulling the continuously-updated public asset (domain/host) inventory for 800+ bug-bounty programs.",
     "selectorsIn": [
+      "employer-org",
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open data hosted on GitHub (results committed to the repo); no account. The commercial Trickest platform is separate and paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading pre-computed results already committed to a public GitHub repo, so no enumeration touches any target when you browse — fully passive. (The upstream scanning that produced the data was active, but that is Trickest's traffic, not yours.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Maintained by Trickest (1.6k+ stars).",
+    "trustNote": "Maintained by Trickest, a known security-automation vendor; data is machine-generated from public bug-bounty scopes and refreshed automatically, so freshness is good but entries should be confirmed live.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -86239,18 +86191,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bug-bounty",
-      "asset-inventory"
-    ],
-    "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "mkpath",
       "mksub"
     ],
+    "aliases": [
+      "trickest/inventory"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "recon",
+      "bug-bounty",
+      "asset-inventory"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/trickest-inventory.md"
   },
   {
@@ -88210,43 +88166,50 @@
   {
     "id": "wappalyzer",
     "name": "Wappalyzer",
-    "description": "Detecting web technologies and software dependencies at scale",
+    "description": "Use when you have a `domain`/website and want to fingerprint its technology stack — CMS, frameworks, analytics IDs, hosting — returning tech signals and sometimes pivotable `metadata-exif`-style identifiers.",
     "url": "https://www.wappalyzer.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "discovery"
     ],
-    "bestFor": "Detecting web technologies and software dependencies at scale",
-    "input": "Domain, URL, or browsed webpage",
-    "output": "Detected technologies by category with confidence indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Identifying the technologies, analytics/tracking IDs and platforms behind a website to fingerprint and link sites.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Uses extension/service analysis of page resources; minimal direct probing behavior.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free browser extension and single-site lookups; bulk lookups, lead/contact data and the API are paid. Core fingerprinting is free.",
+    "opsec": "active",
+    "opsecNote": "The browser extension and the \"look up a website\" feature load the target site to fingerprint it, so your request reaches the target's server (and any analytics on it). Use a sock-puppet browser/VPN when fingerprinting a subject's own infrastructure; the paid technology-lookup runs server-side and is less exposing.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Widely-used, well-established tech-profiling product with an open-source fingerprint ruleset heritage; detections are directly checkable against page source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "wappalyzer.com"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "tech-fingerprinting",
+      "discovery"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/wappalyzer.md"
   },
   {
@@ -154929,38 +154892,53 @@
   {
     "id": "open-source-munitions-portal",
     "name": "Open Source Munitions Portal",
-    "description": "A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use and impact in conflict.",
+    "description": "Use when you have an `image` of a weapon/munition from a conflict scene and want to identify it — search a verified reference library to match model, category and calibre.",
     "url": "https://osmp.ngo/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying munitions in conflict imagery by visual comparison against a verified, expert-reviewed reference archive.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public research tool run by non-profits (Airwars + ARES); no payment. Some browsing may be behind bot protection but access is free.",
+    "opsec": "passive",
+    "opsecNote": "You compare your own image against a reference archive — you are not querying anyone about the subject, so it is passive. Handle the underlying conflict imagery responsibly (graphic content, source protection) rather than as an OpSec-against-target concern.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Airwars (civilian-harm watchdog) and Armament Research Services (ARES); images are expert-verified through multiple review rounds, though identifications are explicitly tentative, not definitive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "conflict"
+    "relatedTools": [],
+    "aliases": [
+      "OSMP",
+      "osmp.ngo"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "maps-geospatial-data",
+      "conflict",
+      "munitions",
+      "verification"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/open-source-munitions-portal.md"
   },
   {

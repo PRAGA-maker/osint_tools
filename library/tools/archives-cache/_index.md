@@ -80,7 +80,6 @@ kind: group-index
 - **`send-to-internet-archive-addons-mozilla-org`** (medium) — Use when you have a live page/URL you want preserved as evidence — one click sends it to the Wayback Machine, returning a timestamped archiv
 - **`send-to-internet-archive-chrome-google-com`** (medium) — Use when you have a page open and want a one-click permanent Wayback capture — a browser extension that saves the current URL to the Interne
 - **`swap-stanford-edu`** (medium) — Use when a site has changed or vanished and you want an archived copy — returns Stanford-preserved snapshots of selected websites by URL.
-- **`talkwalker`** (low) — OSINT tool: Talkwalker.
 - **`the-old-reader`** (low) — OSINT tool: The Old Reader.
 - **`the-time-machine`** (low) — Use when you have a `domain` and want historical intel from the Wayback Machine — CLI that harvests archived subdomains, URLs, parameters an
 - **`theoldnet-com`** (low) — Use when you have a `domain` and want to browse its historical versions rendered for old browsers — returns archived page content via a Wayb
