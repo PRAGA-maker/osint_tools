@@ -47,6 +47,7 @@ relatedTools:
 - library-of-congress-united-states
 - newspaper-navigator
 - webarchive-loc-gov
+- world-digital-library
 ---
 
 # USA Telephone Directory Collection (Library of Congress)

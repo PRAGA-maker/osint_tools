@@ -35,6 +35,7 @@ relatedTools:
 - library-of-congress-united-states
 - newspaper-navigator
 - usa-telephone-directory-collection
+- world-digital-library
 aliases:
 - LoC Web Archives
 - webarchive.loc.gov

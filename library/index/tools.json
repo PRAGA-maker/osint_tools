@@ -1044,42 +1044,6 @@
     "_file": "library/tools/ai-analysis-automation/awesome-lists-awesomelists-top.md"
   },
   {
-    "id": "awesome-lockpicking",
-    "name": "awesome-lockpicking",
-    "description": "OSINT tool: awesome-lockpicking.",
-    "url": "https://github.com/fabacab/awesome-lockpicking",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "related-awesome-lists"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/awesome-lockpicking.md"
-  },
-  {
     "id": "awesome-osint-mcp-servers",
     "name": "awesome-osint-mcp-servers",
     "description": "Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — returns a categorised directory of installable capabilities.",
@@ -2682,46 +2646,6 @@
     "_file": "library/tools/ai-analysis-automation/creately.md"
   },
   {
-    "id": "creative-commons-attribution-sharealike-4-0-international",
-    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
-    "description": "OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.",
-    "url": "http://creativecommons.org/licenses/by-sa/4.0/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "license"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cc-license",
-      "cc-search"
-    ],
-    "_file": "library/tools/ai-analysis-automation/creative-commons-attribution-sharealike-4-0-international.md"
-  },
-  {
     "id": "crossfilter",
     "name": "Crossfilter",
     "description": "Use when you have a large multi-dimensional dataset and want fast interactive filtering in the browser — a JS library for exploring OSINT records across many fields at once.",
@@ -4302,37 +4226,44 @@
   {
     "id": "einvestigator",
     "name": "eInvestigator",
-    "description": "OSINT tool: eInvestigator.",
+    "description": "Use when you need investigation how-tos or a pointer to a records/people-search resource — a free education hub with 300+ guides and a curated directory of investigative tools.",
     "url": "https://www.einvestigator.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning investigative technique and finding the right people-search, public-records, or OSINT resource via curated guides.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Articles, guides and tool recommendations are free; a paid investigator directory listing exists but browsing everything is free. Linked third-party services (e.g. background-check sites) may charge.",
+    "opsec": "passive",
+    "opsecNote": "Reading guides and picking resources is passive — you query no target here. OpSec depends on whichever linked tool you then use; assess each separately, and note some recommended services are commercial people-search sites with their own data-handling.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running resource site aimed at professional investigators; content is practitioner-oriented but editorial, and it monetises by referring to third-party services, so weigh tool recommendations on their own merits.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "eInvestigator.com"
+    ],
     "tags": [
       "osint-blogs"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/einvestigator.md"
   },
   {
@@ -13977,42 +13908,6 @@
     "_file": "library/tools/ai-analysis-automation/shellcheck-net.md"
   },
   {
-    "id": "silent-circle",
-    "name": "Silent circle",
-    "description": "OSINT tool: Silent circle.",
-    "url": "https://www.silentcircle.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/silent-circle.md"
-  },
-  {
     "id": "sitesucker",
     "name": "SiteSucker",
     "description": "Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, images, PDFs and files with structure intact.",
@@ -17310,7 +17205,7 @@
   {
     "id": "xorbruteforcer-py",
     "name": "XORBruteForcer.py",
-    "description": "Single-byte XOR key brute-forcing and quick validation",
+    "description": "Use when you have a blob obfuscated with single-byte XOR (malware config, hidden strings) and want it decoded — brute-forces all 256 keys and returns readable candidates.",
     "url": "https://github.com/jesparza/scripts/blob/master/xorBruteForcer.py",
     "category": "ai-analysis-automation",
     "path": [
@@ -17318,34 +17213,42 @@
       "xor",
       "python"
     ],
-    "bestFor": "Single-byte XOR key brute-forcing and quick validation",
-    "input": "Encoded file or byte sequence",
-    "output": "Decoded candidates mapped to tested XOR key values",
+    "bestFor": "Recovering single-byte XOR-obfuscated content by trying every key and surfacing the readable result.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free single-file Python script (Jose Esparza); no account or install beyond Python.",
     "opsec": "passive",
-    "opsecNote": "Local script analysis avoids artifact upload and minimizes external exposure.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Runs entirely locally on a file you already hold — no uploads, no network calls — so it leaks nothing and is safe for sensitive/malware artefacts. Analyse in an isolated VM as good practice when the source is untrusted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small, well-known analyst script from a respected malware researcher (jesparza / pdfstreamdumper author); it does exactly one deterministic thing, easy to read and verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "xorBruteForcer",
+      "XOR brute forcer"
+    ],
+    "tags": [
+      "malware-analysis",
+      "deobfuscation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/xor/python/xorbruteforcer-py.md"
   },
   {
@@ -23035,7 +22938,8 @@
       "library-of-congress-ask-a-librarian",
       "library-of-congress-united-states",
       "newspaper-navigator",
-      "usa-telephone-directory-collection"
+      "usa-telephone-directory-collection",
+      "world-digital-library"
     ],
     "aliases": [
       "LoC Web Archives",
@@ -106817,48 +106721,6 @@
     "_file": "library/tools/financial-crypto/fdic-search.md"
   },
   {
-    "id": "fingble-nftport",
-    "name": "Fingble Nftport",
-    "description": "One of the most accurate search engines for finding NFT by uploaded image. Works well with faces. Also it's possible to search by keyword or Token ID.",
-    "url": "https://fingible.nftport.xyz/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "face",
-      "image"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NFT"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/fingble-nftport.md"
-  },
-  {
     "id": "flowscan-org",
     "name": "Flowscan.org",
     "description": "OSINT tool: Flowscan.org.",
@@ -161994,28 +161856,29 @@
   {
     "id": "telegram-group-telegram-group-com",
     "name": "Telegram Group (telegram-group.com)",
-    "description": "Search and join Telegram groups.",
+    "description": "Use when you have a topic/keyword and want relevant Telegram communities — a directory that returns public groups/channels/bots as `social-profile` join links.",
     "url": "https://www.telegram-group.com",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Finding public Telegram groups to join",
+    "bestFor": "Discovering public Telegram groups, channels and bots by topic or keyword.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; browsing and join links require no account (joining a group needs a Telegram account).",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. Actually JOINING a group is active and exposes your Telegram account/username to that group's members and admins — use a sock-puppet Telegram account (separate number), never your real one, when entering a subject's community.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run listing (heavily Israel/Hebrew-oriented but multi-language); coverage is partial and self-submitted, so it's a discovery aid, not a complete index of Telegram.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -162024,18 +161887,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "telegram-group-find-telegram-channels-bots-and-groups"
+    ],
+    "aliases": [
+      "telegram-group.com"
+    ],
     "tags": [
       "telegram",
       "groups",
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "telegram-group-find-telegram-channels-bots-and-groups"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-group-telegram-group-com.md"
   },
   {
@@ -174895,38 +174760,49 @@
   },
   {
     "id": "ladder",
-    "name": "LADDER",
-    "description": "A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTML code of web pages and more.",
+    "name": "Ladder",
+    "description": "Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the full text ad- and paywall-free.",
     "url": "https://github.com/everywall/ladder",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Self-hosted paywall/ad bypass for reading and archiving article content during research.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Go) on GitHub; self-hosted (run locally or in Docker), no third-party service or account.",
+    "opsec": "active",
+    "opsecNote": "Ladder fetches the target page server-side from wherever you host it, so the origin site sees a request from your instance's IP (spoofed as a search-engine crawler), not your browser — that indirection is a mild OpSec benefit, but it's still an active fetch. Self-host it; don't route sensitive research through someone else's public Ladder instance (they'd see your queries).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "A popular open-source project (everywall/ladder); it works by mimicking search-engine crawler headers/referrers, so success varies by site and it can break as paywalls change. Audit/self-host rather than trusting public instances.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "everywall ladder"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "paywall-bypass",
+      "research-tooling"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/ladder.md"
   },
   {
@@ -179583,44 +179459,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/security-first-umbrella.md"
-  },
-  {
-    "id": "send",
-    "name": "Send",
-    "description": "OSINT tool: Send.",
-    "url": "https://send.actionsack.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bibliogram",
-      "youtube-dl"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/send.md"
   },
   {
     "id": "send-text-free",
@@ -192607,7 +192445,8 @@
       "library-of-congress-united-states",
       "newspaper-navigator",
       "usa-telephone-directory-collection",
-      "webarchive-loc-gov"
+      "webarchive-loc-gov",
+      "world-digital-library"
     ],
     "aliases": [
       "Ask a Librarian LOC",
@@ -206240,7 +206079,8 @@
       "library-of-congress-ask-a-librarian",
       "library-of-congress-united-states",
       "newspaper-navigator",
-      "webarchive-loc-gov"
+      "webarchive-loc-gov",
+      "world-digital-library"
     ],
     "_file": "library/tools/phone/usa-telephone-directory-collection.md"
   },
@@ -223502,14 +223342,14 @@
   },
   {
     "id": "fortune-500-list-of-companies-2020-fortune",
-    "name": "Fortune 500 list of companies 2020 | Fortune",
-    "description": "OSINT tool: Fortune 500 list of companies 2020 | Fortune.",
+    "name": "Fortune 500 List",
+    "description": "Use when you have a large US company (`employer-org`) or executive `name` and want corporate facts — the ranked list returns revenue, sector, HQ and leadership for the biggest firms.",
     "url": "https://fortune.com/fortune500",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Quick authoritative reference on the largest US companies — rank, revenue, industry, headquarters and CEO.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -223518,31 +223358,37 @@
       "employer-org",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The ranked list and core company facts are free to browse; some deeper Fortune articles/analysis sit behind a subscription.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browsing of a public business publication — no target interaction and nothing about a subject transmitted. Only your own visit is logged by Fortune.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Fortune's flagship ranking, compiled from company financial filings; authoritative for the headline corporate facts it lists, though scoped to the largest US firms and updated annually.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fortune-magazine"
+    ],
+    "aliases": [
+      "Fortune 500",
+      "Fortune500 list"
+    ],
     "tags": [
       "corporate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fortune-magazine"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/fortune-500-list-of-companies-2020-fortune.md"
   },
   {
@@ -234603,7 +234449,8 @@
       "library-of-congress-ask-a-librarian",
       "newspaper-navigator",
       "usa-telephone-directory-collection",
-      "webarchive-loc-gov"
+      "webarchive-loc-gov",
+      "world-digital-library"
     ],
     "aliases": [
       "LOC",
@@ -258480,43 +258327,53 @@
   },
   {
     "id": "world-integrated-trade-solution",
-    "name": "World Integrated Trade Solution",
-    "description": "OSINT tool: World Integrated Trade Solution.",
-    "url": "http://wits.worldbank.org",
+    "name": "World Integrated Trade Solution (WITS)",
+    "description": "Use when you have a country and product/sector and want detailed trade & tariff data — the World Bank's WITS returns bilateral flows and tariffs (macro context, not person-level).",
+    "url": "https://wits.worldbank.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Granular bilateral trade and tariff statistics by country and product (HS/SITC codes) for economic and sector context.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; the World Bank's WITS portal offers open querying and downloads, though bulk/advanced use may prompt a free registration.",
+    "opsec": "passive",
+    "opsecNote": "Read-only queries against a public World Bank data platform — no target interaction; nothing about a subject is transmitted. Only your own access is logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the World Bank, aggregating UN Comtrade, TRAINS and WTO sources; authoritative for trade/tariff data at country-product granularity, but aggregate — never resolves to a person.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
+    "coverage": [
+      "global"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "none",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
     "relatedTools": [
       "the-world-bank-open-data-catalog",
       "world-bank-data",
       "world-bank-investing-across-borders"
     ],
+    "aliases": [
+      "WITS",
+      "World Bank WITS"
+    ],
+    "tags": [
+      "data-and-statistics"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/world-integrated-trade-solution.md"
   },
   {
@@ -293915,37 +293772,55 @@
   {
     "id": "world-digital-library",
     "name": "World Digital Library",
-    "description": "OSINT tool: World Digital Library.",
-    "url": "http://www.wdl.org",
+    "description": "Use when you have a place, era, or name tied to history and want primary sources — search digitized manuscripts, maps and documents; returns archival records (context, not live people).",
+    "url": "https://www.loc.gov/collections/world-digital-library/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching digitized historical primary sources (maps, manuscripts, photographs, documents) from libraries worldwide.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open access; no account. The standalone wdl.org site was migrated into the US Library of Congress, which now hosts the collection.",
+    "opsec": "passive",
+    "opsecNote": "Read-only searching of a public cultural archive — no target interaction and nothing about a subject transmitted. Only your own access is logged by the Library of Congress.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A UNESCO/Library of Congress initiative aggregating primary sources from partner institutions worldwide; authoritative provenance, but historical/archival in scope — not a source on living individuals.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "library-of-congress-ask-a-librarian",
+      "library-of-congress-united-states",
+      "usa-telephone-directory-collection",
+      "webarchive-loc-gov"
+    ],
+    "aliases": [
+      "WDL",
+      "wdl.org"
+    ],
     "tags": [
       "academic-resources-and-grey-literature"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/world-digital-library.md"
   },
   {
@@ -351075,42 +350950,56 @@
   },
   {
     "id": "world-aviation-accident-database-2008-2021",
-    "name": "World Aviation Accident Database 2008-2021",
-    "description": "OSINT tool: World Aviation Accident Database 2008-2021.",
+    "name": "NTSB CAROL Aviation Accident Database",
+    "description": "Use when you have an aircraft, date, place or person tied to an aviation accident — searches the NTSB CAROL database and returns official reports with names, `geolocation` and causes.",
     "url": "https://data.ntsb.gov/carol-main-public/basic-search",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Official US/NTSB aviation (and other transport) accident reports searchable by date, location, aircraft, operator or person.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official US government database (NTSB CAROL); no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Read-only queries against a public government records portal — you search records, not a live subject, and nothing about your query target is transmitted to them. Only your own access is logged by NTSB.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The National Transportation Safety Board's official case-analysis records portal (CAROL) — authoritative primary-source accident data for US-related aviation, rail, marine, highway and pipeline events.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "world-aviation-accident-database-1962-2007"
+    ],
+    "aliases": [
+      "NTSB CAROL",
+      "NTSB accident database"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Aviation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "world-aviation-accident-database-1962-2007"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/world-aviation-accident-database-2008-2021.md"
   },
   {

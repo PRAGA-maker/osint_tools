@@ -188,7 +188,7 @@ kind: group-index
 - **`websdr`** (low) — Use when you have a frequency/region and want to listen to live radio from an internet-connected receiver near that location — returns audio
 - **`wikicars`** (medium) — Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a
 - **`wikiroutes`** (low) — Use when you have a `geolocation`/city and want its public-transport network — returns bus/tram/metro routes, stops and coverage for that ar
-- **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.
+- **`world-aviation-accident-database-2008-2021`** (low) — Use when you have an aircraft, date, place or person tied to an aviation accident — searches the NTSB CAROL database and returns official re
 - **`world-license-plates`** (medium) — Use when you have an `image` of a licence plate (or its format) and want to identify where it's from — returns the country/region `geolocati
 - **`world-shipping-register`** (medium) — Use when you have a ship `name`/IMO or an owner and want vessel registration details — returns owner/manager/builder links and vessel specs.
 - **`xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat`** (low) — Use as a methodology guide when you need to track an aircraft or research flight history — teaches which ADS-B/flight-tracking tools to use 

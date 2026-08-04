@@ -661,7 +661,7 @@ kind: group-index
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
 - **`wordpress-custom-search`** (low) — Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable S
 - **`wordstat-yandex-ru`** (low) — Use when you have a `name`/keyword/brand and want its Yandex search demand — returns query volumes, related terms, and regional interest acr
-- **`world-digital-library`** (low) — OSINT tool: World Digital Library.
+- **`world-digital-library`** (low) — Use when you have a place, era, or name tied to history and want primary sources — search digitized manuscripts, maps and documents; returns
 - **`world-newspapers`** (low) — Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subjec
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.

@@ -216,7 +216,7 @@ kind: group-index
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
-- **`ladder`** (low) — A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTM
+- **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`ldplayer-net`** (low) — OSINT tool: Ldplayer.net.
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
@@ -314,7 +314,6 @@ kind: group-index
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
 - **`send-text-free`** (low) — Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, no
-- **`send`** (low) — OSINT tool: Send.
 - **`sendatext`** (low) — OSINT tool: SendaText.
 - **`septor-linux`** (low) — Use when you need a preconfigured Tor-routed live OS for anonymous OSINT work — returns a hardened Debian/KDE workstation that pushes all tr
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta

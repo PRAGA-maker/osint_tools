@@ -314,7 +314,7 @@ kind: group-index
 - **`foia-gov-search`** (low) — Use when you have a topic, agency, or `name` and want US federal records — returns previously-released FOIA documents and the path to file y
 - **`forbes-global-2000`** (medium) — Use when you have an `employer-org` and want to verify and size it — returns whether a company is among the world's 2000 largest public firm
 - **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
-- **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
+- **`fortune-500-list-of-companies-2020-fortune`** (low) — Use when you have a large US company (`employer-org`) or executive `name` and want corporate facts — the ranked list returns revenue, sector
 - **`france`** (medium) — Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, 
 - **`freebmd-org-uk`** (high) — Use when you have a `name` and want English & Welsh birth, marriage, or death registrations — returns the registration event with quarter/ye
 - **`freecen-org-uk`** (high) — Use when you have a `name` and rough year/place in 19th–early-20th-century Britain and want free transcribed census records to place a perso
@@ -930,7 +930,7 @@ kind: group-index
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
 - **`world-bank-data`** (low) — Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — return
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
-- **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
+- **`world-integrated-trade-solution`** (low) — Use when you have a country and product/sector and want detailed trade & tariff data — the World Bank's WITS returns bilateral flows and tar
 - **`wto-statistics`** (low) — Use when you have an `employer-org` or country and want its merchandise/services trade profile — returns official bilateral trade, tariff an
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address

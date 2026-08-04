@@ -35,6 +35,7 @@ relatedTools:
 - newspaper-navigator
 - usa-telephone-directory-collection
 - webarchive-loc-gov
+- world-digital-library
 aliases:
 - LOC
 - loc.gov

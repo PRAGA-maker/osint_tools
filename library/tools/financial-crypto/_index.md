@@ -58,7 +58,6 @@ kind: group-index
 - **`eu-consolidated-corporate-registers`** (medium) — Use when you have a company `name` (or a subject's likely `employer-org`) and want to find its official registration across the EU, Iceland,
 - **`europa-eu`** (low) — Use when you are tracing a `crypto-wallet` in a criminal-finance context and want an authoritative methodology reference — returns Europol's
 - **`fdic-search`** (low) — Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, his
-- **`fingble-nftport`** (low) — One of the most accurate search engines for finding NFT by uploaded image. Works well with faces. Also it's possible to search by keyword or
 - **`flowscan-org`** (low) — OSINT tool: Flowscan.org.
 - **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
 - **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database

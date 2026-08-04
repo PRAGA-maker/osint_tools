@@ -37,7 +37,6 @@ kind: group-index
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
-- **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
@@ -73,7 +72,6 @@ kind: group-index
 - **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — OSINT tool: creately.
-- **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
 - **`crossfilter`** (low) — Use when you have a large multi-dimensional dataset and want fast interactive filtering in the browser — a JS library for exploring OSINT re
 - **`crowdsec`** (low) — Use when you have an `ip-address` and want crowd-sourced threat reputation on it — CrowdSec's CTI shows whether the IP is a known attacker, 
 - **`csvkit`** (low) — Use when you have a bulk data dump (CSV/Excel/JSON) and want to slice, search, join, and query it from the command line to pull out records 
@@ -106,7 +104,7 @@ kind: group-index
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (medium) — Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databa
-- **`einvestigator`** (low) — OSINT tool: eInvestigator.
+- **`einvestigator`** (low) — Use when you need investigation how-tos or a pointer to a records/people-search resource — a free education hub with 300+ guides and a curat
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
 - **`eraser`** (low) — OSINT tool: Eraser.
@@ -298,7 +296,6 @@ kind: group-index
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
-- **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — Use when you have `image` assets or findings to package and want a fast browser-based graphic editor — returns a composed `image` (report gr
