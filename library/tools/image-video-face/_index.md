@@ -88,7 +88,7 @@ kind: group-index
 - **`exiflooter`** (high) — Use when you have images (or a URL/directory of them) and want to extract GPS metadata and map it — returns geolocation from metadata-exif.
 - **`exiftool-2`** (high) — Use when you have a media/document file and want a full local metadata dump — returns metadata-exif, geolocation, device-id (same tool as ex
 - **`experte-com`** (medium) — Use when you have a photo and want to strip the background to isolate the subject/face before a reverse-image search — returns a cleaned ima
-- **`expertsphp-pinterest-photo-downloader`** (low) — Pinterest photo download tool.
+- **`expertsphp-pinterest-photo-downloader`** (low) — Use when you have a Pinterest pin/board `image` URL and want the full-resolution original file — returns the downloadable HD image for rever
 - **`ezgif`** (medium) — Use when you have a video/GIF and need to split it into frames or manipulate it before reverse-image search — returns still images for downs
 - **`face-comparison-by-toolpie`** (high) — Use when you have two `face`/`image` photos and want to know whether they show the same person — returns a same-person similarity score.
 - **`face-recognition`** (high) — Use when you have `face`/`image` files and want to detect, encode, and match faces locally — returns face locations, encodings, and same-per

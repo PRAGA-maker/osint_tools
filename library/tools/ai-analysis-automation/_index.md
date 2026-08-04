@@ -322,7 +322,7 @@ kind: group-index
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
 - **`steganography-online-codec`** (low) — Use when you have an `image` you suspect hides a message (or want to embed one) and need to encode/decode LSB steganography with AES-256 — r
 - **`steganography-online`** (low) — Use when you have a PNG image and want to hide or recover a hidden text message in it, entirely in-browser — returns extracted hidden text (
-- **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
+- **`stix-viewer`** (low) — Use when you have a STIX threat-intelligence bundle and want to read it as a linked graph of indicators, actors, and relationships — returns
 - **`storymap`** (low) — Use when you have a set of `geolocation` points and want to present a case as a guided map narrative — returns an embeddable slide-by-slide 
 - **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai
 - **`tableau-public`** (low) — Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns

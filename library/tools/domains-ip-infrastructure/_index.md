@@ -68,7 +68,7 @@ kind: group-index
 - **`api-mylnikov-org`** (low) — Use when you have a WiFi access point's BSSID (`mac-address`) and want its physical location — a free API that returns `geolocation` (lat/lo
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
-- **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
+- **`archiveready`** (low) — Use when you have a `domain`/URL and want to know whether (and how well) web archives can capture it — returns an archivability score across
 - **`argus`** (low) — Use when you have a `domain` or `ip-address` and want a broad infrastructure sweep — returns DNS, WHOIS, geo-IP, ports, subdomains, harveste
 - **`arin-net`** (medium) — Use when you have an `ip-address` or ASN and want its full historical registration chain — returns the organizations, contacts, and domain/o
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
@@ -422,7 +422,7 @@ kind: group-index
 - **`w3techs`** (low) — OSINT tool: w3techs.
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-check`** (low) — Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, 
-- **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
+- **`web-tech-survey`** (low) — Use when you have a `domain` and want its technology stack, or a technology and want every site using it — returns detected tech per site an
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
 - **`webemailextractor-com`** (low) — Use when you have a `domain`/website (or list of them) and want the contact points published on it — extracts `email`s and `phone` numbers f

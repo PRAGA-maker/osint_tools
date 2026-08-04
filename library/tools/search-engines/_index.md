@@ -266,7 +266,7 @@ kind: group-index
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
 - **`googledrive-search-engine`** (low) — Use when you have a `name`, keyword, or filename and want to find publicly-shared Google Drive/Docs files indexed by Google — returns expose
 - **`googler`** (low) — Use when you have a `name`/`username`/`email`/`phone`/`domain` and want to run scriptable Google web/news/site searches from the terminal — 
-- **`goosh-org`** (low) — online google search command line tool
+- **`goosh-org`** (low) — Use when you want a fast, keyboard-driven shell interface to run Google/web searches from a command line in the browser — returns web/image 
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
@@ -326,7 +326,7 @@ kind: group-index
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
-- **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
+- **`keywordpeopleuse`** (low) — Use when you have a keyword/`name`/topic and want the real questions people ask about it across Google, Reddit, and Quora — returns clustere
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
 - **`kiddle`** (low) — Kid-friendly search engine.
 - **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
@@ -454,7 +454,7 @@ kind: group-index
 - **`osint-kit-buddhsen-tripathi`** (medium) — Use when you need to discover which tool fits an investigative task — a curated, categorised directory of OSINT tools returning pointers to 
 - **`osint-link`** (medium) — Use when you need to discover an OSINT tool for a task — returns a categorised directory of OSINT resources (search, social, geolocation, br
 - **`osint-open-source-projects`** (low) — Use when you want to discover open-source OSINT tools/repos by topic — a browsable directory of GitHub projects tagged "osint" — returns poi
-- **`osint-sh-buckets`** (low) — Azure Public Buckets Search
+- **`osint-sh-buckets`** (low) — Use when you have a keyword/`employer-org`/`domain` and want publicly-exposed cloud storage — searches AWS S3 and Azure Blob for open bucket
 - **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe
 - **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate
 - **`osint-toolkit-cybersight-security`** (low) — Use when you have a selector but need the right tool and want a categorized catalog of OSINT tools/websites to pick from — returns tool poin
@@ -661,7 +661,7 @@ kind: group-index
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
 - **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —
 - **`woboq-code-browser`** (medium) — Use when you need to read/navigate a C/C++ open-source codebase in the browser — returns cross-referenced, hyperlinked source for projects l
-- **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.
+- **`wolfram-alpha`** (low) — Use when you have a factual/quantitative question or a structured selector (a `name`, place, date, or number) and want a computed, sourced a
 - **`word-tracker`** (low) — OSINT tool: Word Tracker.
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.

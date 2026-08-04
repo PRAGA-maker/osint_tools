@@ -15010,37 +15010,54 @@
   {
     "id": "stix-viewer",
     "name": "STIX Viewer",
-    "description": "OSINT tool: STIX Viewer.",
+    "description": "Use when you have a STIX threat-intelligence bundle and want to read it as a linked graph of indicators, actors, and relationships — returns a visual map of the CTI objects and their `ip-address`/`domain` indicators.",
     "url": "https://stix-viewer.threatlandscape.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Visualising STIX 2.x threat-intel bundles as a relationship graph to understand indicators, actors, and TTP links.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web-based viewer; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You upload/paste your own STIX bundle to render it — that data goes to the viewer's server, so don't paste sensitive/proprietary intel into a third-party site; for confidential bundles use a local STIX viewer instead. It queries nothing about any subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community CTI utility for rendering the OASIS STIX standard; it visualises what you give it, so accuracy depends entirely on the source bundle.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-intelligence"
+    "relatedTools": [],
+    "aliases": [
+      "STIX bundle viewer",
+      "Threat Landscape STIX Viewer"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "threat-intel",
+      "stix",
+      "cti",
+      "visualization"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/stix-viewer.md"
   },
   {
@@ -61302,42 +61319,50 @@
   {
     "id": "archiveready",
     "name": "ArchiveReady",
-    "description": "OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find your own site, check whether the code of its pages is understandable for crawlers of web archives.",
+    "description": "Use when you have a `domain`/URL and want to know whether (and how well) web archives can capture it — returns an archivability score across accessibility, cohesion, metadata, and standards.",
     "url": "http://archiveready.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a page can be archived correctly before relying on (or forcing) a web-archive capture of it.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for personal use; commercial API access and support are paid.",
+    "opsec": "passive",
+    "opsecNote": "ArchiveReady fetches the target page from its own servers to analyse it, so the request comes from ArchiveReady, not you — your identity/IP isn't exposed to the target. It IS an active fetch of the page (the site owner could see ArchiveReady's crawler in logs), so it's not zero-touch on the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running (since 2012) academic-origin tool measuring archivability; a heuristic score, not a guarantee that a capture will succeed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Archive Ready",
+      "archiveready.com"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Source Code Analyzes"
+      "web-archiving",
+      "archivability",
+      "preservation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/archiveready.md"
   },
   {
@@ -88343,43 +88368,51 @@
   },
   {
     "id": "web-tech-survey",
-    "name": "Web Tech Survey",
-    "description": "OSINT tool: Web Tech Survey.",
+    "name": "WebTechSurvey",
+    "description": "Use when you have a `domain` and want its technology stack, or a technology and want every site using it — returns detected tech per site and reverse tech-to-sites lists.",
     "url": "https://webtechsurvey.com/website/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fingerprinting a website's tech stack and, in reverse, enumerating all sites that share a given technology or recently switched it.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier profiles a site's tech and gives limited reverse-lookup; deeper/bulk technology-to-sites lists and filters are behind one-time-purchase/subscription plans.",
+    "opsec": "passive",
+    "opsecNote": "WebTechSurvey reads from its own pre-crawled index of ~120M sites, so a lookup does NOT touch the target's server or alert them. (If you use its live \"scan\" feature it fetches the site fresh, which does hit the target — prefer the indexed lookup for passive work.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party technology-fingerprinting index; detection is signal-based (headers, scripts, cookies, DNS) and can miss or mislabel, and index freshness varies per site.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Web Tech Survey",
+      "webtechsurvey.com"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Website technology look up"
+      "technology-lookup",
+      "tech-stack",
+      "reverse-technology"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/web-tech-survey.md"
   },
   {
@@ -131875,28 +131908,29 @@
   {
     "id": "expertsphp-pinterest-photo-downloader",
     "name": "ExpertsPHP Pinterest Photo Downloader",
-    "description": "Pinterest photo download tool.",
+    "description": "Use when you have a Pinterest pin/board `image` URL and want the full-resolution original file — returns the downloadable HD image for reverse-image search and evidence capture.",
     "url": "https://www.expertsphp.com/pinterest-photo-downloader.html",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Downloading individual Pinterest images",
+    "bestFor": "Extracting the full-resolution original image behind a Pinterest pin URL, without a Pinterest login.",
     "selectorsIn": [
-      "social-profile"
+      "image"
     ],
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no login or signup required to download.",
+    "opsec": "passive",
+    "opsecNote": "You paste a pin URL into the downloader's site; it fetches the image server-side, so Pinterest sees the downloader's request, not yours — a small privacy plus over saving while logged in. The third-party site does see the pin URL you submit; use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A generic ad-supported downloader utility; functional for grabbing images but the site carries ads/redirects — don't install anything it prompts, and verify the downloaded file.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -131905,14 +131939,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Pinterest photo downloader",
+      "expertsphp pinterest"
+    ],
     "tags": [
       "pinterest",
-      "media-download"
+      "image-download",
+      "media-extraction"
     ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/expertsphp-pinterest-photo-downloader.md"
   },
   {
@@ -274876,38 +274915,52 @@
   },
   {
     "id": "goosh-org",
-    "name": "goosh.org",
-    "description": "online google search command line tool",
+    "name": "Goosh",
+    "description": "Use when you want a fast, keyboard-driven shell interface to run Google/web searches from a command line in the browser — returns web/image results as text you can chain with commands.",
     "url": "https://goosh.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Rapid, keyboard-only searching via a unix-shell-style command interface in the browser.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (Artistic License/GPL); runs in the browser, no account.",
+    "opsec": "passive",
+    "opsecNote": "Goosh is a front-end that issues queries to Google Custom Search — results ultimately come from Google under your session/IP, so standard search-privacy hygiene applies (use a sock-puppet browser). It's not an anonymiser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing open-source hobby project (explicitly \"not an official Google product\"); functional but dependent on Google Custom Search, whose result depth is narrower than full Google.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "goosh",
+      "goosh.org",
+      "google shell"
+    ],
     "tags": [
-      "Tools for Google"
+      "search",
+      "command-line",
+      "shell-ui"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/goosh-org.md"
   },
   {
@@ -278060,38 +278113,55 @@
   },
   {
     "id": "keywordpeopleuse",
-    "name": "KeyWordPeopleUse",
-    "description": "Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autocomplete and \"People also ask\"",
+    "name": "Keywords People Use",
+    "description": "Use when you have a keyword/`name`/topic and want the real questions people ask about it across Google, Reddit, and Quora — returns clustered questions and autocomplete/\"People also ask\" phrasing.",
     "url": "https://keywordspeopleuse.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Surfacing the actual questions and phrasing people use about a term on Google, Reddit, and Quora (social-listening / topic reconnaissance).",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Freemium with a credit system — a free trial and limited free searches; deep searches and volume consume credits on paid plans (Standard = 1 credit, Deep = 4). Basic question discovery is doable on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "Queries run against the service's live pulls from search engines/Reddit/Quora, not against any individual — passive and non-alerting. You do reveal your search terms to the platform (account required for saved work); use a research identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial SEO/keyword-research tool; data is aggregated from public sources in real time, useful for language patterns but not an authoritative record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "KeywordsPeopleUse",
+      "keywordspeopleuse.com",
+      "JustPAA"
+    ],
     "tags": [
-      "Keywords, trends, news analytics"
+      "keyword-research",
+      "social-listening",
+      "reddit",
+      "quora"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/keywordpeopleuse.md"
   },
   {
@@ -284725,39 +284795,54 @@
   },
   {
     "id": "osint-sh-buckets",
-    "name": "osint.sh/buckets",
-    "description": "Azure Public Buckets Search",
+    "name": "OSINT.SH Public Buckets",
+    "description": "Use when you have a keyword/`employer-org`/`domain` and want publicly-exposed cloud storage — searches AWS S3 and Azure Blob for open buckets matching the term, returns bucket URLs and their file listings.",
     "url": "http://osint.sh/buckets",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding open AWS S3 / Azure Blob buckets tied to a name, brand, or project keyword, and browsing their exposed files.",
+    "selectorsIn": [
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool, part of the OSINT.SH all-in-one toolkit; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The keyword search hits OSINT.SH's index, not the target — passive. But OPENING a discovered bucket/file fetches it from the cloud provider and is logged in that bucket's access logs; browse discovered buckets through a VPN and never download anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known free OSINT toolkit; bucket results depend on what's currently indexed/public and can be incomplete or stale — verify by opening the bucket.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "osint.sh buckets",
+      "Public Buckets search"
+    ],
     "tags": [
-      "Search engines",
-      "Public buckets search tools"
+      "cloud-buckets",
+      "s3",
+      "azure-blob",
+      "exposed-storage"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-sh-buckets.md"
   },
   {
@@ -295732,41 +295817,51 @@
   {
     "id": "wolfram-alpha",
     "name": "Wolfram Alpha",
-    "description": "OSINT tool: Wolfram Alpha.",
+    "description": "Use when you have a factual/quantitative question or a structured selector (a `name`, place, date, or number) and want a computed, sourced answer — returns curated facts, conversions, and cross-referenced data.",
     "url": "https://www.wolframalpha.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Computing and cross-referencing structured facts — geography, demographics, dates/times, unit and data conversions — rather than finding web pages.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for standard queries; Wolfram|Alpha Pro (step-by-step, uploads, larger computations) is a paid subscription. Most OSINT-relevant factual lookups work on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "You query Wolfram's own curated knowledgebase, not any target's infrastructure — fully passive and non-alerting. Your queries are logged by Wolfram like any web service; use a clean session for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Wolfram Research; answers come from a curated, sourced knowledgebase with a strong accuracy reputation, though coverage is factual/computational, not a live web index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Wolfram|Alpha",
+      "wolframalpha.com"
+    ],
     "tags": [
-      "general-search"
+      "computational-knowledge",
+      "facts",
+      "data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "wolfram-alpha-facebook-report",
-      "wolfram-alpha-personal-analytics"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wolfram-alpha.md"
   },
   {
