@@ -126,7 +126,6 @@ kind: group-index
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
 - **`fake-person-generator`** (low) — Use when you need a coherent fictional identity for a research sock-puppet account — returns fabricated persona details (name, address, DOB,
-- **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
@@ -163,7 +162,6 @@ kind: group-index
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
-- **`google-maps-app-mobile-ios`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Add-on for Google Chrome that alerts you if you enter your Google password into any non-Google page or form
 - **`google-photos-management-app-mobile-android`** (low) — App for mobile devices for managing and sharing photo media
 - **`google-photos-management-app-mobile-ios`** (low) — App for mobile devices for managing and sharing photo media
@@ -290,7 +288,6 @@ kind: group-index
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
-- **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
 - **`receive-sms-online-for-free`** (low) — Use when you (the investigator) need to receive an SMS verification code without using your real number — provides free shared public virtua
 - **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num
 - **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
@@ -326,7 +323,6 @@ kind: group-index
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
 - **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
-- **`slack-business-communication-app-mobile-ios`** (low) — App for mobile devices for business communications and networking
 - **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no

@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation
 
 ## Sub-groups
-- **`javascript/`** — 4 skill(s) below.
+- **`javascript/`** — 3 skill(s) below.
 - **`osint-automation/`** — 11 skill(s) below.
 - **`php/`** — 1 skill(s) below.
 - **`virtual-machines/`** — 7 skill(s) below.
@@ -172,7 +172,7 @@ kind: group-index
 - **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, to
-- **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.
+- **`krebs-on-security`** (low) — Use when you have a threat-actor alias, breach name, scam pattern, or malware/campaign name and want deep investigative background — returns
 - **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
 - **`lastpass`** (low) — OSINT tool: Lastpass.
 - **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
@@ -292,7 +292,6 @@ kind: group-index
 - **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
 - **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
-- **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
@@ -316,7 +315,6 @@ kind: group-index
 - **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
 - **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
 - **`text-and-file-hash-calculator`** (low) — Use when you need to compute or verify MD5/SHA hashes of text or a file — to confirm integrity, match a known/blocklisted hash, or fingerpri
-- **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
 - **`the-fuck`** (low) — Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep
 - **`the-scraper`** (low) — Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profi
@@ -332,7 +330,6 @@ kind: group-index
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
 - **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.
-- **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
 - **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
 - **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co

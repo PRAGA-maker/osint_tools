@@ -17,7 +17,7 @@ kind: group-index
 - **`511on-ca`** (low) — Use when you have a `geolocation` or `address` in Ontario and want live road conditions, traffic cameras and closures at that spot — returns
 - **`acled-data-crisis-map`** (medium) — Use when you have a `geolocation` and want dated political-violence, protest, and conflict events there — returns geolocated events with dat
 - **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
-- **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
+- **`airport-webcams`** (low) — Use when you have an airport (name/IATA code) as a `geolocation` anchor and want live visual coverage of it — returns links to live webcams,
 - **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
 - **`aprs-on-google-maps`** (high) — Use when you have an amateur-radio callsign or an area and want real-time/historic position tracks — returns map locations, movement history
 - **`aqicn`** (low) — Use when you have a `geolocation` and want a map of live air-quality monitoring stations there — returns station points that double as corro

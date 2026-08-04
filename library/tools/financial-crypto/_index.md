@@ -60,7 +60,7 @@ kind: group-index
 - **`fdic-search`** (low) — Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, his
 - **`flowscan-org`** (low) — OSINT tool: Flowscan.org.
 - **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
-- **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
+- **`freebin-checker`** (low) — Use when you have a payment-card BIN (first 6–8 digits) and want to identify its issuing bank, country, and card type — returns issuer name,
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
 - **`iban-com`** (low) — Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) a
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 

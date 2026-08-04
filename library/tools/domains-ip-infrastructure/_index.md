@@ -46,7 +46,7 @@ kind: group-index
 - **`typosquatting/`** — 4 skill(s) below.
 - **`url-expanders/`** — 3 skill(s) below.
 - **`vulnerabilities/`** — 4 skill(s) below.
-- **`whois-records/`** — 12 skill(s) below.
+- **`whois-records/`** — 11 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
 
 ## Skills here

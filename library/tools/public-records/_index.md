@@ -31,7 +31,6 @@ kind: group-index
 - **`50-states`** (low) — Use when you have a US state or region and want a curated jump-off to that state's public-records, vital-records, and directory portals — re
 - **`51-000-university-of-michigan-employee-salaries`** (high) — Use when you have a `name` believed to work at the University of Michigan and want to confirm employment, title and pay — returns `employer-
 - **`8chan-8kun-qresearch-board-search`** (low) — Use when you have a `username`, name, or keyword and want to search millions of archived 8chan/8kun QResearch posts and linked datasets — re
-- **`8chan`** (low) — OSINT tool: 8chan.
 - **`990-finder`** (medium) — Use when you have an `employer-org`/nonprofit name and want its IRS Form 990 filings and profile — returns officer/director names, financial
 - **`aat-org-uk`** (high) — Use when you have an accountant/bookkeeper `name` or a UK location and want to verify AAT-licensed status — returns member/firm name, busine
 - **`academictree`** (medium) — Use when you have an academic's `name` and want their mentors, students and collaborators — returns `associate` links, `employer-org` affili

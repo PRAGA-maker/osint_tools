@@ -7798,37 +7798,53 @@
   {
     "id": "krebs-on-security",
     "name": "Krebs on Security",
-    "description": "OSINT tool: Krebs on Security.",
+    "description": "Use when you have a threat-actor alias, breach name, scam pattern, or malware/campaign name and want deep investigative background — returns long-form reporting naming actors, infrastructure, and TTPs.",
     "url": "https://krebsonsecurity.com/feed/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Researching threat actors, breaches, and fraud campaigns through in-depth investigative journalism.",
+    "selectorsIn": [
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "associate",
+      "domain",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read (web and RSS); optional mailing list. No paywall.",
+    "opsec": "passive",
+    "opsecNote": "Reading the blog/feed is fully passive — you are consuming published journalism, revealing nothing about your case. Standard browsing hygiene (VPN) is sufficient; do not act on named individuals without independent corroboration.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Written by Brian Krebs, a veteran investigative security journalist with a long track record; reporting is well-sourced, though it is journalism to corroborate, not a primary database.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KrebsOnSecurity",
+      "Brian Krebs blog"
+    ],
     "tags": [
-      "osint-rss-feeds"
+      "osint-rss-feeds",
+      "threat-intelligence",
+      "cybercrime",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/krebs-on-security.md"
   },
   {
@@ -13730,42 +13746,6 @@
     "_file": "library/tools/ai-analysis-automation/see-how-easily-freaks-can-take-over-your-life.md"
   },
   {
-    "id": "sentinel-visualizer",
-    "name": "Sentinel Visualizer",
-    "description": "OSINT tool: Sentinel Visualizer.",
-    "url": "http://www.fmsasg.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "social-network-analysis"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/sentinel-visualizer.md"
-  },
-  {
     "id": "serpapi",
     "name": "SerpApi",
     "description": "Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organic, maps, knowledge graph, images).",
@@ -14220,46 +14200,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/spf-explainer.md"
-  },
-  {
-    "id": "spidermonkey",
-    "name": "SpiderMonkey",
-    "description": "Local JavaScript execution and behavior testing without browser UI",
-    "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation",
-      "javascript"
-    ],
-    "bestFor": "Local JavaScript execution and behavior testing without browser UI",
-    "input": "JavaScript source code",
-    "output": "Execution results, runtime behavior, and script output",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Runs locally and avoids sending samples to third-party analysis services.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/javascript/spidermonkey.md"
   },
   {
     "id": "spidersuite",
@@ -15114,42 +15054,6 @@
     "_file": "library/tools/ai-analysis-automation/text-and-file-hash-calculator.md"
   },
   {
-    "id": "textures-js",
-    "name": "Textures.js",
-    "description": "OSINT tool: Textures.js.",
-    "url": "https://riccardoscalco.github.io/textures",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/textures-js.md"
-  },
-  {
     "id": "the-citizen-lab",
     "name": "The Citizen Lab",
     "description": "Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can monitor and cite.",
@@ -15817,42 +15721,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/torrent-to-magnet.md"
-  },
-  {
-    "id": "torrentfreak-list-of-vpns",
-    "name": "TorrentFreak List of VPNs",
-    "description": "OSINT tool: TorrentFreak List of VPNs.",
-    "url": "https://torrentfreak.com/vpn-services-anonymous-review-2017-170304/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vpn-services"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/torrentfreak-list-of-vpns.md"
   },
   {
     "id": "trace-labs-blog",
@@ -65337,48 +65205,6 @@
     "_file": "library/tools/domains-ip-infrastructure/domainbigdata.md"
   },
   {
-    "id": "domainiq",
-    "name": "domainIQ",
-    "description": "Domain ownership history, reverse analytics lookup, competitor domain research",
-    "url": "https://www.domainiq.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "whois-records"
-    ],
-    "bestFor": "Domain ownership history, reverse analytics lookup, competitor domain research",
-    "input": "Domain name",
-    "output": "Domain owner information, historical ownership, similar domains, analytics data, reverse MX/IP/DNS lookups",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Queries aggregated domain data; does not probe the target directly.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/whois-records/domainiq.md"
-  },
-  {
     "id": "domainrecon",
     "name": "DomainRecon",
     "description": "Use when you have a `domain` and want a one-shot recon report — DNS records, WHOIS/RDAP, SSL certs and discovered subdomains — returns infrastructure `domain`/`ip-address` data.",
@@ -106718,42 +106544,50 @@
   },
   {
     "id": "freebin-checker",
-    "name": "Freebin Checker",
-    "description": "easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database",
+    "name": "FreeBinChecker",
+    "description": "Use when you have a payment-card BIN (first 6–8 digits) and want to identify its issuing bank, country, and card type — returns issuer name, country, brand and card level.",
     "url": "https://api.freebinchecker.com/bin/658205",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a card BIN/IIN to its issuing bank, country of issuance, and card brand/type.",
     "selectorsIn": [
-      "crypto-wallet"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free BIN lookups via web app and API; no account required for basic queries.",
+    "opsec": "passive",
+    "opsecNote": "Submit ONLY the BIN (first 6–8 digits) — never a full card number, which would be a serious privacy/legal breach. The query itself reveals nothing about you, but you are sending it to a third-party service, so route through a VPN and never paste real full PANs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Free community BIN database (~850k+ records); the site itself warns \"do not expect perfection,\" so treat issuer/country as indicative, not authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FreeBinChecker",
+      "freebinchecker.com"
+    ],
     "tags": [
-      "Bank information search"
+      "bin-lookup",
+      "bank-information-search",
+      "payment-cards"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/freebin-checker.md"
   },
   {
@@ -108752,35 +108586,49 @@
   {
     "id": "airport-webcams",
     "name": "Airport Webcams",
-    "description": "OSINT tool: Airport Webcams.",
+    "description": "Use when you have an airport (name/IATA code) as a `geolocation` anchor and want live visual coverage of it — returns links to live webcams, ATC radio, and flight-radar feeds for that airport.",
     "url": "https://airportwebcams.net/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding live webcam, air-traffic-radio, and flight-radar links for a specific airport worldwide.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You only browse a public directory and click through to third-party live cams. Nothing about your subject is submitted. Note that each webcam link goes to an external host that will see your IP — use a VPN and treat the cam operators as untrusted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running community directory (\"largest database of airport webcams online\", 2,600+ cams); it only aggregates third-party links, so any individual cam may be offline or moved.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "airportwebcams.net"
+    ],
+    "tags": [
+      "webcams",
+      "aviation",
+      "geolocation",
+      "live-imagery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/airport-webcams.md"
   },
   {
@@ -170583,49 +170431,6 @@
     "_file": "library/tools/opsec-investigator-tooling/fake-person-generator.md"
   },
   {
-    "id": "fake-tiktok-profile-generator",
-    "name": "Fake Tiktok Profile Generator",
-    "description": "OSINT tool: Fake Tiktok Profile Generator.",
-    "url": "https://fakeinfo.net/fake-tiktok-profile-gererator",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fake-company-name-generator",
-      "fake-drivers-license-generator",
-      "fake-youtube-channel-generator",
-      "fakeinfo",
-      "fakeinfo-net",
-      "random-face-generator",
-      "twitter-profile-generator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/fake-tiktok-profile-generator.md"
-  },
-  {
     "id": "fake-us-identities",
     "name": "Fake US Identities",
     "description": "Use when you need a synthetic US persona for sock-puppet/OPSEC work — returns a fabricated name, address, and biographical data (no real person).",
@@ -172270,46 +172075,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-maps-app-mobile-android.md"
-  },
-  {
-    "id": "google-maps-app-mobile-ios",
-    "name": "Google Maps App (Mobile – iOS)",
-    "description": "App for mobile devices for mapping and geolocation services",
-    "url": "https://itunes.apple.com/ca/app/google-maps/id585027354?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-maps-app-mobile-ios.md"
   },
   {
     "id": "google-password-alert-extension-chrome",
@@ -178371,40 +178136,6 @@
     "_file": "library/tools/opsec-investigator-tooling/persona-creation/random-user-generator.md"
   },
   {
-    "id": "receive-sms-now-com",
-    "name": "Receive-sms-now.com",
-    "description": "OSINT tool: Receive-sms-now.com.",
-    "url": "http://receive-sms-now.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/receive-sms-now-com.md"
-  },
-  {
     "id": "receive-sms-online",
     "name": "Receive SMS Online",
     "description": "Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared numbers and their inboxes.",
@@ -179985,46 +179716,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/slack-business-app-mobile-android.md"
-  },
-  {
-    "id": "slack-business-communication-app-mobile-ios",
-    "name": "Slack Business Communication App (Mobile – iOS)",
-    "description": "App for mobile devices for business communications and networking",
-    "url": "https://itunes.apple.com/ca/app/slack-team-communication/id618783545?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/slack-business-communication-app-mobile-ios.md"
   },
   {
     "id": "sleepcycle",
@@ -206843,53 +206534,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/51-000-university-of-michigan-employee-salaries.md"
-  },
-  {
-    "id": "8chan",
-    "name": "8chan",
-    "description": "OSINT tool: 8chan.",
-    "url": "https://bloopbase.keybase.pub/LEFTHOOK/8chan/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bloopbase",
-      "foodora",
-      "gettr",
-      "givesendgo",
-      "iron-march",
-      "ledger",
-      "liker",
-      "royal-canadian-mounted-police",
-      "slack",
-      "utah-gun-exchange",
-      "weedmaps"
-    ],
-    "_file": "library/tools/public-records/8chan.md"
   },
   {
     "id": "8chan-8kun-qresearch-board-search",
