@@ -26,7 +26,6 @@ kind: group-index
 - **`astronomy-sun-moon-eclipses`** (medium) — Use when you have a `geolocation` and a date/time and want the sun/moon position and light times — returns azimuth, elevation, sunrise/sunse
 - **`atlas`** (low) — Use when you have your own case location data (spreadsheet/coordinates) and want to load, map, and run spatial analysis on it collaborativel
 - **`atlasify`** (low) — Use when checking an OSINT toollist reference to atlasify.com — the domain is currently unreachable (TLS/self-signed certificate error), so 
-- **`automated-transcription-for-radio-stations`** (low) — OSINT tool: Automated transcription for radio stations.
 - **`average-gamma-dose-rate-map`** (low) — Use when you have a `geolocation` in Europe and want current environmental radiation readings for that area — returns station-level gamma do
 - **`baidu-maps`** (medium) — Use when a person, address, or photo points to mainland China and you need the local-quality map, POIs, satellite, and street-level Panorama
 - **`batchgeo`** (medium) — Use when you have a spreadsheet/list of addresses and want to drop them onto an interactive, shareable map fast — no GIS account or setup.

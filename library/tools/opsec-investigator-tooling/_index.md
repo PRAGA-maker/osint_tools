@@ -106,7 +106,6 @@ kind: group-index
 - **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
 - **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
-- **`echofon`** (low) — Website offering analytical capabilities of Twitter content
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
 - **`emailformat-de`** (low) — OSINT tool: Emailformat.de.
@@ -167,7 +166,6 @@ kind: group-index
 - **`google-chrome`** (low) — Web browser developed by Google
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-docs-voice-comments`** (low) — simple trick to save time. Voice comments in GoogleDocs, Sheets, Slides, and Forms.
-- **`google-forum-search`** (low) — Firefox browser add-on that allows for Google Forum Search
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services

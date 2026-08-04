@@ -45,7 +45,6 @@ kind: group-index
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
 - **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat
-- **`hidden-guns`** (low) — OSINT tool: Hidden Guns.
 - **`honor-guns`** (low) — OSINT tool: Honor Guns.
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc
 - **`i2p-invisible-internet-project`** (low) — Use when an investigation touches I2P "eepsites"/services and you need to access or understand this anonymity network — the client software 

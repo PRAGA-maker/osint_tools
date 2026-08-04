@@ -68,7 +68,6 @@ kind: group-index
 - **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
 - **`api-mylnikov-org`** (low) — Use when you have a WiFi access point's BSSID (`mac-address`) and want its physical location — a free API that returns `geolocation` (lat/lo
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
-- **`appsumo-content-analyzer`** (low) — Enter the name of the domain and find out for free its three most popular publications in social networks (for six months, a quarter, a mont
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
 - **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
 - **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
@@ -132,7 +131,7 @@ kind: group-index
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` na
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
-- **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
+- **`domain-investigation-toolbox`** (low) — Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
@@ -319,7 +318,7 @@ kind: group-index
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
-- **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
+- **`pydork`** (medium) — Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yah
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Use when you have a `domain` and want a one-command passive footprint bundled into an HTML report — returns WHOIS, DNS, headers, links and t

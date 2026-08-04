@@ -142,42 +142,6 @@
     "_file": "library/tools/ai-analysis-automation/advanced-search-operators-list.md"
   },
   {
-    "id": "aeon",
-    "name": "Aeon",
-    "description": "OSINT tool: Aeon.",
-    "url": "http://www.aeontimeline.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/aeon.md"
-  },
-  {
     "id": "aha-music",
     "name": "AHA Music",
     "description": "Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser extension that names the song.",
@@ -6552,42 +6516,6 @@
     "_file": "library/tools/ai-analysis-automation/hohli.md"
   },
   {
-    "id": "hooey-webprint",
-    "name": "Hooey webprint",
-    "description": "OSINT tool: Hooey webprint.",
-    "url": "http://www.hooeeywebprint.com.s3-website-us-east-1.amazonaws.com/download.html",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "offline-browsing"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/hooey-webprint.md"
-  },
-  {
     "id": "hotspot-shield",
     "name": "Hotspot Shield",
     "description": "Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool that returns data on a target.",
@@ -11687,43 +11615,53 @@
   {
     "id": "owasp-d4n155",
     "name": "OWASP D4N155",
-    "description": "Dynamic wordlist generation from target websites, intelligent password cracking",
+    "description": "Use when you have a subject's `domain` or website and want to build a target-specific password/wordlist from its own content — returns a ranked wordlist of terms, names and phrases for credential-guessing or keyword pivots.",
     "url": "https://github.com/OWASP/D4N155",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "wordlist"
     ],
-    "bestFor": "Dynamic wordlist generation from target websites, intelligent password cracking",
-    "input": "URLs, IP addresses, file-based targets, raw text content; configurable crawling",
-    "output": "Intelligent wordlists based on content analysis; batch processing and reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Generating an intelligent, content-derived wordlist from a target website for password auditing or keyword extraction.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "password",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0).",
     "opsec": "active",
-    "opsecNote": "Active reconnaissance; involves crawling target websites; aggressive mode uses headless browser",
+    "opsecNote": "This is active reconnaissance — it crawls the target website (aggressive mode drives a headless browser), so the target's server logs your crawler's IP and user-agent. Only run it against sites you are authorised to audit, from a controlled IP; wordlists it produces are for legitimate password auditing, not unauthorised access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An OWASP-hosted project; open-source and community-reviewed under the OWASP umbrella.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "owasp-amass"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "d4n155"
+    ],
+    "tags": [
+      "wordlist",
+      "password-audit",
+      "owasp"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/wordlist/owasp-d4n155.md"
   },
   {
@@ -12683,37 +12621,57 @@
   {
     "id": "prism",
     "name": "PRISM",
-    "description": "OSINT tool: PRISM.",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and build a linked profile — returns social-profiles, geolocation, associated infrastructure and an OPSEC exposure report.",
     "url": "https://github.com/NovaCode37/Prism-platform",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running many OSINT modules on one selector from a single dashboard and getting an auto-generated, linked report.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email",
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source, self-hosted via Docker. Optional paid third-party API keys unlock more modules; 14 of 22 modules work with no keys at all.",
+    "opsec": "active",
+    "opsecNote": "Runs on your own infrastructure, but modules make live queries to WHOIS, DNS, certificate transparency, Shodan/Censys, breach and threat feeds — some of which log the selectors you submit. Self-host on a research VPS and use dedicated API keys. Its own OPSEC-exposure score is about the target's footprint, not your operational safety.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Active open-source project (v2.6, ~150 stars, Docker-based). Community-maintained; verify module outputs against primary sources.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Prism-platform",
+      "prism osint platform"
+    ],
     "tags": [
-      "other-tools"
+      "osint-platform",
+      "self-hosted",
+      "reconnaissance"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/prism.md"
   },
   {
@@ -14506,41 +14464,52 @@
   {
     "id": "slash",
     "name": "Slash",
-    "description": "Username enumeration and social media account discovery",
+    "description": "Use when you have a `username` or `email` and want to sweep 180+ social platforms and forums at once — returns matching social-profiles plus scraped names, locations and contact hints.",
     "url": "https://github.com/redc86/slash",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Username enumeration and social media account discovery",
-    "input": "Username or email address",
-    "output": "Verified social media profiles, forum memberships, pastebin matches, extracted contact info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-shot username/email enumeration across a very wide list of sites, with bio/contact scraping on hits.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MPL-2.0). No paid tier; you self-host and run it locally.",
     "opsec": "active",
-    "opsecNote": "Searches 187+ platforms simultaneously; generates observable API queries",
+    "opsecNote": "It fires HTTP requests directly at each platform's profile URL, so those sites can see your IP/user-agent hitting many usernames in a burst. Run through a VPN/proxy and treat the check as observable; also, a match only proves the handle exists, not that it belongs to your subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Community Python project (~700 stars); accuracy depends on per-site detection rules that rot as sites change. Verify every hit manually.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "slash osint"
+    ],
+    "tags": [
+      "username-enumeration",
+      "account-discovery"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/slash.md"
   },
   {
@@ -18821,44 +18790,42 @@
   {
     "id": "bellingcat-tiktok-hashtag-analysis",
     "name": "Bellingcat TikTok Hashtag Analysis",
-    "description": "Archive content and metadata from TikTok posts that contain one or more specified hashtags",
+    "description": "Use when you have a hashtag tied to a person, event or place and want to archive the TikTok posts under it — returns downloaded videos/images plus post metadata and co-occurring-hashtag maps.",
     "url": "https://github.com/bellingcat/tiktok-hashtag-analysis",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-archiving TikTok posts under one or more hashtags and analysing which hashtags co-occur.",
     "selectorsIn": [
-      "image",
-      "metadata-exif"
-    ],
-    "selectorsOut": [
-      "metadata-exif",
+      "name",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "costNote": "Free and open-source (MIT).",
+    "opsec": "active",
+    "opsecNote": "It scrapes TikTok via the unofficial TikTokApi package and yt-dlp and can require TikTok session credentials in its config; use a throwaway/sock-puppet TikTok account and a research IP, since bulk scraping can trigger TikTok anti-bot measures against whatever session you supply.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Published and maintained by Bellingcat, a reputable open-source investigations organisation.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "archiving"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "auto-archiver",
       "instagram-location-search",
@@ -18866,6 +18833,17 @@
       "telegram-phone-number-checker-github-com",
       "wayback-google-analytics"
     ],
+    "aliases": [
+      "tiktok-hashtag-analysis"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "archiving",
+      "tiktok"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/bellingcat-tiktok-hashtag-analysis.md"
   },
   {
@@ -39623,48 +39601,6 @@
     "_file": "library/tools/dark-web/global-security.md"
   },
   {
-    "id": "hidden-guns",
-    "name": "Hidden Guns",
-    "description": "OSINT tool: Hidden Guns.",
-    "url": "http://hgunsxfupqwrf3nrr64tzmbhopaxqjfzofplkzs2nn24xlxptlxmadqd.onion/home",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/hidden-guns.md"
-  },
-  {
     "id": "honor-guns",
     "name": "Honor Guns",
     "description": "OSINT tool: Honor Guns.",
@@ -43701,40 +43637,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/fanslist-com.md"
-  },
-  {
-    "id": "fansmetrics-com",
-    "name": "Fansmetrics.com",
-    "description": "OSINT tool: Fansmetrics.com.",
-    "url": "https://fansmetrics.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/fansmetrics-com.md"
   },
   {
     "id": "fanspedia-net",
@@ -61477,52 +61379,6 @@
     "_file": "library/tools/domains-ip-infrastructure/apnic.md"
   },
   {
-    "id": "appsumo-content-analyzer",
-    "name": "AppSumo Content Analyzer",
-    "description": "Enter the name of the domain and find out for free its three most popular publications in social networks (for six months, a quarter, a month, or the last day)",
-    "url": "https://app.buzzsumo.com/content/web",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "buzz-sumo",
-      "buzzsumo"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/appsumo-content-analyzer.md"
-  },
-  {
     "id": "apt-groups-and-operations",
     "name": "APT Groups and Operations",
     "description": "OSINT tool: APT Groups and Operations.",
@@ -61561,41 +61417,53 @@
   {
     "id": "aptnotes",
     "name": "APTnotes",
-    "description": "APT research and threat analysis",
+    "description": "Use when you have a `domain`, `ip-address` or threat-actor name and want to check it against a curated public archive of APT campaign reports — returns links to analyst reports mentioning that indicator.",
     "url": "https://github.com/aptnotes/data",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "APT research and threat analysis",
-    "input": "Search APT campaign documents",
-    "output": "Threat reports and analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Looking up whether an indicator/domain/actor appears in the public corpus of vendor APT reports.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (public GitHub repository of report metadata/links).",
     "opsec": "passive",
-    "opsecNote": "Passive access to public threat research",
+    "opsecNote": "You browse or clone a static public GitHub dataset — no query is sent to any target. Fetching the linked source reports from third-party vendor sites is likewise passive; nothing you do here touches the actor or infrastructure being researched.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-curated index of publicly released APT reports; the index is well-known, but each linked report's authority is the original vendor's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "apt notes",
+      "aptnotes data"
+    ],
+    "tags": [
+      "threat-intel",
+      "apt-reports",
+      "dataset"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/aptnotes.md"
   },
   {
@@ -66942,42 +66810,51 @@
   {
     "id": "domain-investigation-toolbox",
     "name": "Domain Investigation Toolbox",
-    "description": "gather information about domain with 41 online tools from one page.",
+    "description": "Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links out to registration data, related domains and contact info.",
     "url": "http://cipher387.github.io/domain_investigation_toolbox/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting one domain into 40+ investigation tools from a single page without hunting for each URL.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The launchpad page is free; a few of the destination tools it links (e.g. DomainTools) have paid tiers, most are free.",
+    "opsec": "passive",
+    "opsecNote": "The toolbox page itself is a static list of links and runs nothing. OpSec depends on the destination you click — WHOIS/DNS lookups are passive, but each linked service sees the domain you submit. Assume the domain is disclosed to whichever tool you open.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Curated by OSINT researcher cipher387 (Cyber Detective); a hand-maintained link hub, so individual destinations may go stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "domain investigation toolbox cipher387"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
+      "domain",
+      "launchpad",
+      "link-hub"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domain-investigation-toolbox.md"
   },
   {
@@ -71081,41 +70958,56 @@
   {
     "id": "hostintel-keithjjones-github",
     "name": "hostintel - keithjjones Github",
-    "description": "Host intelligence gathering",
+    "description": "Use when you have an `ip-address` or `domain` and want to bulk-enrich it against many reputation/geolocation feeds at once — returns geolocation, resolved hosts, and threat-reputation data as CSV.",
     "url": "https://github.com/keithjjones/hostintel",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Host intelligence gathering",
-    "input": "IP, FQDN, or domain name",
-    "output": "Intelligence data in CSV format",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Bulk host enrichment — feed a list of IPs/domains and get a merged CSV of geo, DNS and reputation from several sources.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (CC BY-SA 4.0). You supply your own free-tier API keys for the sources you enable.",
     "opsec": "passive",
-    "opsecNote": "Local tool for passive host analysis",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Enrichment queries third-party reputation APIs, not the target host, so the target host itself is not touched. But every IP/domain you submit is disclosed to VirusTotal, Shodan, Censys, PassiveTotal, OTX, ISC, etc.; use dedicated research API keys not tied to your identity, and assume those providers log your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Independent open-source project by security researcher Keith J. Jones; ~150 commits, no formal releases. Read the code before running.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "hostintel",
+      "keithjjones hostintel"
+    ],
+    "tags": [
+      "host-enrichment",
+      "threat-intel",
+      "csv"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/hostintel-keithjjones-github.md"
   },
   {
@@ -80603,43 +80495,54 @@
   {
     "id": "pydork",
     "name": "PyDork",
-    "description": "Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge(!) number of options for customizing search results.",
+    "description": "Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yahoo Japan — returns result URLs, domains and matching images from multiple engines at once.",
     "url": "https://github.com/blacknon/pydork",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Scripted, multi-engine search/dorking and image search from the CLI or as a Python library.",
     "selectorsIn": [
+      "name",
+      "username",
       "domain",
       "image"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). No API keys — it scrapes the engines' web results directly.",
+    "opsec": "active",
+    "opsecNote": "Because it scrapes search engines rather than using official APIs, your IP issues automated queries that engines can rate-limit or CAPTCHA. Use a proxy/VPN and modest result counts; the targets you search are only disclosed to the search engines, not to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Community Python project (blacknon); scraper-based, so it breaks when engines change markup or throttle.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "py-dork"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "dorking",
+      "search-automation",
+      "image-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/pydork.md"
   },
   {
@@ -81090,41 +80993,60 @@
   {
     "id": "recon-ng",
     "name": "Recon-ng",
-    "description": "Modular web recon, API-driven data collection",
+    "description": "Use when you have a `domain`, `employer-org`, `email` or `ip-address` and want a scripted, modular framework to harvest hosts, subdomains, contacts and breach data — returns domains, ip-addresses, names, emails and social-profiles into a stored workspace.",
     "url": "https://github.com/lanmaster53/recon-ng",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Modular web recon, API-driven data collection",
-    "input": "Domain, company name, email, IP",
-    "output": "Contacts, hosts, credentials, ports via module-specific results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reproducible, workspace-based web recon that chains many API-driven modules over a domain or organisation.",
+    "selectorsIn": [
+      "domain",
+      "employer-org",
+      "email",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "email",
+      "name",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source. Core is free; several marketplace modules need free/paid third-party API keys stored in recon-ng's key store.",
     "opsec": "passive",
-    "opsecNote": "Queries third-party APIs and data sources. Does not probe the target unless specific modules are configured to do so.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Most modules pull from third-party APIs and datasets rather than probing the target directly, so the target host usually isn't touched — but each module discloses your selectors to services like Shodan, HIBP, Hunter, Censys, etc., which log queries. Use dedicated research keys and a controlled IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "Long-standing, widely used framework by Tim Tomes (lanmaster53); a de-facto standard taught in recon/pentest training.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "reconng",
+      "recon-ng framework"
+    ],
+    "tags": [
+      "recon-framework",
+      "subdomains",
+      "osint-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/recon-ng.md"
   },
   {
@@ -107754,40 +107676,6 @@
     "_file": "library/tools/financial-crypto/coinwink-com.md"
   },
   {
-    "id": "covi-analytics",
-    "name": "CoVi Analytics",
-    "description": "OSINT tool: CoVi Analytics.",
-    "url": "https://www.covianalytics.com/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/covi-analytics.md"
-  },
-  {
     "id": "cryptocompare-com",
     "name": "cryptocompare.com",
     "description": "Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextualise on-chain findings — returns pricing and market metadata, not identity.",
@@ -111515,40 +111403,6 @@
     "lastVerified": "2026-06-13",
     "enrichment": "full",
     "_file": "library/tools/geolocation/atlasify.md"
-  },
-  {
-    "id": "automated-transcription-for-radio-stations",
-    "name": "Automated transcription for radio stations",
-    "description": "OSINT tool: Automated transcription for radio stations.",
-    "url": "https://sonix.ai/radio-stations",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/automated-transcription-for-radio-stations.md"
   },
   {
     "id": "average-gamma-dose-rate-map",
@@ -171694,46 +171548,6 @@
     "_file": "library/tools/opsec-investigator-tooling/ebay-auctionsniper-app-mobile-android.md"
   },
   {
-    "id": "echofon",
-    "name": "Echofon",
-    "description": "Website offering analytical capabilities of Twitter content",
-    "url": "http://www.echofon.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/echofon.md"
-  },
-  {
     "id": "edge",
     "name": "Microsoft Edge",
     "description": "Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser for compartmentalised OSINT sessions.",
@@ -174589,49 +174403,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-docs-voice-comments.md"
-  },
-  {
-    "id": "google-forum-search",
-    "name": "Google Forum Search",
-    "description": "Firefox browser add-on that allows for Google Forum Search",
-    "url": "https://addons.thunderbird.net/en-us/firefox/addon/google-forum-search/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thunderbird"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/google-forum-search.md"
   },
   {
     "id": "google-guide-to-removing-content-from-google",
@@ -322675,28 +322446,29 @@
   {
     "id": "reddit-enhancement-suite-firefox",
     "name": "Reddit Enhancement Suite (Firefox)",
-    "description": "Firefox add-on enhancing the Reddit browsing experience.",
+    "description": "Use when you are working a `username` on Reddit and want persistent per-user tagging, inline history and never-ending browsing — returns an annotated, easier-to-mine view of a subject's Reddit social-profile.",
     "url": "https://addons.mozilla.org/enGB/firefox/addon/reddit-enhancement-suite",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Power-user Reddit browsing with tagging and history",
+    "bestFor": "Power-user Reddit investigation — tag users, expand context and scroll continuously while reviewing a subject's account.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source browser extension (community-maintained).",
+    "opsec": "passive",
+    "opsecNote": "RES only enhances how your browser renders Reddit; it makes no queries beyond your normal browsing and adds no extra observable footprint. Standard sock-puppet hygiene still applies — browse a target's profile from a research browser/account, not your personal one, since Reddit still sees your session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely used open-source extension listed on Mozilla's official add-ons store.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -322705,15 +322477,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RES",
+      "reddit enhancement suite"
+    ],
     "tags": [
       "reddit",
       "browser-enhancement",
       "firefox"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-enhancement-suite-firefox.md"
   },
   {

@@ -432,7 +432,7 @@ kind: group-index
 - **`reddit-comment-search`** (high) — Use when you have a Reddit `username` and want to keyword-search that user's entire comment history — returns matching comments (social-prof
 - **`reddit-downloader`** (medium) — Use when you have a Reddit `username` or subreddit and want to bulk-archive its media/posts — returns downloaded `image`s/videos and post `s
 - **`reddit-enhancement-suite-chrome`** (low) — Use when you are analyzing a Reddit `username` and want power-user tools — returns inline user tagging, account-age/karma visibility, and fa
-- **`reddit-enhancement-suite-firefox`** (low) — Firefox add-on enhancing the Reddit browsing experience.
+- **`reddit-enhancement-suite-firefox`** (low) — Use when you are working a `username` on Reddit and want persistent per-user tagging, inline history and never-ending browsing — returns an 
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t

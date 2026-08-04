@@ -18,7 +18,6 @@ kind: group-index
 - **`a1-website-download`** (low) — Use when you have a `domain`/URL and want a complete offline mirror of a site for preservation and analysis — returns document-id, image, me
 - **`adium`** (low) — OSINT tool: Adium.
 - **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
-- **`aeon`** (low) — OSINT tool: Aeon.
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
@@ -161,7 +160,6 @@ kind: group-index
 - **`highcharts`** (low) — Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT da
 - **`hive-ai-generated-content-detection`** (low) — Use when you have an `image`, video, or audio and want to test if it's AI-generated/deepfake — returns confidence scores and likely generato
 - **`hohli`** (low) — OSINT tool: Hohli.
-- **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
 - **`hotspot-shield`** (low) — Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool tha
 - **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
 - **`html-editor`** (low) — Use when you have raw or scraped HTML and want to view/clean/preview it — a free online WYSIWYG+source editor for inspecting markup and conv
@@ -279,7 +277,7 @@ kind: group-index
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
 - **`plotly`** (low) — OSINT tool: Plotly.
 - **`preceden`** (low) — OSINT tool: Preceden.
-- **`prism`** (low) — OSINT tool: PRISM.
+- **`prism`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and buil
 - **`privacy-badger`** (low) — Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a def
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
 - **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-

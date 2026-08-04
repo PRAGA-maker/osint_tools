@@ -27,7 +27,6 @@ kind: group-index
 - **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p
 - **`fansearch`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a subject's OnlyFans creator profile — returns a `social-profile` 
 - **`fanslist-com`** (medium) — Use when you have a `username` or `name` and want to find a matching OnlyFans creator profile — returns the creator's `social-profile` and l
-- **`fansmetrics-com`** (low) — OSINT tool: Fansmetrics.com.
 - **`fanspedia-net`** (low) — Use when you have a `username`, creator name or location and want to check a third-party OnlyFans directory for a matching creator profile —
 - **`farmers-only`** (low) — Use when a subject has a rural/agricultural background and you want to check for a profile on this US niche dating site by `username` or `im
 - **`fikfap-com`** (medium) — Use when you have a `username` and want to check for a subject's presence on this adult short-video platform — returns `social-profile`, `im

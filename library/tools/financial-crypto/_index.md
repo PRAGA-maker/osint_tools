@@ -45,7 +45,6 @@ kind: group-index
 - **`coinmap`** (low) — Use when you have a `geolocation`/area and want to see businesses and ATMs that accept cryptocurrency there — returns mapped `address` point
 - **`coinmarketcap`** (low) — Use when you have a crypto asset name/symbol (or a token from a `crypto-wallet` trace) and want to identify and value it — returns market da
 - **`coinwink-com`** (low) — Use when you're tracking a crypto asset relevant to a case and want to be alerted on price moves without watching charts — returns email/Tel
-- **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
 - **`cryptocompare-com`** (low) — Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextu
 - **`cryptocurrency-search-tool`** (low) — Use when you have a `crypto-wallet` address (or tx/block id) and want its history and web mentions — returns transaction history, balance, a
 - **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
