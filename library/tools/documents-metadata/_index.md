@@ -64,7 +64,7 @@ kind: group-index
 - **`de-digger`** (low) — Use when you have a `name`, keyword, or filename and want publicly shared Google Drive files about a subject — returns links to exposed docu
 - **`designcrowd`** (low) — Graphic design outsourcing website
 - **`dictation-online-dictation-tool`** (low) — Use when you have audio/video and want a quick free browser transcription to text — a speech-to-text utility for turning spoken evidence int
-- **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
+- **`diffnow-com`** (low) — Use when you have two documents, code files, or web pages and want to spot exactly what changed between them — returns a highlighted side-by
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies

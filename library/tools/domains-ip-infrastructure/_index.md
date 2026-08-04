@@ -140,7 +140,7 @@ kind: group-index
 - **`dorks-hunter`** (low) — Use when you have a `domain` and want to auto-run a battery of Google dorks against it — returns exposed URLs, documents, login pages and er
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
 - **`dpulse`** (low) — Use when you have a `domain` and want an all-in-one recon pass with a written report — enumerates subdomains, IPs, emails, and infrastructur
-- **`drishti`** (low) — Nodejs toolkit for OSINT
+- **`drishti`** (low) — Use when you have a `domain`, `ip-address`, or Instagram handle and want a quick all-in-one recon dump — returns DNS, reverse-IP, ports, hea
 - **`dumpsterdiver`** (low) — Use when you have a `domain`'s file dump / repo / large dataset and want to surface hardcoded secrets (keys, passwords) via entropy analysis
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
@@ -177,7 +177,6 @@ kind: group-index
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
 - **`google-universal-dork-builder`** (low) — Use when you have a `domain`/target and want to quickly assemble advanced search-operator "dork" queries for Google/Bing/Yandex — returns cr
 - **`gotanda`** (low) — Use when you have a `domain`, `ip-address` or URL on a web page and want to pivot it across many OSINT engines from a right-click menu — ret
-- **`graphystories`** (low) — OSINT tool: GraphyStories.
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`hacker-target`** (medium) — Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hos
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 

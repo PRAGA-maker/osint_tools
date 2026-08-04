@@ -83,7 +83,6 @@ kind: group-index
 - **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.
 - **`flickr-common-map`** (medium) — Use when you have an old/undated `image` or a `geolocation` and want to browse geotagged Flickr Commons archive photos for that place to hel
 - **`foursquare`** (high) — Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address
-- **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
 - **`freedomhouse-org`** (low) — Use when you have a `geolocation` (country) and want its political-rights and civil-liberties context — returns freedom scores and country-l
 - **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
 - **`frontex-migratory-map`** (medium) — Use when you need irregular-migration route context (`geolocation`) for a region — returns aggregate detected-border-crossing figures by rou
@@ -133,7 +132,6 @@ kind: group-index
 - **`historic-aerials`** (high) — Use when you have a `geolocation`/`address` and need decades of historical aerial photos and topo maps to see how a site changed over time.
 - **`hivemapper`** (medium) — Use when you have a `geolocation` and want recent crowdsourced/dashcam street-level imagery, sometimes fresher than Google Street View.
 - **`hong-kong-traffic-data-and-cams`** (low) — Use when you have a `geolocation` in Hong Kong and want live roadside conditions — returns traffic-camera snapshots and congestion data on a
-- **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
 - **`hungermap`** (low) — Use when you have a `geolocation` (country/region) and want live food-security, conflict and hazard context for it — returns situational `ge
 - **`huntel-io`** (medium) — Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts 
 - **`i-see-you-iseeyou`** (medium) — Use when you can get a target to click a link in an AUTHORIZED engagement and want their precise `geolocation` — returns HTML5 GPS coordinat

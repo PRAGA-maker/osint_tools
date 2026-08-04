@@ -22,7 +22,6 @@ kind: group-index
 - **`imgur-album-downloader`** (low) — Use when you have an Imgur `social-profile`/album link and want to bulk-save every image for offline evidence — returns `image` files plus a
 - **`link-gopher`** (low) — Use when you have a page open and want every link and unique domain on it extracted at once — returns a de-duplicated list of URLs and domai
 - **`loader-to`** (low) — OSINT tool: Loader.to.
-- **`media-downloader-net`** (low) — OSINT tool: Media-downloader.net.
 - **`megatools`** (low) — Use when you have a MEGA.nz link or account and want to list/download its contents from the command line — returns the downloaded files (lea
 - **`online-tool-to-extract-links-from-any-web-page`** (low) — Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subje
 - **`page-links-extractor-tool`** (low) — Use when you have a `domain`/URL and want every hyperlink on that page pulled out — returns a list of internal and external links (further d

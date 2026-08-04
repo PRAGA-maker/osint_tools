@@ -23,7 +23,7 @@ kind: group-index
 - **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
 - **`alt-com`** (medium) — Use when you have a `username`, `email`, or location and want to check for an adult/BDSM dating profile — returns a member `social-profile` 
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
-- **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
+- **`american-archive-of-public-broadcasting`** (low) — Use when you have a `name`, place, topic, or date and want to find historic US public radio/TV footage — returns archived programs that may 
 - **`analystforum-com`** (medium) — Use when you have a `username` and want to trace a finance/CFA-candidate's forum footprint — returns `social-profile`, reused `username` and
 - **`answers-com`** (low) — Use when you want to search a large user-generated Q&A corpus for context on a term, place or topic — returns crowd-written answers (low aut
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co

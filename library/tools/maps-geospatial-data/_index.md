@@ -116,7 +116,7 @@ kind: group-index
 - **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora
 - **`uk-onshore-oil-and-gas-activity`** (medium) — Use when you have a `geolocation`/`address` in Great Britain and want to know the petroleum licences, wells and operators active there — ret
 - **`ukraine-war-map-heatmap`** (low) — Use when you have a `geolocation` in the Ukraine conflict zone and want to see control/activity over time — returns a time-animated map of f
-- **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
+- **`unosat-analyses`** (low) — Use when you have a `geolocation`/place tied to a disaster or conflict and want authoritative satellite-derived damage/situation maps — retu
 - **`us-labor-strike-map`** (medium) — Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an eve
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
 - **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.

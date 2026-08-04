@@ -330,7 +330,6 @@ kind: group-index
 - **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
 - **`text-and-file-hash-calculator`** (low) — Use when you need to compute or verify MD5/SHA hashes of text or a file — to confirm integrity, match a known/blocklisted hash, or fingerpri
 - **`textures-js`** (low) — OSINT tool: Textures.js.
-- **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
 - **`the-fuck`** (low) — Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
@@ -363,7 +362,7 @@ kind: group-index
 - **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — An AI-based service that removes vocals from a song, leaving only the music. It works amazingly well.
 - **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
-- **`voidaccess`** (low) — OSINT tool: VoidAccess.
+- **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
 - **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific

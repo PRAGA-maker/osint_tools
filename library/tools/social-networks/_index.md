@@ -404,7 +404,7 @@ kind: group-index
 - **`picodash`** (high) — Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytic
 - **`pictame`** (high) — Use when you have an Instagram `username` (or hashtag/`name`) and want to view a public profile's posts, photos and tags without logging in 
 - **`picuki`** (high) — Use when you have an Instagram `username` and want to view/download their public posts, stories and profile without logging in — returns `im
-- **`pinterest-guest-firefox-add-on`** (low) — Firefox add-on for browsing Pinterest without an account.
+- **`pinterest-guest-firefox-add-on`** (low) — Use when you have a Pinterest `social-profile`/board and want to browse it without logging in — returns full pin/image access with the login
 - **`pinterest-pin-stats`** (high) — Use when you have a Pinterest `username`/board and want each pin's engagement and creation date to reconstruct activity timing — returns soc
 - **`pixnoy-com`** (high) — Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — re
 - **`pockettube`** (low) — Use when you have a set of YouTube channels (`social-profile`/`username`) to monitor and want them grouped, deduped and watched in one feed 
@@ -670,7 +670,6 @@ kind: group-index
 - **`vk-watch`** (high) — Use when you have a VKontakte `social-profile`/`username` and want the profile's change history — former names, deleted avatars, added/remov
 - **`vk5`** (high) — Use when you have a VKontakte profile (`social-profile` id/URL) and want to surface hidden friends, activity, likes, and photos — returns as
 - **`vsco-co`** (high) — Use when you have a `username` and want to view a person's public photo grid and profile without an account — returns social-profile, images
-- **`watch-frame-by-frame`** (low) — OSINT tool: watch frame by frame.
 - **`watools`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp, grab its profile photo, and (via WA Watcher) track online activity 
 - **`web-stagram-com`** (high) — Use when you have an Instagram `username` and want a web-based public-profile viewer — but the domain no longer resolves, so treat as defunc
 - **`webasha-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a step-by-step methodology (Google dorking, reverse image, s
