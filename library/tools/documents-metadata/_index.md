@@ -107,7 +107,7 @@ kind: group-index
 - **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`fundrazr`** (low) — Use when you have a `name` and want their public crowdfunding campaigns — returns organiser identity, story details, location hints and bene
 - **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
-- **`ghidra`** (low) — Reverse engineering and static malware analysis
+- **`ghidra`** (low) — Use when you have a suspicious executable or `document-id`/binary artifact and want to disassemble and decompile it to recover behaviour, st
 - **`git-hound`** (low) — Use when you have a keyword, `domain`, `employer-org`, or username and want secrets/credentials leaked across public GitHub — returns matchi
 - **`gitdorker`** (low) — Use when you have a `username`, `employer-org`, or `domain` and want secrets/emails/keys exposed across public GitHub — returns `email` and 
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
@@ -223,12 +223,11 @@ kind: group-index
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
 - **`the-time-now`** (low) — Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence an
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
-- **`thedorkbox`** (low) — A collection of Google dorks &amp; OSINT techniques
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
 - **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
-- **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
+- **`truth-or-fiction-search`** (low) — Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-che
 - **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings

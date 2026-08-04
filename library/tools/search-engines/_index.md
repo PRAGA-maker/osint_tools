@@ -72,7 +72,6 @@ kind: group-index
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
 - **`awesome-public-datasets`** (low) — Use when you need a free public dataset on a topic (government, geography, health, social, finance) and want a curated index of where to get
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
-- **`baidu-china`** (low) — OSINT tool: Baidu (China).
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
 - **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
 - **`ballotpedia-united-states`** (medium) — Use when you have a `name` of a US politician, candidate, or public official and want their verified biography, offices held, and campaign/e
@@ -210,7 +209,7 @@ kind: group-index
 - **`fefoo-mega-search`** (medium) — Use when you have a `name` or `username` and want to fire the same query across many search engines and verticals fast — returns social-prof
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
 - **`filepursuit-com`** (low) — Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, an
-- **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
+- **`filesearching`** (low) — Use when you have a filename, keyword, or `document-id` and want to locate it across public FTP servers worldwide, filtered by file type and
 - **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
@@ -603,7 +602,6 @@ kind: group-index
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
 - **`trufflepiggy-context-search`** (low) — Use when you have selected `image` or text on a page and want to fan a lookup out across many search engines/OSINT sites at once — returns `
 - **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
-- **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and ass
 - **`twingly`** (low) — Use when you have a `name`, `username`, or keyword and want broad blog/news/forum (and dark-web) monitoring across many languages — returns 
 - **`ubersuggest`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns estimated traffic, top keywords, and backlink/competitor data for 

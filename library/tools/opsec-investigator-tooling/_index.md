@@ -43,7 +43,7 @@ kind: group-index
 - **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
 - **`apple-music-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`appyparking`** (low) — Mobile device app providing parking information on nearly all controlled parking zones in London United Kingdom
-- **`archstrike`** (low) — OSINT tool: ArchStrike.
+- **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Script that automatically sets up an OSINT workstation on Ubuntu.
 - **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar

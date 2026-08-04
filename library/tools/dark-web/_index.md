@@ -68,7 +68,7 @@ kind: group-index
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
 - **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
-- **`pirate-bay`** (low) — OSINT tool: Pirate Bay.
+- **`pirate-bay`** (low) — Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public to
 - **`pitch`** (low) — OSINT tool: Pitch.
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
 - **`raklet`** (low) — OSINT tool: Raklet.

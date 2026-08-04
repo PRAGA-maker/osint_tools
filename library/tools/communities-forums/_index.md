@@ -230,7 +230,6 @@ kind: group-index
 - **`squarespace`** (low) — Use when you have a `domain` or `username` and want to confirm a personal/business site is Squarespace-hosted and mine it for owner contact 
 - **`stackexchange`** (low) — Use when you have a `username` or `name` and want to find the person's Q&A activity across the Stack Exchange network — returns a linked `so
 - **`subreddits-org`** (low) — Use when you have a topic or `name`/keyword and want to find the relevant Reddit communities to monitor — returns matching subreddits as `so
-- **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.
 - **`svbtle`** (medium) — Use when you have a `username` and want to find a subject's minimalist blog on the Svbtle network — returns `social-profile`, long-form post
 - **`sympsons-screencaps-search`** (low) — Use when you have a quote or a suspected Simpsons `image`/meme and want to source the exact frame — returns the matching screenshot, episode

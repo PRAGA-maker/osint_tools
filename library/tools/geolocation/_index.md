@@ -268,7 +268,6 @@ kind: group-index
 - **`the-meddin-bike-sharing-world-map`** (low) — Use when you have a `geolocation` and want to identify the bike-share system, operator, and station layout there — returns local bikeshare d
 - **`the-painted-planet`** (low) — Use when you have a `geolocation` and want artworks depicting that place — returns landscape/cityscape paintings (from Wikidata) tied to the
 - **`the-webcam-network`** (low) — Use when you have a place or `geolocation` and want public live webcams at or near it — returns nearby camera feeds to visually confirm a lo
-- **`thingful`** (low) — OSINT tool: thingful.
 - **`time-is`** (medium) — Use when you have a `geolocation` (a city, place, or timezone) and want the exact current local time, UTC offset, and DST state there — retu
 - **`timeanddate-com`** (medium) — Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o

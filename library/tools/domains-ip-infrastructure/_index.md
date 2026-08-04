@@ -65,7 +65,6 @@ kind: group-index
 - **`analyticsrelationships`** (low) — Use when you have a `domain` and want to find other sites run by the same owner via a shared Google Analytics ID — returns co-owned `domain`
 - **`anubis`** (low) — Use when you have a `domain` and want subdomains aggregated from many sources at once — returns discovered sub`domain`s with optional resolv
 - **`aort`** (low) — Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `doma
-- **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
 - **`api-mylnikov-org`** (low) — Use when you have a WiFi access point's BSSID (`mac-address`) and want its physical location — a free API that returns `geolocation` (lat/lo
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
@@ -166,7 +165,7 @@ kind: group-index
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
 - **`ghost-eye`** (low) — Use when you have a `domain` or `ip-address` and want a menu-driven recon sweep — returns WHOIS, DNS, open ports, CMS, and `geolocation`.
-- **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
+- **`gitgot`** (low) — Use when you have an `employer-org` or `domain` and want to sweep public GitHub for leaked secrets tied to it — returns exposed `email` and 
 - **`gitgraber`** (low) — Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials 
 - **`go-dork`** (low) — Use when you have a `domain` (or a dork query) and want to automate Google/Bing/etc. dorking from the CLI — returns matching URLs and `domai
 - **`goblyn`** (low) — Use when you have a `domain` and want the metadata inside its exposed files — enumerates directories/files and extracts EXIF/document `metad
@@ -235,7 +234,7 @@ kind: group-index
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
 - **`iptools-robot`** (low) — Use when you have a `domain` or `ip-address` and want a one-message Telegram bot to return whois, DNS, SSL, open ports, geolocation, threat 
 - **`ipvoid`** (low) — Use when you have an ip-address or domain and want reputation, geolocation, blacklist status, WHOIS and DNS details in one place — returns g
-- **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
+- **`iqwhois`** (low) — Use when you have a `name`, `address`, `phone`, `email`, or `employer-org` and want to reverse-search WHOIS records for domains registered w
 - **`ismalicious`** (low) — Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+
 - **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or

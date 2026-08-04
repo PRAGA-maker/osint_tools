@@ -11527,42 +11527,6 @@
     "_file": "library/tools/ai-analysis-automation/osint-automation/osrframework.md"
   },
   {
-    "id": "ossec",
-    "name": "OSSEC",
-    "description": "OSINT tool: OSSEC.",
-    "url": "https://ossec.github.io",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/ossec.md"
-  },
-  {
     "id": "outwit",
     "name": "OutWit Hub",
     "description": "Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages into tables/exports; a free Light edition covers small jobs.",
@@ -35136,42 +35100,6 @@
     "_file": "library/tools/communities-forums/subreddits-org.md"
   },
   {
-    "id": "subzin-com",
-    "name": "Subzin.com",
-    "description": "by one phrase will find the movie, as well as the full text of the dialogue with the timing",
-    "url": "http://www.subzin.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Movies"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/subzin-com.md"
-  },
-  {
     "id": "suggest-me-a-subreddit",
     "name": "Suggest me a subreddit",
     "description": "Subreddit recommendation tool.",
@@ -40898,43 +40826,50 @@
   {
     "id": "pirate-bay",
     "name": "Pirate Bay",
-    "description": "OSINT tool: Pirate Bay.",
+    "description": "Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public torrent index — returns `social-profile`-style upload footprints.",
     "url": "http://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a known uploader username into its full torrent-upload catalogue and timing/activity pattern.",
     "selectorsIn": [
-      "username",
-      "email"
+      "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public torrent index; no account required to browse or search.",
+    "opsec": "active",
+    "opsecNote": "Reach it through Tor (the .onion address) or a VPN — the clearnet mirrors are blocked in many countries and log visitors. Browsing/searching leaks nothing to the target, but downloading a torrent broadcasts your IP to the swarm; stay at the metadata/browse layer for OSINT and never open magnet links from your real IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous, unofficial torrent index with rotating domains and mirrors; listings are user-submitted and unverified, and phishing clones are common — confirm you're on a known-good mirror.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TPB",
+      "ThePirateBay"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "torrents"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/pirate-bay.md"
   },
   {
@@ -51762,40 +51697,53 @@
   {
     "id": "ghidra",
     "name": "Ghidra",
-    "description": "Reverse engineering and static malware analysis",
+    "description": "Use when you have a suspicious executable or `document-id`/binary artifact and want to disassemble and decompile it to recover behaviour, strings, and embedded indicators — returns human-readable pseudo-code and static IOCs.",
     "url": "https://github.com/NationalSecurityAgency/ghidra",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "Reverse engineering and static malware analysis",
-    "input": "Executable files (ELF, PE, Mach-O, raw binaries), multiple architectures",
-    "output": "Disassembly, decompiled code, control flow graphs, function analysis, custom scripts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Static reverse engineering of unknown executables and malware to extract embedded strings, URLs, and behavioural logic offline.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (NSA Research Directorate). No licence fee, no account. Only cost is a local JDK 21 install.",
     "opsec": "passive",
-    "opsecNote": "Local desktop application; no file uploads; open-source from NSA",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Fully local desktop analysis — nothing is uploaded, so the sample's author gets no callback (unlike online sandboxes). Analyse malware only in an isolated VM; opening a binary in Ghidra is safe (it doesn't execute the code) but handling the sample file itself is not.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by the NSA and released open-source; source is public and widely audited by the security community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NSA Ghidra",
+      "ghidra SRE"
+    ],
+    "tags": [
+      "reverse-engineering",
+      "malware-analysis",
+      "binary"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/ghidra.md"
   },
   {
@@ -58612,46 +58560,6 @@
     "_file": "library/tools/documents-metadata/the-time-zone-converter.md"
   },
   {
-    "id": "thedorkbox",
-    "name": "thedorkbox",
-    "description": "A collection of Google dorks &amp; OSINT techniques",
-    "url": "https://github.com/cybersafeblr/thedorkbox",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/thedorkbox.md"
-  },
-  {
     "id": "thexifer-net",
     "name": "thexifer.net",
     "description": "Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded `geolocation`.",
@@ -58878,24 +58786,29 @@
   {
     "id": "truth-or-fiction-search",
     "name": "Truth Or Fiction Search",
-    "description": "Information on scams, fraud, fake news, myths, and misinformation articles",
+    "description": "Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-check articles with sourcing and verdicts.",
     "url": "http://www.truthorfiction.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying viral claims, chain messages, scams, and misinformation against an existing fact-check archive.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; a \"Support Us\" subscription is optional and does not gate the fact-checks.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You're reading a public fact-check archive, not querying anything about a subject, so nothing is exposed to a target. Searches go to the site's own server; use a sock-puppet browser if you don't want the site associating queries with you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent fact-checking outlet with bylined, sourced articles; a secondary source — corroborate its verdicts against primary evidence and other fact-checkers.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58904,18 +58817,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TruthOrFiction",
+      "Truth or Fiction?"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "fact-check",
+      "misinformation",
+      "scams"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "truth-or-fiction"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/truth-or-fiction-search.md"
   },
   {
@@ -61113,47 +61027,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aort.md"
-  },
-  {
-    "id": "api-domaindumper",
-    "name": "API Domaindumper",
-    "description": "An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each domain zone on a given day (since January 1, 1990)",
-    "url": "https://api.domaindumper.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Databases of domains"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/api-domaindumper.md"
   },
   {
     "id": "api-mylnikov-org",
@@ -69114,50 +68987,57 @@
   {
     "id": "gitgot",
     "name": "GitGot",
-    "description": "Semi-automated Git repository auditing for secrets.",
+    "description": "Use when you have an `employer-org` or `domain` and want to sweep public GitHub for leaked secrets tied to it — returns exposed `email` and `password`/credential material.",
     "url": "https://github.com/BishopFox/GitGot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Auditing GitHub repos for exposed sensitive information",
+    "bestFor": "Rapidly triaging public GitHub/gist search hits for a company or domain to surface leaked credentials and contact data.",
     "selectorsIn": [
       "employer-org",
       "domain"
     ],
     "selectorsOut": [
       "email",
-      "metadata-exif"
+      "password"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source (BishopFox). You supply your own free GitHub personal access token; GitHub's code-search API has no per-search charge.",
+    "opsec": "passive",
+    "opsecNote": "Searches only public GitHub content, so the target is not alerted. However, every query runs under YOUR authenticated GitHub token and is logged by GitHub — use a dedicated research account, never your primary identity, and don't clone/download leaked secrets you find.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool from Bishop Fox, a well-known offensive-security firm; ~1.6k stars, still receiving commits. Code is auditable but community-maintained, not a hosted service with guarantees.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jsluice"
+    ],
+    "aliases": [
+      "BishopFox GitGot",
+      "GitGot secret scanner"
+    ],
     "tags": [
       "github",
       "secrets",
       "auditing"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "jsluice"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/gitgot.md"
   },
   {
@@ -74319,43 +74199,59 @@
   {
     "id": "iqwhois",
     "name": "IQWhois",
-    "description": "Search whois data by address, city, name, surname, phonenumber",
+    "description": "Use when you have a `name`, `address`, `phone`, `email`, or `employer-org` and want to reverse-search WHOIS records for domains registered with those details — returns matching `domain`s and their full registrant records.",
     "url": "https://iqwhois.com/advanced-search",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse WHOIS — finding every domain a person or organisation registered, pivoting from personal details rather than a domain name.",
     "selectorsIn": [
-      "domain"
+      "name",
+      "email",
+      "phone",
+      "address",
+      "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "domain"
+      "domain",
+      "email",
+      "phone",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Advanced multi-field search is usable with a free account; bulk WHOIS-database and WHOIS-history downloads are separate paid products. Free-tier results and quotas are capped.",
+    "opsec": "passive",
+    "opsecNote": "You query IQWhois's own historical WHOIS index, not the target's infrastructure, so the subject is never contacted or alerted. You do reveal your search terms to IQWhois and must create an account, so register with a research identity, not your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party aggregator of historical WHOIS data; useful but data can be stale (registrant privacy/redaction post-GDPR) and completeness is not guaranteed — corroborate hits against live WHOIS.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "IQ Whois",
+      "iqwhois advanced search"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Databases of domains"
+      "whois",
+      "reverse-whois",
+      "domains"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/iqwhois.md"
   },
   {
@@ -124120,43 +124016,6 @@
     "_file": "library/tools/geolocation/the-webcam-network.md"
   },
   {
-    "id": "thingful",
-    "name": "thingful",
-    "description": "OSINT tool: thingful.",
-    "url": "http://www.thingful.net/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thingful-net"
-    ],
-    "_file": "library/tools/geolocation/thingful.md"
-  },
-  {
     "id": "time-is",
     "name": "time.is",
     "description": "Use when you have a `geolocation` (a city, place, or timezone) and want the exact current local time, UTC offset, and DST state there — returns time/timezone context you can use to reason about photo timestamps, alibis, or when a subject is likely awake.",
@@ -168370,37 +168229,46 @@
   {
     "id": "archstrike",
     "name": "ArchStrike",
-    "description": "OSINT tool: ArchStrike.",
+    "description": "Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, not a per-selector lookup.",
     "url": "https://archstrike.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Standing up a hardened Arch-based workstation stocked with pentest and OSINT packages for investigative work.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source — a package repository plus a live/install ISO; no licence or account.",
+    "opsec": "passive",
+    "opsecNote": "This is your own analysis environment, not a query against a target, so it leaks nothing to a subject. OpSec value is on your side — run investigations from a dedicated, disposable ArchStrike VM rather than your daily machine, and route traffic through a VPN/Tor as your engagement requires.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Community-run Arch Linux security repository; actively maintained (recent package updates) but a volunteer project — verify package signatures and pull only from official mirrors.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ArchStrike Linux",
+      "Arch Strike"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "linux-distro",
+      "security-toolkit",
+      "pentest"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/archstrike.md"
   },
   {
@@ -264416,53 +264284,6 @@
     "_file": "library/tools/search-engines/general-search/baidu.md"
   },
   {
-    "id": "baidu-china",
-    "name": "Baidu (China)",
-    "description": "OSINT tool: Baidu (China).",
-    "url": "http://www.baidu.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "baidu",
-      "baidu-com",
-      "baidu-image-search",
-      "baidu-image-search-2",
-      "baidu-images",
-      "baidu-maps",
-      "baidu-translate",
-      "baiduknows-search-engine-china",
-      "baike-baidu-chinese-language"
-    ],
-    "_file": "library/tools/search-engines/baidu-china.md"
-  },
-  {
     "id": "baiduknows-search-engine-china",
     "name": "Baidu Zhidao (Baidu Knows)",
     "description": "Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns questions/answers with handles and self-disclosed detail.",
@@ -271581,41 +271402,51 @@
   {
     "id": "filesearching",
     "name": "Filesearching",
-    "description": "old FTP servers search engine with filter by top-level domain name and filetype",
+    "description": "Use when you have a filename, keyword, or `document-id` and want to locate it across public FTP servers worldwide, filtered by file type and top-level domain — returns direct file/host locations.",
     "url": "https://filesearching.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding specific files (documents, media, archives) exposed on public FTP servers, scoped by filetype and country TLD.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to search; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You search Filesearching's own index of FTP servers, so the file's owner isn't notified by the search. Connecting to a discovered FTP host to download, however, reveals your IP to that server — use a VPN and a disposable client if you retrieve anything.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-standing Russian FTP search engine (aka FileSearch.ru); index age and coverage are uncertain and it intermittently blocks automated access, so treat results as leads to confirm by connecting to the host.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "FileSearch.ru",
+      "filesearching.com"
+    ],
     "tags": [
-      "Search engines",
-      "Filesharing Search Engines"
+      "ftp-search",
+      "file-search",
+      "documents"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "filesearch-ru"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/filesearching.md"
   },
   {
@@ -292855,43 +292686,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/trulia-united-states.md"
-  },
-  {
-    "id": "truth-or-fiction",
-    "name": "Truth or Fiction",
-    "description": "OSINT tool: Truth or Fiction.",
-    "url": "https://www.truthorfiction.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "truth-or-fiction-search"
-    ],
-    "_file": "library/tools/search-engines/truth-or-fiction.md"
   },
   {
     "id": "tviv",
