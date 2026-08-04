@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/host-port-discovery
 
 ## Skills here
-- **`internet-census-search`** (low) — Search open services and devices
+- **`internet-census-search`** (low) — Use when you have an `ip-address` or port and want to see what services it exposed in the 2012 IPv4-wide scan — returns historical open-serv
 - **`nmap`** (low) — Use when you have a `domain`/`ip-address` and want its open ports, services and OS — the canonical port scanner returning live hosts, `ip-ad
 - **`online-port-scanner`** (low) — Use when you have an `ip-address` or `domain` and want to enumerate open ports and exposed services from a browser without installing Nmap —
 

@@ -55,7 +55,7 @@ kind: group-index
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
 - **`linguee-english-french-dictionary`** (low) — Use when you have foreign-language text (a `name`, post, or document snippet) and want an accurate translation shown with real bilingual exa
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
-- **`meowni-ca`** (low) — OSINT tool: meowni.ca.
+- **`meowni-ca`** (low) — Use when you have text and want a quick English-to-emoji rendering (or to reason about emoji substitutions) — returns an emoji-ified version
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s

@@ -191,7 +191,7 @@ kind: group-index
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`postach-io`** (medium) — Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` a
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
-- **`proboards`** (low) — OSINT tool: ProBoards.
+- **`proboards`** (low) — Use when you have a `username`, `name`, or topic and want to find hosted community forums and member profiles across the largest free forum 
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re
 - **`quora`** (low) — Use when you have a `name`/`username` and want a subject's Quora presence — returns social-profile, stated employer/education, interests, an
 - **`r-opendirectories`** (low) — Use when you want to find publicly-exposed open web directories (files, media, dumps) — returns links to open directories others have discov

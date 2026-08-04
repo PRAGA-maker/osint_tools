@@ -407,7 +407,6 @@ kind: group-index
 - **`unshorten-me`** (low) — Use when you have a shortened link (bit.ly, t.co, goo.gl, tinyurl, etc.) and want to see its real destination without clicking it — returns 
 - **`urlhaus`** (low) — Use when you have a `domain`/URL, host or `ip-address` and want to know if it distributes malware — returns malicious URLs, payloads and hos
 - **`urlvoid`** (low) — Use when you have a `domain`/URL and want its reputation across 30+ blocklists plus basic hosting info — returns domain, ip-address and repu
-- **`urlxray`** (low) — OSINT tool: Urlxray.
 - **`uscrapper`** (low) — Use when you have a `domain`/URL and want contact details harvested from it — returns `email`s, `phone`s, `social-profile` links, and other 
 - **`user-agent-parser`** (low) — Use when you have a User-Agent string (from logs, headers or a tool config) and want it decoded — returns the device, OS and browser it desc
 - **`validin`** (low) — Use when you have a `domain` or `ip-address` and want deep historical DNS, subdomains, host-response and certificate data to pivot across an

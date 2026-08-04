@@ -335,7 +335,7 @@ kind: group-index
 - **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
 - **`kidsites-com`** (low) — Listing of youth-related websites
 - **`kidsnet-search-engine-australia`** (low) — Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with
-- **`kidtopia`** (low) — Kid-friendly search engine.
+- **`kidtopia`** (low) — Use when you want a teacher-curated, safe-search view of the web on a topic — returns filtered educational results from a Google Custom Sear
 - **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 

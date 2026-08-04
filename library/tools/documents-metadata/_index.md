@@ -102,7 +102,7 @@ kind: group-index
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
 - **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
-- **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
+- **`forensicdots-de`** (low) — Use when you have a scanned printed `document-id` and want to reveal the hidden printer tracking dots (Machine Identification Code) — return
 - **`free-full-pdf`** (low) — Use when you have a subject's `name` or a research topic and want free full-text scientific PDFs they authored — returns document-id, employ
 - **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`fundrazr`** (low) — Use when you have a `name` and want their public crowdfunding campaigns — returns organiser identity, story details, location hints and bene
@@ -214,7 +214,7 @@ kind: group-index
 - **`steghide`** (low) — Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, pl
 - **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
-- **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
+- **`street-drug-slang`** (low) — Use when you have intercepted text/chat and want to decode street-drug slang and code words — returns the DEA's reference mapping of slang t
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`techuk`** (low) — Online organization website providing information on computer and information technology occupations

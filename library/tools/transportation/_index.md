@@ -44,7 +44,7 @@ kind: group-index
 - **`check-any-vin`** (medium) — Use when you have a `vehicle-plate` or `vin` and want the vehicle's make/model/year and spec history — returns vehicle description and VIN-d
 - **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm the vehicle and its status — the official DVLA lookup returns make, model, colour
 - **`check-that-vin-search`** (medium) — Use when you have a `vin` and want the vehicle's NMVTIS title history — returns titling states/dates, brands (salvage/junk/flood), odometer,
-- **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
+- **`chronotrains`** (low) — Use when you have a European city/`geolocation` and want to see everywhere reachable by train within a chosen time — returns an isochrone ma
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Use when you have a UK aircraft registration mark (`vehicle-plate`, e.g. G-ABCD) and want the registered owner — returns owner `name` and `a
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
 - **`collection-of-public-transport-maps`** (low) — Use when you have a `geolocation`/city and want live public-transport tracking maps for it — returns real-time transit vehicle positions and

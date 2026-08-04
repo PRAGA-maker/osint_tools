@@ -33030,41 +33030,54 @@
   {
     "id": "proboards",
     "name": "ProBoards",
-    "description": "OSINT tool: ProBoards.",
+    "description": "Use when you have a `username`, `name`, or topic and want to find hosted community forums and member profiles across the largest free forum platform — returns `social-profile`s and community discussions.",
     "url": "https://www.proboards.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering niche community forums and their public member profiles/posts via the ProBoards directory.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free forum-hosting platform; browsing public forums and the directory needs no account (posting/messaging does).",
+    "opsec": "passive",
+    "opsecNote": "Reading public forums and profiles is passive and doesn't alert members. The moment you register or message a member it becomes active and identity-linked — use a sock-puppet account and never interact from your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, legitimate forum host (3M+ forums, 22M+ users); content is user-generated and unverified, and individual forums may be private or require registration.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Proboards forums",
+      "proboards.com"
+    ],
     "tags": [
-      "forums"
+      "forums",
+      "communities",
+      "user-profiles"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/proboards.md"
   },
   {
@@ -51375,39 +51388,55 @@
   },
   {
     "id": "forensicdots-de",
-    "name": "Forensicdots.de",
-    "description": "find \"yellow dots\" (Machine Identification Code) in printed documents",
+    "name": "ForensicDots (Dotspotter)",
+    "description": "Use when you have a scanned printed `document-id` and want to reveal the hidden printer tracking dots (Machine Identification Code) — returns the printer serial/timestamp fingerprint encoded on the page.",
     "url": "https://www.forensicdots.de/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Detecting and reading the yellow Machine Identification Code dots that colour laser printers embed in printed pages.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool (Dotspotter); donation-supported (PayPal button), no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You upload a scan to their server to analyse it, so the file leaves your machine — never submit a genuinely sensitive/case document to a third-party service; test the technique here, then analyse real evidence with an offline tool. Nothing is sent to the document's author.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Runs by the EFF/academic-documented MIC decoding method; community-maintained project, results should be corroborated with the EFF's own dot-decoding guidance.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Dotspotter",
+      "forensicdots",
+      "Machine Identification Code decoder"
+    ],
     "tags": [
-      "Image Search and Identification",
-      "Exif Analyze and editing"
+      "printer-forensics",
+      "yellow-dots",
+      "machine-identification-code"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/forensicdots-de.md"
   },
   {
@@ -58104,46 +58133,49 @@
   },
   {
     "id": "street-drug-slang",
-    "name": "Street Drug Slang",
-    "description": "DEA intelligence report for slang terms and code words for street drugs",
+    "name": "DEA Drug Slang Terms & Code Words",
+    "description": "Use when you have intercepted text/chat and want to decode street-drug slang and code words — returns the DEA's reference mapping of slang terms to specific drugs.",
     "url": "https://ndews.umd.edu/sites/ndews.umd.edu/files/dea-drug-slang-terms-and-code-words-july2018.pdf",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "A DEA intelligence reference for translating drug slang/code words found in messages, listings, or forum posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public PDF hosted by the University of Maryland's NDEWS; no account, just download and read.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A static reference document you download and consult offline — it queries nothing about any subject and leaks nothing. Purely a lookup aid.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authored by the U.S. Drug Enforcement Administration and rehosted by an academic institution (NDEWS/University of Maryland); authoritative but a 2018 snapshot — slang evolves fast.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DEA drug slang",
+      "drug code words reference"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "reference",
+      "drug-slang",
+      "dea"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "global-terrorism-database",
-      "start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/street-drug-slang.md"
   },
   {
@@ -72255,42 +72287,54 @@
   },
   {
     "id": "internet-census-search",
-    "name": "Internet Census Search",
-    "description": "Search open services and devices",
+    "name": "Internet Census 2012 Search (EXFiLTRATED)",
+    "description": "Use when you have an `ip-address` or port and want to see what services it exposed in the 2012 IPv4-wide scan — returns historical open-service/port records for that host.",
     "url": "https://www.exfiltrated.com/querystart.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "host-port-discovery"
     ],
-    "bestFor": "Search open services and devices",
-    "input": "Service type, IP range, port",
-    "output": "List of exposed services and IPs",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Querying the historical Internet Census 2012 (Carna botnet) dataset for a host's open ports/services as of 2012.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public research front-end over the openly-published Internet Census 2012 dataset; no account.",
     "opsec": "passive",
-    "opsecNote": "Passive data search of known internet census.",
+    "opsecNote": "You query a static 2012 dataset held by exfiltrated.com — you never touch the target host, so scanning it here is completely passive and cannot alert anyone. (The original data itself was collected by an illegal botnet; you're only reading the published archive.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party search over data gathered by the unauthorised Carna botnet; the dataset is a fixed 2012 snapshot of uneven completeness, and the front-end is intermittently available.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "EXFiLTRATED",
+      "Carna botnet census search",
+      "Internet Census 2012"
+    ],
+    "tags": [
+      "historical-scan",
+      "port-scan",
+      "ipv4-census"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/internet-census-search.md"
   },
   {
@@ -87067,47 +87111,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/urlwatch.md"
-  },
-  {
-    "id": "urlxray",
-    "name": "Urlxray",
-    "description": "OSINT tool: Urlxray.",
-    "url": "http://urlxray.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "URL unshorteners"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/urlxray.md"
   },
   {
     "id": "uscrapper",
@@ -126235,40 +126238,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/geolocation/wikishootme.md"
-  },
-  {
-    "id": "wiman",
-    "name": "Wiman",
-    "description": "OSINT tool: Wiman.",
-    "url": "https://www.wiman.me/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/wiman.md"
   },
   {
     "id": "windy",
@@ -278474,24 +278443,29 @@
   {
     "id": "kidtopia",
     "name": "Kidtopia",
-    "description": "Kid-friendly search engine.",
+    "description": "Use when you want a teacher-curated, safe-search view of the web on a topic — returns filtered educational results from a Google Custom Search restricted to vetted sites.",
     "url": "http://www.kidtopia.info",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A pre-filtered, safe subset of the web for topic research where you want only vetted educational sources.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free (donation-supported); it's a Google Custom Search front-end, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google via the custom-search engine, logged under your session/IP like any Google search; use a sock-puppet browser if you don't want the query tied to you. Nothing is exposed to a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A librarian/teacher-curated Google Custom Search index; niche and narrow by design — useful for vetted results, not for comprehensive OSINT coverage.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -278500,15 +278474,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Kidtopia search",
+      "kidtopia.info"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
+      "safe-search",
+      "education",
+      "custom-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/kidtopia.md"
   },
   {
@@ -341549,39 +341527,47 @@
   },
   {
     "id": "meowni-ca",
-    "name": "meowni.ca",
-    "description": "OSINT tool: meowni.ca.",
+    "name": "Emoji Translate (meowni.ca)",
+    "description": "Use when you have text and want a quick English-to-emoji rendering (or to reason about emoji substitutions) — returns an emoji-ified version of the input.",
     "url": "https://meowni.ca/emoji-translate/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Converting English phrases into emoji as a novelty/experimentation aid; minimal direct OSINT value.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (on GitHub); runs client-side in the browser, no account.",
+    "opsec": "passive",
+    "opsecNote": "The translation happens in your browser; nothing is sent to a subject and there's no login. As a client-side toy it carries no meaningful OpSec exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small open-source personal project by its author; transparent (source on GitHub) but a novelty tool, not an analytical resource.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "emoji-translate",
+      "meowni.ca emoji translator"
+    ],
     "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "emoji",
+      "text-transform",
+      "novelty"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/meowni-ca.md"
   },
   {
@@ -345245,40 +345231,51 @@
   {
     "id": "chronotrains",
     "name": "Chronotrains",
-    "description": "Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel time to see reachable destinations by train.",
+    "description": "Use when you have a European city/`geolocation` and want to see everywhere reachable by train within a chosen time — returns an isochrone map of rail-reachable destinations.",
     "url": "https://www.chronotrains.com/en",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Visualising how far someone could travel by train from a European starting point within X hours (isochrone reachability).",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive web map; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You interact only with Chronotrains' own map/data — no query touches any subject and nothing is revealed to a third party. Purely analytical.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent project built on open rail-timetable data and featured in Bellingcat's toolkit; travel times are approximations from schedule data, not guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Chrono Trains",
+      "chronotrains isochrone map"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "transport"
+      "rail",
+      "isochrone",
+      "travel-time",
+      "europe"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/chronotrains.md"
   },
   {

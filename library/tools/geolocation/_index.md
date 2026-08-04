@@ -312,7 +312,6 @@ kind: group-index
 - **`wikinearby`** (medium) — Use when you have coordinates and want Wikipedia-documented places around them — returns nearby notable geolocation/landmarks to identify or
 - **`wikipedia-list-of-online-mapping-programs-worldwide`** (high) — Use when you have a `geolocation`/`address` in a specific country and want the right regional map/imagery service for it — routes you to loc
 - **`wikishootme`** (medium) — Use when you have a `geolocation` and want geotagged Wikipedia/Wikidata items and Commons images near it on a map — returns nearby `image`s 
-- **`wiman`** (low) — OSINT tool: Wiman.
 - **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce
 - **`world-population-density-map`** (medium) — Use when you have a place (`geolocation`) and want fine-grained population-density context down to towns and metros — returns an interactive
 - **`worldcam`** (low) — Use when you have a `geolocation`/place and want live public webcams there to verify conditions or activity — returns live streams tied to a
