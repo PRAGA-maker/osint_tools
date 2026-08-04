@@ -296,7 +296,6 @@ kind: group-index
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
 - **`privacy-net`** (low) — Listing of privacy resources
-- **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
@@ -439,7 +438,6 @@ kind: group-index
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`wevideo-video-editor-app-mobile-android`** (low) — App for mobile devices for social networking and creating, editing and publishing videos
 - **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
-- **`whatsapp-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging services
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
 - **`windows-10-online-emulator`** (low) — OSINT tool: Windows 10 Online Emulator.
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
@@ -447,7 +445,6 @@ kind: group-index
 - **`winpatrol-monitor-and-alert-program-windows`** (low) — Malware detection and program changes alert program
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
-- **`workflow-task-automation-app-mobile-ios`** (low) — App for mobile devices for business communications and sharing of materials
 - **`xmind-works`** (low) — Online tool for open and editing .xmind files
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-finance-app-mobile-ios`** (low) — App for mobile devices for monitoring stocks and finance

@@ -11,7 +11,7 @@ kind: group-index
 - **`builtwith`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack, trackers, and hosting/analytics IDs — returns pivotable `d
 - **`criminal-ip-search`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, risk score and hosting context — returns asset fing
 - **`kraken`** (low) — Use when you have a set of `domain`/`ip-address` hosts to test and want to organise screenshots, notes and progress across a team — returns 
-- **`online-nikto-scanner`** (low) — Web server vulnerability scanning
+- **`online-nikto-scanner`** (low) — Use when you have a `domain`/`ip-address` and want a quick server-security profile — returns identified server software, misconfigurations, 
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior
 - **`shodan`** (low) — Use when you have an `ip-address`, `domain` or `employer-org` and want its internet-exposed devices/services — returns open ports, banners, 
 - **`sitediff`** (low) — Tracking site changes between snapshots for monitoring and QA

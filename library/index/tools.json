@@ -1356,7 +1356,7 @@
   {
     "id": "balbuzard",
     "name": "Balbuzard",
-    "description": "Automated deobfuscation and indicator extraction from suspicious files",
+    "description": "Use when you have a suspicious file and want to pull hidden indicators — returns extracted URLs/`domain`s, IPs, and decoded XOR/obfuscated strings from binaries and documents.",
     "url": "https://github.com/decalage2/balbuzard",
     "category": "ai-analysis-automation",
     "path": [
@@ -1364,36 +1364,44 @@
       "xor",
       "python"
     ],
-    "bestFor": "Automated deobfuscation and indicator extraction from suspicious files",
-    "input": "Suspicious binaries and encoded artifact files",
-    "output": "Decoded content, extracted IoCs, and pattern-analysis results",
+    "bestFor": "Extracting IoCs and brute-forcing simple obfuscation (XOR/ROL) from malware and suspicious files.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (BSD); a local Python toolkit.",
     "opsec": "passive",
-    "opsecNote": "Local toolkit execution supports controlled analysis without remote sample submission.",
+    "opsecNote": "Runs locally on files you already hold — it does not upload samples to any service, so nothing about your investigation leaves your machine. Still analyse malware inside an isolated VM.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "By Philippe Lagadec (decalage2), the author of oletools; well known in malware analysis. Older Python 2-era tooling, so expect setup friction on modern systems.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "oletools"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "decalage2/balbuzard"
+    ],
+    "tags": [
+      "malware-analysis",
+      "ioc-extraction",
+      "deobfuscation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/xor/python/balbuzard.md"
   },
   {
@@ -19800,37 +19808,46 @@
   {
     "id": "feed-filter-maker",
     "name": "Feed Filter Maker",
-    "description": "OSINT tool: Feed Filter Maker.",
+    "description": "Use when you have a `name`/`username` to monitor and want alerts only on relevant items — returns a filtered RSS/Atom feed URL matching your keywords.",
     "url": "http://feed.janicek.co",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Building a keyword-filtered RSS feed to monitor a subject or topic without the noise.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool (and Chrome app); no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive monitoring — the tool fetches and filters public feeds; the subject is not contacted. Your keyword filters are processed by the third-party service, so keep them non-sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small independent utility that transforms public RSS/Atom feeds; it adds no data, only filters existing feeds.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "feed.janicek.co"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "rss"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/feed-filter-maker.md"
   },
   {
@@ -63807,43 +63824,50 @@
   },
   {
     "id": "check-any-website-to-see-in-real-time-if-it-is-blocked-in-china",
-    "name": "Check any website to see in real time if it is blocked in China",
-    "description": "OSINT tool: Check any website to see in real time if it is blocked in China.",
+    "name": "Check if a Website is Blocked in China (vpnMentor)",
+    "description": "Use when you have a `domain` and want to know if it's reachable from mainland China — returns a real-time accessible/blocked verdict tested from Chinese nodes.",
     "url": "https://www.vpnmentor.com/tools/test-the-great-china-firewall/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking in real time whether a site is censored by China's Great Firewall.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool from vpnMentor; no account.",
+    "opsec": "passive",
+    "opsecNote": "The test is run from vpnMentor's China-side nodes against the target domain — not from your IP — so your own location isn't exposed to the site. You do submit the domain of interest to vpnMentor, so avoid checking domains that would reveal a sensitive lead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenience tool by vpnMentor (a VPN-review publisher); results reflect a point-in-time check from their vantage points, and GFW behaviour varies by region/time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Great Firewall of China test",
+      "vpnMentor China block checker"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "censorship"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/check-any-website-to-see-in-real-time-if-it-is-blocked-in-china.md"
   },
   {
@@ -78638,42 +78662,51 @@
   },
   {
     "id": "online-nikto-scanner",
-    "name": "Online Nikto scanner",
-    "description": "Web server vulnerability scanning",
+    "name": "Online Nikto Scanner",
+    "description": "Use when you have a `domain`/`ip-address` and want a quick server-security profile — returns identified server software, misconfigurations, and exposed files via a browser-based Nikto scan.",
     "url": "https://nikto.online/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "discovery"
     ],
-    "bestFor": "Web server vulnerability scanning",
-    "input": "URLs",
-    "output": "Vulnerability and misconfiguration reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fingerprinting a web server's software, headers, and exposed files/misconfigurations without installing Nikto.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free public-scan tier (short scans); registered/professional tiers add longer scans and more methods.",
     "opsec": "active",
-    "opsecNote": "Generates noisy scan traffic visible in target server logs; likely to trigger WAF/IDS alerts",
+    "opsecNote": "This is an active scan that hits the target and shows up in its server logs and WAF/IDS. The scan originates from nikto.online's infrastructure, not your IP — which hides you but also means you are trusting a third party with your target and cannot control the scan's footprint. Only scan hosts you are authorised to assess.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hosted front end over the open-source Nikto scanner; convenient but a third-party service — results reflect Nikto's known signatures and its false-positive tendencies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "nikto.online"
+    ],
+    "tags": [
+      "vulnerability-scanner",
+      "web-server",
+      "recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/online-nikto-scanner.md"
   },
   {
@@ -79465,13 +79498,13 @@
   {
     "id": "ote-osint-template-engine",
     "name": "OTE (OSINT Template Engine)",
-    "description": "OSINT template engine / cross-platform subdomain enumeration and recon GUI.",
+    "description": "Use when you have a `domain` and want a broad host/subdomain footprint from a GUI — returns subdomains, resolved `ip-address`es, and related infrastructure.",
     "url": "https://github.com/3nock/OTE",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "GUI-driven subdomain enumeration and OSINT recon",
+    "bestFor": "GUI-driven subdomain enumeration and infrastructure recon across many sources at once.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -79480,15 +79513,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source; a locally installed C++/Qt desktop application.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Some enumeration is passive (OSINT sources/passive DNS) but active modules (DNS brute-force, resolution, host probing) send traffic that a target's infrastructure can log. Configure it to prefer passive sources, and route active runs through a VPS/sock-puppet IP for hosts you don't control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "~575 stars; C++/Qt recon GUI.",
+    "trustNote": "Open-source recon GUI by 3nock (~hundreds of stars), related to the sub3suite project; infrastructure-focused, so limited direct person-finding value.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -79497,8 +79531,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "spidersuite",
+      "sub3-suite"
+    ],
     "aliases": [
-      "sub3suite"
+      "sub3suite",
+      "3nock/OTE"
     ],
     "tags": [
       "subdomains",
@@ -79506,12 +79545,8 @@
       "osint"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "spidersuite",
-      "sub3-suite"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ote-osint-template-engine.md"
   },
   {
@@ -117157,35 +117192,49 @@
   {
     "id": "hong-kong-traffic-data-and-cams",
     "name": "Hong Kong Traffic Data & Cams",
-    "description": "OSINT tool: Hong Kong Traffic Data & Cams.",
+    "description": "Use when you have a `geolocation` in Hong Kong and want live roadside conditions — returns traffic-camera snapshots and congestion data on an interactive map dashboard.",
     "url": "https://www.arcgis.com/apps/dashboards/47be6372a0434beaba99ae9c9f1d598d",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Viewing Hong Kong public traffic cameras and congestion data by location.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free ArcGIS dashboard over public Hong Kong traffic feeds; no account to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you view public traffic feeds; the subject is not contacted and no case data is submitted. The cameras are official/public, so viewing leaks nothing about your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built ArcGIS dashboard aggregating Hong Kong public traffic-camera and speed-map data; unofficial, so feed availability can change.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "hk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "HK traffic cameras dashboard"
+    ],
+    "tags": [
+      "traffic-cameras",
+      "geolocation",
+      "hong-kong"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/hong-kong-traffic-data-and-cams.md"
   },
   {
@@ -180546,42 +180595,6 @@
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/privacy-tools.md"
   },
   {
-    "id": "prospectlinked",
-    "name": "ProspectLinked",
-    "description": "OSINT tool: ProspectLinked.",
-    "url": "https://prospectlinked.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "sockpuppet"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/prospectlinked.md"
-  },
-  {
     "id": "proton-vpn",
     "name": "Proton VPN",
     "description": "Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator OpSec, not a per-subject lookup).",
@@ -187195,46 +187208,6 @@
     "_file": "library/tools/opsec-investigator-tooling/whatsapp-messaging-app-mobile-android.md"
   },
   {
-    "id": "whatsapp-messaging-app-mobile-ios",
-    "name": "Whatsapp Messaging App (Mobile – iOS)",
-    "description": "App for mobile devices for messaging services",
-    "url": "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/whatsapp-messaging-app-mobile-ios.md"
-  },
-  {
     "id": "whenx",
     "name": "WhenX",
     "description": "Candidate notes for Linkedin profiles - synchronized with Google.",
@@ -187508,46 +187481,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/wordpress-social-networking-app-mobile-android.md"
-  },
-  {
-    "id": "workflow-task-automation-app-mobile-ios",
-    "name": "Workflow Task Automation App (Mobile – iOS)",
-    "description": "App for mobile devices for business communications and sharing of materials",
-    "url": "https://itunes.apple.com/ca/app/workflow-powerful-automation/id915249334?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/workflow-task-automation-app-mobile-ios.md"
   },
   {
     "id": "xmind-works",
@@ -233944,35 +233877,50 @@
   {
     "id": "interpol-most-wanted-search-engine",
     "name": "Interpol Most Wanted Search Engine",
-    "description": "OSINT tool: Interpol Most Wanted Search Engine.",
+    "description": "Use when you have a `name` and want to check for an Interpol notice — returns wanted/notice hits with photo, physical description, and nationality where published.",
     "url": "https://cse.google.com/cse?cx=b1746754c83012613",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Screening a name against Interpol Red/Yellow Notice and most-wanted publications.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "physical-description",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine scoped to Interpol/most-wanted sources; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a Google CSE over public notice pages; the subject is not contacted. Standard sock-puppet browsing hygiene applies if you don't want the searches tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An unofficial Google Custom Search Engine; the underlying data is Interpol's public notices, but a CSE's scope can drift or break. Cross-check against Interpol's official notice database.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Interpol wanted CSE"
+    ],
+    "tags": [
+      "wanted-persons",
+      "law-enforcement",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/interpol-most-wanted-search-engine.md"
   },
   {
@@ -263170,44 +263118,52 @@
   {
     "id": "ai-search-whisper",
     "name": "AI Search Whisper",
-    "description": "Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.",
+    "description": "Use when you have a `name` or a messy research question and want ready-made advanced-operator queries — returns clickable Google/Bing dork links tailored to the problem.",
     "url": "https://google.digitaldigging.org/index2.html",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Turning a plain-language investigative question into precise Google/Bing search-operator queries.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool from Digital Digging (Henk van Ess); runs on a hosted LLM, no account.",
+    "opsec": "passive",
+    "opsecNote": "You type your research problem into a third-party LLM-backed page, so avoid pasting sensitive case specifics or PII you don't want leaving your machine. The generated searches themselves run later in your own browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Made by Henk van Ess / Digital Digging, a respected OSINT trainer; it is a query-generation aid, not a data source — always run and judge the searches yourself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Universal search tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "deleted-tweet-finder-digital-digging-cache",
       "digitaldigging-org",
       "digitaldigging-org-2",
       "visualorigins-digitaldigging-org"
     ],
+    "aliases": [
+      "AI Search Whisperer",
+      "Digital Digging search generator"
+    ],
+    "tags": [
+      "Search engines",
+      "Universal search tools"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ai-search-whisper.md"
   },
   {
@@ -341677,46 +341633,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/translation-language/text/google-input-tools.md"
-  },
-  {
-    "id": "google-quest-visual-wordlens",
-    "name": "Google Quest Visual WordLens",
-    "description": "Tool for translating words found in images from one language to another",
-    "url": "http://questvisual.com",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/google-quest-visual-wordlens.md"
   },
   {
     "id": "google-translate",

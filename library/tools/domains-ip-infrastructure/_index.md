@@ -96,7 +96,7 @@ kind: group-index
 - **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
 - **`cert4recon`** (low) — Use when you have a `domain` and want fast passive subdomain enumeration from certificate-transparency logs (crt.sh) — returns domain (subdo
 - **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
-- **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
+- **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — Use when you have a `domain` and want to know if it's reachable from mainland China — returns a real-time accessible/blocked verdict tested 
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
 - **`check-point-live-cyber-threat-map`** (low) — Use when you want situational awareness of live global attack activity (source/target countries, attack types) — returns a real-time threat 
@@ -308,7 +308,7 @@ kind: group-index
 - **`opensquat`** (low) — Use when you have a brand/keyword and want to catch look-alike phishing `domain`s registered against it — scans newly-registered-domain feed
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
 - **`orb`** (low) — Use when you have a `domain` and want a broad automated footprint — one CLI run gathers WHOIS, subdomains, DNS records, and (active) port/se
-- **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
+- **`ote-osint-template-engine`** (low) — Use when you have a `domain` and want a broad host/subdomain footprint from a GUI — returns subdomains, resolved `ip-address`es, and related
 - **`owasp-amass`** (low) — Use when you have a `domain` and want its full external attack surface — returns subdomains, associated IPs, ASNs, and related infrastructur
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
 - **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 

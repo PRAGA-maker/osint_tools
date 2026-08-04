@@ -132,7 +132,7 @@ kind: group-index
 - **`hiking-and-biking-map`** (high) — Use when you have a `geolocation` search area and need trail, path, and terrain detail (footpaths, cycle routes) not shown on standard road 
 - **`historic-aerials`** (high) — Use when you have a `geolocation`/`address` and need decades of historical aerial photos and topo maps to see how a site changed over time.
 - **`hivemapper`** (medium) — Use when you have a `geolocation` and want recent crowdsourced/dashcam street-level imagery, sometimes fresher than Google Street View.
-- **`hong-kong-traffic-data-and-cams`** (low) — OSINT tool: Hong Kong Traffic Data & Cams.
+- **`hong-kong-traffic-data-and-cams`** (low) — Use when you have a `geolocation` in Hong Kong and want live roadside conditions — returns traffic-camera snapshots and congestion data on a
 - **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
 - **`hungermap`** (low) — Use when you have a `geolocation` (country/region) and want live food-security, conflict and hazard context for it — returns situational `ge
 - **`huntel-io`** (medium) — Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts 

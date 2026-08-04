@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/xor/python
 
 ## Skills here
-- **`balbuzard`** (low) — Automated deobfuscation and indicator extraction from suspicious files
+- **`balbuzard`** (low) — Use when you have a suspicious file and want to pull hidden indicators — returns extracted URLs/`domain`s, IPs, and decoded XOR/obfuscated s
 - **`iheartxor-py`** (low) — Use when you have a binary/`document-id` with XOR-obfuscated strings and want to recover them — brute-forces single-byte XOR keys within a r
 - **`nomorexor-py`** (low) — Recovering long XOR keys in malware binaries
 - **`xorbruteforcer-py`** (low) — Single-byte XOR key brute-forcing and quick validation

@@ -39,7 +39,7 @@ kind: group-index
 - **`african-journal-online`** (low) — Use when you have a `name` or research topic and want scholarly articles published in African journals — returns document-id, employer-org, 
 - **`agence-france-presse-afp`** (low) — Use when you have a `name`, event, or place and want reporting/imagery from a major global news wire — AFP's site and fact-check arm return 
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
-- **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
+- **`ai-search-whisper`** (low) — Use when you have a `name` or a messy research question and want ready-made advanced-operator queries — returns clickable Google/Bing dork l
 - **`airlines-inform`** (medium) — Use when you have an airline, airport or aircraft-type reference and want to decode it — returns airline/fleet/airport details (`employer-or
 - **`alabama-medical-license-search`** (low) — Use when you have a physician's `name` and want to verify Alabama licensure — returns license number, status, issue/expiry, medical school, 
 - **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
