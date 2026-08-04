@@ -190,7 +190,7 @@ kind: group-index
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-association-of-new-zealand`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`restaurant-report-website-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurant-report-website-united-states`** (low) — Use when you have a US restaurant/food-service `employer-org` and want industry background or vendor context — returns trade articles and a 
 - **`restaurants-canada-website-canada`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Use when you need to download and preserve a video from a social/media URL before it's deleted — paste the link and get a downloadable file 
@@ -228,7 +228,6 @@ kind: group-index
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
 - **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
-- **`transferwise`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
 - **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
 - **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou

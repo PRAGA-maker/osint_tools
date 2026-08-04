@@ -60,7 +60,6 @@ kind: group-index
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s
-- **`odysseytranslator`** (low) — OSINT tool: OdysseyTranslator.
 - **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use
 - **`online-translator`** (low) — OSINT tool: Online Translator.
 - **`paralink-translation-tool`** (low) — Tool for translating text and web content from one language to another
@@ -89,7 +88,6 @@ kind: group-index
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
 - **`vizard-ai`** (low) — Use when you have a video/audio of a subject and want an AI transcript to search and quote what was said — a transcription tool, outputs tex
 - **`webopedia-com`** (low) — Use when you have unfamiliar SMS/chat/internet slang in collected messages and want its meaning — returns plain-English expansions of abbrev
-- **`yamii`** (low) — OSINT tool: Yamii.
 - **`yandex-translate`** (low) — Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation —
 - **`yourdictionary-online-links`** (low) — Links to over 6600 online foreign language dictionaries and translation services
 

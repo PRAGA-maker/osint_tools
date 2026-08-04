@@ -898,37 +898,43 @@
   {
     "id": "awesome-hacking",
     "name": "awesome-hacking",
-    "description": "OSINT tool: awesome-hacking.",
+    "description": "Use when you need to discover a technique or tool for a specific security/forensics task — returns a curated index of hacking tutorials, tools, and practice resources.",
     "url": "https://github.com/carpedm20/awesome-hacking",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right category of tool/tutorial (recon, forensics, crypto, web) when you don't yet know what to reach for.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); it is a GitHub README index, not a hosted service.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public GitHub page. It links out to third-party tools; vet and sandbox anything you download from those links before running it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running community \"awesome list\" (~17k stars, MIT). It is a curated index of external resources, not a vetted toolchain — quality of linked tools varies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "carpedm20/awesome-hacking"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/awesome-hacking.md"
   },
   {
@@ -18045,40 +18051,44 @@
   {
     "id": "alltop",
     "name": "Alltop",
-    "description": "OSINT tool: Alltop.",
-    "url": "http://alltop.com",
+    "description": "Use when you want a fast topical scan of what's being published across the web on a subject area — returns ranked, aggregated news headlines by topic.",
+    "url": "https://alltop.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly surveying current top stories in a topic area during background research.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read an aggregator's public front page; nothing about your target is submitted. Standard browsing hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A news-aggregation site (now overlaying prediction-market signals) that ranks stories across topics; it surfaces third-party headlines rather than producing original reporting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "alltop.com"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "news-aggregation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "alltop-micronews-website"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/alltop.md"
   },
   {
@@ -56969,42 +56979,47 @@
   },
   {
     "id": "restaurant-report-website-united-states",
-    "name": "Restaurant Report Website (United States)",
-    "description": "Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "http://www.restaurantreport.com",
+    "name": "Restaurant Report",
+    "description": "Use when you have a US restaurant/food-service `employer-org` and want industry background or vendor context — returns trade articles and a supplier buyer's guide.",
+    "url": "https://www.restaurantreport.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Background reference on the US restaurant industry and its vendors/suppliers.",
+    "selectorsIn": [
+      "employer-org"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; content is trade articles and directories, no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read a public trade site; no case data is submitted and no subject is contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running US restaurant-industry trade publication and buyer's guide; useful as background/context, not a people-search or authoritative business register.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "restaurantreport.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "useful-websites-tools-documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/restaurant-report-website-united-states.md"
   },
   {
@@ -58900,46 +58915,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/topsite.md"
-  },
-  {
-    "id": "transferwise",
-    "name": "TransferWise",
-    "description": "Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency",
-    "url": "https://transferwise.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/transferwise.md"
   },
   {
     "id": "transitions-abroad",
@@ -62695,42 +62670,47 @@
   {
     "id": "broken-link-checker",
     "name": "Broken Link Checker",
-    "description": "shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.",
-    "url": "https://chrome.google.com/webstore/detail/broken-link-checker/nibppfobembgfmejpjaaeocbogeonhch/related",
+    "description": "Use when you have a `domain`/page and want to find which of its outbound links are dead — returns the broken links, exposing defunct sites and stale connections.",
+    "url": "https://chrome.google.com/webstore/detail/broken-link-checker/nibppfobembgfmejpjaaeocbogeonhch",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Spotting dead outbound links on a page to find defunct related sites and datable link-rot.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account.",
+    "opsec": "passive",
+    "opsecNote": "To test links the extension sends a request to each linked URL from your browser, so those third-party hosts see your IP. Passive toward your primary subject, but route through a VPN/sock-puppet if you don't want linked hosts logging you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A generic third-party Chrome extension; it does the mechanical job of checking link status but has no reputation as an investigative tool. Verify permissions before installing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Chrome Broken Link Checker"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Broken Links Checkers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/broken-link-checker.md"
   },
   {
@@ -124636,36 +124616,52 @@
   },
   {
     "id": "toronto-area-live-traffic-cams",
-    "name": "Toronto area Live Traffic Cams",
-    "description": "OSINT tool: Toronto area Live Traffic Cams.",
+    "name": "Toronto Area Live Traffic Cams (CamRoute)",
+    "description": "Use when you have a route or `geolocation` in the Greater Toronto Area and want live roadside camera imagery along it — returns traffic-cam images near a planned path.",
     "url": "https://gtaupdate.com/traffic/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Viewing public GTA traffic cameras along a route for near-real-time conditions at a location.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; aggregates public government camera feeds, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you view public camera feeds; you never contact the subject and submit no case data. The cameras are official traffic feeds, so viewing them leaks nothing about your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent hobby project (CamRoute) aggregating City of Toronto, Ontario 511, and Durham Region public feeds; unaffiliated with government, images can be delayed or stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CamRoute",
+      "GTA traffic cameras"
+    ],
+    "tags": [
+      "traffic-cameras",
+      "geolocation",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/toronto-area-live-traffic-cams.md"
   },
   {
@@ -185445,46 +185441,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/typeit.md"
-  },
-  {
-    "id": "uber-private-driver-app-mobile-android",
-    "name": "Uber Private Driver App (Mobile – Android)",
-    "description": "App for mobile devices for searching for and communicating with private hire driving services",
-    "url": "https://play.google.com/store/apps/details?id=com.ubercab",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/uber-private-driver-app-mobile-android.md"
   },
   {
     "id": "uber-private-driver-app-mobile-ios",
@@ -342526,42 +342482,6 @@
     "_file": "library/tools/translation-language/noslang-dictionary.md"
   },
   {
-    "id": "odysseytranslator",
-    "name": "OdysseyTranslator",
-    "description": "OSINT tool: OdysseyTranslator.",
-    "url": "http://odysseytranslator.com",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/odysseytranslator.md"
-  },
-  {
     "id": "online-ocr-onlineocr-net",
     "name": "Online OCR (onlineocr.net)",
     "description": "Use when you have an `image`/PDF of a document and want the text extracted — returns machine-readable text carrying `name`, `address` and other selectors.",
@@ -344175,45 +344095,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/translation-language/text/word-reference.md"
-  },
-  {
-    "id": "yamii",
-    "name": "Yamii",
-    "description": "OSINT tool: Yamii.",
-    "url": "https://www.yamli.com/arabic-keyboard",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "yamli-arabic"
-    ],
-    "_file": "library/tools/translation-language/yamii.md"
   },
   {
     "id": "yandex-translate",
@@ -353153,38 +353034,48 @@
   {
     "id": "us-military-bases-interactive-worldwide-map",
     "name": "US Military Bases Interactive Worldwide Map",
-    "description": "Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more information.",
+    "description": "Use when you have a country or `geolocation` and want to check for nearby US military bases — returns base locations and counts plotted on an interactive world map.",
     "url": "https://worldbeyondwar.org/no-bases/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Locating US foreign military bases by country and reading the linked context for each.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and publicly accessible; the maintaining NGO seeks donations but the map is not paywalled.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public advocacy map; no case data is submitted and no subject is contacted. Nothing to leak beyond your own browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Maintained by World BEYOND War, an advocacy NGO; a self-described work-in-progress compiled from public sources, so counts/details may lag or be incomplete.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "World BEYOND War No Bases map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Military tracking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/us-military-bases-interactive-worldwide-map.md"
   },
   {

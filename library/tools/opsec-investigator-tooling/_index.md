@@ -404,7 +404,6 @@ kind: group-index
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
 - **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
-- **`uber-private-driver-app-mobile-android`** (low) — App for mobile devices for searching for and communicating with private hire driving services
 - **`uber-private-driver-app-mobile-ios`** (low) — App for mobile devices for searching for and communicating with private hire driving services
 - **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types

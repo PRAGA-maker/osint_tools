@@ -13,7 +13,7 @@ kind: group-index
 - **`web/`** — 10 skill(s) below.
 
 ## Skills here
-- **`alltop`** (low) — OSINT tool: Alltop.
+- **`alltop`** (low) — Use when you want a fast topical scan of what's being published across the web on a subject area — returns ranked, aggregated news headlines
 - **`archive-it`** (low) — Use when you have a `domain`/URL or an organization `name` and want curated web archives of it — returns archived captures of pages/sites co
 - **`archive-md`** (medium) — Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `d
 - **`archive-org-downloader`** (medium) — Use when you have an archive.org `document-id`/URL for a borrow-only book and want the full text offline — returns a downloaded PDF you can 

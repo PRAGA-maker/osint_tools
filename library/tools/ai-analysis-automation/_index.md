@@ -34,7 +34,7 @@ kind: group-index
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
 - **`awesome-forensics`** (low) — Use when you need to pick a digital-forensics tool for a task — returns a curated, categorised list of free/open-source forensic analysis to
 - **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
-- **`awesome-hacking`** (low) — OSINT tool: awesome-hacking.
+- **`awesome-hacking`** (low) — Use when you need to discover a technique or tool for a specific security/forensics task — returns a curated index of hacking tutorials, too
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.

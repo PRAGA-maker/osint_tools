@@ -173,7 +173,7 @@ kind: group-index
 - **`transtats-bts-gov`** (low) — Use when you have a U.S. flight (airline + number, or route + date) and want its actual historical departure/arrival times and delays — retu
 - **`uk-govt-vessel-lists`** (medium) — Use when you have a UK fishing `vessel-plate`/name and want official registration details — returns vessel name, RSS number, length, and hom
 - **`understanding-war-map-room`** (low) — Use when you have a conflict `geolocation` or date and want authoritative, dated control-of-terrain maps — returns front-line positions and 
-- **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
+- **`us-military-bases-interactive-worldwide-map`** (low) — Use when you have a country or `geolocation` and want to check for nearby US military bases — returns base locations and counts plotted on a
 - **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Use when you have a vessel `name`, `employer-org` or keyword and want US Coast Guard marine-casualty investigation reports — returns documen
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
 - **`vehicle-documents`** (medium) — Use when you have a license plate or vehicle document in a photo and want to identify its country/type and read its format — returns plate/d

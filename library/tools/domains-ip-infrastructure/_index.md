@@ -84,7 +84,7 @@ kind: group-index
 - **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`breachhq`** (low) — Use when you have a threat-actor or APT-group name and want a reference profile — returns actor origin, type, aliases, and linked references
-- **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
+- **`broken-link-checker`** (low) — Use when you have a `domain`/page and want to find which of its outbound links are dead — returns the broken links, exposing defunct sites a
 - **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
 - **`browserling`** (low) — OSINT tool: Browserling.
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.

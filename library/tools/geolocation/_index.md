@@ -274,7 +274,7 @@ kind: group-index
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
 - **`timejones-com`** (medium) — Use when you have times across `geolocation`s and want to align them — returns cross-city time-zone conversions and a meeting/event schedule
 - **`timestamp-converter-com`** (medium) — Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns 
-- **`toronto-area-live-traffic-cams`** (low) — OSINT tool: Toronto area Live Traffic Cams.
+- **`toronto-area-live-traffic-cams`** (low) — Use when you have a route or `geolocation` in the Greater Toronto Area and want live roadside camera imagery along it — returns traffic-cam 
 - **`toronto-live`** (low) — Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolo
 - **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
