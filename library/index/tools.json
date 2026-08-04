@@ -3830,28 +3830,29 @@
   {
     "id": "digital-privacy-ffffffff0x",
     "name": "Digital-Privacy (ffffffff0x)",
-    "description": "Collection of privacy and security / OSINT resources.",
+    "description": "Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engines, social-media investigation, people-tracking and geolocation resources.",
     "url": "https://github.com/ffffffff0x/Digital-Privacy",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Reference collection of privacy/OSINT resources",
+    "bestFor": "A one-stop bilingual (EN/中文) reference list of OSINT and privacy-protection resources to discover other tools.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public GitHub repository; the list itself costs nothing (some linked destinations are paid).",
+    "opsec": "passive",
+    "opsecNote": "Reading the list is passive and reveals nothing about your target. OpSec depends entirely on which linked destination you then use — evaluate each tool's exposure before submitting selectors to it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular community awesome-list (ffffffff0x, ~4.9k stars) but ARCHIVED/read-only since Jan 2023 — links are curated but no longer updated, so expect some dead entries.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -3860,15 +3861,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ffffffff0x digital privacy"
+    ],
     "tags": [
       "github",
       "resource-collection",
+      "awesome-list",
       "privacy"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/digital-privacy-ffffffff0x.md"
   },
   {
@@ -3953,42 +3958,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/disconnect.md"
-  },
-  {
-    "id": "discoshell",
-    "name": "Discoshell",
-    "description": "OSINT tool: Discoshell.",
-    "url": "https://github.com/foozzi/discoshell",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/discoshell.md"
   },
   {
     "id": "discover",
@@ -4403,37 +4372,58 @@
   {
     "id": "e4gl30s1nt",
     "name": "E4GL30S1NT",
-    "description": "ShellScript toolkit for #osint (12 tools)",
+    "description": "Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databases and metadata — returns social-profiles, breach hits, carrier/geolocation and extracted identifiers.",
     "url": "https://github.com/C0MPL3XDEV/E4GL30S1NT",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "All-in-one CLI recon on a person's selectors — username enumeration, breach lookups, phone/email and image metadata in one toolkit.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone",
+      "domain",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (GPL-3.0). Some modules (breach lookups like DeHashed/LeakCheck) work better with your own API keys.",
+    "opsec": "active",
+    "opsecNote": "It queries many social platforms and breach services live, so your IP hits 70+ sites and several breach APIs per run. Use a VPN/proxy and dedicated research API keys; note it auto-masks PII in output, but the queries themselves are observable to the platforms and breach providers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trust": "community",
+    "trustNote": "Community CLI toolkit (C0MPL3XDEV, ~700 stars); breadth-focused, so verify each hit manually.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "eagleosint",
+      "eagle-osint"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "toolkit",
+      "username-enumeration",
+      "breach-lookup"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/e4gl30s1nt.md"
   },
   {
@@ -7408,37 +7398,53 @@
   {
     "id": "intelhub",
     "name": "IntelHub",
-    "description": "OSINT tool: IntelHub.",
+    "description": "Use when you are investigating in-browser and have a `username`, `image`, url or block of text — a browser extension that runs Telegram profiling, reverse-image/EXIF, tech-recon and entity extraction, returning social-profiles, metadata-exif and extracted identifiers.",
     "url": "https://github.com/tomsec8/IntelHub",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "An all-in-one OSINT browser extension for on-the-page recon, metadata analysis and entity extraction.",
+    "selectorsIn": [
+      "username",
+      "image",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); available on the Chrome, Firefox and Edge stores.",
+    "opsec": "active",
+    "opsecNote": "Some features (Telegram profiling, website recon, archive/reverse-image lookups) fire live queries to third parties from your browser; others (EXIF, text extraction, local AI via LM Studio) run entirely locally. Use a dedicated research browser profile; the local-AI mode keeps analysis offline, but network features still expose your IP to the services queried.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Community project by tomsec8 (actively developed, v5.x); verify outputs against primary sources.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "intel hub extension"
+    ],
     "tags": [
-      "other-tools"
+      "browser-extension",
+      "metadata",
+      "entity-extraction"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/intelhub.md"
   },
   {
@@ -7513,37 +7519,55 @@
   {
     "id": "intellyweave",
     "name": "IntellyWeave",
-    "description": "OSINT tool: IntellyWeave.",
+    "description": "Use when you have a pile of documents (`document-id`, PDFs/DOCX) and want AI-driven entity extraction and link analysis — returns names, organisations, locations and relationship/geospatial graphs with confidence-scored hypotheses.",
     "url": "https://github.com/vericle/intellyweave",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Turning document dumps into extracted entities, relationship graphs and geospatial views for investigation.",
+    "selectorsIn": [
+      "document-id",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (BSD-3-Clause). Self-hosted; requires an LLM API key (OpenAI/Anthropic/Google) or a local Ollama model.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally on your own documents, so it doesn't touch any external target — but if you configure a cloud LLM, your document contents are sent to that provider for processing. Use a local Ollama model to keep sensitive case material fully offline.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "trustNote": "Active beta community project (vericle, ~70 stars); AI extraction can hallucinate, so treat entities/hypotheses as leads.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "intelly-weave"
+    ],
     "tags": [
-      "other-tools"
+      "document-analysis",
+      "entity-extraction",
+      "link-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/intellyweave.md"
   },
   {
@@ -10816,33 +10840,35 @@
   {
     "id": "osint-framework-osint-dev-team",
     "name": "osint-framework (osint-dev-team)",
-    "description": "All-in-one OSINT-RECON Swiss Knife.",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, `username` or `phone` and want a self-hosted service to run many recon modules and return results via CLI or REST API — returns domains, hosts, social-profiles and related identifiers.",
     "url": "https://github.com/osint-dev-team/osint-framework",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Bundled multi-selector recon automation",
+    "bestFor": "Self-hosted, multi-selector recon that you can drive from a CLI or call as a REST API.",
     "selectorsIn": [
       "domain",
       "ip-address",
       "email",
-      "username"
+      "username",
+      "phone"
     ],
     "selectorsOut": [
       "domain",
       "ip-address",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-2.0). Self-hosted; some modules may need their own API keys.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Runs on your own infrastructure, but its modules make live queries against third-party services and, depending on the module, the target's infrastructure. Deploy on a dedicated research host and treat submitted selectors as disclosed to the upstream services each module calls.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "Community all-in-one recon framework (46 stars).",
+    "trustNote": "Small community project (~46 stars); verify individual modules still work before relying on output.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -10851,15 +10877,19 @@
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "osint-dev-team osint-framework",
+      "osint-recon swiss knife"
+    ],
     "tags": [
       "recon",
       "docker",
-      "automation"
+      "rest-api"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-framework-osint-dev-team.md"
   },
   {
@@ -11994,37 +12024,50 @@
   {
     "id": "phantom-tide",
     "name": "Phantom Tide",
-    "description": "OSINT tool: Phantom Tide.",
+    "description": "Use when you have a `geolocation` or maritime/air area of interest and want to see where vessel, aircraft and signal activity converge — returns scored convergence zones, geolocation and source-attributed intel from open AIS/ADS-B/thermal feeds.",
     "url": "https://github.com/tg12/phantomtide",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Fast maritime/airspace situational triage — surfacing where multiple open signals overlap in an area.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to use via the public hosted instance; only public docs and a limited API are open-source (the full application is proprietary).",
+    "opsec": "passive",
+    "opsecNote": "You query a hosted analytics platform over open signal feeds; you are not touching any target, but your queries and areas of interest are seen by the hosted service. For sensitive work, prefer the self-host/local API stack over the public instance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A single-maintainer project (tg12); the ranking/analytics are useful but the core app is closed-source, so outputs can't be fully audited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "phantomtide"
+    ],
     "tags": [
-      "maritime"
+      "geoint",
+      "maritime",
+      "airspace"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/phantom-tide.md"
   },
   {
@@ -13428,45 +13471,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/rawgraphs.md"
-  },
-  {
-    "id": "reconftw",
-    "name": "ReconFTW",
-    "description": "OSINT tool: ReconFTW.",
-    "url": "https://github.com/six2dez/reconftw",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "dorks-hunter"
-    ],
-    "_file": "library/tools/ai-analysis-automation/reconftw.md"
   },
   {
     "id": "regular-expression-analyzer",
@@ -66266,41 +66270,52 @@
   {
     "id": "dns-twist",
     "name": "DNS Twist",
-    "description": "Typosquatting and phishing domain detection",
+    "description": "Use when you have a `domain` and want to find look-alike/typosquatted variants and check which are registered or hosting phishing — returns permuted domains with their DNS, geolocation and page-similarity data.",
     "url": "https://github.com/elceef/dnstwist",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "typosquatting"
     ],
-    "bestFor": "Typosquatting and phishing domain detection",
-    "input": "Domain name",
-    "output": "Domain permutation list, DNS records, HTTP similarity",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Generating and live-checking look-alike domains around a target domain to spot phishing/impersonation.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Apache-2.0). No paid tier or API keys.",
     "opsec": "active",
-    "opsecNote": "Active DNS queries required; queries can be resource-intensive (300K+ queries for google.com)",
+    "opsecNote": "It performs live DNS (and optionally HTTP/banner) lookups against the permuted domains — a large permutation set can mean hundreds of thousands of queries from your resolver/IP. It does not touch the original target's owner, but the lookups are observable to DNS operators; throttle and use a research resolver.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely used, long-maintained open-source tool (Marcin Ulikowski / elceef); packaged in major distros and Docker.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "dnstwist"
+    ],
+    "tags": [
+      "typosquatting",
+      "phishing",
+      "domain-permutation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/typosquatting/dns-twist.md"
   },
   {
@@ -351936,45 +351951,52 @@
   {
     "id": "shadowbroker",
     "name": "Shadowbroker",
-    "description": "Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.",
+    "description": "Use when you have a `geolocation` / area of interest and want a self-hosted map fusing 60+ live OSINT feeds (aircraft, ships, satellites, fires, conflict, comms) plus a built-in recon toolkit — returns geolocated activity and infrastructure leads.",
     "url": "https://github.com/BigBodyCobain/Shadowbroker",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "Tracking aircraft/satellite/geophysical signals; situational GEOINT",
+    "bestFor": "Multi-domain geospatial situational awareness from 60+ open feeds in one self-hosted dashboard.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "ip-address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free and open-source (AGPL-3.0), self-hosted via Docker. Optional paid APIs (Shodan, Sentinel Hub, Global Fishing Watch) add layers; your keys stay local.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Self-hosted, and it proxies sensitive recon queries server-side so your API keys aren't exposed in the browser. Aggregating public feeds is passive, but the recon toolkit (IP geolocation, DNS, WHOIS, BGP) and any Shodan queries disclose the selectors you look up to those upstream services — use dedicated research keys.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "Popular (9k+ stars) but broad-scope intelligence aggregator.",
+    "trustNote": "Popular community project (BigBodyCobain); broad-scope aggregator, so verify any single feed's data at its source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": true,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "localInstall": true,
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "shadow-broker"
+    ],
     "tags": [
       "geoint",
+      "aggregator",
       "aviation",
       "satellite"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/shadowbroker.md"
   },
   {

@@ -151,7 +151,7 @@ kind: group-index
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
 - **`searates-container-tracking`** (low) — Use when you have a shipping container, Bill of Lading, or booking number (`document-id`) and want its current position and route — returns 
 - **`searchquarry`** (medium) — Use when you have a US `vehicle-plate`, `vin` or `name` and want vehicle/public-records data — a commercial lookup whose free tier only conf
-- **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.
+- **`shadowbroker`** (low) — Use when you have a `geolocation` / area of interest and want a self-hosted map fusing 60+ live OSINT feeds (aircraft, ships, satellites, fi
 - **`ship-spotting`** (low) — Use when you have a vessel `name` or IMO/registration and want dated, geolocated photographs of it — returns `image`, `geolocation`, and sig
 - **`shipais`** (low) — OSINT tool: ShipAIS.
 - **`shipfinder`** (low) — Use when you have a vessel name or identifier (MMSI/IMO) and want its near-real-time position and details — returns the ship's `geolocation`

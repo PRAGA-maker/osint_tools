@@ -99,10 +99,9 @@ kind: group-index
 - **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
 - **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
-- **`digital-privacy-ffffffff0x`** (low) — Collection of privacy and security / OSINT resources.
+- **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
 - **`disconnect`** (low) — Use when you want to block trackers during investigative browsing or understand who tracks a site — returns a tracker-blocking layer and tra
-- **`discoshell`** (low) — OSINT tool: Discoshell.
 - **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
 - **`docmind-ai`** (low) — Use when you have sensitive documents to query and want a local RAG chat over them with no cloud exposure — returns summaries, Q&A and extra
@@ -112,7 +111,7 @@ kind: group-index
 - **`duckduckgo-ai-chat`** (low) — Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy 
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
-- **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
+- **`e4gl30s1nt`** (medium) — Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databa
 - **`einvestigator`** (low) — OSINT tool: eInvestigator.
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
@@ -177,8 +176,8 @@ kind: group-index
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
 - **`infosec-reference`** (low) — Use when you need a curated knowledge base to point you to the right infosec/OSINT technique, tool, or reading — returns reference material.
 - **`inkscape`** (low) — Use when you need to edit, trace, measure, or annotate images/vectors during analysis — a free vector-graphics editor useful for image foren
-- **`intelhub`** (low) — OSINT tool: IntelHub.
-- **`intellyweave`** (low) — OSINT tool: IntellyWeave.
+- **`intelhub`** (medium) — Use when you are investigating in-browser and have a `username`, `image`, url or block of text — a browser extension that runs Telegram prof
+- **`intellyweave`** (medium) — Use when you have a pile of documents (`document-id`, PDFs/DOCX) and want AI-driven entity extraction and link analysis — returns names, org
 - **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic
 - **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
@@ -243,7 +242,7 @@ kind: group-index
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
 - **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
-- **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
+- **`osint-framework-osint-dev-team`** (low) — Use when you have a `domain`, `ip-address`, `email`, `username` or `phone` and want a self-hosted service to run many recon modules and retu
 - **`osint-harvester`** (low) — Use when you have a `domain`/`ip-address`/URL and want a scripted collect-and-normalize of DNS, WHOIS, HTTP headers, and IP reputation into 
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
@@ -265,7 +264,7 @@ kind: group-index
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
 - **`perspective`** (low) — Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interacti
 - **`pgpkeyanalyser`** (low) — Use when you have a PGP/OpenPGP public key and want the identities baked into it — returns `name`, `email`, and key metadata (fingerprint, d
-- **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
+- **`phantom-tide`** (low) — Use when you have a `geolocation` or maritime/air area of interest and want to see where vessel, aircraft and signal activity converge — ret
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.
 - **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
@@ -295,7 +294,6 @@ kind: group-index
 - **`raphael`** (low) — OSINT tool: Raphael.
 - **`raw`** (low) — OSINT tool: RAW.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
-- **`reconftw`** (low) — OSINT tool: ReconFTW.
 - **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
