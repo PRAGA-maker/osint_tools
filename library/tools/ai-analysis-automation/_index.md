@@ -272,7 +272,7 @@ kind: group-index
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
-- **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
+- **`quick-hashtags-and-keywords-search`** (low) — Use when you have a `username`, hashtag or keyword and want to sweep it across ~89 social platforms at once — returns direct search links pe
 - **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m

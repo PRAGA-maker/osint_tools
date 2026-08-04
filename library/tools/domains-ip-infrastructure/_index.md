@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure
 
 ## Sub-groups
-- **`advisories/`** — 10 skill(s) below.
+- **`advisories/`** — 9 skill(s) below.
 - **`analytics/`** — 11 skill(s) below.
 - **`attack-surface-security-testing/`** — 1 skill(s) below.
 - **`aws-enumeration/`** — 3 skill(s) below.
@@ -309,7 +309,6 @@ kind: group-index
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
 - **`poodle-check`** (low) — Use when you have a `domain`/host and want to know if its SSL/TLS is vulnerable to the POODLE (SSLv3) downgrade attack — returns a pass/fail
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
-- **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (medium) — Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yah
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co

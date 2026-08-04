@@ -81,9 +81,9 @@ kind: group-index
 - **`exiftool-lucasgelfond-online`** (low) — Use when you have a sensitive `image` and want full ExifTool metadata (camera, timestamp, GPS) without uploading it anywhere — runs ExifTool
 - **`eyedex`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in public open directories — returns matching files across indexed o
 - **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
-- **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`federal-it-dashboard-united-states`** (low) — Use when you have a US federal `employer-org` (agency) and want its IT investments and spending — returns budgets, projects and performance 
 - **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 
-- **`fide`** (low) — World chess player ratings website
+- **`fide`** (low) — Use when you have a `name` (or FIDE ID) of a competitive chess player and want to confirm identity and country — returns rating, federation,
 - **`fifa`** (low) — Football team rankings website
 - **`filesec-io`** (low) — Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSe
 - **`find-pdf-doc`** (low) — Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `docum

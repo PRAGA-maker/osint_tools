@@ -14,7 +14,6 @@ kind: group-index
 - **`nvd-nist`** (low) — Use when you have a software product, version, or CVE ID and want authoritative vulnerability details and severity — returns CVE records, CV
 - **`osv-vulnerability-library`** (low) — Use when you have a software package/version (or a domain's tech stack) and want known open-source vulnerabilities — returns advisory docume
 - **`owasp`** (low) — OSINT tool: OWASP.
-- **`secunia`** (low) — OSINT tool: Secunia.
 - **`securityfocus`** (low) — OSINT tool: SecurityFocus.
 - **`vulert-updated-open-source-vulnerability-database`** (low) — OSINT tool: Vulert: Updated Open Source Vulnerability Database.
 

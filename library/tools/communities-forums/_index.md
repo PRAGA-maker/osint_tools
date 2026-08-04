@@ -276,7 +276,6 @@ kind: group-index
 - **`wix`** (low) — Use when you have a `username` and want to check whether it owns a Wix-hosted site — returns a `social-profile`/personal site at that handle
 - **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 
 - **`write-as`** (medium) — Use when you have a `username` or Write.as blog handle and want to read someone's publicly published writing — returns `social-profile`, `na
-- **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
 - **`zbin`** (medium) — Use when you already hold a ZBin paste link and want to read its contents — returns whatever the poster put in it (possibly email, password,

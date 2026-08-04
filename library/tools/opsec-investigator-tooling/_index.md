@@ -248,7 +248,6 @@ kind: group-index
 - **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
-- **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`opera`** (low) — OSINT tool: Opera.
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
@@ -294,7 +293,7 @@ kind: group-index
 - **`safari`** (low) — Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web 
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
-- **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
+- **`scrapersnbots`** (low) — Use when you have a `username`, `image` or URL and want quick free web utilities — username search on dating sites, reverse-image/one-domain
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words

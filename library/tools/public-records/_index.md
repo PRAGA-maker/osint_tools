@@ -206,7 +206,7 @@ kind: group-index
 - **`credibly-accused`** (medium) — Use when you have a `name` (or diocese/location) and want to check whether a US Catholic clergy member was named on a credibly-accused-of-ab
 - **`creditrisk-monitor`** (medium) — Use when you have a company `name`/`employer-org` and want a public-company profile — a free worldwide directory of listed firms by country,
 - **`creditsafe-com`** (high) — Use when you have an `employer-org`, `name` or `address` and want a business credit report — returns company details, registered address, di
-- **`crime-brasil`** (low) — OSINT tool: Crime Brasil.
+- **`crime-brasil`** (low) — Use when you have a Brazilian city, neighborhood or region and want its crime picture — returns crime statistics and rates by locality drawn
 - **`crimereports`** (medium) — Use when you have an `address`/`geolocation` and want to see recent reported crime incidents around it — returns block-level incident locati
 - **`criminal-cop-database-lookup`** (low) — Use when you have a `name` of a California law-enforcement officer and want to check for a criminal conviction — returns the officer's name,
 - **`criminal-search-criminal-records-by-state-and`** (high) — Use when you have a `name` and want to reach the right official US criminal/court record database for a given state or county — returns link

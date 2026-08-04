@@ -326,7 +326,7 @@ kind: group-index
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
 - **`keywordpeopleuse`** (low) — Use when you have a keyword/`name`/topic and want the real questions people ask about it across Google, Reddit, and Quora — returns clustere
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
-- **`kiddle`** (low) — Kid-friendly search engine.
+- **`kiddle`** (low) — Use when you want to see the child-safe, filtered web view of a topic or name — a kid-oriented Google Custom Search that shows what young us
 - **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
 - **`kids-search`** (low) — Kid-friendly search engine.
