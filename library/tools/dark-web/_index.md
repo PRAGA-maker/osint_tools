@@ -31,7 +31,7 @@ kind: group-index
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
 - **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
-- **`darkweb-archive`** (low) — Free simple tool that allows you to download website files in the .onion domain zone as an archive with html, css, javascript and other file
+- **`darkweb-archive`** (low) — Use when you have a `.onion` `domain` and want a preserved snapshot of the site's files — returns a downloadable ZIP of its HTML, CSS, JavaS
 - **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`dedope`** (low) — OSINT tool: DeDope.
@@ -60,7 +60,7 @@ kind: group-index
 - **`onions-darknetlive`** (low) — Use when you need current, curated `.onion` addresses for darknet markets and forums — returns verified onion `domain` links to reach dark-w
 - **`onionsearch`** (low) — Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URL
 - **`osint-me-1`** (low) — Use when you have a `username`/`email` and want a vetted starting list of Tor onion indexers, leak archives, and dark-web news to search for
-- **`osint-me-2`** (low) — OSINT tool: osint.me 2.
+- **`osint-me-2`** (low) — Use when you need vetted, working dark-web OSINT starting points — returns a curated, tested list of Tor search engines, directories and res
 - **`osint-me-3`** (low) — Use when you're starting a dark-web investigation and need a vetted resource list — returns curated tools, methods, and safety guidance for 
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 

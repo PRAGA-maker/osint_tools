@@ -16,7 +16,7 @@ kind: group-index
 - **`acronym-finder`** (low) — Use when you have an unfamiliar acronym/abbreviation in a document or chat and want its likely expansions — a large searchable database of a
 - **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
 - **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing
-- **`alphadictionary-com`** (low) — Search from over 1000 online English dictionaries at once
+- **`alphadictionary-com`** (low) — Use when you have unfamiliar English text, slang, regionalisms or a foreign word and want its meaning across many dictionaries at once — ret
 - **`apertium-org`** (low) — Use when you have foreign-language text (a `name`, post, or document) and want a free, private machine translation — returns readable transl
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
 - **`babelfish-language-translations`** (low) — Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate sh

@@ -678,7 +678,7 @@ kind: group-index
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
 - **`wikit`** (medium) — Use when you have a `name` of a notable person, place or organization and want to read its Wikipedia summary from the command line — returns
 - **`wikiwho`** (medium) — Use when you have an `employer-org` and want anonymous Wikipedia edits made from its IP ranges — returns the org's edit history and the page
-- **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.
+- **`wisdom-of-reddit`** (low) — Use when you have a topic, phrase, or claimed background and want first-person Reddit accounts about it — returns matching Reddit comments/p
 - **`wiza-co`** (medium) — Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `
 - **`worldcam-search-instagram-by-location`** (high) — Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and socia
 - **`www-linkedin-com-pub-dir-people-search`** (high) — Use when you have a `name` (optionally + employer) and want to find a subject's LinkedIn profile — returns their profile, current/past emplo

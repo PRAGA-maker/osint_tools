@@ -401,7 +401,6 @@ kind: group-index
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
 - **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute
 - **`highly-cited-researchers`** (low) — Use when you have a researcher's `name` or an institution and want to confirm their field, affiliation, and standing — returns `employer-org
-- **`his-piers`** (low) — OSINT tool: HIS Piers.
 - **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
 - **`home-comptroller-texas-gov`** (medium) — Use when you have a `name` or business and want Texas state financial records — returns entity/franchise-tax status, sales-tax permits, and 
 - **`homefacts-us`** (medium) — Use when you have a US `address` and want neighborhood/property intelligence — returns property details plus nearby registered offenders, ha

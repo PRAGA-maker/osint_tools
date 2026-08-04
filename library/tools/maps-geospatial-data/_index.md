@@ -56,7 +56,7 @@ kind: group-index
 - **`gridreferencefinder-com`** (medium) — Use when you have a UK `address`, postcode, or `geolocation` and want to convert it between coordinate systems — returns OSGB grid reference
 - **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro
 - **`here-wego`** (low) — Use when you have an `address`/`geolocation` and want an independent map, satellite/street view, and routing alternative to Google/Apple — r
-- **`hitta-se`** (low) — Mapping service for Sweden
+- **`hitta-se`** (medium) — Use when you have a `name` or `address` in Sweden and want the matching resident, phone, business, or map location — returns address, phone,
 - **`inciweb`** (medium) — Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size
 - **`index-database`** (low) — Use when you have satellite/aerial imagery and need the right spectral index — a reference database of remote-sensing indices and the sensor
 - **`kakao-map`** (low) — Use when you have a South Korean `address` or `geolocation` and want maps, transit, and street-level Road View — returns precise `geolocatio

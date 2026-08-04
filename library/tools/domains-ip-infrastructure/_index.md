@@ -119,7 +119,7 @@ kind: group-index
 - **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
 - **`dark-web-informer`** (low) — Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and
-- **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
+- **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — Use when you have a `domain` and want to see what cookies and trackers it sets before consent — returns the site's cookie/tracker inventory 
 - **`dirhunt`** (low) — Use when you have a `domain` and want to discover and analyse its web directories — finds "index of" listings, hidden folders and files acro
 - **`dirscraper`** (low) — Use when you have a `domain`/website and want to surface hidden endpoints and subdomains referenced in its JavaScript — returns directories/
 - **`ditto`** (low) — Use when you have a `domain` and want to find look-alike/homograph variants — generates confusable domain permutations and checks which are 
@@ -360,7 +360,7 @@ kind: group-index
 - **`snyk-io`** (low) — Website Vulnerabilities Scanner
 - **`soc-multi-tool`** (low) — Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns V
 - **`socradar-labs`** (low) — Use when you have a `domain`, `ip-address` or threat-actor name and want free threat-intel context — returns threat-actor profiles, digital-
-- **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
+- **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Use when you have a snippet, tracker ID, title, or server detail and want every `domain` whose source contains it — returns matching domains
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-cli
@@ -405,7 +405,6 @@ kind: group-index
 - **`verisign`** (low) — Use when you have a `domain` and want to validate its DNSSEC chain of trust and spot signing/delegation errors — returns a diagnosed `domain
 - **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — Use when you have an `image` or document and want to read its embedded EXIF/XMP/IPTC metadata (or strip it) in the browser — returns metadat
-- **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
 - **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
 - **`vincos-it`** (low) — Use when you have a `geolocation`/country and want to know which social network dominates there — returns a country-by-country map of the le
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca

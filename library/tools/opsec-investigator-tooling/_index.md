@@ -106,7 +106,7 @@ kind: group-index
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
-- **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
+- **`face-anonimyzer`** (low) — Use when you have your own `face`/`image` and want a synthetic look-alike for a sock-puppet avatar or to protect your identity — returns an 
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
