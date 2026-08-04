@@ -95,7 +95,7 @@ kind: group-index
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
 - **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
-- **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
+- **`delete-me-free-opt-out-guide`** (low) — Use when you have a `name` exposed on data-broker/people-search sites and want to remove it — returns step-by-step opt-out instructions per 
 - **`distill-web-monitor-firefox-add-on`** (low) — Use when you have a `domain`/web page or feed and want to be alerted the moment it changes — returns email/SMS/push notifications on detecte
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the

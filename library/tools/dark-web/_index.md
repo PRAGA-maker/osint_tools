@@ -32,7 +32,6 @@ kind: group-index
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
 - **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
 - **`darkweb-archive`** (low) — Free simple tool that allows you to download website files in the .onion domain zone as an archive with html, css, javascript and other file
-- **`darkweb-forums`** (low) — OSINT tool: Darkweb Forums.
 - **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`dedope`** (low) — OSINT tool: DeDope.

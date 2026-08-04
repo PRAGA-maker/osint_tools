@@ -154,8 +154,8 @@ kind: group-index
 - **`shipais`** (low) — OSINT tool: ShipAIS.
 - **`shipfinder`** (low) — Use when you have a vessel name or identifier (MMSI/IMO) and want its near-real-time position and details — returns the ship's `geolocation`
 - **`shipmentlink`** (low) — OSINT tool: ShipmentLink.
-- **`shipping-database`** (low) — OSINT tool: Shipping Database.
-- **`shippingexplorer`** (low) — OSINT tool: ShippingExplorer.
+- **`shipping-database`** (low) — Use when you have a vessel `name` and want reference details about the ship — returns catalogued vessel/warship particulars (a static refere
+- **`shippingexplorer`** (low) — Use when you have a vessel `name`/IMO/MMSI and want its position and voyage history — returns live-ish AIS `geolocation`, ship details and p
 - **`shipspotting-com`** (low) — Use when you have a vessel `name`/IMO and want photos and sighting history — returns dated, often geolocated ship photographs and vessel det
 - **`shipspotting-live-ais`** (medium) — Use when you have a vessel name/IMO or a ship photo and want vessel identification and imagery — returns ship photos, vessel details, and ph
 - **`skyscanner-travel-search-engine`** (medium) — Use when you have a `geolocation` route and want travel-feasibility context — returns flight/route options, dates, prices, and carriers to c

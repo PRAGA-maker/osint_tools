@@ -932,7 +932,7 @@ kind: group-index
 - **`world-bank-data`** (low) — Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — return
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
-- **`wto-statistics`** (low) — OSINT tool: WTO Statistics.
+- **`wto-statistics`** (low) — Use when you have an `employer-org` or country and want its merchandise/services trade profile — returns official bilateral trade, tariff an
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
 - **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.

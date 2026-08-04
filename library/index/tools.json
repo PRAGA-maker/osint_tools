@@ -399,41 +399,43 @@
   {
     "id": "apis-for-osint",
     "name": "APIs for OSINT",
-    "description": "List of API's for gathering information about phone numbers, addresses, domains etc",
+    "description": "Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapped to what each looks up.",
     "url": "https://github.com/cipher387/API-s-for-OSINT",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right API to automate a lookup (phone, email, domain, IP, breach, crypto, social) instead of hunting for one ad hoc.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "email",
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "address"
+      "address",
+      "name",
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory itself is a free, open GitHub repo; the individual APIs it lists vary — many have free tiers, some are paid (monthly or pay-per-request). Check each API's own pricing before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "Reading the list is passive. Actually calling any listed API is a live query that may register your key/IP with that provider and, for some services, could touch the target's infrastructure — assess each API's OpSec separately before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Well-known community-maintained catalogue by cipher387 (100+ commits, active); it curates third-party APIs but does not vouch for each one, so verify any specific API's provenance and terms.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "My Projects"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "advanced-search-operators-list",
       "awesome-grep",
@@ -443,6 +445,16 @@
       "maltego-transforms-list",
       "python-osint-automation-examples"
     ],
+    "aliases": [
+      "API-s-for-OSINT",
+      "cipher387 APIs for OSINT"
+    ],
+    "tags": [
+      "My Projects"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/apis-for-osint.md"
   },
   {
@@ -38682,44 +38694,6 @@
     "_file": "library/tools/dark-web/darkweb-archive.md"
   },
   {
-    "id": "darkweb-forums",
-    "name": "Darkweb Forums",
-    "description": "OSINT tool: Darkweb Forums.",
-    "url": "https://darknetlive.com/forums/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "darknet-market-list",
-      "onions-darknetlive"
-    ],
-    "_file": "library/tools/dark-web/darkweb-forums.md"
-  },
-  {
     "id": "darkwebdaily",
     "name": "DarkWebDaily",
     "description": "OSINT tool: DarkWebDaily.",
@@ -46889,46 +46863,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/2023-world-report.md"
-  },
-  {
-    "id": "99designs",
-    "name": "99Designs",
-    "description": "Website related to outsourcing of jobs related to design logos",
-    "url": "http://99designs.ca",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/99designs.md"
   },
   {
     "id": "act-on",
@@ -61390,42 +61324,6 @@
     "_file": "library/tools/domains-ip-infrastructure/bgpview-io.md"
   },
   {
-    "id": "bi-zone",
-    "name": "Bi.Zone",
-    "description": "OSINT tool: Bi.Zone.",
-    "url": "https://gti.bi.zone/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-actor-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/bi-zone.md"
-  },
-  {
     "id": "bing-webmaster-tools",
     "name": "Bing Webmaster Tools",
     "description": "OSINT tool: Bing Webmaster Tools.",
@@ -74958,42 +74856,48 @@
   {
     "id": "logsensor",
     "name": "LogSensor",
-    "description": "#Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies.",
+    "description": "Use when you have a `domain`/host list and want to find its login panels — returns discovered login-page URLs (with an optional, authorised-only SQLi form check).",
     "url": "https://github.com/Mr-Robert0/Logsensor",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating login/admin panels across one or many hosts from the command line.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0) Python tool on GitHub; only the runtime dependencies (BeautifulSoup4, requests, termcolor, tabulate) are needed.",
+    "opsec": "active",
+    "opsecNote": "This connects directly to the target hosts to fetch pages and forms, so the target's server logs your requests. The optional `--sqli` mode actively probes login forms for SQL injection — that is intrusive testing and must only be run against systems you are explicitly authorised to test. For panel discovery alone, route through a proxy and use the login-detection mode without SQLi.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained GitHub project (Mr-Robert0), ~500+ stars, GPL-3.0; audit the code before running as with any offensive tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Logsensor"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/logsensor.md"
   },
   {
@@ -78373,42 +78277,52 @@
   {
     "id": "openlink-structured-data-sniffer",
     "name": "OpenLink Structured Data Sniffer",
-    "description": "GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.",
-    "url": "https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj/related",
+    "description": "Use when you have a `domain`/page and want to extract the structured metadata embedded in it — returns schema.org Person/Organization data such as name, address, and social-profile links.",
+    "url": "https://chromewebstore.google.com/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling embedded structured data (JSON-LD, RDFa, Microdata) — including schema.org Person/Organization fields — out of a live web page.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "name",
+      "address",
+      "social-profile",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser extension (Chrome Web Store, v3.4.x as of 2025); no account or payment required.",
+    "opsec": "active",
+    "opsecNote": "The extension parses whatever page you are currently viewing, so the target page is loaded live from your own browser/IP. Visit the target through a sock-puppet browser or proxy if the visit itself would be attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by OpenLink Software, a long-established data/semantic-web vendor; it only surfaces markup already present in the page, so there is no third-party data-quality risk beyond what the site publishes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OSDS",
+      "OpenLink Structured Data Sniffer extension"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Source Code Analyzes"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/openlink-structured-data-sniffer.md"
   },
   {
@@ -78463,51 +78377,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/openlinkprofiler.md"
-  },
-  {
-    "id": "openlinkprofiles",
-    "name": "OpenLinkProfiles",
-    "description": "Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.",
-    "url": "http://openlinkprofiler.org/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "openlink-profiler",
-      "openlinkprofiler"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/openlinkprofiles.md"
   },
   {
     "id": "opensquat",
@@ -79923,42 +79792,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/qualys-ssl-check.md"
-  },
-  {
-    "id": "quick-sprout",
-    "name": "Quick Sprout",
-    "description": "OSINT tool: Quick Sprout.",
-    "url": "https://www.quicksprout.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/quick-sprout.md"
   },
   {
     "id": "r3con1z3r",
@@ -82300,42 +82133,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/seekolver.md"
-  },
-  {
-    "id": "seo-chat-tools",
-    "name": "SEO Chat Tools",
-    "description": "OSINT tool: SEO Chat Tools.",
-    "url": "http://tools.seochat.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/seo-chat-tools.md"
   },
   {
     "id": "seo-spyglass",
@@ -87467,43 +87264,50 @@
   },
   {
     "id": "w3techs",
-    "name": "w3techs",
-    "description": "OSINT tool: w3techs.",
+    "name": "W3Techs",
+    "description": "Use when you have a `domain` and want to fingerprint the technologies behind it — returns CMS, server, hosting provider, registrar and other stack details that pivot to infrastructure.",
     "url": "https://w3techs.com/sites",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fingerprinting a site's tech stack (CMS, server, hosting, registrar, CDN) from just its domain.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup and browser extensions; paid plans exist for market-share reports and bulk/API access, but single-site detection is free.",
+    "opsec": "passive",
+    "opsecNote": "W3Techs analyses cached/crawled data and its own site-info database, so a lookup does not touch the target's server directly. Running the browser extension while on the target site does load the page from your own IP — use a sock-puppet browser if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running commercial web-technology survey (Q-Success, Vienna); detection is heuristic and can lag recent stack changes, so treat results as indicative not authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "W3Techs Site Info",
+      "Q-Success W3Techs"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website technology look up"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/w3techs.md"
   },
   {
@@ -169963,42 +169767,52 @@
   },
   {
     "id": "delete-me-free-opt-out-guide",
-    "name": "Delete Me Free Opt-Out Guide",
-    "description": "Information and resources on removing personal information from the internet and opting out",
+    "name": "DeleteMe Free Opt-Out Guide",
+    "description": "Use when you have a `name` exposed on data-broker/people-search sites and want to remove it — returns step-by-step opt-out instructions per broker (defensive/OpSec).",
     "url": "https://joindeleteme.com/help/diy-free-opt-out-guide/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "A maintained directory of free, per-broker DIY opt-out instructions for scrubbing your own (or a subject's) exposure from people-search sites.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The DIY guides are free; DeleteMe also sells a paid managed-removal service, but every opt-out walkthrough is available at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading the guides is passive. Executing an opt-out is active against each broker — you submit the subject's details (and sometimes verify by email/phone) to the very sites that hold the data, which confirms the identity to them. Do it only for accounts you are authorised to scrub, and read each broker's own removal form carefully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by DeleteMe (Abine), an established privacy-removal company; the guides are actively maintained with dated updates, though brokers change their forms so steps can drift.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "global",
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DeleteMe DIY opt-out",
+      "Abine opt-out guide"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/delete-me-free-opt-out-guide.md"
   },
   {
@@ -259489,37 +259303,48 @@
   {
     "id": "wto-statistics",
     "name": "WTO Statistics",
-    "description": "OSINT tool: WTO Statistics.",
+    "description": "Use when you have an `employer-org` or country and want its merchandise/services trade profile — returns official bilateral trade, tariff and sector data (macro context, not person-level).",
     "url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Official country and sector trade statistics (merchandise, commercial services, tariffs) for economic context on a company, sector or jurisdiction.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free; WTO Stats portal, dashboards, one-page profiles, downloadable Excel/CSV, and API are all open with no account.",
+    "opsec": "passive",
+    "opsecNote": "Read-only queries against a public intergovernmental statistics portal; no target interaction and nothing tied to your subject. Standard web-request logging by the WTO is the only footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official statistics of the World Trade Organization, compiled from national and international sources; authoritative for trade flows but aggregate-level only.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WTO Stats",
+      "World Trade Organization statistics"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/wto-statistics.md"
   },
   {
@@ -350203,70 +350028,96 @@
   },
   {
     "id": "shipping-database",
-    "name": "Shipping Database",
-    "description": "OSINT tool: Shipping Database.",
+    "name": "The Shipping Database",
+    "description": "Use when you have a vessel `name` and want reference details about the ship — returns catalogued vessel/warship particulars (a static reference, not a live tracker).",
     "url": "https://theshippingdatabase.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up reference particulars for merchant ships and warships in a catalogued vessel database.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference database; no account observed to be required for browsing entries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only browsing of a public vessel-reference site — no interaction with any target and nothing tied to your subject beyond the site's own web-request logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community/hobbyist vessel-reference project (covering merchant and warship data); breadth and accuracy are uneven, so use it as a lead source and confirm particulars against an authoritative registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "theshippingdatabase.com"
+    ],
+    "tags": [
+      "vessel-reference"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/shipping-database.md"
   },
   {
     "id": "shippingexplorer",
     "name": "ShippingExplorer",
-    "description": "OSINT tool: ShippingExplorer.",
+    "description": "Use when you have a vessel `name`/IMO/MMSI and want its position and voyage history — returns live-ish AIS `geolocation`, ship details and port calls.",
     "url": "https://www.shippingexplorer.net/en/map",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracking a named vessel on an AIS map and reading its type, flag, and recent positions.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web access with positions delayed up to ~72 hours (\"Demo Mode\"); real-time data, history and desktop/mobile apps require a paid ShippingExplorer subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query ShippingExplorer's aggregated AIS feed, not the vessel — the ship broadcasts AIS publicly and is unaware of the lookup. Free-tier positions are stale by up to 72h, so do not treat a shown position as the vessel's current location.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running commercial AIS aggregator; coverage depends on terrestrial/satellite receiver density and vessels can disable or spoof AIS, so positions are indicative not guaranteed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Shipping Explorer",
+      "shippingexplorer.net"
+    ],
+    "tags": [
+      "vessel-tracking",
+      "ais"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/shippingexplorer.md"
   },
   {

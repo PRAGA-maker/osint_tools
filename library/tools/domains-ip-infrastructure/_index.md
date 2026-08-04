@@ -78,7 +78,6 @@ kind: group-index
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
 - **`bgpview-io`** (low) — Use when you have an `ip-address`, ASN, or `domain` and want to map the routing/hosting infrastructure and owning organisation behind it — r
-- **`bi-zone`** (low) — OSINT tool: Bi.Zone.
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
@@ -253,7 +252,7 @@ kind: group-index
 - **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
 - **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
-- **`logsensor`** (low) — #Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies
+- **`logsensor`** (low) — Use when you have a `domain`/host list and want to find its login panels — returns discovered login-page URLs (with an optional, authorised-
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
 - **`majestic`** (low) — Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow /
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
@@ -300,9 +299,8 @@ kind: group-index
 - **`open-multiple-links-one-click`** (low) — Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab fo
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
-- **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
+- **`openlink-structured-data-sniffer`** (low) — Use when you have a `domain`/page and want to extract the structured metadata embedded in it — returns schema.org Person/Organization data s
 - **`openlinkprofiler`** (low) — Use when you have a `domain` and want its backlink profile — returns the sites linking to it, revealing related properties, partners, and ne
-- **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
 - **`opensquat`** (low) — Use when you have a brand/keyword and want to catch look-alike phishing `domain`s registered against it — scans newly-registered-domain feed
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
 - **`orb`** (low) — Use when you have a `domain` and want a broad automated footprint — one CLI run gathers WHOIS, subdomains, DNS records, and (active) port/se
@@ -317,7 +315,6 @@ kind: group-index
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (medium) — Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yah
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
-- **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Use when you have a `domain` and want a one-command passive footprint bundled into an HTML report — returns WHOIS, DNS, headers, links and t
 - **`radb`** (low) — Use when you have an `ip-address`, prefix or ASN and want its Internet Routing Registry records — returns the registered route objects, orig
 - **`radware-live-cyber-threat-map`** (low) — Use when you want an at-a-glance global picture of live cyber-attack activity by region and type — returns aggregate attack visualisation (n
@@ -352,7 +349,6 @@ kind: group-index
 - **`secretfinder`** (low) — Use when you have a `domain`/web app and want to scrape its JavaScript for leaked API keys, tokens, endpoints and secrets — returns domain (
 - **`securitytrails`** (low) — Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `do
 - **`seekolver`** (low) — Use when you have a `domain` (or org name) and want its live web attack surface — a Python CLI that pulls subdomains from open sources, reso
-- **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
 - **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
 - **`seotools-for-excel`** (low) — Use when you have a `domain` (or list of URLs) and want to bulk-extract on-page HTML, domain age, and backlink signals into a spreadsheet — 
@@ -418,7 +414,7 @@ kind: group-index
 - **`vincos-it`** (low) — Use when you have a `geolocation`/country and want to know which social network dominates there — returns a country-by-country map of the le
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
 - **`vstat-info`** (low) — Use when you have a `domain` and want estimated traffic, audience and referral data — returns visitor estimates, traffic sources and related
-- **`w3techs`** (low) — OSINT tool: w3techs.
+- **`w3techs`** (low) — Use when you have a `domain` and want to fingerprint the technologies behind it — returns CMS, server, hosting provider, registrar and other
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-check`** (low) — Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, 
 - **`web-tech-survey`** (low) — Use when you have a `domain` and want its technology stack, or a technology and want every site using it — returns detected tech per site an

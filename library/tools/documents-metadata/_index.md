@@ -20,7 +20,6 @@ kind: group-index
 ## Skills here
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
-- **`99designs`** (low) — Website related to outsourcing of jobs related to design logos
 - **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
 - **`acuris-risk-intelligence`** (low) — Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals
 - **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents

@@ -23,7 +23,7 @@ kind: group-index
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
 - **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
 - **`api-guesser`** (low) — Use when you have a leaked API key/token and want to know which service it belongs to — returns the likely provider inferred from the key's 
-- **`apis-for-osint`** (low) — List of API's for gathering information about phone numbers, addresses, domains etc
+- **`apis-for-osint`** (low) — Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapp
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
 - **`arbor-js`** (low) — OSINT tool: Arbor.js.
