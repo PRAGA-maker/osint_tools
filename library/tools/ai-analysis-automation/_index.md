@@ -22,7 +22,7 @@ kind: group-index
 - **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
 - **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
-- **`api-guesser`** (low) — Enter the API key or token to find out which service it can be used by.
+- **`api-guesser`** (low) — Use when you have a leaked API key/token and want to know which service it belongs to — returns the likely provider inferred from the key's 
 - **`apis-for-osint`** (low) — List of API's for gathering information about phone numbers, addresses, domains etc
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.

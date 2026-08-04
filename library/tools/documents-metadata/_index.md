@@ -107,7 +107,7 @@ kind: group-index
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
 - **`free-full-pdf`** (low) — Use when you have a subject's `name` or a research topic and want free full-text scientific PDFs they authored — returns document-id, employ
 - **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
-- **`fundrazr`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`fundrazr`** (low) — Use when you have a `name` and want their public crowdfunding campaigns — returns organiser identity, story details, location hints and bene
 - **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
 - **`git-hound`** (low) — Use when you have a keyword, `domain`, `employer-org`, or username and want secrets/credentials leaked across public GitHub — returns matchi

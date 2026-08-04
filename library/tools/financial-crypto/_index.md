@@ -17,7 +17,7 @@ kind: group-index
 - **`privacy-coin-analysis/`** — 2 skill(s) below.
 
 ## Skills here
-- **`527-explorer`** (low) — ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which
+- **`527-explorer`** (low) — Use when you have a `name` or `employer-org` tied to US political money and want their 527 org's finances — returns officers, donors, expend
 - **`a-ton-of-privacy`** (low) — Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.
 - **`acfcs-org`** (low) — Use when you want reference material and technique guides for tracing crypto/financial crime (e.g. Bitcoin tracking for investigators) — ret
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 

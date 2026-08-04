@@ -69,7 +69,7 @@ kind: group-index
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
 - **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
 - **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
-- **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`cardgenerator-org`** (low) — Use when a signup/free-trial form demands a card number for a sock-puppet account — returns Luhn-valid test card numbers (no funds) plus fil
 - **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature

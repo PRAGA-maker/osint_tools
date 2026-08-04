@@ -247,7 +247,7 @@ kind: group-index
 - **`kloth`** (low) — Use when you have a `domain` or `ip-address` and want quick web-based DNS/network lookups (DNS records, DNSBL/blacklist checks) without a sh
 - **`knockknock`** (low) — Use when you have a `domain` and want other domains likely owned by the same person/company — a Go CLI over the ViewDNS API returning relate
 - **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
-- **`larger-io`** (low) — OSINT tool: Larger.io.
+- **`larger-io`** (low) — Use when you have a `domain` and want the technologies running on it — returns the site's tech stack (analytics IDs, CMS, hosting, payment, 
 - **`lazarusholic`** (low) — Use when you have an IoC or actor name tied to North Korean APT activity — returns linked reports, incidents, and indicators (domains, IPs, 
 - **`leakix`** (low) — Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed service
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
@@ -344,7 +344,6 @@ kind: group-index
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
 - **`ronin-recon`** (low) — Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findi
-- **`sameid`** (low) — OSINT tool: SameID.
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerpr
 - **`scrape-api`** (low) — Proxy API for Web Scraping

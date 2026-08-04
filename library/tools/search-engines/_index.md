@@ -189,10 +189,10 @@ kind: group-index
 - **`egerin-search-engine-kurdish`** (low) — Use when you have a `name`, `username`, or keyword in a Kurdish context and want Kurdish-language web/news results — returns regional pages 
 - **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
 - **`elocalfinder-hybrid-meta-search`** (low) — Use when you have a US `name` or business term and want the same query run across several web engines side by side — returns social-profile 
-- **`elsevier`** (low) — OSINT tool: Elsevier.
+- **`elsevier`** (low) — Use when you have a `name` and want their scientific/medical publications and affiliations — returns author's papers, institution and co-aut
 - **`encyclopedia-of-math`** (medium) — Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, re
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
-- **`etools`** (low) — OSINT tool: Etools.
+- **`etools`** (low) — Use when you want to search a `name`/term across many engines at once with privacy — returns aggregated results from ~17 search engines with
 - **`euronews`** (low) — Use when you have a `name`, place, or event and want pan-European news coverage and video to corroborate or date it — a news source, no pers
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
 - **`european-commission-home-affairs`** (medium) — Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agen
