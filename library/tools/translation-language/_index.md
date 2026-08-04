@@ -46,7 +46,7 @@ kind: group-index
 - **`imtranslator-comparison-tool`** (low) — Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagre
 - **`imtranslator`** (low) — Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-Engli
 - **`itranslate`** (low) — Use when you have foreign-language text, speech, or an image tied to a subject and need a quick translation — returns translated text/voice 
-- **`know-your-meme`** (low) — OSINT tool: Know Your Meme.
+- **`know-your-meme`** (low) — Use when you have an `image`/meme or a slang term and want its origin, meaning and spread — returns a documented history, aliases and exampl
 - **`learn-languages`** (low) — OSINT tool: Learn Languages.
 - **`lexicool-translation`** (low) — Use when you have foreign-language text from collected material and want to compare several machine translators side by side — returns Engli
 - **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea

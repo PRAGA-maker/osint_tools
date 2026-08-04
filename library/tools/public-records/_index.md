@@ -821,7 +821,7 @@ kind: group-index
 - **`state-corrections-links`** (high) — Use when you have a `name` and want to find the right state DOC inmate locator to check incarceration status — returns a directory pointing 
 - **`state-local-tribal-gov-page-search`** (high) — Use when you need the official website for a specific US state, county, city or tribal government to reach its records — USA.gov's authorita
 - **`state-public-records-laws`** (high) — Use when you need to obtain a US public record about a person and want to know each state's records-law rules and file the request — returns
-- **`statista`** (low) — OSINT tool: Statista.
+- **`statista`** (low) — Use when you need statistics/market data on a topic, industry, country or demographic to add context to a case — returns charts, figures and
 - **`statistics-and-data`** (high) — Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-lev
 - **`statistics-canada`** (low) — Use when you have a Canadian `address`, postal area, or `employer-org` and want authoritative demographic, economic, and community context —
 - **`street-name-changes`** (high) — Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the
@@ -926,7 +926,7 @@ kind: group-index
 - **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
 - **`world-bank-data`** (low) — Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — return
-- **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
+- **`world-bank-enterprise-surveys`** (low) — Use when you need firm-level business-environment data for an `employer-org` or country context — returns survey indicators on finance, corr
 - **`world-integrated-trade-solution`** (low) — Use when you have a country and product/sector and want detailed trade & tariff data — the World Bank's WITS returns bilateral flows and tar
 - **`wto-statistics`** (low) — Use when you have an `employer-org` or country and want its merchandise/services trade profile — returns official bilateral trade, tariff an
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a

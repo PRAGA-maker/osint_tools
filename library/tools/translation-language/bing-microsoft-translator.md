@@ -32,6 +32,9 @@ relatedTools:
 - bing-translate
 - bing-maps
 - bing-news
+- bing-videos
+- bing-webmaster-tools
+- see-it-search-it
 tags:
 - translation
 - machine-translation

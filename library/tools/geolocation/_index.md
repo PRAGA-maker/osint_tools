@@ -143,7 +143,7 @@ kind: group-index
 - **`isric-data-hub`** (medium) — Use when you have a candidate `geolocation` and want soil/terrain ground-truth to verify it against a photo — returns soil-type and land att
 - **`kartaview`** (high) — Use when you have a `geolocation` and want free, open, crowdsourced street-level imagery as an alternative to Google Street View.
 - **`kartograph`** (low) — Use when you (as a developer) want to render custom interactive SVG maps from your own geodata — a map-making library, not a lookup tool.
-- **`lake-county-fire-cameras`** (low) — OSINT tool: Lake County Fire Cameras.
+- **`lake-county-fire-cameras`** (low) — Use when you have a `geolocation` in/near Lake County and want live wildfire-detection camera views to corroborate imagery or conditions — r
 - **`land-viewer`** (high) — Use when you have a `geolocation`/`address` and want recent and historical satellite imagery (multispectral, time-slider) to inspect a site 
 - **`landsatlook-viewer`** (high) — Use when you need to confirm or date a rural/wilderness location from satellite imagery — returns Landsat scenes and acquisition metadata fo
 - **`latitude-longitude-finder`** (high) — Use when you have an `address` or a `geolocation` and want to convert between them — returns lat/long coordinates for an address, or the add

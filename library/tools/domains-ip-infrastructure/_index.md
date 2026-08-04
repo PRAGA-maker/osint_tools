@@ -85,7 +85,7 @@ kind: group-index
 - **`broken-link-checker`** (low) — Use when you have a `domain`/page and want to find which of its outbound links are dead — returns the broken links, exposing defunct sites a
 - **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
 - **`browserling`** (low) — Use when you have a suspicious `domain`/URL and want to open it inside a disposable cloud browser — returns what the page renders without ex
-- **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
+- **`bunkerweb-live-cyber-attack-threat-map`** (low) — Use when you want a live visual of attacks blocked across BunkerWeb WAF deployments worldwide — returns aggregate attack geography/categorie
 - **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
@@ -382,7 +382,7 @@ kind: group-index
 - **`the-information-laundromat`** (low) — Use when you have a `domain` (or article URL/text) and want to find other sites sharing its content or infrastructure — returns linked `doma
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc
-- **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
+- **`threatseye-live-cyber-threat-map`** (low) — Use when you want an at-a-glance live visualisation of global cyber-attack activity by origin/target geography — returns aggregate attack fl
 - **`tidos-framework`** (low) — Use when you have a `domain` and want a scripted recon sweep — a modular web-recon/pentest framework whose passive OSINT modules return subd
 - **`tinyscan`** (low) — Use when you have a `domain`/URL and want a safe remote scan — screenshot, resolved IP/geolocation, tech stack, DNS/SSL/headers — without vi
 - **`tormap`** (low) — Use when you have an `ip-address` or `geolocation` and want to see whether it is a Tor relay and map/inspect the global Tor node network ove

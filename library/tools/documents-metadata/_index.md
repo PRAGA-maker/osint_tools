@@ -20,7 +20,6 @@ kind: group-index
 ## Skills here
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
-- **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations

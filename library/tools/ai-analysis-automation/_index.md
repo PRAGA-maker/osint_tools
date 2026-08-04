@@ -44,7 +44,6 @@ kind: group-index
 - **`awesome-threat-intelligence`** (low) — Use when you need to discover threat-intelligence sources, feeds and tools — a curated GitHub directory; returns pointers to other tools rat
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
-- **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
 - **`bendobrown`** (low) — OSINT tool: Bendobrown.
 - **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
@@ -90,7 +89,7 @@ kind: group-index
 - **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
-- **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
+- **`dfir-platform`** (low) — Use when you have an `email`, `domain` or `ip-address` (or a suspicious message) and want automated enrichment/verdicts — returns IOC reputa
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
@@ -224,7 +223,7 @@ kind: group-index
 - **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
-- **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
+- **`osint-dojo`** (low) — Use when you need a vetted, category-organised starting directory of OSINT tools and learning material — returns pointers to specific tools/
 - **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
 - **`osint-framework-osint-dev-team`** (low) — Use when you have a `domain`, `ip-address`, `email`, `username` or `phone` and want a self-hosted service to run many recon modules and retu
 - **`osint-harvester`** (low) — Use when you have a `domain`/`ip-address`/URL and want a scripted collect-and-normalize of DNS, WHOIS, HTTP headers, and IP reputation into 
@@ -324,7 +323,7 @@ kind: group-index
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
 - **`timeflow`** (low) — OSINT tool: Timeflow.
 - **`timeline`** (low) — OSINT tool: Timeline.
-- **`timetoast`** (low) — OSINT tool: Timetoast.
+- **`timetoast`** (low) — Use when you have dated events about a subject and want to build/share a visual chronology — returns an interactive timeline, an analysis ai
 - **`tio-run`** (low) — Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns th
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.

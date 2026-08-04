@@ -1459,42 +1459,6 @@
     "_file": "library/tools/ai-analysis-automation/bellingcat.md"
   },
   {
-    "id": "bellingcat-s-online-investigation-toolkit",
-    "name": "Bellingcat's Online Investigation Toolkit",
-    "description": "OSINT tool: Bellingcat's Online Investigation Toolkit.",
-    "url": "http://bit.ly/bcattools",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/bellingcat-s-online-investigation-toolkit.md"
-  },
-  {
     "id": "bendobrown",
     "name": "Bendobrown",
     "description": "OSINT tool: Bendobrown.",
@@ -3625,37 +3589,53 @@
   {
     "id": "dfir-platform",
     "name": "DFIR Platform",
-    "description": "OSINT tool: DFIR Platform.",
+    "description": "Use when you have an `email`, `domain` or `ip-address` (or a suspicious message) and want automated enrichment/verdicts — returns IOC reputation, phishing/BEC analysis and exposure signals.",
     "url": "https://platform.dfir-lab.ch",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "API-first triage of phishing/BEC and indicator enrichment (IPs, domains, emails) aggregated from many threat-intel sources.",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier ~100 credits/month plus a welcome bonus; no credit card. A no-signup browser playground gives ~10 sandbox credits/week. Higher volume is paid.",
+    "opsec": "active",
+    "opsecNote": "Submitting an indicator sends it to a third-party Swiss service and onward to 14+ intel providers, which may log/redistribute it. Do not submit sensitive case indicators you need to keep confidential; use a dedicated API key.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by DFIR Lab (Swiss); enrichment is aggregated from external feeds, so verdicts inherit those sources' accuracy and should be corroborated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "DFIR Lab Platform",
+      "platform.dfir-lab.ch"
+    ],
     "tags": [
       "threat-intelligence"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/dfir-platform.md"
   },
   {
@@ -10421,40 +10401,47 @@
   {
     "id": "osint-dojo",
     "name": "OSINT Dojo",
-    "description": "OSINT tool: OSINT Dojo.",
+    "description": "Use when you need a vetted, category-organised starting directory of OSINT tools and learning material — returns pointers to specific tools/methods, not person data itself.",
     "url": "https://www.osintdojo.com/resources/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A curated, actively-maintained meta-directory of OSINT tools grouped by task (social media, geolocation, email, crypto, people search).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public resource page; no account. Some linked third-party tools are themselves paid, but the directory is free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive — you are only reading OSINT Dojo's own pages, not touching a target. OpSec discipline applies once you leave for a linked tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by the OSINT Dojo educational project (active YouTube/Mastodon/X presence); a well-known community reference rather than a first-party data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "osintdojo-com"
     ],
+    "aliases": [
+      "OSINT Dojo Resources",
+      "osintdojo.com/resources"
+    ],
+    "tags": [
+      "other-resources",
+      "curated-directory"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-dojo.md"
   },
   {
@@ -15559,37 +15546,42 @@
   {
     "id": "timetoast",
     "name": "Timetoast",
-    "description": "OSINT tool: Timetoast.",
-    "url": "http://www.timetoast.com",
+    "description": "Use when you have dated events about a subject and want to build/share a visual chronology — returns an interactive timeline, an analysis aid rather than a data source.",
+    "url": "https://www.timetoast.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a set of dated facts into a shareable interactive timeline for case sense-making and presentation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create/view public timelines with an account; paid tiers add private timelines and extra features. Viewing public timelines needs no account.",
+    "opsec": "passive",
+    "opsecNote": "This is an authoring tool, not a query on a target — but anything you type is stored on Timetoast's servers and public timelines are indexable. Keep sensitive case timelines private (paid) or off-platform.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A general-purpose educational timeline builder (not investigation-specific); it holds no source data — accuracy depends entirely on what you enter.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Timetoast Timelines"
+    ],
     "tags": [
       "infographics-and-data-visualization"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/timetoast.md"
   },
   {
@@ -46186,46 +46178,6 @@
     "_file": "library/tools/documents-metadata/2023-world-report.md"
   },
   {
-    "id": "act-on",
-    "name": "Act-on",
-    "description": "Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog",
-    "url": "https://www.act-on.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/act-on.md"
-  },
-  {
     "id": "adobe-acrobat-reader-program",
     "name": "Adobe Acrobat Reader Program",
     "description": "Program that allows you to read but not PDF format documents",
@@ -60831,37 +60783,48 @@
   {
     "id": "bunkerweb-live-cyber-attack-threat-map",
     "name": "BunkerWeb Live Cyber Attack Threat Map",
-    "description": "OSINT tool: BunkerWeb Live Cyber Attack Threat Map.",
-    "url": "https://threatmap.bunkerweb.io/",
+    "description": "Use when you want a live visual of attacks blocked across BunkerWeb WAF deployments worldwide — returns aggregate attack geography/categories, not per-selector lookups.",
+    "url": "https://www.bunkerweb.io/threatmap",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Situational-awareness visual of live web-application-firewall blocks (origins, targets, attack categories) from the open-source BunkerWeb project.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public map from the open-source BunkerWeb WAF project (Bunkerity). No account. The live feed intermittently shows \"impossible to get data\".",
+    "opsec": "passive",
+    "opsecNote": "Spectator view of aggregate WAF telemetry; you enter nothing about a target and leak nothing. Normal sock-puppet browsing hygiene applies to the vendor site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by the open-source BunkerWeb WAF project; feed is aggregate telemetry from participating deployments — illustrative, not evidentiary.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "threatseye-live-cyber-threat-map"
+    ],
+    "aliases": [
+      "BunkerWeb Threatmap",
+      "threatmap.bunkerweb.io"
+    ],
     "tags": [
       "live-cyber-threat-maps"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bunkerweb-live-cyber-attack-threat-map.md"
   },
   {
@@ -83684,37 +83647,44 @@
   {
     "id": "threatseye-live-cyber-threat-map",
     "name": "ThreatsEye | Live Cyber Threat Map",
-    "description": "OSINT tool: ThreatsEye | Live Cyber Threat Map.",
+    "description": "Use when you want an at-a-glance live visualisation of global cyber-attack activity by origin/target geography — returns aggregate attack flows, not lookups on a specific selector.",
     "url": "https://threatseye.io/threats-map",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Ambient situational awareness of worldwide attack traffic; a briefing/demo visual, not an investigative lookup.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The public map is free to view; no account needed. ThreatsEye's deeper threat-intel products are commercial.",
+    "opsec": "passive",
+    "opsecNote": "Purely a spectator view of aggregate data — you enter nothing about a target, so it leaks nothing. Standard sock-puppet browsing hygiene still applies to the vendor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Vendor-run marketing/awareness visual (ThreatsEye); the underlying feed is aggregate and unverifiable, so treat it as illustrative rather than evidentiary.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ThreatsEye Threat Map"
+    ],
     "tags": [
       "live-cyber-threat-maps"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threatseye-live-cyber-threat-map.md"
   },
   {
@@ -115252,35 +115222,48 @@
   {
     "id": "lake-county-fire-cameras",
     "name": "Lake County Fire Cameras",
-    "description": "OSINT tool: Lake County Fire Cameras.",
+    "description": "Use when you have a `geolocation` in/near Lake County and want live wildfire-detection camera views to corroborate imagery or conditions — returns camera feeds tied to mapped locations.",
     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Browsing a mapped set of public wildfire-watch cameras to verify a location's live conditions or corroborate a photo/video.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Public ArcGIS web app; free, no account. Requires a modern browser (JavaScript-heavy map viewer).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public map; nothing about your subject is transmitted to the camera operators. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A regional public-safety ArcGIS map (Lake County) surfacing fire-watch camera locations; authoritative for camera placement, but coverage is narrow and geographically local.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Lake County Fire Camera Map"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/lake-county-fire-cameras.md"
   },
   {
@@ -166518,40 +166501,6 @@
     "_file": "library/tools/opsec-investigator-tooling/berobo-police-scanner-app-mobile-android.md"
   },
   {
-    "id": "bitcoinprivacy-guide",
-    "name": "Bitcoinprivacy.guide",
-    "description": "OSINT tool: Bitcoinprivacy.guide.",
-    "url": "https://bitcoinprivacy.guide/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/bitcoinprivacy-guide.md"
-  },
-  {
     "id": "bitdefender-antivirus",
     "name": "Bitdefender Antivirus",
     "description": "Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS",
@@ -171662,46 +171611,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-photos-management-app-mobile-android.md"
-  },
-  {
-    "id": "google-photos-management-app-mobile-ios",
-    "name": "Google Photos Management App (Mobile – iOS)",
-    "description": "App for mobile devices for managing and sharing photo media",
-    "url": "https://itunes.apple.com/ca/app/google-photos-store-search/id962194608?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-photos-management-app-mobile-ios.md"
   },
   {
     "id": "google-play-movies-and-tv-app-mobile-android",
@@ -179833,40 +179742,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/storyful-multisearch-chrome-add-on.md"
-  },
-  {
-    "id": "stutterbox",
-    "name": "Stutterbox",
-    "description": "OSINT tool: Stutterbox.",
-    "url": "https://www.stutterbox.co.uk/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/stutterbox.md"
   },
   {
     "id": "symantec-norton-anti-virus",
@@ -250876,37 +250751,42 @@
   {
     "id": "statista",
     "name": "Statista",
-    "description": "OSINT tool: Statista.",
-    "url": "http://www.statista.com",
+    "description": "Use when you need statistics/market data on a topic, industry, country or demographic to add context to a case — returns charts, figures and sourced datasets, not person-level records.",
+    "url": "https://www.statista.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Quick sourced statistics and market/industry/demographic figures to contextualise an investigation or report.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Headline figures and many charts are free to view; full datasets, downloads and detailed studies sit behind paid subscription accounts.",
+    "opsec": "passive",
+    "opsecNote": "Passive reference reading — you query topics, not a target. No subject data is disclosed. Standard sock-puppet browsing hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Statista (Hamburg); a widely-cited commercial statistics aggregator that attributes underlying sources, though it is a secondary aggregator, not the primary data collector.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Statista.com"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/statista.md"
   },
   {
@@ -256843,37 +256723,46 @@
   {
     "id": "world-bank-enterprise-surveys",
     "name": "World Bank Enterprise Surveys",
-    "description": "OSINT tool: World Bank Enterprise Surveys.",
-    "url": "http://www.enterprisesurveys.org",
+    "description": "Use when you need firm-level business-environment data for an `employer-org` or country context — returns survey indicators on finance, corruption, infrastructure and firm performance.",
+    "url": "https://www.enterprisesurveys.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Country- and firm-level business-environment statistics (access to finance, corruption, informality, performance) across 160+ economies.",
+    "selectorsIn": [
+      "employer-org"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Publicly available at economy and firm level; free indicators, datasets and reports. Some microdata downloads require a free registration.",
+    "opsec": "passive",
+    "opsecNote": "Passive reference/statistical data — you query economies and sectors, not an individual. No subject data is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the World Bank Group (Enterprise Analysis Unit); a primary, authoritative source for its own survey data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Enterprise Surveys",
+      "WBES",
+      "enterprisesurveys.org"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/world-bank-enterprise-surveys.md"
   },
   {
@@ -263698,38 +263587,48 @@
   {
     "id": "cloud-file-search-engine",
     "name": "Cloud File Search Engine",
-    "description": "search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)",
+    "description": "Use when you have a `name`/keyword and want to find files publicly shared on cloud lockers (Mega, MediaFire, etc.) — returns links to matching hosted files.",
     "url": "http://filesearch.link",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword search across many file-sharing/cloud-locker hosts at once to locate publicly shared documents, media or archives.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; monetised via ads/host referrals. No account required.",
+    "opsec": "passive",
+    "opsecNote": "You submit a search term to a third-party engine — keep queries generic and use a sock-puppet browser/IP; do not download unknown files on your real machine. Treat any hosted file as untrusted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous aggregator that indexes third-party file lockers; result quality and safety of linked files are unvetted, and the root has been observed returning 503 (bot-blocking / intermittent).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "filesearch.link",
+      "Mega file search"
+    ],
     "tags": [
       "Search engines",
       "Filesharing Search Engines"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cloud-file-search-engine.md"
   },
   {
@@ -336158,7 +336057,10 @@
       "bing-images",
       "bing-translate",
       "bing-maps",
-      "bing-news"
+      "bing-news",
+      "bing-videos",
+      "bing-webmaster-tools",
+      "see-it-search-it"
     ],
     "tags": [
       "translation",
@@ -337460,40 +337362,52 @@
   {
     "id": "know-your-meme",
     "name": "Know Your Meme",
-    "description": "OSINT tool: Know Your Meme.",
+    "description": "Use when you have an `image`/meme or a slang term and want its origin, meaning and spread — returns a documented history, aliases and example instances.",
     "url": "https://knowyourmeme.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying and decoding memes, viral images, internet slang and subculture references encountered in a subject's posts.",
+    "selectorsIn": [
+      "image",
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read; ad-supported. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "You search a meme/term, not a person — passive. Nothing about your subject is disclosed by looking up a reference.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Editorially-managed meme encyclopedia (Literally Media) with confirmed/submission statuses; entries are community-sourced and editor-vetted but not authoritative for identity attribution.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "knowyourmeme"
     ],
+    "aliases": [
+      "KYM",
+      "knowyourmeme.com"
+    ],
+    "tags": [
+      "translation",
+      "reference"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/know-your-meme.md"
   },
   {

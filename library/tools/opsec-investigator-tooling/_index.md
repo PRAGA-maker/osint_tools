@@ -55,7 +55,6 @@ kind: group-index
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`badoo-dating-app-mobile-ios`** (low) — App for iOS mobile device for meeting people on Badoo
 - **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
-- **`bitcoinprivacy-guide`** (low) — OSINT tool: Bitcoinprivacy.guide.
 - **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
@@ -160,7 +159,6 @@ kind: group-index
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Add-on for Google Chrome that alerts you if you enter your Google password into any non-Google page or form
 - **`google-photos-management-app-mobile-android`** (low) — App for mobile devices for managing and sharing photo media
-- **`google-photos-management-app-mobile-ios`** (low) — App for mobile devices for managing and sharing photo media
 - **`google-play-movies-and-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
@@ -332,7 +330,6 @@ kind: group-index
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
-- **`stutterbox`** (low) — OSINT tool: Stutterbox.
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`system-status-management-app-mobile-ios`** (low) — App for mobile devices for monitoring and managing battery and memory usage
 - **`tagged-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photos
