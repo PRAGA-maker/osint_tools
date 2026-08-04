@@ -95,7 +95,6 @@ kind: group-index
 - **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
-- **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
 - **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi
@@ -133,7 +132,6 @@ kind: group-index
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
 - **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
-- **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`glit`** (low) — OSINT tool: Glit.
 - **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
@@ -191,7 +189,7 @@ kind: group-index
 - **`listify`** (low) — OSINT tool: Listify.
 - **`live-demo`** (low) — OSINT tool: Live demo.
 - **`localfocus`** (low) — OSINT tool: LocalFocus.
-- **`lockbin`** (low) — OSINT tool: Lockbin.
+- **`lockbin`** (low) — Use when you need to send sensitive findings/files to a recipient securely — returns an encrypted, browser-accessible message the recipient 
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
 - **`lucidchart`** (low) — Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org
@@ -247,7 +245,7 @@ kind: group-index
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — Use when you want to keep your tooling and tradecraft current — a free weekly newsletter rounding up new OSINT tools, techniques, and news f
 - **`osintcombine-tools`** (medium) — Use when you want a free, browser-based hub of OSINT pivots and utilities — returns a launcher of search/social/domain/crypto/username tools
-- **`osintcurious`** (low) — OSINT tool: OSINTCurious.
+- **`osintcurious`** (low) — Use when you have a technique gap (image, audio, geolocation, verification) and want a trusted method — returns a free archived library of O
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
 - **`osinttracker`** (low) — Use when you have multiple entry points (`email`, `domain`, `crypto-wallet`, phone, accounts) and want to map and document an investigation 
 - **`outwit`** (low) — Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages i

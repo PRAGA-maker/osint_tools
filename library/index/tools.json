@@ -3771,42 +3771,6 @@
     "_file": "library/tools/ai-analysis-automation/defend-network.md"
   },
   {
-    "id": "developer-search-tool",
-    "name": "Developer search tool",
-    "description": "Take the art of copy and paste from Stack Overflow to a new level of speed and productivity",
-    "url": "https://chrome.google.com/webstore/detail/developer-search-tool/bkolnanfonknnhpeakommihhllojnecf/related",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/developer-search-tool.md"
-  },
-  {
     "id": "dfir-platform",
     "name": "DFIR Platform",
     "description": "OSINT tool: DFIR Platform.",
@@ -5424,42 +5388,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gitguardian-public-github-monitoring.md"
-  },
-  {
-    "id": "github-artifact-exporter",
-    "name": "Github Artifact Exporter",
-    "description": "provides a set of packages to make exporting Issues easier useful for those migrating information out of Github",
-    "url": "https://github.com/github/github-artifact-exporter",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/github-artifact-exporter.md"
   },
   {
     "id": "github-search",
@@ -8531,37 +8459,43 @@
   {
     "id": "lockbin",
     "name": "Lockbin",
-    "description": "OSINT tool: Lockbin.",
+    "description": "Use when you need to send sensitive findings/files to a recipient securely — returns an encrypted, browser-accessible message the recipient opens without an account (an OpSec delivery tool).",
     "url": "https://lockbin.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Sending an encrypted one-off message or file to someone without either side standing up a secure-mail system.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier (\"10 messages free, no card required\"); paid plans for higher volume/compliance features. Aimed at HIPAA-style secure email but usable for any sensitive one-off delivery.",
+    "opsec": "passive",
+    "opsecNote": "This is a defensive delivery tool, not a lookup — it never touches your target. Note that Lockbin (the service) processes your message metadata and recipient contact, so it is a trusted third party in the chain; for the highest-sensitivity material prefer end-to-end tools you control. Recipients open messages via an emailed/SMS browser link.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running commercial secure-messaging service marketed for healthcare/finance; encryption claims are the vendor's own and not independently audited here, so treat trust as commercial-grade, not verified end-to-end.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Lockbin secure email"
+    ],
     "tags": [
       "privacy-and-encryption-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/lockbin.md"
   },
   {
@@ -11275,41 +11209,48 @@
   {
     "id": "osintcurious",
     "name": "OSINTCurious",
-    "description": "OSINT tool: OSINTCurious.",
+    "description": "Use when you have a technique gap (image, audio, geolocation, verification) and want a trusted method — returns a free archived library of OSINT tradecraft articles and videos.",
     "url": "https://osintcurio.us/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning vetted OSINT methodology — investigation technique, verification, and tool workflows — from a respected community archive.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Entirely free; the project closed in February 2023 but its articles and YouTube videos remain publicly online for reference.",
+    "opsec": "passive",
+    "opsecNote": "This is reference reading, not a lookup — you query no target. The only footprint is your own visit to the blog/YouTube; nothing about your subject is transmitted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-regarded, practitioner-run OSINT education project (2018–2023); content is authored by named community experts. Now an archive — some tool-specific steps may be dated even though the methodology holds.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-blogs"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cosint-osint-on-cars",
       "the-osint-puppeteer"
     ],
+    "aliases": [
+      "OSINT Curious",
+      "The OSINT Curious Project",
+      "osintcurio.us"
+    ],
+    "tags": [
+      "osint-blogs"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osintcurious.md"
   },
   {
@@ -50886,46 +50827,6 @@
     "_file": "library/tools/documents-metadata/free-full-pdf.md"
   },
   {
-    "id": "freelancer",
-    "name": "Freelancer",
-    "description": "Website related to outsourcing of jobs related to a variety of creative occupations",
-    "url": "https://www.freelancer.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/freelancer.md"
-  },
-  {
     "id": "frida",
     "name": "Frida",
     "description": "Use when you have a device you control (`device-id`) running a target app and want to inspect/intercept its runtime — returns intercepted secrets, tokens and data (password, metadata-exif).",
@@ -55854,46 +55755,6 @@
     "_file": "library/tools/documents-metadata/printwhatyoulike.md"
   },
   {
-    "id": "punchbowl",
-    "name": "Punchbowl",
-    "description": "Website related to event invitation and party planning",
-    "url": "http://www.punchbowl.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/punchbowl.md"
-  },
-  {
     "id": "pymeta",
     "name": "PYMETA",
     "description": "Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and extracts their metadata to a CSV.",
@@ -56130,46 +55991,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/restaurant-and-catering-industry-website-australia.md"
-  },
-  {
-    "id": "restaurant-association-of-new-zealand",
-    "name": "Restaurant Association of New Zealand",
-    "description": "Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "http://www.restaurantnz.co.nz",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/restaurant-association-of-new-zealand.md"
   },
   {
     "id": "restaurant-report-website-united-states",
@@ -69823,47 +69644,6 @@
     "_file": "library/tools/domains-ip-infrastructure/hcl-threat-map.md"
   },
   {
-    "id": "headlines-sharethrough-com",
-    "name": "Headlines.Sharethrough.com",
-    "description": "analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100",
-    "url": "https://headlines.sharethrough.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Text Analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/headlines-sharethrough-com.md"
-  },
-  {
     "id": "heartbleed-check",
     "name": "Heartbleed Check",
     "description": "Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vulnerable/not-vulnerable verdict.",
@@ -74775,42 +74555,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/linkklipper.md"
-  },
-  {
-    "id": "lionic-cyber-threat-map",
-    "name": "LIONIC Cyber Threat Map",
-    "description": "OSINT tool: LIONIC Cyber Threat Map.",
-    "url": "https://www.lionic.com/monitoring/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "live-cyber-threat-maps"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/lionic-cyber-threat-map.md"
   },
   {
     "id": "listly",
@@ -155587,44 +155331,50 @@
   },
   {
     "id": "utm-grid-zones",
-    "name": "UTM grid zones",
-    "description": "An overview of the Universal Transverse Mercator coordinate system.",
+    "name": "UTM Grid Zones",
+    "description": "Use when you have a `geolocation` expressed in (or needing) UTM and want to understand the zone system — returns a world UTM-zone reference map to place/convert coordinates.",
     "url": "http://dmap.co.uk/utmworld.htm",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "A one-glance world map and explainer of UTM/UPS grid zones for reading and sanity-checking UTM coordinates during geolocation.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free static reference page (Alan Morton / dmap.co.uk); a downloadable PDF of the zone map is provided at no cost.",
+    "opsec": "passive",
+    "opsecNote": "A static reference document — you fetch a public web page and nothing about your subject leaves your machine. No target interaction whatsoever.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing cartography reference page (also cited in the Bellingcat toolkit); the UTM zone facts it states are standard and independently verifiable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "UTM world grid",
+      "Universal Transverse Mercator zones"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "maps"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/utm-grid-zones.md"
   },
   {
@@ -172739,38 +172489,45 @@
   },
   {
     "id": "gnu-icecat",
-    "name": "Gnu Icecat",
-    "description": "OSINT tool: Gnu Icecat.",
+    "name": "GNU IceCat",
+    "description": "Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the fingerprint you leave on target sites.",
     "url": "https://icecatbrowser.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A free-software, privacy-focused Firefox fork to use as an investigation/sock-puppet browser.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and libre (GNU project); no cost, no account. The icecatbrowser.org mirror can be intermittently unavailable — canonical source is gnu.org/software/gnuzilla.",
+    "opsec": "passive",
+    "opsecNote": "IceCat is a hardening measure, not anonymity. It strips proprietary add-ons/telemetry and adds anti-fingerprinting defaults, but your IP is still exposed unless you add a VPN/Tor, and logins still deanonymise. Use it as the browser layer of a sock-puppet setup, not as a substitute for network-level OpSec.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "An official GNU project (GNUzilla/IceCat), a free-software Firefox derivative; source-auditable and reputable, though release cadence lags upstream Firefox.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IceCat",
+      "GNUzilla IceCat"
+    ],
     "tags": [
       "browsers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/gnu-icecat.md"
   },
   {
@@ -257308,38 +257065,52 @@
   },
   {
     "id": "upsala-conflict-data-program",
-    "name": "Upsala Conflict Data Program",
-    "description": "OSINT tool: Upsala Conflict Data Program.",
-    "url": "http://www.pcr.uu.se/research/UCDP",
+    "name": "Uppsala Conflict Data Program (UCDP)",
+    "description": "Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates, actors and fatality estimates.",
+    "url": "https://ucdp.uu.se/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Authoritative, geo-coded records of organised violence — events, actors, dates, locations and fatalities — for conflict context and event verification.",
+    "selectorsIn": [
+      "geolocation",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open access; datasets are downloadable (CSV/Excel/API/GeoJSON) and browsable via the UCDP web portal with no account.",
+    "opsec": "passive",
+    "opsecNote": "Read-only queries against a public academic dataset — you look up events/places, not a specific individual, and nothing about your subject is transmitted beyond ordinary web-request logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Uppsala Conflict Data Program (Uppsala University) is the leading academic provider of organised-violence data, with documented, peer-used methodology (UCDP GED). Coded from public sources with a conservative bias, so figures are lower-bound estimates.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "UCDP",
+      "Uppsala Conflict Data Program",
+      "UCDP Georeferenced Event Dataset"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/upsala-conflict-data-program.md"
   },
   {
@@ -278824,42 +278595,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/search-engines/mamont-s-open-ftp-index.md"
-  },
-  {
-    "id": "memegine",
-    "name": "Memegine",
-    "description": "A search engine to find memes. Helps you find rare and obscure memes when Google fails.",
-    "url": "https://memegine.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/memegine.md"
   },
   {
     "id": "mereku-com",

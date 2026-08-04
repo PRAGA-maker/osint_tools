@@ -154,7 +154,7 @@ kind: group-index
 - **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
 - **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
-- **`gnu-icecat`** (low) — OSINT tool: Gnu Icecat.
+- **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`gofoss-net`** (low) — OSINT tool: gofoss.net.
 - **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information

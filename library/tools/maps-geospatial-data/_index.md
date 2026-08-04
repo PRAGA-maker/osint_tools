@@ -119,7 +119,7 @@ kind: group-index
 - **`unosat-analyses`** (low) — Use when you have a `geolocation`/place tied to a disaster or conflict and want authoritative satellite-derived damage/situation maps — retu
 - **`us-labor-strike-map`** (medium) — Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an eve
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
-- **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
+- **`utm-grid-zones`** (low) — Use when you have a `geolocation` expressed in (or needing) UTM and want to understand the zone system — returns a world UTM-zone reference 
 - **`virtualvacation-us`** (low) — Use when you want to train street-level geolocation skills — a free GeoGuessr-style game (City Guesser) that drops you into a random locatio
 - **`visionofbritain-org-uk`** (low) — Use when you have a UK place name/postcode or `geolocation` and want its historical maps, census and descriptions 1801–2001 — returns histor
 - **`waze`** (low) — Use when you have a `geolocation` and want real-time, crowd-sourced road conditions there — returns live traffic, incidents, and user report

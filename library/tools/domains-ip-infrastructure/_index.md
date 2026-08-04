@@ -182,7 +182,6 @@ kind: group-index
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
 - **`hakrawler`** (low) — Use when you have a `domain` and want to crawl it fast for links, endpoints, JS files and in-scope assets — returns URLs and `domain`s (subd
 - **`hcl-threat-map`** (low) — Use when you want a live, region/industry-filtered dashboard of recent deep/dark-web cyberattack activity — returns aggregated threat trends
-- **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
 - **`hexometer-stack-checker`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack — returns the CMS, frameworks, analytics IDs and third-part
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
@@ -250,7 +249,6 @@ kind: group-index
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
 - **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu
 - **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
-- **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
 - **`logsensor`** (low) — Use when you have a `domain`/host list and want to find its login panels — returns discovered login-page URLs (with an optional, authorised-
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image

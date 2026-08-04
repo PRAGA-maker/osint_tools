@@ -899,7 +899,7 @@ kind: group-index
 - **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
-- **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
+- **`upsala-conflict-data-program`** (low) — Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates
 - **`us-data-and-statistics`** (low) — Use when you have a place, agency, or topic and want the official US federal source for that statistic — returns links to Census, BLS, and o
 - **`us-dept-of-energy-office-of-science-search`** (medium) — Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
 - **`us-institute-of-peace`** (low) — Use when a case touches conflict, extremism, or a fragile region and you need vetted research and named actors/organizations — returns repor

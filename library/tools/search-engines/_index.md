@@ -365,7 +365,6 @@ kind: group-index
 - **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
 - **`mamont-s-open-ftp-index`** (low) — Use when you have a filename/keyword and want files exposed on public FTP servers — returns FTP hosts and paths hosting matching files.
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
-- **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
