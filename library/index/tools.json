@@ -1487,42 +1487,6 @@
     "_file": "library/tools/ai-analysis-automation/bellingcat.md"
   },
   {
-    "id": "bellingcat-online-researcher-survey-tool-wishes",
-    "name": "Bellingcat Online Researcher Survey: Tool Wishes",
-    "description": "OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.",
-    "url": "https://docs.google.com/spreadsheets/d/1vNJRMrlwI7i06diBJtRJWrvt4YuPOqlbUV5o00P_YmE/edit#gid=1378107220",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/bellingcat-online-researcher-survey-tool-wishes.md"
-  },
-  {
     "id": "bellingcat-s-online-investigation-toolkit",
     "name": "Bellingcat's Online Investigation Toolkit",
     "description": "OSINT tool: Bellingcat's Online Investigation Toolkit.",
@@ -7847,37 +7811,49 @@
   {
     "id": "keyfinder",
     "name": "keyFinder",
-    "description": "OSINT tool: keyFinder.",
+    "description": "Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, tokens and credentials.",
     "url": "https://github.com/momenbasel/keyFinder",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding API keys, tokens and secrets accidentally exposed in a website's client-side source/JavaScript.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT) on GitHub; no account required.",
+    "opsec": "active",
+    "opsecNote": "keyFinder fetches the target site's pages/JavaScript to scan them, so requests come from your IP and are visible to the target's logs/CDN. It's active recon — proxy it and only scan sites you're authorised to assess. Any keys found are live credentials; handle and report them responsibly, never use them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community security tool (momenbasel); it pattern-matches for known secret formats, so results include false positives and require manual confirmation. Audit the code before running.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "keyFinder",
+      "momenbasel keyFinder"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "secrets-detection"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/keyfinder.md"
   },
   {
@@ -13737,38 +13713,45 @@
   },
   {
     "id": "security-list",
-    "name": "security-list",
-    "description": "OSINT tool: security-list.",
+    "name": "Security_list (zbetcheckin)",
+    "description": "Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tools, blogs, and datasets.",
     "url": "https://github.com/zbetcheckin/Security_list",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A broad, curated index of information-security and OSINT resources to find the right tool/reference for a task.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open GitHub repository; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Reading a resource list is passive — you query no target. OpSec depends entirely on which linked tool you then choose and how you use it; assess each tool separately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing, popular community \"awesome\"-style list (zbetcheckin); curation is opinionated and links can rot, so treat it as a discovery index, not an endorsement of each entry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Security_list",
+      "zbetcheckin security list"
+    ],
     "tags": [
       "related-awesome-lists"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/security-list.md"
   },
   {
@@ -46586,46 +46569,6 @@
     "_file": "library/tools/documents-metadata/act-on.md"
   },
   {
-    "id": "acuris-risk-intelligence",
-    "name": "Acuris Risk Intelligence",
-    "description": "Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals",
-    "url": "https://www.acurisriskintelligence.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/acuris-risk-intelligence.md"
-  },
-  {
     "id": "adobe-acrobat-program",
     "name": "Adobe Acrobat Program",
     "description": "Program that allows you to read and create PDF format documents",
@@ -54866,44 +54809,53 @@
   },
   {
     "id": "pdf-tools",
-    "name": "PDF Tools",
-    "description": "PDF structure analysis and malicious object extraction",
+    "name": "PDF Tools (Didier Stevens)",
+    "description": "Use when you have a PDF and want to dissect its structure — returns objects, embedded scripts/files, and `metadata-exif`-style creator/producer fields, plus malicious-object detection.",
     "url": "https://blog.didierstevens.com/programs/pdf-tools/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "pdfs"
     ],
-    "bestFor": "PDF structure analysis and malicious object extraction",
-    "input": "PDF files",
-    "output": "PDF keyword identification, object parsing, embedded JavaScript detection, IOC extraction",
+    "bestFor": "Command-line dissection of a PDF's internal structure — objects, streams, embedded JavaScript/files, and document metadata.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (pdfid.py, pdf-parser.py) from Didier Stevens; Python, no account.",
     "opsec": "passive",
-    "opsecNote": "Command-line tools; local execution; open-source from reputable security researcher",
+    "opsecNote": "Fully local, offline analysis — the tools parse a file you already hold and make no network calls, leaking nothing about you or the target. Analyse a copy in an isolated environment, since PDFs can carry active/malicious content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Written by Didier Stevens, a highly reputable security researcher; these are the de-facto standard PDF forensic tools, widely used and inspectable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "xorsearch-and-xorstrings"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pdfid",
+      "pdf-parser",
+      "Didier Stevens PDF tools"
+    ],
+    "tags": [
+      "pdf",
+      "file-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pdfs/pdf-tools.md"
   },
   {
@@ -57532,38 +57484,47 @@
   },
   {
     "id": "toolsley-analyze-file-format-online",
-    "name": "ToolSley: analyze file format online",
-    "description": "OSINT tool: ToolSley: analyze file format online.",
+    "name": "Toolsley: File Identifier",
+    "description": "Use when you have a file of unknown/mismatched type and want its true format — reads the binary signature in-browser and returns the actual file type regardless of extension.",
     "url": "https://www.toolsley.com/file.html",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a file's real format from its magic bytes when the extension is missing, wrong, or suspicious.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; runs entirely in the browser.",
+    "opsec": "passive",
+    "opsecNote": "Processing happens locally in your browser via JavaScript — the file is NOT uploaded to a server — so it's safe for sensitive evidence. Still, work from a copy to preserve the original's hash/metadata.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small independent utility (Toolsley) that applies file-signature detection (the classic `file`/magic-number approach) client-side; identification is heuristic but standard and easy to corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Toolsley file identifier",
+      "toolsley.com/file"
+    ],
     "tags": [
       "Files"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/toolsley-analyze-file-format-online.md"
   },
   {
@@ -60048,37 +60009,48 @@
   {
     "id": "apt-groups-and-operations",
     "name": "APT Groups and Operations",
-    "description": "OSINT tool: APT Groups and Operations.",
-    "url": "https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml?pli=1#",
+    "description": "Use when you have an APT/threat-group name or alias and want to reconcile it — returns a cross-referenced matrix of named actors, their aliases, and toolsets across vendors.",
+    "url": "https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml?pli=1",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping the many vendor names/aliases for the same advanced-persistent-threat group and their associated operations/tools.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free published Google Sheet; view/copy without an account.",
+    "opsec": "passive",
+    "opsecNote": "A read-only reference document — you look up actor names, not a live target, and nothing about your subject is transmitted. Standard Google Docs access logging applies to your own view.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-cited community-maintained matrix (originating with Florian Roth / @cyb3rops) reconciling vendor naming; attribution itself is inherently contested, so treat entries as a cross-reference aid, not ground truth.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "APT groups matrix",
+      "Florian Roth APT groups spreadsheet"
+    ],
     "tags": [
       "threat-actor-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/apt-groups-and-operations.md"
   },
   {
@@ -74035,41 +74007,50 @@
   {
     "id": "lazys3",
     "name": "lazys3",
-    "description": "Quick permutation-based S3 bucket name discovery",
+    "description": "Use when you have a `domain`/company name and want to find its cloud storage — brute-forces likely S3 bucket names and returns which ones exist and are accessible.",
     "url": "https://github.com/nahamsec/lazys3",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "s3-blob-storage"
     ],
-    "bestFor": "Quick permutation-based S3 bucket name discovery",
-    "input": "Base target keywords and optional custom wordlists",
-    "output": "Potential S3 buckets with accessible bucket responses",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Permutation-based discovery of a target's Amazon S3 buckets from a company/domain keyword.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Ruby) on GitHub; no account or key required.",
     "opsec": "active",
-    "opsecNote": "Performs direct requests against AWS S3 bucket endpoints.",
+    "opsecNote": "lazys3 sends direct HTTP requests to AWS S3 endpoints for each guessed bucket name, so requests originate from your IP and are logged by AWS on any bucket that exists. This is active enumeration — run it from disposable/proxied infrastructure and only against organisations you are authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Authored by a well-known bug-bounty researcher (nahamsec); small, auditable Ruby script that permutes names and checks S3 — reliability rests on your wordlist, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "nahamsec lazys3"
+    ],
+    "tags": [
+      "s3",
+      "bucket-discovery"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/lazys3.md"
   },
   {
@@ -87231,45 +87212,50 @@
   {
     "id": "webhackurls",
     "name": "WebHackUrls",
-    "description": "The simplest tool for URl recon with filter by keyword and saving results to file.",
+    "description": "Use when you have a `domain` and want its historical URLs — pulls a domain's known paths from the Wayback Machine and filters them by extension/keyword.",
     "url": "https://github.com/mathis2001/WebHackUrls",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast archive-based URL discovery for a domain, filtered to interesting paths (admin, login, .js, .json, backups).",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python) on GitHub; no account or key needed.",
+    "opsec": "passive",
+    "opsecNote": "URL discovery itself is passive — it queries the Wayback Machine's archive, not the target's live server, so the target sees nothing. Note the optional screenshot feature DOES visit the discovered URLs live (active) and reveals your IP to the target; skip it or proxy it for a purely passive pass.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community Python tool (mathis2001) wrapping the public Wayback Machine index; results are as complete as the archive's crawl coverage, which is uneven.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cert4recon"
+    ],
+    "aliases": [
+      "WebHackUrls"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website analyze"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cert4recon"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webhackurls.md"
   },
   {
@@ -178604,42 +178590,6 @@
     "_file": "library/tools/opsec-investigator-tooling/persona-creation/random-user-generator.md"
   },
   {
-    "id": "ray-so",
-    "name": "Ray So",
-    "description": "A simple tool that allows you to beautifully design code as a picture (for social media post or article).",
-    "url": "https://ray.so/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ray-so.md"
-  },
-  {
     "id": "receive-sms-now-com",
     "name": "Receive-sms-now.com",
     "description": "OSINT tool: Receive-sms-now.com.",
@@ -256427,39 +256377,55 @@
   {
     "id": "unicorn-riot-discord-leaks",
     "name": "Unicorn Riot: Discord Leaks",
-    "description": "OSINT tool: Unicorn Riot: Discord Leaks.",
+    "description": "Use when you have a `username`/`name` possibly tied to far-right groups — searches leaked Discord chats and returns messages, `associate` links and `social-profile` handles.",
     "url": "https://discordleaks.unicornriot.ninja/discord/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching a large archive of leaked far-right/neo-Nazi Discord servers by user, server, channel or keyword.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and publicly searchable; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the archive is passive against the individuals in it — you query Unicorn Riot's site, not any live target, so subjects are not tipped off. Your own queries reach Unicorn Riot's servers; use a sock-puppet browser/VPN if you don't want the search associated with you. The content is extremist material — handle with care and appropriate legal/ethical framing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Unicorn Riot, an established non-profit media organisation, as investigative data journalism; the leaks are real chat exports, though usernames are self-chosen and identity linkage requires corroboration.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "discordleaks",
       "discordleaks-unicornriot-ninja"
     ],
+    "aliases": [
+      "DiscordLeaks",
+      "Unicorn Riot DiscordLeaks"
+    ],
+    "tags": [
+      "extremism",
+      "leaks"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unicorn-riot-discord-leaks.md"
   },
   {
@@ -288198,42 +288164,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/sitelike.md"
-  },
-  {
-    "id": "siteslike",
-    "name": "SitesLike",
-    "description": "OSINT tool: SitesLike.",
-    "url": "http://www.siteslike.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "similar-sites-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/siteslike.md"
   },
   {
     "id": "slack-discord-zoom-invites-search",

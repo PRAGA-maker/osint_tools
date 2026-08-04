@@ -291,7 +291,6 @@ kind: group-index
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
-- **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).
 - **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
 - **`receive-sms-online-for-free`** (low) — Use when you (the investigator) need to receive an SMS verification code without using your real number — provides free shared public virtua
 - **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num

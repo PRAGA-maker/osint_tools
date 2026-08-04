@@ -67,7 +67,7 @@ kind: group-index
 - **`aort`** (low) — Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `doma
 - **`api-mylnikov-org`** (low) — Use when you have a WiFi access point's BSSID (`mac-address`) and want its physical location — a free API that returns `geolocation` (lat/lo
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
-- **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
+- **`apt-groups-and-operations`** (low) — Use when you have an APT/threat-group name or alias and want to reconcile it — returns a cross-referenced matrix of named actors, their alia
 - **`archiveready`** (low) — Use when you have a `domain`/URL and want to know whether (and how well) web archives can capture it — returns an archivability score across
 - **`argus`** (low) — Use when you have a `domain` or `ip-address` and want a broad infrastructure sweep — returns DNS, WHOIS, geo-IP, ports, subdomains, harveste
 - **`arin-net`** (medium) — Use when you have an `ip-address` or ASN and want its full historical registration chain — returns the organizations, contacts, and domain/o
@@ -419,7 +419,7 @@ kind: group-index
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
 - **`webemailextractor-com`** (low) — Use when you have a `domain`/website (or list of them) and want the contact points published on it — extracts `email`s and `phone` numbers f
-- **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
+- **`webhackurls`** (low) — Use when you have a `domain` and want its historical URLs — pulls a domain's known paths from the Wayback Machine and filters them by extens
 - **`webosint`** (low) — Use when you have a `domain` and want a guided, step-by-step passive recon sweep (WHOIS, DNS, reverse-IP, certs, subdomains) — returns domai
 - **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract
 - **`webscore`** (low) — Use when you have a `domain`/URL and want a fast legitimacy read (HTTPS, domain age, Wayback history, Safe Browsing) — returns basic trust s

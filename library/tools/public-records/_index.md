@@ -895,7 +895,7 @@ kind: group-index
 - **`undps-human-development-index`** (low) — Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country 
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r
 - **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
-- **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.
+- **`unicorn-riot-discord-leaks`** (low) — Use when you have a `username`/`name` possibly tied to far-right groups — searches leaked Discord chats and returns messages, `associate` li
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates

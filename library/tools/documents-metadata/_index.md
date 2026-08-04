@@ -21,7 +21,6 @@ kind: group-index
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
 - **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
-- **`acuris-risk-intelligence`** (low) — Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals
 - **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
@@ -213,7 +212,7 @@ kind: group-index
 - **`the-time-now`** (low) — Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence an
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
-- **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
+- **`toolsley-analyze-file-format-online`** (low) — Use when you have a file of unknown/mismatched type and want its true format — reads the binary signature in-browser and returns the actual 
 - **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
 - **`truth-or-fiction-search`** (low) — Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-che

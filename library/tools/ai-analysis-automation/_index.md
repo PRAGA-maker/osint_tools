@@ -45,7 +45,6 @@ kind: group-index
 - **`awesome-threat-intelligence`** (low) — Use when you need to discover threat-intelligence sources, feeds and tools — a curated GitHub directory; returns pointers to other tools rat
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
-- **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
 - **`bendobrown`** (low) — OSINT tool: Bendobrown.
@@ -174,7 +173,7 @@ kind: group-index
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
-- **`keyfinder`** (low) — OSINT tool: keyFinder.
+- **`keyfinder`** (low) — Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, to
 - **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.
 - **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
 - **`lastpass`** (low) — OSINT tool: Lastpass.
@@ -293,7 +292,7 @@ kind: group-index
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
 - **`sector035`** (low) — OSINT tool: Sector035.
 - **`securesha`** (low) — OSINT tool: Securesha.
-- **`security-list`** (low) — OSINT tool: security-list.
+- **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
 - **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
 - **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ

@@ -551,7 +551,6 @@ kind: group-index
 - **`similarsites-com`** (medium) — Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
 - **`sitelike`** (medium) — Use when you have a `domain` and want to find related/similar websites (competitors, clones, same-niche sites) — returns candidate `domain`s
-- **`siteslike`** (low) — OSINT tool: SitesLike.
 - **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
 - **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
