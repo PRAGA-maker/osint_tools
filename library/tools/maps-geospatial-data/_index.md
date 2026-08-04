@@ -11,7 +11,7 @@ kind: group-index
 - **`acled-armed-conflict-location-and-event-data-project`** (medium) — Use when you have a place and date range in a conflict/protest zone and want geolocated event data — returns geolocation and address-level e
 - **`active-agency-map`** (medium) — Use when you have a `geolocation` / region and want to see a community-curated Google My Map of agency locations plotted for it — returns `a
 - **`alltrails`** (medium) — Use when you have a subject's `username`/`name` or a location and want their recorded hikes/runs and photos — returns geolocation (trail act
-- **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
+- **`amazonia-socio-ambiental-raisg`** (low) — Use when you have a `geolocation`/area in the Amazon basin and want land-use context — returns maps and downloadable shapefiles of indigenou
 - **`apple-com`** (medium) — Use when you have an `address` or `geolocation` and want Apple's maps, satellite, and street-level "Look Around" imagery as a second source 
 - **`apple-maps`** (low) — Use when you have an `address` or `geolocation` and want an independent basemap plus street-level "Look Around" imagery to verify or geoloca
 - **`aqueduct-water-risk-atlas`** (low) — Use when you have a `geolocation`/`address` and want the water-stress, flood and drought risk profile of that place — returns geolocation co

@@ -190,7 +190,7 @@ kind: group-index
 - **`httpfy`** (low) — Use when you have a `domain` (or a list of domains) and want fast HTTP fingerprinting — returns which are live plus status, title, server, c
 - **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse
 - **`hussh`** (low) — Use when you have a `domain` and want a one-shot recon sweep — returns subdomains, live hosts, historical URLs, and basic vuln checks compil
-- **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
+- **`hypestat-analyzer-plugin`** (low) — Use when you have a `domain` and want traffic estimates and its tech stack at a glance — a browser extension surfacing HypeStat's visitor es
 - **`hypestat`** (low) — Use when you have a `domain` and want a free at-a-glance stats sheet — returns estimated traffic, hosting/`ip-address`, tech, and analytics/
 - **`iana-root-zone-database`** (low) — Use when you have a `domain`'s TLD and want the authoritative registry/sponsoring organization behind it — returns the TLD operator (`employ
 - **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons

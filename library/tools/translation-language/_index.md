@@ -41,7 +41,7 @@ kind: group-index
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
 - **`gizoogle-textilizer`** (low) — Use when you have a block of text and want it rendered into (or read back from) US "gangsta"/AAVE-style slang — a novelty language aid, retu
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
-- **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another
+- **`handspeak-english-sign-language`** (low) — Use when you have footage of someone signing and want to identify the signs — a video ASL dictionary to look up American Sign Language signs
 - **`happyscribe-com`** (low) — Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) —
 - **`imtranslator-comparison-tool`** (low) — Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagre
 - **`imtranslator`** (low) — Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-Engli

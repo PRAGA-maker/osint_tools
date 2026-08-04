@@ -107,7 +107,7 @@ kind: group-index
 - **`einvestigator`** (low) — Use when you need investigation how-tos or a pointer to a records/people-search resource — a free education hub with 300+ guides and a curat
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
-- **`eraser`** (low) — OSINT tool: Eraser.
+- **`eraser`** (low) — Use when you need to securely wipe files or free space on a Windows machine so investigative material can't be recovered — an open-source se
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
 - **`exhibit`** (low) — Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-ri
 - **`explainshell-com`** (low) — Use when you have an unfamiliar shell command (from a writeup, a log, or a tool's README) and want each flag explained — paste it, get a pla

@@ -800,7 +800,6 @@ kind: group-index
 - **`skyscraperpage`** (low) — Use when you have a building `name`/`address` or a skyline `image` and want to identify a structure — returns building details, height, date
 - **`slovakia`** (high) — Use when you have a company `name`/`employer-org` or a `name` doing business with the Slovak state and want its verified beneficial owners —
 - **`slovenia`** (high) — Use when you have a company `name`, `address`, or registration number in Slovenia and want official registry data — returns employer-org det
-- **`snitch-list`** (low) — OSINT tool: Snitch List.
 - **`social-security-death-index`** (high) — Use when you have a US `name` and want to confirm a death — returns death date, birth date (`dob`), and last-residence location from the SSA
 - **`social-security-death-master-file`** (high) — Use when you have a `name` (or SSN) of a possibly-deceased US person and want death confirmation with birth/death dates and last residence —
 - **`socialworkengland-org-uk`** (high) — Use when you have a `name` (or registration number) and want to confirm someone is a registered social worker in England and their practisin

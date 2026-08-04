@@ -4397,37 +4397,49 @@
   {
     "id": "eraser",
     "name": "Eraser",
-    "description": "OSINT tool: Eraser.",
-    "url": "http://eraser.heidi.ie",
+    "description": "Use when you need to securely wipe files or free space on a Windows machine so investigative material can't be recovered — an open-source secure-deletion utility.",
+    "url": "https://eraser.heidi.ie",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Securely erasing sensitive files/free space on Windows so they can't be forensically recovered.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Eraser by Heidi Computers, GPL); Windows only.",
+    "opsec": "passive",
+    "opsecNote": "A purely local defensive/OpSec tool — it runs on your own machine and touches no network or subject. Its job is to protect *your* operational hygiene; deletion is irreversible, so double-check targets before wiping.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-established, well-known open-source Windows secure-erase tool; widely used and audited by the community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "encsf-mp",
+      "nixory"
+    ],
+    "aliases": [
+      "Eraser by Heidi",
+      "eraser.heidi.ie"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "secure-deletion",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/eraser.md"
   },
   {
@@ -42597,40 +42609,6 @@
     "_file": "library/tools/dating-classifieds/fikfap-com.md"
   },
   {
-    "id": "findr-fans",
-    "name": "Findr.fans",
-    "description": "OSINT tool: Findr.fans.",
-    "url": "https://findr.fans/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/findr-fans.md"
-  },
-  {
     "id": "francais-a-londres-org-french-classifieds",
     "name": "francais-a-londres.org - French Classifieds",
     "description": "Use when investigating a French-speaking subject in London/the UK — search this Franco-British community site's classifieds and listings by keyword or location.",
@@ -69383,42 +69361,51 @@
   {
     "id": "hypestat-analyzer-plugin",
     "name": "HypeStat Analyzer Plugin",
-    "description": "Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.",
-    "url": "https://chrome.google.com/webstore/detail/hypestat-analyzer-plugin/fmebbkhpaallipfibkfnajnlimgaoefp/related",
+    "description": "Use when you have a `domain` and want traffic estimates and its tech stack at a glance — a browser extension surfacing HypeStat's visitor estimates, technologies and hosting for any site.",
+    "url": "https://chromewebstore.google.com/detail/hypestat-analyzer-plugin/fmebbkhpaallipfibkfnajnlimgaoefp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click traffic estimates, tech-stack and hosting readout for the site you're on.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension; the underlying HypeStat.com data is free to view, with some deeper reports gated on the site.",
+    "opsec": "passive",
+    "opsecNote": "The extension queries HypeStat about the domain you're viewing, not the target's server directly — so the site doesn't see you via HypeStat. The developer states no user-data collection. Estimates are modeled, not measured, so treat traffic figures as rough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular free extension (5.0★, no-data-collection per the listing) fronting HypeStat.com's estimates; the numbers are third-party estimates, not ground truth.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HypeStat extension",
+      "hypestat.com"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website traffic look up"
+      "Website traffic look up",
+      "tech-stack"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hypestat-analyzer-plugin.md"
   },
   {
@@ -148705,38 +148692,58 @@
   {
     "id": "amazonia-socio-ambiental-raisg",
     "name": "Amazonia Socio Ambiental (RAISG)",
-    "description": "Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestation in bolivia, brazil, colombia, ecuador, guyanas and suriname, peru, venezuela",
-    "url": "https://www.amazoniasocioambiental.org/en/",
+    "description": "Use when you have a `geolocation`/area in the Amazon basin and want land-use context — returns maps and downloadable shapefiles of indigenous territories, mining, oil concessions, roads, fires and deforestation.",
+    "url": "https://www.raisg.org/en/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Amazon-basin geospatial layers (indigenous lands, mining, roads, fires, deforestation) as maps and shapefiles.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view online and download; datasets provided as shapefiles plus APIs, no account required.",
+    "opsec": "passive",
+    "opsecNote": "You browse/download published environmental datasets — nothing touches any individual or subject. Fully passive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "RAISG (Amazon Geo-Referenced Socio-Environmental Information Network) is an established consortium of Amazon-basin research/NGO institutions; a Bellingcat-toolkit-listed authoritative source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "br",
+      "pe",
+      "co",
+      "ec",
+      "bo",
+      "ve"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RAISG",
+      "raisg.org",
+      "amazoniasocioambiental.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "geospatial",
+      "amazon"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/amazonia-socio-ambiental-raisg.md"
   },
   {
@@ -249734,53 +249741,6 @@
     "_file": "library/tools/public-records/slovenia.md"
   },
   {
-    "id": "snitch-list",
-    "name": "Snitch List",
-    "description": "OSINT tool: Snitch List.",
-    "url": "https://web.archive.org/web/20200115091633/http://sniitch.com/all/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "archive-org",
-      "internet-archive",
-      "internet-archive-open-source-videos",
-      "internet-archive-videos",
-      "parler-archives",
-      "the-twitter-stream-grab",
-      "tv-closed-caption-search",
-      "wayback-machine",
-      "wayback-machine-2",
-      "web-archive-org",
-      "web-archive-org-2"
-    ],
-    "_file": "library/tools/public-records/snitch-list.md"
-  },
-  {
     "id": "social-security-death-index",
     "name": "Social Security Death Index",
     "url": "https://stevemorse.org/ssdi/ssdi.html",
@@ -337272,25 +337232,28 @@
   },
   {
     "id": "handspeak-english-sign-language",
-    "name": "HandSpeak English Sign Language",
-    "description": "Tool for translating from one language form to another",
-    "url": "http://www.handspeak.com/translate",
+    "name": "HandSpeak (ASL Dictionary)",
+    "description": "Use when you have footage of someone signing and want to identify the signs — a video ASL dictionary to look up American Sign Language signs, fingerspelling and phrases.",
+    "url": "https://www.handspeak.com/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up American Sign Language signs/fingerspelling from video to interpret a signer.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Dictionary and most materials are free; an optional ad-free Patron subscription exists.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You browse a public reference site — nothing touches any subject. Fully passive; do not upload your case footage anywhere, just compare signs by eye.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A comprehensive ASL resource maintained since 1995 by a native signer/instructor (Jolanta Lapiak); reputable within the Deaf-education community.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -337299,15 +337262,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "handspeak.com",
+      "ASL dictionary"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "sign-language",
+      "asl"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/handspeak-english-sign-language.md"
   },
   {
