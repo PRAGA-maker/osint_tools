@@ -72,8 +72,6 @@ kind: group-index
 - **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
 - **`rss-feed-reader`** (low) — Use when you have a `domain`/site tied to a subject and want to monitor its new posts passively via RSS — a monitoring aid, surfaces social-
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.
-- **`rss-search-engine`** (low) — OSINT tool: RSS Search Engine.
-- **`rss-search-hub`** (low) — OSINT tool: RSS Search Hub.
 - **`rssowl`** (low) — Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS
 - **`scrapestorm-com`** (medium) — Use when you have a `domain` or target web page and want to bulk-extract structured data (emails, phones, names, listings) without coding — 
 - **`selfoss`** (low) — OSINT tool: Selfoss.

@@ -14,7 +14,7 @@ kind: group-index
 
 ## Skills here
 - **`10minutemail-com`** (low) — Use when you need a throwaway `email` inbox to receive a one-off verification code without exposing a real address — an investigator OpSec t
-- **`2-682-783-free-ai-generated-photos`** (low) — OSINT tool: 2,682,783 free AI generated photos.
+- **`2-682-783-free-ai-generated-photos`** (low) — Use when you need a realistic face for a sock-puppet account (or a control image to study GAN faces) — returns free AI-generated portrait ph
 - **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
 - **`9-steps-to-security-in-the-digital-age`** (low) — Use when you're hardening your investigator OPSEC — a free plain-language online-privacy guide covering passwords, VPNs, tracking, and accou
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
@@ -72,7 +72,6 @@ kind: group-index
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
-- **`click-and-clean-extension-chrome`** (low) — Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks
 - **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent review
@@ -121,7 +120,6 @@ kind: group-index
 - **`fake-person-generator`** (low) — Use when you need a coherent fictional identity for a research sock-puppet account — returns fabricated persona details (name, address, DOB,
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
-- **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
@@ -180,7 +178,6 @@ kind: group-index
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
 - **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
-- **`instant-preview`** (low) — Chrome extension that adds instant previews to the search engine results page.
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
 - **`ipcheck`** (low) — OSINT tool: IPCheck.
@@ -199,7 +196,7 @@ kind: group-index
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
-- **`ldplayer-net`** (low) — OSINT tool: Ldplayer.net.
+- **`ldplayer-net`** (low) — Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for s
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
 - **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
@@ -209,7 +206,6 @@ kind: group-index
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
-- **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
@@ -235,7 +231,6 @@ kind: group-index
 - **`nino-generator`** (low) — Use when you're building a UK sock-puppet identity and need a plausibly-formatted but fake National Insurance Number for a test field — retu
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
-- **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
@@ -386,9 +381,7 @@ kind: group-index
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
-- **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
-- **`windows-10-online-emulator`** (low) — OSINT tool: Windows 10 Online Emulator.
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
 - **`windows-phone-imei-generator`** (low) — OSINT tool: Windows Phone IMEI Generator.
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system

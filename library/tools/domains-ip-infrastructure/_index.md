@@ -72,7 +72,7 @@ kind: group-index
 - **`argus`** (low) — Use when you have a `domain` or `ip-address` and want a broad infrastructure sweep — returns DNS, WHOIS, geo-IP, ports, subdomains, harveste
 - **`arin-net`** (medium) — Use when you have an `ip-address` or ASN and want its full historical registration chain — returns the organizations, contacts, and domain/o
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
-- **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
+- **`assay`** (low) — Use when you have a `domain`/URL and want a one-stop inspection — returns subdomains, WHOIS, GeoIP, DNS, headers, archives, cookies and phis
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
 - **`awesome-tech-stack`** (low) — Use when you have a `domain` and want its technology stack plus a security/modernity assessment — returns detected technologies and an "awes
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
@@ -179,7 +179,7 @@ kind: group-index
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`hacker-target`** (medium) — Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hos
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
-- **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
+- **`haklistgen`** (low) — Use when you have a target's text/pages (from a `domain` or file) and want a custom wordlist for fuzzing — returns a deduplicated word/token
 - **`hakrawler`** (low) — Use when you have a `domain` and want to crawl it fast for links, endpoints, JS files and in-scope assets — returns URLs and `domain`s (subd
 - **`hcl-threat-map`** (low) — Use when you want a live, region/industry-filtered dashboard of recent deep/dark-web cyberattack activity — returns aggregated threat trends
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
@@ -286,7 +286,6 @@ kind: group-index
 - **`network-tools`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS re
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
-- **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — Use when you have Nmap XML scan output for an `ip-address`/`domain` and want a readable report — converts it to HTML, CSV, JSON, Markdown, S
 - **`nmap-online`** (low) — Use when you have a `domain` or `ip-address` and want a quick browser-based Nmap port scan without a local install — returns open ports and 
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran

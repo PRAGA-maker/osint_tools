@@ -68,7 +68,6 @@ kind: group-index
 - **`ask`** (low) — Use when you want a secondary general web search for a `name`/term to catch results the big engines rank differently — returns web links, so
 - **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
 - **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
-- **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
 - **`awesome-public-datasets`** (low) — Use when you need a free public dataset on a topic (government, geography, health, social, finance) and want a curated index of where to get
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
@@ -104,7 +103,7 @@ kind: group-index
 - **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
 - **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
-- **`bugbountyhunting`** (low) — Bug bounty hunting search engine
+- **`bugbountyhunting`** (low) — Use when you have a vulnerability class or technique and want real-world writeups/resources — returns a keyword-searchable index of bug-boun
 - **`bureau-of-justice-statistics`** (medium) — Use when you need official US crime/justice statistics (arrests, corrections, victimization) for context — an aggregate government data port
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
 - **`campaign-finance-reports-and-data`** (medium) — Use when you have a `name` and want US federal political donation records — returns address, employer-org, and occupation from FEC filings.
@@ -329,7 +328,6 @@ kind: group-index
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
 - **`kids-search`** (low) — Kid-friendly search engine.
 - **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
-- **`kidsites-com`** (low) — Listing of youth-related websites
 - **`kidsnet-search-engine-australia`** (low) — Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with
 - **`kidtopia`** (low) — Use when you want a teacher-curated, safe-search view of the web on a topic — returns filtered educational results from a Google Custom Sear
 - **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
@@ -505,7 +503,7 @@ kind: group-index
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Use when you have a `name`, `username`, or `email` and want to fan the same query across 150+ search sites from your terminal — returns brow
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
-- **`sage-journals`** (low) — OSINT tool: SAGE Journals.
+- **`sage-journals`** (low) — Use when you have a `name`, topic or affiliation and want peer-reviewed literature — returns academic articles, author affiliations and cita
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
@@ -585,7 +583,6 @@ kind: group-index
 - **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — Use when you have a `name`, `username`, or keyword and want to search dozens of torrent indexes at once — returns torrent listings and uploa
-- **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
@@ -658,7 +655,6 @@ kind: group-index
 - **`world-digital-library`** (low) — Use when you have a place, era, or name tied to history and want primary sources — search digitized manuscripts, maps and documents; returns
 - **`world-newspapers`** (low) — Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subjec
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
-- **`worldnews`** (low) — OSINT tool: WorldNews.
 - **`wow-search-engine-united-kingdom`** (low) — Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web result
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine
@@ -683,7 +679,6 @@ kind: group-index
 - **`youcare`** (medium) — Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns ag
 - **`zarebin-iran`** (low) — Use when you have a `name`/`username` or Persian-language query and want Iran-focused results — returns Persian web, news, and media content
 - **`zetoc`** (low) — OSINT tool: Zetoc.
-- **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
 - **`zoomeye`** (medium) — Use when you have a `domain`/`ip-address` and want exposed-host, service and banner intel — returns ip-address, domain and device-id.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

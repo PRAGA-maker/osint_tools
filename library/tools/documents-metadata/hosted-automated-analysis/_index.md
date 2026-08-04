@@ -17,7 +17,6 @@ kind: group-index
 - **`joe-file-analyzer`** (low) — Use when you have a suspicious file (`document-id`/hash) and want dynamic malware analysis — returns behaviour, IOCs, and system-interaction
 - **`jotti-s-malware-scanner`** (low) — Use when you have a suspicious file (`document-id`/hash) and want a quick multi-engine AV verdict — returns per-engine detections and the fi
 - **`koodous`** (low) — Use when you have an Android APK (or its hash/`document-id`) and want community malware analysis — returns detection verdicts, YARA matches,
-- **`malware-config`** (low) — Malware configuration extraction and C2 server tracking
 - **`metadefender`** (low) — Use when you have a file or hash (`document-id`) or a `domain`/`ip-address` and want multi-engine malware/reputation analysis — returns verd
 - **`opswat-meta-defender`** (low) — Multi-engine malware detection with advanced threat analysis
 - **`pikker-ee-cuckoo-sandbox`** (low) — Free automated dynamic malware analysis with detailed behavioral reports

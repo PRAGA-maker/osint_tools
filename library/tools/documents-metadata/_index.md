@@ -10,7 +10,7 @@ kind: group-index
 - **`android/`** — 13 skill(s) below.
 - **`app-analysis/`** — 4 skill(s) below.
 - **`device-forensics/`** — 2 skill(s) below.
-- **`hosted-automated-analysis/`** — 17 skill(s) below.
+- **`hosted-automated-analysis/`** — 16 skill(s) below.
 - **`ios/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
@@ -108,7 +108,6 @@ kind: group-index
 - **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
 - **`grep-for-osint`** (low) — Use when you have a text corpus or file directory (a dump, scraped pages, logs) and want to bulk-extract selectors — returns email, phone, i
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
-- **`hispavista-spain`** (low) — Spain-based digital marketing service
 - **`identify-plans`** (low) — Use when you have an `image` of vegetation in a photo and want to identify the plant species — narrows the `geolocation` by matching flora t
 - **`image-analyzer-addon`** (low) — View all images on a page and expose image properties, EXIF data, and one-click download
 - **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
@@ -203,7 +202,6 @@ kind: group-index
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — Use when you have a file of unknown/mismatched type and want its true format — reads the binary signature in-browser and returns the actual 
-- **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
 - **`truth-or-fiction-search`** (low) — Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-che
 - **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou

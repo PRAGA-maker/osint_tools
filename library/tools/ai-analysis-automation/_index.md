@@ -25,7 +25,6 @@ kind: group-index
 - **`apis-for-osint`** (low) — Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapp
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
-- **`arbor-js`** (low) — OSINT tool: Arbor.js.
 - **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
 - **`ashok`** (low) — Swiff knife for #osint
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
@@ -228,7 +227,6 @@ kind: group-index
 - **`osint-harvester`** (low) — Use when you have a `domain`/`ip-address`/URL and want a scripted collect-and-normalize of DNS, WHOIS, HTTP headers, and IP reputation into 
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
-- **`osint-team`** (low) — OSINT tool: OSINT Team.
 - **`osint-techniques`** (low) — Use when you need a technique reference or a vetted tool for a selector — returns methodology write-ups and a curated OSINT tools directory.
 - **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide

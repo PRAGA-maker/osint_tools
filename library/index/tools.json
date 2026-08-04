@@ -514,42 +514,6 @@
     "_file": "library/tools/ai-analysis-automation/appsec-fyi-osint-resources.md"
   },
   {
-    "id": "arbor-js",
-    "name": "Arbor.js",
-    "description": "OSINT tool: Arbor.js.",
-    "url": "http://arborjs.org",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/arbor-js.md"
-  },
-  {
     "id": "arkhammirror",
     "name": "ArkhamMirror",
     "description": "Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timelines, and link graphs.",
@@ -10653,42 +10617,6 @@
     "_file": "library/tools/ai-analysis-automation/osint-sh.md"
   },
   {
-    "id": "osint-team",
-    "name": "OSINT Team",
-    "description": "OSINT tool: OSINT Team.",
-    "url": "https://www.osintteam.com/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-blogs"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/osint-team.md"
-  },
-  {
     "id": "osint-techniques",
     "name": "OSINT Techniques",
     "description": "Use when you need a technique reference or a vetted tool for a selector — returns methodology write-ups and a curated OSINT tools directory.",
@@ -20556,82 +20484,6 @@
     "_file": "library/tools/archives-cache/rss-micro.md"
   },
   {
-    "id": "rss-search-engine",
-    "name": "RSS Search Engine",
-    "description": "OSINT tool: RSS Search Engine.",
-    "url": "http://ctrlq.org/rss",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ctlrq-address-lookup",
-      "first-tweet"
-    ],
-    "_file": "library/tools/archives-cache/rss-search-engine.md"
-  },
-  {
-    "id": "rss-search-hub",
-    "name": "RSS Search Hub",
-    "description": "OSINT tool: RSS Search Hub.",
-    "url": "http://www.rsssearchhub.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/rss-search-hub.md"
-  },
-  {
     "id": "rssowl",
     "name": "RSSOwl",
     "description": "Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS/Atom reader for standing surveillance of sources.",
@@ -26341,42 +26193,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/dpaste.md"
-  },
-  {
-    "id": "ehow",
-    "name": "eHow",
-    "description": "OSINT tool: eHow.",
-    "url": "http://www.ehow.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "q-a-sites"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/ehow.md"
   },
   {
     "id": "eumom-ie",
@@ -50886,46 +50702,6 @@
     "_file": "library/tools/documents-metadata/guru-com.md"
   },
   {
-    "id": "hispavista-spain",
-    "name": "HispaVista (Spain)",
-    "description": "Spain-based digital marketing service",
-    "url": "http://hispavista.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/hispavista-spain.md"
-  },
-  {
     "id": "hybrid-analysis",
     "name": "Hybrid Analysis",
     "description": "Use when you have a suspicious file/URL or a file hash and want a behavioural malware report — returns sandbox verdict, IOCs, and related samples.",
@@ -52608,46 +52384,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/malware-analysis-tools.md"
-  },
-  {
-    "id": "malware-config",
-    "name": "Malware Config",
-    "description": "Malware configuration extraction and C2 server tracking",
-    "url": "https://malwareconfig.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "hosted-automated-analysis"
-    ],
-    "bestFor": "Malware configuration extraction and C2 server tracking",
-    "input": "SHA256 hash, domain, IP address, malware family",
-    "output": "Extracted malware configurations, C2 infrastructure, encrypted keys, command data",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Search-only interface; no file uploads required; passive lookups",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/hosted-automated-analysis/malware-config.md"
   },
   {
     "id": "malware-traffic-analysis-net",
@@ -56754,46 +56490,6 @@
     "_file": "library/tools/documents-metadata/toolsley-analyze-file-format-online.md"
   },
   {
-    "id": "topsite",
-    "name": "TopSite",
-    "description": "Search engine that identifies the top ten results for almost any subject",
-    "url": "http://www.topsite.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/topsite.md"
-  },
-  {
     "id": "transitions-abroad",
     "name": "Transitions Abroad",
     "description": "Online guide to working, studying, traveling and living abroad",
@@ -59487,42 +59183,50 @@
   {
     "id": "assay",
     "name": "ASSAY",
-    "description": "URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame view and more.",
+    "description": "Use when you have a `domain`/URL and want a one-stop inspection — returns subdomains, WHOIS, GeoIP, DNS, headers, archives, cookies and phishing/malware reputation.",
     "url": "https://d09r.github.io/assay-url-inspection-tools/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A single browser-extension dashboard bundling WHOIS, DNS, subdomains, GeoIP, headers, archives and reputation for any URL.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser extension (Chrome/Edge/Firefox); donation-supported via the author's Patreon. No account.",
+    "opsec": "passive",
+    "opsecNote": "Most checks (WHOIS, DNS, archives, reputation feeds) are passive lookups against third parties. The \"live web requests\" / page-source features fetch the target itself — that portion is active, so use a sock-puppet profile when inspecting a hostile site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Maintained by a single independent developer (#d09r); convenient aggregator, but each result comes from an underlying third-party service whose accuracy it inherits.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Assay URL Inspection",
+      "d09r Assay"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Searchers, scrapers, extractors, parsers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/assay.md"
   },
   {
@@ -68261,45 +67965,51 @@
   {
     "id": "haklistgen",
     "name": "HakListGen",
-    "description": "A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).",
+    "description": "Use when you have a target's text/pages (from a `domain` or file) and want a custom wordlist for fuzzing — returns a deduplicated word/token list to feed subdomain/path discovery.",
     "url": "https://github.com/hakluke/haklistgen",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a bespoke wordlist from any text or web page to fuel targeted subdomain/content discovery.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Go); install/build yourself. No account.",
+    "opsec": "passive",
+    "opsecNote": "Building the wordlist is offline/passive. The downstream fuzzing you feed it into is ACTIVE against the target — that step, not this one, needs a sock-puppet IP and care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small open-source utility by hakluke (well-known in the recon community); code is short and auditable, but it is a personal project, not a supported product.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "hakrawler"
+    ],
+    "aliases": [
+      "haklistgen",
+      "hakluke wordlist generator"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Wordlists generators"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hakrawler"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/haklistgen.md"
   },
   {
@@ -75994,47 +75704,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/nmap.md"
-  },
-  {
-    "id": "nmap-checker-tool",
-    "name": "Nmap Checker Tool",
-    "description": "OSINT tool: Nmap Checker Tool.",
-    "url": "https://shadowcrypt.net/tools/nmap",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cloudflare-resolver-tool",
-      "geoip-tracker-tool",
-      "page-links-extractor-tool",
-      "phone-number-lookup-tool",
-      "shadowcrypt-tools"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/nmap-checker-tool.md"
   },
   {
     "id": "nmap-formatter",
@@ -164489,42 +164158,52 @@
   },
   {
     "id": "2-682-783-free-ai-generated-photos",
-    "name": "2,682,783 free AI generated photos",
-    "description": "OSINT tool: 2,682,783 free AI generated photos.",
+    "name": "Generated Photos (free AI faces)",
+    "description": "Use when you need a realistic face for a sock-puppet account (or a control image to study GAN faces) — returns free AI-generated portrait photos of non-existent people.",
     "url": "https://generated.photos/faces",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Sourcing royalty-free AI-generated faces for sock-puppet avatars, filterable by age/gender/ethnicity/pose.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "face"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "A large free gallery of AI faces (free tier with attribution/limits for non-commercial use); bulk/commercial use and the API/custom generation are paid.",
+    "opsec": "passive",
+    "opsecNote": "Using a generated face avoids stealing a real person's photo (which reverse-image search would expose). Note these libraries are themselves indexed — a determined analyst can sometimes match a face back to generated.photos; vary/lightly edit images and do not reuse one face across personas.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Generated Photos (Generated Media, Inc.); a well-known, legitimate source of synthetic faces widely used for sock-puppet avatars.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "face-anonimyzer",
       "face-generator"
     ],
+    "aliases": [
+      "Generated Photos",
+      "generated.photos"
+    ],
+    "tags": [
+      "Sock Puppets",
+      "synthetic-faces"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/2-682-783-free-ai-generated-photos.md"
   },
   {
@@ -167278,46 +166957,6 @@
     "_file": "library/tools/opsec-investigator-tooling/clamxav-anti-virus-for-mac-osx.md"
   },
   {
-    "id": "click-and-clean-extension-chrome",
-    "name": "Click&Clean Extension (Chrome)",
-    "description": "Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks",
-    "url": "https://chromewebstore.google.com/detail/clickclean/ghgabhipcejejjmhhchfonmamedcbeod",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/click-and-clean-extension-chrome.md"
-  },
-  {
     "id": "cligpt",
     "name": "CLIGPT",
     "description": "The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.",
@@ -169812,54 +169451,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/fastscanner-app-mobile-android.md"
-  },
-  {
-    "id": "fbi-common-fraud-schemes-united-states",
-    "name": "FBI Common Fraud Schemes (United States)",
-    "description": "Listing of scam, fraud, hoax, and phishing types",
-    "url": "https://www.fbi.gov/scams-safety/fraud",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fbi-information-technology-united-states",
-      "federal-bureau-of-investigations-value",
-      "most-wanted",
-      "most-wanted-criminal-pages",
-      "sex-offender-registry-websites",
-      "vault-fbi-gov"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/fbi-common-fraud-schemes-united-states.md"
   },
   {
     "id": "fedora-security-lab",
@@ -172368,46 +171959,6 @@
     "_file": "library/tools/opsec-investigator-tooling/instagram-social-networking-app-mobile-android.md"
   },
   {
-    "id": "instant-preview",
-    "name": "Instant Preview",
-    "description": "Chrome extension that adds instant previews to the search engine results page.",
-    "url": "https://chrome.google.com/webstore/detail/instant-preview/majhgbekihmliceijipbdccgicepmmei",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/instant-preview.md"
-  },
-  {
     "id": "intelbox-malwaredojo",
     "name": "IntelBox (malwaredojo)",
     "description": "Installer arsenal of OSINT tools for Debian systems and VMs.",
@@ -173401,35 +172952,44 @@
   {
     "id": "ldplayer-net",
     "name": "Ldplayer.net",
-    "description": "OSINT tool: Ldplayer.net.",
+    "description": "Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for sandboxed app investigation.",
     "url": "https://www.ldplayer.net/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Running Android-only apps (messengers, dating, marketplace) on PC in an isolated, resettable emulator for OSINT without using a real phone.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free download (Windows/macOS); monetised via ads/game partnerships. No account for the emulator itself.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Lets you investigate mobile apps without your real device or SIM. Still create app accounts as sock puppets, use a VPN/clean network, and reset the instance between subjects — the emulator isolates the app, not your network identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-used commercial Android emulator (LDPlayer); mainstream and actively maintained, though gaming-oriented and closed-source, so run it on a dedicated/segregated machine.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LDPlayer",
+      "ldplayer.net"
+    ],
+    "tags": [
+      "android-emulator",
+      "sock-puppet-tooling"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/ldplayer-net.md"
   },
   {
@@ -173900,46 +173460,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-android.md"
-  },
-  {
-    "id": "magicplan-floor-plans-and-estimates-app-mobile-ios",
-    "name": "MagicPlan Floor Plans and Estimates App (Mobile – iOS)",
-    "description": "App for mobile devices for creating real-time floor plans using camera photos",
-    "url": "https://itunes.apple.com/ca/app/magicplan/id427424432?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-ios.md"
   },
   {
     "id": "malwarebytes-anti-malware",
@@ -175088,46 +174608,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/noscript.md"
-  },
-  {
-    "id": "note-board-management-extension-chrome",
-    "name": "Note Board Management Extension (Chrome)",
-    "description": "Add-on for Google Chrome that manages information in the form of sticky notes on a board",
-    "url": "https://chrome.google.com/webstore/detail/note-board/goficmpcgcnombioohjcgdhbaloknabb",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/note-board-management-extension-chrome.md"
   },
   {
     "id": "off-the-record-instant-messaging-plug-in",
@@ -182466,46 +181946,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/whatismybrowser-com.md"
   },
   {
-    "id": "whatsapp-messaging-app-mobile-android",
-    "name": "Whatsapp Messaging App (Mobile – Android)",
-    "description": "App for mobile devices for messaging services",
-    "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/whatsapp-messaging-app-mobile-android.md"
-  },
-  {
     "id": "whenx",
     "name": "WhenX",
     "description": "Candidate notes for Linkedin profiles - synchronized with Google.",
@@ -182544,45 +181984,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/whenx.md"
-  },
-  {
-    "id": "windows-10-online-emulator",
-    "name": "Windows 10 Online Emulator",
-    "description": "OSINT tool: Windows 10 Online Emulator.",
-    "url": "https://www.onworks.net/runos/create-os.html?os=win10_emulator&home=init",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Online OS Emulators"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "parrot-security-os-online-emulator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/windows-10-online-emulator.md"
   },
   {
     "id": "windows-event-collection",
@@ -211272,37 +210673,43 @@
   {
     "id": "cepii",
     "name": "CEPII",
-    "description": "OSINT tool: CEPII.",
+    "description": "Use when you need international-economics datasets (trade flows, gravity, country geography) for context — returns free downloadable research databases.",
     "url": "http://www.cepii.fr/CEPII/en/welcome.asp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free, well-documented international-economics databases (bilateral trade, gravity models, country/geography data) for analytical context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open-access research databases (e.g. CHELEM, BACI, Gravity) with documentation; free, no account. As of July 2026 CEPII merged with OFCE into the Institut français d'économie (IFE).",
+    "opsec": "passive",
+    "opsecNote": "Passive, aggregate economic data — you query countries/flows, not an individual. No subject data is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Produced by CEPII, France's leading international-economics research centre (now part of IFE, affiliated with Sciences Po); authoritative, well-documented datasets.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Centre d'Etudes Prospectives et d'Informations Internationales",
+      "cepii.fr"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cepii.md"
   },
   {
@@ -227499,41 +226906,47 @@
   {
     "id": "ilostat",
     "name": "ILOSTAT",
-    "description": "OSINT tool: ILOSTAT.",
-    "url": "http://www.ilo.org/ilostat/faces/oracle/webcenter/portalapp/pagehierarchy/Page137.jspx?_afrLoop=443508925711569&clean=true#%40%3F_afrLoop%3D443508925711569%26clean%3Dtrue%26_adf.ctrl-state%3Dl4dwldaf3_9",
+    "description": "Use when you need labour-market statistics for a country/sector — returns employment, wages, informality and working-conditions indicators from the ILO's global database.",
+    "url": "https://ilostat.ilo.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative country- and sector-level labour statistics (employment, wages, informality, occupations) for context on a place or workforce.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open from the International Labour Organization; data explorer, bulk downloads and an API, no account. (The old ilo.org Oracle portal URL now redirects to ilostat.ilo.org.)",
+    "opsec": "passive",
+    "opsecNote": "Passive, aggregate statistical data — you query countries/sectors, not an individual. No subject data is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the ILO (a UN agency); a primary, authoritative source for international labour statistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ilo-world-employment-and-social-outlook-trends",
       "international-standard-classification-of-occupations"
     ],
+    "aliases": [
+      "ILO Statistics",
+      "ilostat.ilo.org"
+    ],
+    "tags": [
+      "data-and-statistics"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ilostat.md"
   },
   {
@@ -231263,37 +230676,43 @@
   {
     "id": "latinobarometro",
     "name": "Latinobarometro",
-    "description": "OSINT tool: Latinobarometro.",
-    "url": "http://www.latinobarometro.org",
+    "description": "Use when you need public-opinion/attitudinal data for a Latin American country — returns survey datasets on democracy, economy and society across 18 countries.",
+    "url": "https://www.latinobarometro.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Country-level Latin American public-opinion data (democracy, trust, economy) for context on a place or population.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Datasets and an online analysis tool are publicly available (a free registration is typically needed to download microdata). Run by a non-profit with international backing.",
+    "opsec": "passive",
+    "opsecNote": "Passive, aggregate survey data — you query countries/topics, not an individual. No subject data is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Produced by Corporación Latinobarómetro (Santiago, Chile), a long-running reference survey supported by UNDP/IDB/CAF and others; authoritative for its own methodology.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Latinobarómetro",
+      "latinobarometro.org"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/latinobarometro.md"
   },
   {
@@ -259767,42 +259186,6 @@
     "_file": "library/tools/search-engines/australian-bureau-of-statistics.md"
   },
   {
-    "id": "auto-searcher",
-    "name": "Auto Searcher",
-    "description": "One by one types words from a given list into the search bar of #Google, #Bing, or another search engine",
-    "url": "https://chrome.google.com/webstore/detail/auto-searcher/hhggekcjcdgenbgejmkhineppclnkbkn/related",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/auto-searcher.md"
-  },
-  {
     "id": "avvo-north-america",
     "name": "Avvo (North America)",
     "description": "Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area, office `address`, contact details and disciplinary record.",
@@ -261730,38 +261113,43 @@
   {
     "id": "bugbountyhunting",
     "name": "BugBountyHunting",
-    "description": "Bug bounty hunting search engine",
+    "description": "Use when you have a vulnerability class or technique and want real-world writeups/resources — returns a keyword-searchable index of bug-bounty reports and reference material.",
     "url": "https://www.bugbountyhunting.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A community-curated, keyword-searchable database of bug-bounty writeups and vulnerability references (XSS, SSRF, SQLi, RCE, IDOR, Web3).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and public; no login required to search or browse. Community-submitted content.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of a public knowledge base; you search techniques, not a target. Nothing about a subject is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-curated aggregator of third-party writeups; quality varies by submission, so treat entries as leads and read the original reports.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "bugbountyhunting.com"
+    ],
     "tags": [
       "Search engines",
       "Bugbounty/vulnerabilities search tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bugbountyhunting.md"
   },
   {
@@ -274065,46 +273453,6 @@
     "_file": "library/tools/search-engines/kidshealth.md"
   },
   {
-    "id": "kidsites-com",
-    "name": "Kidsites.com",
-    "description": "Listing of youth-related websites",
-    "url": "http://www.kidsites.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/kidsites-com.md"
-  },
-  {
     "id": "kidsnet-search-engine-australia",
     "name": "Kids.net.au (Kidsnet)",
     "description": "Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with limited OSINT value.",
@@ -283473,37 +282821,48 @@
   {
     "id": "sage-journals",
     "name": "SAGE Journals",
-    "description": "OSINT tool: SAGE Journals.",
-    "url": "http://online.sagepub.com",
+    "description": "Use when you have a `name`, topic or affiliation and want peer-reviewed literature — returns academic articles, author affiliations and citations across social/health sciences.",
+    "url": "https://journals.sagepub.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching a major academic publisher's catalogue to find a person's publications, affiliations and research topics.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search; abstracts and metadata are free, and some articles are open-access, but many full texts are paywalled or need an institutional subscription. The old online.sagepub.com now redirects to journals.sagepub.com.",
+    "opsec": "passive",
+    "opsecNote": "Passive catalogue search; you query names/topics, not a target's systems. No subject data is disclosed by searching.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by SAGE Publishing, an established academic publisher; article metadata (authors, affiliations, dates) is authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SAGE Publishing",
+      "online.sagepub.com",
+      "journals.sagepub.com"
+    ],
     "tags": [
       "academic-resources-and-grey-literature"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sage-journals.md"
   },
   {
@@ -287829,43 +287188,6 @@
     "_file": "library/tools/search-engines/torrent-seeker.md"
   },
   {
-    "id": "torrents-me",
-    "name": "Torrents.me",
-    "description": "torrent aggregator with search engines and list of new torrents trackers",
-    "url": "https://torrends.to",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Filesharing Search Engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/torrents-me.md"
-  },
-  {
     "id": "totalbeauty",
     "name": "TotalBeauty",
     "description": "Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style reviewer activity.",
@@ -291592,43 +290914,6 @@
     "_file": "library/tools/search-engines/worldchambersnetwork-directory-search.md"
   },
   {
-    "id": "worldnews",
-    "name": "WorldNews",
-    "description": "OSINT tool: WorldNews.",
-    "url": "http://wn.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": null,
-    "_file": "library/tools/search-engines/worldnews.md"
-  },
-  {
     "id": "wow-search-engine-united-kingdom",
     "name": "Wow Search (wow.com)",
     "description": "Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web results toward `social-profile`, `domain`, `document-id`.",
@@ -293098,46 +292383,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/zetoc.md"
-  },
-  {
-    "id": "zilladog-safe-email-and-games-for-kids",
-    "name": "Zilladog Safe Email & Games For Kids",
-    "description": "Child-oritentated email and entertainment",
-    "url": "http://www.zilladog.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/zilladog-safe-email-and-games-for-kids.md"
   },
   {
     "id": "zoomeye",

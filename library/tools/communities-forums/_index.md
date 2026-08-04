@@ -74,7 +74,6 @@ kind: group-index
 - **`disqus`** (medium) — Use when you have a Disqus username and want that person's cross-site public comment history — returns social-profile, associate and text le
 - **`doesthedogdie`** (low) — Use when you have a movie/TV/game/book title and want crowdsourced content-warning data — a niche community DB with user accounts, not a per
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
-- **`ehow`** (low) — OSINT tool: eHow.
 - **`eumom-ie`** (medium) — Use when you have a `username` or `name` and want to trace an Irish parent's pregnancy/parenting forum posts — returns `social-profile` post
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
 - **`everplaces`** (medium) — Use when you have a `username` and want a subject's saved/recommended places — returns `geolocation` travel footprint and `social-profile` l

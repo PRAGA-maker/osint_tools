@@ -143,7 +143,7 @@ kind: group-index
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
 - **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
 - **`central-and-eastern-european-business-directory`** (low) — Use when you have an `employer-org` in Central/Eastern Europe and want a company-research gateway — returns a curated link to a CEE business
-- **`cepii`** (low) — OSINT tool: CEPII.
+- **`cepii`** (low) — Use when you need international-economics datasets (trade flows, gravity, country geography) for context — returns free downloadable researc
 - **`charteredaccountants-ie`** (medium) — Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and 
 - **`checkatrade-com`** (medium) — Use when you have a tradesperson's `name`, business name or `address`/area and want their UK trade listing, reviews and contact/location — r
 - **`chicago-cook-county-genealogy`** (high) — Use when you have a name tied to Chicago/Cook County and want vital-record indexes — returns birth, marriage and death index entries to orde
@@ -423,7 +423,7 @@ kind: group-index
 - **`illinois-inmate-search`** (medium) — Use when you have a `name`, DOB or IDOC number and want an Illinois prison custody record — returns custody status, facility location, dates
 - **`illinois-public-salaries`** (medium) — Use when you have a `name` and want to confirm public-sector employment and compensation in Illinois — returns employer-org (unit of governm
 - **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
-- **`ilostat`** (low) — OSINT tool: ILOSTAT.
+- **`ilostat`** (low) — Use when you need labour-market statistics for a country/sector — returns employment, wages, informality and working-conditions indicators f
 - **`imf-world-economic-outlook-database`** (low) — Use when you need authoritative country-level macroeconomic figures (GDP, inflation, unemployment) for context in an investigation — returns
 - **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
 - **`immo-data-fr`** (high) — Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/da
@@ -492,7 +492,7 @@ kind: group-index
 - **`landmatrix`** (low) — Use when you have a company/investor `employer-org` or a country and want to find large-scale land acquisitions tied to it — returns land de
 - **`landregistryireland-com`** (high) — Use when you have an Irish property `address`/eircode and want to buy its ownership record — returns owner name, address, and mortgage/assoc
 - **`landregistryservices-com`** (high) — Use when you have a UK property `address` and want the registered owner's `name` and title details — returns name, address, and document-id 
-- **`latinobarometro`** (low) — OSINT tool: Latinobarometro.
+- **`latinobarometro`** (low) — Use when you need public-opinion/attitudinal data for a Latin American country — returns survey datasets on democracy, economy and society a
 - **`latvia`** (high) — Use when you have a `name` or `employer-org` linked to Latvia and want to find company records, directors, and registered addresses — return
 - **`lauderdale-county`** (high) — Use when you have a `name` tied to Lauderdale County, Alabama and want historical court, land, cemetery and obituary records — returns assoc
 - **`lawlink-co-uk`** (high) — Use when you have a `name` or `address` in Northern Ireland and want registered/unregistered land, charges, bankruptcy and court-judgement r
