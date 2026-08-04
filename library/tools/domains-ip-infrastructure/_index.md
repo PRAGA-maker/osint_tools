@@ -153,7 +153,7 @@ kind: group-index
 - **`favicon-hasher`** (low) — Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Sh
 - **`fierce`** (low) — Use when you have a `domain` and want to discover its subdomains and non-contiguous IP space via DNS reconnaissance — returns domain, ip-add
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
-- **`find-plus`** (low) — Regex Find-in-Page Tool
+- **`find-plus`** (low) — Use when you have a page full of text and want to pull every `email`, `domain`, `phone` or ID matching a pattern — a regex find-in-page Chro
 - **`findmyass-hostspider`** (low) — Use when you have a `domain` and want a one-shot recon dump — returns subdomains, DNS records, WHOIS data, and Cloudflare detection.
 - **`focsec`** (low) — OSINT tool: Focsec.
 - **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
@@ -317,7 +317,7 @@ kind: group-index
 - **`radb`** (low) — Use when you have an `ip-address`, prefix or ASN and want its Internet Routing Registry records — returns the registered route objects, orig
 - **`radware-live-cyber-threat-map`** (low) — Use when you want an at-a-glance global picture of live cyber-attack activity by region and type — returns aggregate attack visualisation (n
 - **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 
-- **`raymond`** (low) — Framework for gathering information about website
+- **`raymond`** (low) — Use when you have a `domain` and want a scripted first-pass recon sweep from the CLI — returns DNS/WHOIS, subdomains and related hosts pulle
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
 - **`reconnor`** (low) — Use when you have a `domain`, `username`, or `email` and want a broad Python recon/OSINT toolkit in one place — returns subdomains, `social-
 - **`redirectdetective`** (low) — Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting i

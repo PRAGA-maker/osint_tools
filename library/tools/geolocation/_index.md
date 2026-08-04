@@ -272,7 +272,7 @@ kind: group-index
 - **`timestamp-converter-com`** (medium) — Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns 
 - **`toronto-area-live-traffic-cams`** (low) — Use when you have a route or `geolocation` in the Greater Toronto Area and want live roadside camera imagery along it — returns traffic-cam 
 - **`toronto-live`** (low) — Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolo
-- **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
+- **`tpscalls-live`** (low) — Use when you have a Toronto `geolocation`/address or a time window and want to see what police were dispatched to nearby — returns live/rece
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
 - **`trendsmap-com`** (medium) — Use when you have a `geolocation` (a city/region) and want the Twitter/X trends, hashtags and active accounts there — returns `social-profil
 - **`ufo-reporting-map`** (low) — Use when you have a `geolocation`/time and want crowd-posted sighting reports there — a niche map of user "UFO" posts that can occasionally 

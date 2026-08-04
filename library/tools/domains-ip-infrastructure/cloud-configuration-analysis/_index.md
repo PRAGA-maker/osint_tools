@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`checkov`** (low) — Use when you have a `domain`/org's infrastructure-as-code repo and want to find its cloud misconfigurations — returns policy violations with
-- **`cloud-custodian`** (low) — Automated cloud governance and continuous configuration enforcement
+- **`cloud-custodian`** (low) — Use when you have access to a cloud account (AWS/Azure/GCP) and want to inventory and query its resources by policy — returns matched resour
 - **`prowler`** (low) — Use when you control a cloud account (AWS/Azure/GCP/K8s) and want a security & compliance baseline of its config — returns findings mapped t
 - **`scoutsuite`** (low) — Use when you have credentials to a cloud account (AWS/Azure/GCP/etc.) and want a read-only security-posture audit — returns an HTML report o
 - **`steampipe`** (low) — Use when you want to query cloud accounts, SaaS, and OSINT APIs with SQL — returns tabular results (domains, IPs, org/infra metadata) from l

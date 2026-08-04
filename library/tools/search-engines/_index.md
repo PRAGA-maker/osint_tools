@@ -151,7 +151,7 @@ kind: group-index
 - **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
 - **`cyber-criminals-most-wanted`** (low) — Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource p
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
-- **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
+- **`cybersec-documents-search-engine`** (low) — Use when you have a keyword, `domain` or filename and want cybersecurity documents, reports and datasets — a curated Google CSE scoped to in
 - **`cybersecurity-osint-paulveillard`** (low) — Use when you want to discover OSINT tools by category — a GitHub "awesome" list returning tool leads and methodology references, not subject
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
@@ -399,7 +399,6 @@ kind: group-index
 - **`news-search`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mention
 - **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
 - **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
-- **`newslookup-com`** (low) — OSINT tool: Newslookup.com.
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated head
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
@@ -422,7 +421,7 @@ kind: group-index
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
 - **`one-liner-osint`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want ready-made shell one-liners to enumerate it fast — returns copy-
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
-- **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
+- **`onet-pl-poland`** (low) — Use when your subject is Polish and you want local news, obituaries and web content in Polish — Poland's largest web portal, searchable for 
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
 - **`open-access-scientific-journals`** (low) — Use when you have a `name` (an author/researcher) and want their open-access publications and affiliations from this OA publisher — returns 

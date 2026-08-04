@@ -2385,35 +2385,51 @@
   {
     "id": "codepen",
     "name": "CodePen",
-    "description": "OSINT tool: CodePen.",
+    "description": "Use when you have a `username` or developer name and want their front-end work — search CodePen for a person's pens/profile, or use it as a scratchpad to prototype scraping/parsing snippets.",
     "url": "https://codepen.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a developer's CodePen profile/pens, or prototyping HTML/JS parsing snippets.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse, search and create public pens; PRO (private pens, assets) is paid but not needed for OSINT lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching are passive. If you create pens while logged in, they're public by default and tied to your account — use a puppet account and never paste case data or private code into a public pen.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-known, established front-end code-sharing community; profiles and pens are genuine user content.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "codepen.io"
+    ],
+    "tags": [
+      "code-sharing",
+      "developer-osint",
+      "prototyping"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/codepen.md"
   },
   {
@@ -2628,38 +2644,46 @@
   },
   {
     "id": "creately",
-    "name": "creately",
-    "description": "OSINT tool: creately.",
-    "url": "http://creately.com",
+    "name": "Creately",
+    "description": "Use when you have a set of entities and links from an investigation and want to lay them out visually — a web diagramming/whiteboard canvas for link charts and timelines.",
+    "url": "https://creately.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building link-analysis charts, timelines and relationship maps from your findings.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows a limited number of documents; larger projects, more collaborators and exports need a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Diagrams are stored on Creately's cloud servers by default, so anything you chart lives on a third party. For sensitive cases prefer a local diagramming tool, or keep the canvas to non-identifying labels.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An established commercial diagramming/visual-collaboration platform; reliable software, but a cloud SaaS that stores your data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "creately.com"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "link-analysis",
+      "diagramming"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/creately.md"
   },
   {
@@ -4729,46 +4753,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/filevault.md"
-  },
-  {
-    "id": "find-osint-tool",
-    "name": "Find osint tool",
-    "description": "OSINT tool: Find osint tool.",
-    "url": "https://find.osint-tool.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "osint-tool",
-      "search-by-exif"
-    ],
-    "_file": "library/tools/ai-analysis-automation/find-osint-tool.md"
   },
   {
     "id": "flot",
@@ -16400,37 +16384,45 @@
   {
     "id": "vocal-remover",
     "name": "Vocal Remover",
-    "description": "An AI-based service that removes vocals from a song, leaving only the music. It works amazingly well.",
+    "description": "Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from instrumentation for cleaner listening/analysis.",
     "url": "https://vocalremover.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Splitting an audio clip into vocals vs. music to isolate speech or background sound.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core split/removal is free in-browser with no account; some advanced features/higher limits may be gated.",
+    "opsec": "passive",
+    "opsecNote": "Audio you upload is processed on the service's servers, so a copy of your clip leaves your machine. Never upload evidentiary or sensitive case audio here; for confidential material use a local stem-separation tool (e.g. Spleeter/Demucs) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular free web audio tool; effective at stem separation but a third-party processor with no chain-of-custody guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "vocalremover.org"
+    ],
     "tags": [
-      "Sound search and analyze"
+      "Sound search and analyze",
+      "audio-analysis",
+      "stem-separation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/vocal-remover.md"
   },
   {
@@ -17284,46 +17276,6 @@
       "you-com"
     ],
     "_file": "library/tools/ai-analysis-automation/youcode.md"
-  },
-  {
-    "id": "zmail",
-    "name": "ZMail",
-    "description": "OSINT tool: ZMail.",
-    "url": "http://zmail.sourceforge.net",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "encsf-mp",
-      "nixory"
-    ],
-    "_file": "library/tools/ai-analysis-automation/zmail.md"
   },
   {
     "id": "alltop",
@@ -57576,49 +57528,6 @@
     "_file": "library/tools/documents-metadata/upwork.md"
   },
   {
-    "id": "valkyrie-file-analysis",
-    "name": "Valkyrie File Analysis",
-    "description": "Advanced malware analysis with human expert review option",
-    "url": "https://consumer.valkyrie.comodo.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "hosted-automated-analysis"
-    ],
-    "bestFor": "Advanced malware analysis with human expert review option",
-    "input": "Files (all types), URLs",
-    "output": "File verdict, behavioral analysis results, IOC extraction, confidence scores, expert analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "File uploads required; expert analysis available for premium users",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "comodo-dragon",
-      "comodo-free-antivirus"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/hosted-automated-analysis/valkyrie-file-analysis.md"
-  },
-  {
     "id": "violation-tracker",
     "name": "Violation Tracker",
     "description": "Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agencies, penalties, and parent-company links.",
@@ -58234,46 +58143,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/yik-yak.md"
-  },
-  {
-    "id": "yotpo",
-    "name": "Yotpo",
-    "description": "eCommerce marketing platform offering advanced solutions for customer reviews and visual marketing",
-    "url": "https://www.yotpo.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/yotpo.md"
   },
   {
     "id": "aa419-fake-sites-database",
@@ -62480,41 +62349,50 @@
   {
     "id": "cloud-custodian",
     "name": "Cloud Custodian",
-    "description": "Automated cloud governance and continuous configuration enforcement",
+    "description": "Use when you have access to a cloud account (AWS/Azure/GCP) and want to inventory and query its resources by policy — returns matched resources and configuration findings, optionally with remediation.",
     "url": "https://github.com/cloud-custodian/cloud-custodian",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "cloud-configuration-analysis"
     ],
-    "bestFor": "Automated cloud governance and continuous configuration enforcement",
-    "input": "Cloud account credentials and YAML policy definitions",
-    "output": "Matched resources, policy findings, and optional remediation actions",
+    "bestFor": "Policy-driven inventory and configuration auditing of a cloud account you control.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Apache-2.0), maintained under the CNCF/Stacklet; you pay only for the cloud API calls it makes.",
     "opsec": "active",
-    "opsecNote": "Uses cloud APIs directly and can trigger enforcement actions when configured.",
+    "opsecNote": "This authenticates to a real cloud account with your credentials and calls provider APIs directly; those calls are logged in the account's audit trail (CloudTrail etc.), and misconfigured policies can trigger enforcement/remediation actions. Only run it against accounts you are authorized to assess.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A mature, widely-adopted open-source cloud-governance engine (CNCF sandbox / Stacklet); used in production by many enterprises.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "c7n",
+      "custodian"
+    ],
+    "tags": [
+      "cloud",
+      "cloud-security",
+      "configuration-audit"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cloud-configuration-analysis/cloud-custodian.md"
   },
   {
@@ -66514,43 +66392,50 @@
   },
   {
     "id": "find-plus",
-    "name": "find+",
-    "description": "Regex Find-in-Page Tool",
-    "url": "https://chrome.google.com/webstore/detail/find%2B-regex-find-in-page/fddffkdncgkkdjobemgbpojjeffmmofb/related",
+    "name": "find+ (Regex Find-in-Page)",
+    "description": "Use when you have a page full of text and want to pull every `email`, `domain`, `phone` or ID matching a pattern — a regex find-in-page Chrome extension that extracts and copies all matches.",
+    "url": "https://chromewebstore.google.com/detail/find-regex-find-in-page/fddffkdncgkkdjobemgbpojjeffmmofb",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
+    "bestFor": "Regex-extracting all emails/domains/phones/IDs from the current web page.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "domain"
+      "email",
+      "domain",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension (v2.2.3, Feb 2026); developer states no data collection.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely locally in your browser against the page already loaded in your tab — it sends nothing anywhere. Whatever page you run it on has of course seen your visit; the extension itself adds no new exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular (~10k users, 4.2★) third-party developer extension; open in behavior and no-data-collection per the listing, but not audited here.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "find plus",
+      "find+ regex"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Searchers, scrapers, extractors, parsers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/find-plus.md"
   },
   {
@@ -78923,42 +78808,51 @@
   {
     "id": "raymond",
     "name": "Raymond",
-    "description": "Framework for gathering information about website",
+    "description": "Use when you have a `domain` and want a scripted first-pass recon sweep from the CLI — returns DNS/WHOIS, subdomains and related hosts pulled via HackerTarget's API.",
     "url": "https://github.com/hamza07-w/raymond",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-command CLI website recon (DNS, WHOIS, subdomains) via the HackerTarget API.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free open-source Python script; requires a free HackerTarget API key, whose free tier is rate-limited (a few hundred queries/day).",
+    "opsec": "passive",
+    "opsecNote": "Lookups run through HackerTarget's servers, not directly from you to the target, so the target doesn't see your IP — but HackerTarget sees every domain you query and ties it to your API key. Use a dedicated key for investigations you want compartmentalized.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small individual GitHub project (few dozen stars) that wraps the HackerTarget API; the data quality is HackerTarget's, the convenience is the script's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "raymond recon"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Domain/IP investigation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/raymond.md"
   },
   {
@@ -122224,35 +122118,52 @@
   {
     "id": "tpscalls-live",
     "name": "tpscalls.live",
-    "description": "OSINT tool: tpscalls.live.",
+    "description": "Use when you have a Toronto `geolocation`/address or a time window and want to see what police were dispatched to nearby — returns live/recent incident types, cross-streets and timestamps mapped to `geolocation`.",
     "url": "https://www.tpscalls.live/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Mapping recent Toronto Police dispatches by location and time to corroborate an incident.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web map (also free iOS/Android apps); built on Toronto Police public dispatch data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public map of already-published dispatch data — no query touches any subject. Note the feed deliberately excludes sensitive calls (domestic violence, sexual assault, medical) and ongoing operations, so absence of a pin never means nothing happened.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent project (by developer Riley Durant) surfacing Toronto Police Service public dispatch data; reliable for what's published but not an official police source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "tpscalls",
+      "TPS calls live"
+    ],
+    "tags": [
+      "geolocation",
+      "scanner",
+      "police-calls",
+      "toronto"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/tpscalls-live.md"
   },
   {
@@ -265040,35 +264951,49 @@
   {
     "id": "cybersec-documents-search-engine",
     "name": "Cybersec Documents Search Engine",
-    "description": "OSINT tool: Cybersec Documents Search Engine.",
+    "description": "Use when you have a keyword, `domain` or filename and want cybersecurity documents, reports and datasets — a curated Google CSE scoped to infosec/threat-intel sources.",
     "url": "https://cse.google.com/cse?cx=013991603413798772546:ekjmizm8vus#gsc.tab=0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching a curated set of cybersecurity/threat-intel document sources at once.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. Curated CSEs drift as their source list ages, so coverage can degrade over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a Google CSE and open the linked documents from your own browser — Google and those hosts see your IP, the subject does not. Use a clean/VPN session if a query term is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A Google Custom Search Engine curated by an unknown third party; it filters to infosec sources but holds no data itself, so quality depends on that curation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "cybersec docs CSE"
+    ],
+    "tags": [
+      "cybersecurity",
+      "document-search",
+      "threat-intel"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cybersec-documents-search-engine.md"
   },
   {
@@ -278584,43 +278509,6 @@
     "_file": "library/tools/search-engines/newsinshorts.md"
   },
   {
-    "id": "newslookup-com",
-    "name": "Newslookup.com",
-    "description": "OSINT tool: Newslookup.com.",
-    "url": "http://newslookup.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "newslookup"
-    ],
-    "_file": "library/tools/search-engines/newslookup-com.md"
-  },
-  {
     "id": "newsnow",
     "name": "Newsnow",
     "description": "Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated headlines and article links for corroboration.",
@@ -279820,40 +279708,52 @@
   {
     "id": "onet-pl-poland",
     "name": "Onet.pl (Poland)",
-    "description": "OSINT tool: Onet.pl (Poland).",
-    "url": "http://www.onet.pl",
+    "description": "Use when your subject is Polish and you want local news, obituaries and web content in Polish — Poland's largest web portal, searchable for names, places and events.",
+    "url": "https://www.onet.pl",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Poland-focused searching for people, local news and events in the Polish-language web.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; some articles sit behind an Onet Premium paywall, but general search and most content are open.",
+    "opsec": "passive",
+    "opsecNote": "Standard passive web reading — you query Onet's portal, not your subject. Onet is ad-heavy and sets tracking cookies; use a clean browser/VPN if you want to keep your research session compartmentalized.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "One of Poland's oldest and largest news/web portals (Ringier Axel Springer Polska); a mainstream, reliable source for Polish-language content.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "pl"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "onet"
     ],
+    "aliases": [
+      "onet.pl",
+      "Onet portal"
+    ],
+    "tags": [
+      "main-national-search-engines",
+      "poland"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/onet-pl-poland.md"
   },
   {
