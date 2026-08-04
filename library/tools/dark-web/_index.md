@@ -57,7 +57,7 @@ kind: group-index
 - **`naval-open-source-intelligence`** (low) — Use when you need curated open-source naval/maritime-military news and analysis — returns an actively updated feed of naval developments for
 - **`newsworld-usa`** (medium) — Use when you have a `name`/`employer-org` and want recent and archived US news mentions — returns aggregated headlines linking a subject to 
 - **`north-american-sic-structure-united-states`** (medium) — Use when you have a SIC `document-id` code (or an industry name) and want to decode the industrial sector — returns the classified industry/
-- **`onion-engine`** (low) — OSINT tool: Onion Engine.
+- **`onion-engine`** (low) — Use when you have a `username`, `domain`, `crypto-wallet` or keyword and want to find it on Tor hidden services from the clearnet — returns 
 - **`onion-land`** (low) — Use when you have a `username`, `email`, keyword or vendor name and want to find where it appears on Tor/I2P dark-web sites — returns .onion
 - **`onion-search-engine`** (low) — Use when you have a `username`/`email`/keyword and want to search Tor `.onion` content from the clearnet without running Tor — returns dark-
 - **`onions-darknetlive`** (low) — Use when you need current, curated `.onion` addresses for darknet markets and forums — returns verified onion `domain` links to reach dark-w

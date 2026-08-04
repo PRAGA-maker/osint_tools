@@ -40276,43 +40276,53 @@
   {
     "id": "onion-engine",
     "name": "Onion Engine",
-    "description": "OSINT tool: Onion Engine.",
+    "description": "Use when you have a `username`, `domain`, `crypto-wallet` or keyword and want to find it on Tor hidden services from the clearnet — returns `.onion` `social-profile`/`domain` leads.",
     "url": "https://onionengine.com/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Searching indexed .onion hidden services from a normal browser for a name, handle, keyword or identifier.",
     "selectorsIn": [
       "username",
-      "email"
+      "domain",
+      "crypto-wallet"
     ],
     "selectorsOut": [
+      "domain",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free anonymous web search (\"forever free, no credit card\"); an enterprise threat-intelligence API with higher limits and monitoring is paid.",
+    "opsec": "passive",
+    "opsecNote": "Searching from the clearnet means you query OnionEngine's index rather than crawling Tor yourself — you don't touch any hidden service, so it is passive and keeps you off the darknet. The site claims no IP logging and ephemeral queries; still treat it as third-party and use a sock-puppet browser/VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An independent darkweb search index active since 2017; coverage and freshness of .onion indexing are unverifiable from outside, so treat hits as leads to confirm on Tor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
+    "relatedTools": [],
+    "aliases": [
+      "onionengine.com",
+      "OnionEngine"
     ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "dark-web",
+      "tor",
+      "onion-search"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/onion-engine.md"
   },
   {
@@ -48808,37 +48818,51 @@
   {
     "id": "compressedcrack",
     "name": "CompressedCrack",
-    "description": "Simple tool for brute passwords for ZIP and RAR archives",
+    "description": "Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a local cracking tool, returns the `password`.",
     "url": "https://github.com/mnismt/CompressedCrack",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Brute-forcing the password of a protected ZIP/RAR/7z archive locally to open its contents.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (MIT); Python 3.6+ CLI installed via pip, runs entirely locally.",
+    "opsec": "passive",
+    "opsecNote": "Runs fully offline against a file you already hold — nothing leaves your machine, so it is passive. Only crack archives you are legally authorized to open; brute-forcing others' protected files may be unlawful regardless of OpSec.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular open-source utility (~300 stars, MIT); the code is short and auditable, but it is a community tool — inspect before running on evidentiary files.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "mnismt/CompressedCrack"
+    ],
     "tags": [
-      "Files"
+      "documents-metadata",
+      "password-recovery",
+      "forensics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/compressedcrack.md"
   },
   {
@@ -65708,48 +65732,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/default-passwords/default-router-passwords.md"
-  },
-  {
-    "id": "deteque",
-    "name": "Deteque",
-    "description": "Domain/IP threat intelligence, malware tracking, botnet detection, abuse data",
-    "url": "https://www.deteque.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "passivedns"
-    ],
-    "bestFor": "Domain/IP threat intelligence, malware tracking, botnet detection, abuse data",
-    "input": "Domain, IP, URL, file hash, or AS number",
-    "output": "Threat classification, malware associations, botnet data, historical records (up to 12 months)",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Queries threat intelligence database; does not contact or probe the target.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/passivedns/deteque.md"
   },
   {
     "id": "determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before",
@@ -169572,41 +169554,49 @@
   {
     "id": "canadian-anti-fraud-centre",
     "name": "Canadian Anti-Fraud Centre",
-    "description": "Canadian government site's list of scam, fraud, hoax, and phishing types",
+    "description": "Use when you have a suspected scam/fraud pattern in Canada and want to identify the fraud type or report it — an official reference/reporting portal, returns fraud classifications, not personal selectors.",
     "url": "https://www.antifraudcentre-centreantifraude.ca/index-eng.htm",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a Canadian fraud/scam type and filing an official fraud report.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official Canadian government service (RCMP partnership); no account for browsing, reporting is free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing the fraud A–Z is passive and anonymous. Filing a report submits information to a Canadian law-enforcement body — do so deliberately and only with the reporter's consent, since it enters an official system.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Canada / RCMP-partnered central agency for fraud and identity-theft reporting; authoritative for Canadian scam typologies and reporting procedure.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CAFC",
+      "Centre antifraude du Canada"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "opsec",
+      "fraud",
+      "reference",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/canadian-anti-fraud-centre.md"
   },
   {
@@ -212238,46 +212228,46 @@
   {
     "id": "aws-public-datasets",
     "name": "AWS Public Datasets",
-    "description": "OSINT tool: AWS Public Datasets.",
-    "url": "http://aws.amazon.com/datasets",
+    "description": "Use when you need a large open dataset (satellite imagery, geospatial, genomic, web-crawl, etc.) to support an investigation — a catalog of free AWS-hosted data; returns bulk data, not selectors.",
+    "url": "https://registry.opendata.aws/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and accessing large free public datasets (imagery, geospatial, crawl data) hosted on AWS for bulk analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The datasets are free to access; you only pay standard AWS costs if you process them inside AWS. Downloading/browsing many datasets is free.",
+    "opsec": "passive",
+    "opsecNote": "You are pulling published open datasets from Amazon's registry — no subject is contacted, so it is passive. Access via AWS ties usage to your AWS account; use appropriate account hygiene for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official AWS Registry of Open Data; each dataset is published by a named provider (NASA, NOAA, Common Crawl, etc.), so authority rests with the individual data owner.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "AWS Registry of Open Data",
+      "registry.opendata.aws"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "open-data",
+      "datasets"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "amazon",
-      "amazon-com",
-      "amazon-pay",
-      "amazon-registry-search",
-      "amazon-rekognition",
-      "amazon-sns",
-      "us-east-1-console-aws-amazon-com"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/aws-public-datasets.md"
   },
   {
@@ -343980,45 +343970,54 @@
   {
     "id": "airnav-radarbox",
     "name": "AirNav RadarBox",
-    "description": "Live flight tracker.",
-    "url": "http://radarbox24.com/",
+    "description": "Use when you have a `vehicle-plate` (aircraft registration/callsign) or a `geolocation` and want live/historical flight tracking — returns aircraft position, route and identity.",
+    "url": "https://www.airnavradar.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking a specific aircraft's live position and flight history, or seeing what is flying over a location.",
     "selectorsIn": [
-      "vehicle-plate"
-    ],
-    "selectorsOut": [
+      "vehicle-plate",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "geolocation",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free live map and basic aircraft info; playback/history, more filters and alerts need a paid (Business/premium) subscription. A free account unlocks a bit more.",
+    "opsec": "passive",
+    "opsecNote": "You query RadarBox's aggregated ADS-B network, not the aircraft — passive. A logged-in account ties searches to an identity; use a sock-puppet account if you need history features while staying unattributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major commercial flight-tracking network (formerly RadarBox24) fed by crowdsourced ADS-B receivers; positions are reliable where receiver coverage exists, sparse over oceans/remote areas.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RadarBox",
+      "RadarBox24",
+      "radarbox24.com",
+      "airnavradar.com"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "transport"
+      "Maps, Geolocation and Transport",
+      "aviation",
+      "flight-tracking"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "radarbox24-pro"
-    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/airnav-radarbox.md"
   },
   {

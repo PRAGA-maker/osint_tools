@@ -50,7 +50,7 @@ kind: group-index
 - **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
 - **`cnet-technology-products-reviews`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
-- **`compressedcrack`** (low) — Simple tool for brute passwords for ZIP and RAR archives
+- **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
 - **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage

@@ -18,7 +18,7 @@ kind: group-index
 - **`airfleets`** (low) — Use when you have an aircraft registration, serial (MSN), or operator and want its history — returns the airframe's operators, delivery date
 - **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
 - **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr
-- **`airnav-radarbox`** (low) — Live flight tracker.
+- **`airnav-radarbox`** (low) — Use when you have a `vehicle-plate` (aircraft registration/callsign) or a `geolocation` and want live/historical flight tracking — returns a
 - **`ais-boatnerd-com`** (low) — Use when you have a Great Lakes vessel name/identifier and want its live position and track — returns real-time AIS `geolocation` for ships 
 - **`ais-ships-map`** (low) — Use when you have a vessel `name`/identifier or a `geolocation` and want a ship's live position and movement history — returns current coord
 - **`amtrak-status-maps-archive-database`** (low) — Use when you have an Amtrak train/station and a past date and want the actual historical arrival/departure times — returns geolocation.

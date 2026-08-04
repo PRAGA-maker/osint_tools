@@ -84,7 +84,7 @@ kind: group-index
 - **`australian-business-register-abn-lookup`** (medium) — Use when you have a `name` or `employer-org` in Australia and want the official business registration record — returns employer-org, address
 - **`australian-securities-and-investments-commission`** (medium) — Use when you have a company/business `name` or a person's `name` in Australia and want registered company, business-name, and officeholder r
 - **`austria`** (high) — Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
-- **`aws-public-datasets`** (low) — OSINT tool: AWS Public Datasets.
+- **`aws-public-datasets`** (low) — Use when you need a large open dataset (satellite imagery, geospatial, genomic, web-crawl, etc.) to support an investigation — a catalog of 
 - **`b2bhint-com`** (high) — Use when you have an `employer-org` or officer `name` and want company data across 190 countries — returns company details, current/former d
 - **`backgroundchecks-org`** (medium) — Use when you have a US `name` and need to find which public-records/genealogy database to search — a curated directory of free record source
 - **`bahrainbourse-com`** (low) — Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announce
