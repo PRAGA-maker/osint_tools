@@ -102,7 +102,7 @@ kind: group-index
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis
 - **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage
-- **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
+- **`cloudflare-resolver-tool`** (low) — Use when you have a `domain` fronted by Cloudflare and want to uncover the real origin `ip-address` behind the proxy — returns candidate ori
 - **`cloudmare`** (low) — Use when you have a `domain` behind Cloudflare/Sucuri/Incapsula and want to uncover its real origin server IP via DNS/history misconfigurati
 - **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
 - **`cmlabs-tools`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack (CMS, server, JS libraries, widgets) — returns the detected
@@ -406,7 +406,7 @@ kind: group-index
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
 - **`verisign`** (low) — Use when you have a `domain` and want to validate its DNSSEC chain of trust and spot signing/delegation errors — returns a diagnosed `domain
 - **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
-- **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
+- **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — Use when you have an `image` or document and want to read its embedded EXIF/XMP/IPTC metadata (or strip it) in the browser — returns metadat
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
 - **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
 - **`vincos-it`** (low) — Use when you have a `geolocation`/country and want to know which social network dominates there — returns a country-by-country map of the le

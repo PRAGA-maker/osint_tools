@@ -38,7 +38,7 @@ kind: group-index
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
-- **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
+- **`awesome-pentest`** (low) — Use when you need to discover a category of OSINT/recon tool (username enumeration, breach lookup, subdomain discovery) and want a vetted, c
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — Use when you need to discover threat-intelligence sources, feeds and tools — a curated GitHub directory; returns pointers to other tools rat
@@ -350,7 +350,6 @@ kind: group-index
 - **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
-- **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.

@@ -37,7 +37,6 @@ kind: group-index
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
-- **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
 - **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
 - **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
@@ -54,7 +53,6 @@ kind: group-index
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
 - **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
 - **`copypastecharacter`** (low) — Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and t
-- **`crowdspring`** (low) — Project outsourcing website
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
 - **`cylect-io`** (medium) — Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggre
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph

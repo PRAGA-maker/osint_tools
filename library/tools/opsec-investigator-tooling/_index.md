@@ -44,7 +44,7 @@ kind: group-index
 - **`apple-music-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`appyparking`** (low) — Mobile device app providing parking information on nearly all controlled parking zones in London United Kingdom
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
-- **`argos-osint-workstation`** (low) — Script that automatically sets up an OSINT workstation on Ubuntu.
+- **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
@@ -60,7 +60,6 @@ kind: group-index
 - **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`bitcoinprivacy-guide`** (low) — OSINT tool: Bitcoinprivacy.guide.
 - **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
-- **`bitonic`** (low) — OSINT tool: Bitonic.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
@@ -134,7 +133,7 @@ kind: group-index
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
-- **`fireball-search-engine-germany`** (low) — German web search engine offering anonymous browsing
+- **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
 - **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
 - **`firefox`** (low) — OSINT tool: Firefox.
 - **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
@@ -408,7 +407,6 @@ kind: group-index
 - **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
 - **`voicebooking`** (low) — fake voice generator
-- **`vpn-for-beginners`** (low) — Beginners guide to VPN by Best VPN
 - **`vpn`** (low) — Database of VPNs
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
 - **`walmart-shopping-app-mobile-ios`** (low) — App for mobile devices for online shopping through Walmart

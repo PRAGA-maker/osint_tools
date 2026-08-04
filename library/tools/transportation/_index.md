@@ -57,7 +57,7 @@ kind: group-index
 - **`cruise-mapper`** (medium) — Use when you have a cruise ship name and want its live position, itinerary, and deck plans — returns near-real-time `geolocation` and schedu
 - **`cyclevin`** (low) — Use when you have a motorcycle/powersports `vin` and want its history — title, theft, salvage, odometer and recall records — returns vin his
 - **`deciphering-number-plates`** (medium) — Use when you have a `vehicle-plate` in a photo and want to decode its country/region format — a reference series explaining how plates are s
-- **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
+- **`direkht-ban-guru`** (low) — Use when you have a European (esp. German) rail station as a `geolocation`/`address` anchor and want to know every city reachable by a singl
 - **`enterprise-rental-receipts`** (low) — Use when you (or lawful process) have access to an Enterprise Plus account and need that account's own rental receipts — returns the renter'
 - **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
 - **`equasis`** (low) — Use when you have a vessel IMO/`name` or a shipping company and want ownership, management, and safety records — returns employer-org (owner

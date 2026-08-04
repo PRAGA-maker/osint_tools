@@ -435,7 +435,6 @@ kind: group-index
 - **`opendirsearch-abifog-com`** (low) — Use when you have a `name`/keyword and want to find publicly exposed open directories hosting related files (docs, images, media) — returns 
 - **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
 - **`orange-france`** (low) — OSINT tool: Orange (France).
-- **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
 - **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
 - **`oscobo`** (medium) — Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links
 - **`osint-blogs-search-engine`** (low) — Use when you have a `name`, `username`, tool, or technique and want to search a curated set of OSINT blogs and practitioner writeups at once
