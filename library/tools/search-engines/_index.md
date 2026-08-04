@@ -195,7 +195,7 @@ kind: group-index
 - **`european-commission-home-affairs`** (medium) — Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agen
 - **`european-trademark-search`** (low) — Use when you have a brand `name` or `employer-org` and want EU trademark filings — returns the trademark owner `name`/`employer-org` and fil
 - **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res
-- **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
+- **`exploitalert`** (low) — Use when you have a product/software `name` or CVE and want known public exploits — returns a searchable historical exploit database (2005–2
 - **`fact-checking`** (low) — Use when you need to verify a claim or find a regional fact-checker — the Duke Reporters' Lab global database/map of fact-checking organisat
 - **`faganfinder`** (low) — Use when you need the right search engine/tool for a task and don't know it exists — a curated portal of specialist search tools by category
 - **`falla`** (medium) — Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain`
@@ -339,7 +339,7 @@ kind: group-index
 - **`lawyers-com`** (medium) — Use when you have a name (of an attorney) or a location + practice area and want a professional profile — returns employer-org (firm), addre
 - **`leaklooker`** (medium) — Use when you have a `domain`/keyword and want to discover exposed, unauthenticated databases and services associated with it — returns `ip-a
 - **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
-- **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
+- **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — Use when you have a `name` or research topic and want scientific/technical literature and datasets — returns papers, conference proceedings,
 - **`leit-search-engine-iceland`** (low) — Use when you have a `name` and want Icelandic web, phone-directory, and business results — returns phone, address, and social-profile leads 
 - **`lendx`** (low) — OSINT tool: LENDX.
 - **`lexcraft-cornell-university-legal-wiki-canada`** (low) — Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-informati
@@ -513,7 +513,6 @@ kind: group-index
 - **`search-all`** (medium) — Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
-- **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-craigslist`** (medium) — Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns mat
 - **`search-engine-colossus`** (low) — Use when your subject has a foreign/regional nexus and you need that country's own search engines — returns a directory of search engines by
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
@@ -552,7 +551,6 @@ kind: group-index
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
-- **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — Use when you have a `name` and want their academic publications, affiliations and co-authors — returns employer/institution and associate li
 - **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
 - **`startpage-parser`** (low) — Use when you have a `name` or `username` and want to bulk-scrape web search results without tripping Google's rate limits — returns candidat

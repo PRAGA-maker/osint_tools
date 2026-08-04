@@ -891,7 +891,7 @@ kind: group-index
 - **`unctad-stat`** (low) — Use when you have a country/economy and want authoritative UN trade, investment, and development statistics for context — returns background
 - **`undps-human-development-index`** (low) — Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country 
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r
-- **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
+- **`unesco-institute-for-statistics`** (low) — Use when you need education, science, culture or communication statistics for a country — returns internationally-comparable indicators (lit
 - **`unicorn-riot-discord-leaks`** (low) — Use when you have a `username`/`name` possibly tied to far-right groups — searches leaked Discord chats and returns messages, `associate` li
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.

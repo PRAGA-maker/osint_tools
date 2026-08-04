@@ -61,13 +61,12 @@ kind: group-index
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
 - **`cipherstick`** (low) — Use when you want to practise or teach OSINT investigation technique on realistic puzzles — returns browser-based training challenges, not c
 - **`circos`** (low) — Use when you have relational data (who-contacts-whom, wallet flows, co-occurrences) and want a circular link diagram to reveal the structure
-- **`code-repository-google-cse`** (low) — Google CSE for search 15 code repository services
+- **`code-repository-google-cse`** (low) — Use when you have a `username`, `email` or keyword and want to search across code-hosting sites at once — returns matching repos/code via a 
 - **`code-understanding-tools-list`** (low) — Tools for understanding other people's code
 - **`codepen`** (low) — Use when you have a `username` or developer name and want their front-end work — search CodePen for a person's pens/profile, or use it as a 
 - **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
 - **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c
 - **`compiler-explorer`** (low) — Use when you have a code snippet (from malware, a leaked repo, or a document macro) and want to compile/inspect it safely in-browser — retur
-- **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — Use when you have a set of entities and links from an investigation and want to lay them out visually — a web diagramming/whiteboard canvas 
 - **`crossfilter`** (low) — Use when you have a large multi-dimensional dataset and want fast interactive filtering in the browser — a JS library for exploring OSINT re
@@ -260,7 +259,7 @@ kind: group-index
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
 - **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-
 - **`probe-spider`** (medium) — Use when you have a mixed selector (username, email, phone, domain, IP, image) and want a single Python tool to run broad recon across each 
-- **`profounder`** (low) — searching users by nickname and scrapping url's from website
+- **`profounder`** (low) — Use when you have a `username`/nickname and want to hunt for accounts and harvest URLs from a page — returns candidate profiles and scraped 
 - **`psn-monitor`** (low) — Use when you have a subject's PlayStation Network `username`/PSN ID and want to track their online presence — monitors online/offline status
 - **`pyba`** (low) — OSINT tool: Pyba.
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
@@ -280,7 +279,7 @@ kind: group-index
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
-- **`script-safe`** (low) — OSINT tool: Script Safe.
+- **`script-safe`** (low) — Use when you want to harden the investigator's browser against scripts and fingerprinting while visiting hostile pages — provides granular s
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
 - **`sector035`** (low) — OSINT tool: Sector035.
@@ -318,7 +317,6 @@ kind: group-index
 - **`tik-tok`** (low) — Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualiz
 - **`tiki-toki`** (low) — Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/p
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
-- **`timeflow`** (low) — OSINT tool: Timeflow.
 - **`timeline`** (low) — OSINT tool: Timeline.
 - **`timetoast`** (low) — Use when you have dated events about a subject and want to build/share a visual chronology — returns an interactive timeline, an analysis ai
 - **`tio-run`** (low) — Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns th

@@ -12,7 +12,7 @@ kind: group-index
 - **`ip2whois`** (low) — Use when you have a `domain` and want its WHOIS registration — returns registrant `name`/`email`/`address` (when not redacted), registrar an
 - **`netlas-io`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want WHOIS/DNS, open ports, certificates, and historical infrastructure data — return
 - **`robtex`** (low) — Use when you have a `domain`, `ip-address`, hostname, or ASN and want its DNS records plus historical domain↔IP relationships — returns rela
-- **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
+- **`switch-internet-domains-whois-ch`** (low) — Use when you have a `.ch`/`.li` `domain` and want registry ownership data — returns registrar, nameservers, status and dates from Switzerlan
 - **`viewdns-info`** (low) — Use when you have a `domain` or `ip-address` and want DNS/WHOIS intelligence — returns reverse-IP, reverse-WHOIS, IP history, DNS records, a
 - **`website-informer`** (low) — Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email lin
 - **`who-is`** (low) — Use when you have a `domain` or `ip-address` and want registration, DNS and network ownership data — returns WHOIS/RDAP registrant details, 

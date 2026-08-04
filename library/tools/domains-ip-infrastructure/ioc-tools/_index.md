@@ -10,7 +10,7 @@ kind: group-index
 - **`cacador`** (low) — Use when you have a report, threat feed, or blob of text and want to extract and deduplicate indicators (IPs, domains, emails, hashes, URLs)
 - **`ioc-parser`** (low) — Use when you have a `domain`/threat report (PDF/HTML/text) and want the indicators pulled out — returns structured IOCs (domains, IPs, hashe
 - **`iocextract`** (low) — Use when you have text with defanged/obfuscated indicators and want them extracted and refanged — returns clean IOCs (domains, IPs, URLs, ha
-- **`jager`** (low) — IOC collection and aggregation
+- **`jager`** (low) — Use when you have documents/pages and want to pull out indicators — extracts and aggregates IOCs (`domain`, `ip-address`, hashes, `email`) i
 - **`threatingestor`** (low) — Use when you want to automate collecting indicators (`domain`, `ip-address`, hashes) from many threat feeds, RSS, and Twitter into one place
 - **`threatpinch-lookup`** (low) — Use when you're reading a page full of IOCs (`ip-address`, `domain`, hashes, `email`) and want hover-to-enrich tooltips pulling threat-intel
 

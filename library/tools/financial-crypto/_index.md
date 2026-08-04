@@ -77,7 +77,6 @@ kind: group-index
 - **`osint-assassin`** (low) — Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot 
 - **`osint-cryptocurrencies`** (low) — Use when you have a `crypto-wallet`/transaction and want a curated, explained directory of crypto-investigation tools — returns a vetted sta
 - **`osint-tools-map`** (low) — Use when you have a country/region (or a `name`/`employer-org` tied to one) and need the local public registries and records to search — ret
-- **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address
 - **`rupep`** (low) — Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `
 - **`sanctionsexplorer`** (low) — Use when you have a `name` or `employer-org` and want to check current/historical OFAC, UN and EU sanctions listings — returns employer-org,

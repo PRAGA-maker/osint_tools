@@ -23,7 +23,6 @@ kind: group-index
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
-- **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
 - **`apple-icloud-usa`** (medium) — Use when you have an `email` or `phone` and want to test whether it is a registered Apple ID — returns account-existence signal (and, in a w
@@ -58,7 +57,6 @@ kind: group-index
 - **`diffnow-com`** (low) — Use when you have two documents, code files, or web pages and want to spot exactly what changed between them — returns a highlighted side-by
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
-- **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
 - **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online

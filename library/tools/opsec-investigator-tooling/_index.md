@@ -76,7 +76,6 @@ kind: group-index
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent review
 - **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files
-- **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
 - **`coveryourtracks-eff-org`** (low) — Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uni
 - **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
@@ -186,7 +185,6 @@ kind: group-index
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
-- **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
 - **`kali-anonsurf`** (low) — Use for investigator opsec — routes your entire system's network traffic through Tor at the OS level and adds anti-forensic helpers, so all 
 - **`kasm`** (low) — Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware a
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
@@ -204,7 +202,6 @@ kind: group-index
 - **`link-cash-locator-app`** (low) — Use when you have a `geolocation`/`address` in the UK or Crown Dependencies and want the nearest cash machines — returns ATM `address`es and
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
-- **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
@@ -214,14 +211,12 @@ kind: group-index
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
-- **`mcafee-anti-virus-for-pc`** (low) — Malware and virus detection and elimination program
 - **`mcafee-internet-security-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
 - **`mega`** (low) — OSINT tool: MEGA.
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
 - **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
-- **`mozilla-firefox`** (low) — Internet browser program
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
@@ -237,7 +232,7 @@ kind: group-index
 - **`opera`** (low) — OSINT tool: Opera.
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
-- **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
+- **`osintbox`** (low) — Use when you want an OSINT-ready workstation fast — provisions a Parrot OS install with popular OSINT tools preinstalled (a setup script, no
 - **`osintlab`** (low) — Use when you have a fresh Kali workstation and want a ready recon toolkit — a bash installer that deploys ~50 OSINT tools (subdomain, email,
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
@@ -285,7 +280,6 @@ kind: group-index
 - **`sendatext`** (low) — OSINT tool: SendaText.
 - **`septor-linux`** (low) — Use when you need a preconfigured Tor-routed live OS for anonymous OSINT work — returns a hardened Debian/KDE workstation that pushes all tr
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta
-- **`shadowcrypt-messaging`** (low) — Tool for a browser add-on that encrypts messaging for webmail and social networking sites
 - **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
 - **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
