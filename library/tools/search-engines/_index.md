@@ -279,7 +279,7 @@ kind: group-index
 - **`hacking-the-cloud`** (low) — Use when you're assessing cloud infrastructure and need attack/technique references — returns an encyclopedia of AWS/Azure/GCP offensive tac
 - **`hawaii-professional-and-vocational-license-search`** (medium) — Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and th
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
-- **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
+- **`heystack`** (low) — Use when you have a topic/keyword and want publicly-shared Google Docs, Sheets, and Slides about it — returns community-curated public docum
 - **`hinduwebsite`** (medium) — Use when you need to search or read Hindu (and other) scripture texts — a niche reference/scripture search site with essentially no direct p
 - **`home-co-uk`** (medium) — Use when you have a UK `address` or postcode and want property and price history — returns sold-price `address` records, listings and area c
 - **`homepage-search-engine`** (medium) — Use when you have a `name`/`username` and want to search across a curated set of personal-homepage/website sources — returns web pages and `

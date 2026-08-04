@@ -54,7 +54,7 @@ kind: group-index
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
 - **`blender`** (low) — Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulati
-- **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif
+- **`botster`** (low) — Use when you have a query, `username`, or `domain` and want no-code bots to scrape/monitor data from Google, LinkedIn, YouTube, Amazon, TikT
 - **`boxcryptor`** (low) — OSINT tool: boxcryptor.
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
@@ -86,7 +86,7 @@ kind: group-index
 - **`cybergordon`** (low) — Use when you have an `ip-address`, `domain`, `email`, or file hash and want a one-query reputation/threat check across dozens of sources — r
 - **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
-- **`d3js`** (low) — OSINT tool: D3js.
+- **`d3js`** (low) — Use when you have investigation data (relationships, timelines, geodata) and want to build custom interactive visualizations — provides a Ja
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
 - **`data-visualization-catalogue`** (low) — Use when you have investigation data to present and want to pick the right chart type — returns a reference of 80+ visualization methods ind
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
@@ -316,7 +316,7 @@ kind: group-index
 - **`snappa`** (low) — Use when you have `image` assets or findings to package and want a fast browser-based graphic editor — returns a composed `image` (report gr
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
-- **`spidersuite`** (low) — OSINT tool: SpiderSuite.
+- **`spidersuite`** (low) — Use when you have a `domain`/URL and want to crawl and map a site's full structure, links, and assets — returns discovered URLs, endpoints, 
 - **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl

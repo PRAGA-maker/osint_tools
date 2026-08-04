@@ -15,7 +15,7 @@ kind: group-index
 - **`forensic-osint-kb-guides`** (low) — Use when you need process guidance for defensible OSINT — returns how-to guides on evidence preservation, chain-of-custody, and court-ready 
 - **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.
 - **`gralhix-osint-exercises`** (medium) — Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercis
-- **`intel-codex`** (low) — Knowledge base covering OSINT, forensics, reverse engineering, and security frameworks.
+- **`intel-codex`** (low) — Use when you want structured SOPs and learning paths for OSINT, forensics, and reverse engineering — provides a free reference knowledge bas
 - **`non-typical-osint-guide`** (medium) — Use when a standard approach has stalled and you want unconventional OSINT techniques, mindset training, or pointers to niche tools (crypto,
 - **`pentestingeverything`** (low) — Comprehensive penetration testing methodology guide (web, mobile, API, network).
 - **`smart-questions`** (low) — Use when you need methodology on framing research questions and getting useful answers from technical communities — returns a durable checkl

@@ -1804,38 +1804,58 @@
   },
   {
     "id": "botster",
-    "name": "BOTSTER",
-    "description": "A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopify and other services.",
+    "name": "Botster",
+    "description": "Use when you have a query, `username`, or `domain` and want no-code bots to scrape/monitor data from Google, LinkedIn, YouTube, Amazon, TikTok and more — returns structured exports (emails, listings, profiles, changes).",
     "url": "https://botster.io/bots",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running ready-made no-code scraping and monitoring bots against major platforms to bulk-collect and watch public data.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Freemium/credit-based — some bots are free, most consume credits (an intro \"3000 credits for $3\" offer exists); custom projects start ~$150. Basic runs are possible on free/cheap credits.",
+    "opsec": "active",
+    "opsecNote": "Bots scrape target platforms from Botster's infrastructure, not your IP, which shields you — but scraping is an ACTIVE fetch of the target platform and may violate its ToS; the collected data also passes through Botster's servers. Use for public data, register with a research identity, and never feed it credentials.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial no-code automation marketplace; convenient but a third party that stores your inputs/outputs, and scraped-data quality/legality depends on the specific bot and target.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Botster.io",
+      "botster bots"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "scraping",
+      "automation",
+      "monitoring",
+      "no-code"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/botster.md"
   },
   {
@@ -3290,38 +3310,51 @@
   },
   {
     "id": "d3js",
-    "name": "D3js",
-    "description": "OSINT tool: D3js.",
+    "name": "D3.js",
+    "description": "Use when you have investigation data (relationships, timelines, geodata) and want to build custom interactive visualizations — provides a JavaScript library for bespoke charts and link graphs, not a data source.",
     "url": "https://d3js.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building custom, interactive data visualizations (network/link graphs, timelines, maps) from investigation data.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "costNote": "Free and open-source (ISC License); a client-side JavaScript library, no service or account.",
+    "opsec": "passive",
+    "opsecNote": "D3 runs locally in your own browser/page against data you supply — nothing is sent anywhere and no subject is queried. Keep sensitive datasets on machines you control; a D3 page is only as private as where you host it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "The de-facto open-source data-visualization library (by Mike Bostock/Observable), extremely widely used and audited; it's tooling for building visuals, so accuracy depends on your data and code.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
+    "relatedTools": [],
+    "aliases": [
+      "D3",
+      "d3js.org",
+      "Data-Driven Documents"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "visualization",
+      "link-analysis",
+      "charts",
+      "javascript"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/d3js.md"
   },
   {
@@ -14701,41 +14734,51 @@
   {
     "id": "spidersuite",
     "name": "SpiderSuite",
-    "description": "OSINT tool: SpiderSuite.",
+    "description": "Use when you have a `domain`/URL and want to crawl and map a site's full structure, links, and assets — returns discovered URLs, endpoints, and a link graph for reconnaissance.",
     "url": "https://github.com/3nock/SpiderSuite",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Cross-platform GUI web crawling to enumerate a target site's pages, subdomains, and linked assets during recon.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; download a release build and install per the wiki.",
+    "opsec": "active",
+    "opsecNote": "Crawling actively fetches every page of the target site from YOUR machine/IP, generating traffic in the target's server logs — this is NOT passive. Use a VPN/proxy, throttle the crawl, and only crawl sites you're authorised to (or that are clearly public) to avoid legal/abuse issues.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project (~1k stars) with active community (Discord); a community tool you run yourself, so audit the build and verify findings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Spider Suite",
+      "3nock SpiderSuite"
+    ],
     "tags": [
-      "other-tools"
+      "web-crawler",
+      "reconnaissance",
+      "spider"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ote-osint-template-engine",
-      "sub3-suite"
-    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/spidersuite.md"
   },
   {
@@ -109168,52 +109211,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/nonfungible-com.md"
-  },
-  {
-    "id": "north-data",
-    "name": "North Data",
-    "description": "Search for people and companies in EU corporate and trade registers + visualize relationships",
-    "url": "https://northdata.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "employer-org",
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "northdata-com"
-    ],
-    "_file": "library/tools/financial-crypto/north-data.md"
   },
   {
     "id": "opensea",
@@ -275563,39 +275560,51 @@
   },
   {
     "id": "heystack",
-    "name": "Heystack",
-    "description": "Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creation date.",
+    "name": "HeyStacks",
+    "description": "Use when you have a topic/keyword and want publicly-shared Google Docs, Sheets, and Slides about it — returns community-curated public documents filterable by tag and date.",
     "url": "https://heystacks.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Discovering public Google Docs/Sheets/Slides on a topic that normal search often misses.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search the community collection; no account needed to read.",
+    "opsec": "passive",
+    "opsecNote": "You browse HeyStacks' own index of shared documents — passive and non-alerting. Opening a linked Google Doc fetches it from Google; anonymous viewing is fine, but don't open sensitive docs while signed into a real Google account (your view can appear to the doc owner).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-curated directory of user-submitted public documents; coverage is whatever members have added, so it's a supplement, not a comprehensive index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HeyStacks",
+      "heystacks.com"
+    ],
     "tags": [
-      "Search engines",
-      "Filesharing Search Engines"
+      "google-docs",
+      "public-documents",
+      "document-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/heystack.md"
   },
   {
@@ -339212,25 +339221,26 @@
   },
   {
     "id": "intel-codex",
-    "name": "intel-codex",
-    "description": "Knowledge base covering OSINT, forensics, reverse engineering, and security frameworks.",
+    "name": "Intel-Codex",
+    "description": "Use when you want structured SOPs and learning paths for OSINT, forensics, and reverse engineering — provides a free reference knowledge base, not a per-selector lookup.",
     "url": "https://github.com/gl0bal01/intel-codex",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Methodology and reference reading for OSINT/forensics",
+    "bestFor": "A free operational manual of standard operating procedures and learning paths for digital investigators.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). Best viewed as an Obsidian vault, but the markdown files read fine directly on GitHub or in any editor.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference repository you read/clone locally — it queries nothing and leaks nothing about any subject. It even emphasises OpSec and legal compliance in its own procedures.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community knowledge base (32 stars).",
+    "trustNote": "A single-maintainer open-source knowledge base of SOPs and case studies; well-structured and MIT-licensed, but community-authored guidance to apply with judgement, not authoritative doctrine.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -339239,15 +339249,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "intel codex",
+      "gl0bal01 intel-codex"
+    ],
     "tags": [
       "knowledge-base",
-      "methodology",
-      "reference"
+      "sop",
+      "training",
+      "methodology"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/intel-codex.md"
   },
   {
@@ -342752,24 +342767,29 @@
   {
     "id": "symbols-com",
     "name": "Symbols.com",
-    "description": "Language-related directory of one of the webs largest collections for symbols, signs and flags",
+    "description": "Use when you have an unidentified symbol, sign, flag, or glyph (from an `image`) and want to identify its meaning — returns encyclopedic entries via keyword, category, or graphical-feature search.",
     "url": "http://www.symbols.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying and decoding symbols, signs, flags, and glyphs — including a shape-based visual search for unknown marks.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online encyclopedia; no account needed to browse or search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a reference encyclopedia — nothing about any subject is queried and nothing is exposed. If you use the community \"what does this symbol mean?\" feature, you're posting the image publicly, so strip any identifying context first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A collaborative, volunteer-edited symbol encyclopedia; broad and useful for identification but community-sourced, so corroborate meanings for anything consequential.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -342778,15 +342798,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
+    "relatedTools": [],
+    "aliases": [
+      "symbols.com",
+      "symbols encyclopedia"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "symbols",
+      "signs",
+      "flags",
+      "iconography"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/symbols-com.md"
   },
   {

@@ -76,7 +76,7 @@ kind: group-index
 - **`smart-words-org`** (low) — Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbrevi
 - **`stars21-com`** (low) — OSINT tool: stars21.com.
 - **`superemojitranslator-com`** (low) — OSINT tool: superemojitranslator.com.
-- **`symbols-com`** (low) — Language-related directory of one of the webs largest collections for symbols, signs and flags
+- **`symbols-com`** (low) — Use when you have an unidentified symbol, sign, flag, or glyph (from an `image`) and want to identify its meaning — returns encyclopedic ent
 - **`synonyms-net`** (low) — Language-related search for synonyms and antonyms
 - **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated
 - **`trans8it`** (low) — Use when you have text/SMS-speak or abbreviations and want plain English (or vice-versa) — a free web translator for "txt speak", chat slang
