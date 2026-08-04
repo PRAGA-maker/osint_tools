@@ -106,7 +106,7 @@ kind: group-index
 - **`live-atc`** (low) — Use when you have an aircraft near a covered airport and want tail numbers/callsigns from live tower audio — returns vehicle-plate (tail num
 - **`live-piracy-map`** (low) — Use when you have a maritime region/`geolocation` and want reported piracy and armed-robbery incidents against ships — returns incident `geo
 - **`live-train-tracker`** (low) — Use when you have a `geolocation`/region in Europe, the Americas, or Australia and want real-time train positions and schedules — returns li
-- **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
+- **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — Use when you have a ship `name`, IMO/MMSI `vehicle-plate`-style ID, or a port and want its live position and voyage history — returns real-t
 - **`lucas-county-ohio-areis-online`** (medium) — Use when you have a `name` or `address` in Lucas County, Ohio and want property records — returns owner `name`, parcel `address`, mailing ad
 - **`maersk-tracking`** (low) — Use when you have a Maersk container, booking, or bill-of-lading number and want the shipment's current location and movement history — retu
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca

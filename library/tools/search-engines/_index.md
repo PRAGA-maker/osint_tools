@@ -393,7 +393,7 @@ kind: group-index
 - **`news-now`** (low) — Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped 
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mention
-- **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
+- **`newseum-today-front-pages`** (low) — Use when you have a place and a date and want that day's local newspaper front page — returns scanned front pages from 500+ papers worldwide
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated head
 - **`newspaper-archive`** (medium) — Use when you have a `name`, place or event and want historical Turkish/Ottoman press coverage — returns OCR-searchable newspaper pages and c

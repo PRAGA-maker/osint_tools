@@ -244,7 +244,7 @@ kind: group-index
 - **`password-generator`** (low) — Password generator for creating strong passwords
 - **`password-safe`** (low) — Program that enhances security by offering password management services
 - **`paxful`** (low) — OSINT tool: Paxful.
-- **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
+- **`pentoo-linux`** (low) — Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentes
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking

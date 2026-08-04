@@ -15334,38 +15334,46 @@
   {
     "id": "time-graphics",
     "name": "Time.Graphics",
-    "description": "A tool for creating, visualizing, and managing timelines online.",
+    "description": "Use when you have dated events from an investigation and want to visualize them as an interactive timeline — returns a shareable chronology that exposes gaps and overlaps.",
     "url": "https://time.graphics",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building an interactive investigative timeline from dated events to reveal sequence, gaps and overlaps.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier lets you build and share timelines online; Premium adds exports (PDF/image), private-by-default, larger timelines and extra features.",
+    "opsec": "passive",
+    "opsecNote": "You enter data you've already gathered; the tool doesn't query any subject. Beware the default visibility — timelines can be public or link-accessible, so set sensitive case timelines to private and avoid putting live-case PII on a third-party server.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "An established online timeline maker (listed in the Bellingcat toolkit) used widely in research and education; it's a visualization aid, so reliability depends on the data you enter, not the tool.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "time.graphics",
+      "time graphics"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "data-organization-analysis"
+      "timeline",
+      "visualization"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/time-graphics.md"
   },
   {
@@ -73073,42 +73081,54 @@
   {
     "id": "listly",
     "name": "Listly",
-    "description": "An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/Google Sheet.",
-    "url": "https://chrome.google.com/webstore/detail/listly-free-data-scraper/ihljmnfgkkmoikgkdkjejbkpdpbmcgeh/related",
+    "description": "Use when you have a data-rich web page and want its lists/tables extracted — returns the page's structured rows (names, links, contacts) as a spreadsheet.",
+    "url": "https://chromewebstore.google.com/detail/listly-free-data-scraper/ihljmnfgkkmoikgkdkjejbkpdpbmcgeh",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click no-code scraping of lists, tables and cards from a web page into Excel/Google Sheets.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "name",
+      "social-profile",
+      "email",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use as a guest (no signup) for basic scraping; higher-volume, multi-page and cloud features are paid.",
+    "opsec": "passive",
+    "opsecNote": "The extension scrapes pages you already have open in your own browser, so your visit — not the extension — is what reaches the target site; apply your usual browsing OpSec. Multi-page/auto-scroll scraping generates lots of requests to the site, which can be noticeable, so throttle on sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular free web-scraper Chrome extension (~100k users, well rated); reliable for structured page data, but a commercial vendor's tool — review what it uploads if you enable cloud features.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Listly free data scraper",
+      "listly"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "scraping",
+      "data-extraction",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/listly.md"
   },
   {
@@ -175297,37 +175317,47 @@
   {
     "id": "pentoo-linux",
     "name": "Pentoo Linux",
-    "description": "OSINT tool: Pentoo Linux.",
+    "description": "Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentesting and recon tools.",
     "url": "https://www.pentoo.ch",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A bootable live-USB security distro giving you a clean, isolated environment for recon and pentesting.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source; download the ISO and run as a live USB/CD or install it.",
+    "opsec": "passive",
+    "opsecNote": "Running from a live USB gives you a disposable, non-persistent environment that doesn't touch your host disk — an OpSec win for keeping investigative work isolated. It is a toolbox, not a network query; OpSec depends on how you configure networking (route through Tor/VPN as needed).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-standing, actively maintained open-source security distribution based on Gentoo Linux, with an established community (GitHub, Discord/IRC); reputable within the security field.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "pentoo",
+      "pentoo linux"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Sock Puppets",
+      "linux-distro",
+      "pentesting",
+      "opsec"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/pentoo-linux.md"
   },
   {
@@ -242163,40 +242193,52 @@
   {
     "id": "population-reference-bureau-data-finder",
     "name": "Population Reference Bureau Data Finder",
-    "description": "OSINT tool: Population Reference Bureau Data Finder.",
-    "url": "http://www.prb.org/DataFinder.aspx",
+    "description": "Use when you have a country, US state, or region and want demographic/health indicators for context — returns population, age, health and social statistics by geography.",
+    "url": "https://www.prb.org/collections/data-sheets/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Pulling demographic and social indicators for a country/state/region to contextualize an investigation.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public demographic data from a nonprofit; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Purely reference statistics about places, not people — passive and non-attributable. Nothing about a subject is queried.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Population Reference Bureau is a long-established nonprofit demographic-research organisation; its data sheets and DataFinder draw on census/UN/authoritative sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "population-reference-bureau"
     ],
+    "aliases": [
+      "PRB DataFinder",
+      "Population Reference Bureau"
+    ],
+    "tags": [
+      "demographics",
+      "statistics",
+      "public-records"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/population-reference-bureau-data-finder.md"
   },
   {
@@ -276611,37 +276653,49 @@
   {
     "id": "newseum-today-front-pages",
     "name": "Newseum - Today Front Pages",
-    "description": "OSINT tool: Newseum - Today Front Pages.",
-    "url": "http://www.newseum.org/todaysfrontpages",
+    "description": "Use when you have a place and a date and want that day's local newspaper front page — returns scanned front pages from 500+ papers worldwide, mapped by location.",
+    "url": "https://frontpages.freedomforum.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Viewing today's (or an archived) newspaper front pages from hundreds of cities worldwide on a map.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public gallery hosted by the Freedom Forum (which took over the Newseum's Today's Front Pages after the museum closed in 2019). No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public gallery of published newspaper front pages; nothing about any subject is queried and no login is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Freedom Forum, the nonprofit that ran the Newseum; front pages are the actual published editions submitted by the newspapers themselves.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Today's Front Pages",
+      "Newseum front pages",
+      "Freedom Forum front pages"
+    ],
     "tags": [
-      "news"
+      "newspapers",
+      "front-pages",
+      "verification"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/newseum-today-front-pages.md"
   },
   {
@@ -334230,24 +334284,27 @@
   {
     "id": "conveythis-free-translation",
     "name": "ConveyThis Free Translation",
-    "description": "Website offering a widget for other websites that provides language translation services",
-    "url": "http://www.conveythis.com",
+    "description": "Use when you have a foreign-language website and want it rendered in your language — returns an auto-translated view of the site across 200+ languages.",
+    "url": "https://www.conveythis.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Auto-translating an entire foreign-language website into a language you read.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier translates a site into one language up to a word limit; more languages/words and advanced features (SEO, human editing) are paid. Primarily aimed at site owners, but the translation engine is usable for reading.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "If you paste a target URL into ConveyThis' translator, its servers fetch and process that page — so the fetch comes from ConveyThis, not you, but you disclose the URL of interest to a third party. For quick reads, a general machine translator (Google/DeepL) is lower-footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "ConveyThis is an established commercial website-localization service using machine translation (with optional human review); reliable engine, but a vendor product built for site owners rather than investigators.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -334256,15 +334313,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ConveyThis",
+      "conveythis translation"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "website-translation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/conveythis-free-translation.md"
   },
   {
@@ -337481,24 +337542,25 @@
   {
     "id": "yourdictionary-online-links",
     "name": "YourDictionary Online Links",
-    "description": "Links to over 6600 online foreign language dictionaries and translation services",
-    "url": "http://reference.yourdictionary.com/languages.html",
+    "description": "Use when you need definitions, foreign-language dictionaries, or word/name meanings — returns curated links to dictionaries across many languages plus definitions.",
+    "url": "https://www.yourdictionary.com/articles/foreign-language-dicts",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "A curated directory of foreign-language dictionaries plus English definitions and word tools.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use (ad-supported); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reference lookup — dictionaries and word tools touch no subject and need no login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "YourDictionary is a long-running, well-known online dictionary/reference site; the foreign-language links page curates external dictionaries. Reference content, not investigative data.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -337507,15 +337569,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YourDictionary",
+      "yourdictionary foreign language dictionaries"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "dictionary"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/yourdictionary-online-links.md"
   },
   {
@@ -342797,45 +342863,58 @@
   {
     "id": "live-vessel-tracking-and-monitoring-with-fleetmon-explorer",
     "name": "Live vessel tracking and monitoring with FleetMon Explorer",
-    "description": "OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.",
-    "url": "https://www.fleetmon.com/services/live-tracking/fleetmon-explorer",
+    "description": "Use when you have a ship `name`, IMO/MMSI `vehicle-plate`-style ID, or a port and want its live position and voyage history — returns real-time AIS location, track, ETA and destination.",
+    "url": "https://www.fleetmon.com/live_tracking/fleetmon_explorer/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Live browser-based AIS tracking of ships by name/IMO/MMSI, with past and predicted tracks.",
     "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
+      "name",
+      "vehicle-plate",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "geolocation",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free registered account gives interactive live tracking with limits; deeper history, more concurrent vessels, and commercial/API features are paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read broadcast AIS positions from FleetMon's aggregation, not the vessel itself; the ship is not notified. Registration ties queries to your account, so use a research account rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "FleetMon is an established commercial maritime-intelligence provider aggregating terrestrial and satellite AIS; positions are authoritative to the extent the vessel broadcasts AIS honestly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "fleetmon"
+    ],
+    "aliases": [
+      "FleetMon Explorer",
+      "fleetmon"
+    ],
     "tags": [
-      "maritime"
+      "vessel-tracking",
+      "ais",
+      "maritime",
+      "transportation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fleetmon",
-      "fleetmon-vessel-search"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/live-vessel-tracking-and-monitoring-with-fleetmon-explorer.md"
   },
   {

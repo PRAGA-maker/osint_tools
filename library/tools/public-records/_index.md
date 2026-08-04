@@ -694,7 +694,7 @@ kind: group-index
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code
 - **`polk-court-records`** (high) — Use when you have a `name` and want to check Polk County, Florida court cases tied to them — returns case records, DOB, and case/document ID
 - **`pomanda-com`** (high) — Use when you have a company `name`, a director `name`, or an `address` in the UK and want company intelligence and officer links — returns r
-- **`population-reference-bureau-data-finder`** (low) — OSINT tool: Population Reference Bureau Data Finder.
+- **`population-reference-bureau-data-finder`** (low) — Use when you have a country, US state, or region and want demographic/health indicators for context — returns population, age, health and so
 - **`portugal`** (high) — Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `ass
 - **`postcert`** (medium) — Use when you have a `name` and want to verify a Colorado peace officer's certification, employment status, and any decertification/misconduc
 - **`pricepaid`** (low) — Use when you have a UK `address`/postcode and want its property sale history — returns sale prices, dates and property type (no owner names)

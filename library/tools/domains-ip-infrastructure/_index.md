@@ -249,7 +249,7 @@ kind: group-index
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
 - **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu
 - **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
-- **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
+- **`listly`** (low) — Use when you have a data-rich web page and want its lists/tables extracted — returns the page's structured rows (names, links, contacts) as 
 - **`logsensor`** (low) — Use when you have a `domain`/host list and want to find its login panels — returns discovered login-page URLs (with an optional, authorised-
 - **`lookyloo`** (low) — Use when you have a `domain` (or suspicious URL) and want to see the full tree of hosts, redirects and third-party resources a page pulls in
 - **`majestic`** (low) — Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow /
