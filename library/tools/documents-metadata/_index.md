@@ -147,7 +147,7 @@ kind: group-index
 - **`kickstarter`** (medium) — Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, b
 - **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
 - **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
-- **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`mactech-apple-technology`** (low) — Use when you have an Apple device model/spec reference (from `metadata-exif` or a device string) and want to understand the hardware — retur
 - **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 

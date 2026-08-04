@@ -56,7 +56,7 @@ kind: group-index
 - **`nzdoctor-free-classified-ads-new-zealand`** (medium) — Use when you have a `name` or clinic in the NZ health sector and want employment/recruitment ads — returns employer-org, contact names, and 
 - **`offerup`** (high) — Use when a US subject buys/sells locally — pivot from a seller alias or item to a profile with photos, approximate location, ratings, and tr
 - **`okcupid`** (medium) — Use when you have a `name`, `username` or photo and want to check for a dating profile — returns `social-profile`, `image` and self-reported
-- **`onlybritish`** (low) — UK OnlyFans creator directory.
+- **`onlybritish`** (low) — Use when you have a `name` or `username` and want to check whether the subject runs a UK OnlyFans account — returns a directory profile with
 - **`onlycanadian-fans`** (medium) — Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filt
 - **`onlydanske-dk`** (medium) — Use when you have a `username` or creator name and want to check whether it maps to a Danish OnlyFans persona — returns the linked `social-p
 - **`onlyespana-es`** (low) — Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a

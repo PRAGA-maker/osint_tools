@@ -679,7 +679,7 @@ kind: group-index
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
 - **`xgs`** (low) — Use when you have a search term/dork and want to run it against Google (and legacy .onion gateways) from a Python CLI — returns domain/link 
 - **`xsint`** (high) — Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one comman
-- **`xtorx`** (low) — fast torrents search engine
+- **`xtorx`** (low) — Use when you have a `name` or `username` and want to check whether it surfaces in torrent metadata — returns torrent listings (titles, relea
 - **`yacy`** (low) — Use when you want to run web searches through a decentralized, self-hosted engine with no central logging — returns `domain`/page results fr
 - **`yagooglesearch`** (low) — Use when you have a `name`/`username`/query and want to script Google results without getting 429-blocked — returns result URLs programmatic
 - **`yahoo-com-2`** (high) — Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns

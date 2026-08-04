@@ -82,7 +82,7 @@ kind: group-index
 - **`swp-cx`** (low) — OSINT tool: swp.cx.
 - **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
 - **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
-- **`tool-path`** (low) — OSINT tool: Tool \| path.
+- **`tool-path`** (low) — Use when you have a `crypto-wallet` xpub or seed and want to enumerate the addresses it derives — returns the child addresses/keys for a giv
 - **`top-guns`** (low) — OSINT tool: Top Guns.
 - **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.

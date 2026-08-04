@@ -39,7 +39,7 @@ kind: group-index
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
 - **`subdomains/`** — 16 skill(s) below.
-- **`terrorism-and-extremism/`** — 7 skill(s) below.
+- **`terrorism-and-extremism/`** — 6 skill(s) below.
 - **`threat-feeds-and-platforms/`** — 14 skill(s) below.
 - **`tools/`** — 4 skill(s) below.
 - **`ttps/`** — 2 skill(s) below.
@@ -70,7 +70,7 @@ kind: group-index
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
 - **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
-- **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
+- **`argus`** (low) — Use when you have a `domain` or `ip-address` and want a broad infrastructure sweep — returns DNS, WHOIS, geo-IP, ports, subdomains, harveste
 - **`arin-net`** (medium) — Use when you have an `ip-address` or ASN and want its full historical registration chain — returns the organizations, contacts, and domain/o
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
@@ -388,7 +388,6 @@ kind: group-index
 - **`terms-of-service-didn-t-read`** (low) — Use when you have a service `domain` and want a plain-language, graded summary of what its terms and privacy policy actually do to users — r
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
-- **`thales`** (low) — OSINT tool: Thales.
 - **`the-information-laundromat`** (low) — Use when you have a `domain` (or article URL/text) and want to find other sites sharing its content or infrastructure — returns linked `doma
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc

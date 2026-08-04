@@ -3328,38 +3328,45 @@
   },
   {
     "id": "data-visualization-catalogue",
-    "name": "Data Visualization Catalogue",
-    "description": "OSINT tool: Data Visualization Catalogue.",
-    "url": "http://datavizcatalogue.com",
+    "name": "The Data Visualization Catalogue",
+    "description": "Use when you have investigation data to present and want to pick the right chart type — returns a reference of 80+ visualization methods indexed by the analytical function they serve.",
+    "url": "https://datavizcatalogue.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Choosing how to visualise link-analysis, timeline, or distribution data when writing up an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Catalogue is free to browse; the site also sells optional icon sets, but nothing needed for reference use is paywalled.",
+    "opsec": "passive",
+    "opsecNote": "Purely a reference site — you browse chart descriptions, you never submit case data. No target contact and nothing to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independently maintained reference by designer Severino Ribecca; widely cited in data-viz teaching. Not an OSINT data source — a methods catalogue.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "datavizcatalogue",
+      "DataViz Catalogue"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/data-visualization-catalogue.md"
   },
   {
@@ -7983,45 +7990,53 @@
   {
     "id": "kahu-revelo",
     "name": "Kahu Revelo",
-    "description": "Unpacking heavily obfuscated JavaScript samples on Windows",
-    "url": "https://www.kahusecurity.com/tools/",
+    "description": "Use when you have obfuscated JavaScript (from a suspect page/link tied to a subject) and want to read what it really does — returns deobfuscated code and any decoded redirect `domain`s/URLs.",
+    "url": "https://www.kahusecurity.com/tools.html",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "javascript"
     ],
-    "bestFor": "Unpacking heavily obfuscated JavaScript samples on Windows",
-    "input": "Obfuscated JavaScript files or script text",
-    "output": "Deobfuscated code and decoded runtime content",
+    "bestFor": "Manually deobfuscating malicious/obfuscated JavaScript to reveal hidden redirects and payloads.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free download from Kahu Security; no account or payment.",
     "opsec": "active",
-    "opsecNote": "Tool executes suspect code paths, so sandbox or VM isolation is recommended.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Revelo can execute and hook the script it is analysing, so run it only inside a disposable Windows VM with no network path to your real environment. If you let it follow live redirects, you touch attacker infrastructure — do that only from an isolated, attributable-to-nobody host.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Long-standing free malware-analysis utility from Kahu Security; Windows-only GUI tool, widely referenced in JS-deobfuscation tutorials. Tangential to person-finding — a payload-analysis aid.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": true,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
       "kahu-converter-utilities"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Revelo",
+      "Kahu Security Revelo"
+    ],
+    "tags": [
+      "javascript",
+      "deobfuscation",
+      "malware-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/javascript/kahu-revelo.md"
   },
   {
@@ -41845,36 +41860,51 @@
   },
   {
     "id": "tool-path",
-    "name": "Tool \\| path",
-    "description": "OSINT tool: Tool \\| path.",
+    "name": "learnmeabitcoin Derivation Path Tool",
+    "description": "Use when you have a `crypto-wallet` xpub or seed and want to enumerate the addresses it derives — returns the child addresses/keys for a given BIP32/BIP44 derivation path.",
     "url": "https://learnmeabitcoin.com/tools/path/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Turning an extended public key (or seed) plus a derivation path into the concrete Bitcoin addresses it controls.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free educational tool; no account, no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Derivation is computed in your browser, but NEVER paste a live/seized private seed phrase into any website — use an xpub (public-only) so you can enumerate addresses without exposing spending keys. Prefer an offline copy of the page for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Part of learnmeabitcoin.com, a long-running, well-regarded Bitcoin education site by Greg Walker; the tool is client-side and open about its math.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "learnmeabitcoin path tool",
+      "BIP32 derivation path calculator"
+    ],
+    "tags": [
+      "bitcoin",
+      "crypto",
+      "wallet-derivation",
+      "hd-wallets"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "relatedTools": [
       "learnmeabitcoin-com"
     ],
@@ -45147,46 +45177,50 @@
   {
     "id": "onlybritish",
     "name": "OnlyBritish",
-    "description": "UK OnlyFans creator directory.",
+    "description": "Use when you have a `name` or `username` and want to check whether the subject runs a UK OnlyFans account — returns a directory profile with handle, bio, and outbound links.",
     "url": "https://onlybritish.uk/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "Finding UK OnlyFans creators",
+    "bestFor": "Finding whether a UK subject has an OnlyFans presence and pivoting from their handle/bio.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; no account needed for the directory itself.",
+    "opsec": "passive",
+    "opsecNote": "You browse a third-party aggregator's public pages — the subject is not notified. It is an adult-content site; use a sock-puppet browser/session and avoid clicking through to OnlyFans itself (which can require login and may leave a footprint). No case data is submitted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party directory with no affiliation to onlyfans.com; it aggregates publicly listed creators, so listings can be stale, self-submitted, or promotional.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "UK"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlyBritish directory"
+    ],
     "tags": [
       "onlyfans",
       "uk",
       "adult"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlybritish.md"
   },
   {
@@ -54344,25 +54378,26 @@
   },
   {
     "id": "mactech-apple-technology",
-    "name": "MacTech Apple Technology",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
-    "url": "http://www.mactech.com",
+    "name": "MacTech",
+    "description": "Use when you have an Apple device model/spec reference (from `metadata-exif` or a device string) and want to understand the hardware — returns Apple tech news, model histories, and technical background.",
+    "url": "https://www.mactech.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Background reference for identifying and understanding Apple hardware/software referenced in evidence or metadata.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; a magazine/community site, some pro services advertised but reference content is open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of a public tech-news site; you submit no case data and the subject is not involved. Nothing to leak beyond your own browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established Apple-focused tech-news/community magazine, not an investigative data source; useful only as background reference on Apple hardware/software.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -54371,15 +54406,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MacTech Magazine"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "useful-websites-tools-documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/mactech-apple-technology.md"
   },
   {
@@ -61559,13 +61596,13 @@
   {
     "id": "argus",
     "name": "Argus",
-    "description": "All-in-one information gathering toolkit with many modular recon scripts.",
+    "description": "Use when you have a `domain` or `ip-address` and want a broad infrastructure sweep — returns DNS, WHOIS, geo-IP, ports, subdomains, harvested emails, and threat-intel from 130+ modules in one run.",
     "url": "https://github.com/jasonxtn/Argus",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Running a broad battery of domain/network/intel recon modules from one CLI.",
+    "bestFor": "Running a broad battery of domain/network/threat-intel recon modules against a target from one CLI.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -61576,15 +61613,16 @@
       "email",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). Some threat-intel modules (e.g. VirusTotal, Shodan) need your own free API keys to return data.",
+    "opsec": "active",
+    "opsecNote": "Many modules touch the target directly — DNS/WHOIS is passive, but port scans, directory discovery, and web crawling send traffic to the target's infrastructure and can be logged. Route active modules through a VPS/sock-puppet IP and avoid scanning hosts you are not authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Popular aggregate recon toolkit; mostly network/domain focused.",
+    "trustNote": "Popular open-source aggregate recon toolkit (jasonxtn/Argus, ~4k stars); it orchestrates well-known techniques rather than providing its own data. Infrastructure-focused, limited direct person-finding value.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -61603,8 +61641,8 @@
       "domain"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/argus.md"
   },
   {
@@ -85627,47 +85665,6 @@
     "_file": "library/tools/domains-ip-infrastructure/terms-of-service-didn-t-read.md"
   },
   {
-    "id": "terrorist-finance-tracking-program",
-    "name": "Terrorist Finance Tracking Program",
-    "description": "Terrorist financing intelligence",
-    "url": "https://home.treasury.gov/policy-issues/terrorism-and-illicit-finance/terrorist-finance-tracking-program-tftp",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "terrorism-and-extremism",
-      "terrorist-financing"
-    ],
-    "bestFor": "Terrorist financing intelligence",
-    "input": "Financial or entity information",
-    "output": "Financing intelligence and reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Government resource access",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/terrorist-financing/terrorist-finance-tracking-program.md"
-  },
-  {
     "id": "testmy-net-internet-speed-test",
     "name": "TestMy.Net Internet Speed Test",
     "description": "Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-lookup value.",
@@ -85756,45 +85753,6 @@
       "thales"
     ],
     "_file": "library/tools/domains-ip-infrastructure/thale-s-cyberthreat-map.md"
-  },
-  {
-    "id": "thales",
-    "name": "Thales",
-    "description": "OSINT tool: Thales.",
-    "url": "https://cds.thalesgroup.com/en/cyberthreat/attacks-page",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-actor-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thale-s-cyberthreat-map"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/thales.md"
   },
   {
     "id": "the-information-laundromat",
@@ -245623,41 +245581,58 @@
   {
     "id": "openscreening",
     "name": "OpenScreening",
-    "description": "Visualizing connections between sanctioned entities, PEPs, and offshore structures",
+    "description": "Use when you have a `name` or `employer-org` and want to see its links to sanctions, PEPs, and beneficial-ownership records — returns associates, controlling entities, and jurisdictions as an interactive graph.",
     "url": "https://resources.linkurious.com/openscreening",
     "category": "public-records",
     "path": [
       "public-records",
       "kyc-aml-tools"
     ],
-    "bestFor": "Visualizing connections between sanctioned entities, PEPs, and offshore structures",
-    "input": "Individual or organization name",
-    "output": "Interactive graph visualizations showing entity relationships and sanctions connections",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visualizing how a person or company connects to sanctioned entities, PEPs, and offshore/beneficial-ownership structures.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public tool built on OpenSanctions + Open Ownership open data, hosted on Linkurious' graph platform; no account or payment needed to search.",
     "opsec": "passive",
-    "opsecNote": "Web-based search against public datasets hosted by Linkurious; queries are sent to their servers.",
+    "opsecNote": "Queries run against Linkurious' hosted instance, so your search terms leave your machine. No notice reaches the subject (you are reading public sanctions/UBO datasets, not touching the person). Use a sock-puppet browser if you don't want the vendor associating searches with you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Joint project of OpenSanctions, Open Ownership, and Linkurious — all reputable, source-cited open-data organisations; every record links back to its originating dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "opensanctions"
+    ],
+    "aliases": [
+      "Linkurious OpenScreening"
+    ],
+    "tags": [
+      "sanctions",
+      "pep",
+      "beneficial-ownership",
+      "kyc-aml"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kyc-aml-tools/openscreening.md"
   },
   {
@@ -297305,38 +297280,48 @@
   {
     "id": "xtorx",
     "name": "Xtorx",
-    "description": "fast torrents search engine",
+    "description": "Use when you have a `name` or `username` and want to check whether it surfaces in torrent metadata — returns torrent listings (titles, release handles) aggregated from multiple indexes.",
     "url": "https://www.xtorx.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick meta-search across torrent indexes for a keyword, filename, or release handle.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; ad-supported, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive and does not touch the subject. Do NOT download anything — torrent files can carry malware and downloading reveals your IP to swarm peers and may be unlawful. Treat this strictly as a metadata search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party torrent meta-search aggregating other indexes; results are unmoderated and ad-heavy. Low direct person-finding value.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "xtorx.com"
+    ],
     "tags": [
       "Search engines",
       "Filesharing Search Engines"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/xtorx.md"
   },
   {

@@ -88,7 +88,7 @@ kind: group-index
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — OSINT tool: D3js.
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
-- **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
+- **`data-visualization-catalogue`** (low) — Use when you have investigation data to present and want to pick the right chart type — returns a reference of 80+ visualization methods ind
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfu
 - **`decompiler-com`** (low) — Use when you have a compiled artifact (JAR/class, APK/DEX, .NET EXE/DLL, .pyc, SWF, Lua) and want readable source in-browser — returns decom
