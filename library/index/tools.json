@@ -2586,35 +2586,45 @@
   {
     "id": "compiler-explorer",
     "name": "Compiler Explorer",
-    "description": "OSINT tool: Compiler Explorer.",
+    "description": "Use when you have a code snippet (from malware, a leaked repo, or a document macro) and want to compile/inspect it safely in-browser — returns disassembly and compiler output, no selectors.",
     "url": "https://godbolt.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Safely compiling and disassembling untrusted code snippets in the browser to understand what they do.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source, ad-free public instance; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Code you paste is sent to Compiler Explorer's servers to compile, and short-links you create are stored. Never paste snippets containing live secrets, target-identifying strings, or anything you need to keep confidential — treat it as public. It compiles but does not execute code, so there is no risk of running attacker payloads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely-used open-source project (Matt Godbolt) with public source; the canonical tool of its kind.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "godbolt",
+      "godbolt.org"
+    ],
+    "tags": [
+      "code",
+      "analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/compiler-explorer.md"
   },
   {
@@ -13492,43 +13502,48 @@
   {
     "id": "regular-expression-analyzer",
     "name": "Regular Expression Analyzer",
-    "description": "super tool for those who forget to leave comments on their code or have to deal with someone else's code.",
+    "description": "Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it matches — a code-comprehension utility, no selectors.",
     "url": "https://xenon.stanford.edu/~xusch/regexp/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Decomposing an unfamiliar or dense regular expression into a visual tree so you can see what it actually matches.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free academic web page; no account. Note it is an old (c. 2007) Stanford personal page and may not always be reachable.",
+    "opsec": "passive",
+    "opsecNote": "You paste a regex pattern, not target data, into a static analyzer page — nothing sensitive need leave your side. Avoid pasting patterns that themselves embed a target's literal identifier if you'd rather not send it to a third-party page; otherwise this is inert.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A single-author academic utility from ~2007; still online but unmaintained, so treat availability as best-effort and prefer a modern alternative when it matters.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "highwire-free-online-full-text-articles",
       "palladio",
       "stanford-large-network-dataset-collection",
       "swap-stanford-edu"
     ],
+    "aliases": [
+      "regexp analyzer"
+    ],
+    "tags": [
+      "code",
+      "regex"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/regular-expression-analyzer.md"
   },
   {
@@ -53825,37 +53840,44 @@
   {
     "id": "json-to-csv",
     "name": "JSON to CSV",
-    "description": "OSINT tool: JSON to CSV.",
+    "description": "Use when you have JSON data (an API dump, a breach export, a scraped file) and want it flattened into a spreadsheet-friendly CSV — a data-wrangling utility, returns no selectors.",
     "url": "https://json-csv.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly converting JSON exports into CSV for review in a spreadsheet during an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for small files in the browser; larger files and batch/advanced conversion are behind a paid plan. The free tier covers routine one-off conversions.",
+    "opsec": "passive",
+    "opsecNote": "The browser-side converter processes data in-page, but treat any online converter as untrusted with sensitive data — do not upload breach dumps, PII, or case data containing real selectors to a third-party site. For anything sensitive, use a local tool (jq, pandas, csvkit) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple long-standing conversion utility; output is directly checkable against the input, but it is a third-party site with no security assurances for the data you feed it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "json-csv.com"
+    ],
     "tags": [
-      "Files"
+      "files",
+      "data-conversion"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/json-to-csv.md"
   },
   {
@@ -70143,42 +70165,51 @@
   {
     "id": "gotanda",
     "name": "Gotanda",
-    "description": "Google Chrome extension. 56 tools for domain, ip and url investigation in one",
+    "description": "Use when you have a `domain`, `ip-address` or URL on a web page and want to pivot it across many OSINT engines from a right-click menu — returns links into domain/IP lookups.",
     "url": "https://chrome.google.com/webstore/detail/gotanda/jbmdcdfnnpenkgliplbglfpninigbiml",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Right-click pivoting of a highlighted domain/IP/URL into dozens of OSINT lookup services at once.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source browser extension (Chrome/Firefox); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The extension only builds and opens query URLs — but each service you launch (Censys, AbuseIPDB, SecurityTrails, etc.) then receives the indicator and your request. That is passive toward the target (you never touch their infrastructure), yet it fans your indicator out to many third parties; use a sock-puppet browser profile and be mindful which services log queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by HASH1da1 (GitHub HASH1da1/Gotanda); code is inspectable, but it is a community tool, not an official product.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HASH1da1/Gotanda"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/gotanda.md"
   },
   {
@@ -81130,48 +81161,6 @@
     "_file": "library/tools/domains-ip-infrastructure/reconnor.md"
   },
   {
-    "id": "redirect-detective",
-    "name": "Redirect Detective",
-    "description": "Understanding redirect paths and affiliate or cloaking behavior",
-    "url": "https://redirectdetective.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "discovery"
-    ],
-    "bestFor": "Understanding redirect paths and affiliate or cloaking behavior",
-    "input": "URL",
-    "output": "Redirect chain, intermediate hops, and final destination URL",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Redirect checks are initiated through the service, limiting direct local target interaction.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "redirectdetective"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/discovery/redirect-detective.md"
-  },
-  {
     "id": "redirectdetective",
     "name": "RedirectDetective",
     "description": "Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting it yourself — returns the destination domain.",
@@ -82789,49 +82778,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/phishing/secai-ai.md"
-  },
-  {
-    "id": "seclists-dns-subdomains",
-    "name": "SecLists DNS Subdomains",
-    "description": "Supplying high-quality DNS wordlists for enumeration tools",
-    "url": "https://github.com/danielmiessler/SecLists/tree/master/Discovery/DNS",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "subdomains"
-    ],
-    "bestFor": "Supplying high-quality DNS wordlists for enumeration tools",
-    "input": "Domain and chosen wordlist file used in external tooling",
-    "output": "Wordlist candidates for subdomain brute-force and permutation attacks",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Repository itself is passive; OPSEC impact depends on how the lists are used.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "robotsdisallowed",
-      "seclists"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/subdomains/seclists-dns-subdomains.md"
   },
   {
     "id": "secretfinder",
@@ -86140,55 +86086,52 @@
   {
     "id": "tormap",
     "name": "TorMap",
-    "description": "Worldwide online map of Tor Nodes",
-    "url": "https://twitter.com/cyb_detective/status/1536682540265873408",
+    "description": "Use when you have an `ip-address` or `geolocation` and want to see whether it is a Tor relay and map/inspect the global Tor node network over time — returns relay metadata.",
+    "url": "https://tormap.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Visualizing current and historical public Tor relays on a world map and checking whether a given IP is a known relay.",
     "selectorsIn": [
-      "domain"
+      "ip-address",
+      "geolocation"
     ],
     "selectorsOut": [
-      "domain"
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source web app; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You are querying a public dataset of Tor relay descriptors, not the subject or the Tor network itself. Nothing about your lookup reaches any target. Browse normally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (github.com/TorMap) built on official Tor Project relay archive descriptors; data provenance is the Tor Project, presentation is community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "tormap.org",
+      "World City Map of Tor Nodes"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Communications, Internet, Technologies"
+      "Communications, Internet, Technologies",
+      "tor"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "global-terriorism-database",
-      "murph-live",
-      "parrot-security",
-      "twitter",
-      "twitter-advanced-search",
-      "twitter-analytics",
-      "twitter-com",
-      "twitter-date-search",
-      "twitter-image-search",
-      "twitter-name-search-twitter-name-search",
-      "twitter-x-location-search"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/tormap.md"
   },
   {
@@ -91184,43 +91127,53 @@
   {
     "id": "xray",
     "name": "XRay",
-    "description": "Automated subdomain discovery with banner grabbing, open port enumeration, Shodan integration",
+    "description": "Use when you have a `domain` and want automated subdomain discovery with port/banner and Shodan enrichment — returns subdomains, open ports and service `ip-address` details.",
     "url": "https://github.com/evilsocket/xray",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Automated subdomain discovery with banner grabbing, open port enumeration, Shodan integration",
-    "input": "Domain name, subdomain wordlist, Shodan API key (optional), ViewDNS API key (optional)",
-    "output": "Enumerated subdomains, open ports, banner information, historical data, web-based results UI",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "One-shot recon of a domain — subdomain brute force plus Shodan/port/banner enrichment in a local web UI.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0). Note the original Go repo is archived/legacy; the author points to a Rust reimplementation as the maintained successor.",
     "opsec": "active",
-    "opsecNote": "Performs DNS brute force for subdomain enumeration and makes banner grabbing connections to discovered services.",
+    "opsecNote": "XRay performs DNS brute force against the target and makes direct banner-grabbing connections to discovered services, so it touches the target's infrastructure and can appear in their logs. Use only against assets you are authorized to test, ideally from an attributable-safe host; the Shodan-backed portions are passive but the local enumeration is not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Well-known tool by evilsocket (Simone Margaritelli); 2k+ stars, GPL source. The original repo is archived — treat it as legacy and prefer the maintained Rust successor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "ditto"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "evilsocket/xray"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "subdomains",
+      "recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/xray.md"
   },
   {
@@ -173056,45 +173009,6 @@
     "_file": "library/tools/opsec-investigator-tooling/filevault2-open-source-disk-encryption-for-mac.md"
   },
   {
-    "id": "findemails",
-    "name": "FindEmails",
-    "description": "OSINT tool: FindEmails.",
-    "url": "https://toofr.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "sockpuppet"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "toofr"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/findemails.md"
-  },
-  {
     "id": "fireball-search-engine-germany",
     "name": "Fireball Search Engine (Germany)",
     "description": "German web search engine offering anonymous browsing",
@@ -174030,41 +173944,48 @@
   {
     "id": "gnunet",
     "name": "GNUnet",
-    "description": "Network protocol stack for building secure, distibuted, privacy-preserving applications",
+    "description": "Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than returning selectors on a target.",
     "url": "https://gnunet.org/en/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Running your own communications/data exchange over a metadata-resistant, self-organizing overlay network as an investigator OpSec measure.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source software (GNU project); no cost, no account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "This is defensive OpSec tooling for the investigator, not a lookup against a target. Running GNUnet as a node makes you a participant in the overlay network, which is itself a signal on your local network; use it deliberately and understand what a node advertises before deploying in a sensitive environment.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Official GNU project software, actively developed and openly auditable; releases are published on gnunet.org with source available.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GNU's framework for secure peer-to-peer networking"
+    ],
     "tags": [
+      "opsec",
+      "privacy",
       "toddington",
-      "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/gnunet.md"
   },
   {
@@ -234440,53 +234361,6 @@
     "_file": "library/tools/public-records/irishdentalassoc-ie.md"
   },
   {
-    "id": "iron-march",
-    "name": "Iron March",
-    "description": "OSINT tool: Iron March.",
-    "url": "https://bloopbase.keybase.pub/LEFTHOOK/IronMarch/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "8chan",
-      "bloopbase",
-      "foodora",
-      "gettr",
-      "givesendgo",
-      "ledger",
-      "liker",
-      "royal-canadian-mounted-police",
-      "slack",
-      "utah-gun-exchange",
-      "weedmaps"
-    ],
-    "_file": "library/tools/public-records/iron-march.md"
-  },
-  {
     "id": "italy",
     "name": "Italy (Italian Business Register)",
     "description": "Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the company, its directors/proprietors and registered address; free search, paid documents.",
@@ -244724,37 +244598,50 @@
   {
     "id": "open-data-network",
     "name": "Open Data Network",
-    "description": "OSINT tool: Open Data Network.",
+    "description": "Use when you have an `address`/`geolocation` (a US place name) and want socioeconomic and demographic context on that area — returns place-level statistics, not individuals.",
     "url": "http://www.opendatanetwork.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling demographic, economic and cost-of-living statistics for a specific US city, county or metro to build area context around a subject.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search portal operated by Socrata/Tyler Technologies; no account or payment needed for the web search.",
+    "opsec": "passive",
+    "opsecNote": "Purely a query against aggregated public government datasets. You never touch the subject or any account, so it leaks nothing about your investigation to the target. Standard sock-puppet browsing is more than sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates first-party US government open data (Census, BLS, etc.) via Socrata; figures are official statistics, though it is place-level only and holds no data on individuals.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "opendatanetwork.com",
+      "Socrata Open Data Network"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/open-data-network.md"
   },
   {
@@ -348504,39 +348391,52 @@
   },
   {
     "id": "itamilradar",
-    "name": "Itamilradar",
-    "description": "track military flights over Italy and over the Mediterranean Sea.",
+    "name": "ItaMilRadar",
+    "description": "Use when you have a `geolocation` over Italy/the Mediterranean and want to identify military aircraft and naval movements there — returns callsigns, registrations and tracks.",
     "url": "https://www.itamilradar.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracking and identifying military flights and naval activity over Italy and the wider Mediterranean.",
+    "selectorsIn": [
+      "geolocation",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "vehicle-plate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read the blog and daily tracking posts; a Patreon tier adds early-access alerts and extras. Core content is free.",
+    "opsec": "passive",
+    "opsecNote": "You are reading a public tracking blog; nothing you do touches an investigative target. Standard passive browsing, though be aware military-tracking sites can themselves attract attention — use a sock-puppet browser if that matters to your posture.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent enthusiast project reporting from public ADS-B/ship-AIS feeds; well-regarded in the mil-tracking community but not an official source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "itamilradar.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Military tracking"
+      "Military tracking",
+      "aviation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/itamilradar.md"
   },
   {

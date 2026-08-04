@@ -94,7 +94,7 @@ kind: group-index
 - **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries
 - **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi
 - **`investigative-dashboard`** (medium) — Use when you have a company or person and want to find the right corporate/land/court registry to trace ownership across borders — returns a
-- **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
+- **`itamilradar`** (low) — Use when you have a `geolocation` over Italy/the Mediterranean and want to identify military aircraft and naval movements there — returns ca
 - **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.
 - **`kayak-travel-search-engine`** (low) — Use when you have a route/date and want to test whether a claimed trip was feasible — returns flights, schedules, and prices to corroborate 
 - **`kelley-blue-book-for-cars-united-states`** (low) — Use when you have a `vin` (or make/model/year) for a subject's vehicle and want its market value and specs — returns asset-valuation context

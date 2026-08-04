@@ -72,7 +72,7 @@ kind: group-index
 - **`codepen`** (low) — OSINT tool: CodePen.
 - **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
 - **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c
-- **`compiler-explorer`** (low) — OSINT tool: Compiler Explorer.
+- **`compiler-explorer`** (low) — Use when you have a code snippet (from malware, a leaked repo, or a document macro) and want to compile/inspect it safely in-browser — retur
 - **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — OSINT tool: creately.
@@ -293,7 +293,7 @@ kind: group-index
 - **`raphael`** (low) — OSINT tool: Raphael.
 - **`raw`** (low) — OSINT tool: RAW.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
-- **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
+- **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries 

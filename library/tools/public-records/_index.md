@@ -468,7 +468,6 @@ kind: group-index
 - **`irelandhouse-ie`** (high) — Use when you have an Irish `address`/Eircode (or an area) and want historical property sale prices and dates — returns sale price, date and 
 - **`irelandnursing-com`** (high) — Use when you have a `name` and want to check if they're a registered Irish nurse/midwife — returns license status and directory details for 
 - **`irishdentalassoc-ie`** (medium) — Use when you have a dentist's `name` or a location in Ireland and want to confirm they are a practising IDA member and find their practice —
-- **`iron-march`** (low) — OSINT tool: Iron March.
 - **`italy`** (high) — Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the compan
 - **`jail-and-inmate-records-search-directory`** (high) — Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceratio
 - **`jail-records`** (high) — Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators r
@@ -648,7 +647,7 @@ kind: group-index
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
 - **`ontario-genealogy-and-history-database-index`** (medium) — Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
-- **`open-data-network`** (low) — OSINT tool: Open Data Network.
+- **`open-data-network`** (low) — Use when you have an `address`/`geolocation` (a US place name) and want socioeconomic and demographic context on that area — returns place-l
 - **`open-data-policing`** (medium) — Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-f
 - **`open-data-portal-m-nchen-german`** (low) — Use when you need official Munich municipal datasets (statistics, geography, infrastructure) to ground-truth a location or administrative co
 - **`open-knowledge-maps`** (medium) — Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an auth

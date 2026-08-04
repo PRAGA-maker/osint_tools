@@ -136,7 +136,6 @@ kind: group-index
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
-- **`findemails`** (low) — OSINT tool: FindEmails.
 - **`fireball-search-engine-germany`** (low) — German web search engine offering anonymous browsing
 - **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
 - **`firefox-stealth`** (low) — OSINT tool: firefox-stealth.
@@ -158,7 +157,7 @@ kind: group-index
 - **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — OSINT tool: Gnu Icecat.
-- **`gnunet`** (low) — Network protocol stack for building secure, distibuted, privacy-preserving applications
+- **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`gofoss-net`** (low) — OSINT tool: gofoss.net.
 - **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity

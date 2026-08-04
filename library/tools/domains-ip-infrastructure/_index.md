@@ -18,7 +18,7 @@ kind: group-index
 - **`change-detection/`** — 6 skill(s) below.
 - **`cloud-configuration-analysis/`** — 5 skill(s) below.
 - **`default-passwords/`** — 7 skill(s) below.
-- **`discovery/`** — 12 skill(s) below.
+- **`discovery/`** — 11 skill(s) below.
 - **`dnssec/`** — 2 skill(s) below.
 - **`domain-blacklists/`** — 4 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
@@ -177,7 +177,7 @@ kind: group-index
 - **`google-bug-bounty-dorks-generator`** (low) — Use when you have a `domain` and want a ready-made battery of Google dorks — enter the target and get clickable searches for exposed files, 
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
 - **`google-universal-dork-builder`** (low) — Use when you have a `domain`/target and want to quickly assemble advanced search-operator "dork" queries for Google/Bing/Yandex — returns cr
-- **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
+- **`gotanda`** (low) — Use when you have a `domain`, `ip-address` or URL on a web page and want to pivot it across many OSINT engines from a right-click menu — ret
 - **`graphystories`** (low) — OSINT tool: GraphyStories.
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`hacker-target`** (medium) — Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hos
@@ -394,7 +394,7 @@ kind: group-index
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
 - **`tidos-framework`** (low) — Use when you have a `domain` and want a scripted recon sweep — a modular web-recon/pentest framework whose passive OSINT modules return subd
 - **`tinyscan`** (low) — Use when you have a `domain`/URL and want a safe remote scan — screenshot, resolved IP/geolocation, tech stack, DNS/SSL/headers — without vi
-- **`tormap`** (low) — Worldwide online map of Tor Nodes
+- **`tormap`** (low) — Use when you have an `ip-address` or `geolocation` and want to see whether it is a Tor relay and map/inspect the global Tor node network ove
 - **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
 - **`try-jsoup-org`** (low) — Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to p

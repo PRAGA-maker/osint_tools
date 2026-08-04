@@ -140,7 +140,7 @@ kind: group-index
 - **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
 - **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
-- **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
+- **`json-to-csv`** (low) — Use when you have JSON data (an API dump, a breach export, a scraped file) and want it flattened into a spreadsheet-friendly CSV — a data-wr
 - **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
 - **`kickstarter`** (medium) — Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, b
