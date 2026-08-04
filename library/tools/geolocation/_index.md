@@ -292,7 +292,7 @@ kind: group-index
 - **`waze-livemap`** (high) — Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — retu
 - **`webcam-live`** (low) — Use when you have a `geolocation` (a town, promenade, ski resort or landmark) and want a live public camera view of it — returns real-time v
 - **`webcam-nl-nl`** (medium) — Use when you have a Dutch `geolocation` or `address` and want live public-camera imagery of that spot — returns `image` (live video stills).
-- **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
+- **`webcam-search-engine`** (low) — Use when you have a `geolocation` or place name and want public live webcams there — returns webcam feeds and their approximate `geolocation
 - **`webcams-abroad-live-images`** (low) — Use when you have a `geolocation`/`address` and want live webcams there — returns searchable, categorised public webcam feeds for visual con
 - **`webcamtaxi`** (low) — Use when you have a `geolocation`/place and want live public webcams there to confirm current conditions, weather, or activity — returns liv
 - **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio

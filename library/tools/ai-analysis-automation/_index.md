@@ -57,7 +57,7 @@ kind: group-index
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
 - **`ccleaner`** (low) — OSINT tool: CCleaner.
-- **`chart-js`** (low) — OSINT tool: Chart.js.
+- **`chart-js`** (low) — Use when you have structured findings (timelines, frequencies, link counts) and want to render them as clean web charts — an open-source JS 
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
@@ -111,7 +111,7 @@ kind: group-index
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
 - **`exhibit`** (low) — Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-ri
 - **`explainshell-com`** (low) — Use when you have an unfamiliar shell command (from a writeup, a log, or a tool's README) and want each flag explained — paste it, get a pla
-- **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
+- **`extendclass`** (low) — Use when you have raw data or a token from an investigation (JSON/XML/CSV, a JWT, a base64 blob, a regex to test) and want to parse, decode 
 - **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
 - **`filevault`** (low) — Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec co
@@ -121,7 +121,7 @@ kind: group-index
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
 - **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
-- **`geekflare-tools`** (low) — 39 online free tools for website testing
+- **`geekflare-tools`** (low) — Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-h
 - **`gephi`** (low) — OSINT tool: Gephi.
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre

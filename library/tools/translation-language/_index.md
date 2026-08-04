@@ -22,7 +22,7 @@ kind: group-index
 - **`babelfish-language-translations`** (low) — Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate sh
 - **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 
 - **`binary-translator`** (low) — Use when you have binary (or other machine encodings) in collected data and want to convert it to text and back — returns decoded text/ASCII
-- **`bing-microsoft-translator`** (low) — Machine translation service.
+- **`bing-microsoft-translator`** (low) — Use when you have foreign-language text (a post, bio, document snippet) and want it in English plus a guess at the source language — returns
 - **`collinsdictionary`** (low) — Use when you have a foreign-language word or short phrase in a record and want an authoritative translation/definition — returns dictionary 
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
@@ -50,9 +50,9 @@ kind: group-index
 - **`learn-languages`** (low) — OSINT tool: Learn Languages.
 - **`lexicool-translation`** (low) — Use when you have foreign-language text from collected material and want to compare several machine translators side by side — returns Engli
 - **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea
-- **`lingojam-com`** (low) — OSINT tool: lingojam.com.
+- **`lingojam-com`** (low) — Use when you have text laced with emoji (or want to encode/decode emoji shorthand) and need a quick emoji↔English gloss — a lightweight aid 
 - **`linguee-english-french-dictionary`** (low) — Use when you have foreign-language text (a `name`, post, or document snippet) and want an accurate translation shown with real bilingual exa
-- **`localingual-com`** (low) — OSINT tool: localingual.com.
+- **`localingual-com`** (low) — Use when you have an audio clip or a `physical-description` of a speaker's accent and want to narrow their region — an interactive map of cr
 - **`meowni-ca`** (low) — Use when you have text and want a quick English-to-emoji rendering (or to reason about emoji substitutions) — returns an emoji-ified version
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc

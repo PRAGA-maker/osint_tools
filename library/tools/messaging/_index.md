@@ -156,7 +156,7 @@ kind: group-index
 - **`teleteg`** (high) — Use when you have a topic, `name` or keyword and want to discover public Telegram channels/groups around it — returns social-profile links t
 - **`teletracker`** (high) — Use when you have a Telegram channel/bot ID and want to harvest and archive its messages, media, and owner info — returns exported content a
 - **`tginfo-me`** (high) — Use when you're trying to resolve a `phone` or `username` on Telegram and need to understand the add-by-number technique and its privacy/rat
-- **`tgram-io`** (low) — Explore and search Telegram channels, groups and bots.
+- **`tgram-io`** (low) — Use when you have a `username`, name or topic keyword and want to find public Telegram channels, groups or bots — returns matching Telegram 
 - **`tgramsearch`** (medium) — Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, d
 - **`tgspyder`** (medium) — Use when you have a Telegram `username`/channel and want to scrape and analyze its members and messages — returns member `username`s/`social
 - **`tgstat-ru`** (medium) — Use when you have a Telegram channel/`username`, `name` or keyword and want to find and analyze public Telegram channels and posts — returns

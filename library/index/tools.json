@@ -2043,37 +2043,46 @@
   {
     "id": "chart-js",
     "name": "Chart.js",
-    "description": "OSINT tool: Chart.js.",
-    "url": "http://www.chartjs.org",
+    "description": "Use when you have structured findings (timelines, frequencies, link counts) and want to render them as clean web charts — an open-source JS library for visualizing OSINT data in reports.",
+    "url": "https://www.chartjs.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning collected data into shareable charts inside an HTML report or dashboard.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT license); runs entirely client-side, no account or server.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally in your own page/browser — nothing is transmitted, so no case data leaves your machine unless you host the report somewhere. Safe for sensitive datasets when kept local.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "Widely used, well-maintained open-source charting library with a large community; it renders your data and holds none of its own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "chartjs",
+      "chart.js"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "reporting",
+      "data-viz"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/chart-js.md"
   },
   {
@@ -4540,41 +4549,49 @@
   },
   {
     "id": "extendclass",
-    "name": "ExtendClass",
-    "description": "One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety of functions (view pic).",
+    "name": "ExtendsClass",
+    "description": "Use when you have raw data or a token from an investigation (JSON/XML/CSV, a JWT, a base64 blob, a regex to test) and want to parse, decode or format it in-browser — a free developer toolbox.",
     "url": "https://extendsclass.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding/parsing/formatting investigation data (JSON, JWT, base64, regex, CSV) in one place.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The online toolbox is free with no login for the core tools; an optional account and some hosted/mock-API features exist but aren't required.",
+    "opsec": "passive",
+    "opsecNote": "These are client-side/server-assisted utilities; some (e.g. mock APIs, SQL playgrounds) send your input to ExtendsClass servers. Never paste live credentials, session tokens you need kept secret, or sensitive PII — decode only sanitized fragments, and prefer a local tool for anything confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known free developer-tools site; reliable for format conversion and decoding, but a third party that may process pasted data server-side.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools collections/toolkits"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "python-code-checker"
     ],
+    "aliases": [
+      "extendsclass.com",
+      "extendclass"
+    ],
+    "tags": [
+      "Tools collections/toolkits",
+      "data-parsing",
+      "decoding"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/extendclass.md"
   },
   {
@@ -4964,37 +4981,51 @@
   {
     "id": "geekflare-tools",
     "name": "Geekflare Tools",
-    "description": "39 online free tools for website testing",
+    "description": "Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-header findings and related `domain`s.",
     "url": "https://gf.dev/toolbox",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "A free browser toolbox of DNS, WHOIS, TLS and web-security checks for a domain/IP.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core toolbox checks are free with no login; Geekflare also sells paid API/monitoring products, but the on-page tools work without an account.",
+    "opsec": "passive",
+    "opsecNote": "Geekflare's servers perform the DNS/TLS/scan queries against the target, so the target sees Geekflare's infrastructure, not your IP — a passive relay from your perspective. Avoid its active scanners (port scan, vuln scan) against infrastructure you're not authorized to probe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established web-tools vendor (Geekflare / gf.dev); the free checks are convenient wrappers around standard DNS/TLS/WHOIS lookups.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gf.dev",
+      "Geekflare toolbox"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "Tools collections/toolkits",
+      "domain-and-ip-research"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/geekflare-tools.md"
   },
   {
@@ -60797,40 +60828,53 @@
   {
     "id": "browserling",
     "name": "Browserling",
-    "description": "OSINT tool: Browserling.",
+    "description": "Use when you have a suspicious `domain`/URL and want to open it inside a disposable cloud browser — returns what the page renders without exposing your own machine or IP.",
     "url": "https://www.browserling.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Opening a risky link in a throwaway remote browser to see it render safely.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free plan gives short live sessions on a limited browser set; longer sessions, more browsers, mobile and geo-browsing need a paid plan (from ~$9/mo).",
+    "opsec": "passive",
+    "opsecNote": "The page loads on Browserling's virtual machine, not yours, so the target site sees Browserling's IP and a clean sandbox — your host and identity stay hidden. Do not log into any account inside the session; it is shared/ephemeral infrastructure.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established commercial cross-browser-testing service (Browserling / Testling); reputable and long-running, repurposed here as a safe-viewing sandbox.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "browseriling"
     ],
+    "aliases": [
+      "browserling.com"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "safe-browsing",
+      "sandbox"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/browserling.md"
   },
   {
@@ -70748,42 +70792,50 @@
   {
     "id": "investigator-recon-tool",
     "name": "Investigator Recon Tool",
-    "description": "web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about target websites. It helps you quickly check and gather information about the target domain name.",
+    "description": "Use when you have a `domain` and want a fast one-page recon dashboard — returns related `domain`s, subdomains and open-source footprint via pre-built Google-dork and lookup links.",
     "url": "https://abhijithb200.github.io/investigator/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Kicking off domain recon with a menu of ready-made Google dorks and OSINT lookups.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source, hosted on GitHub Pages; no account or API key.",
+    "opsec": "passive",
+    "opsecNote": "The page itself just generates links and queries; it is client-side and does not phone home. But clicking through the generated Google dorks and third-party lookups is done from your own browser — those services (Google, Shodan, etc.) see your IP. Use a sock-puppet/VPN session if the target might monitor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by security researcher Abhijith B (abhijithb200); a convenience launcher for public dorks, not a data source itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Investigator by abhijithb200",
+      "investigator dork tool"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/investigator-recon-tool.md"
   },
   {
@@ -73753,46 +73805,54 @@
   {
     "id": "lookyloo",
     "name": "Lookyloo",
-    "description": "Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, images etc)",
+    "description": "Use when you have a `domain` (or suspicious URL) and want to see the full tree of hosts, redirects and third-party resources a page pulls in — returns linked `domain`s and `ip-address`es without visiting the site yourself.",
     "url": "https://lookyloo.circl.lu/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Safely capturing a suspicious URL and mapping every domain/redirect/resource it calls.",
     "selectorsIn": [
       "domain",
-      "image"
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public instance run by CIRCL (Luxembourg CERT); open-source and self-hostable if you want a private instance.",
+    "opsec": "passive",
+    "opsecNote": "You never load the target site from your own browser — Lookyloo's server does the capture, so your IP is not exposed to the target. Public captures are indexed and browsable by anyone unless you mark the capture unlisted; treat every submission as potentially public and never paste an authenticated or session-bearing URL.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and operated by CIRCL, the Luxembourg national CERT; widely used in phishing/malware triage and referenced across the DFIR community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bgp-malicious-content-ranking"
     ],
+    "aliases": [
+      "lookyloo.circl.lu",
+      "CIRCL Lookyloo"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Website analyze",
+      "phishing-triage"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/lookyloo.md"
   },
   {
@@ -123160,35 +123220,52 @@
   {
     "id": "webcam-search-engine",
     "name": "Webcam Search Engine",
-    "description": "OSINT tool: Webcam Search Engine.",
+    "description": "Use when you have a `geolocation` or place name and want public live webcams there — returns webcam feeds and their approximate `geolocation` for scene/landmark corroboration.",
     "url": "https://cse.google.com/cse?cx=013991603413798772546:gjcdtyiytey#gsc.tab=0",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding publicly listed live webcams near a place to corroborate weather, scenery or landmarks.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. As a community-maintained CSE, its indexed source list can drift or go stale over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are searching a Google CSE and then loading third-party webcam-directory pages — those sites and Google see your IP, the target does not. Only ever use publicly published webcams; do not attempt to reach private/unsecured cameras.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A Google Custom Search Engine curated by an unknown third party; it only surfaces public webcam directories, so quality depends on that curation and Google's index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "webcam CSE",
+      "public webcam search"
+    ],
+    "tags": [
+      "geolocation",
+      "webcams",
+      "live-imagery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/webcam-search-engine.md"
   },
   {
@@ -162978,29 +163055,30 @@
   {
     "id": "tgram-io",
     "name": "Tgram.io",
-    "description": "Explore and search Telegram channels, groups and bots.",
+    "description": "Use when you have a `username`, name or topic keyword and want to find public Telegram channels, groups or bots — returns matching Telegram `social-profile`s to join or monitor.",
     "url": "https://tgram.io",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Searching Telegram channels/groups/bots",
+    "bestFor": "Discovering public Telegram channels/groups/bots by keyword, topic or handle.",
     "selectorsIn": [
-      "name",
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; no account. It only indexes public channels/groups that opt into directories.",
+    "opsec": "passive",
+    "opsecNote": "Searching the tgram.io directory is passive — the target's channel doesn't see you. Opening/joining a Telegram channel from the results IS visible to that channel's admins and exposes your Telegram account, so use a sock-puppet Telegram identity for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party Telegram directory; it aggregates public listings and is not affiliated with Telegram, so coverage is partial and freshness varies.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -163009,15 +163087,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "tgram.io"
+    ],
     "tags": [
       "telegram",
       "search",
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/messaging/tgram-io.md"
   },
   {
@@ -336273,47 +336354,47 @@
   {
     "id": "bing-microsoft-translator",
     "name": "Bing Microsoft Translator",
-    "description": "Machine translation service.",
+    "description": "Use when you have foreign-language text (a post, bio, document snippet) and want it in English plus a guess at the source language — returns a translation and detected language.",
     "url": "https://www.bing.com/translator",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Fast free machine translation with automatic source-language detection.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The web translator is free with no login; Microsoft's Translator API (for bulk/programmatic use) is a paid Azure service.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Pasted text is sent to Microsoft's translation servers and may be logged. Do not paste sensitive case content, full private messages or PII beyond the fragment you need translated; strip identifiers first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft service; translation quality is high for major languages, weaker for low-resource ones and slang.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bing",
-      "bing-creations",
       "bing-images",
-      "bing-ip-search",
-      "bing-maps",
-      "bing-news",
       "bing-translate",
-      "bing-videos",
-      "bing-webmaster-tools",
-      "see-it-search-it"
+      "bing-maps",
+      "bing-news"
     ],
+    "tags": [
+      "translation",
+      "machine-translation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/bing-microsoft-translator.md"
   },
   {
@@ -337766,39 +337847,47 @@
   },
   {
     "id": "lingojam-com",
-    "name": "lingojam.com",
-    "description": "OSINT tool: lingojam.com.",
-    "url": "https://lingojam.com/%F0%9F%90%8CEmojiTranslator%F0%9F%8E%B2",
+    "name": "LingoJam Emoji Translator",
+    "description": "Use when you have text laced with emoji (or want to encode/decode emoji shorthand) and need a quick emoji↔English gloss — a lightweight aid for reading obfuscated messages.",
+    "url": "https://lingojam.com/EmojiTranslator",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quick, best-effort conversion between plain English and emoji shorthand.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; ad-supported. LingoJam lets anyone build custom translators, so many variants of this emoji tool exist.",
+    "opsec": "passive",
+    "opsecNote": "Text you paste is sent to LingoJam's servers to render the translation. Never paste sensitive case material, real names or full messages you need to keep private — strip to the fragment you need decoded.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A user-generated translator on the LingoJam platform, not a linguistic authority; output is a rough keyword-substitution, not reliable translation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "lingojam emoji translator",
+      "emoji translator"
+    ],
     "tags": [
       "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "Translation & Transcription Sites",
+      "emoji"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/lingojam-com.md"
   },
   {
@@ -337849,39 +337938,52 @@
   },
   {
     "id": "localingual-com",
-    "name": "localingual.com",
-    "description": "OSINT tool: localingual.com.",
+    "name": "Localingual",
+    "description": "Use when you have an audio clip or a `physical-description` of a speaker's accent and want to narrow their region — an interactive map of crowdsourced dialect recordings to compare against.",
     "url": "https://localingual.com/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Comparing a speaker's accent/dialect against crowdsourced regional voice samples to narrow origin.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, donation-funded, ad-free; no account needed to browse and listen.",
+    "opsec": "passive",
+    "opsecNote": "Browsing and listening are passive and touch only Localingual. If you contribute a recording, remember uploads are public and crowdsourced — never upload your subject's actual voice or any case audio.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A crowdsourced \"Wikipedia of dialects\"; samples are user-submitted and unvetted, so treat regional matches as leads, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "localingual.com",
+      "localingual dialect map"
+    ],
     "tags": [
       "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "Translation & Transcription Sites",
+      "dialects",
+      "accents"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/localingual-com.md"
   },
   {

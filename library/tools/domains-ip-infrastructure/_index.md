@@ -84,7 +84,7 @@ kind: group-index
 - **`breachhq`** (low) — Use when you have a threat-actor or APT-group name and want a reference profile — returns actor origin, type, aliases, and linked references
 - **`broken-link-checker`** (low) — Use when you have a `domain`/page and want to find which of its outbound links are dead — returns the broken links, exposing defunct sites a
 - **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
-- **`browserling`** (low) — OSINT tool: Browserling.
+- **`browserling`** (low) — Use when you have a suspicious `domain`/URL and want to open it inside a disposable cloud browser — returns what the page renders without ex
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
 - **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
@@ -210,7 +210,7 @@ kind: group-index
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
 - **`intezer-analyzer`** (low) — Use when you have a file, file hash, URL, or `ip-address` from a subject and want malware/threat analysis via code reuse — returns malware-f
 - **`intodns-ai`** (low) — Use when you have a `domain` and want a deterministic health check of its DNS and email security posture — SPF, DKIM, DMARC, DNSSEC, MTA-STS
-- **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
+- **`investigator-recon-tool`** (low) — Use when you have a `domain` and want a fast one-page recon dashboard — returns related `domain`s, subdomains and open-source footprint via 
 - **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
 - **`ip-2-geolocation`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location plus the owning ISP/company — returns geolocation, ip-address,
 - **`ip-checking`** (low) — OSINT tool: IP Checking.
@@ -251,7 +251,7 @@ kind: group-index
 - **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
 - **`logsensor`** (low) — Use when you have a `domain`/host list and want to find its login panels — returns discovered login-page URLs (with an optional, authorised-
-- **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
+- **`lookyloo`** (low) — Use when you have a `domain` (or suspicious URL) and want to see the full tree of hosts, redirects and third-party resources a page pulls in
 - **`majestic`** (low) — Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow /
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
 - **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
