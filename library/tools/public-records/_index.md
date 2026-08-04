@@ -425,7 +425,6 @@ kind: group-index
 - **`illinois-inmate-search`** (medium) — Use when you have a `name`, DOB or IDOC number and want an Illinois prison custody record — returns custody status, facility location, dates
 - **`illinois-public-salaries`** (medium) — Use when you have a `name` and want to confirm public-sector employment and compensation in Illinois — returns employer-org (unit of governm
 - **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
-- **`ilo-world-employment-and-social-outlook-trends`** (low) — OSINT tool: ILO World Employment and Social Outlook Trends.
 - **`ilostat`** (low) — OSINT tool: ILOSTAT.
 - **`imf-world-economic-outlook-database`** (low) — Use when you need authoritative country-level macroeconomic figures (GDP, inflation, unemployment) for context in an investigation — returns
 - **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
@@ -892,8 +891,7 @@ kind: group-index
 - **`unclaimed-money-us-google-search`** (medium) — Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns 
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns
 - **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — Use when you have a `name` and want unclaimed-property records — returns a last-known `address`, holder, and sometimes co-owner `associate` 
-- **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
-- **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.
+- **`unctad-country-fact-sheets`** (low) — Use when you have a country (`geolocation`) and want its foreign-investment profile — FDI flows, M&A activity, largest TNCs and regulatory c
 - **`unctad-stat`** (low) — Use when you have a country/economy and want authoritative UN trade, investment, and development statistics for context — returns background
 - **`undps-human-development-index`** (low) — Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country 
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r

@@ -367,7 +367,6 @@ kind: group-index
 - **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
 - **`text2img`** (low) — text to image AI generator
-- **`the-cloak-proxy-website`** (low) — Website offering anonymous web surfing
 - **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
 - **`thexifer`** (low) — Use when you have an `image` and want to read, strip or forge its EXIF/IPTC/XMP metadata — returns viewed or rewritten metadata-exif.

@@ -43,7 +43,7 @@ kind: group-index
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
-- **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
+- **`awesome-threat-intelligence`** (low) — Use when you need to discover threat-intelligence sources, feeds and tools — a curated GitHub directory; returns pointers to other tools rat
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
@@ -235,7 +235,7 @@ kind: group-index
 - **`oryon-osint-query-tool`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens
 - **`oscobo-search-engine`** (low) — Use when you want to run web searches without personalization/tracking — returns web results from a privacy search engine that stores no que
 - **`osint-ambition-publication`** (low) — Use when you want tradecraft, tool tips and walkthroughs to plan an investigation — a Medium-hosted OSINT publication returning techniques a
-- **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
+- **`osint-analyser`** (low) — Use when you want to auto-collect and LLM-summarize open-source chatter (e.g. Telegram channels) — a self-hosted pipeline; returns translate
 - **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
@@ -291,7 +291,6 @@ kind: group-index
 - **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
 - **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`raphael`** (low) — OSINT tool: Raphael.
-- **`raw`** (low) — OSINT tool: RAW.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
@@ -315,7 +314,6 @@ kind: group-index
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
-- **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — Use when you have `image` assets or findings to package and want a fast browser-based graphic editor — returns a composed `image` (report gr
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
@@ -376,7 +374,7 @@ kind: group-index
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
 - **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
-- **`world-monitor`** (low) — Geopolitical OSINT, global event monitoring, early warning intelligence gathering
+- **`world-monitor`** (low) — Use when you have a `geolocation` or event and want a live fused picture of conflicts, flights, shipping and markets there — returns geoloca
 - **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
 - **`x86-and-x64-intel-assembler`** (low) — Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disa

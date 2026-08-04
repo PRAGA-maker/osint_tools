@@ -81,7 +81,7 @@ kind: group-index
 - **`check-channel-badges`** (low) — Use when you have a Twitch `username` and want to see that channel's custom sub/bit badges — returns `social-profile` corroboration and evid
 - **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
 - **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
-- **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
+- **`clubhouse-database`** (low) — Use when you have a `username`/`name` on the Clubhouse audio app and want their profile stats, bio and club memberships — returns `social-pr
 - **`cobalt-tools`** (high) — Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its met
 - **`codeofaninja-com`** (high) — Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use acros
 - **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d

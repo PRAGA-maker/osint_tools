@@ -105,7 +105,6 @@ kind: group-index
 - **`license-plate-maps`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of issue — a reference collection of plate-format gui
 - **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 
 - **`live-atc`** (low) — Use when you have an aircraft near a covered airport and want tail numbers/callsigns from live tower audio — returns vehicle-plate (tail num
-- **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
 - **`live-piracy-map`** (low) — Use when you have a maritime region/`geolocation` and want reported piracy and armed-robbery incidents against ships — returns incident `geo
 - **`live-train-tracker`** (low) — Use when you have a `geolocation`/region in Europe, the Americas, or Australia and want real-time train positions and schedules — returns li
 - **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
@@ -144,7 +143,7 @@ kind: group-index
 - **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 
 - **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif
 - **`reverse-genie-license-plate-search`** (medium) — Use when you have a US `vehicle-plate` and want to try to tie it to an owner — a free front-end that funnels toward name/address results, mo
-- **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
+- **`ride-with-gps`** (medium) — Use when you have a `username`/`name` (a cyclist or runner) and want their public routes, ride history and start locations — returns `geoloc
 - **`russia-ukraine-monitor-map`** (low) — Use when you have a `geolocation` or `image` from the Russia-Ukraine conflict and want verified, geolocated open-source footage for that are
 - **`rzjets-net`** (low) — Use when you have an aircraft registration, serial, or type and want its history and operators — a community census of civil jet and turbopr
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass

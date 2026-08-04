@@ -163,7 +163,7 @@ kind: group-index
 - **`mutagen`** (low) — get meta data of audiofiles thrue command line
 - **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
-- **`occupational-outlook-handbook-it-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`occupational-outlook-handbook-it-united-states`** (low) — Use when you have a claimed US IT job title or salary and want to sanity-check it against official occupation data — a reference source, ret
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
 - **`online-metadata-viewer-and-editor`** (low) — Use when you have a file (`image`, docx, xlsx, pptx, msg, vsd, mpp) and want to view or edit its embedded metadata in the browser — returns 
