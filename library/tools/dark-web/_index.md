@@ -73,7 +73,6 @@ kind: group-index
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
 - **`raklet`** (low) — OSINT tool: Raklet.
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
-- **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose serv
 - **`rooted`** (low) — OSINT tool: Rooted.

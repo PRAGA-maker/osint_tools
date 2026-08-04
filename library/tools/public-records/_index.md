@@ -628,7 +628,6 @@ kind: group-index
 - **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp
 - **`oecd-aid-database`** (low) — Use when you have an `employer-org` (donor/agency/NGO) and want its official development-aid flows — returns funding records by donor, recip
 - **`oecd-data`** (low) — Use when you need authoritative country-level economic/social statistics for context or base rates — returns official OECD indicators and da
-- **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.
 - **`ofac-sanctioned-search-engine`** (low) — Use when you have a `name` or `employer-org` and want to check exposure to US Treasury/OFAC sanctions sources in one search — returns sancti
 - **`offender-tracking-information-system-otis`** (high) — Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and loc
 - **`office-of-national-drug-control-policy`** (medium) — Use for US drug-policy context and program/directory references — a government information site, not a person search (no personal records).

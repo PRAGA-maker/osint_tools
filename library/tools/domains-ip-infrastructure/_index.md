@@ -134,7 +134,6 @@ kind: group-index
 - **`domain-investigation-toolbox`** (low) — Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
-- **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (medium) — Use when you have a `domain` and want the public documents Google has indexed on it — downloads them and returns their `metadata-exif`.
@@ -148,7 +147,7 @@ kind: group-index
 - **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
-- **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
+- **`eurodns`** (low) — Use when you have a list of `domain` names and want their registration status in bulk — returns availability/taken status with a quick link 
 - **`expandurl`** (low) — Use when you have a shortened or suspicious `domain`/link and want its true final destination and redirect chain without clicking it — retur
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
 - **`fast-google-dorks-scan`** (low) — Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive 

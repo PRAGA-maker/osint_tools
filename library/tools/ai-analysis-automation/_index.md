@@ -144,7 +144,7 @@ kind: group-index
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — Use when you have a `username` (developer handle) or an app package name and want to pull an app's full Google Play listing, developer catal
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
-- **`gptzero`** (low) — Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content
+- **`gptzero`** (low) — Use when you have a suspect body of text and want to judge whether it was AI-generated — returns an AI-probability score with sentence-level
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
 - **`graphx`** (low) — OSINT tool: GraphX.
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class

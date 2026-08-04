@@ -566,7 +566,7 @@ kind: group-index
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
-- **`springer`** (low) — OSINT tool: Springer.
+- **`springer`** (low) — Use when you have a `name` and want their academic publications, affiliations and co-authors — returns employer/institution and associate li
 - **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
 - **`startpage-parser`** (low) — Use when you have a `name` or `username` and want to bulk-scrape web search results without tripping Google's rate limits — returns candidat
 - **`startpagina-search-netherlands`** (low) — Use when you have a `name` or keyword tied to the Netherlands and want Dutch-focused web results and directory links — returns `social-profi

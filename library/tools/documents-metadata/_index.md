@@ -60,7 +60,7 @@ kind: group-index
 - **`consumerreports-north-america`** (low) — Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
 - **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
-- **`copypastecharacter`** (low) — Website that offers multiple sets of characters and symbols for cutting and pasting into documents or slides
+- **`copypastecharacter`** (low) — Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and t
 - **`crowdriff`** (low) — Visual marketing software platform
 - **`crowdspring`** (low) — Project outsourcing website
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
@@ -150,7 +150,7 @@ kind: group-index
 - **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`madeit-australia`** (low) — Website related to arts and crafts events
+- **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
 - **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume

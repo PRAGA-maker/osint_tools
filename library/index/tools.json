@@ -5817,40 +5817,47 @@
   {
     "id": "gptzero",
     "name": "GPTZero",
-    "description": "Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content",
+    "description": "Use when you have a suspect body of text and want to judge whether it was AI-generated — returns an AI-probability score with sentence-level highlighting.",
     "url": "https://gptzero.me/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content",
-    "input": "Text (minimum 250 characters recommended)",
+    "bestFor": "Screening a document, message or \"witness\" narrative for signs it was written by an LLM rather than a person.",
+    "input": "Text (minimum ~250 characters recommended)",
     "output": "Overall AI probability score, perplexity/burstiness analysis, and highlighted AI-generated sentences",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to paste and scan; scans over ~10,000 characters need a free account, and bulk/API and higher limits are paid.",
     "opsec": "active",
-    "opsecNote": "Text is submitted to GPTZero servers; avoid submitting sensitive operational content.",
+    "opsecNote": "Submitted text is sent to GPTZero's servers and may be retained — never paste sensitive operational, victim or source material; sanitise or excerpt first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used commercial AI-text detector; scores are probabilistic and produce both false positives and false negatives, so treat any single verdict as a signal, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "gptzero.me"
+    ],
+    "tags": [
+      "ai-detection",
+      "content-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gptzero.md"
   },
   {
@@ -41203,48 +41210,6 @@
     "_file": "library/tools/dark-web/ransomware-darknet-websites.md"
   },
   {
-    "id": "ransomware-group-sites",
-    "name": "Ransomware Group Sites",
-    "description": "OSINT tool: Ransomware Group Sites.",
-    "url": "http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepsearch",
-      "facebook-scraped-data-search",
-      "kilos-darknet-search-engine",
-      "raklet",
-      "recon",
-      "related-list"
-    ],
-    "_file": "library/tools/dark-web/ransomware-group-sites.md"
-  },
-  {
     "id": "ransomwatch",
     "name": "ransomwatch",
     "description": "Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-site claims (victim, group, date).",
@@ -49354,24 +49319,25 @@
   {
     "id": "copypastecharacter",
     "name": "CopyPasteCharacter",
-    "description": "Website that offers multiple sets of characters and symbols for cutting and pasting into documents or slides",
+    "description": "Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and their HTML entity codes.",
     "url": "http://copypastecharacter.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing exact Unicode glyphs (arrows, currency, homoglyphs, symbols) to reproduce or search a username/document string.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and copy; optional free account only needed to save custom character sets.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static utility site — you copy characters locally and nothing about a subject is submitted. No target interaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running free utility with no data-quality stakes — it serves static character tables, so there is nothing to independently verify beyond that the glyph copied correctly.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -49380,15 +49346,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "copypastecharacter.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "utility"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/copypastecharacter.md"
   },
   {
@@ -54455,41 +54425,55 @@
   {
     "id": "madeit-australia",
     "name": "Madeit (Australia)",
-    "description": "Website related to arts and crafts events",
+    "description": "Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints and social/contact links.",
     "url": "http://www.madeit.com.au",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding an Australian handmade-goods seller's shop page and the maker name, location and contact details attached to it.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search seller shops; selling requires a paid account, but buyer-side browsing costs nothing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse public marketplace listings; the seller is not notified of a view. Avoid contacting or \"purchasing\" from a subject's shop, which would alert them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A verified-artisan Australian marketplace; shop details are self-published by sellers, so treat maker names and locations as claims to corroborate, not confirmed identity.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Madeit",
+      "madeit.com.au",
+      "Madeit Australia"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "marketplace"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/madeit-australia.md"
   },
   {
@@ -66993,48 +66977,6 @@
     "_file": "library/tools/domains-ip-infrastructure/domainrecon.md"
   },
   {
-    "id": "domaintracker",
-    "name": "Domaintracker",
-    "description": "webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notifications to email)",
-    "url": "https://domaintracker.app/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "email"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/domaintracker.md"
-  },
-  {
     "id": "domainwatch",
     "name": "DomainWatch",
     "description": "Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other domains sharing the same registrant.",
@@ -67783,43 +67725,52 @@
   },
   {
     "id": "eurodns",
-    "name": "EuroDNS",
-    "description": "Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the status of the domain and a quick link to the full whois data.",
+    "name": "EuroDNS Domain Availability Search",
+    "description": "Use when you have a list of `domain` names and want their registration status in bulk — returns availability/taken status with a quick link to full WHOIS.",
     "url": "https://my.eurodns.com/das/search/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-checking whether many domains are registered (up to ~250 at a time) and jumping to each one's WHOIS.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The availability/WHOIS lookup is free; EuroDNS is a commercial registrar, so the surrounding site upsells registration but the search itself costs nothing.",
+    "opsec": "passive",
+    "opsecNote": "A WHOIS/availability query goes to the registrar/registry, not to the domain owner; it does not notify the target. Registrant data returned is whatever WHOIS publicly exposes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "EuroDNS is an established ICANN-accredited registrar; availability comes straight from registries, though returned WHOIS is increasingly redacted by GDPR/privacy services.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "EuroDNS",
+      "eurodns.com WHOIS"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "whois",
+      "bulk-domain"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/eurodns.md"
   },
   {
@@ -118392,40 +118343,6 @@
     "_file": "library/tools/geolocation/live-cams-iplivecams.md"
   },
   {
-    "id": "live-world-webcam",
-    "name": "Live World Webcam",
-    "description": "OSINT tool: Live World Webcam.",
-    "url": "http://liveworldwebcam.net/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/live-world-webcam.md"
-  },
-  {
     "id": "liveuamap",
     "name": "LiveUaMap",
     "description": "Use when a case touches an active conflict/crisis zone and you need to map dated incidents in an area — returns geolocated events with source links.",
@@ -121348,35 +121265,51 @@
   {
     "id": "opentopia",
     "name": "Opentopia",
-    "description": "OSINT tool: Opentopia.",
+    "description": "Use when you have a `geolocation` or `address` and want to view public/unsecured webcams near it — returns live imagery for visual confirmation of a place.",
     "url": "http://www.opentopia.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Browsing publicly indexed webcams by country/city to visually confirm or scout a location.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to browse; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view third-party public webcam feeds; you never contact the subject. Browse over a VPN/sock-puppet since some indexed cameras are unsecured devices and the aggregator logs visitors.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community webcam aggregator that indexes publicly reachable cameras; many links are stale and locations are self-reported, so treat any single feed as unverified until corroborated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "opentopia.com",
+      "Opentopia webcams"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation-verification"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/opentopia.md"
   },
   {
@@ -155868,13 +155801,13 @@
   {
     "id": "radar-interference-tracker-rit",
     "name": "Radar Interference Tracker (RIT)",
-    "description": "Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.",
-    "url": "https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker#lon=49.9507;lat=26.6056;zoom=4;",
+    "description": "Use when you have a `geolocation`/`address` and want to detect active military radar near it — returns the coordinates of radar systems from Sentinel-1 interference streaks.",
+    "url": "https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Pinpointing active ground/air-defense radar installations from the interference they leave in Sentinel-1 satellite radar imagery.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -155882,29 +155815,38 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google Earth Engine web app from Bellingcat; no account or payment required to view.",
+    "opsec": "passive",
+    "opsecNote": "You browse pre-processed satellite imagery in a public Earth Engine app; nothing is sent to any subject or installation. Standard clean-browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Ollie Ballinger and published through Bellingcat; the underlying Sentinel-1 SAR data is from ESA/Copernicus and the method is documented, so results are reproducible.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RIT",
+      "Bellingcat Radar Interference Tracker"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "satellite-imagery"
+      "satellite-imagery",
+      "sar",
+      "conflict-monitoring"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/radar-interference-tracker-rit.md"
   },
   {
@@ -170501,24 +170443,25 @@
   {
     "id": "cloudwards",
     "name": "Cloudwards",
-    "description": "Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more",
+    "description": "Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent reviews and comparison tables, not target data.",
     "url": "https://www.cloudwards.net/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Picking a VPN / cloud-storage / password-manager for sock-puppet and investigator OpSec, based on independent testing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "All reviews, comparisons and guides are free to read; the site is funded by affiliate commissions.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference/reading site — you are only browsing published reviews, so there is no target interaction and nothing leaks to a subject. Standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent review publisher (since 2012) that runs its own speed/feature tests; affiliate-funded, so weigh rankings against the raw test data it publishes rather than the \"best\" labels.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -170527,15 +170470,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "cloudwards.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "opsec-reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/cloudwards.md"
   },
   {
@@ -243935,42 +243882,6 @@
     "_file": "library/tools/public-records/oecd-data.md"
   },
   {
-    "id": "oecd-factbook",
-    "name": "OECD Factbook",
-    "description": "OSINT tool: OECD Factbook.",
-    "url": "http://www.oecd-ilibrary.org/economics/oecd-factbook_18147364",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/oecd-factbook.md"
-  },
-  {
     "id": "ofac-sanctioned-search-engine",
     "name": "OFAC Sanctioned Search Engine",
     "description": "Use when you have a `name` or `employer-org` and want to check exposure to US Treasury/OFAC sanctions sources in one search — returns sanctions-list mentions and links.",
@@ -291406,38 +291317,52 @@
   },
   {
     "id": "springer",
-    "name": "Springer",
-    "description": "OSINT tool: Springer.",
-    "url": "http://link.springer.com",
+    "name": "SpringerLink",
+    "description": "Use when you have a `name` and want their academic publications, affiliations and co-authors — returns employer/institution and associate links from scholarly metadata.",
+    "url": "https://link.springer.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding a subject's journal/book-chapter publications and the affiliations and co-authors attached to them.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Search, abstracts, author names and affiliations are free; many full-text PDFs are paywalled, though open-access articles are fully readable.",
+    "opsec": "passive",
+    "opsecNote": "A public academic index; searching a name reveals nothing to the subject. No login needed for metadata, so a clean browser suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Springer Nature, a major academic publisher; bibliographic metadata (authors, affiliations, dates) is authoritative even where full text is paywalled.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Springer",
+      "link.springer.com",
+      "SpringerLink"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "scholarly-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/springer.md"
   },
   {
@@ -344733,36 +344658,53 @@
   },
   {
     "id": "ais-ships-map",
-    "name": "AIS Ships Map",
-    "description": "OSINT tool: AIS Ships Map.",
+    "name": "ShipFinder (AIS Ships Map)",
+    "description": "Use when you have a vessel `name`/identifier or a `geolocation` and want a ship's live position and movement history — returns current coordinates and voyage track.",
     "url": "https://www.shipfinder.com/Monitor/Index",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating a named commercial vessel live on an AIS map or seeing which ships are near a coordinate.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "A live AIS map is browsable for free; per-vessel tracking, satellite AIS, alerts and long history are gated behind paid plans (free tier limited to a single tracked vessel).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a public vessel-tracking site, not the vessel or its crew; nothing reaches the subject. Browse over a sock-puppet if you register for the free tier.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial AIS aggregator; positions come from crowd-sourced terrestrial receivers plus satellite feeds, so coverage is strong on shipping lanes but sparse mid-ocean, and AIS itself can be switched off or spoofed by a vessel.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "ShipFinder",
+      "shipfinder.com",
+      "AIS Ships Map"
+    ],
+    "tags": [
+      "maritime",
+      "ais",
+      "vessel-tracking"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/ais-ships-map.md"
   },
   {

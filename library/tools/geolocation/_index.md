@@ -155,7 +155,6 @@ kind: group-index
 - **`light-pollution-world-map`** (low) — Use when you have a candidate `geolocation` and a night photo and want to test whether the sky brightness/darkness matches — returns a layer
 - **`lightingmaps`** (low) — Use when you have an `image`/video showing a storm or a claimed time+place and want to verify lightning activity there and then — returns re
 - **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
-- **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
 - **`localfocus-nl-geokit`** (medium) — Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocod
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
@@ -210,7 +209,7 @@ kind: group-index
 - **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — Use when you have a `geolocation` clue (a described object — kiosk, pylon, bench type) and want the exact OSM tag/key to query in Overpass T
 - **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
 - **`openswitchmapsweb`** (medium) — Use when you have a `geolocation` (coordinates or a map view) and want to inspect that exact spot across 160+ map/imagery services in one cl
-- **`opentopia`** (low) — OSINT tool: Opentopia.
+- **`opentopia`** (low) — Use when you have a `geolocation` or `address` and want to view public/unsecured webcams near it — returns live imagery for visual confirmat
 - **`osm-smart-menu`** (medium) — Use when you have a `geolocation` open in one map/OSM page and want to jump to the same spot in dozens of other maps and OSM tools — a brows
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 
 - **`outage-map`** (low) — Use when you have a `geolocation`/`address` and a time and want to confirm a power outage there — utility outage maps corroborate blackout e

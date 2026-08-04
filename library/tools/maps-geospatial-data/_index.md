@@ -99,7 +99,7 @@ kind: group-index
 - **`power-plants-in-the-united-states`** (medium) — Use when you have a US `geolocation`/`address` and want to identify nearby electricity-generating facilities, their fuel type and operator —
 - **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
 - **`quick-geolocation-search`** (low) — Use when you have a `geolocation` or `address` and want to jump the same coordinates across 160+ online maps at once — returns geolocation v
-- **`radar-interference-tracker-rit`** (low) — Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.
+- **`radar-interference-tracker-rit`** (low) — Use when you have a `geolocation`/`address` and want to detect active military radar near it — returns the coordinates of radar systems from
 - **`radio-garden`** (low) — Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language cont
 - **`rammb-slider`** (low) — Use when you have a `geolocation`/`address` and want recent, time-stepped satellite imagery of that spot for weather/scene verification — re
 - **`resource-watch`** (low) — Use when you have a `geolocation` and want environmental/human-wellbeing context layers (fires, floods, land cover, air quality, conflict) —
