@@ -26,7 +26,7 @@ kind: group-index
 - **`host-port-discovery/`** — 4 skill(s) below.
 - **`ioc-tools/`** — 6 skill(s) below.
 - **`ip-loggers/`** — 3 skill(s) below.
-- **`ipv4/`** — 7 skill(s) below.
+- **`ipv4/`** — 6 skill(s) below.
 - **`ipv6/`** — 1 skill(s) below.
 - **`neighbor-domains/`** — 3 skill(s) below.
 - **`network-analysis-tools/`** — 3 skill(s) below.
@@ -226,7 +226,7 @@ kind: group-index
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — Use when you have an `ip-address` or `domain` and want geolocation, WHOIS ownership, DNS records and blacklist status — returns geolocation,
 - **`ipanalyzer-privacy-test`** (medium) — Use when you have an `ip-address` (or `domain`) and want its geolocation, network owner, reverse DNS, open services and blacklist status in 
-- **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
+- **`ipfingerprints`** (low) — Use when you have an `ip-address` or `domain` and want geolocation plus a live network profile (open ports, reverse DNS, WHOIS, mail auth) —
 - **`ipinfo-map`** (low) — Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
 - **`iptools-robot`** (low) — Use when you have a `domain` or `ip-address` and want a one-message Telegram bot to return whois, DNS, SSL, open ports, geolocation, threat 

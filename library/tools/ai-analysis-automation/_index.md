@@ -144,7 +144,7 @@ kind: group-index
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
 - **`h-i-v-e`** (medium) — Use when you have a `phone`, `email`, `username`, `ip-address`, or a leaked text database and want a single Python multi-tool to run reverse
-- **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
+- **`hackers-toolkit`** (low) — Use when you have an encoded/obfuscated string (base64, URL, hex, hashes) and want to quickly decode or re-encode it in-browser — returns th
 - **`harpoon`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugin
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
 - **`highcharts`** (low) — Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT da
@@ -341,7 +341,6 @@ kind: group-index
 - **`vis-js`** (low) — OSINT tool: Vis.js.
 - **`visme`** (low) — OSINT tool: Visme.
 - **`visualize-free`** (low) — OSINT tool: Visualize Free.
-- **`visualize-me`** (low) — OSINT tool: Visualize.me.
 - **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — An AI-based service that removes vocals from a song, leaving only the music. It works amazingly well.
 - **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.

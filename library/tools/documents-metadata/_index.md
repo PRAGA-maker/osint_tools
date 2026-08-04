@@ -21,7 +21,6 @@ kind: group-index
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
 - **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
-- **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
@@ -51,7 +50,6 @@ kind: group-index
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
 - **`consumerreports-north-america`** (low) — Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
-- **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
 - **`copypastecharacter`** (low) — Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and t
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
 - **`cylect-io`** (medium) — Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggre
@@ -67,7 +65,6 @@ kind: group-index
 - **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
-- **`engage121`** (low) — Website offering social media content and publishing services
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Use when you have a `name`/organisation and want their public events — returns organiser identity, venue/`address`, dates and attendee/assoc
 - **`eventbrite-united-states`** (low) — Use when you have a `name`, `username`, or an event/organizer and want to find events a subject organized or attended — returns organizer pr
@@ -147,7 +144,6 @@ kind: group-index
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
 - **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
-- **`mp3juices`** (low) — Website that offers services related to downloading and saving audio files from a video
 - **`mutagen`** (low) — Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) 
 - **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
@@ -224,7 +220,6 @@ kind: group-index
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv
-- **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
 - **`xifr-addons-mozilla-org`** (medium) — Use when you have an `image` on a web page and want to read its EXIF/IPTC/XMP metadata (including GPS) in-browser — returns metadata-exif an
 - **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 
 - **`yotpo`** (low) — eCommerce marketing platform offering advanced solutions for customer reviews and visual marketing

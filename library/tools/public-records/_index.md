@@ -530,7 +530,6 @@ kind: group-index
 - **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
 - **`maldives-sex-offender`** (high) — Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, ad
 - **`malta`** (high) — Use when you have a Maltese company `name`/`employer-org` or a person and want official registry data — returns registered company details, 
-- **`manitoba-assessment-online`** (low) — OSINT tool: Manitoba Assessment Online.
 - **`manitoba-court-records`** (high) — Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and 
 - **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
 - **`manta-north-america`** (medium) — Use when you have a US small-business `name` or `employer-org` and want its address, phone and category listing — returns address, phone, em

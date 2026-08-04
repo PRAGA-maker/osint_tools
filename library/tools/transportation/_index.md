@@ -46,7 +46,7 @@ kind: group-index
 - **`check-that-vin-search`** (medium) — Use when you have a `vin` and want the vehicle's NMVTIS title history — returns titling states/dates, brands (salvage/junk/flood), odometer,
 - **`chronotrains`** (low) — Use when you have a European city/`geolocation` and want to see everywhere reachable by train within a chosen time — returns an isochrone ma
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Use when you have a UK aircraft registration mark (`vehicle-plate`, e.g. G-ABCD) and want the registered owner — returns owner `name` and `a
-- **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
+- **`cma-voyage-finder`** (low) — Use when you have a CMA CGM voyage number or vessel name and want its schedule and port calls — returns the ship's route, ports, and estimat
 - **`collection-of-public-transport-maps`** (low) — Use when you have a `geolocation`/city and want live public-transport tracking maps for it — returns real-time transit vehicle positions and
 - **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st
 - **`container-tracking-cargo`** (low) — Use when you have a shipping container number and don't know its carrier — returns links into the right carrier/lessor tracking portal to lo

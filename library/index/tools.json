@@ -6014,38 +6014,45 @@
   },
   {
     "id": "hackers-toolkit",
-    "name": "Hackers toolkit",
-    "description": "An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attacks (#SQLi,#LFI,#XSS).",
-    "url": "https://chrome.google.com/webstore/detail/hackers-toolkit/iebkeiopbbfnmieadmojmocohdmaghmb/related",
+    "name": "Hackers Toolkit",
+    "description": "Use when you have an encoded/obfuscated string (base64, URL, hex, hashes) and want to quickly decode or re-encode it in-browser — returns the decoded/encoded value; also generates common web-attack query strings.",
+    "url": "https://chromewebstore.google.com/detail/hackers-toolkit/iebkeiopbbfnmieadmojmocohdmaghmb",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Fast in-browser encoding/decoding of strings (and payload-query generation) without leaving the page.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Encoding/decoding runs locally in the extension — nothing you paste leaves the browser, so it is safe for sensitive strings. The web-attack query generator is for authorized testing only; never fire generated payloads at systems you are not permitted to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community Chrome extension (~1,000 users, 4.1★); handy utility, but unaudited third-party code — install only in a sandboxed/investigation browser profile.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hackers Toolkit Chrome extension"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "tools-collections",
+      "encoding-decoding",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/hackers-toolkit.md"
   },
   {
@@ -16282,42 +16289,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/visualize-free.md"
-  },
-  {
-    "id": "visualize-me",
-    "name": "Visualize.me",
-    "description": "OSINT tool: Visualize.me.",
-    "url": "http://vizualize.me",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/visualize-me.md"
   },
   {
     "id": "visually",
@@ -46316,50 +46287,6 @@
     "_file": "library/tools/documents-metadata/act-on.md"
   },
   {
-    "id": "adobe-acrobat-program",
-    "name": "Adobe Acrobat Program",
-    "description": "Program that allows you to read and create PDF format documents",
-    "url": "https://acrobat.adobe.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "adobe-acrobat-reader-program",
-      "adobe-photoshop-program"
-    ],
-    "_file": "library/tools/documents-metadata/adobe-acrobat-program.md"
-  },
-  {
     "id": "adobe-acrobat-reader-program",
     "name": "Adobe Acrobat Reader Program",
     "description": "Program that allows you to read but not PDF format documents",
@@ -47892,46 +47819,6 @@
     "_file": "library/tools/documents-metadata/contex-condoms-serial-number-lookup.md"
   },
   {
-    "id": "convert-net",
-    "name": "Convert.net",
-    "description": "Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.",
-    "url": "http://www.convert.net",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/convert-net.md"
-  },
-  {
     "id": "copypastecharacter",
     "name": "CopyPasteCharacter",
     "description": "Use when you need to insert special Unicode characters/symbols into a document, query or username analysis — returns copy-ready glyphs and their HTML entity codes.",
@@ -48711,46 +48598,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/engadget.md"
-  },
-  {
-    "id": "engage121",
-    "name": "Engage121",
-    "description": "Website offering social media content and publishing services",
-    "url": "http://www.engage121.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/engage121.md"
   },
   {
     "id": "ether",
@@ -53597,46 +53444,6 @@
     "_file": "library/tools/documents-metadata/app-analysis/mobsf.md"
   },
   {
-    "id": "mp3juices",
-    "name": "MP3Juices",
-    "description": "Website that offers services related to downloading and saving audio files from a video",
-    "url": "http://www.mp3juices.cc",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/mp3juices.md"
-  },
-  {
     "id": "mutagen",
     "name": "Mutagen",
     "description": "Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) that can carry attribution and device clues.",
@@ -58241,50 +58048,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/whatsapp-messenger.md"
-  },
-  {
-    "id": "wolfram-alpha-personal-analytics",
-    "name": "Wolfram Alpha Personal Analytics",
-    "description": "Wolfram Alphas personal analytics utility for Facebook",
-    "url": "http://www.wolframalpha.com/facebook/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "wolfram-alpha",
-      "wolfram-alpha-facebook-report"
-    ],
-    "_file": "library/tools/documents-metadata/wolfram-alpha-personal-analytics.md"
   },
   {
     "id": "xifr",
@@ -72267,42 +72030,56 @@
   {
     "id": "ipfingerprints",
     "name": "IPFingerprints",
-    "description": "OSINT tool: IPFingerprints.",
+    "description": "Use when you have an `ip-address` or `domain` and want geolocation plus a live network profile (open ports, reverse DNS, WHOIS, mail auth) — returns location, host details, and open-service data.",
     "url": "http://www.ipfingerprints.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-stop web console for IP geolocation, port scanning, reverse DNS, WHOIS and mail-auth checks on an IP or domain.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tools; no account required.",
+    "opsec": "active",
+    "opsecNote": "The port scanner and ping probes send real packets to the target host from IPFingerprints' servers — that is active recon the target can log. Geolocation/WHOIS/DNS lookups are passive. Never point the scanner at infrastructure you are not authorized to probe; scan sparingly and assume it may be attributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing free network-tools site; geolocation/WHOIS are drawn from standard databases (accuracy typical of GeoIP), reliable but not authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ip-finger-prints",
       "ip-fingerprints",
       "ip-fingerprints-reverse-ip-lookup"
     ],
+    "aliases": [
+      "ipfingerprints.com"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "geolocation",
+      "port-scan"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipfingerprints.md"
   },
   {
@@ -79891,48 +79668,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reverse-mx-record.md"
-  },
-  {
-    "id": "reverse-report",
-    "name": "Reverse.report",
-    "description": "Reverse IP and domain lookups",
-    "url": "https://reverse.report/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "ipv4"
-    ],
-    "bestFor": "Reverse IP and domain lookups",
-    "input": "IP address or domain",
-    "output": "Associated domains, subdomains, history",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Passive lookup of DNS and WHOIS data.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ipv4/reverse-report.md"
   },
   {
     "id": "reversewhois-io",
@@ -165509,42 +165244,6 @@
     "_file": "library/tools/opsec-investigator-tooling/adobe-photoshop-mix-app-mobile-android.md"
   },
   {
-    "id": "ai-video-generator",
-    "name": "AI video generator",
-    "description": "Type the text (video script). Choose a character and script template. Click the \"Submit a video\" button. Enter your registration data and wait for the letter with the result",
-    "url": "https://www.synthesia.io/free-ai-video-demo",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ai-video-generator.md"
-  },
-  {
     "id": "airwatch-secure-content-locker-app-mobile-ios",
     "name": "Airwatch Secure Content Locker App (Mobile – iOS)",
     "description": "App for mobile devices that creates a secure content area on your device with password",
@@ -165730,24 +165429,25 @@
   {
     "id": "android-studio-and-sdk-tools",
     "name": "Android Studio & SDK Tools",
-    "description": "Official Android dev environment usable to run Android emulators for app-based OSINT.",
+    "description": "Use when you need to run a mobile app (social/dating/messaging) for OSINT without exposing your own device — provides a disposable Android emulator to operate the app safely.",
     "url": "https://developer.android.com/studio",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Running an Android emulator to investigate mobile apps safely",
+    "bestFor": "Running Android apps in a disposable emulator so app-based investigation never touches your personal phone or number.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free official Google tooling; large download and needs a capable machine (virtualization enabled).",
+    "opsec": "active",
+    "opsecNote": "The emulator itself is a local, isolated environment — but once you log into or interact with a real app inside it, that app's servers see your activity. Use a sock-puppet account, a VPN, and a fresh emulator/AVD per investigation so app usage is never tied to your real identity or device. Wipe/recreate the AVD between cases.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Official Google developer tooling.",
+    "trustNote": "Official Google Android developer environment — the authoritative, safe source for the emulator and SDK.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -165756,7 +165456,14 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "android-code-search"
+    ],
+    "aliases": [
+      "Android Studio",
+      "Android SDK",
+      "Android emulator (AVD)"
+    ],
     "tags": [
       "emulator",
       "mobile",
@@ -165764,11 +165471,8 @@
       "opsec"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "android-code-search"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/android-studio-and-sdk-tools.md"
   },
   {
@@ -166251,46 +165955,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/apple-music-app-mobile-android.md"
-  },
-  {
-    "id": "appyparking",
-    "name": "AppyParking",
-    "description": "Mobile device app providing parking information on nearly all controlled parking zones in London United Kingdom",
-    "url": "https://appyparking.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/appyparking.md"
   },
   {
     "id": "archstrike",
@@ -166849,46 +166513,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/backbox.md"
-  },
-  {
-    "id": "badoo-dating-app-mobile-android",
-    "name": "Badoo Dating App (Mobile – Android)",
-    "description": "App for android mobile device for meeting people on Badoo",
-    "url": "https://play.google.com/store/apps/details?id=com.badoo.mobile",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/badoo-dating-app-mobile-android.md"
   },
   {
     "id": "badoo-dating-app-mobile-ios",
@@ -169775,46 +169399,6 @@
     "_file": "library/tools/opsec-investigator-tooling/expedia-travel-app-mobile-android.md"
   },
   {
-    "id": "f-secure-anti-virus-for-mac",
-    "name": "F-Secure Anti-Virus For Mac",
-    "description": "Malware and virus detection and elimination program",
-    "url": "https://www.f-secure.com/us-en/internet-security",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/f-secure-anti-virus-for-mac.md"
-  },
-  {
     "id": "face-anonimyzer",
     "name": "Face Anonimyzer",
     "description": "Upload a face photo and get set of similar AI generated faces.",
@@ -172317,46 +171901,6 @@
     "_file": "library/tools/opsec-investigator-tooling/google-play-store.md"
   },
   {
-    "id": "google-search-app-mobile-android",
-    "name": "Google Search App (Mobile – Android)",
-    "description": "App for mobile devices for general searches",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-search-app-mobile-android.md"
-  },
-  {
     "id": "google-search-app-mobile-ios",
     "name": "Google Search App (Mobile – iOS)",
     "description": "App for mobile devices for general searches",
@@ -172566,46 +172110,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/grindr-social-networking-app-mobile-android.md"
-  },
-  {
-    "id": "grindr-social-networking-app-mobile-ios",
-    "name": "Grindr Social Networking App (Mobile – iOS)",
-    "description": "App for mobile devices for social networking and e-dating",
-    "url": "https://apps.apple.com/US/app/id319881193",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/grindr-social-networking-app-mobile-ios.md"
   },
   {
     "id": "grok-knowledge-base-for-phishing-scams",
@@ -173725,46 +173229,6 @@
     "_file": "library/tools/opsec-investigator-tooling/ipvanish-proxy-website.md"
   },
   {
-    "id": "itranslate-language-translation-app-mobile-android",
-    "name": "iTranslate Language Translation App (Mobile – Android)",
-    "description": "App for mobile devices for language translation services, one of the Top 100 apps for 2015",
-    "url": "https://play.google.com/store/apps/details?id=at.nk.tools.iTranslate",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/itranslate-language-translation-app-mobile-android.md"
-  },
-  {
     "id": "itranslate-language-translation-app-mobile-ios",
     "name": "iTranslate Language Translation App (Mobile – iOS)",
     "description": "App for mobile devices for language translation services",
@@ -174214,46 +173678,6 @@
       "kaspersky-cyberthreat-live-map"
     ],
     "_file": "library/tools/opsec-investigator-tooling/kaspersky-tdsskiller-anti-rootkit-tool.md"
-  },
-  {
-    "id": "khan-academy-education-app-mobile-android",
-    "name": "Khan Academy Education App (Mobile – Android)",
-    "description": "App for mobile devices for education and information services, one of the Top 100 apps for 2015",
-    "url": "https://play.google.com/store/apps/details?id=org.khanacademy.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/khan-academy-education-app-mobile-android.md"
   },
   {
     "id": "khan-academy-education-app-mobile-ios",
@@ -174837,46 +174261,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/linkedin-network-and-job-finder-mobile-ios.md"
-  },
-  {
-    "id": "linkedin-social-networking-app-mobile-android",
-    "name": "LinkedIn Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and business profiles",
-    "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/linkedin-social-networking-app-mobile-android.md"
   },
   {
     "id": "locabrowser-com",
@@ -179377,46 +178761,6 @@
     "_file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md"
   },
   {
-    "id": "shazam-music-entertainment-app-mobile-android",
-    "name": "Shazam Music Entertainment App (Mobile – Android)",
-    "description": "App for mobile devices for searching for and playing music",
-    "url": "https://play.google.com/store/apps/details?id=com.shazam.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/shazam-music-entertainment-app-mobile-android.md"
-  },
-  {
     "id": "shazam-music-entertainment-app-mobile-ios",
     "name": "Shazam Music Entertainment App (Mobile – iOS)",
     "description": "App for mobile devices for searching for and playing music",
@@ -181643,46 +180987,6 @@
     "_file": "library/tools/opsec-investigator-tooling/tiny-scanner-tool-app-mobile-ios.md"
   },
   {
-    "id": "tinywall-windows-firewall-enhancement",
-    "name": "TinyWall Windows Firewall Enhancement",
-    "description": "Program that enhances security by offering extra firewall protection",
-    "url": "http://tinywall.pados.hu",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/tinywall-windows-firewall-enhancement.md"
-  },
-  {
     "id": "tobloef-com",
     "name": "Tobloef.com (Text2MindMap)",
     "description": "Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not subject data).",
@@ -183772,46 +183076,6 @@
     "_file": "library/tools/opsec-investigator-tooling/webdext.md"
   },
   {
-    "id": "webmd-health-and-wellness-app-mobile-ios",
-    "name": "WebMD Health and Wellness App (Mobile – iOS)",
-    "description": "App for mobile devices for medical and first aid information",
-    "url": "https://itunes.apple.com/us/app/webmd/id295076329?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/webmd-health-and-wellness-app-mobile-ios.md"
-  },
-  {
     "id": "webrtc-leak-test",
     "name": "WebRTC Leak Test (Perfect Privacy)",
     "description": "Use when you want to confirm your VPN isn't leaking your real IP via WebRTC — returns the IP addresses WebRTC exposes to any website, so you can verify your OpSec.",
@@ -184234,49 +183498,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/windows-phone-imei-generator.md"
-  },
-  {
-    "id": "winpatrol-monitor-and-alert-program-windows",
-    "name": "WinPatrol Monitor & Alert Program (Windows)",
-    "description": "Malware detection and program changes alert program",
-    "url": "http://www.winpatrol.com/download.html",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "winpatrol-os-monitoring-system"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/winpatrol-monitor-and-alert-program-windows.md"
   },
   {
     "id": "winpatrol-os-monitoring-system",
@@ -234962,44 +234183,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/malta.md"
-  },
-  {
-    "id": "manitoba-assessment-online",
-    "name": "Manitoba Assessment Online",
-    "description": "OSINT tool: Manitoba Assessment Online.",
-    "url": "https://www.gov.mb.ca/mao/public/search_select.aspx",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "manitoba-court-records",
-      "manitoba-sex-offender"
-    ],
-    "_file": "library/tools/public-records/manitoba-assessment-online.md"
   },
   {
     "id": "manitoba-court-records",
@@ -342521,39 +341704,49 @@
   },
   {
     "id": "cma-voyage-finder",
-    "name": "CMA Voyage Finder",
-    "description": "search for voyage details by voyage number or ship name",
+    "name": "CMA CGM Voyage Finder",
+    "description": "Use when you have a CMA CGM voyage number or vessel name and want its schedule and port calls — returns the ship's route, ports, and estimated dates (geolocation over time).",
     "url": "https://www.cma-cgm.com/ebusiness/schedules/voyage",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a container-ship voyage's schedule and port rotation by voyage number or vessel name (CMA CGM fleet).",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public schedule lookup on the CMA CGM e-business site; no account needed for basic schedule search.",
+    "opsec": "passive",
+    "opsecNote": "You query a public carrier schedule with a voyage/vessel identifier — nothing about a person is submitted. Use normal browsing hygiene (VPN); the search itself is low-risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party schedule data published by CMA CGM (a major global container line), so voyage/port data is authoritative for that carrier's fleet.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CMA CGM voyage schedule",
+      "CMA CGM ship schedule"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Maritime"
+      "maritime",
+      "shipping",
+      "transport",
+      "vessel-tracking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/transportation/cma-voyage-finder.md"
   },
   {

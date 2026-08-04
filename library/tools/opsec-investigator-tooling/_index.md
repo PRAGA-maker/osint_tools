@@ -26,12 +26,11 @@ kind: group-index
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
 - **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
-- **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is a
 - **`amazon-mobile-app-mobile-android`** (low) — Use when you have a `name`, `email`, or `username` and want to surface a subject's public Amazon presence — returns wishlist-derived `addres
 - **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
-- **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
+- **`android-studio-and-sdk-tools`** (low) — Use when you need to run a mobile app (social/dating/messaging) for OSINT without exposing your own device — provides a disposable Android e
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
 - **`anonaddy`** (low) — Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses tha
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
@@ -42,7 +41,6 @@ kind: group-index
 - **`apple-app-store`** (low) — Website that provides searches for apps for Apple iOS-type mobile devices
 - **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
 - **`apple-music-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
-- **`appyparking`** (low) — Mobile device app providing parking information on nearly all controlled parking zones in London United Kingdom
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
@@ -55,7 +53,6 @@ kind: group-index
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
-- **`badoo-dating-app-mobile-android`** (low) — App for android mobile device for meeting people on Badoo
 - **`badoo-dating-app-mobile-ios`** (low) — App for iOS mobile device for meeting people on Badoo
 - **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`bitcoinprivacy-guide`** (low) — OSINT tool: Bitcoinprivacy.guide.
@@ -114,7 +111,6 @@ kind: group-index
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
-- **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
 - **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
@@ -168,13 +164,11 @@ kind: group-index
 - **`google-play-movies-and-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
-- **`google-search-app-mobile-android`** (low) — App for mobile devices for general searches
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Add-on for Google Chrome that allows you to see translations of text directly on the webpage
 - **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
 - **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
-- **`grindr-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and e-dating
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
@@ -199,7 +193,6 @@ kind: group-index
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
 - **`ipcheck`** (low) — OSINT tool: IPCheck.
 - **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
-- **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
@@ -208,7 +201,6 @@ kind: group-index
 - **`kali-anonsurf`** (low) — Use for investigator opsec — routes your entire system's network traffic through Tor at the OS level and adds anti-forensic helpers, so all 
 - **`kasm`** (low) — Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware a
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
-- **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
@@ -222,7 +214,6 @@ kind: group-index
 - **`lightshot-screen-capture-add-on`** (low) — Use when you need to quickly screenshot a selected area of a browser tab to preserve `metadata-exif`-free visual evidence during an investig
 - **`link-cash-locator-app`** (low) — Use when you have a `geolocation`/`address` in the UK or Crown Dependencies and want the nearest cash machines — returns ATM `address`es and
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
-- **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
@@ -315,7 +306,6 @@ kind: group-index
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta
 - **`shadowcrypt-messaging`** (low) — Tool for a browser add-on that encrypts messaging for webmail and social networking sites
 - **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
-- **`shazam-music-entertainment-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
@@ -366,7 +356,6 @@ kind: group-index
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
-- **`tinywall-windows-firewall-enhancement`** (low) — Program that enhances security by offering extra firewall protection
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.
@@ -411,7 +400,6 @@ kind: group-index
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
-- **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
@@ -419,7 +407,6 @@ kind: group-index
 - **`windows-10-online-emulator`** (low) — OSINT tool: Windows 10 Online Emulator.
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
 - **`windows-phone-imei-generator`** (low) — OSINT tool: Windows Phone IMEI Generator.
-- **`winpatrol-monitor-and-alert-program-windows`** (low) — Malware detection and program changes alert program
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`xmind-works`** (low) — Online tool for open and editing .xmind files
