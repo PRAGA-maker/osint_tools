@@ -30,6 +30,10 @@ relatedTools:
 - fakeinfo
 - random-face-generator
 - twitter-profile-generator
+- fake-drivers-license-generator
+- fake-tiktok-profile-generator
+- fake-youtube-channel-generator
+- fakeinfo-net
 aliases:
 - FakeInfo Company Name Generator
 - fakeinfo.net company generator

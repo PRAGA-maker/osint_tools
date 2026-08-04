@@ -20,7 +20,7 @@ kind: group-index
 - **`default-passwords/`** — 7 skill(s) below.
 - **`discovery/`** — 12 skill(s) below.
 - **`dnssec/`** — 2 skill(s) below.
-- **`domain-blacklists/`** — 5 skill(s) below.
+- **`domain-blacklists/`** — 4 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
 - **`geolocation/`** — 8 skill(s) below.
 - **`host-port-discovery/`** — 4 skill(s) below.
@@ -56,7 +56,7 @@ kind: group-index
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of
 - **`aiodnsbrute`** (low) — Use when you have a domain and want to enumerate its live subdomains fast — returns domain (subdomains) and their ip-address records.
-- **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
+- **`alertx`** (low) — Use when you have a `domain` and known subdomains and want more candidates to test — returns permutation-generated subdomain wordlists for a
 - **`aline`** (low) — Use when you have a `domain` and want the documents it has exposed to Google — a CLI that runs filetype dorks and bulk-downloads the hits fo
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
@@ -146,7 +146,7 @@ kind: group-index
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
-- **`etda`** (low) — OSINT tool: ETDA.
+- **`etda`** (low) — Use when you have a threat-actor name/alias and want its profile — returns aliases, suspected origin, targeted sectors and associated tools/
 - **`eurodns`** (low) — Use when you have a list of `domain` names and want their registration status in bulk — returns availability/taken status with a quick link 
 - **`expandurl`** (low) — Use when you have a shortened or suspicious `domain`/link and want its true final destination and redirect chain without clicking it — retur
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 

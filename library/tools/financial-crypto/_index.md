@@ -71,7 +71,7 @@ kind: group-index
 - **`insolvencydirect-bis-gov-uk`** (medium) — Use when you have a `name` and want to check UK personal-insolvency records (bankruptcies, IVAs, debt relief orders) — returns the individua
 - **`jahs-ie`** (medium) — Use when you have an Irish subject's `name` and want to check whether they hold an insolvency/debt arrangement — returns `address`, `dob` an
 - **`learnmeabitcoin-com`** (low) — Use when you have a `crypto-wallet` (Bitcoin address or txid) and want to inspect its raw on-chain data and understand how to read it — retu
-- **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
+- **`live-coin-watch`** (low) — Use when you need live and historical crypto prices to value or contextualise wallet activity — returns market prices, market cap and charts
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`mixero-io`** (medium) — Use when you have a `crypto-wallet` and want to recognise whether funds were routed through a Bitcoin mixer/tumbler — returns awareness of a
 - **`mylostaccount-org-uk`** (medium) — Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns

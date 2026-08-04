@@ -14,7 +14,7 @@ kind: group-index
 - **`download-sorter`** (low) — simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put
 - **`dumpitblue-plus`** (medium) — Use when you have a Facebook `social-profile`/page open and want to capture it for offline analysis — returns a fully-expanded, saveable cop
 - **`export-comments`** (low) — Use when you have a public post/video URL and want every comment with handles and timestamps as a spreadsheet — returns commenter `username`
-- **`exportgram`** (low) — Export Instagram comments to Excel/CSV/JSON.
+- **`exportgram`** (low) — Use when you have an Instagram post/`social-profile` and want its comments as structured data — returns commenter `username`s, timestamps, l
 - **`forensic-osint-full-page-screen-capture`** (high) — Use when you need to preserve a web page or social profile as defensible evidence — captures full-page screenshots with metadata (URL, times
 - **`gdown`** (low) — Use when you have a Google Drive share link or file ID and want to reliably download the file (including large ones and whole folders) for e
 - **`gowitness`** (low) — Use when you have a list of `domain`s/`ip-address`es and want to bulk-screenshot their web interfaces for visual triage and evidence — retur

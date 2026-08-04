@@ -232,7 +232,7 @@ kind: group-index
 - **`r4ven`** (medium) — Use when a subject will open a link you control and you want their precise `geolocation`, real `ip-address`, and `device-id` — returns those
 - **`radio-locator`** (low) — Use when you have a `geolocation`/`address` (or a station's call letters) and want the local AM/FM stations, formats and coverage there — re
 - **`radio-sherlock`** (low) — Use when you have a radio callsign/term and want related amateur-radio data — returns search results across DX/ham-radio sources, useful for
-- **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
+- **`radiocells-org`** (low) — Use when you have a WiFi BSSID (`mac-address`) or a cell-tower ID and want its physical location — returns `geolocation` from a community-co
 - **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa
 - **`radioreference`** (low) — OSINT tool: RadioReference.
 - **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath

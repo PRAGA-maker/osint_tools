@@ -60492,48 +60492,55 @@
   },
   {
     "id": "alertx",
-    "name": "ALERTX",
-    "description": "Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.",
+    "name": "alterx",
+    "description": "Use when you have a `domain` and known subdomains and want more candidates to test — returns permutation-generated subdomain wordlists for active enumeration.",
     "url": "https://github.com/projectdiscovery/alterx",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Generating smart subdomain permutations from known results to feed a DNS resolver during subdomain discovery.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT) from ProjectDiscovery; install via Go (`go install github.com/projectdiscovery/alterx/cmd/alterx@latest`).",
+    "opsec": "passive",
+    "opsecNote": "alterx itself only generates candidate names locally from patterns — it sends nothing to the target. The active/observable step is when you resolve those candidates with a DNS tool; that traffic can be logged, so throttle and use resolvers deliberately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by ProjectDiscovery, a well-known security-tooling vendor with widely used open-source projects; source is public and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "dnsx",
+      "subfinder",
+      "cve-map"
+    ],
+    "aliases": [
+      "alterx",
+      "projectdiscovery/alterx"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Subdomains scan/brute"
+      "Subdomains scan/brute",
+      "subdomain-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cve-map",
-      "dnsx",
-      "subfinder"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/alertx.md"
   },
   {
@@ -67709,38 +67716,48 @@
   },
   {
     "id": "etda",
-    "name": "ETDA",
-    "description": "OSINT tool: ETDA.",
+    "name": "ETDA Threat Group Cards",
+    "description": "Use when you have a threat-actor name/alias and want its profile — returns aliases, suspected origin, targeted sectors and associated tools/malware from ThaiCERT/ETDA's encyclopedia.",
     "url": "https://apt.etda.or.th/cgi-bin/listgroups.cgi",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up an APT/threat-group profile — aliases, attribution, targets and toolset — to contextualise a cyber threat.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public reference; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public reference encyclopedia — you read curated profiles, querying nothing about a live target's infrastructure. Nothing is disclosed to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by ThaiCERT / Thailand's ETDA (a government agency); a well-regarded, sourced threat-actor encyclopedia, though attribution is inherently uncertain and should be cross-checked.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ThaiCERT Threat Group Cards",
+      "APT Groups and Operations",
+      "apt.etda.or.th"
+    ],
     "tags": [
-      "threat-actor-search"
+      "threat-actor-search",
+      "threat-intel",
+      "apt"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/etda.md"
   },
   {
@@ -70192,41 +70209,51 @@
   {
     "id": "grabify",
     "name": "Grabify",
-    "description": "Shorten URLs and log visitor IPs",
+    "description": "Use when you can get a target to click a link and want their IP and device details — returns `ip-address`, coarse `geolocation` and browser/device fingerprint from the click.",
     "url": "https://grabify.link",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ip-loggers"
     ],
-    "bestFor": "Shorten URLs and log visitor IPs",
-    "input": "URL to shorten",
-    "output": "Short URL with IP logging",
+    "bestFor": "Capturing a clicker's IP address, approximate location and device fingerprint via a disguised tracking link.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Creates tracking link; malicious uses common.",
+    "costNote": "Free (ad-supported); optional free account to manage links and view dashboards.",
+    "opsec": "active",
+    "opsecNote": "This is an ACTIVE, engagement-based technique — you must get the target to click a link you created, which is a form of contact and may be entrapment/unlawful depending on jurisdiction and pretext. The link and its host see the URL; the target's ISP sees the click. Only use with clear legal authorisation, and never impersonate someone to induce the click.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used free IP-logging service; the captured IP/geolocation is real but coarse (ISP-level city, easily masked by VPN/mobile NAT), so treat results as indicative, not precise.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "grabify.link",
+      "Grabify IP Logger"
+    ],
+    "tags": [
+      "ip-logger",
+      "tracking-link",
+      "active-technique"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-loggers/grabify.md"
   },
   {
@@ -91415,52 +91442,6 @@
     "_file": "library/tools/domains-ip-infrastructure/yougetsignal-com.md"
   },
   {
-    "id": "zeus-c2-tracker",
-    "name": "Zeus C2 Tracker",
-    "description": "Zeus botnet C2 blocking",
-    "url": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "domain-blacklists"
-    ],
-    "bestFor": "Zeus botnet C2 blocking",
-    "input": "None (blocklist provider)",
-    "output": "Domain/IP blocklist, Snort rules, Squid format",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Queries public Zeus tracker database; no active scanning",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "abusech",
-      "malwarebazaar",
-      "urlhaus",
-      "yaraif",
-      "zeus-tracker"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/zeus-c2-tracker.md"
-  },
-  {
     "id": "zone-h-org",
     "name": "Zone-H.org",
     "description": "Use when you have a `domain` or `ip-address` and want its history of recorded website-defacement incidents with mirrored evidence — returns domain, ip-address.",
@@ -104765,13 +104746,13 @@
   {
     "id": "exportgram",
     "name": "Exportgram",
-    "description": "Export Instagram comments to Excel/CSV/JSON.",
+    "description": "Use when you have an Instagram post/`social-profile` and want its comments as structured data — returns commenter `username`s, timestamps, likes and text as Excel/CSV/JSON.",
     "url": "https://exportgram.net/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "Exporting Instagram comment data for analysis",
+    "bestFor": "Bulk-exporting an Instagram post's comments (usernames, dates, text) into a spreadsheet for analysis and evidence.",
     "selectorsIn": [
       "social-profile"
     ],
@@ -104779,15 +104760,16 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier exports up to ~50 comments instantly with no account; a paid plan unlocks comment replies, larger exports and more formats.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public post URL/data into a third-party web app that fetches the public comments; the target is not notified, but the export is processed on Exportgram's servers, so only use it on public content and keep the exported file in your evidence store.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party Instagram scraping utility; results depend on Instagram's current public access and can break or lag when Instagram changes, so timestamp and screenshot alongside the export.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -104796,15 +104778,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "exportgram.net",
+      "ExportGram"
+    ],
     "tags": [
       "instagram",
       "comments",
       "export"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/exportgram.md"
   },
   {
@@ -109199,41 +109185,45 @@
   {
     "id": "live-coin-watch",
     "name": "Live Coin Watch",
-    "description": "OSINT tool: Live Coin Watch.",
+    "description": "Use when you need live and historical crypto prices to value or contextualise wallet activity — returns market prices, market cap and charts across thousands of coins.",
     "url": "https://www.livecoinwatch.com",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
+    "bestFor": "Pricing a cryptocurrency at a point in time to estimate the fiat value of a transaction or wallet holding.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use for live and historical prices, market cap and charts; a free API key is available for programmatic access.",
+    "opsec": "passive",
+    "opsecNote": "A market-data reference — you look up coin prices, not wallets or people. Nothing about a subject is submitted; standard browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running crypto market-data aggregator; prices are aggregated across exchanges and generally reliable for valuation, though it is not a blockchain explorer and holds no wallet-level data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "livecoinwatch.com",
+      "LiveCoinWatch"
+    ],
     "tags": [
-      "crypto"
+      "crypto",
+      "market-data"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/live-coin-watch.md"
   },
   {
@@ -122469,35 +122459,52 @@
   {
     "id": "radiocells-org",
     "name": "Radiocells.org",
-    "description": "OSINT tool: Radiocells.org.",
+    "description": "Use when you have a WiFi BSSID (`mac-address`) or a cell-tower ID and want its physical location — returns `geolocation` from a community-collected radio-cell database.",
     "url": "https://radiocells.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Resolving a WiFi access point (BSSID) or cell tower to map coordinates using open crowd-sourced data.",
+    "selectorsIn": [
+      "mac-address",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open data — cell data under CC BY-SA 3.0, WiFi data under ODbL; the whole database can be downloaded for offline use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a static crowd-sourced database, not the access point or the target's device, so nothing is transmitted to the subject. The database is contributed by volunteers wardriving with scanner apps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A volunteer project (formerly openBmap, since 2009) with ~700k cell and ~10M WiFi locations; coverage is uneven and dated in places, so a single fix should be corroborated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Radiocells",
+      "openBmap",
+      "radiocells.org"
+    ],
+    "tags": [
+      "geolocation",
+      "wifi-geolocation",
+      "cell-tower"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/radiocells-org.md"
   },
   {
@@ -172521,7 +172528,11 @@
     "relatedTools": [
       "fakeinfo",
       "random-face-generator",
-      "twitter-profile-generator"
+      "twitter-profile-generator",
+      "fake-drivers-license-generator",
+      "fake-tiktok-profile-generator",
+      "fake-youtube-channel-generator",
+      "fakeinfo-net"
     ],
     "aliases": [
       "FakeInfo Company Name Generator",
@@ -235738,37 +235749,44 @@
   {
     "id": "knoema",
     "name": "Knoema",
-    "description": "OSINT tool: Knoema.",
+    "description": "Use when you need authoritative statistics to contextualise a place, sector or claim — returns curated public datasets, indicators and visualizations by country and topic.",
     "url": "https://knoema.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling country/sector statistics and indicators to ground-truth or contextualise an investigative claim.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and visualize public datasets; advanced data-hub/enterprise features are paid, and some datasets prompt for a free account.",
+    "opsec": "passive",
+    "opsecNote": "A public data-aggregation platform — you look up statistics, not people; nothing about a subject is submitted. Standard browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial data aggregator (an Eldridge business) that republishes third-party official statistics; reliable as a convenient front-end, but cite the original source and check the dataset's date.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "knoema.com"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "open-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/knoema.md"
   },
   {
@@ -351658,43 +351676,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/transportation/ride-with-gps.md"
-  },
-  {
-    "id": "runmap",
-    "name": "Runmap",
-    "description": "running routes world map",
-    "url": "http://www.runmap.net/en/?tab=new#/z15/55.7522011,37.6156006/terrain",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Routes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/runmap.md"
   },
   {
     "id": "russia-ukraine-monitor-map",

@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/ip-loggers
 
 ## Skills here
-- **`grabify`** (low) — Shorten URLs and log visitor IPs
+- **`grabify`** (low) — Use when you can get a target to click a link and want their IP and device details — returns `ip-address`, coarse `geolocation` and browser/
 - **`ip-logger`** (low) — Use when you have a channel to reach a subject (`email`, `social-profile`) and want their `ip-address` and coarse `geolocation` — returns th
 - **`ki-tc`** (low) — Use when you have a channel to reach a subject and want their `ip-address` — a Grabify-style link shortener that logs the IP, geolocation, a
 
