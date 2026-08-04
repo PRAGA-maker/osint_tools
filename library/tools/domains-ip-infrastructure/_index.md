@@ -40,7 +40,7 @@ kind: group-index
 - **`social-analysis/`** — 1 skill(s) below.
 - **`subdomains/`** — 16 skill(s) below.
 - **`terrorism-and-extremism/`** — 6 skill(s) below.
-- **`threat-feeds-and-platforms/`** — 14 skill(s) below.
+- **`threat-feeds-and-platforms/`** — 13 skill(s) below.
 - **`tools/`** — 4 skill(s) below.
 - **`ttps/`** — 2 skill(s) below.
 - **`typosquatting/`** — 4 skill(s) below.
@@ -333,7 +333,7 @@ kind: group-index
 - **`reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it — returns the `domain` neighbours sharing that server, exposing li
 - **`reverse-mx-record`** (low) — Use when you have a mail-server hostname (MX) and want the other domains that use it for email — returns a list of `domain`s sharing that ma
 - **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
-- **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
+- **`rextract`** (low) — Use when you have a list of URLs/`domain`s and want to pull specific strings from their HTML — returns regex-matched values (emails, IDs, to
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
 - **`ronin-recon`** (low) — Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findi

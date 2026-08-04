@@ -83,7 +83,6 @@ kind: group-index
 - **`fark-com`** (low) — Use when you have a `username` and want to read a long-time Fark member's comment history and interests — a veteran news-commentary communit
 - **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`financial-post`** (low) — Use when you have a `name` or `employer-org` and want to search Canadian business-news coverage for mentions — returns article context linki
-- **`flickmetrix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flicksurfer-com`** (low) — Use when you want to rank/discover Netflix titles by aggregated critic and user ratings — a niche media-discovery site, not a people or infr
 - **`flixable-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix

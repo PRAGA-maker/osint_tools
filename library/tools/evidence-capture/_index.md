@@ -11,7 +11,6 @@ kind: group-index
 - **`web-browsing/`** — 6 skill(s) below.
 
 ## Skills here
-- **`download-sorter`** (low) — simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put
 - **`dumpitblue-plus`** (medium) — Use when you have a Facebook `social-profile`/page open and want to capture it for offline analysis — returns a fully-expanded, saveable cop
 - **`export-comments`** (low) — Use when you have a public post/video URL and want every comment with handles and timestamps as a spreadsheet — returns commenter `username`
 - **`exportgram`** (low) — Use when you have an Instagram post/`social-profile` and want its comments as structured data — returns commenter `username`s, timestamps, l

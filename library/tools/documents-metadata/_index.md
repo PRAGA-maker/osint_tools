@@ -24,7 +24,6 @@ kind: group-index
 - **`acuris-risk-intelligence`** (low) — Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals
 - **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
-- **`advertise-com`** (low) — Website that offers social media advertising, marketing, and search engine optimization services
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
@@ -152,7 +151,7 @@ kind: group-index
 - **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mp3juices`** (low) — Website that offers services related to downloading and saving audio files from a video
-- **`mutagen`** (low) — get meta data of audiofiles thrue command line
+- **`mutagen`** (low) — Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) 
 - **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
 - **`occupational-outlook-handbook-it-united-states`** (low) — Use when you have a claimed US IT job title or salary and want to sanity-check it against official occupation data — a reference source, ret

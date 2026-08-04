@@ -73,7 +73,6 @@ kind: group-index
 - **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.
 - **`european-world-translator`** (low) — Use when you have a foreign word/label and want to see how it translates across European languages on a map — returns a per-country translat
 - **`everymountainintheworld`** (medium) — Use when you have a `geolocation` with a distinctive peak/summit and want to identify it — returns named mountains with elevation and links 
-- **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
 - **`fao-map-catalog`** (medium) — Use when you have a `geolocation` or region and want authoritative land-cover, agricultural, water and terrain layers for it — returns geosp
 - **`feeds-talonvoice-com`** (medium) — Use when you have a `geolocation`/city and want live text of public-safety radio traffic there — returns searchable transcriptions of scanne
 - **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe

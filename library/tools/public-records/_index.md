@@ -343,7 +343,6 @@ kind: group-index
 - **`georgia-voters-com`** (high) — Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address,
 - **`georgia`** (high) — Use when you have a `name` (or GDC ID) and want to locate someone in Georgia state prison custody — returns current facility/status plus dob
 - **`germany`** (high) — Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — ret
-- **`gettr`** (low) — OSINT tool: Gettr.
 - **`gi-files`** (medium) — Use when you have a `name`/`email` possibly tied to Stratfor's 2004–2011 intelligence emails and want mentions or correspondence — returns m
 - **`gibraltar`** (high) — Use when you have a Gibraltar company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
 - **`gijn-org-3`** (medium) — Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownersh

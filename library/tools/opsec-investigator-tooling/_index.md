@@ -136,7 +136,6 @@ kind: group-index
 - **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
 - **`fireball-search-engine-germany`** (low) — German web search engine offering anonymous browsing
 - **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
-- **`firefox-stealth`** (low) — OSINT tool: firefox-stealth.
 - **`firefox`** (low) — OSINT tool: Firefox.
 - **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
@@ -200,7 +199,7 @@ kind: group-index
 - **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
 - **`instant-preview`** (low) — Chrome extension that adds instant previews to the search engine results page.
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
-- **`international-name-generator`** (low) — OSINT tool: International Name Generator.
+- **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
 - **`ipcheck`** (low) — OSINT tool: IPCheck.
 - **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
 - **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015

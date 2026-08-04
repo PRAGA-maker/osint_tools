@@ -21,7 +21,6 @@ kind: group-index
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
-- **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
 - **`api-guesser`** (low) — Use when you have a leaked API key/token and want to know which service it belongs to — returns the likely provider inferred from the key's 
 - **`apis-for-osint`** (low) — Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapp
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
@@ -83,7 +82,6 @@ kind: group-index
 - **`cyberbro`** (low) — Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated
 - **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
 - **`cybergordon`** (low) — Use when you have an `ip-address`, `domain`, `email`, or file hash and want a one-query reputation/threat check across dozens of sources — r
-- **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — Use when you have investigation data (relationships, timelines, geodata) and want to build custom interactive visualizations — provides a Ja
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
@@ -105,7 +103,6 @@ kind: group-index
 - **`docmind-ai`** (low) — Use when you have sensitive documents to query and want a local RAG chat over them with no cloud exposure — returns summaries, Q&A and extra
 - **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do
 - **`dropbase`** (low) — OSINT tool: Dropbase.
-- **`dropmark`** (low) — OSINT tool: Dropmark.
 - **`duckduckgo-ai-chat`** (low) — Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy 
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
@@ -155,7 +152,6 @@ kind: group-index
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
 - **`highcharts`** (low) — Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT da
 - **`hive-ai-generated-content-detection`** (low) — Use when you have an `image`, video, or audio and want to test if it's AI-generated/deepfake — returns confidence scores and likely generato
-- **`hohli`** (low) — OSINT tool: Hohli.
 - **`hotspot-shield`** (low) — Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool tha
 - **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
 - **`html-editor`** (low) — Use when you have raw or scraped HTML and want to view/clean/preview it — a free online WYSIWYG+source editor for inspecting markup and conv
@@ -193,7 +189,6 @@ kind: group-index
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
 - **`lucidchart`** (low) — Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org
-- **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
 - **`mailbox`** (low) — OSINT tool: Mailbox.
 - **`mailvelope`** (low) — Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-e
 - **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
@@ -328,7 +323,6 @@ kind: group-index
 - **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
 - **`the-fuck`** (low) — Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep
-- **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profi
 - **`threat-actor-usernames`** (low) — Use when you have a `username`/alias and want to know if it's a known threat actor and where they operate — returns matching handles and the
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
