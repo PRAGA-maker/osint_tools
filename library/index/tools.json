@@ -4611,42 +4611,6 @@
     "_file": "library/tools/ai-analysis-automation/extendclass.md"
   },
   {
-    "id": "fake-news-inforrm-s-blog",
-    "name": "Fake News – Inforrm's Blog",
-    "description": "OSINT tool: Fake News – Inforrm's Blog.",
-    "url": "https://inforrm.org/tag/fake-news/feed/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-rss-feeds"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/fake-news-inforrm-s-blog.md"
-  },
-  {
     "id": "faviconhash",
     "name": "FaviconHash",
     "description": "Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot links (Shodan/Censys) to related domains and ip-addresses.",
@@ -47377,49 +47341,6 @@
     "_file": "library/tools/documents-metadata/cloudconvert.md"
   },
   {
-    "id": "cnet-technology-products-reviews",
-    "name": "Cnet Technology Products Reviews",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "http://www.cnet.com/reviews",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cnet"
-    ],
-    "_file": "library/tools/documents-metadata/cnet-technology-products-reviews.md"
-  },
-  {
     "id": "compressedcrack",
     "name": "CompressedCrack",
     "description": "Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a local cracking tool, returns the `password`.",
@@ -50413,46 +50334,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/github-search-engine.md"
-  },
-  {
-    "id": "glossary-of-computer-and-internet-terms",
-    "name": "Glossary of Computer and Internet Terms",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
-    "url": "http://pc.net/glossary",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/glossary-of-computer-and-internet-terms.md"
   },
   {
     "id": "gmail-help-for-identifying-email-headers",
@@ -56494,46 +56375,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/tastedive-current-multimedia-trends.md"
-  },
-  {
-    "id": "techuk",
-    "name": "TechUK",
-    "description": "Online organization website providing information on computer and information technology occupations",
-    "url": "http://www.techuk.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/techuk.md"
   },
   {
     "id": "telcodata-us",
@@ -74921,48 +74762,56 @@
   {
     "id": "moz-link-explorer",
     "name": "Moz Link Explorer",
-    "description": "Analyse the links of any website.",
-    "url": "http://moz.com/link-explorer",
+    "description": "Use when you have a `domain`/URL and want its backlink profile and linked/linking domains — returns linking `domain`s, anchor text and authority scores.",
+    "url": "https://moz.com/link-explorer",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping who links to (and from) a site to surface related domains, networks and the reputation of a web property.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier via a free Moz account with a small monthly query allowance and capped result rows; full backlink data requires a paid Moz Pro subscription.",
+    "opsec": "passive",
+    "opsecNote": "Queries Moz's own crawl index, not the target's server, so it does not alert the site owner. Passive. Standard sock-puppet account/browser hygiene still advised.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Moz, a long-established SEO vendor with its own large link index; data is reputable though its crawl coverage is not exhaustive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "websites"
+    "coverage": [
+      "global"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "account",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
     "relatedTools": [
       "followerwonk-tools-for-twitter-analytics-bio-search-and-more",
       "moz-analytics-open-site-explorer"
     ],
+    "aliases": [
+      "Open Site Explorer",
+      "Moz Backlink Checker"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "websites",
+      "backlinks"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/moz-link-explorer.md"
   },
   {
@@ -77339,41 +77188,47 @@
   {
     "id": "owasp",
     "name": "OWASP",
-    "description": "OSINT tool: OWASP.",
+    "description": "Use when you need authoritative application-security reference material (Top 10, ASVS, cheat sheets) to understand a vulnerability or harden your own tooling — returns guidance, not lookups.",
     "url": "https://www.owasp.org/index.php/Main_Page",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "advisories"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
+    "bestFor": "The reference standard for web-application security risks and defensive guidance (Top 10, ASVS, Cheat Sheet Series).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open; a volunteer non-profit foundation. No account. The old wiki URL now redirects to the modern owasp.org site.",
+    "opsec": "passive",
+    "opsecNote": "Passive reference reading; you consult guidance, not a target. No subject data is involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the OWASP Foundation, the widely-recognised community standard body for application security; authoritative for its own guidance.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Open Worldwide Application Security Project",
+      "owasp.org"
+    ],
+    "tags": [
+      "advisories",
+      "appsec",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/advisories/owasp.md"
   },
   {
@@ -125189,43 +125044,55 @@
   {
     "id": "amireal",
     "name": "AmIReal",
-    "description": "Github - GAN detector detects if faces were generated by ThisPersonDoesNotExist",
+    "description": "Use when you have a face `image` and suspect it is an AI/GAN-generated fake (e.g. ThisPersonDoesNotExist) — returns a manual verdict via an eye/mouth alignment overlay.",
     "url": "https://seintpl.github.io/AmIReal/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Quickly sanity-checking whether a profile/photo face was generated by a StyleGAN-style engine rather than a real camera.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free browser-based tool hosted on GitHub Pages; no account, no upload to a server (client-side overlay).",
+    "opsec": "passive",
+    "opsecNote": "Runs in your browser against an image you already hold; nothing is sent to the subject or a third party. Passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Built by SEINT (2022) as a simple heuristic aid; the authors explicitly warn it can be wrong and is not a definitive detector.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "misc"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "imagston",
       "namint",
       "seintpl-github-io"
     ],
+    "aliases": [
+      "Am I Real",
+      "SEINT AmIReal"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "deepfake-detection",
+      "misc"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/amireal.md"
   },
   {
@@ -164901,46 +164768,6 @@
     "_file": "library/tools/opsec-investigator-tooling/account-killer.md"
   },
   {
-    "id": "adblock-extension-chrome",
-    "name": "Adblock Extension (Chrome)",
-    "description": "Add-on for Google Chrome that blocks Youtube and Facebook video ads",
-    "url": "https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/adblock-extension-chrome.md"
-  },
-  {
     "id": "adblockplus-extension",
     "name": "AdBlockPlus Extension",
     "description": "Free extension that allows you to block ads and disable tracking",
@@ -165821,46 +165648,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/apple-maps-app-mobile-ios.md"
-  },
-  {
-    "id": "apple-music-app-mobile-android",
-    "name": "Apple Music App (Mobile – Android)",
-    "description": "App for mobile devices for searching and playing radio channels",
-    "url": "https://play.google.com/store/apps/details?id=com.apple.android.music",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/apple-music-app-mobile-android.md"
   },
   {
     "id": "archstrike",
@@ -170161,46 +169948,6 @@
     "_file": "library/tools/opsec-investigator-tooling/fetching-title.md"
   },
   {
-    "id": "filevault2-open-source-disk-encryption-for-mac",
-    "name": "FileVault2 Open Source Disk Encryption (for Mac)",
-    "description": "Program that enhances security by offering system and disk partition encryption",
-    "url": "https://support.apple.com/en-ca/HT204837",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/filevault2-open-source-disk-encryption-for-mac.md"
-  },
-  {
     "id": "fireball-search-engine-germany",
     "name": "Fireball Search Engine (Germany)",
     "description": "Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web content — returns web result URLs to pivot on.",
@@ -171573,46 +171320,6 @@
     "_file": "library/tools/opsec-investigator-tooling/google-password-alert-extension-chrome.md"
   },
   {
-    "id": "google-photos-management-app-mobile-android",
-    "name": "Google Photos Management App (Mobile – Android)",
-    "description": "App for mobile devices for managing and sharing photo media",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-photos-management-app-mobile-android.md"
-  },
-  {
     "id": "google-play-movies-and-tv-app-mobile-android",
     "name": "Google Play Movies and TV App (Mobile – Android)",
     "description": "App for mobile devices for locating and playing movies and TV shows",
@@ -171904,46 +171611,6 @@
     "_file": "library/tools/opsec-investigator-tooling/grammarly-lite-extension-chrome.md"
   },
   {
-    "id": "grindr-social-networking-app-mobile-android",
-    "name": "Grindr Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and e-dating",
-    "url": "https://play.google.com/store/apps/details?id=com.grindrapp.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/grindr-social-networking-app-mobile-android.md"
-  },
-  {
     "id": "grok-knowledge-base-for-phishing-scams",
     "name": "GROK Knowledge Base For Phishing Scams",
     "description": "Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns definitional/reference material, not lookup data.",
@@ -172074,46 +171741,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/hack-this-page.md"
-  },
-  {
-    "id": "hacker-vision-extension-chrome",
-    "name": "Hacker Vision Extension (Chrome)",
-    "description": "Add-on for Google Chrome that changes the background from white to black",
-    "url": "https://chrome.google.com/webstore/detail/hacker-vision/fommidcneendjonelhhhkmoekeicedej",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/hacker-vision-extension-chrome.md"
   },
   {
     "id": "hide-my-ass-proxy-website",
@@ -174922,46 +174549,6 @@
     "_file": "library/tools/opsec-investigator-tooling/metacleaner-com.md"
   },
   {
-    "id": "microsoft-safety-and-security-center",
-    "name": "Microsoft Safety and Security Center",
-    "description": "Information about online privacy, security websites, and programs, provided by Microsoft",
-    "url": "http://www.microsoft.com/security/default.aspx",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/microsoft-safety-and-security-center.md"
-  },
-  {
     "id": "mit-pgp-public-key-server",
     "name": "MIT PGP Public Key Server",
     "description": "Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and the owner's stated `name`.",
@@ -175175,46 +174762,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/nano-id-cc.md"
-  },
-  {
-    "id": "netflix-movie-app-mobile-android",
-    "name": "Netflix Movie App (Mobile – Android)",
-    "description": "App for mobile devices for searching for and watching movies",
-    "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/netflix-movie-app-mobile-android.md"
   },
   {
     "id": "netflix-movie-app-mobile-ios",
@@ -176157,49 +175704,6 @@
     "_file": "library/tools/opsec-investigator-tooling/owlculus.md"
   },
   {
-    "id": "pagezipper",
-    "name": "PageZipper",
-    "description": "Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing",
-    "url": "http://www.printwhatyoulike.com/pagezipper",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "printwhatyoulike"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/pagezipper.md"
-  },
-  {
     "id": "pandora-radio-app-mobile-ios",
     "name": "Pandora Radio App (Mobile – iOS)",
     "description": "App for mobile devices for searching and playing radio channels",
@@ -176778,46 +176282,6 @@
     "_file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-ios.md"
   },
   {
-    "id": "plentyoffish-social-networking-app-mobile-android",
-    "name": "PlentyOfFish Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and e-dating",
-    "url": "https://play.google.com/store/apps/details?id=com.pof.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/plentyoffish-social-networking-app-mobile-android.md"
-  },
-  {
     "id": "plex-management-app-mobile-android",
     "name": "Plex Management App (Mobile – Android)",
     "description": "App for mobile devices for managing and organizing photos and videos",
@@ -177164,46 +176628,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/proxy-org.md"
-  },
-  {
-    "id": "quickvoice-recorder-app-mobile-ios",
-    "name": "Quickvoice Recorder App (Mobile – iOS)",
-    "description": "App for mobile devices for recording personal messages",
-    "url": "https://itunes.apple.com/ca/app/quickvoice-recorder/id284675296?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/quickvoice-recorder-app-mobile-ios.md"
   },
   {
     "id": "random-face-generator",
@@ -181293,46 +180717,6 @@
     "_file": "library/tools/opsec-investigator-tooling/tunnelbear.md"
   },
   {
-    "id": "turn-off-the-lights-extension-chrome",
-    "name": "Turn Off The Lights Extension (Chrome)",
-    "description": "Add-on for Google Chrome that dims other windows when the video window is open and running",
-    "url": "https://chrome.google.com/webstore/detail/turn-off-the-lights/bfbmjmiodbnnpllbbbfblcplfjjepjdn",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/turn-off-the-lights-extension-chrome.md"
-  },
-  {
     "id": "twitter-profile-generator",
     "name": "Twitter Profile Generator",
     "description": "Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots are made — returns a fabricated profile image.",
@@ -181644,41 +181028,45 @@
   {
     "id": "ultrasurf-proxy-website",
     "name": "Ultrasurf Proxy Website",
-    "description": "Anonymous browsing service provider",
-    "url": "http://ultrasurf.us",
+    "description": "Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention proxy for the investigator.",
+    "url": "https://ultrasurf.us",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Lightweight, portable anti-censorship proxy to mask the investigator's IP and reach geo/network-blocked pages.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free tool from UltraReach; no account or payment. Funded historically around anti-censorship work.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This protects YOUR side — it hides your IP from sites you visit — it does not touch the target. Note it is closed-source and has drawn security-researcher criticism; do not treat it as strong anonymity (use Tor for that), and pair with a clean/sock-puppet profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Widely used and long-running (UltraReach Internet Corp.), but proprietary/closed-source with past independent critiques of its security model — trust it for casual IP-masking, not for high-risk anonymity.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UltraSurf",
+      "UltraReach"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/ultrasurf-proxy-website.md"
   },
   {
@@ -227112,40 +226500,47 @@
   {
     "id": "human-development-reports",
     "name": "Human Development Reports",
-    "description": "OSINT tool: Human Development Reports.",
-    "url": "http://hdr.undp.org/en/global-reports",
+    "description": "Use when you need country-level human-development indicators for context on a place — returns HDI, poverty, gender and inequality indices for 190+ economies.",
+    "url": "https://hdr.undp.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative UNDP indices (HDI, MPI, gender indices) to contextualise the country/region a case touches.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and publicly available from the UNDP; reports and data downloads require no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive reference data — you query countries/indicators, not an individual. No subject data is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the UNDP Human Development Report Office; a primary, authoritative source for its own composite indices.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "undps-human-development-index"
+    ],
+    "aliases": [
+      "UNDP HDR",
+      "HDRO",
+      "hdr.undp.org"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "undps-human-development-index"
-    ],
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/human-development-reports.md"
   },
   {
@@ -260946,72 +260341,47 @@
   {
     "id": "bbc-news",
     "name": "BBC News",
-    "description": "OSINT tool: BBC News.",
-    "url": "http://www.bbc.co.uk/news",
+    "description": "Use when you have a `name`, event or place and want reputable news coverage to corroborate it — returns published reporting, dates and named details for verification.",
+    "url": "https://www.bbc.co.uk/news",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Corroborating people, events, dates and locations against a globally-trusted, well-archived news source.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; publicly funded (UK licence fee / commercial international arm). No account needed.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of published articles; you search topics/names, not a target's own systems. No subject data disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BBC News — an established, editorially-accountable news organisation; a reliable corroboration source, though any single report should still be cross-checked.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BBC",
+      "bbc.co.uk/news"
+    ],
     "tags": [
-      "news"
+      "news",
+      "verification"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bbc-news.md"
-  },
-  {
-    "id": "beautiful-news",
-    "name": "Beautiful News",
-    "description": "OSINT tool: Beautiful News.",
-    "url": "https://informationisbeautiful.net/beautifulnews/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/beautiful-news.md"
   },
   {
     "id": "bellingcat-s-online-investigation-toolkit-2",
@@ -264076,38 +263446,45 @@
   {
     "id": "control-validation-compass",
     "name": "Control Validation Compass",
-    "description": "Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques.",
+    "description": "Use when you have an attacker technique or a `document-id`-style detection/IOC and want related detections and offensive tests — returns rules and tests mapped to ATT&CK techniques.",
     "url": "https://controlcompass.github.io/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A searchable, ATT&CK-aligned repository of 10,000+ detection rules and 2,100+ offensive security tests for threat-modeling and purple-team work.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, publicly accessible aggregator hosted on GitHub Pages; no account. It links out to third-party rule/test repos.",
+    "opsec": "passive",
+    "opsecNote": "Passive research over public rule/test databases; you query techniques, not a target. Nothing about a subject is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by security practitioners (TropChaud / @IntelScott) under the ControlCompass GitHub org; it aggregates third-party content, so individual rules/tests carry their own authors' reliability.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Control Compass",
+      "controlcompass.github.io"
+    ],
     "tags": [
       "Search engines",
-      "Bugbounty/vulnerabilities search tools"
+      "Bugbounty/vulnerabilities search tools",
+      "threat-modeling"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/control-validation-compass.md"
   },
   {
@@ -274559,46 +273936,6 @@
     "_file": "library/tools/search-engines/kiddle.md"
   },
   {
-    "id": "kidoz-mobile-network-for-kids",
-    "name": "Kidoz Mobile Network for Kids",
-    "description": "Content discovery made for kids to ensure safe browsing",
-    "url": "https://kidoz.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/kidoz-mobile-network-for-kids.md"
-  },
-  {
     "id": "kidrex",
     "name": "KidRex",
     "description": "Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe results; little investigative edge over plain search.",
@@ -278242,42 +277579,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/newseum-today-front-pages.md"
-  },
-  {
-    "id": "newsinshorts",
-    "name": "Newsinshorts",
-    "description": "OSINT tool: Newsinshorts.",
-    "url": "http://newsinshorts.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news-digest-and-discovery-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/newsinshorts.md"
   },
   {
     "id": "newsnow",
@@ -287415,42 +286716,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/search-engines/sunxdcc.md"
-  },
-  {
-    "id": "superdesk",
-    "name": "Superdesk",
-    "description": "OSINT tool: Superdesk.",
-    "url": "https://www.superdesk.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news-digest-and-discovery-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/superdesk.md"
   },
   {
     "id": "superuser",
@@ -317983,45 +317248,48 @@
   {
     "id": "reddit-hacks-edoverflow",
     "name": "Reddit Hacks (EdOverflow)",
-    "description": "Collection of Reddit tricks and hacks.",
+    "description": "Use when you have a Reddit `username` and want a scripted way to pull their activity, plus assorted recon helpers — returns pointers/scripts for enumerating a profile.",
     "url": "https://github.com/EdOverflow/hacks",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Reference of Reddit investigation techniques",
+    "bestFor": "A small personal collection of recon shell scripts (including a Reddit user-history helper) to script simple enumeration.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source scripts on GitHub; no account. You run them yourself.",
+    "opsec": "passive",
+    "opsecNote": "The scripts hit public endpoints (e.g. Reddit's public JSON) — passive if you use a sock-puppet IP and do not authenticate. Review any script before running it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A personal \"random scripts\" repo (EdOverflow) with limited/old maintenance; treat it as example code to read and adapt, not a supported tool.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "EdOverflow hacks"
+    ],
     "tags": [
       "reddit",
       "reference",
       "techniques"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-hacks-edoverflow.md"
   },
   {
@@ -320707,54 +319975,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/social-networks/shotstars.md"
-  },
-  {
-    "id": "simplescraper-osint-airtable",
-    "name": "SimpleScraper OSINT (Airtable)",
-    "description": "Twitter OSINT scraping resources collated in Airtable.",
-    "url": "https://airtable.com/appyDhNeSetZU0rIw/shrceHfvukijgln9q/tblxgilU0SzfXNEwS/viwde4ACDDOpeJ8aO?blocks=bipxY3tKD5Lx0wmEU",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Reference set of Twitter scraping techniques",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter",
-      "scraping",
-      "reference"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "buffalo-police",
-      "san-francisco-copwatch-database"
-    ],
-    "_file": "library/tools/social-networks/simplescraper-osint-airtable.md"
   },
   {
     "id": "sinwindie-osint",
@@ -344422,48 +343642,6 @@
     "lastVerified": "2026-07-20",
     "enrichment": "full",
     "_file": "library/tools/transportation/kelley-blue-book-for-cars-united-states.md"
-  },
-  {
-    "id": "lefranz-geneva-dictators",
-    "name": "lefranz/geneva-dictators",
-    "description": "OSINT tool: lefranz/geneva-dictators.",
-    "url": "https://github.com/lefranz/geneva-dictators",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation",
-      "open-source",
-      "cli"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/lefranz-geneva-dictators.md"
   },
   {
     "id": "legrooms-for-google-flights",

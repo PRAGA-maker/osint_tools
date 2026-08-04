@@ -433,7 +433,7 @@ kind: group-index
 - **`reddit-downloader`** (medium) — Use when you have a Reddit `username` or subreddit and want to bulk-archive its media/posts — returns downloaded `image`s/videos and post `s
 - **`reddit-enhancement-suite-chrome`** (low) — Use when you are analyzing a Reddit `username` and want power-user tools — returns inline user tagging, account-age/karma visibility, and fa
 - **`reddit-enhancement-suite-firefox`** (low) — Use when you are working a `username` on Reddit and want persistent per-user tagging, inline history and never-ending browsing — returns an 
-- **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
+- **`reddit-hacks-edoverflow`** (low) — Use when you have a Reddit `username` and want a scripted way to pull their activity, plus assorted recon helpers — returns pointers/scripts
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
@@ -484,7 +484,6 @@ kind: group-index
 - **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
 - **`shabbat`** (high) — Use when you have a `name` or `username` for someone in the Jewish community and want to find their member profile and location on this soci
 - **`shotstars`** (medium) — Use when you have a GitHub repo or `username` and want to analyse its stargazers for fake/inflated stars and overlapping accounts — returns 
-- **`simplescraper-osint-airtable`** (low) — Twitter OSINT scraping resources collated in Airtable.
 - **`sinwindie-osint`** (high) — Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform 
 - **`skircle-me`** (high) — Use when you have a Bluesky `username`/handle and want to see who they interact with most — returns an interaction "circle" of their top ~49
 - **`skype-search-engine`** (high) — Use when you have a `username`, `email` or `name` and want to find a Skype account's profile, avatar and location — now largely historical a

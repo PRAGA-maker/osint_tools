@@ -266,7 +266,7 @@ kind: group-index
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
 - **`mksub`** (low) — Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for res
 - **`moartls-analyzer`** (low) — Use when you have a `domain`/web page and want to spot its non-secure (HTTP) links — returns a flagged list of insecure references on the pa
-- **`moz-link-explorer`** (low) — Analyse the links of any website.
+- **`moz-link-explorer`** (low) — Use when you have a `domain`/URL and want its backlink profile and linked/linking domains — returns linking `domain`s, anchor text and autho
 - **`mx-toolbox-blacklist-check`** (medium) — Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation 
 - **`mx-toolbox-email-header-analyzer`** (medium) — Use when you have raw email headers and want the sending path and originating IP — returns ip-address and geolocation.
 - **`mx-toolbox-reverse-ip-search`** (low) — Use when you have an `ip-address` and want its reverse-DNS (PTR) hostname to map it to a domain/host — returns domain and hosting leads.

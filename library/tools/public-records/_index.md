@@ -406,7 +406,7 @@ kind: group-index
 - **`home-comptroller-texas-gov`** (medium) — Use when you have a `name` or business and want Texas state financial records — returns entity/franchise-tax status, sales-tax permits, and 
 - **`homefacts-us`** (medium) — Use when you have a US `address` and want neighborhood/property intelligence — returns property details plus nearby registered offenders, ha
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
-- **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
+- **`human-development-reports`** (low) — Use when you need country-level human-development indicators for context on a place — returns HDI, poverty, gender and inequality indices fo
 - **`i-cyprus-com`** (high) — Use when you have a company or director `name` in Cyprus and want corporate-registry detail — returns directors, shareholders, secretaries, 
 - **`iaea-online-org`** (high) — Use when you need to find or verify a UK/international independent automotive engineer assessor by location/specialty — returns a matching p
 - **`ic-gc-ca`** (high) — Use when you have a Canadian federal company `name` or an `employer-org` link and want the official registry — returns corporate status, dir

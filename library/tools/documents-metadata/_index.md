@@ -42,7 +42,6 @@ kind: group-index
 - **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
-- **`cnet-technology-products-reviews`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
@@ -98,7 +97,6 @@ kind: group-index
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (medium) — Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s an
-- **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers
 - **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
 - **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
@@ -198,7 +196,6 @@ kind: group-index
 - **`street-drug-slang`** (low) — Use when you have intercepted text/chat and want to decode street-drug slang and code words — returns the DEA's reference mapping of slang t
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
-- **`techuk`** (low) — Online organization website providing information on computer and information technology occupations
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
 - **`textise-net`** (low) — convert the HTML code of a page to TXT
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL

@@ -111,7 +111,6 @@ kind: group-index
 - **`exhibit`** (low) — Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-ri
 - **`explainshell-com`** (low) — Use when you have an unfamiliar shell command (from a writeup, a log, or a tool's README) and want each flag explained — paste it, get a pla
 - **`extendclass`** (low) — Use when you have raw data or a token from an investigation (JSON/XML/CSV, a JWT, a base64 blob, a regex to test) and want to parse, decode 
-- **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
 - **`filevault`** (low) — Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec co
 - **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t

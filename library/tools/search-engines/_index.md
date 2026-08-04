@@ -78,8 +78,7 @@ kind: group-index
 - **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
 - **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
 - **`base`** (low) — Use when you have a `name` (or topic) and want scholarly publications and grey literature by or about a person — returns academic documents 
-- **`bbc-news`** (low) — OSINT tool: BBC News.
-- **`beautiful-news`** (low) — OSINT tool: Beautiful News.
+- **`bbc-news`** (low) — Use when you have a `name`, event or place and want reputable news coverage to corroborate it — returns published reporting, dates and named
 - **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
 - **`bespacific`** (medium) — Use when you have a topic, agency, or `name` tied to law/tech/government and want a curated, searchable feed of primary-source reporting on 
 - **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
@@ -139,7 +138,7 @@ kind: group-index
 - **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
 - **`context-menu-search`** (medium) — Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine
-- **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
+- **`control-validation-compass`** (low) — Use when you have an attacker technique or a `document-id`-style detection/IOC and want related detections and offensive tests — returns rul
 - **`copyright-search`** (low) — Use when you have a `domain`, `name` or `employer-org` and want to see copyright/DMCA complaints tied to it — returns complainant/sender det
 - **`core`** (low) — Use when you have a `name`, topic, or affiliation and want a subject's academic output — returns open-access papers, author affiliations and
 - **`criminology-wiki`** (medium) — Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to 
@@ -327,7 +326,6 @@ kind: group-index
 - **`keywordpeopleuse`** (low) — Use when you have a keyword/`name`/topic and want the real questions people ask about it across Google, Reddit, and Quora — returns clustere
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
 - **`kiddle`** (low) — Use when you want to see the child-safe, filtered web view of a topic or name — a kid-oriented Google Custom Search that shows what young us
-- **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
 - **`kids-search`** (low) — Kid-friendly search engine.
 - **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
@@ -398,7 +396,6 @@ kind: group-index
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mention
 - **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
-- **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated head
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
@@ -567,7 +564,6 @@ kind: group-index
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — Use when you have a filename/keyword and want to find files offered by XDCC bots on IRC — returns the network, bot, pack number, and filenam
-- **`superdesk`** (low) — OSINT tool: Superdesk.
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.

@@ -20,7 +20,6 @@ kind: group-index
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
 - **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
-- **`adblock-extension-chrome`** (low) — Add-on for Google Chrome that blocks Youtube and Facebook video ads
 - **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking
 - **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
@@ -40,7 +39,6 @@ kind: group-index
 - **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
 - **`apple-app-store`** (low) — Website that provides searches for apps for Apple iOS-type mobile devices
 - **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
-- **`apple-music-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
@@ -126,7 +124,6 @@ kind: group-index
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
-- **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
 - **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
 - **`firefox`** (low) — OSINT tool: Firefox.
@@ -158,7 +155,6 @@ kind: group-index
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Add-on for Google Chrome that alerts you if you enter your Google password into any non-Google page or form
-- **`google-photos-management-app-mobile-android`** (low) — App for mobile devices for managing and sharing photo media
 - **`google-play-movies-and-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
@@ -166,11 +162,9 @@ kind: group-index
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Add-on for Google Chrome that allows you to see translations of text directly on the webpage
 - **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
-- **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
-- **`hacker-vision-extension-chrome`** (low) — Add-on for Google Chrome that changes the background from white to black
 - **`hide-my-ass-proxy-website`** (low) — Anonymous browsing service provider
 - **`hipstamatic-camera-app-mobile-ios`** (low) — App for mobile devices for social networking and picture sharing
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
@@ -230,13 +224,11 @@ kind: group-index
 - **`mega`** (low) — OSINT tool: MEGA.
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
 - **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
-- **`microsoft-safety-and-security-center`** (low) — Information about online privacy, security websites, and programs, provided by Microsoft
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mozilla-firefox`** (low) — Internet browser program
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
-- **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Use when you want a lightweight, minimal-footprint web browser for a disposable/low-resource investigation VM — a small independent browser,
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
@@ -255,7 +247,6 @@ kind: group-index
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
-- **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
@@ -267,14 +258,12 @@ kind: group-index
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
-- **`plentyoffish-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
 - **`privacy-net`** (low) — Listing of privacy resources
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
-- **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
 - **`receive-sms-online-for-free`** (low) — Use when you (the investigator) need to receive an SMS verification code without using your real number — provides free shared public virtua
 - **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num
@@ -363,7 +352,6 @@ kind: group-index
 - **`tumblr-social-networking-app-mobile-android`** (low) — Use when you have a `username`/keyword and want to explore a subject's Tumblr blog, tags, and reblog network — returns `social-profile`, `as
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
-- **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
@@ -371,7 +359,7 @@ kind: group-index
 - **`uber-private-driver-app-mobile-ios`** (low) — App for mobile devices for searching for and communicating with private hire driving services
 - **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
-- **`ultrasurf-proxy-website`** (low) — Anonymous browsing service provider
+- **`ultrasurf-proxy-website`** (low) — Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
