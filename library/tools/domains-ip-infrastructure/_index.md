@@ -132,7 +132,7 @@ kind: group-index
 - **`dnsreaper`** (low) — Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` na
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links
-- **`domainbigdata`** (low) — OSINT tool: domainbigdata.
+- **`domainbigdata`** (low) — Use when you have a registrant `name`, `email` or `domain` and want the other domains and contact details tied to it — returns reverse-WHOIS
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
 - **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
@@ -270,7 +270,7 @@ kind: group-index
 - **`miteru`** (low) — Use when you want to hunt live phishing kits — it pulls suspicious `domain` URLs from phishing feeds and flags those exposing a downloadable
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
 - **`mksub`** (low) — Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for res
-- **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
+- **`moartls-analyzer`** (low) — Use when you have a `domain`/web page and want to spot its non-secure (HTTP) links — returns a flagged list of insecure references on the pa
 - **`moz-link-explorer`** (low) — Analyse the links of any website.
 - **`mx-toolbox-blacklist-check`** (medium) — Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation 
 - **`mx-toolbox-email-header-analyzer`** (medium) — Use when you have raw email headers and want the sending path and originating IP — returns ip-address and geolocation.
@@ -370,7 +370,7 @@ kind: group-index
 - **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
 - **`snyk-io`** (low) — Website Vulnerabilities Scanner
 - **`soc-multi-tool`** (low) — Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns V
-- **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
+- **`socradar-labs`** (low) — Use when you have a `domain`, `ip-address` or threat-actor name and want free threat-intel context — returns threat-actor profiles, digital-
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental

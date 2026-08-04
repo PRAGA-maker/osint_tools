@@ -66858,36 +66858,56 @@
   },
   {
     "id": "domainbigdata",
-    "name": "domainbigdata",
-    "description": "OSINT tool: domainbigdata.",
+    "name": "DomainBigData",
+    "description": "Use when you have a registrant `name`, `email` or `domain` and want the other domains and contact details tied to it — returns reverse-WHOIS domain lists plus registrant name/email/address.",
     "url": "https://domainbigdata.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reverse-WHOIS pivoting — finding every domain linked to a person's name, email or organisation.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web lookups (name/email/domain reverse WHOIS); no account required for basic searches.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries DomainBigData's own historical WHOIS database, not the registrant or their servers, so the subject is not alerted. Data reflects mostly pre-GDPR public WHOIS.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free reverse-WHOIS aggregator built on historical WHOIS records; strongest for domains registered before mass GDPR redaction (pre-2018), and any single record should be corroborated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "domainbigdata.com"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Domain/IP investigation",
+      "reverse-whois",
+      "whois"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domainbigdata.md"
   },
   {
@@ -69404,41 +69424,55 @@
   {
     "id": "goblob",
     "name": "goblob",
-    "description": "Enumerating Azure blob container exposure quickly",
+    "description": "Use when you have a target org/`domain` and want to find its publicly exposed Azure blob storage — returns discovered storage accounts, open containers and listed files.",
     "url": "https://github.com/Macmod/goblob",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "s3-blob-storage"
     ],
-    "bestFor": "Enumerating Azure blob container exposure quickly",
-    "input": "Target naming patterns and optional custom wordlists",
-    "output": "Discovered blob storage endpoints and access results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast enumeration of publicly readable Azure blob containers and files for a target organisation.",
+    "input": "Storage-account name guesses (derived from org/domain) and optional custom wordlists",
+    "output": "Discovered Azure storage accounts, publicly accessible containers, and listed blob files",
+    "selectorsIn": [
+      "domain",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT); install via `go install github.com/Macmod/goblob@latest`. No account needed.",
     "opsec": "active",
-    "opsecNote": "Sends direct requests to Azure storage endpoints during enumeration.",
+    "opsecNote": "goblob sends many direct requests to Azure storage endpoints for the target, which the target's cloud logging can record. It also warns it can burn bandwidth and rack up cloud costs — throttle goroutines/timeouts and only run against authorised targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source Go tool by Macmod on GitHub; auditable source, but a community project — verify the binary you install and its wordlists.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Macmod/goblob"
+    ],
+    "tags": [
+      "azure",
+      "blob-storage",
+      "cloud-enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/goblob.md"
   },
   {
@@ -76882,42 +76916,49 @@
   {
     "id": "moartls-analyzer",
     "name": "moarTLS Analyzer",
-    "description": "addon which check all links on the webpage and show list of non-secure links",
-    "url": "https://chrome.google.com/webstore/detail/moartls-analyzer/ldfbacdbackkjhclmhnjabngnppnkagh/related",
+    "description": "Use when you have a `domain`/web page and want to spot its non-secure (HTTP) links — returns a flagged list of insecure references on the page.",
+    "url": "https://chromewebstore.google.com/detail/moartls-analyzer/ldfbacdbackkjhclmhnjabngnppnkagh",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly flagging every non-HTTPS link/resource on a web page you are examining.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
+    "opsec": "active",
+    "opsecNote": "The extension inspects pages you load, so analysing a target site means your browser actually visits it — use a sock-puppet browser/VPN if the visit itself is sensitive. The analysis happens locally in your browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source extension by Eric Lawrence (ericlaw); source is on GitHub and auditable, though it is a small niche utility with little recent maintenance.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "moarTLS"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "browser-extension",
+      "tls"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/moartls-analyzer.md"
   },
   {
@@ -84139,37 +84180,50 @@
   {
     "id": "socradar-labs",
     "name": "SOCRadar LABS",
-    "description": "OSINT tool: SOCRadar LABS.",
+    "description": "Use when you have a `domain`, `ip-address` or threat-actor name and want free threat-intel context — returns threat-actor profiles, digital-footprint and exposure data.",
     "url": "https://socradar.io/labs/threat-actor/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Free lookups of threat-actor profiles and a domain/company's exposed digital footprint.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The LABS tools (threat-actor DB, digital footprint, etc.) are free and mostly need no account; the full SOCRadar platform is a paid enterprise product.",
+    "opsec": "passive",
+    "opsecNote": "You query SOCRadar's own intelligence datasets about a domain/actor, not the target's own infrastructure, so the subject is not directly touched. A free account may be requested for some tools.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial threat-intelligence vendor's free tools; profiles are vendor-compiled and marketing-adjacent, so corroborate specific indicators against primary sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SOCRadar Labs",
+      "socradar.io/labs"
+    ],
     "tags": [
-      "threat-actor-search"
+      "threat-actor-search",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/socradar-labs.md"
   },
   {
@@ -125730,35 +125784,49 @@
   {
     "id": "webcams-abroad-live-images",
     "name": "Webcams Abroad live images",
-    "description": "OSINT tool: Webcams Abroad live images.",
+    "description": "Use when you have a `geolocation`/`address` and want live webcams there — returns searchable, categorised public webcam feeds for visual confirmation of a place.",
     "url": "https://www.webcamsabroad.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching thousands of international public webcams by place and category to eyeball a location live.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and view all listed webcams; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view third-party public webcam feeds curated by the directory; there is no contact with any subject. Browse over a VPN as normal hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established (20-year-old) curated webcam directory listing only public, all-ages feeds; locations are curator/owner-supplied, so corroborate a scene against maps before relying on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "opentopia"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation-verification"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/webcams-abroad-live-images.md"
   },
   {
@@ -172423,44 +172491,50 @@
   {
     "id": "fake-company-name-generator",
     "name": "Fake Company Name Generator",
-    "description": "OSINT tool: Fake Company Name Generator.",
+    "description": "Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net's fake-identity toolkit).",
     "url": "https://fakeinfo.net/company-name-generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Inventing a believable fake company name to back an investigator sock-puppet or cover identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Purely generative — you produce a fictitious name locally; no target is queried and nothing about a subject is submitted. Use only to build YOUR cover, never to impersonate a real business.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free random-generator utility (FakeInfo.net); output is invented placeholder data with no factual claims to verify — the only caution is not to collide with a real registered company.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "fake-drivers-license-generator",
-      "fake-tiktok-profile-generator",
-      "fake-youtube-channel-generator",
       "fakeinfo",
-      "fakeinfo-net",
       "random-face-generator",
       "twitter-profile-generator"
     ],
+    "aliases": [
+      "FakeInfo Company Name Generator",
+      "fakeinfo.net company generator"
+    ],
+    "tags": [
+      "sock-puppet",
+      "fake-identity",
+      "cover-identity"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/fake-company-name-generator.md"
   },
   {
@@ -177882,40 +177956,6 @@
     "_file": "library/tools/opsec-investigator-tooling/match-social-networking-app-mobile-android.md"
   },
   {
-    "id": "matweb-info",
-    "name": "Matweb.info",
-    "description": "OSINT tool: Matweb.info.",
-    "url": "https://matweb.info/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/matweb-info.md"
-  },
-  {
     "id": "maxthon",
     "name": "Maxthon",
     "description": "Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — returns a browsing environment, not target data.",
@@ -180863,38 +180903,49 @@
   {
     "id": "receive-sms-online",
     "name": "Receive SMS Online",
-    "description": "OSINT tool: Receive SMS Online.",
+    "description": "Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared numbers and their inboxes.",
     "url": "http://receive-sms-online.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Getting a throwaway number to pass SMS verification when standing up an investigator sock-puppet account.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "selectorsOut": [
+      "phone"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free; no account needed. Numbers are shared/public and rotate frequently, so any given one may already be burned or blocked.",
+    "opsec": "active",
+    "opsecNote": "These numbers are PUBLIC — anyone can read the inbox, so never route codes for a real or sensitive account through them. They are for disposable sock-puppet signups only; many services (banks, WhatsApp) detect and reject virtual numbers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free public-SMS aggregator; numbers are shared, unreliable and often already blacklisted by major platforms. Treat as best-effort infrastructure, not a dependable service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "receive-sms-free-2"
     ],
+    "aliases": [
+      "receive-sms-online.com"
+    ],
+    "tags": [
+      "disposable-number",
+      "sock-puppet",
+      "sms-verification"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/receive-sms-online.md"
   },
   {
@@ -262684,38 +262735,50 @@
   },
   {
     "id": "abyznewslinks",
-    "name": "ABYZNewsLinks",
-    "description": "OSINT tool: ABYZNewsLinks.",
+    "name": "ABYZ News Links",
+    "description": "Use when you have a `geolocation`/`address` and want local news outlets covering it — returns a directory of newspapers, broadcasters and press agencies by country and region.",
     "url": "http://www.abyznewslinks.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the local newspapers and news media for a place, so you can search them for a person or event.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A static link directory — you browse a list of outlet URLs; nothing about your subject is submitted. The subsequent searches happen on the outlets' own sites.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running, manually curated directory of news outlets; links are hand-maintained so some rot over time, but the geographic organisation is reliable for finding local media.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ABYZNewsLinks",
+      "abyznewslinks.com"
+    ],
     "tags": [
-      "news"
+      "news",
+      "news-directory",
+      "local-media"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/abyznewslinks.md"
   },
   {

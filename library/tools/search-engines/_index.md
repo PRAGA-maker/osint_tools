@@ -31,7 +31,7 @@ kind: group-index
 - **`aboutus`** (low) — Use when you have a `domain` and want a legacy profile of a website/business — a wiki of site descriptions and contact info, now largely arc
 - **`abusech`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `d
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
-- **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
+- **`abyznewslinks`** (low) — Use when you have a `geolocation`/`address` and want local news outlets covering it — returns a directory of newspapers, broadcasters and pr
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
 - **`access-to-archival-databases`** (medium) — Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, 
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci

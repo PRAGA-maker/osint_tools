@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`bucketloot`** (low) — Use when you have an exposed cloud bucket URL (`domain`) and want to mine it — returns secrets, sensitive files, and extracted `email`/`doma
-- **`goblob`** (low) — Enumerating Azure blob container exposure quickly
+- **`goblob`** (low) — Use when you have a target org/`domain` and want to find its publicly exposed Azure blob storage — returns discovered storage accounts, open
 - **`lazys3`** (low) — Quick permutation-based S3 bucket name discovery
 - **`public-buckets`** (low) — Use when you have a `name`, `domain`, or keyword and want files leaking in open cloud storage — returns indexed public bucket objects with d
 - **`s3scanner`** (low) — Use when you have a target `domain`/organisation and want to find its open cloud storage buckets — returns exposed S3-compatible buckets and

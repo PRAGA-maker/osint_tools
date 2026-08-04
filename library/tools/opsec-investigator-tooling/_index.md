@@ -125,7 +125,7 @@ kind: group-index
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
 - **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
 - **`facebook-social-networking-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook,
-- **`fake-company-name-generator`** (low) — OSINT tool: Fake Company Name Generator.
+- **`fake-company-name-generator`** (low) — Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net'
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
@@ -243,7 +243,6 @@ kind: group-index
 - **`markmap`** (low) — Use when you have investigation notes in Markdown and want to turn them into an interactive mind map to see structure and gaps — an analysis
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
-- **`matweb-info`** (low) — OSINT tool: Matweb.info.
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
 - **`mcafee-anti-virus-for-pc`** (low) — Malware and virus detection and elimination program
 - **`mcafee-internet-security-for-mac`** (low) — Malware and virus detection and elimination program for Mac
@@ -305,7 +304,7 @@ kind: group-index
 - **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).
 - **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
 - **`receive-sms-online-for-free`** (low) — Use when you (the investigator) need to receive an SMS verification code without using your real number — provides free shared public virtua
-- **`receive-sms-online`** (low) — OSINT tool: Receive SMS Online.
+- **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num
 - **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
 - **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
