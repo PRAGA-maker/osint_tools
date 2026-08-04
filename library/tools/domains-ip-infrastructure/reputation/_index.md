@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`alienvault-open-threat-exchange`** (low) — Use when you have an `ip-address`, `domain`, URL, or file hash and want community threat-intel context — returns pulses and IOCs showing whe
-- **`bluecoat-webpulse`** (low) — URL categorization, website reputation filtering, malicious link detection
+- **`bluecoat-webpulse`** (low) — Use when you have a `domain`/URL and want its content category and reputation — returns the WebPulse classification and a route to dispute o
 - **`exonerator`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at the time — returns a yes/no with relay deta
 - **`fortiguard-reputation-service`** (low) — Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and an
 - **`google-safe-browsing-api`** (low) — Use when you have a `domain`/URL and want Google's verdict on whether it's flagged for malware, phishing, or unwanted software — returns a s

@@ -48282,40 +48282,6 @@
     "_file": "library/tools/documents-metadata/aware-online.md"
   },
   {
-    "id": "awesome-indexed",
-    "name": "Awesome-indexed",
-    "description": "OSINT tool: Awesome-indexed.",
-    "url": "http://awesome-indexed.mathew-davies.co.uk/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/awesome-indexed.md"
-  },
-  {
     "id": "awesome-open-source",
     "name": "Awesome Open Source",
     "description": "OSINT tool: Awesome Open Source.",
@@ -50345,41 +50311,54 @@
   {
     "id": "eventbrite-canada",
     "name": "Eventbrite (Canada)",
-    "description": "Website related to event management and ticket sales",
+    "description": "Use when you have a `name`/organisation and want their public events — returns organiser identity, venue/`address`, dates and attendee/associate signals.",
     "url": "https://www.eventbrite.ca",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's or group's public events and the organiser, venue, date and audience details attached to them.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search public events; buying a ticket costs money and is not needed for OSINT.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse public event listings; the organiser is not notified. Do NOT register/buy a ticket for a subject's event — that is contact, may expose your identity to the organiser, and could tip them off.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A legitimate global events platform (Canadian storefront); event details are organiser-supplied, so names, venues and times are claims to corroborate, and past events may be delisted.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Eventbrite Canada",
+      "eventbrite.ca"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "events"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/eventbrite-canada.md"
   },
   {
@@ -62470,42 +62449,53 @@
   },
   {
     "id": "bluecoat-webpulse",
-    "name": "BlueCoat WebPulse",
-    "description": "URL categorization, website reputation filtering, malicious link detection",
+    "name": "Symantec SiteReview (BlueCoat WebPulse)",
+    "description": "Use when you have a `domain`/URL and want its content category and reputation — returns the WebPulse classification and a route to dispute or check filtering.",
     "url": "https://sitereview.bluecoat.com/sitereview.jsp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "URL categorization, website reputation filtering, malicious link detection",
-    "input": "Website URL",
-    "output": "URL category, reputation rating, threat indicators, web content classification",
-    "selectorsIn": [],
+    "bestFor": "Checking how enterprise web filters categorise a site (e.g. malware, phishing, suspicious, adult) and its WebPulse reputation.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free lookup (a CAPTCHA gates queries); no account required.",
     "opsec": "passive",
-    "opsecNote": "Queries Blue Coat's cloud-based URL reputation database without directly probing targets.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Symantec's cloud reputation database, not the target site itself, so nothing is sent to the subject's server. A CAPTCHA appears per lookup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Symantec/Broadcom's Blue Coat WebPulse — a major enterprise web-filtering database; categorisation is authoritative for \"how corporate filters see this site,\" though a category is a classification, not proof of intent.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BlueCoat WebPulse",
+      "Symantec SiteReview",
+      "sitereview.bluecoat.com"
+    ],
+    "tags": [
+      "url-reputation",
+      "categorization",
+      "reputation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/bluecoat-webpulse.md"
   },
   {
@@ -64133,41 +64123,49 @@
   {
     "id": "checkshorturl",
     "name": "CheckShortURL",
-    "description": "Safe short-link destination checks",
+    "description": "Use when you have a shortened `domain`/link and want its real destination without clicking — returns the expanded URL, page title/preview and reputation flags.",
     "url": "https://checkshorturl.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "url-expanders"
     ],
-    "bestFor": "Safe short-link destination checks",
-    "input": "Shortened URL",
-    "output": "Expanded destination and warning context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Safely expanding a bit.ly/tinyurl/etc. short link to reveal its true destination before you (or your real IP) touch it.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, capped at ~120 requests/day; no account required.",
     "opsec": "passive",
-    "opsecNote": "Passively expands links before user navigation.",
+    "opsecNote": "CheckShortURL's server resolves the link, so YOUR IP/browser never hits the destination — important when a short link could be an IP-logger (e.g. Grabify) or malware. Note the destination server sees CheckShortURL's request, not you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A free link-expander that also aggregates third-party reputation (WOT, SiteAdvisor, Norton, Sucuri); the expansion is reliable, the reputation flags are advisory and only as current as those sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "checkshorturl.com"
+    ],
+    "tags": [
+      "url-expander",
+      "link-safety"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/url-expanders/checkshorturl.md"
   },
   {
@@ -89529,43 +89527,47 @@
   },
   {
     "id": "what-every-browser-knows-about-you",
-    "name": "What every Browser knows about you",
-    "description": "This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.",
+    "name": "What Every Browser Knows About You (Webkay)",
+    "description": "Use when you want to check what your own investigative browser leaks — returns the IP, coarse location, fingerprint, device and social-login signals any site can read.",
     "url": "https://webkay.robinlinus.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Self-auditing your investigator/sock-puppet browser to see what a visited site would learn about you.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open (by Robin Linus); no account required.",
+    "opsec": "passive",
+    "opsecNote": "This tests YOUR OWN browser, not a target — run it in the exact browser/VPN/container setup you use for an operation to confirm it isn't leaking your real IP, location, or that you're logged into personal accounts before you touch a target site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known open-source privacy-demonstration site; it reads only what any site can already read from your browser and doesn't retain it, so it's a safe self-check — its location/network guesses are approximate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Webkay",
+      "webkay.robinlinus.com"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Cookies analyze"
+      "browser-fingerprint",
+      "opsec-selfcheck"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/what-every-browser-knows-about-you.md"
   },
   {
@@ -176669,36 +176671,49 @@
   },
   {
     "id": "kasm",
-    "name": "Kasm",
-    "description": "OSINT tool: Kasm.",
+    "name": "Kasm Workspaces",
+    "description": "Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware and attribution off your real machine.",
     "url": "https://kasmweb.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Running a throwaway, containerised browser/desktop so risky sites (dark web, malware, IP-loggers) never touch your host or reveal your real identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free Community Edition (self-hosted, for individuals/nonprofits/testing) via Docker; paid tiers and a hosted service for teams/enterprise.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Kasm is defensive infrastructure — it isolates YOUR browsing in a disposable container that is destroyed after use, so malware and browser fingerprinting hit the container, not your host. Route the container's traffic through a VPN/proxy so the exit IP isn't your own; the container itself does not anonymise the network path by default.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "desktop-app",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely deployed commercial container-streaming platform with an open Community Edition; the software is reputable, but as with any self-hosted stack you are responsible for how you network and update it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Kasm",
+      "Kasm Workspaces",
+      "kasmweb.com",
+      "kasm.com"
+    ],
+    "tags": [
+      "disposable-browser",
+      "container-isolation",
+      "opsec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/kasm.md"
   },
   {

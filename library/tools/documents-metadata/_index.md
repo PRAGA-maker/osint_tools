@@ -37,7 +37,6 @@ kind: group-index
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
-- **`awesome-indexed`** (low) — OSINT tool: Awesome-indexed.
 - **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
@@ -80,7 +79,7 @@ kind: group-index
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
 - **`engage121`** (low) — Website offering social media content and publishing services
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
-- **`eventbrite-canada`** (low) — Website related to event management and ticket sales
+- **`eventbrite-canada`** (low) — Use when you have a `name`/organisation and want their public events — returns organiser identity, venue/`address`, dates and attendee/assoc
 - **`eventbrite-united-states`** (low) — Use when you have a `name`, `username`, or an event/organizer and want to find events a subject organized or attended — returns organizer pr
 - **`evite`** (low) — Website related to event invitation and party planning
 - **`evuln`** (low) — Use when you have a `domain` and want a free scan for injected malware, malicious redirects, or defacement — returns a compromise verdict fo

@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7129 total · 5949 full · 1180 stub (83% enriched)
+**Tools:** 7128 total · 5954 full · 1174 stub (83% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3132 · medium: 2033 · high: 1964
+low: 3131 · medium: 2033 · high: 1964
 
 ## Tools by trust
-community: 3444 · trusted: 1957 · unverified: 1722 · untrustworthy: 6
+community: 3446 · trusted: 1958 · unverified: 1718 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -19,8 +19,8 @@ community: 3444 · trusted: 1957 · unverified: 1722 · untrustworthy: 6
 - `communities-forums` — 255/285
 - `dark-web` — 57/93
 - `dating-classifieds` — 82/89
-- `documents-metadata` — 157/273
-- `domains-ip-infrastructure` — 491/629
+- `documents-metadata` — 158/272
+- `domains-ip-infrastructure` — 494/629
 - `email` — 246/246
 - `evidence-capture` — 22/28
 - `financial-crypto` — 80/94
@@ -28,7 +28,7 @@ community: 3444 · trusted: 1957 · unverified: 1722 · untrustworthy: 6
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 111/123
 - `messaging` — 182/184
-- `opsec-investigator-tooling` — 194/481
+- `opsec-investigator-tooling` — 195/481
 - `people-search` — 256/257
 - `phone` — 136/137
 - `public-records` — 925/988
@@ -51,7 +51,7 @@ community: 3444 · trusted: 1957 · unverified: 1722 · untrustworthy: 6
 - `library/tools/geolocation` — 318 leaves
 - `library/tools/communities-forums` — 282 leaves
 - `library/tools/people-search` — 247 leaves
-- `library/tools/documents-metadata` — 228 leaves
+- `library/tools/documents-metadata` — 227 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 182 leaves
 - `library/tools/messaging` — 169 leaves

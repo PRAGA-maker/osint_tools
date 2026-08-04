@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/url-expanders
 
 ## Skills here
-- **`checkshorturl`** (low) — Safe short-link destination checks
+- **`checkshorturl`** (low) — Use when you have a shortened `domain`/link and want its real destination without clicking — returns the expanded URL, page title/preview an
 - **`url-expander`** (low) — Use when you have an opaque shortened link (bit.ly, t.co, tinyurl, etc.) and want its true destination without clicking — returns the expand
 - **`where-does-this-link-go`** (low) — Use when you have a shortened or suspicious URL (`domain`) and want to see the full redirect chain and final destination without clicking it
 

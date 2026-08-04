@@ -439,7 +439,7 @@ kind: group-index
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a
 - **`what-cms`** (low) — Use when you have a `domain`/URL and want to identify its CMS and web tech stack — returns the detected platform, frameworks and hosting.
-- **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
+- **`what-every-browser-knows-about-you`** (low) — Use when you want to check what your own investigative browser leaks — returns the IP, coarse location, fingerprint, device and social-login
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
 - **`whatismyipaddress`** (low) — Use when you have an `ip-address` and want quick geolocation, ISP/hostname, and blacklist context — returns `geolocation`, `domain`, and net
 - **`whatruns`** (low) — Use when you have a `domain` and want to fingerprint the technologies running a website (CMS, analytics, CDN, plugins, fonts) — returns tech
