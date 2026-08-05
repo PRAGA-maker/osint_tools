@@ -101,7 +101,6 @@ kind: group-index
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
 - **`filevault`** (low) — Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec co
 - **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t
-- **`fotor`** (low) — OSINT tool: Fotor.
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
 - **`functions-online`** (low) — Use when you have an encoded/hashed string encountered mid-investigation (base64, url-encoded, md5, serialized PHP) and want to quickly tran
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
@@ -115,7 +114,6 @@ kind: group-index
 - **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr
-- **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — Use when you have a `username` (developer handle) or an app package name and want to pull an app's full Google Play listing, developer catal
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Use when you have a suspect body of text and want to judge whether it was AI-generated — returns an AI-probability score with sentence-level
@@ -244,7 +242,7 @@ kind: group-index
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries 
-- **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
+- **`rsa-encryption-decryption-and-prime-calculator`** (low) — Use when you have RSA key parameters (n, e, d, p, q) or ciphertext from a CTF/crypto artifact and want to encrypt, decrypt, or factor small 
 - **`s-i-g-i-t`** (low) — Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks,
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
@@ -294,7 +292,6 @@ kind: group-index
 - **`trace-labs-blog`** (high) — Use when you want missing-persons OSINT methodology, tooling and training — returns Trace Labs' articles, geolocation guides, VM releases an
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
 - **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co
-- **`uforio`** (low) — Generate word clouds from Reddit threads.
 - **`url-decoder-encoder`** (low) — Use when you have a percent-encoded URL/parameter and want to read or build it — returns the decoded/encoded string in the browser.
 - **`vedbex-com`** (low) — Use when you have an IP, domain, or Skype username/email/phone and want a free grab-bag of web/network lookup tools (traceroute, DNS, whois,
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s

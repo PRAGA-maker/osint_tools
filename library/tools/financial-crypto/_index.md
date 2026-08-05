@@ -59,7 +59,6 @@ kind: group-index
 - **`europa-eu`** (low) — Use when you are tracing a `crypto-wallet` in a criminal-finance context and want an authoritative methodology reference — returns Europol's
 - **`fdic-search`** (low) — Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, his
 - **`flowscan-org`** (low) — Use when you have a Flow blockchain `crypto-wallet` address (or tx hash) and want to trace its transactions, token holdings and NFT activity
-- **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
 - **`freebin-checker`** (low) — Use when you have a payment-card BIN (first 6–8 digits) and want to identify its issuing bank, country, and card type — returns issuer name,
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
 - **`iban-com`** (low) — Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) a

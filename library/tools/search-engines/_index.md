@@ -199,7 +199,7 @@ kind: group-index
 - **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
-- **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
+- **`find-who-events`** (low) — Use when you have a location and keywords and want to find public events (Facebook, Eventbrite, etc.) tied to that place — a pre-built Googl
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
 - **`firebounty`** (low) — Use when you have an `employer-org`/`domain` and want to know its bug-bounty or vulnerability-disclosure policy and in-scope assets — return
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr

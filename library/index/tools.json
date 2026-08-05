@@ -4362,40 +4362,6 @@
     "_file": "library/tools/ai-analysis-automation/flot.md"
   },
   {
-    "id": "fotor",
-    "name": "Fotor",
-    "description": "OSINT tool: Fotor.",
-    "url": "https://www.fotor.com/photo-editor-app/editor/basic",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/fotor.md"
-  },
-  {
     "id": "foxyrecon",
     "name": "FoxyRecon",
     "description": "Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from your Firefox context menu — returns pivots.",
@@ -5020,42 +4986,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/google-colaboratory.md"
-  },
-  {
-    "id": "google-developers-charts",
-    "name": "Google Developers: Charts",
-    "description": "OSINT tool: Google Developers: Charts.",
-    "url": "https://developers.google.com/chart",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/google-developers-charts.md"
   },
   {
     "id": "google-play-scraper",
@@ -12201,36 +12131,46 @@
   },
   {
     "id": "rsa-encryption-decryption-and-prime-calculator",
-    "name": "RSA encryption, decryption and prime calculator",
-    "description": "OSINT tool: RSA encryption, decryption and prime calculator.",
+    "name": "RSA Encryption, Decryption and Prime Calculator",
+    "description": "Use when you have RSA key parameters (n, e, d, p, q) or ciphertext from a CTF/crypto artifact and want to encrypt, decrypt, or factor small keys in-browser — an analysis utility, not a data source.",
     "url": "https://canihavesomecoffee.github.io/js-rsa-tool/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "In-browser RSA encrypt/decrypt and small-key prime factoring for CTF/crypto exercises.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source static web tool hosted on GitHub Pages; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It's a client-side JavaScript tool (runs in your browser), so parameters you enter aren't sent to a server — safe for scratch crypto work. Even so, never paste real private keys/secrets into any web tool; use it for CTF/test values.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small open-source JS RSA tool; fine for learning/CTF and small numbers, but not a substitute for a vetted crypto library on anything real.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [],
+    "aliases": [
+      "js-rsa-tool",
+      "RSA prime calculator"
+    ],
+    "tags": [
+      "crypto",
+      "ctf"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/rsa-encryption-decryption-and-prime-calculator.md"
   },
   {
@@ -14851,50 +14791,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ublock-origin.md"
-  },
-  {
-    "id": "uforio",
-    "name": "uforio",
-    "description": "Generate word clouds from Reddit threads.",
-    "url": "http://uforio.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "Visualizing dominant terms in a Reddit thread",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit",
-      "word-cloud",
-      "visualization"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/uforio.md"
   },
   {
     "id": "unxor",
@@ -34624,42 +34520,50 @@
   },
   {
     "id": "vizit-visual-reddit-browse-the-front-page-of-the-internet",
-    "name": "Vizit | Visual Reddit | browse the front page of the internet",
-    "description": "OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.",
+    "name": "Vizit (Visual Reddit)",
+    "description": "Use when you have a subreddit or community of interest and want to see which other subreddits it connects to (shared users/topics) as an interactive network graph — returns related communities to expand a Reddit investigation.",
     "url": "https://redditstuff.github.io/sna/vizit",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising how subreddits relate to one another as a network to find adjacent communities.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (CC BY-NC-SA) static web app hosted on GitHub Pages; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "A static visualisation of pre-computed subreddit relationships — you query the graph, not Reddit or any user, so it's fully passive and leaks nothing about a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source social-network-analysis project; the graph reflects a past snapshot of subreddit relationships, so treat it as a structural map, not live Reddit data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
+    "relatedTools": [],
+    "aliases": [
+      "Vizit Reddit",
+      "Visual Reddit"
     ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "reddit",
+      "social-network-analysis"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/vizit-visual-reddit-browse-the-front-page-of-the-internet.md"
   },
   {
@@ -36275,48 +36179,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/deep-search.md"
-  },
-  {
-    "id": "discounted-apple-products",
-    "name": "Discounted Apple Products",
-    "description": "OSINT tool: Discounted Apple Products.",
-    "url": "http://ceyt3r2jnxzufrtaqcbizjqkjte6cvxlsgxa3k2oxlzd27q7fi2r7qad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/discounted-apple-products.md"
   },
   {
     "id": "federal-bureau-of-investigations-value",
@@ -44860,46 +44722,6 @@
     "_file": "library/tools/documents-metadata/checking-mi-account.md"
   },
   {
-    "id": "chief-information-officers-council-united-states",
-    "name": "Chief Information Officers Council (United States)",
-    "description": "Online government website providing information on computer and information technology occupations",
-    "url": "https://cio.gov",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/chief-information-officers-council-united-states.md"
-  },
-  {
     "id": "cloudconvert",
     "name": "CloudConvert",
     "description": "Converts between some 100 different document and file formats and saves them in the cloud",
@@ -53274,46 +53096,6 @@
     "_file": "library/tools/documents-metadata/toolsley-analyze-file-format-online.md"
   },
   {
-    "id": "transitions-abroad",
-    "name": "Transitions Abroad",
-    "description": "Online guide to working, studying, traveling and living abroad",
-    "url": "http://www.transitionsabroad.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/transitions-abroad.md"
-  },
-  {
     "id": "truecaller",
     "name": "Truecaller",
     "description": "Use when you have a `phone` number and want a crowd-sourced caller-ID name — returns the name/label others have saved for that number plus carrier/region and spam reports.",
@@ -54558,42 +54340,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/about-rdap-org.md"
-  },
-  {
-    "id": "accuranker",
-    "name": "Accuranker",
-    "description": "OSINT tool: Accuranker.",
-    "url": "https://www.accuranker.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/accuranker.md"
   },
   {
     "id": "afrinic",
@@ -76493,84 +76239,100 @@
   },
   {
     "id": "scrape-api",
-    "name": "Scrape API",
-    "description": "Proxy API for Web Scraping",
-    "url": "https://www.scraperapi.com/?utm_source=google&utm_medium=cpc&utm_campaign=s_proxies_for_scraping_europe&utm_term=scrape%20api&gclid=Cj0KCQjw1dGJBhD4ARIsANb6OdnurtUihUJqiJpUAtwoPqsJ1X8lSio9etK9Mgcg-fb7qp23xUF2ZscaAqcvEALw_wcB",
+    "name": "ScraperAPI",
+    "description": "Use when you have a domain/URL you need to collect at scale and want a proxy API that rotates IPs, handles JS rendering and CAPTCHAs, and masks your origin — returns the target page's HTML/data without exposing your own IP.",
+    "url": "https://www.scraperapi.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fetching pages at scale through rotating proxies (with JS render / anti-bot handling) while hiding your own IP.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Freemium — a free tier grants a limited monthly credit allowance; higher volume, geotargeting, and concurrency require a paid plan.",
+    "opsec": "active",
+    "opsecNote": "ScraperAPI fetches the target FROM ITS OWN proxy pool, so the target sees ScraperAPI's IP, not yours — good for masking origin during bulk collection. But ScraperAPI itself sees every URL you fetch and the returned content, so don't route a sensitive investigation through it, and read their data-retention terms. Bulk scraping is active and may breach a site's ToS.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established commercial scraping-proxy vendor; reliable as infrastructure, but a third party that sees your requests — trust it as a proxy, not with sensitive query data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ScraperAPI",
+      "scraperapi.com"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "web-scraping",
+      "proxy",
+      "Domain/IP/Links"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/scrape-api.md"
   },
   {
     "id": "scrappy",
-    "name": "Scrappy!",
-    "description": "One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any elements matching the given criteria from a web page in a second.",
+    "name": "Scrappy",
+    "description": "Use when you have a web page/domain and want to point-and-click scrape structured data (links, text, tables) from it into a usable format fast — returns extracted page data to pivot from.",
     "url": "https://chrome.google.com/webstore/detail/scrappy/bcphfcbaecjifhiojhejdiogpanlmadm/related",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, easy point-and-click web scraping of a page's structured content from the browser.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Scraping runs in your browser against pages you load, so the only server-visible action is your normal page view — passive. For sensitive targets, load pages through a sock-puppet browser; rapid multi-page scraping can still trip rate limits/anti-bot and stand out, so pace it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party scraping extension; it introduces no external data source (it reads the page you're on), but vet its permissions before installing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Scrappy scraper"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "web-scraping",
+      "Domain/IP/Links"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/scrappy.md"
   },
   {
@@ -79603,45 +79365,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/testmy-net-internet-speed-test.md"
-  },
-  {
-    "id": "thale-s-cyberthreat-map",
-    "name": "Thale's Cyberthreat Map",
-    "description": "OSINT tool: Thale's Cyberthreat Map.",
-    "url": "https://cds.thalesgroup.com/en/cyberthreat/hitmap",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "live-cyber-threat-maps"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thales"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/thale-s-cyberthreat-map.md"
   },
   {
     "id": "the-information-laundromat",
@@ -102369,46 +102092,6 @@
     "lastVerified": "2026-08-05",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/flowscan-org.md"
-  },
-  {
-    "id": "follow-the-bitcoin-automating-osint-blogpost",
-    "name": "Follow the Bitcoin | Automating OSINT BLOGPOST",
-    "description": "OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.",
-    "url": "http://www.automatingosint.com/blog/2017/09/follow-the-bitcoin-with-python-blockexplorer-and-webhose-io",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/follow-the-bitcoin-automating-osint-blogpost.md"
   },
   {
     "id": "freebin-checker",
@@ -168498,46 +168181,6 @@
     "_file": "library/tools/opsec-investigator-tooling/maxthon.md"
   },
   {
-    "id": "meetup-social-networking-app-mobile-android",
-    "name": "MeetUp Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and meetings",
-    "url": "https://play.google.com/store/apps/details?id=com.meetup",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/meetup-social-networking-app-mobile-android.md"
-  },
-  {
     "id": "mega",
     "name": "MEGA",
     "description": "OSINT tool: MEGA.",
@@ -169377,25 +169020,26 @@
   },
   {
     "id": "osint-vm-inforensics",
-    "name": "osint-vm (Inforensics)",
-    "description": "Virtual machine for OSINT investigators with AI tools and agents.",
+    "name": "OSINT VM (Inforensics)",
+    "description": "Use when you want a pre-built, isolated investigation environment — a VM preloaded with OSINT tools (and AI agents) — so collection runs off your host and off your real identity; supports the whole workflow rather than returning selectors.",
     "url": "https://github.com/Inforensics/osint-vm",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Pre-built investigator VM with AI-assisted OSINT tooling",
+    "bestFor": "A ready-made, disposable virtual machine bundling OSINT tooling and AI agents for investigations.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source project on GitHub; you supply the host and a hypervisor (VirtualBox/VMware/etc.).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The whole point is OpSec — running collection inside a disposable VM keeps browser fingerprints, cookies, and downloaded files off your real machine and lets you snapshot/roll back after touching risky sites. It does NOT mask your IP by itself; route the VM's traffic through a VPN/Tor. Treat any bundled AI agents' data handling with care (don't feed them sensitive case data that leaves the VM).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "desktop-app",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "Community OSINT VM build (19 stars).",
+    "trustNote": "A community/vendor (Inforensics) GitHub project; inspect the build scripts and pinned tool versions before trusting it for real casework.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -169404,16 +169048,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vm",
-      "workstation",
-      "ai",
-      "setup"
+    "relatedTools": [],
+    "aliases": [
+      "Inforensics OSINT VM",
+      "osint-vm"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "investigation-environment",
+      "vm"
+    ],
+    "source": "gh-topic-osint-resources",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/osint-vm-inforensics.md"
   },
   {
@@ -169991,35 +169637,52 @@
   {
     "id": "paxful",
     "name": "Paxful",
-    "description": "OSINT tool: Paxful.",
+    "description": "Use when you have a Paxful trader username or a crypto lead and want to inspect a peer-to-peer bitcoin marketplace's public trader profiles, reputation, and offers — returns username/social-profile and crypto-wallet-adjacent context.",
     "url": "https://paxful.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Inspecting public P2P crypto-trader profiles, feedback, and offers on Paxful.",
+    "selectorsIn": [
+      "username",
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse public offers/profiles; trading requires a verified (KYC) account, which is a separate step you generally don't need for OSINT viewing.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing public trader profiles/offers is passive. Interacting (starting a trade, messaging a trader) is active, ties your account to the contact, and may require KYC — do that only from a sanctioned, well-documented sock-puppet, never your real identity. Never send funds to \"verify\" anything.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Paxful is a real, operating P2P crypto marketplace; its public profile/feedback data is user-generated and self-asserted, so treat identity claims as leads.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "paxful.com"
+    ],
+    "tags": [
+      "crypto",
+      "p2p-marketplace"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/paxful.md"
   },
   {
@@ -172070,46 +171733,6 @@
     "_file": "library/tools/opsec-investigator-tooling/smstome-com.md"
   },
   {
-    "id": "snapchat-messaging-app-mobile-ios",
-    "name": "Snapchat Messaging App (Mobile – iOS)",
-    "description": "App for mobile devices for social networking and messaging",
-    "url": "https://itunes.apple.com/ca/app/snapchat/id447188370?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/snapchat-messaging-app-mobile-ios.md"
-  },
-  {
     "id": "snapchat-social-networking-app-mobile-android",
     "name": "Snapchat Social Networking App (Mobile – Android)",
     "description": "Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map — returns social-profile and geolocation leads.",
@@ -172348,46 +171971,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-android.md"
-  },
-  {
-    "id": "soundhound-music-app-mobile-ios",
-    "name": "Soundhound Music App (Mobile – iOS)",
-    "description": "App for mobile devices for searching for and playing music",
-    "url": "https://itunes.apple.com/ca/app/soundhound-+-livelyrics-search/id355554941?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-ios.md"
   },
   {
     "id": "srware-iron",
@@ -173859,46 +173442,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/two-factor-authentication-list.md"
-  },
-  {
-    "id": "uk-government-internet-scams-webpage",
-    "name": "UK Government Internet Scams Webpage",
-    "description": "Listing and reporting of scam, fraud, hoax, and phishing types",
-    "url": "https://www.gov.uk/report-suspicious-emails-websites-phishing",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/uk-government-internet-scams-webpage.md"
   },
   {
     "id": "ultrasurf-proxy-website",
@@ -259044,43 +258587,51 @@
   {
     "id": "find-who-events",
     "name": "Find Who Events",
-    "description": "Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Eventective, #Nextdoor",
-    "url": "https://cse.google.com/cse?cx=017922636351918147428:v7m0tfgk6uj#gsc.tab=0",
+    "description": "Use when you have a location and keywords and want to find public events (Facebook, Eventbrite, etc.) tied to that place — a pre-built Google Custom Search Engine — returns event pages and geolocation/social-profile leads.",
+    "url": "https://cse.google.com/cse?cx=017922636351918147428:v7m0tfgk6uj",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Searching public event listings across event platforms by location and keyword via a Google CSE.",
     "selectorsIn": [
-      "face",
       "geolocation",
-      "image"
+      "name"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account required to run a query.",
+    "opsec": "passive",
+    "opsecNote": "It's a Google search over public event sites — you query Google, not the event organiser or attendees, so it's passive. Google logs the query to your session; use a clean/sock-puppet browser. Note a CSE is owned by a third party and can be edited or removed without notice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-built Google CSE that restricts search to event platforms; results are Google's (authoritative), but the site scope is the curator's choice and may drift.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "events Google CSE",
+      "find events by location"
+    ],
     "tags": [
-      "Search engines"
+      "meta-search",
+      "events"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/find-who-events.md"
   },
   {
@@ -326392,39 +325943,48 @@
   {
     "id": "flockwatch",
     "name": "FlockWatch",
-    "description": "OSINT tool: FlockWatch.",
+    "description": "Use when you have a corpus of collected social-media text (tweets/Reddit) and want it to surface trending or associated terms/usernames to expand your collection keywords — returns new terms/usernames to track, not personal identity data.",
     "url": "https://github.com/sjacks26/flockwatch",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Auto-discovering new keywords/terms/usernames to add to an ongoing social-media data collection.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python tool on GitHub; you run it against your own collected data (and supply any collection API keys separately).",
+    "opsec": "passive",
+    "opsecNote": "FlockWatch analyses text you have already collected — it does not touch a target, so it's passive. OpSec risk lives in the collection step it feeds (your Twitter/Reddit scraper), not here. Keep collected data secured; it may contain personal information.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "An academic/community research tool (by sjacks26) for social-media data collection workflows; small and auditable, but research-grade rather than productised.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation",
-      "open-source",
-      "cli"
+    "relatedTools": [],
+    "aliases": [
+      "flock watch"
     ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "socmint",
+      "keyword-discovery"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/flockwatch.md"
   },
   {
@@ -336936,46 +336496,6 @@
       "shipspotting-live-ais"
     ],
     "_file": "library/tools/transportation/ship-spotting.md"
-  },
-  {
-    "id": "shipais",
-    "name": "ShipAIS",
-    "description": "OSINT tool: ShipAIS.",
-    "url": "http://www.shipais.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/shipais.md"
   },
   {
     "id": "shipfinder",

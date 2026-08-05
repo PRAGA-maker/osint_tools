@@ -255,7 +255,7 @@ kind: group-index
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,
 - **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h
-- **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
+- **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — Use when you have a subreddit or community of interest and want to see which other subreddits it connects to (shared users/topics) as an int
 - **`vrbo`** (medium) — Use when you have a name or a location and want to check a vacation-rental platform for a host's listing — returns address-area, image and s
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
 - **`washington-times-news`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want US national/political news coverage and its searchable archive — retur

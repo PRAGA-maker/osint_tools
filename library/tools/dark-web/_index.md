@@ -31,7 +31,6 @@ kind: group-index
 - **`darkweb-archive`** (low) — Use when you have a `.onion` `domain` and want a preserved snapshot of the site's files — returns a downloadable ZIP of its HTML, CSS, JavaS
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
-- **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.

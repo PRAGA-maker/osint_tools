@@ -52,7 +52,6 @@ kind: group-index
 ## Skills here
 - **`aa419-fake-sites-database`** (low) — Use when you have a `domain` or an impersonated brand `name` and want to know if it is a catalogued scam/fake site — returns matching fraudu
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
-- **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of
 - **`aiodnsbrute`** (low) — Use when you have a domain and want to enumerate its live subdomains fast — returns domain (subdomains) and their ip-address records.
@@ -332,8 +331,8 @@ kind: group-index
 - **`ronin-recon`** (low) — Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findi
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerpr
-- **`scrape-api`** (low) — Proxy API for Web Scraping
-- **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
+- **`scrape-api`** (low) — Use when you have a domain/URL you need to collect at scale and want a proxy API that rotates IPs, handles JS rendering and CAPTCHAs, and ma
+- **`scrappy`** (low) — Use when you have a web page/domain and want to point-and-click scrape structured data (links, text, tables) from it into a usable format fa
 - **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne
 - **`search-censys-io`** (medium) — Use when you have a `domain` or `ip-address` and want its internet-facing infrastructure, certificates, and services — returns linked domain
 - **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
@@ -371,7 +370,6 @@ kind: group-index
 - **`technology-lookup`** (low) — Use when you have a `domain` and want to know its web tech stack — returns detected CMS, frameworks, analytics IDs, servers and libraries th
 - **`terms-of-service-didn-t-read`** (low) — Use when you have a service `domain` and want a plain-language, graded summary of what its terms and privacy policy actually do to users — r
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
-- **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`the-information-laundromat`** (low) — Use when you have a `domain` (or article URL/text) and want to find other sites sharing its content or infrastructure — returns linked `doma
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc

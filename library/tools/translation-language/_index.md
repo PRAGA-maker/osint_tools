@@ -30,7 +30,7 @@ kind: group-index
 - **`emojitranslate-com`** (low) — Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji s
 - **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
-- **`flockwatch`** (low) — OSINT tool: FlockWatch.
+- **`flockwatch`** (low) — Use when you have a corpus of collected social-media text (tweets/Reddit) and want it to surface trending or associated terms/usernames to e
 - **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
 - **`free-website-translation`** (low) — OSINT tool: Free Website Translation.
 - **`freetranslation`** (low) — OSINT tool: FreeTranslation.

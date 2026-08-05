@@ -33,7 +33,6 @@ kind: group-index
 - **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
-- **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
@@ -171,7 +170,6 @@ kind: group-index
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — Use when you have a file of unknown/mismatched type and want its true format — reads the binary signature in-browser and returns the actual 
-- **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
 - **`truth-or-fiction-search`** (low) — Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-che
 - **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 

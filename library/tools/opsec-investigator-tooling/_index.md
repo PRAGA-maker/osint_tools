@@ -158,7 +158,6 @@ kind: group-index
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
-- **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
 - **`mega`** (low) — OSINT tool: MEGA.
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
 - **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
@@ -175,7 +174,7 @@ kind: group-index
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
 - **`opera`** (low) — Use when you need a low-cost opsec browser for passive collection — its built-in free VPN and per-window profile isolation help mask your IP
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
-- **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
+- **`osint-vm-inforensics`** (low) — Use when you want a pre-built, isolated investigation environment — a VM preloaded with OSINT tools (and AI agents) — so collection runs off
 - **`osintbox`** (low) — Use when you want an OSINT-ready workstation fast — provisions a Parrot OS install with popular OSINT tools preinstalled (a setup script, no
 - **`osintlab`** (low) — Use when you have a fresh Kali workstation and want a ready recon toolkit — a bash installer that deploys ~50 OSINT tools (subdomain, email,
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
@@ -187,7 +186,7 @@ kind: group-index
 - **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
 - **`password-generator`** (low) — Password generator for creating strong passwords
 - **`password-safe`** (low) — Use when you need to store the many sock-puppet logins and credentials of an investigation in one encrypted local vault — returns secure, of
-- **`paxful`** (low) — OSINT tool: Paxful.
+- **`paxful`** (low) — Use when you have a Paxful trader username or a crypto lead and want to inspect a peer-to-peer bitcoin marketplace's public trader profiles,
 - **`pentoo-linux`** (low) — Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentes
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
@@ -227,12 +226,10 @@ kind: group-index
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`smstome-com`** (low) — Use when you need a free disposable phone number to receive an SMS verification code for a sock-puppet account — returns public temporary nu
-- **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
 - **`snapchat-social-networking-app-mobile-android`** (low) — Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map 
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
 - **`soundcloud-music-app-mobile-android`** (low) — Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, a
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
-- **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`srware-iron`** (low) — Use when you want a Chromium-based investigation browser with Google's phone-home telemetry stripped out — supports lower-noise sock-puppet 
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
@@ -262,7 +259,6 @@ kind: group-index
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
-- **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
