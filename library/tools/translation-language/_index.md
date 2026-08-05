@@ -54,7 +54,7 @@ kind: group-index
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s
 - **`online-slang-dictionary`** (low) — Use when you have an unfamiliar slang term, abbreviation, or coded phrase from a subject's posts/messages and want its meaning, register, an
-- **`online-translator`** (low) — OSINT tool: Online Translator.
+- **`online-translator`** (low) — Use when a subject's text is in a language you don't read and you want it translated — returns a machine translation of pasted text or a phr
 - **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
 - **`paulschou-binary-translator`** (low) — Use when you have an encoded string (binary, hex, octal, base64, ASCII/ANSI) and want to convert it to readable text or between formats — re
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms

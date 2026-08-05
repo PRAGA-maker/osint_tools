@@ -940,52 +940,6 @@
     "_file": "library/tools/ai-analysis-automation/awesome-incident-response.md"
   },
   {
-    "id": "awesome-lists-awesomelists-top",
-    "name": "Awesome Lists (awesomelists.top)",
-    "description": "Curated 'awesome' lists for programming languages/frameworks on GitHub.",
-    "url": "http://awesomelists.top",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "Discovering curated GitHub resource lists",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github",
-      "directory"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "awesomelists-top"
-    ],
-    "_file": "library/tools/ai-analysis-automation/awesome-lists-awesomelists-top.md"
-  },
-  {
     "id": "awesome-osint-mcp-servers",
     "name": "awesome-osint-mcp-servers",
     "description": "Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — returns a categorised directory of installable capabilities.",
@@ -10747,31 +10701,44 @@
   },
   {
     "id": "paterva-maltego",
-    "name": "Paterva / Maltego",
-    "description": "Complex OSINT investigations, threat intelligence analysis, relationship mapping",
+    "name": "Maltego (Paterva)",
+    "description": "Use when you have a seed selector (`email`, `domain`, `ip-address`, `name`, `phone`) and want to fan out and map its relationships across many data providers — returns a visual link graph of connected entities.",
     "url": "https://www.maltego.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Complex OSINT investigations, threat intelligence analysis, relationship mapping",
-    "input": "Multiple data types: profiles, domains, URLs, IPs, emails, phone numbers; 120+ data providers",
-    "output": "Visual relationship graphs, investigation reports, cross-correlations, real-time monitoring",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visual link-analysis of a subject across many data sources — mapping how emails, domains, people, and infrastructure connect.",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "ip-address",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain",
+      "ip-address",
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free Community Edition (account required) with capped transform results and no commercial use; paid Pro/Enterprise unlock more transforms, higher limits, and premium data providers.",
     "opsec": "active",
-    "opsecNote": "Primarily passive API queries; real-time monitoring component is more active",
+    "opsecNote": "Transforms query external data providers about your entities — many are passive OSINT lookups, but some touch the target's own infrastructure (DNS, ports, active checks), and the results pass through Maltego/provider servers. Run sensitive investigations with care over which transforms you fire, and use a controlled network.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "The de-facto standard OSINT link-analysis platform (originally Paterva); the tool is reputable, but output quality depends on which third-party transforms/data providers you enable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": true,
@@ -10779,13 +10746,23 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "maltego"
+      "maltego",
+      "opengraph-intel-ogi"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Paterva",
+      "Maltego CE",
+      "Maltego Community Edition"
+    ],
+    "tags": [
+      "link-analysis",
+      "graph",
+      "osint-platform",
+      "relationship-mapping"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/paterva-maltego.md"
   },
   {
@@ -42653,51 +42630,6 @@
     "_file": "library/tools/dating-classifieds/onlysearch-co.md"
   },
   {
-    "id": "onlysuomi",
-    "name": "OnlySuomi",
-    "description": "Finnish OnlyFans directory.",
-    "url": "https://onlysuomi.fi/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "Finding Finnish OnlyFans creators",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "FI"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "finland",
-      "adult"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/onlysuomi.md"
-  },
-  {
     "id": "onlytop-fr",
     "name": "OnlyTop (onlytop.fr)",
     "description": "Use when you have a `username`, `name`, or location and want to find a matching OnlyFans creator profile — returns `social-profile`, location, and content-category leads.",
@@ -52035,24 +51967,25 @@
   {
     "id": "printwhatyoulike",
     "name": "PrintWhatYouLike",
-    "description": "Program that helps you select and print selected portions of web pages online",
-    "url": "http://www.printwhatyoulike.com",
+    "description": "Use when you want to keep or print only selected parts of a web page — strip and edit a page to the content you care about, then save it as a clean PDF/print.",
+    "url": "https://www.printwhatyoulike.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Trimming a web page to just the relevant content and saving/printing it cleanly for records.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It loads the page in your own browser and lets you edit what to keep, so the target site sees your normal visit and the trimming happens client-side. Sock-puppet the browser if the visit must be non-attributable; for evidentiary use, also record the original URL and a hash.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running web utility; because you hand-edit what to keep, the output is a curated excerpt — note that when preserving it as a record.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -52061,18 +51994,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "pagezipper"
     ],
+    "aliases": [
+      "printwhatyoulike.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "useful-websites-tools-documents",
+      "print",
+      "readability"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/printwhatyoulike.md"
   },
   {
@@ -53722,38 +53659,45 @@
   },
   {
     "id": "textise-net",
-    "name": "Textise.net",
-    "description": "convert the HTML code of a page to TXT",
+    "name": "Textise",
+    "description": "Use when you have a cluttered web page and want just its text — strips a URL to plain text so you can read, copy, or preserve the content without layout/ads/scripts.",
     "url": "https://www.textise.net/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Reducing a web page to plain text for clean reading, copying, or lightweight archiving.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to strip pages to text; some convenience features may sit behind a paid tier, but core text extraction is free.",
+    "opsec": "passive",
+    "opsecNote": "You submit a public URL to Textise, which fetches and re-renders it — so the operator sees which page you processed, and the fetch comes from Textise's servers, not the target site logging you directly. Use a sock-puppet browser if the URL would reveal your case; do not run authenticated/private pages through it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running third-party utility; it re-renders the page, so verify the extracted text matches the original before relying on it as a record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "textise.net"
+    ],
     "tags": [
-      "Files"
+      "Files",
+      "text-extraction",
+      "readability"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/textise-net.md"
   },
   {
@@ -119610,35 +119554,52 @@
   {
     "id": "vdot-traffic-cams",
     "name": "VDOT Traffic Cams",
-    "description": "OSINT tool: VDOT Traffic Cams.",
+    "description": "Use when you have a `geolocation`/road in Virginia and want a live public traffic-camera view of it — returns real-time roadway camera feeds by location.",
     "url": "https://www.arcgis.com/apps/dashboards/a0d3fb34cda44f5b8b10be1b245f24a3",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Getting a live view of a specific Virginia road/interchange from public VDOT traffic cameras.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government data (Virginia Department of Transportation); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "These are public government traffic cameras — viewing them touches nobody's private space and does not alert any subject. Use a sock-puppet browser only if the location you are checking would reveal your case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Virginia Department of Transportation (VDOT); an authoritative first-party government source for Virginia roadway conditions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
+    "aliases": [
+      "511 Virginia cameras",
+      "Virginia DOT traffic cameras"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "traffic-cam",
+      "webcam",
+      "geolocation",
+      "virginia"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/vdot-traffic-cams.md"
   },
   {
@@ -162701,46 +162662,6 @@
     "_file": "library/tools/opsec-investigator-tooling/aol-explorer-for-windows-systems.md"
   },
   {
-    "id": "apple-app-store",
-    "name": "Apple App Store",
-    "description": "Website that provides searches for apps for Apple iOS-type mobile devices",
-    "url": "https://apps.apple.com/ca/charts/iphone",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/apple-app-store.md"
-  },
-  {
     "id": "apple-maps-app-mobile-ios",
     "name": "Apple Maps App (Mobile – iOS)",
     "description": "App for mobile devices for searches of mapping services",
@@ -167015,46 +166936,6 @@
     "_file": "library/tools/opsec-investigator-tooling/generate-sa-id-numbers.md"
   },
   {
-    "id": "genius-scan-tool-app-mobile-ios",
-    "name": "Genius Scan Tool App (Mobile – iOS)",
-    "description": "App for mobile devices for scanning documents into PDF format",
-    "url": "https://itunes.apple.com/ca/app/genius-scan-pdf-scanner/id377672876?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/genius-scan-tool-app-mobile-ios.md"
-  },
-  {
     "id": "geotagonline",
     "name": "GeoTagOnline",
     "description": "Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadata-exif` set.",
@@ -167360,40 +167241,6 @@
     "_file": "library/tools/opsec-investigator-tooling/gnunet.md"
   },
   {
-    "id": "gofoss-net",
-    "name": "gofoss.net",
-    "description": "OSINT tool: gofoss.net.",
-    "url": "https://gofoss.net/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/gofoss-net.md"
-  },
-  {
     "id": "google-analytics-opt-out-extension-chrome",
     "name": "Google Analytics Opt-Out Extension (Chrome)",
     "description": "Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity",
@@ -167520,42 +167367,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-dashboard-privacy-control-tool.md"
-  },
-  {
-    "id": "google-docs-voice-comments",
-    "name": "Google Docs Voice Comments",
-    "description": "simple trick to save time. Voice comments in GoogleDocs, Sheets, Slides, and Forms.",
-    "url": "https://chrome.google.com/webstore/detail/record-voice-comments-in/lbfofpndjldbnhnhibhmggblcbpoomon",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-docs-voice-comments.md"
   },
   {
     "id": "google-guide-to-removing-content-from-google",
@@ -167774,46 +167585,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-ios.md"
-  },
-  {
-    "id": "google-play-store",
-    "name": "Google Play Store",
-    "description": "Website that provides searches for apps for Android-type mobile devices",
-    "url": "https://play.google.com/store/apps?hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-play-store.md"
   },
   {
     "id": "google-search-app-mobile-ios",
@@ -168552,46 +168323,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/image-scrubber.md"
-  },
-  {
-    "id": "instagram-social-networking-app-mobile-android",
-    "name": "Instagram Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users",
-    "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/instagram-social-networking-app-mobile-android.md"
   },
   {
     "id": "intelbox-malwaredojo",
@@ -169514,46 +169245,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-android.md"
-  },
-  {
-    "id": "lexisnexis-accurint-investigation-support-app-mobile-ios",
-    "name": "LexisNexis Accurint Investigation Support App (Mobile – iOS)",
-    "description": "App for mobile devices for providing support services and information in support of investigations",
-    "url": "https://itunes.apple.com/us/app/lexisnexis-accurint-mobile/id437590816?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-ios.md"
   },
   {
     "id": "lightshot-screen-capture-add-on",
@@ -173292,40 +172983,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/send-text-free.md"
-  },
-  {
-    "id": "sendatext",
-    "name": "SendaText",
-    "description": "OSINT tool: SendaText.",
-    "url": "https://www.sendatext.co/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/sendatext.md"
   },
   {
     "id": "septor-linux",
@@ -177467,40 +177124,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/windows-event-collection.md"
-  },
-  {
-    "id": "windows-phone-imei-generator",
-    "name": "Windows Phone IMEI Generator",
-    "description": "OSINT tool: Windows Phone IMEI Generator.",
-    "url": "https://wpimeigenerator.github.io/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/windows-phone-imei-generator.md"
   },
   {
     "id": "winpatrol-os-monitoring-system",
@@ -259075,40 +258698,51 @@
   {
     "id": "disconnect-search",
     "name": "Disconnect Search",
-    "description": "OSINT tool: Disconnect Search.",
+    "description": "Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. DuckDuckGo) without personalization skew.",
     "url": "https://search.disconnect.me/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running un-personalized, privacy-preserving searches so results aren't shaped by your history or identity.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free privacy search front end; no account required.",
+    "opsec": "passive",
+    "opsecNote": "It reduces the personalization/tracking tied to your searches, giving results closer to a neutral \"logged-out\" view — but it is not anonymity. Your IP still reaches the provider; for real separation search from Tor or a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A privacy-search front end (by Disconnect) that passes queries to mainstream providers like DuckDuckGo; the results are the provider's, with reduced personalization.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-focused-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "disconnect"
     ],
+    "aliases": [
+      "search.disconnect.me"
+    ],
+    "tags": [
+      "privacy-focused-search-engines",
+      "private-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/disconnect-search.md"
   },
   {
@@ -330379,41 +330013,48 @@
   },
   {
     "id": "online-translator",
-    "name": "Online Translator",
-    "description": "OSINT tool: Online Translator.",
+    "name": "Online Translator (PROMT)",
+    "description": "Use when a subject's text is in a language you don't read and you want it translated — returns a machine translation of pasted text or a phrase (no subject PII).",
     "url": "https://www.online-translator.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly translating foreign-language text found in messages, posts, or documents during an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web translator (PROMT); paid apps/dictionaries exist, but web text translation is free.",
+    "opsec": "passive",
+    "opsecNote": "You paste text into a third-party translator, so the operator sees what you submit. Never paste sensitive PII, credentials, or confidential case details; translate only what you must, and for anything sensitive prefer an offline/local translation tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established commercial machine-translation service (PROMT); good for gist, but machine output can mistranslate idiom, slang, and named entities — corroborate anything decisive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "promt-free-online-translator"
     ],
+    "aliases": [
+      "online-translator.com",
+      "PROMT translator"
+    ],
+    "tags": [
+      "translation",
+      "language"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/online-translator.md"
   },
   {

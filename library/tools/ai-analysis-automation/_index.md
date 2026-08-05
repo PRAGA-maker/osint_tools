@@ -34,7 +34,6 @@ kind: group-index
 - **`awesome-hacking`** (low) — Use when you need to discover a technique or tool for a specific security/forensics task — returns a curated index of hacking tutorials, too
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
-- **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — Use when you need to discover a category of OSINT/recon tool (username enumeration, breach lookup, subdomain discovery) and want a vetted, c
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
@@ -220,7 +219,7 @@ kind: group-index
 - **`outwit`** (low) — Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages i
 - **`overview`** (medium) — Use when you have a large `document-id` set (leaks, FOIA dumps, PDFs) and want to search, cluster and tag them at scale — returns entities l
 - **`palladio`** (low) — Use when you have tabular relationship data (people, places, dates, links) and want to visualise it as a network graph, map, or timeline — a
-- **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
+- **`paterva-maltego`** (low) — Use when you have a seed selector (`email`, `domain`, `ip-address`, `name`, `phone`) and want to fan out and map its relationships across ma
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
 - **`perspective`** (low) — Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interacti
 - **`pgpkeyanalyser`** (low) — Use when you have a PGP/OpenPGP public key and want the identities baked into it — returns `name`, `email`, and key metadata (fingerprint, d

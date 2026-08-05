@@ -160,7 +160,7 @@ kind: group-index
 - **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
-- **`disconnect-search`** (low) — OSINT tool: Disconnect Search.
+- **`disconnect-search`** (low) — Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. Duck
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
 - **`document-search`** (low) — OSINT tool: Document Search.

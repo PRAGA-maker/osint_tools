@@ -143,7 +143,7 @@ kind: group-index
 - **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
 - **`powtoon-animation-program`** (low) — Program that creates and animates videos and presentations
 - **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 
-- **`printwhatyoulike`** (low) — Program that helps you select and print selected portions of web pages online
+- **`printwhatyoulike`** (low) — Use when you want to keep or print only selected parts of a web page — strip and edit a page to the content you care about, then save it as 
 - **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
@@ -174,7 +174,7 @@ kind: group-index
 - **`street-drug-slang`** (low) — Use when you have intercepted text/chat and want to decode street-drug slang and code words — returns the DEA's reference mapping of slang t
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
-- **`textise-net`** (low) — convert the HTML code of a page to TXT
+- **`textise-net`** (low) — Use when you have a cluttered web page and want just its text — strips a URL to plain text so you can read, copy, or preserve the content wi
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
 - **`the-time-now`** (low) — Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence an
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across

@@ -63,7 +63,6 @@ kind: group-index
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — Use when you have a `username`, `name`, `geolocation`, or `face` and want to find a matching OnlyFans creator — returns creator `social-prof
 - **`onlysearch-co`** (low) — Use when you have a `name`/`username` or physical traits and want to find a subject's OnlyFans presence — returns matching creator `social-p
-- **`onlysuomi`** (low) — Finnish OnlyFans directory.
 - **`onlytop-fr`** (medium) — Use when you have a `username`, `name`, or location and want to find a matching OnlyFans creator profile — returns `social-profile`, locatio
 - **`oodle-classified-advertisements-united-states`** (medium) — Use when you have a `geolocation` and keyword/`name` and want US classifieds across many sources at once — returns aggregated listings that 
 - **`oodle-online-classifieds`** (medium) — Use when you have a `name`, seller handle, or item and want classified listings across many sites at once — returns aggregated ads for cars,

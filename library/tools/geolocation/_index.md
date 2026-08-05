@@ -283,7 +283,7 @@ kind: group-index
 - **`us-crisis-monitor`** (medium) — Use when you have a `geolocation` or `address` in the US and want to know what protests, political violence, or armed-group activity was rec
 - **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.
 - **`usa-fishermap`** (low) — Use when you have a `geolocation` on a US freshwater body and want its bathymetry — returns a depth map (contours/spot depths) to support wa
-- **`vdot-traffic-cams`** (low) — OSINT tool: VDOT Traffic Cams.
+- **`vdot-traffic-cams`** (low) — Use when you have a `geolocation`/road in Virginia and want a live public traffic-camera view of it — returns real-time roadway camera feeds
 - **`ventusky-com`** (medium) — Use when you have a `geolocation` and a date/time and want to know the weather then — returns historical and forecast wind, rain, temperatur
 - **`viamichelin`** (medium) — Use when you need driving routes, distances, ETAs, and toll/fuel cost estimates between two places to test whether a journey or timeline is 
 - **`view-in-google-earth`** (medium) — Use when you have coordinates or a map view and want to open them in Google Earth (via a generated KML link) for 3D/historical-imagery inspe
