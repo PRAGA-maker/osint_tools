@@ -29,7 +29,6 @@ kind: group-index
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
-- **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
 - **`blogger`** (medium) — Use when you have a `name` or `username` and want to find a subject's personal blog or Blogger/Blogspot profile — returns `social-profile`, 
@@ -160,7 +159,7 @@ kind: group-index
 - **`onefootballforum-co-uk`** (low) — Use when you have a `username` active in UK football fandom and want their forum post history and interactions — returns posts, interests an
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
-- **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.
+- **`osint-communities-practitioners`** (low) — Use when you want to find OSINT expert communities, practitioner blogs, and tutorials — returns a curated GitHub directory of people and res
 - **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
 - **`parler-search`** (low) — Use when you have a `username` or `name` and want to find that person's Parler profile, posts, and hashtag activity — returns `social-profil
 - **`passion-com`** (low) — Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site

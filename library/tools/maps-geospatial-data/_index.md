@@ -7,7 +7,7 @@ kind: group-index
 # maps-geospatial-data
 
 ## Skills here
-- **`about-maps-and-satellites`** (low) — A guide to using map and satellite tools.
+- **`about-maps-and-satellites`** (low) — Use when you have a `geolocation`/`address` and need to choose the right mapping or satellite tool for it — returns a curated, categorized g
 - **`acled-armed-conflict-location-and-event-data-project`** (medium) — Use when you have a place and date range in a conflict/protest zone and want geolocated event data — returns geolocation and address-level e
 - **`active-agency-map`** (medium) — Use when you have a `geolocation` / region and want to see a community-curated Google My Map of agency locations plotted for it — returns `a
 - **`alltrails`** (medium) — Use when you have a subject's `username`/`name` or a location and want their recorded hikes/runs and photos — returns geolocation (trail act

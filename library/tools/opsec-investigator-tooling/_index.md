@@ -34,7 +34,6 @@ kind: group-index
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so 
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
-- **`anydo-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
 - **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
@@ -42,7 +41,6 @@ kind: group-index
 - **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
-- **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
 - **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
@@ -125,7 +123,6 @@ kind: group-index
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
-- **`google-chrome`** (low) — Web browser developed by Google
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
@@ -142,7 +139,6 @@ kind: group-index
 - **`hola-vpn`** (low) — Use when you want to change your apparent egress country for casual geo-unblocking — but note it is a peer-to-peer network with a poor priva
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
-- **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
 - **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
@@ -286,7 +282,6 @@ kind: group-index
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — Use when you have a `username`/keyword and want to explore a subject's Tumblr blog, tags, and reblog network — returns `social-profile`, `as
-- **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
@@ -319,7 +314,6 @@ kind: group-index
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
-- **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`yandex-browser`** (low) — OSINT tool: Yandex Browser.

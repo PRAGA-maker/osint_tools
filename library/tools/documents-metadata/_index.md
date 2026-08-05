@@ -87,7 +87,6 @@ kind: group-index
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (medium) — Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s an
-- **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
 - **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
 - **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
 - **`google-cloud-ocr`** (medium) — Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, inclu
@@ -153,7 +152,7 @@ kind: group-index
 - **`savefrom-net`** (low) — Use when you need to download and preserve a video from a social/media URL before it's deleted — paste the link and get a downloadable file 
 - **`savevideo-me`** (low) — Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/W
 - **`scan-qr-code`** (low) — Use when you have an `image` of a QR code (a photo of a poster, billboard, sticker) and want to decode it — returns the QR's embedded conten
-- **`scoop-it`** (low) — Publishing content services website
+- **`scoop-it`** (low) — Use when you have a `name`/`username` or a topic and want to find someone's publicly curated content pages — returns themed collections that
 - **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
 - **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.

@@ -7771,42 +7771,6 @@
     "_file": "library/tools/ai-analysis-automation/lucidchart.md"
   },
   {
-    "id": "mailbox",
-    "name": "Mailbox",
-    "description": "OSINT tool: Mailbox.",
-    "url": "https://mailbox.org",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/mailbox.md"
-  },
-  {
     "id": "mailvelope",
     "name": "Mailvelope",
     "description": "Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-end encryption.",
@@ -9917,42 +9881,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-harvester.md"
-  },
-  {
-    "id": "osint-search-tools",
-    "name": "Osint Search Tools",
-    "description": "Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...",
-    "url": "https://osint.hopain.cyou/index.html",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools collections/toolkits"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/osint-search-tools.md"
   },
   {
     "id": "osint-sh",
@@ -19954,37 +19882,50 @@
   {
     "id": "the-old-reader",
     "name": "The Old Reader",
-    "description": "OSINT tool: The Old Reader.",
-    "url": "http://theoldreader.com",
+    "description": "Use when you have a `domain`/blog or social feed and want to monitor its new posts over time — returns a chronological RSS/Atom feed reader for passive change-watching.",
+    "url": "https://theoldreader.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Aggregating and monitoring RSS/Atom feeds (blogs, news, forums) to watch a subject's or site's output over time.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier supports a limited number of subscriptions/folders; a low-cost Premium tier raises limits and adds features. Free account required to save feeds.",
+    "opsec": "passive",
+    "opsecNote": "Subscribing to a public RSS feed pulls content server-side via The Old Reader's infrastructure, so the target's site sees requests from the reader, not from you — a useful buffer. Your feed list is tied to your account, so use a sock-puppet registration for sensitive monitoring.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running independent RSS reader launched as a Google Reader replacement (2013); a stable, well-known service run by a small team, not a data vendor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "theoldreader.com"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "rss"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/the-old-reader.md"
   },
   {
@@ -22767,58 +22708,6 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "_file": "library/tools/communities-forums/babycenter.md"
-  },
-  {
-    "id": "before-reddit-optimize-a-post",
-    "name": "before reddit | optimize a post",
-    "description": "OSINT tool: before reddit | optimize a post.",
-    "url": "https://beforereddit.herokuapp.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "mmhdan",
-      "osm-finder",
-      "query-server",
-      "redditsearch",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/communities-forums/before-reddit-optimize-a-post.md"
   },
   {
     "id": "biggerpockets",
@@ -29841,24 +29730,27 @@
   {
     "id": "osint-communities-practitioners",
     "name": "OSINT-Communities-Practitioners",
-    "description": "List of OSINT practitioners, blogs, and tutorials.",
+    "description": "Use when you want to find OSINT expert communities, practitioner blogs, and tutorials — returns a curated GitHub directory of people and resources to learn from or follow.",
     "url": "https://github.com/The-Osint-Toolbox/OSINT-Communities-Practitioners",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Finding expert communities and learning resources",
+    "bestFor": "A curated index of OSINT practitioners, community hubs, and learning resources (including missing-persons/Trace Labs-adjacent work).",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account needed to read (a free GitHub login only if you want to star/fork).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public GitHub list is passive and touches no target. It is a resource-discovery index — the value is finding people and communities to learn from, not data on a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Curated community list (104 stars).",
+    "trustNote": "Curated by The OSINT Toolbox, a recognized community maintainer, with a public commit history and community following (~100+ stars); one curator's selection, updated periodically.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -29867,18 +29759,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "telegram-osint"
+    ],
+    "aliases": [
+      "The OSINT Toolbox Communities & Practitioners"
+    ],
     "tags": [
       "community",
       "blogs",
       "catalog"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "telegram-osint"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/osint-communities-practitioners.md"
   },
   {
@@ -48022,46 +47916,6 @@
     "_file": "library/tools/documents-metadata/github-search-engine.md"
   },
   {
-    "id": "gmx-mail",
-    "name": "GMX Mail",
-    "description": "All-in-one German webmail service that lets you manage all of your email accounts from one place",
-    "url": "http://www.gmx.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/gmx-mail.md"
-  },
-  {
     "id": "gogetfunding",
     "name": "GoGetFunding",
     "description": "Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and photos.",
@@ -52445,24 +52299,30 @@
   {
     "id": "scoop-it",
     "name": "Scoop.it",
-    "description": "Publishing content services website",
-    "url": "http://www.scoop.it",
+    "description": "Use when you have a `name`/`username` or a topic and want to find someone's publicly curated content pages — returns themed collections that reveal interests and linked sources.",
+    "url": "https://www.scoop.it",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a subject's public \"topic\" pages and the content they curate, exposing interests, sources, and linked profiles.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier lets you create and browse public topic pages; paid plans add analytics and private curation. Browsing existing public topics needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public Scoop.it topic page is passive and does not notify the curator. Creating/following requires an account tied to an identity — browse logged-out, or use a sock-puppet, to keep your interest in a subject private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established commercial content-curation platform (~15 years, millions of users); the platform is legitimate, but topic pages are user-generated, so treat their curated links as leads to verify at source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -52471,15 +52331,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Scoop.it content curation"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "content-curation",
+      "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/scoop-it.md"
   },
   {
@@ -60170,7 +60032,7 @@
   {
     "id": "csis-warfare-irregular-threats-and-terrorism-program",
     "name": "CSIS Warfare, Irregular Threats, and Terrorism Program",
-    "description": "Terrorism and threat analysis research",
+    "description": "Use when you need authoritative analysis or datasets on terrorism, extremist networks, and irregular warfare — returns reports, podcasts, and a US terrorism-incidents dataset.",
     "url": "https://www.csis.org/programs/warfare-irregular-threats-and-terrorism-program",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -60178,34 +60040,43 @@
       "terrorism-and-extremism",
       "research-centers"
     ],
-    "bestFor": "Terrorism and threat analysis research",
-    "input": "Research topics and reports",
-    "output": "Reports and analysis on terrorism and warfare",
+    "bestFor": "Vetted think-tank research and structured datasets on terrorism, extremist groups, and state/non-state irregular threats.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "All program articles, reports, podcasts, and datasets are published free on csis.org; no account required.",
     "opsec": "passive",
-    "opsecNote": "Passive access to public research",
+    "opsecNote": "Reading a public think-tank site; no target is queried and nothing is submitted. Only your own browsing (IP/referrer) is visible to CSIS — standard web hygiene applies, nothing about a subject is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Center for Strategic and International Studies is an established, non-partisan Washington DC research institution; the WITT program is led by named academics (Dr. Daniel Byman) and publishes sourced, editorially reviewed analysis and datasets.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CSIS WITT Program",
+      "Warfare, Irregular Threats, and Terrorism Program"
+    ],
+    "tags": [
+      "terrorism",
+      "research-center",
+      "threat-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/research-centers/csis-warfare-irregular-threats-and-terrorism-program.md"
   },
   {
@@ -78277,43 +78148,53 @@
   {
     "id": "sitediff",
     "name": "Sitediff",
-    "description": "Tracking site changes between snapshots for monitoring and QA",
+    "description": "Use when you have a `domain`/URL and want to detect what changed between two fetches — returns a highlighted diff of content and structural deltas for change-monitoring.",
     "url": "https://github.com/digininja/sitediff",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "discovery"
     ],
-    "bestFor": "Tracking site changes between snapshots for monitoring and QA",
-    "input": "Two URLs or snapshots to compare",
-    "output": "Diff output highlighting content and structural deltas",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Comparing two snapshots of a web page/site to spot content and structural changes over time.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Primarily compares fetched content; does not perform intrusive probing by design.",
+    "costNote": "Free and open-source (run locally); no account or key. You supply your own compute.",
+    "opsec": "active",
+    "opsecNote": "The tool fetches the target URL directly from wherever you run it, so the site's logs see your IP/user-agent on each pull. For sensitive monitoring, run it from a VPS/proxy or route through a puppet egress; the comparison itself is non-intrusive but the fetch is a real visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Authored by Robin Wood (digininja), a well-known security-tools developer (CeWL, DVWA); open-source on GitHub with public history, though this is a smaller utility than his flagship projects.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "cewl"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "digininja sitediff"
+    ],
+    "tags": [
+      "web-monitoring",
+      "change-detection",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/sitediff.md"
   },
   {
@@ -145445,14 +145326,14 @@
   },
   {
     "id": "about-maps-and-satellites",
-    "name": "About Maps and Satellites",
-    "description": "A guide to using map and satellite tools.",
+    "name": "About Maps and Satellites (Bellingcat Toolkit)",
+    "description": "Use when you have a `geolocation`/`address` and need to choose the right mapping or satellite tool for it — returns a curated, categorized guide to map/imagery resources.",
     "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Deciding which map, satellite, or historical-imagery tool fits a geolocation task, from Bellingcat's vetted toolkit.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -145460,35 +145341,40 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, openly published section of Bellingcat's Online Investigation Toolkit (hosted on GitBook); no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Reading a curated guide — no target is queried. The tools it points to have their own OpSec profiles; the guide itself leaks nothing about a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Bellingcat, a leading open-source investigation organization, as part of their widely used and regularly updated toolkit; entries are practitioner-vetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "maps"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bellingcat-meta-content-library",
       "bellingcat-s-online-investigation-toolkit-2",
       "china-related-resources",
       "license-plate-maps"
     ],
+    "aliases": [
+      "Bellingcat Maps and Satellites guide"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "maps"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/about-maps-and-satellites.md"
   },
   {
@@ -162593,46 +162479,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymox.md"
   },
   {
-    "id": "anydo-management-app-mobile-android",
-    "name": "Anydo Management App (Mobile – Android)",
-    "description": "App for mobile devices for managing and organizing tasks and lists",
-    "url": "https://play.google.com/store/apps/details?id=com.anydo",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/anydo-management-app-mobile-android.md"
-  },
-  {
     "id": "aol-explorer-for-windows-systems",
     "name": "AOL Explorer (for Windows systems)",
     "description": "Internet browser program Windows systems",
@@ -162927,46 +162773,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/autoregex.md"
-  },
-  {
-    "id": "avast-free-antivirus-for-pc-or-mac",
-    "name": "Avast! Free Antivirus (for PC or Mac)",
-    "description": "Malware and virus detection and elimination program",
-    "url": "https://www.avast.com/en-ca/index",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/avast-free-antivirus-for-pc-or-mac.md"
   },
   {
     "id": "avg-antivirus-for-mac",
@@ -167296,46 +167102,6 @@
     "_file": "library/tools/opsec-investigator-tooling/google-analytics-opt-out-extension-chrome.md"
   },
   {
-    "id": "google-chrome",
-    "name": "Google Chrome",
-    "description": "Web browser developed by Google",
-    "url": "http://www.google.com/chrome",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "web-browsers"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-chrome.md"
-  },
-  {
     "id": "google-dashboard-privacy-control-tool",
     "name": "Google Dashboard Privacy Control Tool",
     "description": "Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected devices — returns a self-review of your account's data footprint.",
@@ -168055,46 +167821,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/https-github-com-spyboy-productions-valid8proxy.md"
-  },
-  {
-    "id": "hulu-tv-app-mobile-android",
-    "name": "Hulu TV App (Mobile – Android)",
-    "description": "App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015",
-    "url": "https://play.google.com/store/apps/details?id=com.hulu.plus&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/hulu-tv-app-mobile-android.md"
   },
   {
     "id": "huron-osint",
@@ -175341,46 +175067,6 @@
     "_file": "library/tools/opsec-investigator-tooling/tumblr-social-networking-app-mobile-android.md"
   },
   {
-    "id": "tumblr-social-networking-mobile-ios",
-    "name": "Tumblr Social Networking (Mobile – iOS)",
-    "description": "App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download required",
-    "url": "https://itunes.apple.com/ca/app/tumblr/id305343404?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/tumblr-social-networking-mobile-ios.md"
-  },
-  {
     "id": "tunnelbear",
     "name": "TunnelBear",
     "description": "Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN with a free tier, for OpSec rather than target lookup.",
@@ -177059,49 +176745,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/windows-event-collection.md"
-  },
-  {
-    "id": "winpatrol-os-monitoring-system",
-    "name": "Winpatrol OS Monitoring System",
-    "description": "Program that protects against malware and malicious hacking by detecting changes to your device's operating system",
-    "url": "https://www.winpatrol.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "winpatrol-monitor-and-alert-program-windows"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/winpatrol-os-monitoring-system.md"
   },
   {
     "id": "yahoo-finance-app-mobile-android",
@@ -254954,46 +254597,6 @@
     "_file": "library/tools/search-engines/biznar.md"
   },
   {
-    "id": "blinde-kuh-childrens-search-engine-germany",
-    "name": "Blinde-Kuh Childrens Search Engine (Germany)",
-    "description": "German search engine for kids",
-    "url": "http://www.blinde-kuh.de",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/blinde-kuh-childrens-search-engine-germany.md"
-  },
-  {
     "id": "blogs-search-engine",
     "name": "Blogs Search Engine",
     "description": "Use when you have a `name`/`username`/keyword and want a person's blog posts — returns matching blog articles and author `social-profile`s.",
@@ -280809,42 +280412,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/toddington-online-research-cheat-sheets.md"
-  },
-  {
-    "id": "topix",
-    "name": "Topix",
-    "description": "OSINT tool: Topix.",
-    "url": "http://www.topix.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/topix.md"
   },
   {
     "id": "topuniversities",
@@ -309465,54 +309032,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/linkedin/raven.md"
-  },
-  {
-    "id": "react-reddit-search-app",
-    "name": "React Reddit Search App",
-    "description": "React-based Reddit search interface.",
-    "url": "https://react-reddit-search-app.web.app",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Searching Reddit content via a React UI",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit",
-      "search"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "better-reddit-search",
-      "geospy-2"
-    ],
-    "_file": "library/tools/social-networks/react-reddit-search-app.md"
   },
   {
     "id": "recover-fb-account",

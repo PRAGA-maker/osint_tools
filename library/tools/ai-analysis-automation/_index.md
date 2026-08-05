@@ -164,7 +164,6 @@ kind: group-index
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
 - **`lucidchart`** (low) — Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org
-- **`mailbox`** (low) — OSINT tool: Mailbox.
 - **`mailvelope`** (low) — Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-e
 - **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
 - **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
@@ -206,7 +205,6 @@ kind: group-index
 - **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
 - **`osint-framework-osint-dev-team`** (low) — Use when you have a `domain`, `ip-address`, `email`, `username` or `phone` and want a self-hosted service to run many recon modules and retu
 - **`osint-harvester`** (low) — Use when you have a `domain`/`ip-address`/URL and want a scripted collect-and-normalize of DNS, WHOIS, HTTP headers, and IP reputation into 
-- **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
 - **`osint-techniques`** (low) — Use when you need a technique reference or a vetted tool for a selector — returns methodology write-ups and a curated OSINT tools directory.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide

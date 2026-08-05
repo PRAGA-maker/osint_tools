@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/terrorism-and-extremism/research-centers
 
 ## Skills here
-- **`csis-warfare-irregular-threats-and-terrorism-program`** (low) — Terrorism and threat analysis research
+- **`csis-warfare-irregular-threats-and-terrorism-program`** (low) — Use when you need authoritative analysis or datasets on terrorism, extremist networks, and irregular warfare — returns reports, podcasts, an
 - **`institute-for-strategic-dialogue`** (low) — Extremism and conflict research
 - **`rand-terrorism-research`** (low) — Use when you have a group, actor `name`, or topic and want authoritative think-tank research and analysis on terrorism/extremism — returns d
 

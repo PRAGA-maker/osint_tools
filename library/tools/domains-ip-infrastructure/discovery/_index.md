@@ -13,7 +13,7 @@ kind: group-index
 - **`kraken`** (low) — Use when you have a set of `domain`/`ip-address` hosts to test and want to organise screenshots, notes and progress across a team — returns 
 - **`online-nikto-scanner`** (low) — Use when you have a `domain`/`ip-address` and want a quick server-security profile — returns identified server software, misconfigurations, 
 - **`shodan`** (low) — Use when you have an `ip-address`, `domain` or `employer-org` and want its internet-exposed devices/services — returns open ports, banners, 
-- **`sitediff`** (low) — Tracking site changes between snapshots for monitoring and QA
+- **`sitediff`** (low) — Use when you have a `domain`/URL and want to detect what changed between two fetches — returns a highlighted diff of content and structural 
 - **`urldna`** (low) — Use when you have a `domain`/URL and want a safe server-side scan of it — returns screenshot, resolved `ip-address`, TLS/tech details, and a
 - **`urlscan-io`** (low) — Use when you have a `domain`/URL or `ip-address` and want its scan history — returns screenshots, contacted domains/IPs, and page resources 
 - **`wappalyzer`** (low) — Use when you have a `domain`/website and want to fingerprint its technology stack — CMS, frameworks, analytics IDs, hosting — returning tech

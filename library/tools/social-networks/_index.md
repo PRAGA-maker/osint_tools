@@ -423,7 +423,6 @@ kind: group-index
 - **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
 - **`qzone`** (high) — Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` 
 - **`raditube`** (low) — Use when you have a phrase or claim and want to find where it was spoken across hundreds of radical/fringe YouTube channels — returns transc
-- **`react-reddit-search-app`** (low) — React-based Reddit search interface.
 - **`recruitryte-com`** (high) — Use when you have a `name` / role / `employer-org` and want a ready-made LinkedIn X-Ray Boolean string to run in Google — returns a search q
 - **`redarcs`** (high) — Use when you have a subreddit or Reddit `username` and want bulk downloadable archives of its submissions and comments — including removed/b
 - **`reddit-comment-lookup`** (high) — Use when you have a Reddit `username` and want to search that account's comment history (by keyword or in bulk) to profile interests, locati

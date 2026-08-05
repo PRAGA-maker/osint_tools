@@ -88,7 +88,6 @@ kind: group-index
 - **`bing-news`** (low) — Use when you have a `name`, org, or event and want news coverage as a second engine to Google — returns news articles, dates, and outlets th
 - **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
-- **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
 - **`blogs-search-engine`** (low) — Use when you have a `name`/`username`/keyword and want a person's blog posts — returns matching blog articles and author `social-profile`s.
 - **`blue-search`** (low) — Use when you want an alternative general web search engine (now rebranded GOOD, on the independent Brave index) to cross-check results a mai
 - **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
@@ -554,7 +553,6 @@ kind: group-index
 - **`thingful-net`** (low) — Use when you have a `geolocation` and want public IoT/sensor devices there (weather, air quality, energy, marine) plotted on a map — returns
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
 - **`toddington-online-research-cheat-sheets`** (medium) — Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PD
-- **`topix`** (low) — OSINT tool: Topix.
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — Use when you have a `name`, `username`, or keyword and want to search dozens of torrent indexes at once — returns torrent listings and uploa
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
