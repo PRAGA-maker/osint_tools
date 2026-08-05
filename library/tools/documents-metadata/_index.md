@@ -106,7 +106,6 @@ kind: group-index
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
 - **`kickstarter`** (medium) — Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, b
 - **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
-- **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mactech-apple-technology`** (low) — Use when you have an Apple device model/spec reference (from `metadata-exif` or a device string) and want to understand the hardware — retur
 - **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
@@ -131,7 +130,6 @@ kind: group-index
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
 - **`photosint-chrome-google-com`** (medium) — Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — re
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — Use when you (the investigator) are about to share an image and want to strip its EXIF metadata first — a Firefox add-on that removes embedd
-- **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
 - **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 
 - **`printwhatyoulike`** (low) — Use when you want to keep or print only selected parts of a web page — strip and edit a page to the content you care about, then save it as 
 - **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and

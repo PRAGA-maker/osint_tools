@@ -82,7 +82,7 @@ kind: group-index
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
-- **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
+- **`bigsearch`** (low) — Use when you have a search term (a `name`, `username`, phrase) and want to fire it across many search engines/sites fast — a browser add-on 
 - **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
 - **`bing-news`** (low) — Use when you have a `name`, org, or event and want news coverage as a second engine to Google — returns news articles, dates, and outlets th
 - **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
@@ -389,7 +389,7 @@ kind: group-index
 - **`oh-shint-osint-web-resources`** (medium) — Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real 
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
 - **`one-liner-osint`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want ready-made shell one-liners to enumerate it fast — returns copy-
-- **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
+- **`one-look-reverse-dictionary`** (low) — Use when you half-remember a word/term or need the right keyword for a search — describe the concept and get candidate words back to feed in
 - **`onet-pl-poland`** (low) — Use when your subject is Polish and you want local news, obituaries and web content in Polish — Poland's largest web portal, searchable for 
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
@@ -478,7 +478,7 @@ kind: group-index
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`scirp`** (low) — Use when you have an author `name` or research topic and want open-access papers published in SCIRP journals — returns document-id, employer
 - **`sdorker`** (low) — Use when you have a Google dork query and want the resulting page list from the terminal — returns URLs matching the dork (with optional bas
-- **`search-22`** (low) — access to 10+ ftp search tools from one page
+- **`search-22`** (low) — Use when you have a filename, document title or keyword and want to find it on public FTP/file-sharing servers — a one-page launcher for 10+
 - **`search-all`** (medium) — Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na

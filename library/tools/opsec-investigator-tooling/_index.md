@@ -85,7 +85,6 @@ kind: group-index
 - **`face-anonimyzer`** (low) — Use when you have your own `face`/`image` and want a synthetic look-alike for a sock-puppet avatar or to protect your identity — returns an 
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
-- **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
 - **`fake-company-name-generator`** (low) — Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net'
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
@@ -210,7 +209,6 @@ kind: group-index
 - **`septor-linux`** (low) — Use when you need a preconfigured Tor-routed live OS for anonymous OSINT work — returns a hardened Debian/KDE workstation that pushes all tr
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta
 - **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
-- **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
@@ -262,7 +260,7 @@ kind: group-index
 - **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
-- **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
+- **`washington-state-driver-s-license-generator`** (medium) — Use when you have a subject's `name` and `dob` and want to derive their Washington State driver's license number — returns a candidate `docu
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.

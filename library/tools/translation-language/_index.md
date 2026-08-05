@@ -70,7 +70,7 @@ kind: group-index
 - **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated
 - **`trans8it`** (low) — Use when you have text/SMS-speak or abbreviations and want plain English (or vice-versa) — a free web translator for "txt speak", chat slang
 - **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns
-- **`translate-com`** (low) — OSINT tool: Translate.com.
+- **`translate-com`** (low) — Use when you have foreign-language text (a bio, message, document snippet) and want it rendered in your working language — returns readable 
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Use when you hit an unfamiliar pop-culture reference, meme, or trope-derived handle and want it decoded — returns a crowd-written wiki expla
 - **`vizard-ai`** (low) — Use when you have a video/audio of a subject and want an AI transcript to search and quote what was said — a transcription tool, outputs tex

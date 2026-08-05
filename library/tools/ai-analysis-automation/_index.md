@@ -12,7 +12,7 @@ kind: group-index
 - **`php/`** — 1 skill(s) below.
 - **`virtual-machines/`** — 7 skill(s) below.
 - **`wordlist/`** — 4 skill(s) below.
-- **`xor/`** — 8 skill(s) below.
+- **`xor/`** — 7 skill(s) below.
 
 ## Skills here
 - **`a1-website-download`** (low) — Use when you have a `domain`/URL and want a complete offline mirror of a site for preservation and analysis — returns document-id, image, me
@@ -49,7 +49,6 @@ kind: group-index
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
 - **`chart-js`** (low) — Use when you have structured findings (timelines, frequencies, link counts) and want to render them as clean web charts — an open-source JS 
-- **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
 - **`cipherstick`** (low) — Use when you want to practise or teach OSINT investigation technique on realistic puzzles — returns browser-based training challenges, not c
@@ -154,7 +153,6 @@ kind: group-index
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
 - **`listify`** (low) — OSINT tool: Listify.
-- **`live-demo`** (low) — OSINT tool: Live demo.
 - **`localfocus`** (low) — OSINT tool: LocalFocus.
 - **`lockbin`** (low) — Use when you need to send sensitive findings/files to a recipient securely — returns an encrypted, browser-accessible message the recipient 
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi

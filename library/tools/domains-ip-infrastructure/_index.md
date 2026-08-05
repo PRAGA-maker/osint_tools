@@ -285,7 +285,6 @@ kind: group-index
 - **`nperf-com-map-5g`** (low) — Use when you have a `geolocation`/`address` and want to know which mobile operators have 5G there — returns crowdsourced 5G coverage by carr
 - **`nperf-com-map`** (low) — Use when you have a geolocation and want to see which cellular operators (2G/3G/4G/5G) have coverage there, backed by crowdsourced speed-tes
 - **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
-- **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab fo
 - **`openhunting-io`** (low) — Use when you have a `domain`/`ip-address` or a malware/threat-actor name and want threat-intelligence context — returns associated IOCs, ali
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso

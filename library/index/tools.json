@@ -1784,42 +1784,6 @@
     "_file": "library/tools/ai-analysis-automation/chart-js.md"
   },
   {
-    "id": "chatsecure",
-    "name": "Chatsecure",
-    "description": "OSINT tool: Chatsecure.",
-    "url": "https://chatsecure.org",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/chatsecure.md"
-  },
-  {
     "id": "cheat-sh",
     "name": "cheat.sh",
     "description": "Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands you run during an investigation.",
@@ -6920,49 +6884,6 @@
     "_file": "library/tools/ai-analysis-automation/justdeleteme.md"
   },
   {
-    "id": "kahu-converter-utilities",
-    "name": "Kahu Converter Utilities",
-    "description": "Mixed conversion and XOR utility operations on Windows",
-    "url": "https://www.kahusecurity.com/tools/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation",
-      "xor",
-      "windows"
-    ],
-    "bestFor": "Mixed conversion and XOR utility operations on Windows",
-    "input": "Binary blobs, hex strings, and text samples",
-    "output": "Converted data and decoded intermediate representations",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Runs locally on analyst systems without mandatory cloud processing.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "kahu-revelo"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/xor/windows/kahu-converter-utilities.md"
-  },
-  {
     "id": "kahu-revelo",
     "name": "Kahu Revelo",
     "description": "Use when you have obfuscated JavaScript (from a suspect page/link tied to a subject) and want to read what it really does — returns deobfuscated code and any decoded redirect `domain`s/URLs.",
@@ -7413,42 +7334,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/listify.md"
-  },
-  {
-    "id": "live-demo",
-    "name": "Live demo",
-    "description": "OSINT tool: Live demo.",
-    "url": "https://getprism.su",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/live-demo.md"
   },
   {
     "id": "localfocus",
@@ -36011,43 +35896,50 @@
   {
     "id": "deep-search",
     "name": "Deep Search",
-    "description": "OSINT tool: Deep Search.",
+    "description": "Use when you have a `name`, `username` or `email` and want to see where it appears across Tor hidden services — searches indexed .onion pages, returns onion links / `social-profile` leads.",
     "url": "http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword/selector search across indexed Tor (.onion) sites to find where a name, handle or email surfaces on the dark web.",
     "selectorsIn": [
+      "name",
       "username",
       "email"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account. Requires Tor Browser to reach the hidden service.",
+    "opsec": "active",
+    "opsecNote": "Reachable only over Tor — never load the onion address in a clearrealm browser or it will leak. Use Tor Browser (ideally on Tails/a VM). Searching a dark-web index is investigative but low-touch; still avoid entering identifiers that tie the query back to you, and treat any linked onion site as hostile (malware/illegal content) — do not click through carelessly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous-operator Tor search engine; coverage of the onion space is partial and its index freshness is unknown. Onion addresses rotate, so verify the current address (via a trusted dark-web link directory) before relying on this exact URL.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Deep Search onion"
+    ],
     "tags": [
       "darkweb",
       "Dark Web Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/deep-search.md"
   },
   {
@@ -48984,46 +48876,6 @@
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/line.md"
   },
   {
-    "id": "loseit",
-    "name": "Loseit!",
-    "description": "Website related to social networking in the form of health, wellness, and/or fitness",
-    "url": "https://www.loseit.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/loseit.md"
-  },
-  {
     "id": "lynxio-osint",
     "name": "Lynxio OSINT",
     "description": "Use when you have an `email`, `username`, `phone`, `ip-address`, or `domain` and want an aggregated multi-source lookup — returns linked accounts, breach hits, and a risk report.",
@@ -50871,46 +50723,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/social-networking/pinterest.md"
-  },
-  {
-    "id": "popurls",
-    "name": "Popurls",
-    "description": "Aggregator for trending and popular URLs on various social and news sites",
-    "url": "http://popurls.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/popurls.md"
   },
   {
     "id": "prezi",
@@ -72456,47 +72268,6 @@
     "_file": "library/tools/domains-ip-infrastructure/ooni-explorer.md"
   },
   {
-    "id": "open-link-structured-data-sniffer",
-    "name": "Open Link Structured Data Sniffer",
-    "description": "View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata RSS",
-    "url": "https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Source Code Analyzes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/open-link-structured-data-sniffer.md"
-  },
-  {
     "id": "open-multiple-links-one-click",
     "name": "Open Multiple Links ☷ One Click",
     "description": "Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab for fast batch review.",
@@ -81428,41 +81199,50 @@
   {
     "id": "visual-site-mapper",
     "name": "Visual Site Mapper",
-    "description": "Generating website structure maps",
+    "description": "Use when you have a `domain` and want a fast visual map of its internal link structure and connected pages — returns a `domain` link graph to spot hidden sections.",
     "url": "https://github.com/alentum/sitemapper-nodejs",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Generating website structure maps",
-    "input": "Domain or URL seed",
-    "output": "Crawl graph and site map structure",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quickly visualising a website's internal page structure and interlinking to find sections that aren't in the main navigation.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Actively crawls target pages and generates repeated requests.",
+    "costNote": "Free hosted service (visualsitemapper.com); source is open (AGPL-3.0) if you want to self-host with Node.js/MongoDB.",
+    "opsec": "passive",
+    "opsecNote": "Using the hosted service is passive for you — visualsitemapper.com's servers crawl the target, so the requests come from the service, not your IP. Note this still hits the target site; if you SELF-HOST the Node crawler, the crawl originates from your machine (active) — run it from an attributable-to-nobody VPS.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (alentum) with a public hosted instance; it renders a link graph from a live crawl, so results reflect the site at query time rather than any stored dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "visualsitemapper.com",
+      "Site Mapper"
+    ],
+    "tags": [
+      "Domain/IP investigation",
+      "website-structure"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/visual-site-mapper.md"
   },
   {
@@ -99216,43 +98996,56 @@
   {
     "id": "a-ton-of-privacy",
     "name": "A TON of Privacy",
-    "description": "Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.",
+    "description": "Use when you have a Telegram `username`/`phone` (+888) or a `.ton` domain and want the owner's TON wallet, balance, scam status and NFTs — returns `crypto-wallet`, `associate`, `image`.",
     "url": "https://github.com/aaarghhh/a_TON_of_privacy",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "De-anonymising a Telegram identity (nickname / +888 number / .ton domain) into its owning TON wallet and NFT holdings.",
     "selectorsIn": [
-      "crypto-wallet",
+      "username",
       "phone",
-      "username"
-    ],
-    "selectorsOut": [
+      "domain",
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). Runs on your machine against public TON/Fragment endpoints at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Plain lookups read public TON blockchain / Fragment data and do not notify the target. The optional Telegram-account pivot authenticates to Telegram with YOUR credentials — use a dedicated sock-puppet account and the TOR proxy flag for that mode, never your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community OSS by researcher @aaarghhh, actively developed (v0.2.x). Reads authoritative on-chain TON data, so wallet/balance results are verifiable on a block explorer.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "ATOP",
+      "a_TON_of_privacy"
+    ],
     "tags": [
-      "Cryptocurrencies"
+      "Cryptocurrencies",
+      "telegram",
+      "ton"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/a-ton-of-privacy.md"
   },
   {
@@ -103455,43 +103248,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/token-view.md"
-  },
-  {
-    "id": "tradint-research-tool",
-    "name": "Tradint Research Tool",
-    "description": "OSINT tool: Tradint Research Tool.",
-    "url": "https://tradint.io/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "tradeint"
-    ],
-    "_file": "library/tools/financial-crypto/tradint-research-tool.md"
   },
   {
     "id": "wallet-explorer",
@@ -164175,46 +163931,6 @@
     "_file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-android.md"
   },
   {
-    "id": "facebook-messenger-app-mobile-ios",
-    "name": "Facebook Messenger App (Mobile – iOS)",
-    "description": "App for mobile devices for messaging services related to Facebook",
-    "url": "https://itunes.apple.com/ca/app/messenger/id454638411?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-ios.md"
-  },
-  {
     "id": "fake-company-name-generator",
     "name": "Fake Company Name Generator",
     "description": "Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net's fake-identity toolkit).",
@@ -170858,46 +170574,6 @@
     "_file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md"
   },
   {
-    "id": "similarsites-firefox",
-    "name": "SimilarSites – Firefox",
-    "description": "Firefox extension for locating similar sites.",
-    "url": "https://addons.mozilla.org/en-US/firefox/addon/similarsites",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/similarsites-firefox.md"
-  },
-  {
     "id": "simplelogin",
     "name": "SimpleLogin",
     "description": "Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an investigator OpSec tool, not a lookup.",
@@ -173570,36 +173246,51 @@
   },
   {
     "id": "washington-state-driver-s-license-generator",
-    "name": "Washington State Driver's License Generator",
-    "description": "OSINT tool: Washington State Driver's License Generator.",
+    "name": "Washington State Driver's License Number Generator",
+    "description": "Use when you have a subject's `name` and `dob` and want to derive their Washington State driver's license number — returns a candidate `document-id` (WA DL number).",
     "url": "https://mmarvick.github.io/wa-drivers-license/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reconstructing or validating a Washington State DL number, which WA encodes deterministically from a person's name and date of birth.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static web page; no account, no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs entirely client-side in your browser (a GitHub Pages static app) — the name/DOB you enter are not sent to any server, so nothing about the subject leaves your machine. Still enter data in a clean browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Community project implementing WA's publicly-documented DL check-digit/encoding scheme (adapted from Marist College's Identification Numbers materials). Output is an algorithmic prediction, not a state record — verify against an authoritative source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "WA drivers license generator",
+      "Washington DL number tool"
+    ],
+    "tags": [
+      "document-id",
+      "identification-numbers"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/washington-state-driver-s-license-generator.md"
   },
   {
@@ -206810,43 +206501,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/public-records/data-gov-uk.md"
-  },
-  {
-    "id": "data-sets-oh-shint",
-    "name": "Data Sets - OH SHINT",
-    "description": "OSINT tool: Data Sets - OH SHINT.",
-    "url": "https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/data-sets",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "oh-shint-osint-web-resources"
-    ],
-    "_file": "library/tools/public-records/data-sets-oh-shint.md"
   },
   {
     "id": "database-of-suspected-terrorists",
@@ -251313,38 +250967,48 @@
   {
     "id": "bigsearch",
     "name": "BigSearch",
-    "description": "Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, translators and much more.",
+    "description": "Use when you have a search term (a `name`, `username`, phrase) and want to fire it across many search engines/sites fast — a browser add-on that switches one query between 60+ engines.",
     "url": "https://github.com/garywill/BigSearch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Running a single query across dozens of search engines and specialist sites without retyping — fast multi-engine pivoting.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (AGPL-3.0). Installable from the Chrome/Firefox stores or runnable as a web app.",
+    "opsec": "passive",
+    "opsecNote": "The add-on only rewrites your search into each engine's URL — you still hit each search engine directly from your own browser/IP. Use a sock-puppet browser profile and a clean IP so your multi-engine pivots aren't tied to you, exactly as with any manual search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Open-source (AGPL) project by developer garywill with published Chrome and Firefox store listings; it's a query router, so it holds no data of its own — trust rests on the destination engines.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Big Search"
+    ],
     "tags": [
       "Search engines",
       "Universal search tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bigsearch.md"
   },
   {
@@ -268520,38 +268184,45 @@
   },
   {
     "id": "one-look-reverse-dictionary",
-    "name": "One Look Reverse Dictionary",
-    "description": "OSINT tool: One Look Reverse Dictionary.",
-    "url": "http://www.onelook.com/reverse-dictionary.shtml",
+    "name": "OneLook Reverse Dictionary",
+    "description": "Use when you half-remember a word/term or need the right keyword for a search — describe the concept and get candidate words back to feed into other OSINT searches.",
+    "url": "https://www.onelook.com/reverse-dictionary.shtml",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a vague description (\"word for someone who makes barrels\") or a wildcard pattern into concrete search terms and keywords.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query a generic dictionary service with concepts, not target identifiers — no OSINT subject data is exposed as long as you enter descriptions rather than case-specific PII. Nothing links the query to your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running, well-known word-lookup service (OneLook) drawing on Wiktionary/Wikipedia and many dictionaries; a research aid, not a source of OSINT records.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OneLook",
+      "Reverse Dictionary"
+    ],
     "tags": [
       "keywords-discovery-and-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/one-look-reverse-dictionary.md"
   },
   {
@@ -273547,39 +273218,48 @@
   },
   {
     "id": "search-22",
-    "name": "Search 22",
-    "description": "access to 10+ ftp search tools from one page",
+    "name": "Search-22 FTP Search Tools",
+    "description": "Use when you have a filename, document title or keyword and want to find it on public FTP/file-sharing servers — a one-page launcher for 10+ FTP/file search engines.",
     "url": "https://search-22.com/ftp-search-tools",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Hunting exposed files (documents, media, leaked material) across public FTP indexers from a single directory page.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory page linking to free FTP/file-search engines; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "The page itself is just links — you don't reveal anything by loading it. Exposure begins when you query a destination FTP indexer, which sees your search term and IP. Use a sock-puppet browser/VPN for the actual file searches and never download unknown files onto your investigative machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running curated directory (Search-22.com, active since 2002); it aggregates third-party FTP indexers whose coverage and freshness vary — verify any file you find directly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Search 22",
+      "Search-22"
+    ],
     "tags": [
       "Search engines",
       "Filesharing Search Engines"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-22.md"
   },
   {
@@ -327010,37 +326690,45 @@
   {
     "id": "translate-com",
     "name": "Translate.com",
-    "description": "OSINT tool: Translate.com.",
+    "description": "Use when you have foreign-language text (a bio, message, document snippet) and want it rendered in your working language — returns readable translated text for further analysis.",
     "url": "https://www.translate.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quick free machine translation of short foreign-language OSINT snippets (profile bios, posts, captions) into a language you can act on.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free machine translation for text with a per-request character cap; human/professional translation and higher volumes are paid. The free tier is enough for reading bios, posts and short messages.",
+    "opsec": "passive",
+    "opsecNote": "You paste the target's text into a third-party US service — the content leaves your control and may be logged. Never paste sensitive case identifiers, full documents, or anything that would tip off the subject. Strip names/identifiers where the translation doesn't need them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial translation service; machine output is broadly reliable for gisting but not a certified/authoritative translation — verify anything decision-critical with a second engine or a human.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "emojitranslate-com"
+    ],
+    "aliases": [
+      "translate.com"
+    ],
     "tags": [
       "translation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/translate-com.md"
   },
   {
