@@ -27,7 +27,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- geodesics-on-the-earth
 aliases:
 - Academo Spectrum Analyzer
 - Audio Spectrum Analyzer

@@ -8355,7 +8355,9 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "geodesics-on-the-earth"
+    ],
     "aliases": [
       "Academo Spectrum Analyzer",
       "Audio Spectrum Analyzer"
@@ -85786,40 +85788,50 @@
   {
     "id": "zscaler-global-threat-map-dashboard",
     "name": "Zscaler Global Threat Map Dashboard",
-    "description": "OSINT tool: Zscaler Global Threat Map Dashboard.",
+    "description": "Use when you have a rough geolocation or want live attack-origin context and want to see where threats Zscaler blocked in the last 24h are coming from — returns geolocation-level threat volumes, not per-person data.",
     "url": "https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Situational-awareness view of live malware/APT activity by country from Zscaler's cloud.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public marketing/research dashboard from Zscaler ThreatLabz; no account or payment required to view.",
+    "opsec": "passive",
+    "opsecNote": "Read-only public dashboard hosted by Zscaler. You are only loading their page, so nothing about a target is disclosed. Standard sock-puppet browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Zscaler ThreatLabz, the vendor's in-house threat-research team, from telemetry across their own cloud proxy fleet.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "zscaler-zulu-url-risk-analyzer"
+    ],
+    "aliases": [
+      "ThreatLabz Threat Map",
+      "Zscaler Cloud Insights Threat Map"
+    ],
     "tags": [
       "live-cyber-threat-maps"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "zscaler-zulu-url-risk-analyzer"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/zscaler-global-threat-map-dashboard.md"
   },
   {
@@ -161717,46 +161729,6 @@
     "_file": "library/tools/opsec-investigator-tooling/adblockplus-extension.md"
   },
   {
-    "id": "adobe-acrobat-reader-app-mobile-ios",
-    "name": "Adobe Acrobat Reader App (Mobile – iOS)",
-    "description": "App for mobile devices for reading PDF files",
-    "url": "https://itunes.apple.com/ca/app/adobe-acrobat-reader/id469337564?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/adobe-acrobat-reader-app-mobile-ios.md"
-  },
-  {
     "id": "adobe-photoshop-express-app-mobile-android",
     "name": "Adobe Photoshop Express App (Mobile – Android)",
     "description": "App for mobile devices for creating editing and sharing image-related media",
@@ -167084,41 +167056,53 @@
   {
     "id": "google-image-search-extension-chrome",
     "name": "Google Image Search Extension (Chrome)",
-    "description": "Add-on for Google Chrome that searches for matching images",
+    "description": "Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other social-profiles, and geolocation leads.",
     "url": "https://chrome.google.com/webstore/detail/google-image-search/dbebidibfabmempkkbhabeehoncoaphf?hl=en-GB",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-click right-click reverse image search of any picture you encounter while browsing.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome extension; the underlying Google Images search is also free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The reverse lookup runs against Google's servers, not the target's site, so the subject is not contacted. Google logs the query to your session — use a clean/sock-puppet browser profile. Right-clicking an image on the subject's own page does not notify them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Third-party extension (not published by Google) that automates Google's own reverse-image-search endpoint; verify the current publisher before installing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Search by Image Chrome extension",
+      "reverse image search extension"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-image-search-extension-chrome.md"
   },
   {
@@ -167479,42 +167463,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/guid-uuid-and-short-guid-generator.md"
-  },
-  {
-    "id": "hack-this-page",
-    "name": "Hack This Page",
-    "description": "A simple extension that allows you to edit the text of any web page.",
-    "url": "https://chrome.google.com/webstore/detail/hack-this-page/nbfegodimhenhkghjeppighcbpdinhdp/related",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/hack-this-page.md"
   },
   {
     "id": "hola-better-internet-extension-chrome",
@@ -170142,40 +170090,46 @@
   {
     "id": "opera",
     "name": "Opera",
-    "description": "OSINT tool: Opera.",
-    "url": "http://www.opera.com",
+    "description": "Use when you need a low-cost opsec browser for passive collection — its built-in free VPN and per-window profile isolation help mask your IP and separate investigations — supports sock-puppet browsing rather than returning selectors.",
+    "url": "https://www.opera.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A free browser with a built-in VPN and easy profile separation for sock-puppet, IP-masked collection.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free desktop/mobile browser; the built-in \"free VPN\" (a browser-scoped proxy) is included at no cost, with a paid Opera VPN Pro upsell you do not need for basic masking.",
+    "opsec": "passive",
+    "opsecNote": "This is opsec infrastructure, not a data source. The built-in VPN is a browser-scoped proxy, NOT a full-device VPN or Tor — it hides your IP from visited sites but is not high-assurance anonymity, is logged by Opera/its provider, and leaks outside the browser. Treat it as light IP masking; layer a real VPN + disposable OS for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Mainstream commercial browser from Opera Software; legitimate and widely used, though the free VPN is a proxy service whose logging/ownership you should not treat as zero-knowledge.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "search-by-image"
+    ],
+    "aliases": [
+      "Opera Browser",
+      "Opera VPN"
+    ],
     "tags": [
       "browsers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-by-image"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/opera.md"
   },
   {
@@ -173122,41 +173076,54 @@
   {
     "id": "snapchat-social-networking-app-mobile-android",
     "name": "Snapchat Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and self-deleting messages",
+    "description": "Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map — returns social-profile and geolocation leads.",
     "url": "https://play.google.com/store/apps/details?id=com.snapchat.android",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Accessing Snap Map and public Snapchat profiles/stories from a mobile investigation handset.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free consumer app; a (sock-puppet) Snapchat account is required to log in and use Snap Map.",
+    "opsec": "active",
+    "opsecNote": "Adding, searching, or viewing a subject can surface you in their \"who added me\" / friend suggestions and Snapchat links behaviour to your device/phone number. Use a dedicated sock-puppet account on a separate investigation handset — never your personal Snapchat. Snap Map public stories are the safest, lowest-contact surface.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Official Snap Inc. application distributed via Google Play; the data shown is Snapchat's own, though only the public/Snap-Map layer is investigatively usable.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Snapchat Android",
+      "Snap Map"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/snapchat-social-networking-app-mobile-android.md"
   },
   {
@@ -173908,7 +173875,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "osintcurious"
+      "osintcurious",
+      "cosint-osint-on-cars"
     ],
     "aliases": [
       "The Puppeteer",
@@ -238167,7 +238135,11 @@
     "relatedTools": [
       "rechercher-par-entreprise",
       "rechercher-par-r-gion-ou-type-de-travaux",
-      "services-en-ligne"
+      "services-en-ligne",
+      "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
+      "association-assq-qc-ca",
+      "banq-num-rique",
+      "trouver-une-d-cision"
     ],
     "aliases": [
       "RBQ search by respondent",
@@ -261792,37 +261764,50 @@
   {
     "id": "goodsearch",
     "name": "Goodsearch",
-    "description": "OSINT tool: Goodsearch.",
+    "description": "Use when you have a name, username, or keyword and want a second general web-search index (Yahoo/Bing-backed) whose result ranking differs from Google — returns web pages, social-profile and name leads.",
     "url": "https://www.goodsearch.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A low-friction alternate general web search when you want results not ranked the way Google ranks them.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; the charitable-donation and coupon features are optional and irrelevant to investigation.",
+    "opsec": "passive",
+    "opsecNote": "A general web-search query against Goodsearch's backend — the subject is never contacted. Goodsearch/its ad partners log your query; use a clean browser profile and avoid entering anything that ties the search to your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A charity-fundraising web portal that resells a mainstream search backend (historically Yahoo/Bing) with a coupon/deals overlay; results are the backend's, wrapped in Goodsearch branding.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Good Search",
+      "goodsearch.com"
+    ],
     "tags": [
       "general-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/goodsearch.md"
   },
   {
@@ -273716,46 +273701,6 @@
     "_file": "library/tools/search-engines/parseek-iran.md"
   },
   {
-    "id": "pbs-kids",
-    "name": "PBS Kids",
-    "description": "Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from the PBS",
-    "url": "http://pbskids.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/pbs-kids.md"
-  },
-  {
     "id": "pdfsearch-io",
     "name": "Pdfsearch.io",
     "description": "Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download links.",
@@ -281107,47 +281052,6 @@
     "_file": "library/tools/search-engines/urvx.md"
   },
   {
-    "id": "urvx-com",
-    "name": "URVX.com",
-    "description": "File storage search engine based by Google CSE",
-    "url": "http://www.uvrx.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Filesharing Search Engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "urvx",
-      "uvrx"
-    ],
-    "_file": "library/tools/search-engines/urvx-com.md"
-  },
-  {
     "id": "us-census-bureau",
     "name": "US Census Bureau",
     "description": "Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business statistics for that area (aggregate, not individuals).",
@@ -284135,38 +284039,49 @@
   {
     "id": "xdcc-eu",
     "name": "Xdcc.eu",
-    "description": "XDCC search engine",
+    "description": "Use when you have a filename, release name, or keyword and want to locate files being distributed as XDCC packs across IRC networks — returns bot/pack listings, not personal identifiers.",
     "url": "https://www.xdcc.eu",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding which IRC bots/packs are serving a named file across the XDCC ecosystem.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search interface; no account required to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching the index is passive (you only query a web page). Actually downloading a listed pack means connecting to an IRC server/bot, which exposes your IP to that network — do that only from a VM over a VPN/sock-puppet, never your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community-run aggregator of third-party IRC bot listings; results are only as accurate as the bots that submit them and are not vetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "XDCC Search Engine",
+      "xdcc eu"
+    ],
     "tags": [
       "Search engines",
       "Filesharing Search Engines"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/xdcc-eu.md"
   },
   {

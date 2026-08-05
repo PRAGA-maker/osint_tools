@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 6692 total · 6306 full · 386 stub (94% enriched)
+**Tools:** 6688 total · 6312 full · 376 stub (94% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 2681 · medium: 2046 · high: 1965
+low: 2677 · medium: 2046 · high: 1965
 
 ## Tools by trust
-community: 3360 · trusted: 2065 · unverified: 1261 · untrustworthy: 6
+community: 3359 · trusted: 2068 · unverified: 1255 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -20,7 +20,7 @@ community: 3360 · trusted: 2065 · unverified: 1261 · untrustworthy: 6
 - `dark-web` — 66/79
 - `dating-classifieds` — 84/86
 - `documents-metadata` — 181/214
-- `domains-ip-infrastructure` — 564/602
+- `domains-ip-infrastructure` — 565/602
 - `email` — 246/246
 - `evidence-capture` — 24/25
 - `financial-crypto` — 84/90
@@ -28,11 +28,11 @@ community: 3360 · trusted: 2065 · unverified: 1261 · untrustworthy: 6
 - `image-video-face` — 449/450
 - `maps-geospatial-data` — 121/122
 - `messaging` — 184/184
-- `opsec-investigator-tooling` — 225/341
+- `opsec-investigator-tooling` — 228/339
 - `people-search` — 256/257
 - `phone` — 137/137
 - `public-records` — 953/971
-- `search-engines` — 632/688
+- `search-engines` — 634/686
 - `social-networks` — 760/766
 - `training-ctf` — 8/11
 - `translation-language` — 68/81
@@ -43,10 +43,10 @@ community: 3360 · trusted: 2065 · unverified: 1261 · untrustworthy: 6
 
 - `library/tools/public-records` — 922 leaves
 - `library/tools/social-networks` — 739 leaves
-- `library/tools/search-engines` — 642 leaves
+- `library/tools/search-engines` — 640 leaves
 - `library/tools/domains-ip-infrastructure` — 406 leaves
 - `library/tools/image-video-face` — 356 leaves
-- `library/tools/opsec-investigator-tooling` — 337 leaves
+- `library/tools/opsec-investigator-tooling` — 335 leaves
 - `library/tools/ai-analysis-automation` — 315 leaves
 - `library/tools/geolocation` — 314 leaves
 - `library/tools/communities-forums` — 266 leaves

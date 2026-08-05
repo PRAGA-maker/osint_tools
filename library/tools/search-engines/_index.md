@@ -224,7 +224,7 @@ kind: group-index
 - **`globalspec-engineer-search-engine`** (low) — Use when you have an `employer-org` or engineering product/spec and want to identify suppliers, manufacturers, and industry contacts — retur
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
-- **`goodsearch`** (low) — OSINT tool: Goodsearch.
+- **`goodsearch`** (low) — Use when you have a name, username, or keyword and want a second general web-search index (Yahoo/Bing-backed) whose result ranking differs f
 - **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
 - **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
 - **`google-books-ngram-viewer`** (low) — Use when you want to date a word, phrase, name, or slang by its frequency in published books over time — returns a usage-over-time chart, a 
@@ -436,7 +436,6 @@ kind: group-index
 - **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — Use when you need current Persian-language news headlines aggregated from Iranian sources — returns categorized Iranian news links, not a pe
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
-- **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
 - **`pdfsearch-io`** (low) — Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download lin
 - **`perplexity`** (low) — Use when you have a natural-language research question about a `name`/entity and want a cited synthesis across the web — returns a summarise
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
@@ -567,7 +566,6 @@ kind: group-index
 - **`ukons-standard-occupational-classifications-united-kingdom`** (low) — Use when you have a UK job-title lead and want to normalize it to the ONS SOC occupation code — returns the standard classification, not a p
 - **`united-states-marine-corps-occupation-codes`** (medium) — Use when you have a USMC MOS `document-id` code and want to decode the Marine's job specialty — returns the occupation/role behind the code.
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
-- **`urvx-com`** (low) — File storage search engine based by Google CSE
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
 - **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
 - **`us-department-of-housing-and-urban-development`** (medium) — Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housi
@@ -627,7 +625,7 @@ kind: group-index
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`wow-search-engine-united-kingdom`** (low) — Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web result
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
-- **`xdcc-eu`** (low) — XDCC search engine
+- **`xdcc-eu`** (low) — Use when you have a filename, release name, or keyword and want to locate files being distributed as XDCC packs across IRC networks — return
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
 - **`xgs`** (low) — Use when you have a search term/dork and want to run it against Google (and legacy .onion gateways) from a Python CLI — returns domain/link 
 - **`xsint`** (high) — Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one comman

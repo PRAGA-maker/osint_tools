@@ -21,7 +21,6 @@ kind: group-index
 - **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
 - **`adblockplus-extension`** (low) — Use when you want your investigation browser to block ads and third-party trackers so target pages load cleaner and leak less about you — re
-- **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
@@ -125,7 +124,7 @@ kind: group-index
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
-- **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
+- **`google-image-search-extension-chrome`** (low) — Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other s
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Use when you want your investigator browser to warn you if you type your Google password into a phishing/non-Google page — returns real-time
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
@@ -134,7 +133,6 @@ kind: group-index
 - **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
-- **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
 - **`hola-vpn`** (low) — Use when you want to change your apparent egress country for casual geo-unblocking — but note it is a peer-to-peer network with a poor priva
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
@@ -186,7 +184,7 @@ kind: group-index
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
-- **`opera`** (low) — OSINT tool: Opera.
+- **`opera`** (low) — Use when you need a low-cost opsec browser for passive collection — its built-in free VPN and per-window profile isolation help mask your IP
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
 - **`osintbox`** (low) — Use when you want an OSINT-ready workstation fast — provisions a Parrot OS install with popular OSINT tools preinstalled (a setup script, no
@@ -244,7 +242,7 @@ kind: group-index
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`smstome-com`** (low) — Use when you need a free disposable phone number to receive an SMS verification code for a sock-puppet account — returns public temporary nu
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
-- **`snapchat-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and self-deleting messages
+- **`snapchat-social-networking-app-mobile-android`** (low) — Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map 
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
 - **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
 - **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers

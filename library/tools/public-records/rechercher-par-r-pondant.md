@@ -33,6 +33,10 @@ relatedTools:
 - rechercher-par-entreprise
 - rechercher-par-r-gion-ou-type-de-travaux
 - services-en-ligne
+- alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj
+- association-assq-qc-ca
+- banq-num-rique
+- trouver-une-d-cision
 aliases:
 - RBQ search by respondent
 - Registre des licences RBQ - répondant

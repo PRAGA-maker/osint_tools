@@ -28,6 +28,7 @@ localInstall: false
 registration: false
 relatedTools:
 - osintcurious
+- cosint-osint-on-cars
 aliases:
 - The Puppeteer
 - OSINT Curious sock puppet guide
