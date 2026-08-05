@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 6557 total · 6370 full · 187 stub (97% enriched)
+**Tools:** 6550 total · 6379 full · 171 stub (97% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 2545 · medium: 2047 · high: 1965
+low: 2538 · medium: 2047 · high: 1965
 
 ## Tools by trust
-community: 3346 · trusted: 2075 · unverified: 1130 · untrustworthy: 6
+community: 3342 · trusted: 2075 · unverified: 1127 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 297/318
+- `ai-analysis-automation` — 298/316
 - `archives-cache` — 106/109
 - `communities-forums` — 259/268
 - `dark-web` — 69/75
 - `dating-classifieds` — 85/86
 - `documents-metadata` — 182/198
-- `domains-ip-infrastructure` — 575/596
+- `domains-ip-infrastructure` — 576/595
 - `email` — 246/246
 - `evidence-capture` — 25/25
 - `financial-crypto` — 87/88
@@ -28,12 +28,12 @@ community: 3346 · trusted: 2075 · unverified: 1130 · untrustworthy: 6
 - `image-video-face` — 449/450
 - `maps-geospatial-data` — 122/122
 - `messaging` — 184/184
-- `opsec-investigator-tooling` — 238/281
+- `opsec-investigator-tooling` — 241/280
 - `people-search` — 256/257
 - `phone` — 137/137
-- `public-records` — 956/966
-- `search-engines` — 642/673
-- `social-networks` — 760/765
+- `public-records` — 957/966
+- `search-engines` — 644/670
+- `social-networks` — 761/765
 - `training-ctf` — 9/11
 - `translation-language` — 70/78
 - `transportation` — 189/195
@@ -43,12 +43,12 @@ community: 3346 · trusted: 2075 · unverified: 1130 · untrustworthy: 6
 
 - `library/tools/public-records` — 917 leaves
 - `library/tools/social-networks` — 738 leaves
-- `library/tools/search-engines` — 628 leaves
-- `library/tools/domains-ip-infrastructure` — 401 leaves
+- `library/tools/search-engines` — 625 leaves
+- `library/tools/domains-ip-infrastructure` — 400 leaves
 - `library/tools/image-video-face` — 356 leaves
 - `library/tools/geolocation` — 313 leaves
-- `library/tools/ai-analysis-automation` — 300 leaves
-- `library/tools/opsec-investigator-tooling` — 277 leaves
+- `library/tools/ai-analysis-automation` — 298 leaves
+- `library/tools/opsec-investigator-tooling` — 276 leaves
 - `library/tools/communities-forums` — 265 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves

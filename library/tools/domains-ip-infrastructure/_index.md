@@ -272,7 +272,6 @@ kind: group-index
 - **`namecheap-united-states`** (medium) — Use when you have a `domain` and want registration/availability and WHOIS details — returns registrar, registration status, and any unredact
 - **`ndorker`** (low) — Use when you have a `domain` and want an automated dorking sweep — returns Google/GitHub/Shodan/vendor dork results exposing exposed assets 
 - **`neilpatel-backlinks-analyzer`** (low) — Use when you have a `domain`/page and want to see which other sites link to it — returns referring `domain`s and backlink details, exposing 
-- **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
 - **`netcraft`** (low) — Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domai
 - **`netscout-cyber-threat-map`** (low) — Use when you want a live global picture of DDoS/attack activity by region and type — returns aggregate attack visualisation (not per-target 
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr

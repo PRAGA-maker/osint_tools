@@ -7248,37 +7248,48 @@
   {
     "id": "localfocus",
     "name": "LocalFocus",
-    "description": "OSINT tool: LocalFocus.",
+    "description": "Use when you have a dataset (or an `address`/region) and want to turn it into maps and charts for analysis — returns geographic visualizations, not new selectors.",
     "url": "https://www.localfocus.nl",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Fast, no-code data visualization and geographic mapping of open datasets for journalists and analysts.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web-based GIS/GeoKit tools plus a 30-day trial; the full charting/mapping suite is a paid ANP subscription.",
+    "opsec": "passive",
+    "opsecNote": "You upload and visualize your own data on LocalFocus servers — do not paste sensitive case data into a third-party cloud tool. Anything you make public/embeddable is world-readable. Stick to open datasets, or run analysis locally when the data is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial product from ANP (the Dutch national news agency); reputable, but a data-viz/newsroom tool rather than an investigative data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ANP LocalFocus",
+      "LocalFocus GeoKit"
+    ],
     "tags": [
       "infographics-and-data-visualization"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "relatedTools": [
       "localfocus-nl-geokit"
     ],
@@ -9241,52 +9252,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-cli-tool-skeleton.md"
-  },
-  {
-    "id": "osint-combine-blog",
-    "name": "OSINT Combine Blog",
-    "description": "OSINT tool: OSINT Combine Blog.",
-    "url": "https://www.osintcombine.com/blog-feed.xml",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-rss-feeds"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-geo",
-      "instagram-explorer",
-      "osint-combine-reddit-post-analyzer",
-      "osint-combine-tiktok-quick-search",
-      "osint-combine-tools",
-      "osintcombine-com",
-      "osintcombine-com-2",
-      "snapchat-multi-viewer-osint-combine"
-    ],
-    "_file": "library/tools/ai-analysis-automation/osint-combine-blog.md"
   },
   {
     "id": "osint-dojo",
@@ -14788,42 +14753,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/vis-js.md"
-  },
-  {
-    "id": "visually",
-    "name": "visually",
-    "description": "OSINT tool: visually.",
-    "url": "http://create.visual.ly",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/visually.md"
   },
   {
     "id": "vmware-workstation-player",
@@ -70856,51 +70785,6 @@
     "_file": "library/tools/domains-ip-infrastructure/neilpatel-backlinks-analyzer.md"
   },
   {
-    "id": "netbootcamp-org-websitetool-html",
-    "name": "netbootcamp.org/websitetool.html",
-    "description": "access to 74 #tools to collect domain information from a single page",
-    "url": "https://netbootcamp.org/websitetool.html",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-search-tool-2",
-      "netbootcamp-s-people-tool"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/netbootcamp-org-websitetool-html.md"
-  },
-  {
     "id": "netcraft",
     "name": "Netcraft",
     "description": "Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domain, and hosting/registrar history for infrastructure attribution.",
@@ -81170,31 +81054,35 @@
   {
     "id": "watchthatpage",
     "name": "WatchThatPage",
-    "description": "Monitoring static web pages for updates over time",
+    "description": "Use when you have a `domain`/URL you need to watch for edits over time — returns a daily email of what changed on the page (no personal selectors).",
     "url": "https://watchthatpage.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "change-detection"
     ],
-    "bestFor": "Monitoring static web pages for updates over time",
+    "bestFor": "Automated monitoring of static web pages, delivering new/changed content by daily email.",
     "input": "Web page URL and watch configuration",
     "output": "Email notifications and change history snapshots",
-    "selectorsIn": [],
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
     "opsec": "passive",
-    "opsecNote": "Page checks originate from WatchThatPage systems instead of directly from the investigator.",
+    "opsecNote": "Page checks originate from WatchThatPage's servers, not your IP, so the target site sees the monitoring service rather than you — a genuine OpSec benefit for watching a subject's page. Use a dedicated sock-puppet email for the alerts, since that address is what ties you to the watchlist.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running independent change-detection service; small operator, but the mechanism (fetch, diff, email) is simple and observable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
@@ -81202,11 +81090,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WTP",
+      "Watch That Page"
+    ],
+    "tags": [
+      "change-detection",
+      "monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/watchthatpage.md"
   },
   {
@@ -163488,35 +163382,45 @@
   {
     "id": "fake-generator-tools",
     "name": "Fake Generator Tools",
-    "description": "OSINT tool: Fake Generator Tools.",
+    "description": "Use when you need a consistent fake persona to stand up a sock-puppet account — returns a full synthetic identity (name, address, phone, DOB, SSN, card, avatar).",
     "url": "https://fauxid.com/tools",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a complete, internally-consistent fake persona for sock-puppet / research accounts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tools; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generating a persona is passive and reveals nothing to any target. The point is defensive — a coherent puppet identity keeps your real self out of research accounts. NEVER use generated SSNs, driver's licenses, or card numbers on documents or forms where they assert a real legal identity; that crosses into fraud/impersonation. Use them only to fill low-stakes signup fields, and keep persona details in a case notebook so a puppet stays consistent over time.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "FauxID is a well-known, purely client-side-style random data generator; output is fabricated by design, so \"trust\" is about the tool doing what it says, not about data accuracy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FauxID",
+      "fauxid.com",
+      "fake name generator"
+    ],
+    "tags": [
+      "Sock Puppets",
+      "persona-generation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/fake-generator-tools.md"
   },
   {
@@ -164482,46 +164386,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/get-safe-online-database.md"
-  },
-  {
-    "id": "giphy-cam-gif-editor-app-mobile-android",
-    "name": "Giphy Cam GIF Editor App (Mobile – Android)",
-    "description": "App for mobile devices for creating and sharing GIF format multimedia.",
-    "url": "https://play.google.com/store/apps/details?id=com.giphy.messenger",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/giphy-cam-gif-editor-app-mobile-android.md"
   },
   {
     "id": "gnu-icecat",
@@ -170340,41 +170204,45 @@
   {
     "id": "soundhound-music-app-mobile-android",
     "name": "Soundhound Music App (Mobile – Android)",
-    "description": "App for mobile devices for searching for and playing music",
+    "description": "Use when you have audio/video with an unidentified song playing and want to name the track — returns song title, artist, and lyrics from a short audio sample.",
     "url": "https://play.google.com/store/apps/details?id=com.melodis.midomiMusicIdentifier.freemium",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying an unknown song from a short audio clip (or even humming) inside video/audio evidence.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free with ads; an optional paid tier removes ads. Core music recognition is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Running audio identification on a clip you already hold is passive with respect to any subject. Do NOT play sensitive case audio through the app's live mic in a shared space; use a local playback of your copy. Recognition queries go to SoundHound servers, so avoid submitting audio that itself is confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Well-known commercial music-ID app (SoundHound Inc.); reliable for its purpose, but an ancillary/creative use for investigations rather than a core OSINT source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SoundHound",
+      "Midomi"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-android.md"
   },
   {
@@ -172163,37 +172031,44 @@
   {
     "id": "vcc-generator",
     "name": "VCC Generator",
-    "description": "tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)",
-    "url": "http://vccgenerator.org/",
+    "description": "Use when you are building a sock-puppet identity and need a Luhn-valid test card number to satisfy a signup form — returns fake but structurally valid card details (no real value).",
+    "url": "https://www.vccgenerator.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating Luhn-valid, non-chargeable test card numbers for sock-puppet signups and form testing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool and Chrome extension; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Generating a number is passive and touches no target. But the generated cards are TEST data only — they cannot make purchases and will be declined by any real gateway. Never enter one where a genuine charge is expected, and do not use them to defraud a paid service; they are for free-tier signups and QA, not payment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of many near-identical card-generator sites; the math (Luhn checksum, real BIN prefixes) is standard, but the operator is anonymous — assume the page and any ads are untrusted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VCCGenerator",
+      "virtual credit card generator",
+      "test card number generator"
+    ],
     "tags": [
       "Sock Puppets"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/vcc-generator.md"
   },
   {
@@ -236516,35 +236391,47 @@
   {
     "id": "search-datasets",
     "name": "Search Datasets",
-    "description": "OSINT tool: Search Datasets.",
+    "description": "Use when you want to find a structured open dataset (by topic, place, or organization) to enrich a case — returns downloadable datasets, not personal selectors.",
     "url": "https://datahub.io/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering curated open/public datasets to cross-reference names, places, or organizations.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Searching and downloading community/open datasets is free; DataHub also sells a paid data-catalog cloud product built on the same brand.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and downloading public datasets is passive and touches no subject. Do it over a clean session out of habit; downloaded files are yours to analyze locally, which is preferable to querying sensitive data in a third-party cloud.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "DataHub (Open Knowledge / Datopian lineage) is a reputable open-data host, but it has pivoted toward a commercial data-catalog product; the classic /search open-dataset UI has shifted (now largely /collections), so the exact path may move.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DataHub",
+      "datahub.io"
+    ],
+    "tags": [
+      "open-data",
+      "datasets"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-datasets.md"
   },
   {
@@ -250022,37 +249909,48 @@
   {
     "id": "bibsonomy",
     "name": "Bibsonomy",
-    "description": "OSINT tool: Bibsonomy.",
+    "description": "Use when you have a `name` (an academic author) or a research topic and want their publications and social bookmarks — returns publication records, author pages, and shared bookmark tags.",
     "url": "http://www.bibsonomy.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding an academic author's papers and the tags/bookmarks scholars have shared about a topic.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse; a free account is only needed to save your own bookmarks and publications.",
+    "opsec": "passive",
+    "opsecNote": "Searching and reading public bibliographic records is passive and does not notify any subject. Only create/register an account if you actually want to store bookmarks; browsing needs no login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running academic social-bookmarking system run by a German university research group (Kassel/Würzburg); records are user-contributed, so completeness varies by field.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BibSonomy",
+      "blue social bookmark"
+    ],
     "tags": [
       "academic-resources-and-grey-literature"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bibsonomy.md"
   },
   {
@@ -267548,42 +267446,6 @@
     "_file": "library/tools/search-engines/open-directory-finder.md"
   },
   {
-    "id": "open-grey",
-    "name": "Open Grey",
-    "description": "OSINT tool: Open Grey.",
-    "url": "http://www.opengrey.eu",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/open-grey.md"
-  },
-  {
     "id": "open-hub",
     "name": "Open Hub",
     "description": "Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profile`s, projects, languages and commit activity.",
@@ -268483,24 +268345,25 @@
   {
     "id": "osint-investigation-coldvisionz",
     "name": "osint-investigation (coldvisionz)",
-    "description": "Collection of useful OSINT tools.",
+    "description": "Use when you want a hand-curated shortlist of go-to OSINT tools organized by task — returns pointers to email, breach, social, and geolocation resources (no selectors of its own).",
     "url": "https://github.com/coldvisionz/osint-investigation",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Discovering investigation tools by category",
+    "bestFor": "A practitioner's short \"tools I actually use\" reference, grouped by investigation task.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Public GitHub repository; no account or payment required to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public GitHub README is passive and leaves no trace on any target. The tools it links to have their own OpSec profiles — treat each linked service on its own terms before you run it against a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Small community tool list (40 stars).",
+    "trustNote": "Small personal repo (~40 stars) maintained by one investigator; a starting-point index, not an authoritative or exhaustive catalog.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -268509,14 +268372,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "coldvisionz osint-investigation",
+      "coldvisionz osint list"
+    ],
     "tags": [
       "directory",
       "reference"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-investigation-coldvisionz.md"
   },
   {
@@ -269310,45 +269176,6 @@
     "_file": "library/tools/search-engines/paperball-news.md"
   },
   {
-    "id": "paperboy",
-    "name": "Paperboy",
-    "description": "OSINT tool: Paperboy.",
-    "url": "http://www.thepaperboy.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thepaperboy"
-    ],
-    "_file": "library/tools/search-engines/paperboy.md"
-  },
-  {
     "id": "parseek",
     "name": "Parseek",
     "description": "Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news headlines and links providing `social-profile`/context.",
@@ -269546,45 +269373,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/search-engines/perplexity.md"
-  },
-  {
-    "id": "peteyvid",
-    "name": "Peteyvid",
-    "description": "search engine for 70 video hosting sites",
-    "url": "https://peteyvid.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "peteyvid-com"
-    ],
-    "_file": "library/tools/search-engines/peteyvid.md"
   },
   {
     "id": "ph055a-osint-collection",
@@ -307488,35 +307276,46 @@
   {
     "id": "seo-resources-search-engine",
     "name": "SEO Resources Search Engine",
-    "description": "OSINT tool: SEO Resources Search Engine.",
+    "description": "Use when you want to search across a curated set of SEO/marketing sites at once — returns web results scoped to that niche (no personal selectors).",
     "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:i7q6z1kjm1w",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A niche vertical Google search restricted to SEO and web-marketing resource sites.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine; no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a normal Google search scoped to a preset site list; queries hit Google, not any target, so it is passive. Standard search-engine logging applies — use a sock-puppet Google session if you care about query attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom/Programmable Search Engine; coverage is whatever site list the (anonymous) creator picked and can silently rot as the config ages.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SEO CSE",
+      "SEO resources custom search"
+    ],
+    "tags": [
+      "Search engines",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/seo-resources-search-engine.md"
   },
   {

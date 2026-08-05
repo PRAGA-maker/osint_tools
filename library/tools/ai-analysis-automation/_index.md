@@ -151,7 +151,7 @@ kind: group-index
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
 - **`listify`** (low) — OSINT tool: Listify.
-- **`localfocus`** (low) — OSINT tool: LocalFocus.
+- **`localfocus`** (low) — Use when you have a dataset (or an `address`/region) and want to turn it into maps and charts for analysis — returns geographic visualizatio
 - **`lockbin`** (low) — Use when you need to send sensitive findings/files to a recipient securely — returns an encrypted, browser-accessible message the recipient 
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
@@ -189,7 +189,6 @@ kind: group-index
 - **`osint-analyser`** (low) — Use when you want to auto-collect and LLM-summarize open-source chatter (e.g. Telegram channels) — a self-hosted pipeline; returns translate
 - **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
-- **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
 - **`osint-dojo`** (low) — Use when you need a vetted, category-organised starting directory of OSINT tools and learning material — returns pointers to specific tools/
 - **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
 - **`osint-framework-osint-dev-team`** (low) — Use when you have a `domain`, `ip-address`, `email`, `username` or `phone` and want a self-hosted service to run many recon modules and retu
@@ -289,7 +288,6 @@ kind: group-index
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
 - **`vis-js`** (low) — OSINT tool: Vis.js.
-- **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from inst
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens

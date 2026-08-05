@@ -81,7 +81,7 @@ kind: group-index
 - **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
-- **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
+- **`bibsonomy`** (low) — Use when you have a `name` (an academic author) or a research topic and want their publications and social bookmarks — returns publication r
 - **`bigsearch`** (low) — Use when you have a search term (a `name`, `username`, phrase) and want to fire it across many search engines/sites fast — a browser add-on 
 - **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
 - **`bing-news`** (low) — Use when you have a `name`, org, or event and want news coverage as a second engine to Google — returns news articles, dates, and outlets th
@@ -392,7 +392,6 @@ kind: group-index
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
 - **`open-access-scientific-journals`** (low) — Use when you have a `name` (an author/researcher) and want their open-access publications and affiliations from this OA publisher — returns 
 - **`open-directory-finder`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in exposed "open directory" web listings — returns direct links to d
-- **`open-grey`** (low) — OSINT tool: Open Grey.
 - **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
 - **`open-source-intelligence-txuswashere`** (low) — Use when you need to discover OSINT tools and methodologies for a given selector or task — returns a curated reference index of tools/techni
@@ -408,7 +407,7 @@ kind: group-index
 - **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
 - **`osint-framework-3`** (high) — Use when you have a selector type (`email`, `username`, `phone`, etc.) but not the right tool — returns a categorized directory tree pointin
 - **`osint-investigation-assistant-lambda-black`** (medium) — Use when you have a name, username, or email and want a single page that generates ready-to-run search queries and tool links across many so
-- **`osint-investigation-coldvisionz`** (low) — Collection of useful OSINT tools.
+- **`osint-investigation-coldvisionz`** (low) — Use when you want a hand-curated shortlist of go-to OSINT tools organized by task — returns pointers to email, breach, social, and geolocati
 - **`osint-kit-buddhsen-tripathi`** (medium) — Use when you need to discover which tool fits an investigative task — a curated, categorised directory of OSINT tools returning pointers to 
 - **`osint-link`** (medium) — Use when you need to discover an OSINT tool for a task — returns a categorised directory of OSINT resources (search, social, geolocation, br
 - **`osint-open-source-projects`** (low) — Use when you want to discover open-source OSINT tools/repos by topic — a browsable directory of GitHub projects tagged "osint" — returns poi
@@ -424,12 +423,10 @@ kind: group-index
 - **`oxford-journals`** (low) — Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, 
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — Use when you have a name or keyword and want to search today's German-language newspaper press for mentions — returns news articles/social-p
-- **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — Use when you need current Persian-language news headlines aggregated from Iranian sources — returns categorized Iranian news links, not a pe
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
 - **`pdfsearch-io`** (low) — Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download lin
 - **`perplexity`** (low) — Use when you have a natural-language research question about a `name`/entity and want a cited synthesis across the web — returns a summarise
-- **`peteyvid`** (low) — search engine for 70 video hosting sites
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`pinterest-trends`** (low) — Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity o
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret

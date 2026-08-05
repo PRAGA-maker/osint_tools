@@ -83,7 +83,7 @@ kind: group-index
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`fake-company-name-generator`** (low) — Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net'
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
-- **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
+- **`fake-generator-tools`** (low) — Use when you need a consistent fake persona to stand up a sock-puppet account — returns a full synthetic identity (name, address, phone, DOB
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
 - **`fake-person-generator`** (low) — Use when you need a coherent fictional identity for a research sock-puppet account — returns fabricated persona details (name, address, DOB,
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
@@ -100,7 +100,6 @@ kind: group-index
 - **`generate-sa-id-numbers`** (low) — Use when you have a `dob` (and gender/citizenship) and want to construct or sanity-check the structure of a South African national ID number
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
-- **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
@@ -210,7 +209,7 @@ kind: group-index
 - **`snapchat-social-networking-app-mobile-android`** (low) — Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map 
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
 - **`soundcloud-music-app-mobile-android`** (low) — Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, a
-- **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
+- **`soundhound-music-app-mobile-android`** (low) — Use when you have audio/video with an unidentified song playing and want to name the track — returns song title, artist, and lyrics from a s
 - **`srware-iron`** (low) — Use when you want a Chromium-based investigation browser with Google's phone-home telemetry stripped out — supports lower-noise sock-puppet 
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
@@ -244,7 +243,7 @@ kind: group-index
 - **`upload-files-to-ipfs-from-browser`** (low) — Use when you (an investigator) need censorship-resistant, tamper-evident hosting of a file — a browser panel that pins a file to IPFS and re
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.
-- **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`vcc-generator`** (low) — Use when you are building a sock-puppet identity and need a Luhn-valid test card number to satisfy a signup form — returns fake but structur
 - **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
 - **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
 - **`view-exif-data-online-remove-exif-online`** (low) — Use when you have an `image` and want to read its EXIF metadata (camera, timestamp, GPS on a map) or strip EXIF before sharing — returns met

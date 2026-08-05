@@ -477,7 +477,7 @@ kind: group-index
 - **`seart-github-search`** (low) — Use when you want to find GitHub repositories by metadata (language, stars, commits, contributors, activity dates) rather than by name — ret
 - **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
-- **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
+- **`seo-resources-search-engine`** (low) — Use when you want to search across a curated set of SEO/marketing sites at once — returns web results scoped to that niche (no personal sele
 - **`shabbat`** (high) — Use when you have a `name` or `username` for someone in the Jewish community and want to find their member profile and location on this soci
 - **`shotstars`** (medium) — Use when you have a GitHub repo or `username` and want to analyse its stargazers for fake/inflated stars and overlapping accounts — returns 
 - **`sinwindie-osint`** (high) — Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform 
