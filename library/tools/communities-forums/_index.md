@@ -240,7 +240,6 @@ kind: group-index
 - **`the-guardian-united-kingdom`** (medium) — Use when you have a `name`/`employer-org` in UK public life and want investigative coverage and gov-data journalism — returns articles, name
 - **`the-independent-news-united-kingdom`** (medium) — Use when you have a `name` linked to the UK or a nationally covered event and want reporting — returns `associate`, `employer-org` and event
 - **`the-province-news`** (medium) — Use when you have a `name` or `address` tied to British Columbia and want local news coverage — returns `associate`, `employer-org` and even
-- **`the-silph-road`** (low) — Pokemon GO community travelers' card/profile directory; lets you look up a player's public Silph card by username. Referenced in sinwindie's
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
 - **`theaustralian-national-news`** (medium) — Use when you have a `name` or `employer-org` linked to Australia and want national coverage — returns `associate`, `employer-org` and event 
 - **`thepaperboy`** (medium) — Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to searc

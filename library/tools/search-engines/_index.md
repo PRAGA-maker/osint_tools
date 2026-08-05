@@ -51,7 +51,6 @@ kind: group-index
 - **`american-society-of-civil-engineers`** (low) — Use when you have an engineer/researcher `name` and want their civil-engineering publications — returns authored papers with affiliations an
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
-- **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — Use when you have a `name`, `username`, or `domain` and want a second general web index for cross-checking — returns `social-profile` and `d
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
@@ -98,7 +97,6 @@ kind: group-index
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Use when you have a name/keywords and want a ready-made Google X-Ray query to find someone's profiles — returns a search string that surface
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
-- **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
 - **`bright-local-search-result-checker`** (low) — Use when you have a query and a precise location and want to see Google/Maps results exactly as a local there would — returns geo-localised 
 - **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
@@ -130,7 +128,6 @@ kind: group-index
 - **`cloud-file-search-engine`** (low) — Use when you have a `name`/keyword and want to find files publicly shared on cloud lockers (Mega, MediaFire, etc.) — returns links to matchi
 - **`cloudflare-radar`** (low) — Use when you have a `domain` or `ip-address` and want internet-intelligence on it — returns domain rankings, traffic/AS data, URL-scan resul
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
-- **`cnn`** (low) — OSINT tool: CNN.
 - **`coalition-against-insurance-fraud`** (medium) — Use when you have a subject/lead tied to possible insurance fraud and want the right reporting/lookup channel — returns a directory of US st
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
@@ -259,7 +256,7 @@ kind: group-index
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia
 - **`google-unlocked`** (low) — Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into t
-- **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
+- **`google-word-sniper`** (low) — Use when you want two terms to appear near each other in Google results and want the AROUND() proximity query built for you — returns a read
 - **`googledrive-search-engine`** (low) — Use when you have a `name`, keyword, or filename and want to find publicly-shared Google Drive/Docs files indexed by Google — returns expose
 - **`googler`** (low) — Use when you have a `name`/`username`/`email`/`phone`/`domain` and want to run scriptable Google web/news/site searches from the terminal — 
 - **`goosh-org`** (low) — Use when you want a fast, keyboard-driven shell interface to run Google/web searches from a command line in the browser — returns web/image 
@@ -351,7 +348,6 @@ kind: group-index
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
-- **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
 - **`magportal`** (low) — OSINT tool: MagPortal.
 - **`mailing-list-archives-search-engine`** (low) — Use when you have a `name`/`email`/keyword and want their posts in public mailing-list archives — returns matching list threads and messages
 - **`maldevel-osint`** (low) — Use when you want a curated reference of OSINT techniques/scripts/tips — a small GitHub collection of investigation and reconnaissance notes
@@ -419,7 +415,6 @@ kind: group-index
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
 - **`open-access-scientific-journals`** (low) — Use when you have a `name` (an author/researcher) and want their open-access publications and affiliations from this OA publisher — returns 
 - **`open-directory-finder`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in exposed "open directory" web listings — returns direct links to d
-- **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
 - **`open-grey`** (low) — OSINT tool: Open Grey.
 - **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
@@ -445,7 +440,7 @@ kind: group-index
 - **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe
 - **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate
 - **`osint-toolkit-cybersight-security`** (low) — Use when you have a selector but need the right tool and want a categorized catalog of OSINT tools/websites to pick from — returns tool poin
-- **`osint-tools-howtofind-bot`** (low) — Catalog of open-source OSINT tools.
+- **`osint-tools-howtofind-bot`** (low) — Use when you've exhausted your known tools for a selector and want more options — a categorised catalog of 300+ OSINT tools/scripts to pull 
 - **`osint-tools-yogsec`** (low) — Use when you have a selector and don't know which tool fits — returns a categorised directory of OSINT tools and methods to pick from.
 - **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
@@ -464,7 +459,7 @@ kind: group-index
 - **`pinterest-trends`** (low) — Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity o
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
 - **`pr-newswire`** (low) — Use when you have a `name` or `employer-org` and want official press releases mentioning them — returns timestamped corporate/personnel anno
-- **`presearch`** (low) — OSINT tool: Presearch.
+- **`presearch`** (low) — Use when you have a name/keyword and want a search engine that doesn't personalise or profile you — returns web results as social-profile/do
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co

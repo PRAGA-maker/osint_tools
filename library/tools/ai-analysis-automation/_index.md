@@ -97,7 +97,6 @@ kind: group-index
 - **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`duckduckgo-ai-chat`** (low) — Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy 
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
-- **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (medium) — Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databa
 - **`einvestigator`** (low) — Use when you need investigation how-tos or a pointer to a records/people-search resource — a free education hub with 300+ guides and a curat
 - **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
@@ -260,7 +259,6 @@ kind: group-index
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
 - **`python-osint-automation-examples`** (low) — Use when you want to script or automate an OSINT task in Python — returns copy-ready code snippets for common OSINT workflows.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
-- **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
 - **`quick-hashtags-and-keywords-search`** (low) — Use when you have a `username`, hashtag or keyword and want to sweep it across ~89 social platforms at once — returns direct search links pe
 - **`quickcode`** (low) — OSINT tool: QuickCode.
@@ -331,7 +329,6 @@ kind: group-index
 - **`visualize-free`** (low) — OSINT tool: Visualize Free.
 - **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from inst
-- **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
 - **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific

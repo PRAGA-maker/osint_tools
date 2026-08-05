@@ -188,7 +188,7 @@ kind: group-index
 - **`natural-hazards-map-worldwide`** (medium) — Use when you have a `geolocation`/`address` and want its natural-hazard exposure (flood, quake, wind/hail) — returns hazard-zone `geolocatio
 - **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
 - **`ncei-noaa-gov`** (medium) — Use when you have a `geolocation` and want historical natural-hazard events near it — returns dated earthquake, tsunami and volcano events g
-- **`nest-cam-directory`** (low) — OSINT tool: Nest Cam Directory.
+- **`nest-cam-directory`** (low) — Use when you want publicly-shared Nest (Dropcam) live webcam feeds, browsable by place/theme — returns live camera streams with geolocation 
 - **`nexrad-data-inventory-search`** (medium) — Use when you need to prove or check the weather at a US place and time — pull archived NWS Doppler radar for chronolocation and timeline cor
 - **`nga-geoint`** (low) — Use when you need open-source geospatial libraries/datasets (GeoServer plugins, geodata tools) from the US National Geospatial-Intelligence 
 - **`ngdc-bathymetry-map`** (low) — Use when you have a marine/coastal `geolocation` or a water-scene `image` and want seafloor depth and coastal relief to test plausibility — 

@@ -784,7 +784,7 @@ kind: group-index
 - **`services-en-ligne`** (low) — Use when you have a `name` or `employer-org` in Québec and want their transport-registry file — heavy-vehicle owner/operator status, permits
 - **`sesac-com`** (high) — Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns
 - **`sesric-basic-social-and-economic-indicators`** (low) — OSINT tool: SESRIC Basic Social and Economic Indicators.
-- **`sesric-databases`** (low) — OSINT tool: SESRIC Databases.
+- **`sesric-databases`** (low) — Use when you need socio-economic statistics for OIC (Muslim-majority) countries — returns indicators by country/year for context on a place 
 - **`setlist-fm`** (high) — Use when you have a performer/band `name` and want their concert history — dates, venues and cities — returns geolocation and address of gig
 - **`sex-offender-korea`** (high) — Use when you need to check South Korea's official sex-offender registry for a `name`/location — returns offender name, photo, address area a
 - **`sex-offender-registry-websites`** (high) — Use when you have a `name` or `geolocation` and want to check US sex-offender registries — returns registrant `name`, `address`, `image`, `p

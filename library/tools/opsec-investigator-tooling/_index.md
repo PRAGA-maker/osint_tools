@@ -51,8 +51,6 @@ kind: group-index
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
-- **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
-- **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
@@ -198,7 +196,6 @@ kind: group-index
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
-- **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
 - **`manytools`** (low) — Use when you have a raw artifact (an IP, a hash, a user-agent string, an image) and want a quick free browser utility to transform or inspec
@@ -344,7 +341,6 @@ kind: group-index
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
 - **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
-- **`us-cop-reference-guide-app-mobile-android`** (low) — App for mobile devices for reference material for US-based LEO's
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.
 - **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
@@ -371,7 +367,6 @@ kind: group-index
 - **`windows-phone-imei-generator`** (low) — OSINT tool: Windows Phone IMEI Generator.
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
-- **`xmind-works`** (low) — Online tool for open and editing .xmind files
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-finance-app-mobile-ios`** (low) — App for mobile devices for monitoring stocks and finance
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services

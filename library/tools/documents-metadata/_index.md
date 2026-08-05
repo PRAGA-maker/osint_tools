@@ -99,7 +99,6 @@ kind: group-index
 - **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
 - **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
 - **`google-cloud-ocr`** (medium) — Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, inclu
-- **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
 - **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
 - **`google-to-search-profiles-on-github`** (low) — Use when you have a `name`, skill, or `employer-org` and want to find someone's GitHub profile — builds a Google X-ray search string to surf
 - **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
@@ -128,7 +127,6 @@ kind: group-index
 - **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
-- **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`mediainforobot`** (low) — Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/conta
@@ -139,7 +137,6 @@ kind: group-index
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mutagen`** (low) — Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) 
 - **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
 - **`occupational-outlook-handbook-it-united-states`** (low) — Use when you have a claimed US IT job title or salary and want to sanity-check it against official occupation data — a reference source, ret
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
@@ -184,7 +181,6 @@ kind: group-index
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (medium) — Use when you have a `username`, `email`, key, or code string and want to search across public open-source repositories at scale — returns em
 - **`squareup`** (low) — Use when you have a small-business `name`/`employer-org` or a Square receipt/store link and want to confirm a Square payment presence — retu
-- **`statwing`** (low) — Intuitive data analytics tool
 - **`steghide`** (low) — Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, pl
 - **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts

@@ -18,7 +18,7 @@ kind: group-index
 - **`jotti-s-malware-scanner`** (low) — Use when you have a suspicious file (`document-id`/hash) and want a quick multi-engine AV verdict — returns per-engine detections and the fi
 - **`koodous`** (low) — Use when you have an Android APK (or its hash/`document-id`) and want community malware analysis — returns detection verdicts, YARA matches,
 - **`metadefender`** (low) — Use when you have a file or hash (`document-id`) or a `domain`/`ip-address` and want multi-engine malware/reputation analysis — returns verd
-- **`opswat-meta-defender`** (low) — Multi-engine malware detection with advanced threat analysis
+- **`opswat-meta-defender`** (low) — Use when you have a file, hash, URL, IP, or domain and want a multi-engine malware/reputation verdict — returns detections, IOCs, and metada
 - **`pikker-ee-cuckoo-sandbox`** (low) — Free automated dynamic malware analysis with detailed behavioral reports
 - **`uncover-it`** (low) — Use when you have a malware sample/executable and want fast static config extraction (C2 servers, keys, indicators) without detonating it — 
 - **`virustotal`** (low) — Use when you have a file hash, `domain`, `ip-address`, or URL and want reputation/malware context — returns detection verdicts, related infr
