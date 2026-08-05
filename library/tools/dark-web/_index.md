@@ -21,7 +21,6 @@ kind: group-index
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
-- **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
 - **`dargle`** (low) — Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s,
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
@@ -31,7 +30,7 @@ kind: group-index
 - **`deep-search`** (low) — Use when you have a `name`, `username` or `email` and want to see where it appears across Tor hidden services — searches indexed .onion page
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
 - **`github-apurv-singh-gautam`** (low) — Use when you're starting dark-web research and want a curated GitHub list of tools for finding, scraping, and monitoring Tor/onion services 
-- **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
+- **`github-danaxscully`** (low) — Use when you need vetted dark-web entry points and have a target service type — returns a maintained list of `.onion` addresses to reach fro
 - **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc
 - **`i2p-invisible-internet-project`** (low) — Use when an investigation touches I2P "eepsites"/services and you need to access or understand this anonymity network — the client software 

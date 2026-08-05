@@ -48,7 +48,7 @@ kind: group-index
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
 - **`alberta-business-search`** (medium) — Use when you have a company `name`/number or a person's `name` and want Alberta (Canada) corporate records — returns registered address, dir
 - **`alberta-police-misconduct-database`** (low) — Use when you have a `name` of an Alberta police officer and want documented misconduct history — returns named incidents, investigation outc
-- **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
+- **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — Use when you have an `employer-org`/establishment or `name` in Québec and want its alcohol-permit record — returns permit holder, `address`,
 - **`alibaba-china`** (medium) — Use when you have an `employer-org`, product or supplier and want the company behind it — returns `employer-org` profile, `address`, `phone`
 - **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con
 - **`allmyfaves`** (low) — Use when you need to discover categorized links to popular sites (social, search, video, shopping) as a visual start-page directory — return
@@ -343,7 +343,6 @@ kind: group-index
 - **`github-io`** (high) — Use when you have the `name` of a deceased person and want to find their burial record and, via neighbouring graves, family surnames — retur
 - **`gla-gov-uk`** (high) — Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed bus
 - **`glassdoor`** (medium) — Use when you have an `employer-org` (or a person's employer) and want inside detail — returns salaries, reviews, interview accounts, and occ
-- **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.
 - **`globaledge-database-of-international-business-statistics`** (low) — Use when you have a country/`geolocation` and want economic/trade indicators — returns comparable international business statistics by count
 - **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis

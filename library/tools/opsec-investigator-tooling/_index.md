@@ -29,7 +29,6 @@ kind: group-index
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so 
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
-- **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
@@ -39,7 +38,6 @@ kind: group-index
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
-- **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`bool`** (low) — Use when you have a name/username/employer and want to construct precise Boolean search strings (AND/OR/NOT, quotes, site:) for Google/Linke
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
@@ -52,7 +50,6 @@ kind: group-index
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
-- **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent review
 - **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files
@@ -71,8 +68,7 @@ kind: group-index
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Use when you want to harden an investigator browser against tracking/fingerprinting and learn OpSec tradecraft — returns privacy tooling and
 - **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
-- **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
-- **`eset-smart-security`** (low) — Malware and virus detection and elimination program
+- **`epic-online-guide-to-practical-privacy-tools`** (low) — Use when you're hardening your own investigator OpSec and want a vetted checklist — returns categorized privacy tools; it protects the analy
 - **`exif-viewer-add-on-for-chrome`** (low) — Use when you have an `image` on a web page and want its EXIF metadata (camera, timestamp, GPS) inline via right-click — returns metadata and
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
@@ -114,7 +110,7 @@ kind: group-index
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
 - **`iid-generator-by-georgy-bunin`** (low) — Use when you have an Israeli ID number (`document-id`) to validate, or need a format-valid Israeli ID for a sock puppet — returns a valid/in
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
-- **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
+- **`intelbox-malwaredojo`** (low) — Use when you're standing up a fresh OSINT workstation and have a Debian VM — returns an automated install of ~20 OSINT tools ready to run ag
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
@@ -130,13 +126,11 @@ kind: group-index
 - **`link-cash-locator-app`** (low) — Use when you have a `geolocation`/`address` in the UK or Crown Dependencies and want the nearest cash machines — returns ATM `address`es and
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
-- **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
 - **`manytools`** (low) — Use when you have a raw artifact (an IP, a hash, a user-agent string, an image) and want a quick free browser utility to transform or inspec
 - **`markmap`** (low) — Use when you have investigation notes in Markdown and want to turn them into an interactive mind map to see structure and gaps — an analysis
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
-- **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
 - **`mega`** (low) — Use when you have a MEGA share link (from a breach dump, dark-web post, or a subject's shared folder) and want to inspect/preserve its conte
 - **`memuplay-com`** (low) — Use when a lead lives in a mobile-only app and you have no phone to run it — returns a sandboxed Android environment to operate the app from
@@ -158,10 +152,9 @@ kind: group-index
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
-- **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
 - **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
-- **`password-generator`** (low) — Password generator for creating strong passwords
+- **`password-generator`** (low) — Use when creating sock-puppet accounts and you need strong unique credentials — returns random high-entropy passwords; it hardens the invest
 - **`password-safe`** (low) — Use when you need to store the many sock-puppet logins and credentials of an investigation in one encrypted local vault — returns secure, of
 - **`paxful`** (low) — Use when you have a Paxful trader username or a crypto lead and want to inspect a peer-to-peer bitcoin marketplace's public trader profiles,
 - **`pentoo-linux`** (low) — Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentes
@@ -217,7 +210,6 @@ kind: group-index
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
-- **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — Use when you need to browse investigation targets without exposing your real IP, or to reach .onion dark-web sites — returns anonymized web 
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
@@ -247,7 +239,6 @@ kind: group-index
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
-- **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
 

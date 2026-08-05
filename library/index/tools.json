@@ -1987,42 +1987,6 @@
     "_file": "library/tools/ai-analysis-automation/codepen.md"
   },
   {
-    "id": "codesandbox",
-    "name": "Codesandbox",
-    "description": "Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, rengine, aleph).",
-    "url": "https://codesandbox.io/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/codesandbox.md"
-  },
-  {
     "id": "columbus-project",
     "name": "Columbus Project",
     "description": "Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and contributed DNS data — returns additional `domain` values.",
@@ -4301,42 +4265,6 @@
     "_file": "library/tools/ai-analysis-automation/functions-online.md"
   },
   {
-    "id": "fusioncharts",
-    "name": "FusionCharts",
-    "description": "OSINT tool: FusionCharts.",
-    "url": "http://www.fusioncharts.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/fusioncharts.md"
-  },
-  {
     "id": "geekflare-tools",
     "name": "Geekflare Tools",
     "description": "Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-header findings and related `domain`s.",
@@ -4651,37 +4579,58 @@
   {
     "id": "glit",
     "name": "Glit",
-    "description": "OSINT tool: Glit.",
+    "description": "Use when you have a `username`/`employer-org` on GitHub and want the real emails behind it — returns `email` addresses (and `associate` handles) mined from commit history.",
     "url": "https://github.com/shadawck/glit",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Harvesting author emails from a GitHub user's, org's, or repo's commit history.",
+    "selectorsIn": [
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "email",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (Rust CLI). No account needed for public repos; a GitHub token raises rate limits.",
+    "opsec": "passive",
+    "opsecNote": "It reads public commit metadata via the GitHub API — the target isn't notified. Use your own (ideally sock-puppet) GitHub token for rate limits; the query looks like ordinary API traffic, not contact.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A maintained open-source Rust tool (shadawck/glit, ~58 stars); the emails come straight from Git commit metadata, so accuracy is high but includes noise (bot/no-reply/old addresses).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gitrecon",
+      "theharvester",
+      "emailharvester"
+    ],
+    "aliases": [
+      "glit-cli",
+      "shadawck/glit"
+    ],
     "tags": [
-      "other-tools"
+      "github",
+      "email-harvesting",
+      "commit-metadata"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/glit.md"
   },
   {
@@ -35070,48 +35019,6 @@
     "_file": "library/tools/dark-web/cpic-stolen-property-search.md"
   },
   {
-    "id": "crypto-storm",
-    "name": "Crypto Storm",
-    "description": "OSINT tool: Crypto Storm.",
-    "url": "http://stormwayszuh4juycoy4kwoww5gvcu2c4tdtpkup667pdwe4qenzwayd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/crypto-storm.md"
-  },
-  {
     "id": "dargle",
     "name": "Dargle",
     "description": "Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s, titles, and timestamps.",
@@ -35622,44 +35529,53 @@
   },
   {
     "id": "github-danaxscully",
-    "name": "Github - DanaXScully",
-    "description": "OSINT tool: Github - DanaXScully.",
+    "name": "DanaXScully onion_links (GitLab)",
+    "description": "Use when you need vetted dark-web entry points and have a target service type — returns a maintained list of `.onion` addresses to reach from Tor.",
     "url": "https://gitlab.com/DanaXScully/onion_links",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
+    "bestFor": "A version-controlled, community-maintained directory of onion links as starting points for dark-web research.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "social-profile"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public GitLab repository; reading the list needs nothing. Visiting the linked services requires Tor.",
+    "opsec": "active",
+    "opsecNote": "Reading the repo is passive, but VISITING any listed .onion is active dark-web activity — use Tor Browser in a hardened/VM environment, never log in or transact, and assume many listed services are scams, honeypots, or law-enforcement-monitored. Treat links as leads, not endorsements.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A single-maintainer GitLab repo (created 2025, ~22 commits) curating onion links; being git-versioned makes changes auditable, but the linked sites are unvetted and volatile.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "the-hidden-wiki",
+      "onion-search-engine",
+      "onion-land"
+    ],
+    "aliases": [
+      "DanaXScully onion links",
+      "onion_links gitlab"
+    ],
     "tags": [
       "darkweb",
+      "onion-directory",
       "Dark Web Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/github-danaxscully.md"
   },
   {
@@ -48554,46 +48470,6 @@
     "_file": "library/tools/documents-metadata/meawfy.md"
   },
   {
-    "id": "media-smarts-digital-and-media-literacy",
-    "name": "Media Smarts Digital and Media Literacy",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
-    "url": "http://mediasmarts.ca/digital-media-literacy",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/media-smarts-digital-and-media-literacy.md"
-  },
-  {
     "id": "mediainforobot",
     "name": "@mediainforobot",
     "description": "Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/container metadata and derived visuals.",
@@ -52197,46 +52073,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/uk-government-information-technology.md"
-  },
-  {
-    "id": "ultimatecoupons",
-    "name": "Ultimatecoupons",
-    "description": "Website related to coupons and other shopping savings",
-    "url": "http://www.ultimatecoupons.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/ultimatecoupons.md"
   },
   {
     "id": "uncover-it",
@@ -160089,50 +159925,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymox.md"
   },
   {
-    "id": "aol-explorer-for-windows-systems",
-    "name": "AOL Explorer (for Windows systems)",
-    "description": "Internet browser program Windows systems",
-    "url": "http://discover.aol.com/products-and-services/aol-desktop-for-windows",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "web-browsers"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "aol",
-      "aol-webmail-usa"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/aol-explorer-for-windows-systems.md"
-  },
-  {
     "id": "archstrike",
     "name": "ArchStrike",
     "description": "Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, not a per-selector lookup.",
@@ -160573,40 +160365,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/blackarch-linux.md"
-  },
-  {
-    "id": "blackhole",
-    "name": "BlackHole",
-    "description": "OSINT tool: BlackHole.",
-    "url": "https://blackhole.run/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/blackhole.md"
   },
   {
     "id": "bool",
@@ -161346,46 +161104,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/citymapper-mapping-app-mobile-ios.md"
-  },
-  {
-    "id": "clamxav-anti-virus-for-mac-osx",
-    "name": "ClamXAV Anti-Virus for Mac OSX",
-    "description": "Malware and virus detection and elimination program",
-    "url": "https://www.clamxav.com/store",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/clamxav-anti-virus-for-mac-osx.md"
   },
   {
     "id": "cloudhq",
@@ -162436,24 +162154,25 @@
   {
     "id": "epic-online-guide-to-practical-privacy-tools",
     "name": "EPIC Online Guide to Practical Privacy Tools",
-    "description": "The Electronic Privacy Information Center's guide to online privacy tools",
+    "description": "Use when you're hardening your own investigator OpSec and want a vetted checklist — returns categorized privacy tools; it protects the analyst, not a subject.",
     "url": "https://epic.org/privacy/tools.html",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A reputable, categorized reference of practical privacy tools for hardening your own operational security.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public guide from a non-profit; the tools it lists are mostly free/open-source with some freemium options.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A defensive reference for the investigator. Reading it reveals nothing about a subject. Use it to choose the browser/proxy/comms hardening you apply before touching targets — the tools it points to are what actually change your exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Electronic Privacy Information Center (EPIC), a long-established privacy non-profit; guidance is credible, though a directory like this can lag as tools change.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -162462,59 +162181,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/epic-online-guide-to-practical-privacy-tools.md"
-  },
-  {
-    "id": "eset-smart-security",
-    "name": "ESET Smart Security",
-    "description": "Malware and virus detection and elimination program",
-    "url": "http://www.eset.com/us/home/products/smart-security",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "eset-cybersecurity-for-mac"
+      "google-analytics-opt-out-extension-chrome",
+      "adblockplus-extension"
     ],
-    "_file": "library/tools/opsec-investigator-tooling/eset-smart-security.md"
+    "aliases": [
+      "EPIC Practical Privacy Tools",
+      "epic.org privacy tools"
+    ],
+    "tags": [
+      "privacy",
+      "opsec-hygiene",
+      "reference"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
+    "_file": "library/tools/opsec-investigator-tooling/epic-online-guide-to-practical-privacy-tools.md"
   },
   {
     "id": "exif-viewer-add-on-for-chrome",
@@ -164723,24 +164406,27 @@
   {
     "id": "intelbox-malwaredojo",
     "name": "IntelBox (malwaredojo)",
-    "description": "Installer arsenal of OSINT tools for Debian systems and VMs.",
+    "description": "Use when you're standing up a fresh OSINT workstation and have a Debian VM — returns an automated install of ~20 OSINT tools ready to run against `username`/`email`/`domain`.",
     "url": "https://github.com/malwaredojo/IntelBox",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Bulk-installing OSINT tools on Debian/VM",
+    "bestFor": "One-shot provisioning of a Debian OSINT VM with a standard toolset installed.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (MIT). Note it installs third-party tools, some of which (e.g. Maltego) have their own free/paid tiers.",
+    "opsec": "active",
+    "opsecNote": "The installer itself is a local script, but the tools it deploys make live queries against targets — that activity originates from this box. Provision it on a dedicated, isolated VM behind your controlled network, not your daily machine, and keep it as a burnable/rebuildable investigator environment.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community installer arsenal (16 stars).",
+    "trustNote": "A small single-maintainer MIT project (~16 stars, few commits, no releases) that runs privileged installs — read the script before running it with sudo; may be lightly maintained.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -164749,16 +164435,22 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "installer",
-      "provisioning",
-      "debian",
-      "setup"
+    "relatedTools": [
+      "theharvester",
+      "holehe"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "IntelBox",
+      "malwaredojo IntelBox"
+    ],
+    "tags": [
+      "osint-toolkit",
+      "provisioning",
+      "vm-setup"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/intelbox-malwaredojo.md"
   },
   {
@@ -165742,46 +165434,6 @@
     "_file": "library/tools/opsec-investigator-tooling/macchanger.md"
   },
   {
-    "id": "magicplan-floor-plans-and-estimates-app-mobile-android",
-    "name": "MagicPlan Floor Plans and Estimates App (Mobile – Android)",
-    "description": "App for mobile devices for creating real-time floor plans using camera photos",
-    "url": "https://play.google.com/store/apps/details?id=com.sensopia.magicplan&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-android.md"
-  },
-  {
     "id": "malwoverview",
     "name": "MALWOVERVIEW",
     "description": "Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analysis/URLHaus/etc verdicts from one CLI.",
@@ -166018,46 +165670,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/markwhen.md"
-  },
-  {
-    "id": "match-social-networking-app-mobile-android",
-    "name": "Match Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and e-dating",
-    "url": "https://play.google.com/store/apps/details?id=com.match.android.matchmobile",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/match-social-networking-app-mobile-android.md"
   },
   {
     "id": "maxthon",
@@ -167293,45 +166905,6 @@
     "_file": "library/tools/opsec-investigator-tooling/parrot-security.md"
   },
   {
-    "id": "parrot-security-os-online-emulator",
-    "name": "Parrot Security OS Online Emulator",
-    "description": "OSINT tool: Parrot Security OS Online Emulator.",
-    "url": "https://www.onworks.net/os-distributions/special-os/free-parrot-security-os-online",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Online OS Emulators"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "windows-10-online-emulator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/parrot-security-os-online-emulator.md"
-  },
-  {
     "id": "passhunt",
     "name": "PassHunt",
     "description": "Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default passwords across ~500 vendors.",
@@ -167383,24 +166956,27 @@
   {
     "id": "password-generator",
     "name": "Password Generator",
-    "description": "Password generator for creating strong passwords",
+    "description": "Use when creating sock-puppet accounts and you need strong unique credentials — returns random high-entropy passwords; it hardens the investigator, not a subject.",
     "url": "https://passgenerator.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating strong, unique passwords for the sock-puppet accounts an investigation depends on.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web password generator; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Defensive tooling for the investigator. Best practice is a LOCAL generator (your password manager) so a secret never leaves your machine — a web generator is convenient but the value is generated in your browser; still, prefer your manager's built-in generator for anything you'll actually use, and never reuse a puppet password across identities.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A generic third-party web password generator; for real credentials prefer an audited local password manager rather than trusting any website with generation.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -167409,15 +166985,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+    "relatedTools": [
+      "epic-online-guide-to-practical-privacy-tools"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "passgenerator.com"
+    ],
+    "tags": [
+      "opsec-hygiene",
+      "sockpuppet",
+      "credentials"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/password-generator.md"
   },
   {
@@ -170395,46 +169976,6 @@
     "_file": "library/tools/opsec-investigator-tooling/tobloef-com.md"
   },
   {
-    "id": "todoist-management-app-mobile-android",
-    "name": "Todoist Management App (Mobile – Android)",
-    "description": "App for mobile devices for managing and organizing tasks and lists",
-    "url": "https://play.google.com/store/apps/details?id=com.todoist",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/todoist-management-app-mobile-android.md"
-  },
-  {
     "id": "tor-browser",
     "name": "Tor Browser",
     "description": "Use when you need to browse investigation targets without exposing your real IP, or to reach .onion dark-web sites — returns anonymized web access (investigator OpSec).",
@@ -172148,46 +171689,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/yahoo-finance-app-mobile-android.md"
-  },
-  {
-    "id": "yahoo-mail-app-mobile-android",
-    "name": "Yahoo Mail App (Mobile – Android)",
-    "description": "App for mobile devices for email services",
-    "url": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-android.md"
   },
   {
     "id": "youtube-transcript-search",
@@ -194960,45 +194461,58 @@
   },
   {
     "id": "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
-    "name": "Alcool - Régie des alcools, des courses et des jeux (RACJ)",
-    "description": "OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).",
+    "name": "RACJ Alcohol Permit Register (Québec)",
+    "description": "Use when you have an `employer-org`/establishment or `name` in Québec and want its alcohol-permit record — returns permit holder, `address`, and establishment details.",
     "url": "https://www.racj.gouv.qc.ca/en/registres-publics/alcool.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up who holds a Québec alcohol permit and where the licensed establishment is.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official government public register; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a government public register is passive and expected; the permit holder is not notified. No sock puppet needed, though normal browser hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Régie des alcools, des courses et des jeux (RACJ), Québec's official liquor/gaming regulator — an authoritative primary source for permit data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
+    "aliases": [
+      "RACJ",
+      "Régie des alcools des courses et des jeux",
+      "Quebec alcohol permit register"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "association-assq-qc-ca",
-      "banq-num-rique",
-      "rechercher-par-entreprise",
-      "rechercher-par-r-gion-ou-type-de-travaux",
-      "rechercher-par-r-pondant",
-      "services-en-ligne",
-      "trouver-une-d-cision"
+      "federal-corporation-search-canada",
+      "canpages-search-canada"
     ],
+    "tags": [
+      "corporate",
+      "licensing",
+      "quebec",
+      "government-register"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj.md"
   },
   {
@@ -212112,48 +211626,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/public-records/general-info-and-news/global-edge-resource-directory.md"
-  },
-  {
-    "id": "global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool",
-    "name": "GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL",
-    "description": "OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.",
-    "url": "https://www.lowtax.net/g/jurisdictions",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "corporate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool.md"
   },
   {
     "id": "globaledge",
@@ -321351,54 +320823,54 @@
   },
   {
     "id": "verif-cation-quiz-bot",
-    "name": "Verif!cation Quiz Bot",
-    "description": "Community OSINT challenges, image verification techniques, collaborative research",
+    "name": "Quiztime (#quiztime)",
+    "description": "Use when you want to build/verify geolocation and image-verification skills — returns community OSINT challenges with worked solutions, not subject data.",
     "url": "https://x.com/quiztime",
     "category": "training-ctf",
     "path": [
-      "training-ctf",
-      "games"
+      "training-ctf"
     ],
-    "bestFor": "Community OSINT challenges, image verification techniques, collaborative research",
-    "input": "Shared images and verification questions from quizmasters",
-    "output": "Community discussion threads, solution walkthroughs, and learning outcomes",
+    "bestFor": "Practising and sharpening image verification and geolocation through the daily community",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to follow and participate; only a (sock-puppet) X account is needed to post answers.",
     "opsec": "passive",
-    "opsecNote": "No active probing; public community engagement via social replies.",
+    "opsecNote": "This is a training community, not an investigation. Still, participate from a sock-puppet X account, not your real identity — your solving methods and interests are visible to others. Never post real casework here.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running, well-regarded verification/geolocation challenge community run by experienced practitioners; content is educational and peer-produced.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": false,
     "relatedTools": [
-      "help-x-com",
-      "here-19",
-      "here-20",
-      "twitter-search",
-      "twitter-x-advanced-search",
-      "x-com",
-      "x-com-3",
-      "x-com-4",
-      "x-com-6"
+      "gralhix-osint-exercises",
+      "geoguesser"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "Quiztime",
+      "quiztime",
+      "Verification Quiz Bot"
+    ],
+    "tags": [
+      "training",
+      "geolocation",
+      "verification",
+      "ctf"
+    ],
+    "source": "osint-training",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/games/verif-cation-quiz-bot.md"
   },
   {
@@ -324163,39 +323635,50 @@
   },
   {
     "id": "stars21-com",
-    "name": "stars21.com",
-    "description": "OSINT tool: stars21.com.",
+    "name": "stars21.com Translator",
+    "description": "Use when you have foreign-language text or a `domain`/page from a subject and want it in English — returns a translation via multiple engines to interpret the source.",
     "url": "http://www.stars21.com/translator/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quick multi-engine machine translation of text or whole web pages during an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web translator; no account required.",
+    "opsec": "active",
+    "opsecNote": "Pasting text or a URL sends it to stars21 and onward to the translation backends (Google/Bing/etc.) — treat it as sharing that content with third parties. Don't paste sensitive/private material; for those, use an offline translator. It does not contact the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running free front-end that proxies mainstream machine-translation engines; translation quality is the backend's, and machine output should be treated as approximate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+    "relatedTools": [
+      "deepl",
+      "bing-microsoft-translator",
+      "linguee-english-french-dictionary"
     ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "stars21 translator",
+      "stars21.com"
+    ],
+    "tags": [
+      "translation",
+      "machine-translation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/stars21-com.md"
   },
   {
@@ -329851,43 +329334,6 @@
     "lastVerified": "2026-07-20",
     "enrichment": "full",
     "_file": "library/tools/transportation/kelley-blue-book-for-cars-united-states.md"
-  },
-  {
-    "id": "legrooms-for-google-flights",
-    "name": "Legrooms for Google Flights",
-    "description": "An extension that displays the size of the legroom between the seats next to the flight information.",
-    "url": "https://chrome.google.com/webstore/detail/legrooms-for-google-fligh/nhonfddkgankhjilponlbdccpabaaknp/related",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Aviation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/legrooms-for-google-flights.md"
   },
   {
     "id": "license-plate-lookup",

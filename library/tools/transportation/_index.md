@@ -98,7 +98,6 @@ kind: group-index
 - **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.
 - **`kayak-travel-search-engine`** (low) — Use when you have a route/date and want to test whether a claimed trip was feasible — returns flights, schedules, and prices to corroborate 
 - **`kelley-blue-book-for-cars-united-states`** (low) — Use when you have a `vin` (or make/model/year) for a subject's vehicle and want its market value and specs — returns asset-valuation context
-- **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
 - **`license-plate-lookup`** (medium) — Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-
 - **`license-plate-mania`** (medium) — Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plat
 - **`license-plate-maps`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of issue — a reference collection of plate-format gui

@@ -53,7 +53,6 @@ kind: group-index
 - **`circos`** (low) — Use when you have relational data (who-contacts-whom, wallet flows, co-occurrences) and want a circular link diagram to reveal the structure
 - **`code-repository-google-cse`** (low) — Use when you have a `username`, `email` or keyword and want to search across code-hosting sites at once — returns matching repos/code via a 
 - **`codepen`** (low) — Use when you have a `username` or developer name and want their front-end work — search CodePen for a person's pens/profile, or use it as a 
-- **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
 - **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c
 - **`compiler-explorer`** (low) — Use when you have a code snippet (from malware, a leaked repo, or a document macro) and want to compile/inspect it safely in-browser — retur
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
@@ -99,14 +98,13 @@ kind: group-index
 - **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
 - **`functions-online`** (low) — Use when you have an encoded/hashed string encountered mid-investigation (base64, url-encoded, md5, serialized PHP) and want to quickly tran
-- **`fusioncharts`** (low) — OSINT tool: FusionCharts.
 - **`geekflare-tools`** (low) — Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-h
 - **`gephi`** (medium) — Use when you have a set of `associate`/entity relationships and want to visualize and analyze them as a network graph — returns clustered li
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Use when you have a `phone`, `username` or `ip-address` and want quick enrichment from one CLI — returns carrier/geo for a number, account p
 - **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
-- **`glit`** (low) — OSINT tool: Glit.
+- **`glit`** (low) — Use when you have a `username`/`employer-org` on GitHub and want the real emails behind it — returns `email` addresses (and `associate` hand
 - **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr

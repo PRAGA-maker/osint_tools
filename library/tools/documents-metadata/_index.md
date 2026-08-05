@@ -108,7 +108,6 @@ kind: group-index
 - **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
-- **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`mediainforobot`** (low) — Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/conta
 - **`mendeley-academic-research-manager`** (low) — Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
@@ -164,7 +163,6 @@ kind: group-index
 - **`truth-or-fiction-search`** (low) — Use when you have a claim, viral message, or `name` and want to check whether it is a known scam, hoax, or debunked story — returns fact-che
 - **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 
-- **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
 - **`upwork`** (low) — Use when you have a `name`/`username` and want a freelancer's public profile — skills, work history, portfolio, location and rates — returns
 - **`violation-tracker`** (low) — Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agenci
