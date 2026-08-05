@@ -35,6 +35,8 @@ relatedTools:
 - google-reverse-image-search
 - reverse-image-search
 - depositphotos-reverse-image-search
+- smallseotools-backlink-checker
+- smallseotools-plagiarism-checker
 aliases:
 - Small SEO Tools
 - smallseotools.com

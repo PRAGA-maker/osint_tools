@@ -37,6 +37,13 @@ registration: false
 relatedTools:
 - federal-corporation-search-canada
 - canpages-search-canada
+- association-assq-qc-ca
+- banq-num-rique
+- rechercher-par-entreprise
+- rechercher-par-r-gion-ou-type-de-travaux
+- rechercher-par-r-pondant
+- services-en-ligne
+- trouver-une-d-cision
 tags:
 - corporate
 - licensing

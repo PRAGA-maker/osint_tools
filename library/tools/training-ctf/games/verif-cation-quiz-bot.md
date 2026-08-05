@@ -6,7 +6,7 @@ url: https://x.com/quiztime
 category: training-ctf
 path:
 - training-ctf
-bestFor: Practising and sharpening image verification and geolocation through the daily community #quiztime challenges.
+bestFor: Practising and sharpening image verification and geolocation through the daily community
 selectorsIn: []
 selectorsOut: []
 status: live
@@ -30,6 +30,14 @@ registration: false
 relatedTools:
 - gralhix-osint-exercises
 - geoguesser
+- help-x-com
+- here-19
+- here-20
+- twitter-search
+- twitter-x-advanced-search
+- x-com-3
+- x-com-4
+- x-com-6
 aliases:
 - Quiztime
 - quiztime
