@@ -49,7 +49,7 @@ kind: group-index
 - **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chepy`** (low) — Use when you have encoded/encrypted/obfuscated data (a token, a blob, an encoded string) and want to transform it from the command line — a 
-- **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
+- **`chibisafe-moe`** (low) — Use when you need your own private, self-hosted file drop to store/share investigation artifacts under your control — returns hosted files w
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
@@ -117,7 +117,7 @@ kind: group-index
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
-- **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
+- **`iid-generator-by-georgy-bunin`** (low) — Use when you have an Israeli ID number (`document-id`) to validate, or need a format-valid Israeli ID for a sock puppet — returns a valid/in
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
@@ -144,7 +144,7 @@ kind: group-index
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
-- **`mega`** (low) — OSINT tool: MEGA.
+- **`mega`** (low) — Use when you have a MEGA share link (from a breach dump, dark-web post, or a subject's shared folder) and want to inspect/preserve its conte
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
 - **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th

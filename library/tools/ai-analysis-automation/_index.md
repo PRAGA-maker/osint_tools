@@ -115,7 +115,7 @@ kind: group-index
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Use when you have a suspect body of text and want to judge whether it was AI-generated — returns an AI-probability score with sentence-level
 - **`grammarly-ai-detector`** (low) — Use when you have a block of text (a profile bio, message, or report) and want to gauge whether it was AI-generated — returns a percentage A
-- **`graphx`** (low) — OSINT tool: GraphX.
+- **`graphx`** (low) — Use when you have a very large relationship dataset (millions of edges) and want to compute graph analytics — Apache Spark's distributed gra
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
 - **`guardian-project`** (low) — Use when you need vetted privacy/anti-surveillance apps for OpSec — Guardian Project builds open-source tools (Orbot, ProofMode, Haven) for 
 - **`guerrilla-mail`** (low) — Use when an investigation step needs a throwaway inbox — sign up to a target's site/service, receive a verification code, or test a flow wit
@@ -287,7 +287,7 @@ kind: group-index
 - **`vedbex-com`** (low) — Use when you have an IP, domain, or Skype username/email/phone and want a free grab-bag of web/network lookup tools (traceroute, DNS, whois,
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
-- **`vis-js`** (low) — OSINT tool: Vis.js.
+- **`vis-js`** (low) — Use when you have entities and relationships (`associate` links, comms, infrastructure) and want an interactive link/timeline chart — a brow
 - **`vocal-remover`** (low) — Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from inst
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens

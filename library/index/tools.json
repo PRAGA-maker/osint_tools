@@ -5060,37 +5060,45 @@
   {
     "id": "graphx",
     "name": "GraphX",
-    "description": "OSINT tool: GraphX.",
+    "description": "Use when you have a very large relationship dataset (millions of edges) and want to compute graph analytics — Apache Spark's distributed graph engine (a library, no selectors of its own).",
     "url": "http://spark.apache.org/graphx",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Distributed, large-scale graph computation (PageRank, connected components, community detection) on huge relationship datasets.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Apache 2.0), part of Apache Spark; cost is the compute cluster you run it on.",
+    "opsec": "passive",
+    "opsecNote": "GraphX runs on your own Spark cluster over data you already hold, making no external calls about any subject. The exposure is entirely operational — bulk relationship data on shared/cloud compute must be secured; process sensitive data on infrastructure you control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "Apache Spark is a mature, widely-used open-source project under the Apache Software Foundation; GraphX is a first-party Spark component.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Spark GraphX",
+      "Apache Spark GraphX"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "graph-analytics",
+      "big-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "relatedTools": [
       "apache-tika"
     ],
@@ -14733,37 +14741,45 @@
   {
     "id": "vis-js",
     "name": "Vis.js",
-    "description": "OSINT tool: Vis.js.",
+    "description": "Use when you have entities and relationships (`associate` links, comms, infrastructure) and want an interactive link/timeline chart — a browser visualization library you build charts with (no selectors).",
     "url": "http://visjs.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building interactive network/link-analysis graphs and timelines from your own relationship data.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (community-maintained, CC BY-SA / MIT components) via npm and CDN.",
+    "opsec": "passive",
+    "opsecNote": "Vis.js runs in your own browser/page and renders data you already hold — it makes no external calls about a subject and leaks nothing. If you publish a graph, remember the rendered data (names, links) is embedded in the page; keep case charts local or access-controlled.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing open-source visualization library maintained by the vis.js community on GitHub; it is a code library, not a hosted service, so it does exactly what your code tells it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "visjs",
+      "vis-network",
+      "vis-timeline"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "link-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/vis-js.md"
   },
   {
@@ -76785,42 +76801,51 @@
   {
     "id": "snyk-io",
     "name": "Snyk.io",
-    "description": "Website Vulnerabilities Scanner",
+    "description": "Use when you have a `domain`/codebase and want to find its known-vulnerable dependencies and web weaknesses — returns a vulnerability report (CVEs, injection/XSS classes, IaC misconfigs).",
     "url": "https://snyk.io/test/website-scanner/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Scanning a website/codebase for known-vulnerable dependencies and common web vulnerabilities.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free plan for individual/limited scanning; paid Team/Enterprise tiers for scale and CI integration.",
+    "opsec": "active",
+    "opsecNote": "Scanning a live site sends probing requests to that target and is an ACTIVE technique — only run it against assets you own or are explicitly authorized to test. Unauthorized vulnerability scanning can be unlawful. For third-party targets, restrict yourself to passive footprinting; use Snyk on your own code/infra or with written permission.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Snyk is a well-known commercial developer-security vendor with a maintained vulnerability database; results are authoritative for dependency/known-CVE issues.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Snyk",
+      "Snyk website scanner"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "vulnerability-scanning"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/snyk-io.md"
   },
   {
@@ -161487,35 +161512,47 @@
   {
     "id": "chibisafe-moe",
     "name": "Chibisafe.moe",
-    "description": "OSINT tool: Chibisafe.moe.",
+    "description": "Use when you need your own private, self-hosted file drop to store/share investigation artifacts under your control — returns hosted files with shareable links (no selectors).",
     "url": "https://chibisafe.moe/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A self-hosted, open-source file-uploader/vault for keeping evidence and screenshots on infrastructure you own.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (self-hosted); your only cost is the server/hosting you run it on.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "Self-hosting is the OpSec win — files live on your infrastructure, not a third party's, so nothing is exposed to a vendor. But anything you generate a public share link for becomes world-accessible; keep case material private/authenticated, harden the instance, and never rely on a shared community instance for sensitive data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Actively-maintained open-source project (by Pitu); code is public on GitHub, so it is auditable, but a self-hosted tool's security depends on how you deploy it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Chibisafe",
+      "chibisafe.app"
+    ],
+    "tags": [
+      "file-hosting",
+      "self-hosted",
+      "evidence-preservation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/chibisafe-moe.md"
   },
   {
@@ -165094,35 +165131,49 @@
   {
     "id": "iid-generator-by-georgy-bunin",
     "name": "IID Generator by Georgy Bunin",
-    "description": "OSINT tool: IID Generator by Georgy Bunin.",
+    "description": "Use when you have an Israeli ID number (`document-id`) to validate, or need a format-valid Israeli ID for a sock puppet — returns a valid/invalid verdict or a checksum-valid number.",
     "url": "https://georgybu.github.io/IID_Generator/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Validating or generating checksum-correct Israeli national ID (Teudat Zehut) numbers.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static web tool hosted on GitHub Pages; no account, open source.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "All computation is client-side (a checksum algorithm), so nothing is sent to a server and no record is queried — validating or generating a number touches no database and no target. A \"valid\" verdict means the number passes the check-digit formula only; it does NOT mean the ID belongs to a real, living person or matches any record. Never present a generated ID as a real person's identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small open-source project (GitHub Pages, code public); the underlying Israeli ID check-digit algorithm is public and standard, so results are easy to verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "il"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Israeli ID generator",
+      "Teudat Zehut validator",
+      "IID Generator"
+    ],
+    "tags": [
+      "Sock Puppets",
+      "id-validation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/iid-generator-by-georgy-bunin.md"
   },
   {
@@ -166600,35 +166651,47 @@
   {
     "id": "mega",
     "name": "MEGA",
-    "description": "OSINT tool: MEGA.",
+    "description": "Use when you have a MEGA share link (from a breach dump, dark-web post, or a subject's shared folder) and want to inspect/preserve its contents — or need encrypted storage for case files.",
     "url": "https://mega.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Accessing/preserving files behind MEGA share links, and end-to-end-encrypted storage for your own case data.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives several GB of encrypted storage (periodically adjusted); paid plans add capacity and transfer.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Opening a MEGA link decrypts client-side using the key in the URL fragment, so MEGA's server does not see contents — but visiting still connects your IP to MEGA and, for a private link, may signal the sharer that it was accessed. Use a sock-puppet account and VPN. Never upload a victim's private data to a third-party cloud, and treat downloaded files as potentially hostile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "MEGA is a large, established end-to-end-encrypted cloud provider; the platform is legitimate, though the content behind any given link is user-supplied and unvetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MEGA.nz",
+      "MEGA.io"
+    ],
+    "tags": [
+      "cloud-storage",
+      "file-hosting",
+      "encrypted-storage"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/mega.md"
   },
   {

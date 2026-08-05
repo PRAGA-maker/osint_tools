@@ -347,7 +347,7 @@ kind: group-index
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
 - **`smart-ruler`** (low) — Use when you have an on-screen `image`/web element and want to measure pixel distances, angles, and dimensions — a measurement aid for image
 - **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
-- **`snyk-io`** (low) — Website Vulnerabilities Scanner
+- **`snyk-io`** (low) — Use when you have a `domain`/codebase and want to find its known-vulnerable dependencies and web weaknesses — returns a vulnerability report
 - **`soc-multi-tool`** (low) — Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns V
 - **`socradar-labs`** (low) — Use when you have a `domain`, `ip-address` or threat-actor name and want free threat-intel context — returns threat-actor profiles, digital-
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Use when you have a snippet, tracker ID, title, or server detail and want every `domain` whose source contains it — returns matching domains
