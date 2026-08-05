@@ -295,7 +295,7 @@ kind: group-index
 - **`tik-tok`** (low) — Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualiz
 - **`tiki-toki`** (low) — Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/p
 - **`time-graphics`** (medium) — Use when you have dated events from an investigation and want to visualize them as an interactive timeline — returns a shareable chronology 
-- **`timeline`** (low) — OSINT tool: Timeline.
+- **`timeline`** (low) — Use when you have a set of dated case events (in a spreadsheet) and want an interactive, embeddable visual timeline — returns a shareable ti
 - **`timetoast`** (low) — Use when you have dated events about a subject and want to build/share a visual chronology — returns an interactive timeline, an analysis ai
 - **`tio-run`** (low) — Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns th
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a

@@ -33,7 +33,6 @@ kind: group-index
 - **`francais-a-londres-org-french-classifieds`** (low) — Use when investigating a French-speaking subject in London/the UK — search this Franco-British community site's classifieds and listings by 
 - **`freeads-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `username`, `phone` or UK location and want a subject's classified listings — returns seller ads with contact de
 - **`freefans-de`** (low) — German OnlyFans directory.
-- **`freefans-nl`** (low) — Dutch OnlyFans directory.
 - **`full-dp-com`** (medium) — Use when you have a `username` and want the full-resolution profile picture behind a thumbnail — returns the HD display-photo `image` for re
 - **`geebo-classified-ads-united-states`** (low) — Use when a subject may have posted a US classified ad (jobs, vehicles, services, rentals) and you want to find it — returns ads with contact
 - **`girlfindr`** (low) — Use when you have a `name`/`username` or traits and want a subject's OnlyFans presence — returns matching creator `social-profile`s linking 

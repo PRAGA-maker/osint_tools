@@ -14,7 +14,7 @@ kind: group-index
 ## Skills here
 - **`abbreviations-com`** (low) — Use when you have an unknown acronym or abbreviation from a document/chat/handle and want its expansions — returns candidate meanings to dec
 - **`acronym-finder`** (low) — Use when you have an unfamiliar acronym/abbreviation in a document or chat and want its likely expansions — a large searchable database of a
-- **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
+- **`acronym-server`** (low) — Use when you hit an unfamiliar acronym or abbreviation in a subject's communications and want its expansion(s) — returns candidate meanings 
 - **`alphadictionary-com`** (low) — Use when you have unfamiliar English text, slang, regionalisms or a foreign word and want its meaning across many dictionaries at once — ret
 - **`apertium-org`** (low) — Use when you have foreign-language text (a `name`, post, or document) and want a free, private machine translation — returns readable transl
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render

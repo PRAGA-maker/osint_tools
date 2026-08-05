@@ -246,7 +246,6 @@ kind: group-index
 - **`tilersforums-co-uk`** (medium) — Use when you have a `username` and want a UK tiling-trade professional's forum footprint — returns `social-profile`, reused `username` and d
 - **`time-news`** (low) — Use when you have a `name` that may have drawn national/international press and want to search a major magazine's archive for coverage — ret
 - **`tinychat`** (low) — Use when you have a `username` and want to check for a presence on Tinychat's video-chat platform — a long-running live video-chat community
-- **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
 - **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content

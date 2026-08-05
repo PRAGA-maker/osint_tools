@@ -210,7 +210,6 @@ kind: group-index
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
-- **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
@@ -433,7 +432,7 @@ kind: group-index
 - **`osint-tools-yogsec`** (low) — Use when you have a selector and don't know which tool fits — returns a categorised directory of OSINT tools and methods to pick from.
 - **`osintbookmarks`** (low) — Use when you want a ready-made, categorised set of OSINT tool links loaded straight into your browser — returns an importable bookmarks tree
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
-- **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
+- **`overload-search`** (low) — Use when you want to run a precise Google query with the filter bubble off — set country/language, disable SafeSearch and personalization, a
 - **`oxford-journals`** (low) — Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, 
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — Use when you have a name or keyword and want to search today's German-language newspaper press for mentions — returns news articles/social-p

@@ -20,7 +20,7 @@ kind: group-index
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
 - **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
-- **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking
+- **`adblockplus-extension`** (low) — Use when you want your investigation browser to block ads and third-party trackers so target pages load cleaner and leak less about you — re
 - **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
@@ -51,7 +51,6 @@ kind: group-index
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
-- **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
 - **`bool`** (low) — Boolean search assistant
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
@@ -66,7 +65,6 @@ kind: group-index
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
-- **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent review
 - **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files

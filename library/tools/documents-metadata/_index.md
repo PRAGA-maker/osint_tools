@@ -146,7 +146,6 @@ kind: group-index
 - **`printwhatyoulike`** (low) — Program that helps you select and print selected portions of web pages online
 - **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
-- **`rebelmouse`** (low) — Creative agency and website publishing platform
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-report-website-united-states`** (low) — Use when you have a US restaurant/food-service `employer-org` and want industry background or vendor context — returns trade articles and a 

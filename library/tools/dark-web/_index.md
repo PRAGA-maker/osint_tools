@@ -15,7 +15,6 @@ kind: group-index
 ## Skills here
 - **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
 - **`4-ever-proxy`** (low) — Use when you want to open a web page (or a Tor2Web-style .onion) from a throwaway IP in a chosen country without installing anything — retur
-- **`activetk`** (low) — OSINT tool: ActiveTK.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
 - **`blockpath-com`** (low) — Use when you have a Bitcoin address or crypto-wallet and want to visualise its transaction graph and counterparties — returns linked crypto-
