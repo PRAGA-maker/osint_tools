@@ -51,7 +51,6 @@ kind: group-index
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
-- **`badoo-dating-app-mobile-ios`** (low) — App for iOS mobile device for meeting people on Badoo
 - **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
@@ -177,7 +176,6 @@ kind: group-index
 - **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
-- **`ipcheck`** (low) — OSINT tool: IPCheck.
 - **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
@@ -188,7 +186,6 @@ kind: group-index
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
-- **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
@@ -249,7 +246,7 @@ kind: group-index
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
-- **`privacy-net`** (low) — Listing of privacy resources
+- **`privacy-net`** (low) — Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach l
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
@@ -286,7 +283,6 @@ kind: group-index
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
 - **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
-- **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`smstome-com`** (low) — OSINT tool: Smstome.com.
@@ -307,14 +303,12 @@ kind: group-index
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
-- **`system-status-management-app-mobile-ios`** (low) — App for mobile devices for monitoring and managing battery and memory usage
 - **`tagged-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photos
 - **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
 - **`tapatalk-messaging-app-mobile-android`** (low) — App for mobile devices for social networking and messaging
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
 - **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
-- **`text2img`** (low) — text to image AI generator
 - **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
 - **`thexifer`** (low) — Use when you have an `image` and want to read, strip or forge its EXIF/IPTC/XMP metadata — returns viewed or rewritten metadata-exif.
@@ -343,7 +337,6 @@ kind: group-index
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
 - **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
-- **`uber-private-driver-app-mobile-ios`** (low) — App for mobile devices for searching for and communicating with private hire driving services
 - **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention

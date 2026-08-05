@@ -87,7 +87,7 @@ kind: group-index
 - **`browserling`** (low) — Use when you have a suspicious `domain`/URL and want to open it inside a disposable cloud browser — returns what the page renders without ex
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — Use when you want a live visual of attacks blocked across BunkerWeb WAF deployments worldwide — returns aggregate attack geography/categorie
 - **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
-- **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
+- **`cdnstrip`** (low) — Use when you have a list of IP addresses and want to separate CDN/WAF-fronted IPs from real origin IPs — returns two lists (CDN vs non-CDN) 
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
 - **`censys-certificates`** (low) — Use when you have a `domain`, org name, or cert detail and want to search TLS/SSL certificates for related hosts — returns certificates, the
 - **`censys-ipv4`** (low) — Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, 

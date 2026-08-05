@@ -30,7 +30,6 @@ kind: group-index
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
-- **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 

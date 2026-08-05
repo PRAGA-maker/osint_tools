@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`db-ip`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/city, ISP/ASN, and organisation.
 - **`info-sniper`** (low) — Use when you have an `ip-address` and want its approximate geolocation and network owner — returns country/region/city, ISP, coordinates and
-- **`ip-fingerprints`** (low) — Find domains on shared hosting
+- **`ip-fingerprints`** (low) — Use when you have an IP address or domain and want reverse-IP neighbours, geolocation, and network details — returns co-hosted domains, loca
 - **`ip-location-finder`** (low) — Use when you have an `ip-address` and want a fast geolocation guess plus ISP/host details — returns approximate `geolocation`, ISP/org, and 
 - **`ip2location-com`** (low) — Use when you have an `ip-address` and want its geolocation plus proxy/VPN detection — returns geolocation, address (city/region/country), em
 - **`ipv4-ipv6-lists-by-country-code`** (low) — Use when you have an `ip-address` or a country and want the authoritative CIDR ranges allocated to that country — returns ip-address ranges 

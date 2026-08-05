@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/change-detection
 
 ## Skills here
-- **`change-detection`** (low) — Self-hosted page change monitoring
+- **`change-detection`** (low) — Use when you have a web page (domain/URL) you want watched and want alerts when its content changes — returns diffs and notifications on eve
 - **`changedetect`** (low) — Use when you have a web page (profile, listing, notice) and want to be alerted when its content changes — returns dated change diffs/snapsho
 - **`follow-that-page`** (low) — Use when you have a `domain`/page URL tied to a subject and want to be alerted when it changes — returns emailed diffs of detected page edit
 - **`urlwatch`** (low) — Use when you have a `domain`/URL (or JSON API) you want to monitor for changes over time — a self-hosted CLI that alerts you when a page's c

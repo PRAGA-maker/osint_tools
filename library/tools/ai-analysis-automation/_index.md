@@ -49,7 +49,6 @@ kind: group-index
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
 - **`blender`** (low) — Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulati
 - **`botster`** (low) — Use when you have a query, `username`, or `domain` and want no-code bots to scrape/monitor data from Google, LinkedIn, YouTube, Amazon, TikT
-- **`boxcryptor`** (low) — OSINT tool: boxcryptor.
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
@@ -194,7 +193,6 @@ kind: group-index
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
 - **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
 - **`nixintel`** (low) — Use when you need a technique or tool reference for an OSINT problem — returns tutorials, methodology write-ups, and a curated OSINT resourc
-- **`nixory`** (low) — OSINT tool: Nixory.
 - **`nodebox`** (low) — Use when you have a dataset (connections, entities) and want to build custom node-based visualizations without heavy coding — returns genera
 - **`observable`** (low) — Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and 
 - **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;

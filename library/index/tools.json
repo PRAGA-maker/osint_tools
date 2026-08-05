@@ -1665,42 +1665,6 @@
     "_file": "library/tools/ai-analysis-automation/botster.md"
   },
   {
-    "id": "boxcryptor",
-    "name": "boxcryptor",
-    "description": "OSINT tool: boxcryptor.",
-    "url": "https://www.boxcryptor.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/boxcryptor.md"
-  },
-  {
     "id": "cacoo",
     "name": "Cacoo",
     "description": "Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram — returns a visual map of associate connections, not new data.",
@@ -9069,46 +9033,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/nixintel.md"
-  },
-  {
-    "id": "nixory",
-    "name": "Nixory",
-    "description": "OSINT tool: Nixory.",
-    "url": "http://nixory.sourceforge.net",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "encsf-mp",
-      "zmail"
-    ],
-    "_file": "library/tools/ai-analysis-automation/nixory.md"
   },
   {
     "id": "nodebox",
@@ -19903,37 +19827,54 @@
   {
     "id": "onwebchange",
     "name": "OnWebChange",
-    "description": "OSINT tool: OnWebChange.",
-    "url": "http://onwebchange.com",
+    "description": "Use when you have a web page (domain/URL) you want watched and want alerts on changes — returns diffs and email/webhook notifications when the page updates.",
+    "url": "https://onwebchange.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Hosted, no-setup monitoring of a specific web page with change notifications.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier gives basic daily monitoring; paid plans (~€0.89–€8.99/mo) add higher check frequency and more trackers (up to ~100).",
+    "opsec": "active",
+    "opsecNote": "Active in effect — OnWebChange's servers repeatedly fetch the target page, but the requests come from their infrastructure, not your IP, which shields you from the watched site. Your account and watch list are held by OnWebChange, so use a sock-puppet registration for sensitive targets.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running (since 2009) hosted monitoring service; it does what it says, but as a third party it holds your watch list and captured content, so it is a trust/dependency to weigh against self-hosting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "change-detection",
+      "changedetect"
+    ],
+    "aliases": [
+      "OnWebChange",
+      "onwebchange.com"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "change-detection"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/onwebchange.md"
   },
   {
@@ -26549,43 +26490,6 @@
     "_file": "library/tools/communities-forums/flicksurfer-com.md"
   },
   {
-    "id": "flixable-com",
-    "name": "flixable.com",
-    "description": "alternative way to find anything interesting on Netflix",
-    "url": "http://flixable.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Movies",
-      "Netflix"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/flixable-com.md"
-  },
-  {
     "id": "flixboss-com",
     "name": "flixboss.com",
     "description": "alternative way to find anything interesting on Netflix",
@@ -26621,43 +26525,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/flixboss-com.md"
-  },
-  {
-    "id": "flixwatch-co",
-    "name": "flixwatch.co",
-    "description": "alternative way to find anything interesting on Netflix",
-    "url": "http://flixwatch.co",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Movies",
-      "Netflix"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/flixwatch-co.md"
   },
   {
     "id": "footballforums-net",
@@ -46408,46 +46275,6 @@
     "_file": "library/tools/documents-metadata/aware-online.md"
   },
   {
-    "id": "bazaarvoice-north-america",
-    "name": "Bazaarvoice (North America)",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "http://www.bazaarvoice.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/bazaarvoice-north-america.md"
-  },
-  {
     "id": "binvis",
     "name": "BinVis.io",
     "description": "Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns metadata-exif style structural clues.",
@@ -60290,46 +60117,51 @@
   {
     "id": "cdnstrip",
     "name": "CDNStrip",
-    "description": "Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.",
+    "description": "Use when you have a list of IP addresses and want to separate CDN/WAF-fronted IPs from real origin IPs — returns two lists (CDN vs non-CDN) so you can focus on true hosts.",
     "url": "https://github.com/j3ssie/cdnstrip",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Filtering a bulk IP list down to non-CDN origin addresses worth investigating.",
     "selectorsIn": [
-      "domain"
+      "ip-address"
     ],
     "selectorsOut": [
-      "address",
-      "domain"
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); build/run locally, no account or key.",
+    "opsec": "passive",
+    "opsecNote": "Passive — classification uses the ProjectDiscovery cdncheck data (known CDN/WAF ranges) and does not connect to the target IPs, so it leaks nothing to them. It merely sorts a list you already have.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source Go utility by a known offensive-tooling author (j3ssie), built on ProjectDiscovery's maintained cdncheck library; the classification is only as current as that CDN-range dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "metabigor"
     ],
+    "aliases": [
+      "cdnstrip"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Dorks/Pentest/Vulnerabilities",
+      "cdn"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cdnstrip.md"
   },
   {
@@ -60807,29 +60639,34 @@
   {
     "id": "change-detection",
     "name": "Change Detection",
-    "description": "Self-hosted page change monitoring",
+    "description": "Use when you have a web page (domain/URL) you want watched and want alerts when its content changes — returns diffs and notifications on every update.",
     "url": "https://changedetection.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "change-detection"
     ],
-    "bestFor": "Self-hosted page change monitoring",
-    "input": "URL and monitoring rules",
-    "output": "Diffs and notifications when monitored content changes",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Monitoring a specific web page for changes and getting notified with a diff.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Fully open-source and free to self-host (Docker); a hosted cloud plan (~$8.99/mo) exists for those who don't want to run it themselves.",
     "opsec": "active",
-    "opsecNote": "Generates recurring requests to monitored targets; tune intervals for OPSEC.",
+    "opsecNote": "Active — it makes recurring HTTP requests to the target page on your schedule, so the target's server sees repeated hits from your instance/IP. Widen the check interval, and route through a proxy/Tor (supported) if the watched site should not see a pattern tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Popular, actively maintained open-source project (Web Technologies s.r.o.); self-hosting means you control the data and can audit the code, so trust is high for the tooling itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -60837,13 +60674,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "changedetect"
+      "changedetect",
+      "onwebchange"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "changedetection.io"
+    ],
+    "tags": [
+      "web-monitoring",
+      "change-detection"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/change-detection.md"
   },
   {
@@ -70207,29 +70050,39 @@
   {
     "id": "ip-fingerprints",
     "name": "IP Fingerprints",
-    "description": "Find domains on shared hosting",
+    "description": "Use when you have an IP address or domain and want reverse-IP neighbours, geolocation, and network details — returns co-hosted domains, location, and host info.",
     "url": "https://ipfingerprints.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Find domains on shared hosting",
-    "input": "IP address",
-    "output": "List of domains on IP",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reverse-IP lookup (other domains on the same host) plus IP geolocation in one place.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "geolocation",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses public DNS reverse lookup data.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tools; no account required.",
+    "opsec": "active",
+    "opsecNote": "Mixed — reverse-IP, WHOIS, and geolocation lookups are passive (they read third-party/DNS data, not the target). The built-in port scanner, however, sends live packets to the target IP from IPFingerprints' server; that is active recon and may be logged. Stick to the passive lookups unless you specifically intend to scan.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing free network-tools site; reverse-IP and geolocation are best-effort aggregations that can be incomplete or stale, so corroborate before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -70241,11 +70094,18 @@
       "ip-fingerprints-reverse-ip-lookup",
       "ipfingerprints"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IPFingerprints",
+      "ipfingerprints.com"
+    ],
+    "tags": [
+      "reverse-ip",
+      "geolocation",
+      "network-tools"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/ip-fingerprints.md"
   },
   {
@@ -165536,46 +165396,6 @@
     "_file": "library/tools/opsec-investigator-tooling/backbox.md"
   },
   {
-    "id": "badoo-dating-app-mobile-ios",
-    "name": "Badoo Dating App (Mobile – iOS)",
-    "description": "App for iOS mobile device for meeting people on Badoo",
-    "url": "https://apps.apple.com/us/app/badoo-dating-meet-new-people/id351331194",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/badoo-dating-app-mobile-ios.md"
-  },
-  {
     "id": "berobo-police-scanner-app-mobile-android",
     "name": "Berobo Police Scanner App (Mobile – Android)",
     "description": "App for mobile devices for monitoring law enforcement and emergency radio communications",
@@ -171653,45 +171473,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ip-dns-leak-detection.md"
   },
   {
-    "id": "ipcheck",
-    "name": "IPCheck",
-    "description": "OSINT tool: IPCheck.",
-    "url": "http://ip-check.info",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "anonymity"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "jondonym"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/ipcheck.md"
-  },
-  {
     "id": "ipv6-leak-tests",
     "name": "IPv6 Leak Tests",
     "description": "Use when you are on a VPN and want to confirm your real IPv6 `ip-address` isn't leaking past it — returns your exposed IPv6 (or a clean pass).",
@@ -172288,46 +172069,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/kik-messaging-app-mobile-android.md"
-  },
-  {
-    "id": "kik-messaging-app-mobile-ios",
-    "name": "Kik Messaging App (Mobile – iOS)",
-    "description": "App for mobile devices for real-time messaging services",
-    "url": "https://itunes.apple.com/ca/app/kik/id357218860?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/kik-messaging-app-mobile-ios.md"
   },
   {
     "id": "kindle-reading-app-mobile-android",
@@ -175329,24 +175070,25 @@
   {
     "id": "privacy-net",
     "name": "Privacy.net",
-    "description": "Listing of privacy resources",
+    "description": "Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach lookups, and privacy orgs.",
     "url": "https://privacy.net/resources/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A curated jump-off list of privacy/OpSec tools and organisations for the investigator's own hygiene.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference page; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — a static directory of links. Reading it exposes nothing about any target. It is for hardening your own operating posture (leak checks, encryption, breach monitoring), not for querying a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Privacy.net is an independent privacy-education site; the resources page points to reputable third parties (EFF, Tor Project, Have I Been Pwned, BrowserLeaks), so its value is the curation, and each linked tool carries its own trust.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -175355,18 +175097,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "privacy-net-privacy-analyzer"
     ],
+    "aliases": [
+      "Privacy.net Resources",
+      "privacy.net"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "proxy-servers-online-privacy-security-tools",
+      "opsec"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-net.md"
   },
   {
@@ -177122,46 +176868,6 @@
     "_file": "library/tools/opsec-investigator-tooling/slack-business-app-mobile-android.md"
   },
   {
-    "id": "sleepcycle",
-    "name": "Sleepcycle",
-    "description": "Website related to social networking in the form of health, wellness, and/or fitnes",
-    "url": "http://www.sleepcycle.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/sleepcycle.md"
-  },
-  {
     "id": "sleipnir",
     "name": "Sleipnir",
     "description": "Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a compartmentalized profile.",
@@ -178046,46 +177752,6 @@
     "_file": "library/tools/opsec-investigator-tooling/symantec-norton-anti-virus.md"
   },
   {
-    "id": "system-status-management-app-mobile-ios",
-    "name": "System Status Management App (Mobile – iOS)",
-    "description": "App for mobile devices for monitoring and managing battery and memory usage",
-    "url": "https://itunes.apple.com/app/apple-store/id401457165?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/system-status-management-app-mobile-ios.md"
-  },
-  {
     "id": "tagged-social-networking-app-mobile-android",
     "name": "Tagged Social Networking App (Mobile – Android)",
     "description": "App for mobile devices for social networking and photos",
@@ -178320,47 +177986,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/text-to-ascii-art-generator-taag.md"
-  },
-  {
-    "id": "text2img",
-    "name": "Text2img",
-    "description": "text to image AI generator",
-    "url": "https://deepai.org/machine-learning-model/text2img",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepai-ai-image-detector"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/text2img.md"
   },
   {
     "id": "the-osint-puppeteer",
@@ -179743,46 +179368,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/typeit.md"
-  },
-  {
-    "id": "uber-private-driver-app-mobile-ios",
-    "name": "Uber Private Driver App (Mobile – iOS)",
-    "description": "App for mobile devices for searching for and communicating with private hire driving services",
-    "url": "https://itunes.apple.com/ca/app/uber/id368677368?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/uber-private-driver-app-mobile-ios.md"
   },
   {
     "id": "ucbrowser",
@@ -260257,39 +259842,53 @@
   {
     "id": "bright-local-search-result-checker",
     "name": "Bright Local Search Result Checker",
-    "description": "shows what #Google search results look like for a particular query around the world (by exact address)",
+    "description": "Use when you have a query and a precise location and want to see Google/Maps results exactly as a local there would — returns geo-localised SERP links without moving your IP.",
     "url": "https://www.brightlocal.com/local-search-results-checker/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [
+    "bestFor": "Viewing Google search/Maps results as they appear from a specific country, city, or ZIP.",
+    "selectorsIn": [
+      "name",
       "address"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The Local Search Results Checker is free with a daily search cap; hitting the limit prompts a login or a 14-day trial for more searches and the wider BrightLocal platform.",
+    "opsec": "active",
+    "opsecNote": "Active in effect — BrightLocal runs the Google query for you from the chosen locale, so the search happens on their infrastructure, not your IP. That protects your location/identity from Google, but your query is logged by BrightLocal. Use a sock-puppet account if you exceed the free cap.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BrightLocal is an established local-SEO company; the tool returns genuine geo-targeted Google results, so the SERP data is authentic (it reflects Google, with the usual SEO/personalisation caveats).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BrightLocal Local Search Results Checker",
+      "Local SERP Checker"
+    ],
     "tags": [
-      "Tools for Google"
+      "Tools for Google",
+      "local-search",
+      "serp"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bright-local-search-result-checker.md"
   },
   {
@@ -282537,37 +282136,50 @@
   {
     "id": "sdorker",
     "name": "SDorker",
-    "description": "Type the Google Dork and get the list of the pages, that came up with this query.",
+    "description": "Use when you have a Google dork query and want the resulting page list from the terminal — returns URLs matching the dork (with optional basic vuln flags).",
     "url": "https://github.com/TheSpeedX/SDorker",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running Google dork queries from the CLI and collecting the matching URLs in bulk.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source; clone from GitHub. Note it is written in Python 2 (end-of-life), so it needs a legacy interpreter and may need fixes to run today.",
+    "opsec": "active",
+    "opsecNote": "Active — it issues automated Google queries from your IP. Google aggressively rate-limits and CAPTCHAs scripted dorking, and running many queries can flag/temporarily block your address. Route through a proxy/VPN and go slow; scraping search results also breaches Google's ToS.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community script (TheSpeedX) marked educational-only; unmaintained Python 2 code that includes basic SQLi/vuln checks, so review it before running and confine to authorised targets.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SDorker"
+    ],
     "tags": [
-      "Tools for Google"
+      "Tools for Google",
+      "google-dorking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sdorker.md"
   },
   {
@@ -334093,46 +333705,6 @@
     "_file": "library/tools/translation-language/dictionary-com-translation.md"
   },
   {
-    "id": "dragon-speech-recognition-solutions",
-    "name": "Dragon Speech Recognition Solutions",
-    "description": "Program that recognized speech and translates it into text",
-    "url": "http://www.nuance.com/dragon/index.htm",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/dragon-speech-recognition-solutions.md"
-  },
-  {
     "id": "emojitranslate-com",
     "name": "emojitranslate.com",
     "description": "Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji sequences.",
@@ -340424,44 +339996,57 @@
   {
     "id": "flight-radar-24",
     "name": "Flight Radar 24",
-    "description": "OSINT tool: Flight Radar 24.",
+    "description": "Use when you have a flight number, aircraft registration, or callsign and want its live/last-known position and route — returns geolocation plus aircraft identity.",
     "url": "https://flightradar24.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking a specific aircraft in near-real-time and reconstructing its recent flights.",
     "selectorsIn": [
-      "name"
+      "name",
+      "vin"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Live map, flight search, and current position are free without an account; extended playback, longer flight history, and some aircraft details require a paid subscription. A free login raises limits.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read a public ADS-B/MLAT aggregation portal, not the aircraft or its operator. Browsing never touches the target. Only a paid account or saved alerts create an identity trail; use a sock-puppet login if you subscribe.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The most widely used consumer flight-tracking service, aggregating a global ADS-B/MLAT receiver network plus FAA/Eurocontrol feeds; position and identity come from the aircraft's own transponder, so they are authoritative when broadcasting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "flightradar24-com"
     ],
+    "aliases": [
+      "FlightRadar24",
+      "FR24",
+      "flightradar24.com"
+    ],
+    "tags": [
+      "aviation",
+      "ads-b",
+      "flight-tracking"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/transportation/flight-radar-24.md"
   },
   {

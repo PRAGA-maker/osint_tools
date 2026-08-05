@@ -99,7 +99,7 @@ kind: group-index
 - **`boolean-builder-thebalazs`** (low) — Use when you have a name/keywords and want a ready-made Google X-Ray query to find someone's profiles — returns a search string that surface
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
 - **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
-- **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
+- **`bright-local-search-result-checker`** (low) — Use when you have a query and a precise location and want to see Google/Maps results exactly as a local there would — returns geo-localised 
 - **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
 - **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
@@ -506,7 +506,7 @@ kind: group-index
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
 - **`scirp`** (low) — Use when you have an author `name` or research topic and want open-access papers published in SCIRP journals — returns document-id, employer
-- **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
+- **`sdorker`** (low) — Use when you have a Google dork query and want the resulting page list from the terminal — returns URLs matching the dork (with optional bas
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
 - **`search-all`** (medium) — Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 

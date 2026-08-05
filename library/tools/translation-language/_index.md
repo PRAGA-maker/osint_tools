@@ -29,7 +29,6 @@ kind: group-index
 - **`definitions-net`** (low) — Use when you have a foreign or unfamiliar term from collected material and want a definition plus translation in 40+ languages — returns pla
 - **`dictionary-com-translation`** (low) — OSINT tool: Dictionary.com: Translation.
 - **`dictionary-com`** (low) — Search for definitions, grammar, slang, acronyms, and more
-- **`dragon-speech-recognition-solutions`** (low) — Program that recognized speech and translates it into text
 - **`emojitranslate-com`** (low) — Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji s
 - **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
