@@ -607,7 +607,6 @@ kind: group-index
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
 - **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
 - **`twish`** (low) — Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorisi
-- **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
 - **`twitch-followage-tool`** (medium) — Use when you have a Twitch `username` and want the full list of channels that account follows, with follow dates — returns `social-profile` 
 - **`twitch-insights`** (medium) — Use when you have a Twitch `username` (or numeric ID) and want to confirm the account exists, when it was created, and whether it is a known
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to

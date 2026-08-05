@@ -79,7 +79,7 @@ kind: group-index
 - **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address
 - **`rupep`** (low) — Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `
 - **`sanctionsexplorer`** (low) — Use when you have a `name` or `employer-org` and want to check current/historical OFAC, UN and EU sanctions listings — returns employer-org,
-- **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.
+- **`search-for-investment-fund-documents`** (low) — Use when you have a Canadian investment/mutual fund or its manager (`employer-org`) and want its official filings — returns prospectuses, fi
 - **`search-our-ppp-loan-database`** (low) — Use when you have a business `name`, an `address`/area, or a person tied to a company and want their US PPP loan record — returns loan amoun
 - **`sortcodes-co-uk`** (medium) — Use when you have a UK bank `document-id` (six-digit sort code) and want to identify the bank and branch behind it — returns the institution
 - **`start-me`** (medium) — Use when you have a `crypto-wallet` or a crypto-investigation goal and want a curated directory of blockchain/crypto OSINT tools — returns p

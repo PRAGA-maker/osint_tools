@@ -29,7 +29,6 @@ kind: group-index
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
 - **`awesome-forensics`** (low) — Use when you need to pick a digital-forensics tool for a task — returns a curated, categorised list of free/open-source forensic analysis to
-- **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
 - **`awesome-hacking`** (low) — Use when you need to discover a technique or tool for a specific security/forensics task — returns a curated index of hacking tutorials, too
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
@@ -54,7 +53,6 @@ kind: group-index
 - **`cipherstick`** (low) — Use when you want to practise or teach OSINT investigation technique on realistic puzzles — returns browser-based training challenges, not c
 - **`circos`** (low) — Use when you have relational data (who-contacts-whom, wallet flows, co-occurrences) and want a circular link diagram to reveal the structure
 - **`code-repository-google-cse`** (low) — Use when you have a `username`, `email` or keyword and want to search across code-hosting sites at once — returns matching repos/code via a 
-- **`code-understanding-tools-list`** (low) — Tools for understanding other people's code
 - **`codepen`** (low) — Use when you have a `username` or developer name and want their front-end work — search CodePen for a person's pens/profile, or use it as a 
 - **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
 - **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c

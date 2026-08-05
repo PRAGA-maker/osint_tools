@@ -108,7 +108,6 @@ kind: group-index
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
 - **`catawiki`** (medium) — Use when you have a `username` or `name` and want to trace a collectibles seller/bidder or a specific object's sale — returns `social-profil
 - **`ceek-meta-search-japan`** (low) — Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sourc
-- **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
 - **`chegg-search-engine`** (medium) — Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public p
 - **`chrome-extension-archive-search-engine`** (medium) — Use when you have a Chrome extension name, id, or developer and want to find archived/indexed extension pages — returns `domain`, `social-pr
 - **`chromium-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and co
@@ -330,7 +329,6 @@ kind: group-index
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
-- **`magportal`** (low) — OSINT tool: MagPortal.
 - **`mailing-list-archives-search-engine`** (low) — Use when you have a `name`/`email`/keyword and want their posts in public mailing-list archives — returns matching list threads and messages
 - **`maldevel-osint`** (low) — Use when you want a curated reference of OSINT techniques/scripts/tips — a small GitHub collection of investigation and reconnaissance notes
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
@@ -400,7 +398,6 @@ kind: group-index
 - **`open-source-intelligence-txuswashere`** (low) — Use when you need to discover OSINT tools and methodologies for a given selector or task — returns a curated reference index of tools/techni
 - **`opendirsearch-abifog-com`** (low) — Use when you have a `name`/keyword and want to find publicly exposed open directories hosting related files (docs, images, media) — returns 
 - **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
-- **`orange-france`** (low) — OSINT tool: Orange (France).
 - **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
 - **`oscobo`** (medium) — Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links
 - **`osint-blogs-search-engine`** (low) — Use when you have a `name`, `username`, tool, or technique and want to search a curated set of OSINT blogs and practitioner writeups at once
@@ -527,7 +524,6 @@ kind: group-index
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — Use when you have a filename/keyword and want to find files offered by XDCC bots on IRC — returns the network, bot, pack number, and filenam
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
-- **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.

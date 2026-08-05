@@ -48,7 +48,6 @@ kind: group-index
 - **`cardgenerator-org`** (low) — Use when a signup/free-trial form demands a card number for a sock-puppet account — returns Luhn-valid test card numbers (no funds) plus fil
 - **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
-- **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
 - **`chepy`** (low) — Use when you have encoded/encrypted/obfuscated data (a token, a blob, an encoded string) and want to transform it from the command line — a 
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
@@ -79,7 +78,6 @@ kind: group-index
 - **`exif-viewer-add-on-for-chrome`** (low) — Use when you have an `image` on a web page and want its EXIF metadata (camera, timestamp, GPS) inline via right-click — returns metadata and
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
-- **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
 - **`face-anonimyzer`** (low) — Use when you have your own `face`/`image` and want a synthetic look-alike for a sock-puppet avatar or to protect your identity — returns an 
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
@@ -169,7 +167,6 @@ kind: group-index
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
-- **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
 - **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
@@ -244,12 +241,11 @@ kind: group-index
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
-- **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
+- **`upload-files-to-ipfs-from-browser`** (low) — Use when you (an investigator) need censorship-resistant, tamper-evident hosting of a file — a browser panel that pins a file to IPFS and re
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.
 - **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
-- **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
 - **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
 - **`view-exif-data-online-remove-exif-online`** (low) — Use when you have an `image` and want to read its EXIF metadata (camera, timestamp, GPS on a map) or strip EXIF before sharing — returns met
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
@@ -258,7 +254,6 @@ kind: group-index
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
 - **`washington-state-driver-s-license-generator`** (medium) — Use when you have a subject's `name` and `dob` and want to derive their Washington State driver's license number — returns a candidate `docu
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
-- **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China

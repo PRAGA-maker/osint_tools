@@ -20,7 +20,6 @@ kind: group-index
 ## Skills here
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
 - **`2023-world-report`** (low) — Use when you have a country tied to a case and want a documented human-rights summary for it — returns HRW's country-by-country account of e
-- **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
@@ -134,7 +133,6 @@ kind: group-index
 - **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
-- **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-report-website-united-states`** (low) — Use when you have a US restaurant/food-service `employer-org` and want industry background or vendor context — returns trade articles and a 
 - **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Use when you need to download and preserve a video from a social/media URL before it's deleted — paste the link and get a downloadable file 
@@ -151,7 +149,6 @@ kind: group-index
 - **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
 - **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
-- **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (medium) — Use when you have a `username`, `email`, key, or code string and want to search across public open-source repositories at scale — returns em
 - **`squareup`** (low) — Use when you have a small-business `name`/`employer-org` or a Square receipt/store link and want to confirm a Square payment presence — retu

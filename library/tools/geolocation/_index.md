@@ -156,7 +156,6 @@ kind: group-index
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
 - **`lostplace-atlas`** (medium) — Use when you have a `geolocation` (or an image of an abandoned site) in Germany/Europe and want to identify or cross-reference it — returns 
-- **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
 - **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Use when you have a `geolocation` and want the bedrock geology at that spot — returns rock type/formation/age to corroborate or narrow a loc
 - **`map-army`** (low) — Use when you have `geolocation` data and want to annotate it with standardized military/tactical symbology — returns an annotated `geolocati
 - **`map-fight`** (medium) — Use when you have two areas (countries, regions or cities) as `geolocation` and want to compare their true relative size by overlaying them 
