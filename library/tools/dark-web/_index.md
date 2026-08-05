@@ -18,7 +18,6 @@ kind: group-index
 - **`activetk`** (low) — OSINT tool: ActiveTK.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
-- **`bitpharma`** (low) — OSINT tool: BitPharma.
 - **`blockpath-com`** (low) — Use when you have a Bitcoin address or crypto-wallet and want to visualise its transaction graph and counterparties — returns linked crypto-
 - **`browseriling`** (low) — Use when you have an `.onion` or clearnet URL and want to open it in a real cloud Tor browser without installing anything — returns a render
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c

@@ -330,7 +330,7 @@ kind: group-index
 - **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
 - **`rextract`** (low) — Use when you have a list of URLs/`domain`s and want to pull specific strings from their HTML — returns regex-matched values (emails, IDs, to
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
-- **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
+- **`robottester`** (low) — Use when you have a `domain` and want to pull every path listed in its robots.txt and see which are actually reachable — returns a tested li
 - **`ronin-recon`** (low) — Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findi
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerpr

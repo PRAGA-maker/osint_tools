@@ -20,7 +20,7 @@ kind: group-index
 ## Skills here
 - **`100-search-engines`** (medium) — Use when you have a `name`/`username` and want to fan one query across many sites (LinkedIn, Craigslist, Maps, Amazon…) — returns social-pro
 - **`1337x-torrent-search-engine`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
-- **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
+- **`1st-headlines`** (low) — Use when you have a topic, place, or event and want a fast cross-source view of current news headlines — returns links to stories across man
 - **`1websdirectory`** (medium) — Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classif
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — Use when you have a part image, sketch, or keyword and want to identify matching CAD/BIM models and their manufacturers — returns employer-o

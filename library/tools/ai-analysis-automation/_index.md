@@ -25,7 +25,7 @@ kind: group-index
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
 - **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
-- **`ashok`** (low) — Swiff knife for #osint
+- **`ashok`** (low) — Use when you have a `domain`/URL (or GitHub `username`) and want a fast one-command recon sweep — returns subdomains, tech/CMS, DNS, open po
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
@@ -197,7 +197,7 @@ kind: group-index
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — Use when you have an encoded/hashed string from collected data and want to decode, hash, encrypt or reformat it in the browser — returns the
 - **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
-- **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
+- **`opengraph-intel-ogi`** (low) — Use when you have a seed selector (`domain`, `ip-address`, `email`, `username`) and want to build and enrich a visual link-analysis graph vi
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
 - **`oryon-osint-query-tool`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens
@@ -251,7 +251,6 @@ kind: group-index
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
 - **`quick-hashtags-and-keywords-search`** (low) — Use when you have a `username`, hashtag or keyword and want to sweep it across ~89 social platforms at once — returns direct search links pe
-- **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.

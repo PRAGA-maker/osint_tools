@@ -192,7 +192,7 @@ kind: group-index
 - **`violation-tracker`** (low) — Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agenci
 - **`visualorigins-digitaldigging-org`** (low) — Use when you have an `image` and want to find its earliest appearance online — returns date-scoped reverse-image leads to trace a photo back
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
-- **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
+- **`vsudo-geotag-tool`** (low) — Use when you have an `image` and a known `geolocation` and want to write GPS coordinates into the photo's EXIF (or preview how geotags are e
 - **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv
 - **`xifr-addons-mozilla-org`** (medium) — Use when you have an `image` on a web page and want to read its EXIF/IPTC/XMP metadata (including GPS) in-browser — returns metadata-exif an
 - **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 
