@@ -527,7 +527,7 @@ kind: group-index
 - **`manitoba-court-records`** (high) — Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and 
 - **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
 - **`manta-north-america`** (medium) — Use when you have a US small-business `name` or `employer-org` and want its address, phone and category listing — returns address, phone, em
-- **`manta`** (low) — OSINT tool: Manta.
+- **`manta`** (low) — Use when you have a business name, person, or location and want US small-business directory data — company profile, address, phone, and some
 - **`mappingpoliceviolence-org`** (medium) — Use when you have a `name`, date, or `geolocation` and want to check whether a person was killed by U.S. police — returns documented killing
 - **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir
 - **`maryland`** (high) — Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate d
@@ -851,7 +851,6 @@ kind: group-index
 - **`thekyb-com`** (high) — Use when you have a company `name` or `employer-org` and want verified registry data — legal name, address, officers, and beneficial owners 
 - **`thentiacloud-net`** (medium) — Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns regis
 - **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
-- **`toronto-star`** (low) — OSINT tool: Toronto Star.
 - **`tracxn`** (medium) — Use when you have a company or `name` and want private-market intelligence — returns startup profiles, funding, founders, and investor/assoc
 - **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`

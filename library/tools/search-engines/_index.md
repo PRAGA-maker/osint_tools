@@ -32,7 +32,6 @@ kind: group-index
 - **`abusech`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `d
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
 - **`abyznewslinks`** (low) — Use when you have a `geolocation`/`address` and want local news outlets covering it — returns a directory of newspapers, broadcasters and pr
-- **`academic-journals`** (low) — OSINT tool: Academic Journals.
 - **`access-to-archival-databases`** (medium) — Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, 
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
@@ -474,11 +473,9 @@ kind: group-index
 - **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Use when you have a `name`, `username`, or `email` and want to fan the same query across 150+ search sites from your terminal — returns brow
-- **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — Use when you have a `name`, topic or affiliation and want peer-reviewed literature — returns academic articles, author affiliations and cita
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
-- **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
 - **`scirp`** (low) — Use when you have an author `name` or research topic and want open-access papers published in SCIRP journals — returns document-id, employer
 - **`sdorker`** (low) — Use when you have a Google dork query and want the resulting page list from the terminal — returns URLs matching the dork (with optional bas
 - **`search-22`** (low) — access to 10+ ftp search tools from one page

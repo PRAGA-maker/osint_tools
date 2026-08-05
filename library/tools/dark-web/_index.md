@@ -20,7 +20,6 @@ kind: group-index
 - **`blockpath-com`** (low) — Use when you have a Bitcoin address or crypto-wallet and want to visualise its transaction graph and counterparties — returns linked crypto-
 - **`browseriling`** (low) — Use when you have an `.onion` or clearnet URL and want to open it in a real cloud Tor browser without installing anything — returns a render
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
-- **`cannabisuk`** (low) — OSINT tool: CannabisUK.
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
@@ -32,7 +31,7 @@ kind: group-index
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
-- **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
+- **`github-apurv-singh-gautam`** (low) — Use when you're starting dark-web research and want a curated GitHub list of tools for finding, scraping, and monitoring Tor/onion services 
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
 - **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc

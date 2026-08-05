@@ -75,12 +75,10 @@ kind: group-index
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
 - **`dracos-linux`** (low) — Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment 
-- **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Use when you want to harden an investigator browser against tracking/fingerprinting and learn OpSec tradecraft — returns privacy tooling and
 - **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
 - **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
-- **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`eset-smart-security`** (low) — Malware and virus detection and elimination program
 - **`exif-viewer-add-on-for-chrome`** (low) — Use when you have an `image` on a web page and want its EXIF metadata (camera, timestamp, GPS) inline via right-click — returns metadata and
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
@@ -102,10 +100,9 @@ kind: group-index
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
 - **`fireshot`** (low) — Use when you have a web page you need to preserve as evidence and want a full-length screenshot saved as PDF/PNG — returns a captured, times
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
-- **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
 - **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
-- **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
+- **`freenet`** (low) — Use when an investigation touches the Freenet/Hyphanet darknet — a peer-to-peer anonymous publishing/file-sharing network — and you need to 
 - **`generate-data`** (low) — Use when you need realistic filler data to flesh out a sock-puppet persona or test a workflow — returns bulk fake names, emails, addresses, 
 - **`generate-sa-id-numbers`** (low) — Use when you have a `dob` (and gender/citizenship) and want to construct or sanity-check the structure of a South African national ID number
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
@@ -120,7 +117,6 @@ kind: group-index
 - **`google-image-search-extension-chrome`** (low) — Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other s
 - **`google-password-alert-extension-chrome`** (low) — Use when you want your investigator browser to warn you if you type your Google password into a phishing/non-Google page — returns real-time
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
-- **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
@@ -219,7 +215,6 @@ kind: group-index
 - **`septor-linux`** (low) — Use when you need a preconfigured Tor-routed live OS for anonymous OSINT work — returns a hardened Debian/KDE workstation that pushes all tr
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta
 - **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
-- **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
@@ -234,8 +229,7 @@ kind: group-index
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
-- **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
-- **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
+- **`tempmail-org-bot`** (low) — Use when you (the investigator) need a throwaway email address to register a sock-puppet account or receive a verification code without expo
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
 - **`the-osint-puppeteer`** (low) — Use when you need to build a durable sock-puppet identity for investigation — returns a step-by-step tradecraft guide for creating and maint
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
@@ -274,7 +268,6 @@ kind: group-index
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
 - **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
-- **`vpn`** (low) — Database of VPNs
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
 - **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
@@ -287,10 +280,8 @@ kind: group-index
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
-- **`yandex-browser`** (low) — OSINT tool: Yandex Browser.
 - **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
-- **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
 

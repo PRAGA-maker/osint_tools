@@ -8926,42 +8926,6 @@
     "_file": "library/tools/ai-analysis-automation/onion-lookup.md"
   },
   {
-    "id": "online-loudness-meter",
-    "name": "Online Loudness Meter",
-    "description": "allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.",
-    "url": "https://youlean.co/online-loudness-meter/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sound indefication and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/online-loudness-meter.md"
-  },
-  {
     "id": "online-tools",
     "name": "Online Tools (emn178)",
     "description": "Use when you have an encoded/hashed string from collected data and want to decode, hash, encrypt or reformat it in the browser — returns the transformed value locally.",
@@ -12521,37 +12485,44 @@
   {
     "id": "sector035",
     "name": "Sector035",
-    "description": "OSINT tool: Sector035.",
+    "description": "Use when you want to learn OSINT technique and keep current — Sector035's blog runs the weekly \"Week in OSINT\" roundup of new tools, methods, and challenges — a reference/learning resource, not a data lookup.",
     "url": "https://sector035.nl/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Staying current on new OSINT tools and techniques via the \"Week in OSINT\" series.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public blog — fully passive, discloses nothing. No target interaction is involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by Sector035, a well-known OSINT practitioner; \"Week in OSINT\" is a widely-followed, credible community resource for tools and tradecraft.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Week in OSINT",
+      "sector035.nl"
+    ],
     "tags": [
       "osint-blogs"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sector035.md"
   },
   {
@@ -13208,37 +13179,40 @@
   {
     "id": "spotify-profile-monitor",
     "name": "spotify_profile_monitor",
-    "description": "OSINT tool: spotify_profile_monitor.",
+    "description": "Use when you have a target's public Spotify profile/username and want to monitor changes over time — playlists, followers/following, and (where visible) listening activity — returns username/social-profile activity leads.",
     "url": "https://github.com/misiektoja/spotify_profile_monitor",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "music-streaming-services"
+    "bestFor": "Tracking a public Spotify user's playlists, follows, and activity changes over time.",
+    "selectorsIn": [
+      "username"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source Python tool; you supply your own Spotify API credentials (free developer account) to run it.",
+    "opsec": "passive",
+    "opsecNote": "It reads a target's PUBLIC Spotify data via the API, so it doesn't friend or notify them — passive. Your Spotify developer app/account is what makes the calls; use a sock-puppet developer account, and remember polling frequently still queries Spotify (which logs your app), not the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "An open-source monitoring tool by an independent developer (misiektoja); it uses Spotify's official API, so the data is authoritative, but the tool itself is community-maintained.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
     "relatedTools": [
       "github-monitor",
       "instagram-monitor",
@@ -13249,6 +13223,16 @@
       "steam-monitor",
       "xbox-monitor"
     ],
+    "aliases": [
+      "spotify profile monitor"
+    ],
+    "tags": [
+      "music-streaming-services",
+      "socmint"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/spotify-profile-monitor.md"
   },
   {
@@ -35656,48 +35640,6 @@
     "_file": "library/tools/dark-web/canadian-numbering-administrator.md"
   },
   {
-    "id": "cannabisuk",
-    "name": "CannabisUK",
-    "description": "OSINT tool: CannabisUK.",
-    "url": "http://7mejofwihleuugda5kfnr7tupvfbaqntjqnfxc4hwmozlcmj2cey3hqd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/cannabisuk.md"
-  },
-  {
     "id": "charity-navigator",
     "name": "Charity Navigator",
     "description": "Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — returns EIN, finances and named officers/associates.",
@@ -36297,44 +36239,48 @@
   },
   {
     "id": "github-apurv-singh-gautam",
-    "name": "Github - Apurv Singh Gautam",
-    "description": "OSINT tool: Github - Apurv Singh Gautam.",
+    "name": "Dark Web OSINT Tools (Apurv Singh Gautam)",
+    "description": "Use when you're starting dark-web research and want a curated GitHub list of tools for finding, scraping, and monitoring Tor/onion services — returns pointers to tools, not data itself.",
     "url": "https://github.com/apurvsinghgautam/dark-web-osint-tools",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
+    "bestFor": "A curated catalog of dark-web/Tor OSINT tools for discovery, scraping, and monitoring.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "social-profile"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open GitHub repository; the tools it lists vary (some free, some need setup/keys/Tor).",
+    "opsec": "passive",
+    "opsecNote": "Reading the list is passive. The tools it points to touch Tor/onion services — that activity must run through Tor from an isolated VM, never your real IP/host. Some listed tools actively crawl hidden services; treat each on its own OpSec terms before running it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-curated GitHub list by a known researcher (Apurv Singh Gautam); it indexes third-party tools whose quality/currency you must judge individually.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "dark-web-osint-tools",
+      "Apurv Singh Gautam dark web tools"
+    ],
     "tags": [
       "darkweb",
       "Dark Web Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/github-apurv-singh-gautam.md"
   },
   {
@@ -163817,46 +163763,6 @@
     "_file": "library/tools/opsec-investigator-tooling/dracos-linux.md"
   },
   {
-    "id": "ebay-auctionsniper-app-mobile-android",
-    "name": "Ebay AuctionSniper App (Mobile – Android)",
-    "description": "App for mobile devices for online auction monitoring",
-    "url": "https://play.google.com/store/apps/details?id=com.auctiva.auctionsniper",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ebay-auctionsniper-app-mobile-android.md"
-  },
-  {
     "id": "edge",
     "name": "Microsoft Edge",
     "description": "Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser for compartmentalised OSINT sessions.",
@@ -164105,49 +164011,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/epic-online-guide-to-practical-privacy-tools.md"
-  },
-  {
-    "id": "eset-cybersecurity-for-mac",
-    "name": "ESET Cybersecurity For Mac",
-    "description": "Malware and virus detection and elimination program for Mac",
-    "url": "http://www.eset.com/us/store/mac",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "eset-smart-security"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/eset-cybersecurity-for-mac.md"
   },
   {
     "id": "eset-smart-security",
@@ -165352,46 +165215,6 @@
     "_file": "library/tools/opsec-investigator-tooling/forager.md"
   },
   {
-    "id": "foursquare-swarm-social-networking-app-mobile-ios",
-    "name": "Foursquare Swarm Social Networking App (Mobile – iOS)",
-    "description": "App for mobile devices for social messaging and reviews",
-    "url": "https://apps.apple.com/ca/app/foursquare-swarm-check-in-app/id870161082",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/foursquare-swarm-social-networking-app-mobile-ios.md"
-  },
-  {
     "id": "free-fax",
     "name": "Free Fax (FaxZero)",
     "description": "Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do it free without your own fax line.",
@@ -165487,42 +165310,47 @@
   },
   {
     "id": "freenet",
-    "name": "Freenet",
-    "description": "Browse the internet and share files privately and anonymously via encrypted network",
+    "name": "Freenet (Hyphanet)",
+    "description": "Use when an investigation touches the Freenet/Hyphanet darknet — a peer-to-peer anonymous publishing/file-sharing network — and you need to understand or access it; it's an anonymity network, not a selector lookup.",
     "url": "https://freenetproject.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Accessing/understanding the Freenet (Hyphanet) anonymous P2P publishing and filesharing darknet.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open-source (now branded Hyphanet); you run a node yourself on your own hardware.",
+    "opsec": "active",
+    "opsecNote": "Running a Freenet/Hyphanet node connects you into a P2P darknet and stores encrypted fragments of others' content on your disk — a meaningful legal/operational exposure. Run it only on an isolated, disposable machine you control, understand your jurisdiction's stance, and never mix it with your real identity. \"Opennet\" mode reveals your node to strangers; \"darknet\" mode connects only to trusted peers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-established open-source anonymity project (Freenet, now Hyphanet); the software is genuine, though content on the network is unindexed and unvetted.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Hyphanet",
+      "Freenet Project"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/freenet.md"
   },
   {
@@ -166171,46 +165999,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-ios.md"
-  },
-  {
-    "id": "google-search-app-mobile-ios",
-    "name": "Google Search App (Mobile – iOS)",
-    "description": "App for mobile devices for general searches",
-    "url": "https://itunes.apple.com/ca/app/google-app-search-made-just/id284815942?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-search-app-mobile-ios.md"
   },
   {
     "id": "google-search-results-scraper",
@@ -171417,46 +171205,6 @@
     "_file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md"
   },
   {
-    "id": "shiftyjelly-pocketcasts-networking-app-mobile-android",
-    "name": "Shiftyjelly Pocketcasts Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and podcasts",
-    "url": "https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/shiftyjelly-pocketcasts-networking-app-mobile-android.md"
-  },
-  {
     "id": "similarsites-firefox",
     "name": "SimilarSites – Firefox",
     "description": "Firefox extension for locating similar sites.",
@@ -172162,86 +171910,50 @@
     "_file": "library/tools/opsec-investigator-tooling/storyful-multisearch-chrome-add-on.md"
   },
   {
-    "id": "symantec-norton-anti-virus",
-    "name": "Symantec Norton Anti-Virus",
-    "description": "Malware and virus detection and elimination program",
-    "url": "http://us.norton.com/antivirus",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "norton-safeweb-rating-search"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/symantec-norton-anti-virus.md"
-  },
-  {
     "id": "tempmail-org-bot",
     "name": "@TempMail_org_bot",
-    "description": "telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)",
+    "description": "Use when you (the investigator) need a throwaway email address to register a sock-puppet account or receive a verification code without exposing a real inbox — a Telegram bot that spins up disposable inboxes; returns a temporary email.",
     "url": "https://t.me/TempMail_org_bot",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [
+    "bestFor": "Quickly generating a disposable email inbox from Telegram for sock-puppet registrations.",
+    "selectorsIn": [],
+    "selectorsOut": [
       "email"
     ],
-    "selectorsOut": [
-      "address"
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Telegram bot; you need a Telegram account (ideally a sock-puppet one) to use it.",
+    "opsec": "passive",
+    "opsecNote": "This is an opsec convenience for YOUR side — a burner inbox so you never hand a real/attributable email to a site you're investigating or registering on. Assume the temp-mail provider (and Telegram) can read everything that arrives; never use it for anything requiring confidentiality, account recovery, or long-term access. Use a dedicated sock-puppet Telegram account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party disposable-email bot of unknown operator; treat inboxes as fully public and ephemeral, and never rely on message delivery or retention.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "TempMail Telegram bot",
+      "TempMail_org_bot"
+    ],
     "tags": [
       "Sock Puppets"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/tempmail-org-bot.md"
   },
   {
@@ -174240,46 +173952,6 @@
     "_file": "library/tools/opsec-investigator-tooling/vivaldi.md"
   },
   {
-    "id": "vpn",
-    "name": "VPN",
-    "description": "Database of VPNs",
-    "url": "https://www.vpn.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/vpn.md"
-  },
-  {
     "id": "walmart-shopping-app-mobile-android",
     "name": "Walmart Shopping App (Mobile – Android)",
     "description": "App for mobile devices for online shopping through Walmart",
@@ -174936,54 +174608,6 @@
     "_file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-android.md"
   },
   {
-    "id": "yandex-browser",
-    "name": "Yandex Browser",
-    "description": "OSINT tool: Yandex Browser.",
-    "url": "https://browser.yandex.com/desktop/main",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "yandex",
-      "yandex-image-search",
-      "yandex-images",
-      "yandex-mail",
-      "yandex-maps",
-      "yandex-russia",
-      "yandex-translate",
-      "yandex-video-search",
-      "yandex-wordstat",
-      "yandexmaps"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/yandex-browser.md"
-  },
-  {
     "id": "yelp-social-reviews-app-mobile-android",
     "name": "Yelp Social Reviews App (Mobile – Android)",
     "description": "App for mobile devices for social networking and reviews",
@@ -175062,46 +174686,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/youtube-social-networking-app-mobile-android.md"
-  },
-  {
-    "id": "youtube-social-networking-app-mobile-ios",
-    "name": "Youtube Social Networking App (Mobile – iOS)",
-    "description": "App for mobile devices for social networking and video sharing",
-    "url": "https://itunes.apple.com/ca/app/youtube/id544007664?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/youtube-social-networking-app-mobile-ios.md"
   },
   {
     "id": "youtube-transcript-search",
@@ -225241,46 +224825,53 @@
   {
     "id": "manta",
     "name": "Manta",
-    "description": "OSINT tool: Manta.",
+    "description": "Use when you have a business name, person, or location and want US small-business directory data — company profile, address, phone, and sometimes owner/officer — returns employer-org, address, and phone.",
     "url": "https://www.manta.com/business",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up US small businesses for address, phone, and basic company/owner details.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "employer-org",
-      "associate"
+      "address",
+      "phone",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and view basic business listings; Manta also sells marketing services to businesses, but lookups don't require payment.",
+    "opsec": "passive",
+    "opsecNote": "A public business directory — searching discloses nothing about a target beyond your query to Manta. Use a clean/sock-puppet browser; nothing here notifies the business.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running US small-business directory; listings are partly self-submitted/aggregated, so details can be outdated or promotional — corroborate against official registries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "manta-north-america"
+    ],
+    "aliases": [
+      "manta.com"
+    ],
     "tags": [
       "corporate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "manta-north-america"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/manta.md"
   },
   {
@@ -243979,40 +243570,6 @@
     "_file": "library/tools/public-records/tmdn-design-view.md"
   },
   {
-    "id": "toronto-star",
-    "name": "Toronto Star",
-    "description": "OSINT tool: Toronto Star.",
-    "url": "https://misc.thestar.com/interactivegraphic/2019/07-july/25-housing-complaints-database/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/toronto-star.md"
-  },
-  {
     "id": "tracxn",
     "name": "Tracxn",
     "description": "Use when you have a company or `name` and want private-market intelligence — returns startup profiles, funding, founders, and investor/associate links.",
@@ -249508,42 +249065,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/search-engines/abyznewslinks.md"
-  },
-  {
-    "id": "academic-journals",
-    "name": "Academic Journals",
-    "description": "OSINT tool: Academic Journals.",
-    "url": "http://www.academicjournals.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/academic-journals.md"
   },
   {
     "id": "access-to-archival-databases",
@@ -274186,49 +273707,6 @@
     "_file": "library/tools/search-engines/s.md"
   },
   {
-    "id": "safesearchkids",
-    "name": "SafeSearchKids",
-    "description": "Kid-friendly website offering safe search, safe image, safe wiki, and safe video features",
-    "url": "http://www.safesearchkids.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "wiki-for-kids"
-    ],
-    "_file": "library/tools/search-engines/safesearchkids.md"
-  },
-  {
     "id": "sage-journals",
     "name": "SAGE Journals",
     "description": "Use when you have a `name`, topic or affiliation and want peer-reviewed literature — returns academic articles, author affiliations and citations across social/health sciences.",
@@ -274531,42 +274009,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/science-publications.md"
-  },
-  {
-    "id": "sciencedomain",
-    "name": "ScienceDomain",
-    "description": "OSINT tool: ScienceDomain.",
-    "url": "http://www.sciencedomain.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/sciencedomain.md"
   },
   {
     "id": "scirp",

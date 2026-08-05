@@ -182,7 +182,6 @@ kind: group-index
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
 - **`ollama`** (low) — Use when you have collected OSINT text/documents and want to run an LLM over them entirely offline — returns local model output with no data
 - **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
-- **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — Use when you have an encoded/hashed string from collected data and want to decode, hash, encrypt or reformat it in the browser — returns the
 - **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
 - **`opengraph-intel-ogi`** (low) — Use when you have a seed selector (`domain`, `ip-address`, `email`, `username`) and want to build and enrich a visual link-analysis graph vi
@@ -249,7 +248,7 @@ kind: group-index
 - **`script-safe`** (low) — Use when you want to harden the investigator's browser against scripts and fingerprinting while visiting hostile pages — provides granular s
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
-- **`sector035`** (low) — OSINT tool: Sector035.
+- **`sector035`** (low) — Use when you want to learn OSINT technique and keep current — Sector035's blog runs the weekly "Week in OSINT" roundup of new tools, methods
 - **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
@@ -262,7 +261,7 @@ kind: group-index
 - **`spf-explainer`** (low) — Use when you have a `domain` and want to read its SPF email-authentication record — returns the authorized sending IPs and third-party mail 
 - **`spidersuite`** (low) — Use when you have a `domain`/URL and want to crawl and map a site's full structure, links, and assets — returns discovered URLs, endpoints, 
 - **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
-- **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
+- **`spotify-profile-monitor`** (low) — Use when you have a target's public Spotify profile/username and want to monitor changes over time — playlists, followers/following, and (wh
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
 - **`steganography-online-codec`** (low) — Use when you have an `image` you suspect hides a message (or want to embed one) and need to encode/decode LSB steganography with AES-256 — r
 - **`steganography-online`** (low) — Use when you have a PNG image and want to hide or recover a hidden text message in it, entirely in-browser — returns extracted hidden text (
