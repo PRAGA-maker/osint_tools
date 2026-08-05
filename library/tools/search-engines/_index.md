@@ -96,7 +96,7 @@ kind: group-index
 - **`blue-search`** (low) — Use when you want an alternative general web search engine (now rebranded GOOD, on the independent Brave index) to cross-check results a mai
 - **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
-- **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
+- **`boolean-builder-thebalazs`** (low) — Use when you have a name/keywords and want a ready-made Google X-Ray query to find someone's profiles — returns a search string that surface
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
 - **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
 - **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
@@ -151,7 +151,6 @@ kind: group-index
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — Use when you have a keyword, `domain` or filename and want cybersecurity documents, reports and datasets — a curated Google CSE scoped to in
 - **`cybersecurity-osint-paulveillard`** (low) — Use when you want to discover OSINT tools by category — a GitHub "awesome" list returning tool leads and methodology references, not subject
-- **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/loc
 - **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
@@ -275,7 +274,7 @@ kind: group-index
 - **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,
 - **`hacking-the-cloud`** (low) — Use when you're assessing cloud infrastructure and need attack/technique references — returns an encyclopedia of AWS/Azure/GCP offensive tac
 - **`hawaii-professional-and-vocational-license-search`** (medium) — Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and th
-- **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
+- **`headlinespot`** (low) — Use when you have a place, topic, or industry and want a curated directory of news sources covering it — returns links to local/regional/sub
 - **`heystack`** (low) — Use when you have a topic/keyword and want publicly-shared Google Docs, Sheets, and Slides about it — returns community-curated public docum
 - **`hinduwebsite`** (medium) — Use when you need to search or read Hindu (and other) scripture texts — a niche reference/scripture search site with essentially no direct p
 - **`home-co-uk`** (medium) — Use when you have a UK `address` or postcode and want property and price history — returns sold-price `address` records, listings and area c
@@ -389,7 +388,6 @@ kind: group-index
 - **`network-entity-reputation-database-nerd`** (low) — Use when you have an `ip-address` and want its threat reputation and history — returns malicious-activity reports, first/last seen, and orig
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
-- **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
 - **`news-now`** (low) — Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped 
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mention
@@ -454,7 +452,7 @@ kind: group-index
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
 - **`oxford-journals`** (low) — Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, 
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
-- **`paperball-news`** (low) — OSINT tool: Paperball.news.
+- **`paperball-news`** (low) — Use when you have a name or keyword and want to search today's German-language newspaper press for mentions — returns news articles/social-p
 - **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — Use when you need current Persian-language news headlines aggregated from Iranian sources — returns categorized Iranian news links, not a pe
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 

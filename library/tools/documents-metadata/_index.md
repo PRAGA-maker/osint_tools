@@ -166,7 +166,6 @@ kind: group-index
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-report-website-united-states`** (low) — Use when you have a US restaurant/food-service `employer-org` and want industry background or vendor context — returns trade articles and a 
-- **`restaurants-canada-website-canada`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Use when you need to download and preserve a video from a social/media URL before it's deleted — paste the link and get a downloadable file 
 - **`savevideo-me`** (low) — Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/W
@@ -191,7 +190,6 @@ kind: group-index
 - **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
 - **`street-drug-slang`** (low) — Use when you have intercepted text/chat and want to decode street-drug slang and code words — returns the DEA's reference mapping of slang t
-- **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
 - **`textise-net`** (low) — convert the HTML code of a page to TXT

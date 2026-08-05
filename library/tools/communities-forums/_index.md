@@ -97,7 +97,6 @@ kind: group-index
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — Use when you have a `username`, `email`, or leak keyword and want to find text/code dumps posted publicly — returns pasted `password`, `emai
 - **`gettr-search`** (medium) — Use when you have a `username` or `name` and want to find that person's posts/profile on the GETTR social network — returns profiles, posts,
-- **`ghost`** (low) — OSINT tool: Ghost.
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret

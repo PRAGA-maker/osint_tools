@@ -19,8 +19,7 @@ kind: group-index
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
 - **`bitpharma`** (low) — OSINT tool: BitPharma.
-- **`black-market`** (low) — OSINT tool: Black Market.
-- **`blockpath-com`** (low) — OSINT tool: Blockpath.com.
+- **`blockpath-com`** (low) — Use when you have a Bitcoin address or crypto-wallet and want to visualise its transaction graph and counterparties — returns linked crypto-
 - **`browseriling`** (low) — Use when you have an `.onion` or clearnet URL and want to open it in a real cloud Tor browser without installing anything — returns a render
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
@@ -42,7 +41,6 @@ kind: group-index
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
 - **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat
-- **`honor-guns`** (low) — OSINT tool: Honor Guns.
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc
 - **`i2p-invisible-internet-project`** (low) — Use when an investigation touches I2P "eepsites"/services and you need to access or understand this anonymity network — the client software 
 - **`iaca-dark-web-investigation-support`** (medium) — Use when you have a `username`, `name`, `crypto-wallet`, or keyword and want vetted Tor search engines and marketplace directories to run it

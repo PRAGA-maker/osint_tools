@@ -224,7 +224,6 @@ kind: group-index
 - **`data-gov-uk`** (low) — Use when you have a UK `name`, `employer-org`, `address` or place and want official open datasets about it — returns government records on c
 - **`data-gov`** (low) — Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keywor
 - **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
-- **`databasd`** (low) — OSINT tool: Databasd.
 - **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
@@ -503,7 +502,7 @@ kind: group-index
 - **`lefigaro-fr`** (high) — Use when you have a French company `name`/`employer-org` or a director `name` and want free company records and leadership data — returns em
 - **`legacy-com`** (high) — Use when you have a `name` and want to find a death notice or obituary — returns date of death, age, location, funeral home and surviving/pr
 - **`legacy`** (high) — Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date,
-- **`legal-entity-types-by-country`** (low) — OSINT tool: Legal Entity Types by Country.
+- **`legal-entity-types-by-country`** (low) — Use when you have a company name whose suffix (GmbH, Sdn Bhd, Pty Ltd…) you want to decode — returns the likely jurisdiction and entity type
 - **`legalmondo-com`** (high) — Use when you have a Spanish `employer-org`/company name and want to know which registries hold its data — a free methodology guide pointing 
 - **`lei-bloomberg-com`** (medium) — Use when you have an `employer-org` name or a Legal Entity Identifier (LEI) and want authoritative entity-registration detail — returns the 
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par

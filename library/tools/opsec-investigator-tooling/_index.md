@@ -67,7 +67,6 @@ kind: group-index
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
 - **`chepy`** (low) — Use when you have encoded/encrypted/obfuscated data (a token, a blob, an encoded string) and want to transform it from the command line — a 
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
-- **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
@@ -176,7 +175,6 @@ kind: group-index
 - **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
-- **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
 - **`ipcheck`** (low) — OSINT tool: IPCheck.

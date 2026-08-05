@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/default-passwords
 
 ## Skills here
-- **`default-password-lookup-utility`** (low) — OSINT tool: Default Password Lookup Utility.
+- **`default-password-lookup-utility`** (low) — Use when you have a device make/model (router, switch, camera…) and want its factory-default credentials — returns the vendor's default pass
 - **`default-passwords-db`** (low) — Use when you have a device/vendor `employer-org` or product model and want its factory default credentials — returns candidate default `pass
 - **`default-passwords-list`** (low) — Use when you have a `device-id` (make/model of a router, camera or appliance) and want its factory-set credentials — returns default usernam
 - **`default-router-passwords`** (low) — Use when you have a router/DVR/camera make and model (`device-id`) and want its factory default login — returns the default `password` and u

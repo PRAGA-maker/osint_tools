@@ -44,7 +44,6 @@ kind: group-index
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
-- **`bendobrown`** (low) — OSINT tool: Bendobrown.
 - **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
@@ -102,7 +101,6 @@ kind: group-index
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (medium) — Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databa
 - **`einvestigator`** (low) — Use when you need investigation how-tos or a pointer to a records/people-search resource — a free education hub with 300+ guides and a curat
-- **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
 - **`eraser`** (low) — Use when you need to securely wipe files or free space on a Windows machine so investigative material can't be recovered — an open-source se
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
@@ -137,7 +135,6 @@ kind: group-index
 - **`guardian-project`** (low) — Use when you need vetted privacy/anti-surveillance apps for OpSec — Guardian Project builds open-source tools (Orbot, ProofMode, Haven) for 
 - **`guerrilla-mail`** (low) — Use when an investigation step needs a throwaway inbox — sign up to a target's site/service, receive a verification code, or test a flow wit
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
-- **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
 - **`h-i-v-e`** (medium) — Use when you have a `phone`, `email`, `username`, `ip-address`, or a leaked text database and want a single Python multi-tool to run reverse
 - **`hackers-toolkit`** (low) — Use when you have an encoded/obfuscated string (base64, URL, hex, hashes) and want to quickly decode or re-encode it in-browser — returns th
 - **`harpoon`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugin
@@ -321,7 +318,7 @@ kind: group-index
 - **`timetoast`** (low) — Use when you have dated events about a subject and want to build/share a visual chronology — returns an interactive timeline, an analysis ai
 - **`tio-run`** (low) — Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns th
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
-- **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
+- **`tools-digitalmethods-net`** (low) — Use when you have a query/keyword and want a bulk-harvested set of search-engine results as structured data — returns a list of result URLs/
 - **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.
 - **`trace-labs-blog`** (high) — Use when you want missing-persons OSINT methodology, tooling and training — returns Trace Labs' articles, geolocation guides, VM releases an
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T

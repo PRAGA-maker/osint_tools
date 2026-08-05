@@ -449,7 +449,6 @@ kind: group-index
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
 - **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
 - **`wordpress`** (medium) — Use when you have a `domain` or `username` and want to enumerate a WordPress site's authors — returns usernames, display names and linked so
-- **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Use when you have a target `domain`/URL and want to discover its endpoints, parameters, and leaked secrets — returns a list of discovered li
 - **`xurlfind3r`** (low) — Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns

@@ -1423,42 +1423,6 @@
     "_file": "library/tools/ai-analysis-automation/bellingcat.md"
   },
   {
-    "id": "bendobrown",
-    "name": "Bendobrown",
-    "description": "OSINT tool: Bendobrown.",
-    "url": "https://www.youtube.com/c/Bendobrown",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-videos"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/bendobrown.md"
-  },
-  {
     "id": "bevigil-cli",
     "name": "BeVigil-CLI",
     "description": "Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.",
@@ -4231,46 +4195,6 @@
     "_file": "library/tools/ai-analysis-automation/einvestigator.md"
   },
   {
-    "id": "encsf-mp",
-    "name": "EncSF MP",
-    "description": "OSINT tool: EncSF MP.",
-    "url": "http://encfsmp.sourceforge.net",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "nixory",
-      "zmail"
-    ],
-    "_file": "library/tools/ai-analysis-automation/encsf-mp.md"
-  },
-  {
     "id": "epic-privacy-browser",
     "name": "Epic Privacy Browser",
     "description": "Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggressive tracker/fingerprint blocking.",
@@ -5849,45 +5773,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gumshoe.md"
-  },
-  {
-    "id": "gvng-search",
-    "name": "GVNG Search",
-    "description": "Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns lookup, tcp port scan etc).",
-    "url": "https://github.com/ByDog3r/GvngSearch",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email",
-      "username"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools collections/toolkits"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/gvng-search.md"
   },
   {
     "id": "h-i-v-e",
@@ -15549,35 +15434,41 @@
   {
     "id": "tools-digitalmethods-net",
     "name": "Tools.digitalmethods.net",
-    "description": "OSINT tool: Tools.digitalmethods.net.",
+    "description": "Use when you have a query/keyword and want a bulk-harvested set of search-engine results as structured data — returns a list of result URLs/domains for further analysis.",
     "url": "https://tools.digitalmethods.net/beta/searchEngineScraper/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Programmatically harvesting search-engine result lists (SERP URLs) for a query to feed further OSINT tooling.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free academic tooling from the Digital Methods Initiative; this Search Engine Scraper now requires a (free) issuecrawler.net login to run.",
+    "opsec": "active",
+    "opsecNote": "Active — the scraper issues real search queries about your term through the DMI server. Your query is logged by the DMI/issuecrawler account you sign in with and by the search engine being scraped. Use a dedicated research account; avoid tying sensitive subject searches to a personal login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Digital Methods Initiative (University of Amsterdam) is a reputable academic research group; the tool is a genuine SERP-harvesting utility, though these are \"beta\" research tools that change and occasionally break.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "google-autocomplete-scraper",
       "internet-archive-wayback-machine-link-ripper",
@@ -15588,6 +15479,18 @@
       "ytdt-digitalmethods-net",
       "ytdt-digitalmethods-net-2"
     ],
+    "aliases": [
+      "Digital Methods Initiative Search Engine Scraper",
+      "DMI Tools"
+    ],
+    "tags": [
+      "serp-scraping",
+      "digital-methods",
+      "academic"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tools-digitalmethods-net.md"
   },
   {
@@ -27314,46 +27217,6 @@
     "_file": "library/tools/communities-forums/gettr-search.md"
   },
   {
-    "id": "ghost",
-    "name": "Ghost",
-    "description": "OSINT tool: Ghost.",
-    "url": "https://ghost.org",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/ghost.md"
-  },
-  {
     "id": "github-gist",
     "name": "GitHub gist",
     "description": "Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, credentials, and `social-profile` links.",
@@ -37218,79 +37081,52 @@
     "_file": "library/tools/dark-web/bitpharma.md"
   },
   {
-    "id": "black-market",
-    "name": "Black Market",
-    "description": "OSINT tool: Black Market.",
-    "url": "http://bmarketjfejd7xrvfvisx22i2w7tjhbr3fbh4ggv4ycaijodcda6aqyd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/black-market.md"
-  },
-  {
     "id": "blockpath-com",
     "name": "Blockpath.com",
-    "description": "OSINT tool: Blockpath.com.",
+    "description": "Use when you have a Bitcoin address or crypto-wallet and want to visualise its transaction graph and counterparties — returns linked crypto-wallets and exchange/cluster labels.",
     "url": "https://blockpath.com/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Graphically tracing Bitcoin flows from an address to its counterparties and known services.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The graphical block explorer and address/transaction browsing are free; unlimited XLSX transaction exports and the QuickBooks accounting integration are premium. A free account unlocks saving and larger exports.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a public blockchain explorer, not the wallet owner. The blockchain itself is public, so lookups leak nothing to the target. Only a registered account or paid export ties activity to you; use a sock-puppet login if you save graphs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent crypto-accounting/analysis vendor; the underlying transaction data is on-chain and verifiable, while its exchange/wallet-owner labels are heuristic attributions to sanity-check, not treat as proven.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Blockpath",
+      "blockpath.com"
+    ],
+    "tags": [
+      "cryptocurrency",
+      "blockchain",
+      "wallet-tracing"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/blockpath-com.md"
   },
   {
@@ -38340,48 +38176,6 @@
     "lastVerified": "2026-07-20",
     "enrichment": "full",
     "_file": "library/tools/dark-web/global-security.md"
-  },
-  {
-    "id": "honor-guns",
-    "name": "Honor Guns",
-    "description": "OSINT tool: Honor Guns.",
-    "url": "http://x4fcceh6bfwxr4b54i6tgufhmut43jqqi4oeapg3oubjlrkzzm5bw5qd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/honor-guns.md"
   },
   {
     "id": "human-trafficking-search",
@@ -54650,46 +54444,6 @@
     "_file": "library/tools/documents-metadata/restaurant-report-website-united-states.md"
   },
   {
-    "id": "restaurants-canada-website-canada",
-    "name": "Restaurants Canada Website (Canada)",
-    "description": "Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "https://restaurantscanada.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/restaurants-canada-website-canada.md"
-  },
-  {
     "id": "reveal-image-verification-assistant",
     "name": "Image Verification Assistant (REVEAL / WeVerify)",
     "description": "Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus metadata and GPS.",
@@ -55968,46 +55722,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/street-drug-slang.md"
-  },
-  {
-    "id": "studyblue",
-    "name": "StudyBlue",
-    "description": "Website and mobile app for finding, creating and sharing study flashcards and notes",
-    "url": "http://www.studyblue.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/studyblue.md"
   },
   {
     "id": "tastedive-current-multimedia-trends",
@@ -63082,29 +62796,34 @@
   {
     "id": "default-password-lookup-utility",
     "name": "Default Password Lookup Utility",
-    "description": "OSINT tool: Default Password Lookup Utility.",
+    "description": "Use when you have a device make/model (router, switch, camera…) and want its factory-default credentials — returns the vendor's default password.",
     "url": "https://fortypoundhead.com/tools_dpw.asp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "default-passwords"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up factory default usernames/passwords for a networked device by manufacturer.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a static reference database of published default credentials, not any live device. The lookup reveals nothing to a device owner. Actually USING a credential against a device you don't own is a separate, active, and potentially unlawful act — out of scope here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "FortyPoundHead is a long-running IT knowledge-base; the ~1,800-entry default-password list is community-compiled and can be stale or incomplete, so treat entries as candidates rather than guaranteed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -63112,11 +62831,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FortyPoundHead Default Password Lookup",
+      "default password database"
+    ],
+    "tags": [
+      "default-credentials",
+      "device-hardening"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/default-passwords/default-password-lookup-utility.md"
   },
   {
@@ -88220,47 +87945,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/wordpress.md"
-  },
-  {
-    "id": "wordtune-com",
-    "name": "Wordtune.com",
-    "description": "Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas of the text.",
-    "url": "https://wordtune.com/read",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Text Analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/wordtune-com.md"
   },
   {
     "id": "xboxresolver-com",
@@ -166695,42 +166379,6 @@
     "_file": "library/tools/opsec-investigator-tooling/chibisafe-moe.md"
   },
   {
-    "id": "chmod-calculator",
-    "name": "Chmod calculator",
-    "description": "Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly enter a valid numeric value to see its value in other format",
-    "url": "https://chmod-calculator.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/chmod-calculator.md"
-  },
-  {
     "id": "chrome",
     "name": "Chrome",
     "description": "Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base platform for sock-puppet research (no subject selectors in or out).",
@@ -171816,46 +171464,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/image-scrubber.md"
-  },
-  {
-    "id": "instagram-social-networking-app",
-    "name": "Instagram Social Networking App",
-    "description": "App for mobile devices for social networking and photo sharing",
-    "url": "https://itunes.apple.com/ca/app/instagram/id389801252?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/instagram-social-networking-app.md"
   },
   {
     "id": "instagram-social-networking-app-mobile-android",
@@ -215027,40 +214635,6 @@
     "_file": "library/tools/public-records/data-sets-oh-shint.md"
   },
   {
-    "id": "databasd",
-    "name": "Databasd",
-    "description": "OSINT tool: Databasd.",
-    "url": "https://databasd.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/databasd.md"
-  },
-  {
     "id": "database-of-suspected-terrorists",
     "name": "Database of suspected terrorists",
     "description": "OSINT tool: Database of suspected terrorists.",
@@ -231035,43 +230609,49 @@
   {
     "id": "legal-entity-types-by-country",
     "name": "Legal Entity Types by Country",
-    "description": "OSINT tool: Legal Entity Types by Country.",
-    "url": "https://en.wikipedia.org/wiki/list_of_legal_entity_types_by_country",
+    "description": "Use when you have a company name whose suffix (GmbH, Sdn Bhd, Pty Ltd…) you want to decode — returns the likely jurisdiction and entity type to guide registry lookups.",
+    "url": "https://en.wikipedia.org/wiki/List_of_legal_entity_types_by_country",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a company's legal suffix to infer its country and structure before hitting the right registry.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "associate"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Wikipedia reference article; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a static reference page. You look up the meaning of a suffix, not the company itself, so nothing about your target is transmitted. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained Wikipedia list; broadly accurate as an orientation aid but crowd-edited, so confirm the definitive entity type against the country's official company register.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "List of legal entity types by country",
+      "company suffix reference"
+    ],
     "tags": [
-      "corporate"
+      "corporate",
+      "reference"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/legal-entity-types-by-country.md"
   },
   {
@@ -260496,37 +260076,50 @@
   {
     "id": "boolean-builder-thebalazs",
     "name": "Boolean Builder theBalazs",
-    "description": "Google Sheet to tool for constructing Google X-Ray search queries.",
+    "description": "Use when you have a name/keywords and want a ready-made Google X-Ray query to find someone's profiles — returns a search string that surfaces social-profile hits.",
     "url": "https://docs.google.com/spreadsheets/d/1v27Oybrv9H5sn3MMD76clLp2B4mwhA7OtUkfQzlNu8w/edit#gid=940516593",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Generating copy-paste Google Boolean/X-Ray search strings without memorising operator syntax.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Google Sheet; make your own copy to edit inputs (no account needed to view).",
+    "opsec": "passive",
+    "opsecNote": "The sheet itself only builds a string and touches nobody. OpSec risk lives in *running* the resulting query on Google against the target's name — do that from a clean/sock-puppet session, since it is a live search about your subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known sourcing-community X-Ray helper (Balázs Paróczay); it is a query-construction convenience, not a data source — the results come from Google, so trust attaches to what Google returns.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "theBalazs Boolean Builder",
+      "X-Ray search builder"
+    ],
     "tags": [
-      "Tools for Google"
+      "Tools for Google",
+      "boolean-search",
+      "sourcing"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/boolean-builder-thebalazs.md"
   },
   {
@@ -263313,46 +262906,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/search-engines/cybersecurity-osint-paulveillard.md"
-  },
-  {
-    "id": "cybersleuth-kids-search-engine-north-america",
-    "name": "Cybersleuth-kids Search Engine (North America)",
-    "description": "Search engine intended for kids including printables, images, and academic resources",
-    "url": "http://cybersleuth-kids.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/cybersleuth-kids-search-engine-north-america.md"
   },
   {
     "id": "dailyearth",
@@ -270367,37 +269920,49 @@
   {
     "id": "headlinespot",
     "name": "HeadlineSpot",
-    "description": "OSINT tool: HeadlineSpot.",
+    "description": "Use when you have a place, topic, or industry and want a curated directory of news sources covering it — returns links to local/regional/subject newspapers to search next.",
     "url": "http://www.headlinespot.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right local or subject-specific news outlets to search for a person or event.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it is a static directory of links, so browsing it exposes nothing about your target. OpSec matters at the next step, when you actually search a named person on the outlets it points you to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A veteran StartSpot Network news portal (online since 1999); it is a hand-curated link directory rather than a data source, and some listed links have rotted with age, so expect dead entries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HeadlineSpot.com"
+    ],
     "tags": [
-      "news"
+      "news",
+      "directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/headlinespot.md"
   },
   {
@@ -276406,42 +275971,6 @@
     "_file": "library/tools/search-engines/new-zealand-law-society.md"
   },
   {
-    "id": "news-explorer-bluemix",
-    "name": "News Explorer BlueMix",
-    "description": "OSINT tool: News Explorer BlueMix.",
-    "url": "http://news-explorer.mybluemix.net/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Keywords, trends, news analytics"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/news-explorer-bluemix.md"
-  },
-  {
     "id": "news-now",
     "name": "NewsNow",
     "description": "Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped article links to monitor coverage.",
@@ -279976,35 +279505,48 @@
   {
     "id": "paperball-news",
     "name": "Paperball.news",
-    "description": "OSINT tool: Paperball.news.",
+    "description": "Use when you have a name or keyword and want to search today's German-language newspaper press for mentions — returns news articles/social-profile leads.",
     "url": "https://paperball.news/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword-searching current German daily newspapers in one pass.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free keyword news search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — a third-party news search index. Your query is sent to Paperball's servers but never reaches the people named in the articles. Use a VPN/clean browser if the subject or region is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running German press meta-search (formerly paperball.de); it indexes reputable newspapers' current editions, but it is an aggregator layer, so verify hits on the original outlet.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "de"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Paperball",
+      "paperball.de"
+    ],
+    "tags": [
+      "news",
+      "german-press"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/paperball-news.md"
   },
   {
@@ -343082,44 +342624,57 @@
   {
     "id": "marinetraffic",
     "name": "MarineTraffic",
-    "description": "Live AIS vessel tracking and ship details.",
+    "description": "Use when you have a vessel name, MMSI, or IMO number and want its live/last-known position and voyage details — returns geolocation plus vessel identity.",
     "url": "https://www.marinetraffic.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [
-      "geolocation"
+    "bestFor": "Locating a specific ship in near-real-time and confirming its identity/particulars.",
+    "selectorsIn": [
+      "name",
+      "vin"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "name",
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Live map, vessel search, and current position are free without an account; historical track playback, past port calls, and voyage analytics sit behind a paid subscription. A free login raises some viewing limits.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you are reading a public AIS aggregation portal, not signalling the vessel or crew. Browsing never touches the target. Only creating a paid account or setting alerts ties activity to your identity; use a sock-puppet login if you subscribe.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "",
+    "trustNote": "Long-established commercial AIS aggregator (Kpler-owned) sourcing terrestrial and satellite receivers; the identity/position data is the vessel's own AIS broadcast, so it is authoritative while the transponder is on.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
-    ],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "marine-traffic-geolocation-search"
     ],
+    "aliases": [
+      "Marine Traffic",
+      "marinetraffic.com"
+    ],
+    "tags": [
+      "maritime",
+      "ais",
+      "vessel-tracking"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/transportation/marinetraffic.md"
   },
   {
@@ -343482,43 +343037,6 @@
       "vincheck"
     ],
     "_file": "library/tools/transportation/national-insurance-crime-bureau-vin-search.md"
-  },
-  {
-    "id": "nato-int",
-    "name": "NATO.int",
-    "description": "Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.",
-    "url": "https://www.nato.int/nato-on-the-map/#lat=54.6871555&lon=25.2796514&zoom=2&layer-1",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Military tracking"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/nato-int.md"
   },
   {
     "id": "nhtsa-vehicle-api",

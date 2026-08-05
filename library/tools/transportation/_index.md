@@ -110,14 +110,13 @@ kind: group-index
 - **`lucas-county-ohio-areis-online`** (medium) — Use when you have a `name` or `address` in Lucas County, Ohio and want property records — returns owner `name`, parcel `address`, mailing ad
 - **`maersk-tracking`** (low) — Use when you have a Maersk container, booking, or bill-of-lading number and want the shipment's current location and movement history — retu
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
-- **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
+- **`marinetraffic`** (low) — Use when you have a vessel name, MMSI, or IMO number and want its live/last-known position and voyage details — returns geolocation plus ves
 - **`maritime-awareness-project`** (low) — Use when you have an Asia-Pacific maritime `geolocation` and want claims/incident context — returns an interactive map of territorial disput
 - **`maritime-database`** (low) — Use when you have a vessel name, port, or shipping-company name and want directory details linking ships, ports and maritime companies — ret
 - **`military-ship-tracker`** (low) — Use when you have a naval/military vessel name or want to see military ships broadcasting AIS in an area — returns live positions and vessel
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
 - **`my-ship-tracking`** (low) — Use when you have a vessel `name`, MMSI or IMO and want its live AIS position, track history and operator — returns `geolocation` and `emplo
 - **`national-insurance-crime-bureau-vin-search`** (medium) — Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns
-- **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
 - **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai
 - **`nomerogram-ru`** (medium) — Use when you have a Russian `vehicle-plate` and want photos of that car — returns user-submitted images of vehicles matching the plate, with
 - **`number-plate-check`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — retu
