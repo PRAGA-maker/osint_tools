@@ -207,7 +207,6 @@ kind: group-index
 - **`investigator-recon-tool`** (low) — Use when you have a `domain` and want a fast one-page recon dashboard — returns related `domain`s, subdomains and open-source footprint via 
 - **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
 - **`ip-2-geolocation`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location plus the owning ISP/company — returns geolocation, ip-address,
-- **`ip-checking`** (low) — OSINT tool: IP Checking.
 - **`ip-chicken`** (low) — Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.
 - **`ip-geo-location-lookup`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/region/city, coordinates, ISP and AS
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
@@ -380,7 +379,6 @@ kind: group-index
 - **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo
 - **`udon`** (low) — Use when you have a `domain` and want other sites run by the same owner via a shared Google Analytics/AdSense ID — returns sibling `domain`s
 - **`umatrix`** (low) — Use when you want to see and control every domain a page contacts at runtime — a matrix-based request blocker for observing a site's third-p
-- **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
 - **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom
 - **`unshorten-me`** (low) — Use when you have a shortened link (bit.ly, t.co, goo.gl, tinyurl, etc.) and want to see its real destination without clicking it — returns 
 - **`urlhaus`** (low) — Use when you have a `domain`/URL, host or `ip-address` and want to know if it distributes malware — returns malicious URLs, payloads and hos

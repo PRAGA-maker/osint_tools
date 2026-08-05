@@ -64,7 +64,6 @@ kind: group-index
 - **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
 - **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
 - **`tool-path`** (low) — Use when you have a `crypto-wallet` xpub or seed and want to enumerate the addresses it derives — returns the child addresses/keys for a giv
-- **`top-guns`** (low) — OSINT tool: Top Guns.
 - **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
 - **`torry-io`** (low) — Use when you have a keyword, `username`, or onion `domain` and want to search Tor/dark-web content from a normal browser — returns onion lin
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.

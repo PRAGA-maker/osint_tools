@@ -135,7 +135,7 @@ kind: group-index
 - **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
 - **`ports-com`** (low) — Use when you have two ports/`geolocation`s and want the optimal sea route and transit time between them — returns a route, distance and seas
 - **`radarbox`** (medium) — Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, 
-- **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
+- **`railcabrides`** (low) — Use when you have a rough `geolocation` on or near a railway line and want ground-level video to confirm it — returns cab-view footage as `g
 - **`rasp-yandex-ru-map-trains`** (low) — Use when you have a `geolocation`/region in Russia, Belarus, Ukraine, Kazakhstan or Abkhazia and want live train positions and rail schedule
 - **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 
 - **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif

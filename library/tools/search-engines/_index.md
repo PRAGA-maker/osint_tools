@@ -150,7 +150,6 @@ kind: group-index
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica
-- **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/tee
 - **`direct-download-almost-anything`** (low) — Use when you have a filename, title, or keyword and want to find it sitting on a publicly-exposed open directory — returns direct-download l
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
@@ -247,7 +246,6 @@ kind: group-index
 - **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
 - **`grayhatwarfare`** (medium) — Use when you have a `name`, `email`, or `domain` and want to find files a target accidentally exposed in misconfigured public cloud buckets 
-- **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — Use when you have a `name` or topic and need non-commercial reports (technical, government, conference) — returns a curated list of ~30 grey
 - **`greynet-international`** (low) — Use when you need grey-literature research access — returns GreyNet's grey-literature network, its GreyGuide repository, and conference/refe
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
@@ -316,7 +314,6 @@ kind: group-index
 - **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — Use when you have a `name` or research topic and want scientific/technical literature and datasets — returns papers, conference proceedings,
 - **`leit-search-engine-iceland`** (low) — Use when you have a `name` and want Icelandic web, phone-directory, and business results — returns phone, address, and social-profile leads 
-- **`lendx`** (low) — OSINT tool: LENDX.
 - **`lexcraft-cornell-university-legal-wiki-canada`** (low) — Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-informati
 - **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
 - **`library-genesis`** (low) — Use when you have an author `name` or a title and want to find/read the books or academic papers behind it — returns document metadata and `
@@ -368,7 +365,6 @@ kind: group-index
 - **`newspaperindex`** (low) — Use when you have a place or region and want its local/national newspapers to search for a `name` or event — returns a directory of online n
 - **`newspapers-com`** (low) — Use when you have a `name` (plus an approximate place/date) and want historical newspaper coverage — obituaries, marriage/birth notices, loc
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
-- **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
 - **`oa-mg`** (low) — Use when you have a `name` and want their academic output — returns papers, co-authors (`associate`), and affiliation (`employer-org`) from 
 - **`occrp-org`** (medium) — Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated di
@@ -519,10 +515,9 @@ kind: group-index
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
-- **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
+- **`taylor-and-francis-online`** (low) — Use when you have a `name` who may be an academic and want their scholarship — returns papers exposing affiliation (`employer-org`) and co-a
 - **`termwiki`** (medium) — Use when you have a specialised or foreign-language term and want its meaning/translation — returns multilingual definitions and the contrib
 - **`terrorism-reports`** (medium) — Use when you have a `name` or `employer-org` and want to check it against the US State Department's congressionally-mandated annual terroris
-- **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Use when you need to discover an OSINT tool for a given selector/task — returns a filterable directory of 500+ vetted OSINT resources by cat
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi

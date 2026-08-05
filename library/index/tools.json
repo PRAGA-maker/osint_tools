@@ -11971,37 +11971,57 @@
   {
     "id": "search-investigative-and-forensic-toolbar",
     "name": "SEARCH Investigative and Forensic Toolbar",
-    "description": "extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.",
-    "url": "https://chrome.google.com/webstore/detail/search-investigative-and/idgjbdfnngdcenpahfalcamfmcjdfbcj/related",
+    "description": "Use when you want one-click access to a vetted set of OSINT/forensic lookups — returns a launcher menu into tools for `name`, `phone`, `ip-address`, and `email`.",
+    "url": "https://chromewebstore.google.com/detail/search-investigative-and/idgjbdfnngdcenpahfalcamfmcjdfbcj",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "A curated browser launcher consolidating dozens of investigative and forensic web tools in one drop-down.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension from SEARCH Group, Inc. No account or payment; requires no sensitive permissions.",
+    "opsec": "passive",
+    "opsecNote": "The toolbar is just a menu of links — installing and opening it leaks nothing. OpSec depends on the destination tool you click; some (people-search, background checks) are active/attributable, so evaluate each before running it against a target from a sock-puppet profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by SEARCH Group, Inc. (the National Consortium for Justice Information and Statistics), a US non-profit that trains investigators; a reputable curator, though the linked third-party tools vary in quality.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools collections/toolkits"
+    "relatedTools": [
+      "awesome-recon-tools",
+      "awesome-screenshot-extension-chrome"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "SEARCH Toolbar",
+      "SEARCH Investigative and Forensic Toolbar"
+    ],
+    "tags": [
+      "investigator-toolkit",
+      "browser-extension",
+      "launcher"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/search-investigative-and-forensic-toolbar.md"
   },
   {
@@ -37683,48 +37703,6 @@
     "_file": "library/tools/dark-web/tool-path.md"
   },
   {
-    "id": "top-guns",
-    "name": "Top Guns",
-    "description": "OSINT tool: Top Guns.",
-    "url": "http://topguns3x4pkpfimodj4iqgfadnwncxg3l5lnui45jmjt2fiz5uwlxyd.onion/?page=index",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/top-guns.md"
-  },
-  {
     "id": "tor-download",
     "name": "Tor Browser Download",
     "description": "Use when you need to reach .onion sites or browse anonymously for an investigation — the official source for verified Tor Browser installers across platforms.",
@@ -44567,46 +44545,6 @@
     "_file": "library/tools/documents-metadata/engadget.md"
   },
   {
-    "id": "ether",
-    "name": "Ether",
-    "description": "Transparent malware analysis resistant to anti-analysis evasion",
-    "url": "https://ether.gtisc.gatech.edu/web_unpack/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "hosted-automated-analysis"
-    ],
-    "bestFor": "Transparent malware analysis resistant to anti-analysis evasion",
-    "input": "Executable files, malware samples",
-    "output": "Fine-grained execution traces, instruction-level analysis, unpacking results, behavior extraction",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Hosted analysis service; academic research project from Georgia Institute of Technology",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/hosted-automated-analysis/ether.md"
-  },
-  {
     "id": "etherpad-collaborative-editing",
     "name": "Etherpad",
     "description": "Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor; a workflow tool, not a data source.",
@@ -45581,46 +45519,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/fide.md"
-  },
-  {
-    "id": "fifa",
-    "name": "FIFA",
-    "description": "Football team rankings website",
-    "url": "http://www.fifa.com/fifa-world-ranking",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/fifa.md"
   },
   {
     "id": "filesec-io",
@@ -47864,37 +47762,52 @@
   {
     "id": "kd6-3-7",
     "name": "KD6-3.7",
-    "description": "Python tool for getting additional information about ID holders from different countries",
+    "description": "Use when you have a national ID `document-id` and want the personal data encoded in it — returns `dob`, sex (`physical-description`), and birthplace `geolocation`.",
     "url": "https://github.com/duk3r4/KD6-3.7",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding the date of birth, sex, and birthplace embedded in structured national ID numbers.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "dob",
+      "physical-description",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python CLI). No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "It parses an ID number locally — no network query, nothing leaves your machine, and no one is contacted. Fully offline analysis. Handle the ID number itself as sensitive personal data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source tool (duk3r4/KD6-3.7, ~45 stars) implementing published national-ID encoding schemes; output is deterministic from the number's algorithm, but only for countries whose IDs actually encode this data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "IDs"
+    "relatedTools": [],
+    "aliases": [
+      "KD6-3.7",
+      "kd6-3.7"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "national-id",
+      "document-analysis",
+      "identity"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/kd6-3-7.md"
   },
   {
@@ -65528,42 +65441,6 @@
     "_file": "library/tools/domains-ip-infrastructure/ip-2-geolocation.md"
   },
   {
-    "id": "ip-checking",
-    "name": "IP Checking",
-    "description": "OSINT tool: IP Checking.",
-    "url": "http://www.ipchecking.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ip-checking.md"
-  },
-  {
     "id": "ip-chicken",
     "name": "IP Chicken",
     "description": "Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.",
@@ -78940,49 +78817,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/un-security-council-consolidated-list.md"
-  },
-  {
-    "id": "universalsearchbot",
-    "name": "@UniversalSearchBot",
-    "description": "telegram bot finding information about email, russian phone number, domain or IP",
-    "url": "https://t.me/UniversalSearchBot",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "email",
-      "phone"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/universalsearchbot.md"
   },
   {
     "id": "unshorten-it",
@@ -114320,60 +114154,6 @@
     "lastVerified": "2026-08-05",
     "enrichment": "full",
     "_file": "library/tools/geolocation/radioreference.md"
-  },
-  {
-    "id": "railcabrides",
-    "name": "Railcabrides",
-    "description": "Use when you have a rough `geolocation` on or near a railway line and want ground-level video to confirm it — returns cab-view footage as `geolocation` verification.",
-    "url": "https://railcabrides.com/en/mapsearch",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "Ground-truthing a location along a rail line where Street View / Mapillary have no coverage.",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "live",
-    "pricing": "free",
-    "costNote": "Free to browse the map and watch the linked cab-ride videos; no account required.",
-    "opsec": "passive",
-    "opsecNote": "You browse a third-party map and watch YouTube-hosted videos; the target is not contacted and nothing about your query reaches them. Standard sock-puppet browser hygiene is enough.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "Community-built aggregator that maps user-submitted rail cab-ride videos onto the world railway network; coverage depends entirely on whether someone has filmed that line.",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "relatedTools": [
-      "openrailwaymap-2",
-      "mapillary",
-      "kartaview",
-      "googlestreetview"
-    ],
-    "aliases": [
-      "Rail Cab Rides",
-      "railcabrides.com map search"
-    ],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Railway",
-      "geolocation-verification"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "2026-08-05",
-    "enrichment": "full",
-    "_file": "library/tools/geolocation/railcabrides.md"
   },
   {
     "id": "rain-alarm",
@@ -159736,42 +159516,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonaddy.md"
   },
   {
-    "id": "anonymouse-premium-59-y",
-    "name": "Anonymouse (Premium 59 $/Y)",
-    "description": "OSINT tool: Anonymouse (Premium 59 $/Y).",
-    "url": "https://anonymousemail.me",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "anonymity"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/anonymouse-premium-59-y.md"
-  },
-  {
     "id": "anonymouse-web-proxy",
     "name": "Anonymouse (AnonWWW)",
     "description": "Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so the site sees Anonymouse's IP, not yours.",
@@ -160012,42 +159756,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/argos-osint-workstation.md"
-  },
-  {
-    "id": "atom",
-    "name": "Atom",
-    "description": "OSINT tool: Atom.",
-    "url": "https://browser.ru/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/atom.md"
   },
   {
     "id": "attifyos",
@@ -162921,49 +162629,6 @@
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/fake-us-identities.md"
   },
   {
-    "id": "fake-youtube-channel-generator",
-    "name": "Fake Youtube Channel Generator",
-    "description": "OSINT tool: Fake Youtube Channel Generator.",
-    "url": "https://fakeinfo.net/fake-youtube-channel-generator",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fake-company-name-generator",
-      "fake-drivers-license-generator",
-      "fake-tiktok-profile-generator",
-      "fakeinfo",
-      "fakeinfo-net",
-      "random-face-generator",
-      "twitter-profile-generator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/fake-youtube-channel-generator.md"
-  },
-  {
     "id": "fastscanner-app-mobile-android",
     "name": "Fastscanner App (Mobile – Android)",
     "description": "Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner producing a file you can then OCR or store as evidence (no subject selectors).",
@@ -164939,46 +164604,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/kasm.md"
-  },
-  {
-    "id": "khan-academy-education-app-mobile-ios",
-    "name": "Khan Academy Education App (Mobile – iOS)",
-    "description": "App for mobile devices for education and information services",
-    "url": "https://itunes.apple.com/ca/app/khan-academy-you-can-learn/id469863705?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/khan-academy-education-app-mobile-ios.md"
   },
   {
     "id": "kik-messaging-app-mobile-android",
@@ -167296,46 +166921,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/pic-cic-code-database.md"
-  },
-  {
-    "id": "pinterest-social-bookmarking-app-mobile-ios",
-    "name": "Pinterest Social Bookmarking App (Mobile – iOS)",
-    "description": "App for mobile devices for social networking",
-    "url": "https://itunes.apple.com/ca/app/pinterest/id429047995?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-ios.md"
   },
   {
     "id": "police-scanner-radio-app-mobile-android",
@@ -170173,46 +169758,6 @@
     "_file": "library/tools/opsec-investigator-tooling/transform-tools.md"
   },
   {
-    "id": "trello-networking-app-mobile-android",
-    "name": "Trello Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and coordinating information",
-    "url": "https://play.google.com/store/apps/details?id=com.trello",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/trello-networking-app-mobile-android.md"
-  },
-  {
     "id": "tsurugi-linux",
     "name": "Tsurugi Linux",
     "description": "Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.",
@@ -171250,46 +170795,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/vivaldi.md"
-  },
-  {
-    "id": "walmart-shopping-app-mobile-android",
-    "name": "Walmart Shopping App (Mobile – Android)",
-    "description": "App for mobile devices for online shopping through Walmart",
-    "url": "https://play.google.com/store/apps/details?id=com.walmart.android&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/walmart-shopping-app-mobile-android.md"
   },
   {
     "id": "washington-state-driver-s-license-generator",
@@ -252420,42 +251925,6 @@
     "_file": "library/tools/search-engines/debunking-false-stories-archives.md"
   },
   {
-    "id": "densephrase",
-    "name": "DensePhrase",
-    "description": "This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.",
-    "url": "http://densephrases.korea.ac.kr/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/densephrase.md"
-  },
-  {
     "id": "dib-dab-doo-and-dilly-too-kids-search-engine",
     "name": "Dib Dab Doo and Dilly Too Kids Search Engine",
     "description": "Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/teen-safe sites.",
@@ -258329,45 +257798,6 @@
     "_file": "library/tools/search-engines/grayhatwarfare.md"
   },
   {
-    "id": "grey-guide",
-    "name": "Grey Guide",
-    "description": "OSINT tool: Grey Guide.",
-    "url": "http://greyguide.isti.cnr.it",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ariadne2-isti-cnr-it"
-    ],
-    "_file": "library/tools/search-engines/grey-guide.md"
-  },
-  {
     "id": "grey-literature-list-of-gateways",
     "name": "Grey Literature – List of Gateways",
     "description": "Use when you have a `name` or topic and need non-commercial reports (technical, government, conference) — returns a curated list of ~30 grey-literature gateways to search.",
@@ -262074,40 +261504,6 @@
     "_file": "library/tools/search-engines/leit-search-engine-iceland.md"
   },
   {
-    "id": "lendx",
-    "name": "LENDX",
-    "description": "OSINT tool: LENDX.",
-    "url": "http://lendx.org/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/lendx.md"
-  },
-  {
     "id": "lexcraft-cornell-university-legal-wiki-canada",
     "name": "LexCraft (Cornell LII Wiki)",
     "description": "Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-information publishing standards, not a person/records lookup.",
@@ -265036,42 +264432,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/niche.md"
-  },
-  {
-    "id": "nrc-research-press",
-    "name": "NRC Research Press",
-    "description": "OSINT tool: NRC Research Press.",
-    "url": "http://www.nrcresearchpress.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/nrc-research-press.md"
   },
   {
     "id": "numbeo",
@@ -273556,37 +272916,56 @@
   {
     "id": "taylor-and-francis-online",
     "name": "Taylor & Francis Online",
-    "description": "OSINT tool: Taylor & Francis Online.",
-    "url": "http://www.tandfonline.com",
+    "description": "Use when you have a `name` who may be an academic and want their scholarship — returns papers exposing affiliation (`employer-org`) and co-authors (`associate`).",
+    "url": "https://www.tandfonline.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding an author's journal articles across Taylor & Francis titles and reading the affiliations/co-authors they reveal.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read article metadata (title, authors, affiliation, abstract); full text is often paywalled unless the article is open-access.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public publisher database is passive; the author is not notified. Nothing you query reaches the subject. Standard browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official platform of Taylor & Francis, a major academic publisher; author/affiliation metadata is authoritative, though full text may be paywalled.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "oa-mg",
+      "crossref",
+      "base",
+      "core"
+    ],
+    "aliases": [
+      "tandfonline",
+      "Taylor and Francis Online"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-search",
+      "journals",
+      "news"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/taylor-and-francis-online.md"
   },
   {
@@ -273693,45 +273072,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/terrorism-reports.md"
-  },
-  {
-    "id": "the-cyber-post-osint-tools-and-resources",
-    "name": "The Cyber Post OSINT Tools & Resources",
-    "description": "Blog-hosted aggregated list of OSINT tools and resources.",
-    "url": "https://thecyberpost.com/open-source-intelligence-osint-tools/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "A broad aggregated tools listing",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "Community blog aggregation.",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "tool-collection",
-      "blog"
-    ],
-    "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/the-cyber-post-osint-tools-and-resources.md"
   },
   {
     "id": "the-guantanamo-docket",
@@ -320496,48 +319836,6 @@
     "_file": "library/tools/training-ctf/games/geoguesser.md"
   },
   {
-    "id": "gosint-ruyynn",
-    "name": "GOSINT (ruyynn)",
-    "description": "Python educational framework for learning open-source intelligence techniques.",
-    "url": "https://github.com/ruyynn/GOSINT",
-    "category": "training-ctf",
-    "path": [
-      "training-ctf"
-    ],
-    "bestFor": "Learning OSINT techniques",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "Educational project (9 stars).",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "education",
-      "framework"
-    ],
-    "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ghostintel"
-    ],
-    "_file": "library/tools/training-ctf/gosint-ruyynn.md"
-  },
-  {
     "id": "gralhix-osint-exercises",
     "name": "Gralhix OSINT Exercises",
     "description": "Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercises with full walkthroughs.",
@@ -331529,42 +330827,55 @@
   {
     "id": "railcabrides",
     "name": "Railcabrides",
-    "description": "Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location. With this service you can see many places where Google Street View has not yet reached!",
+    "description": "Use when you have a rough `geolocation` on or near a railway line and want ground-level video to confirm it — returns cab-view footage as `geolocation` verification.",
     "url": "https://railcabrides.com/en/mapsearch",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Ground-truthing a location along a rail line where Street View / Mapillary have no coverage.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse the map and watch the linked cab-ride videos; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You browse a third-party map and watch YouTube-hosted videos; the target is not contacted and nothing about your query reaches them. Standard sock-puppet browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-built aggregator that maps user-submitted rail cab-ride videos onto the world railway network; coverage depends entirely on whether someone has filmed that line.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "openrailwaymap-2",
+      "mapillary",
+      "kartaview",
+      "googlestreetview"
+    ],
+    "aliases": [
+      "Rail Cab Rides",
+      "railcabrides.com map search"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Railway"
+      "Railway",
+      "geolocation-verification"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/transportation/railcabrides.md"
   },
   {

@@ -26,12 +26,10 @@ kind: group-index
 - **`android-studio-and-sdk-tools`** (low) — Use when you need to run a mobile app (social/dating/messaging) for OSINT without exposing your own device — provides a disposable Android e
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
 - **`anonaddy`** (low) — Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses tha
-- **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so 
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
-- **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
@@ -80,7 +78,6 @@ kind: group-index
 - **`fake-generator-tools`** (low) — Use when you need a consistent fake persona to stand up a sock-puppet account — returns a full synthetic identity (name, address, phone, DOB
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
 - **`fake-person-generator`** (low) — Use when you need a coherent fictional identity for a research sock-puppet account — returns fabricated persona details (name, address, DOB,
-- **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
@@ -117,7 +114,6 @@ kind: group-index
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`kali-anonsurf`** (low) — Use for investigator opsec — routes your entire system's network traffic through Tor at the OS level and adds anti-forensic helpers, so all 
 - **`kasm`** (low) — Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware a
-- **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`ldplayer-net`** (low) — Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for s
@@ -160,7 +156,6 @@ kind: group-index
 - **`pentoo-linux`** (low) — Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentes
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
-- **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
 - **`police-scanner-radio-app-mobile-android`** (low) — Use when you have a geolocation and want to monitor live public-safety radio (police/fire/EMS) feeds for that area to catch real-time incide
 - **`privacy-net`** (low) — Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach l
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
@@ -213,7 +208,6 @@ kind: group-index
 - **`tor-browser`** (low) — Use when you need to browse investigation targets without exposing your real IP, or to reach .onion dark-web sites — returns anonymized web 
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
-- **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — Use when you have a `username`/keyword and want to explore a subject's Tumblr blog, tags, and reblog network — returns `social-profile`, `as
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
@@ -233,7 +227,6 @@ kind: group-index
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
 - **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
-- **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
 - **`washington-state-driver-s-license-generator`** (medium) — Use when you have a subject's `name` and `dob` and want to derive their Washington State driver's license number — returns a candidate `docu
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.

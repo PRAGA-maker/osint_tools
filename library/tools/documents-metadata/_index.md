@@ -10,7 +10,7 @@ kind: group-index
 - **`android/`** — 13 skill(s) below.
 - **`app-analysis/`** — 4 skill(s) below.
 - **`device-forensics/`** — 2 skill(s) below.
-- **`hosted-automated-analysis/`** — 14 skill(s) below.
+- **`hosted-automated-analysis/`** — 13 skill(s) below.
 - **`ios/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
@@ -67,7 +67,6 @@ kind: group-index
 - **`federal-it-dashboard-united-states`** (low) — Use when you have a US federal `employer-org` (agency) and want its IT investments and spending — returns budgets, projects and performance 
 - **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 
 - **`fide`** (low) — Use when you have a `name` (or FIDE ID) of a competitive chess player and want to confirm identity and country — returns rating, federation,
-- **`fifa`** (low) — Football team rankings website
 - **`filesec-io`** (low) — Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSe
 - **`find-pdf-doc`** (low) — Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `docum
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
@@ -101,7 +100,7 @@ kind: group-index
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
 - **`json-to-csv`** (low) — Use when you have JSON data (an API dump, a breach export, a scraped file) and want it flattened into a spreadsheet-friendly CSV — a data-wr
 - **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
-- **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
+- **`kd6-3-7`** (low) — Use when you have a national ID `document-id` and want the personal data encoded in it — returns `dob`, sex (`physical-description`), and bi
 - **`kickstarter`** (medium) — Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, b
 - **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
 - **`mactech-apple-technology`** (low) — Use when you have an Apple device model/spec reference (from `metadata-exif` or a device string) and want to understand the hardware — retur

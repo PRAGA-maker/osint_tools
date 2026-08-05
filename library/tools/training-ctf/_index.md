@@ -12,7 +12,6 @@ kind: group-index
 ## Skills here
 - **`cyber-intelligence-toolkit-oryon`** (medium) — Use when you need investigation methodology rather than a lookup — a curated GitHub library of OSINT/OPSEC manuals, playbooks, and checklist
 - **`forensic-osint-kb-guides`** (low) — Use when you need process guidance for defensible OSINT — returns how-to guides on evidence preservation, chain-of-custody, and court-ready 
-- **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.
 - **`gralhix-osint-exercises`** (medium) — Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercis
 - **`intel-codex`** (low) — Use when you want structured SOPs and learning paths for OSINT, forensics, and reverse engineering — provides a free reference knowledge bas
 - **`non-typical-osint-guide`** (medium) — Use when a standard approach has stalled and you want unconventional OSINT techniques, mindset training, or pointers to niche tools (crypto,

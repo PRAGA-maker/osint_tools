@@ -234,7 +234,7 @@ kind: group-index
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
 - **`script-safe`** (low) — Use when you want to harden the investigator's browser against scripts and fingerprinting while visiting hostile pages — provides granular s
-- **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
+- **`search-investigative-and-forensic-toolbar`** (low) — Use when you want one-click access to a vetted set of OSINT/forensic lookups — returns a launcher menu into tools for `name`, `phone`, `ip-a
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
 - **`sector035`** (low) — Use when you want to learn OSINT technique and keep current — Sector035's blog runs the weekly "Week in OSINT" roundup of new tools, methods
 - **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
