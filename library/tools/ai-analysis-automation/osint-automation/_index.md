@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/osint-automation
 
 ## Skills here
-- **`analyst-research-tools`** (low) — Multi-category OSINT: people search, social media, archives, email discovery
+- **`analyst-research-tools`** (low) — Use when you have a name, email, username, phone, plate or VIN and want a curated launchpad routing you to the right free lookup services ac
 - **`ifttt`** (low) — Use when you want to automate monitoring — turn a `social-profile`, RSS feed or keyword trigger into automatic alerts/logging so a subject's
 - **`intelligencex`** (low) — Use when you have an `email`, `domain`, `ip-address`, or selector and want it searched across leaks, pastes, darknet and historical web — re
 - **`intrec-pack`** (low) — Use when you want to stand up an OSINT/recon toolkit quickly — an installer/manager that downloads and sets up a curated bundle of intellige

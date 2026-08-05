@@ -138,7 +138,7 @@ kind: group-index
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
 - **`httrack`** (low) — Use when you have a `domain`/website URL and want a complete offline copy for preservation and analysis — returns a local mirror of the site
-- **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
+- **`hunt-osint-framework`** (low) — Use when you have any selector and want a categorised map of free online OSINT tools by investigation type (email, phone, IP/domain, geoloca
 - **`i2p`** (low) — Use when you need to reach or research I2P hidden services anonymously — returns access to the I2P overlay network (an anonymity layer, not 
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
 - **`illuminarty`** (low) — Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating mod

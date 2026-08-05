@@ -68,7 +68,6 @@ kind: group-index
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
 - **`exiftool-lucasgelfond-online`** (low) — Use when you have a sensitive `image` and want full ExifTool metadata (camera, timestamp, GPS) without uploading it anywhere — runs ExifTool
 - **`eyedex`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in public open directories — returns matching files across indexed o
-- **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`federal-it-dashboard-united-states`** (low) — Use when you have a US federal `employer-org` (agency) and want its IT investments and spending — returns budgets, projects and performance 
 - **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 
 - **`fide`** (low) — Use when you have a `name` (or FIDE ID) of a competitive chess player and want to confirm identity and country — returns rating, federation,
@@ -88,7 +87,6 @@ kind: group-index
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (medium) — Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s an
 - **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
-- **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
 - **`google-cloud-ocr`** (medium) — Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, inclu
 - **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
 - **`google-to-search-profiles-on-github`** (low) — Use when you have a `name`, skill, or `employer-org` and want to find someone's GitHub profile — builds a Google X-ray search string to surf

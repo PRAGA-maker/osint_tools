@@ -39,7 +39,7 @@ kind: group-index
 - **`acrevalue`** (low) — Use when you have a rural/agricultural `address` or map location and want parcel boundaries, ownership and value — returns parcel owner, acr
 - **`adultwork-com`** (high) — Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profil
 - **`advanced-registry-search`** (low) — Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — retu
-- **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
+- **`agoa-data-center`** (low) — Use when you have a country or product/company involved in sub-Saharan Africa–US trade and want official AGOA trade statistics, eligibility,
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
 - **`aiddata`** (low) — Use when you have an `employer-org`, country, or funder `name` and want to map its international development-finance flows and counterpartie
 - **`akp-email-database`** (medium) — Use when you have a `name`, `email`, or keyword tied to Turkey's AKP party and want leaked emails — returns messages, senders/recipients, an

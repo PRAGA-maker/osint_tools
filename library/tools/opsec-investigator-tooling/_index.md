@@ -21,12 +21,9 @@ kind: group-index
 - **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
 - **`adblockplus-extension`** (low) — Use when you want your investigation browser to block ads and third-party trackers so target pages load cleaner and leak less about you — re
-- **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
-- **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is a
 - **`amazon-mobile-app-mobile-android`** (low) — Use when you have a `name`, `email`, or `username` and want to surface a subject's public Amazon presence — returns wishlist-derived `addres
-- **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
 - **`android-studio-and-sdk-tools`** (low) — Use when you need to run a mobile app (social/dating/messaging) for OSINT without exposing your own device — provides a disposable Android e
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
 - **`anonaddy`** (low) — Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses tha
@@ -70,7 +67,6 @@ kind: group-index
 - **`credit-card-generator`** (low) — Use when building a sock-puppet persona and a form demands a Luhn-valid card number for format validation — generates fake, non-functional t
 - **`crontab-guru`** (low) — Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and ne
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
-- **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
 - **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
 - **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
 - **`delete-me-free-opt-out-guide`** (low) — Use when you have a `name` exposed on data-broker/people-search sites and want to remove it — returns step-by-step opt-out instructions per 
@@ -138,13 +134,11 @@ kind: group-index
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
-- **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
 - **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
-- **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
@@ -156,7 +150,6 @@ kind: group-index
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`ldplayer-net`** (low) — Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for s
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
-- **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lightshot-screen-capture-add-on`** (low) — Use when you need to quickly screenshot a selected area of a browser tab to preserve `metadata-exif`-free visual evidence during an investig
 - **`link-cash-locator-app`** (low) — Use when you have a `geolocation`/`address` in the UK or Crown Dependencies and want the nearest cash machines — returns ATM `address`es and
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
@@ -203,7 +196,7 @@ kind: group-index
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
-- **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
+- **`police-scanner-radio-app-mobile-android`** (low) — Use when you have a geolocation and want to monitor live public-safety radio (police/fire/EMS) feeds for that area to catch real-time incide
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
 - **`privacy-net`** (low) — Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach l
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
@@ -235,7 +228,6 @@ kind: group-index
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
-- **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`smstome-com`** (low) — Use when you need a free disposable phone number to receive an SMS verification code for a sock-puppet account — returns public temporary nu
@@ -247,8 +239,7 @@ kind: group-index
 - **`soundcloud-music-app-mobile-android`** (low) — Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, a
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
-- **`speech-jammer`** (low) — OSINT tool: Speech Jammer.
-- **`srware-iron`** (low) — OSINT tool: SRWare Iron.
+- **`srware-iron`** (low) — Use when you want a Chromium-based investigation browser with Google's phone-home telemetry stripped out — supports lower-noise sock-puppet 
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
@@ -263,7 +254,6 @@ kind: group-index
 - **`thispersondoesnotexistapi-unofficial`** (low) — Use when you need to fetch AI-generated sock-puppet `face`/`image` files programmatically at scale — returns a random non-existent person's 
 - **`thisxdoesnotexist`** (low) — Use when you need a synthetic, non-reverse-searchable image for a sock-puppet avatar — a directory of GAN generators (fake faces, etc.); als
 - **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
-- **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
@@ -278,7 +268,6 @@ kind: group-index
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
-- **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
@@ -314,6 +303,5 @@ kind: group-index
 - **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
-- **`zz-fo`** (low) — OSINT tool: Zz.fo.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

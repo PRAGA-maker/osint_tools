@@ -110,7 +110,6 @@ kind: group-index
 - **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
 - **`cookieserve-com`** (low) — Use when you have a `domain` and want an itemized audit of the cookies and trackers it sets — returns tracker/third-party `domain` links for
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
-- **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
 - **`crab`** (low) — Use when you have a `domain`/`ip-address` and want a one-command port scan plus WHOIS/IP-info and OS guess — returns open ports, ip-address 
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — Use when you have a `domain`/URL (or want to enrich one) and want to check it against a free feed of known crypto-scam/phishing sites — retu
@@ -259,7 +258,7 @@ kind: group-index
 - **`metafinder`** (low) — Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and pa
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
 - **`miteru`** (low) — Use when you want to hunt live phishing kits — it pulls suspicious `domain` URLs from phishing feeds and flags those exposing a downloadable
-- **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
+- **`mkpath`** (low) — Use when you have a target domain and a wordlist and want to generate multi-level directory/file path permutations to feed a content brute-f
 - **`mksub`** (low) — Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for res
 - **`moartls-analyzer`** (low) — Use when you have a `domain`/web page and want to spot its non-secure (HTTP) links — returns a flagged list of insecure references on the pa
 - **`moz-link-explorer`** (low) — Use when you have a `domain`/URL and want its backlink profile and linked/linking domains — returns linking `domain`s, anchor text and autho

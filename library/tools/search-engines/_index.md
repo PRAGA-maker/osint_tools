@@ -43,7 +43,7 @@ kind: group-index
 - **`airlines-inform`** (medium) — Use when you have an airline, airport or aircraft-type reference and want to decode it — returns airline/fleet/airport details (`employer-or
 - **`alabama-medical-license-search`** (low) — Use when you have a physician's `name` and want to verify Alabama licensure — returns license number, status, issue/expiry, medical school, 
 - **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
-- **`all-in-one`** (low) — OSINT tool: All-in-One.
+- **`all-in-one`** (low) — Use when you have a keyword/name/username and want to fire the same query across many engines (web, Twitter, YouTube, torrents, domains) fro
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
 - **`alleba-philippines`** (low) — Use when your subject or content is Philippine and you want a local search engine/directory that surfaces PH sites a global engine buries — 
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
@@ -145,7 +145,6 @@ kind: group-index
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — Use when you have a keyword, `domain` or filename and want cybersecurity documents, reports and datasets — a curated Google CSE scoped to in
 - **`cybersecurity-osint-paulveillard`** (low) — Use when you want to discover OSINT tools by category — a GitHub "awesome" list returning tool leads and methodology references, not subject
-- **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/loc
 - **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so

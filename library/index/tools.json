@@ -237,41 +237,58 @@
   {
     "id": "analyst-research-tools",
     "name": "Analyst Research Tools",
-    "description": "Multi-category OSINT: people search, social media, archives, email discovery",
+    "description": "Use when you have a name, email, username, phone, plate or VIN and want a curated launchpad routing you to the right free lookup services across people-search, social, email, archives and domains — returns links to pivot into, not data itself.",
     "url": "https://analystresearchtools.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Multi-category OSINT: people search, social media, archives, email discovery",
-    "input": "Names, emails, usernames, phone numbers, license plates, VINs",
-    "output": "PII data, social profiles (40+ platforms), email formats, archive snapshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A categorised portal of vetted OSINT lookup services to launch queries from a single page.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username",
+      "phone",
+      "vehicle-plate",
+      "vin"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free aggregation portal (© 2025, by Collin Tex / @collin_intel); the individual services it links vary from free to freemium.",
     "opsec": "passive",
-    "opsecNote": "Aggregates public sources passively; no active scanning",
+    "opsecNote": "The portal itself just launches queries into third-party services, so your OpSec is inherited from whichever service you click through to. Use a sock-puppet browser and check each destination's own exposure (some people-search sites are active/log queries) before submitting a selector.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A curated one-person OSINT link portal; the curation is helpful but the linked tools' quality is the tools' own, not the portal's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ARTs",
+      "analystresearchtools.com"
+    ],
+    "tags": [
+      "tool-collection",
+      "osint-portal"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/analyst-research-tools.md"
   },
   {
@@ -6087,37 +6104,55 @@
   {
     "id": "hunt-osint-framework",
     "name": "Hunt Osint Framework",
-    "description": "Dozens of online tools for different stages of #osint investigations",
+    "description": "Use when you have any selector and want a categorised map of free online OSINT tools by investigation type (email, phone, IP/domain, geolocation, image forensics) to find the right tool fast — returns links to pivot into, not data itself.",
     "url": "https://nitinpandey.in/ihunt/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "A free, category-organised directory (iHunt) of online OSINT tools across investigation stages.",
+    "selectorsIn": [
+      "email",
+      "phone",
+      "ip-address",
+      "domain",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory (iHunt, by Nitin Pandey); every linked resource is free/open-source or has a free tier.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the framework is passive. Your actual OpSec depends on whichever linked tool you launch — some are active/logged. Use a sock-puppet browser and read each destination before submitting a selector.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A maintained community OSINT-tool directory (iHunt) aimed at researchers and LE; curation is credible but the linked tools' quality is their own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "analyst-research-tools"
+    ],
+    "aliases": [
+      "iHunt",
+      "iHunt OSINT Framework"
+    ],
     "tags": [
       "Tools collections/toolkits"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/hunt-osint-framework.md"
   },
   {
@@ -46673,54 +46708,6 @@
     "_file": "library/tools/documents-metadata/android/apps/social-networking/facebook.md"
   },
   {
-    "id": "fbi-information-technology-united-states",
-    "name": "FBI Information Technology (United States)",
-    "description": "Online government website providing information on computer and information technology occupations",
-    "url": "https://www.fbi.gov/about/leadership-and-structure/information-technology",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fbi-common-fraud-schemes-united-states",
-      "federal-bureau-of-investigations-value",
-      "most-wanted",
-      "most-wanted-criminal-pages",
-      "sex-offender-registry-websites",
-      "vault-fbi-gov"
-    ],
-    "_file": "library/tools/documents-metadata/fbi-information-technology-united-states.md"
-  },
-  {
     "id": "federal-it-dashboard-united-states",
     "name": "Federal IT Dashboard (United States)",
     "description": "Use when you have a US federal `employer-org` (agency) and want its IT investments and spending — returns budgets, projects and performance metrics by agency.",
@@ -47791,46 +47778,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/gogetfunding.md"
-  },
-  {
-    "id": "google-analytics",
-    "name": "Google Analytics",
-    "description": "Web analytics service offered by Google that tracks web traffic",
-    "url": "https://analytics.google.com/analytics/web/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/google-analytics.md"
   },
   {
     "id": "google-cloud-ocr",
@@ -59516,47 +59463,6 @@
     "_file": "library/tools/domains-ip-infrastructure/copy-all-links-and-image-links-to-csv-or-json.md"
   },
   {
-    "id": "core-serp-vitals",
-    "name": "Core SERP Vitals",
-    "description": "adds a bit of information from CrUX API to the standard Google search results",
-    "url": "https://chrome.google.com/webstore/detail/core-serp-vitals/oipmhlkineglclpndlecjmbleapbcilf/related",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/core-serp-vitals.md"
-  },
-  {
     "id": "cqcounter-site-info",
     "name": "CQCounter Site Info",
     "description": "Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP, visual traceroute, and rough traffic/valuation estimates.",
@@ -71208,46 +71114,51 @@
   {
     "id": "mkpath",
     "name": "MKPATH",
-    "description": "A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster etc) to find files with sensitive information on target website.",
+    "description": "Use when you have a target domain and a wordlist and want to generate multi-level directory/file path permutations to feed a content brute-forcer — returns candidate paths, not data itself.",
     "url": "https://github.com/trickest/mkpath",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Generating multi-level path permutations from a wordlist for directory/file brute-forcing.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Go tool from Trickest; no account required.",
+    "opsec": "active",
+    "opsecNote": "MKPATH itself only generates a path list locally (passive). But its whole purpose is to feed a brute-forcer (GoBuster/ffuf/Dirbuster) that then hammers the target server with thousands of requests — that phase is loud and logged. Only run the brute-force stage against systems you are authorised to test, from an attributable-to-nobody source.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by Trickest, a known security-automation vendor, on GitHub; small, auditable Go source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mksub",
+      "trickest-inventory"
+    ],
+    "aliases": [
+      "trickest mkpath"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Wordlists generators"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mksub",
-      "trickest-inventory"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/mkpath.md"
   },
   {
@@ -161590,46 +161501,6 @@
     "_file": "library/tools/opsec-investigator-tooling/adblockplus-extension.md"
   },
   {
-    "id": "adobe-photoshop-express-app-mobile-android",
-    "name": "Adobe Photoshop Express App (Mobile – Android)",
-    "description": "App for mobile devices for creating editing and sharing image-related media",
-    "url": "https://play.google.com/store/apps/details?id=com.adobe.psmobile",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/adobe-photoshop-express-app-mobile-android.md"
-  },
-  {
     "id": "adobe-photoshop-express-app-mobile-ios",
     "name": "Adobe Photoshop Express App (Mobile – iOS)",
     "description": "Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and marking up evidence.",
@@ -161677,46 +161548,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/adobe-photoshop-express-app-mobile-ios.md"
-  },
-  {
-    "id": "airwatch-secure-content-locker-app-mobile-ios",
-    "name": "Airwatch Secure Content Locker App (Mobile – iOS)",
-    "description": "App for mobile devices that creates a secure content area on your device with password",
-    "url": "https://itunes.apple.com/ca/app/airwatch-secure-content-locker/id525890839?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/airwatch-secure-content-locker-app-mobile-ios.md"
   },
   {
     "id": "am-i-unique",
@@ -161817,49 +161648,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/amazon-mobile-app-mobile-android.md"
-  },
-  {
-    "id": "amazon-sns",
-    "name": "Amazon SNS",
-    "description": "OSINT tool: Amazon SNS.",
-    "url": "https://aws.amazon.com/sns/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "amazon",
-      "amazon-com",
-      "amazon-pay",
-      "amazon-registry-search",
-      "amazon-rekognition",
-      "aws-public-datasets",
-      "us-east-1-console-aws-amazon-com"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/amazon-sns.md"
   },
   {
     "id": "android-studio-and-sdk-tools",
@@ -164060,46 +163848,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/csi-linux.md"
-  },
-  {
-    "id": "cyberghost-vpn-proxy-website",
-    "name": "CyberGhost VPN Proxy Website",
-    "description": "Anonymous browsing service provider",
-    "url": "http://www.cyberghostvpn.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/cyberghost-vpn-proxy-website.md"
   },
   {
     "id": "decoding-social-security-numbers",
@@ -167571,46 +167319,6 @@
     "_file": "library/tools/opsec-investigator-tooling/huron-osint.md"
   },
   {
-    "id": "icloud-app-mobile-ios",
-    "name": "iCloud App (Mobile – iOS)",
-    "description": "App for mobile devices for searching and storing personal materials and information",
-    "url": "http://www.apple.com/ca/icloud",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/icloud-app-mobile-ios.md"
-  },
-  {
     "id": "ifax-communications-app-mobile-ios",
     "name": "iFax Communications App (Mobile – iOS)",
     "description": "App for mobile devices for sending and receving faxes",
@@ -167930,46 +167638,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ipv6-leak-tests.md"
-  },
-  {
-    "id": "itranslate-language-translation-app-mobile-ios",
-    "name": "iTranslate Language Translation App (Mobile – iOS)",
-    "description": "App for mobile devices for language translation services",
-    "url": "https://itunes.apple.com/ca/app/itranslate-free-translator/id288113403?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/itranslate-language-translation-app-mobile-ios.md"
   },
   {
     "id": "jondonym",
@@ -168571,46 +168239,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/lemmeknow.md"
-  },
-  {
-    "id": "lexisnexis-accurint-investigation-support-app-mobile-android",
-    "name": "LexisNexis Accurint Investigation Support App (Mobile – Android)",
-    "description": "App for mobile devices for providing support services and information in support of investigations",
-    "url": "https://play.google.com/store/apps/details?id=com.lexisnexis.accurint&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-android.md"
   },
   {
     "id": "lightshot-screen-capture-add-on",
@@ -171001,41 +170629,50 @@
   {
     "id": "police-scanner-radio-app-mobile-android",
     "name": "Police Scanner Radio App (Mobile – Android)",
-    "description": "App for mobile devices for monitoring law enforcement and emergency radio communications",
+    "description": "Use when you have a geolocation and want to monitor live public-safety radio (police/fire/EMS) feeds for that area to catch real-time incidents — returns geolocation-tied situational leads, not personal identifiers.",
     "url": "https://play.google.com/store/apps/details?id=com.scannerradio",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Listening to live police/fire/EMS radio feeds by location for real-time incident awareness.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free app (ad-supported; the underlying Broadcastify feeds are public). A paid tier removes ads/adds features but is not required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are listening to publicly-broadcast radio feeds — fully passive, and no target learns you're listening. Do not act on unverified scanner chatter as fact, and be aware feeds can be delayed or intermittently taken offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "A popular scanner client that streams Broadcastify's public feed network; feed availability and quality vary by locality and are community/agency-dependent.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Scanner Radio",
+      "police scanner app"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/police-scanner-radio-app-mobile-android.md"
   },
   {
@@ -172665,46 +172302,6 @@
     "_file": "library/tools/opsec-investigator-tooling/sin-generator.md"
   },
   {
-    "id": "slack-business-app-mobile-android",
-    "name": "Slack Business App (Mobile – Android)",
-    "description": "App for mobile devices for business communications and networking",
-    "url": "https://play.google.com/store/apps/details?id=com.Slack",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/slack-business-app-mobile-android.md"
-  },
-  {
     "id": "sleipnir",
     "name": "Sleipnir",
     "description": "Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a compartmentalized profile.",
@@ -173236,73 +172833,46 @@
     "_file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-ios.md"
   },
   {
-    "id": "speech-jammer",
-    "name": "Speech Jammer",
-    "description": "OSINT tool: Speech Jammer.",
-    "url": "https://mynoise.net/NoiseMachines/audioJammerNoiseGenerator.php",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/speech-jammer.md"
-  },
-  {
     "id": "srware-iron",
     "name": "SRWare Iron",
-    "description": "OSINT tool: SRWare Iron.",
+    "description": "Use when you want a Chromium-based investigation browser with Google's phone-home telemetry stripped out — supports lower-noise sock-puppet browsing rather than returning selectors.",
     "url": "http://www.srware.net/en/software_srware_iron.php",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A de-Googled Chromium build for cleaner, lower-telemetry sock-puppet browsing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free download for Windows/macOS/Linux/Android; open-source-derived (Chromium).",
+    "opsec": "passive",
+    "opsecNote": "This is opsec infrastructure, not a data source. Iron removes Chrome's built-in Google identifiers/telemetry (RLZ, install-id, background phone-home), reducing what leaks to Google — but it does NOT hide your IP. Pair it with a VPN/Tor and a dedicated profile per sock puppet. It is not high-assurance anonymity by itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing third-party Chromium fork by SRWare; its core is Chromium, though the specific privacy patches are the vendor's and are not independently audited each release.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Iron browser",
+      "SRWare Iron browser"
+    ],
     "tags": [
       "browsers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/srware-iron.md"
   },
   {
@@ -174002,46 +173572,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/timehop-past-activity-app-mobile-ios.md"
-  },
-  {
-    "id": "tinder-dating-app-mobile-android",
-    "name": "Tinder Dating App (Mobile – Android)",
-    "description": "App for mobile devices for dating and relationship services",
-    "url": "https://play.google.com/store/apps/details?id=com.tinder",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/tinder-dating-app-mobile-android.md"
   },
   {
     "id": "tinder-dating-app-mobile-ios",
@@ -174772,42 +174302,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/two-factor-authentication-list.md"
-  },
-  {
-    "id": "ucbrowser",
-    "name": "UCBrowser",
-    "description": "OSINT tool: UCBrowser.",
-    "url": "http://www.ucweb.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ucbrowser.md"
   },
   {
     "id": "uk-government-internet-scams-webpage",
@@ -176600,40 +176094,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/zotero.md"
-  },
-  {
-    "id": "zz-fo",
-    "name": "Zz.fo",
-    "description": "OSINT tool: Zz.fo.",
-    "url": "https://zz.fo/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/zz-fo.md"
   },
   {
     "id": "192",
@@ -198761,37 +198221,49 @@
   {
     "id": "agoa-data-center",
     "name": "AGOA Data Center",
-    "description": "OSINT tool: AGOA Data Center.",
+    "description": "Use when you have a country or product/company involved in sub-Saharan Africa–US trade and want official AGOA trade statistics, eligibility, and exporter context — returns employer-org and trade-flow data.",
     "url": "http://agoa.info",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up African Growth and Opportunity Act (AGOA) trade data, country eligibility, and product/exporter statistics.",
+    "selectorsIn": [
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public trade-data portal (agoa.info), run by the tralac trade-law centre; no account needed to browse data.",
+    "opsec": "passive",
+    "opsecNote": "A public statistics/reference site — you only read published trade data, disclosing nothing about a target. Standard clean-browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by tralac (Trade Law Centre) as the reference AGOA information hub, drawing on official US/African trade statistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "agoa.info",
+      "African Growth and Opportunity Act data"
+    ],
     "tags": [
       "data-and-statistics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/agoa-data-center.md"
   },
   {
@@ -251538,40 +251010,51 @@
   {
     "id": "all-in-one",
     "name": "All-in-One",
-    "description": "OSINT tool: All-in-One.",
+    "description": "Use when you have a keyword/name/username and want to fire the same query across many engines (web, Twitter, YouTube, torrents, domains) from one customisable page — returns links to results across engines.",
     "url": "http://all-io.net",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single customisable meta-search page that dispatches one query to many engines.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free meta-search portal; an optional account only saves your custom engine list.",
+    "opsec": "passive",
+    "opsecNote": "It hands your query off to third-party engines (Google, Bing, YouTube, Twitter, torrent/domain search) — each destination sees the query and its own logging applies. Use a sock-puppet browser; the portal adds no anonymity of its own.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small, dated but functional meta-search aggregator; it only forwards queries to mainstream engines, so there's no data of its own to mistrust — just uncertain maintenance.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "all-io-net"
+    ],
+    "aliases": [
+      "all-io.net"
+    ],
     "tags": [
       "meta-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "all-io-net"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/all-in-one.md"
   },
   {
@@ -257054,42 +256537,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/search-engines/cybersecurity-osint-paulveillard.md"
-  },
-  {
-    "id": "dailyearth",
-    "name": "DailyEarth",
-    "description": "OSINT tool: DailyEarth.",
-    "url": "http://dailyearth.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/dailyearth.md"
   },
   {
     "id": "dakkadakka-wargame-player-finder",
@@ -326272,24 +325719,25 @@
   {
     "id": "pentestingeverything",
     "name": "PentestingEverything",
-    "description": "Comprehensive penetration testing methodology guide (web, mobile, API, network).",
+    "description": "Use when you need a structured methodology/checklist reference for testing a web app, API, mobile app, or network — returns technique and payload guidance, not target data.",
     "url": "https://github.com/m14r41/PentestingEverything",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Pentest methodology reference",
+    "bestFor": "A consolidated penetration-testing methodology and payload reference across web/mobile/API/network.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account required (a GitHub login only helps to star/fork).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the guide is passive. It teaches offensive techniques — only apply them against systems you are explicitly authorised to test. The repo itself reveals nothing about any target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Popular pentest reference (1.7k+ stars).",
+    "trustNote": "A widely-starred community pentest reference by m14r41; content is curated methodology, quality varies by section, and it is not a formal standard.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -326298,14 +325746,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Pentesting Everything",
+      "m14r41 PentestingEverything"
+    ],
     "tags": [
       "pentest",
       "methodology"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/pentestingeverything.md"
   },
   {
