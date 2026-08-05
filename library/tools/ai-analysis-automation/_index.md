@@ -218,7 +218,6 @@ kind: group-index
 - **`pharos-ai`** (low) — Use when you have a region or ongoing conflict and want an AI-curated live feed of events, actors, and signals mapped from open sources — re
 - **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
 - **`pidgin`** (low) — Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once 
-- **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (medium) — Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns i
 - **`pixel-block`** (low) — Use when you (the investigator) read email in Gmail and want to block tracking pixels so senders can't learn you opened their message — an o
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
@@ -296,7 +295,6 @@ kind: group-index
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
 - **`vis-js`** (low) — OSINT tool: Vis.js.
-- **`visme`** (low) — OSINT tool: Visme.
 - **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from inst
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede

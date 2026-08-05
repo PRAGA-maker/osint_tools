@@ -92,7 +92,7 @@ kind: group-index
 - **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Use when you have a name/keywords and want a ready-made Google X-Ray query to find someone's profiles — returns a search string that surface
-- **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
+- **`booleanstringbank`** (low) — Use when you have a name, role, or employer and want a ready-made, crowdsourced Boolean search string to find profiles fast instead of writi
 - **`bright-local-search-result-checker`** (low) — Use when you have a query and a precise location and want to see Google/Maps results exactly as a local there would — returns geo-localised 
 - **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
@@ -559,7 +559,7 @@ kind: group-index
 - **`ukons-standard-occupational-classifications-united-kingdom`** (low) — Use when you have a UK job-title lead and want to normalize it to the ONS SOC occupation code — returns the standard classification, not a p
 - **`united-states-marine-corps-occupation-codes`** (medium) — Use when you have a USMC MOS `document-id` code and want to decode the Marine's job specialty — returns the occupation/role behind the code.
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
-- **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
+- **`urvx`** (low) — Use when you have a filename or keyword and want to search across popular file-hosting services (MediaFire, 4shared, etc.) via a Google-powe
 - **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
 - **`us-department-of-housing-and-urban-development`** (medium) — Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housi
 - **`us-government-printing-office`** (medium) — Use when you have a `name` and want to find them in official US federal publications — congressional hearings, court opinions, the Federal R
@@ -573,7 +573,7 @@ kind: group-index
 - **`vinden-meta-search-netherlands`** (medium) — Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links t
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
 - **`vulnerability-and-exploit-database`** (medium) — Use when you have a `domain` or software product tied to a target's infrastructure and want known CVEs/exploits for it — returns vulnerabili
-- **`walla-israel`** (low) — OSINT tool: Walla (Israel).
+- **`walla-israel`** (low) — Use when you have a name, keyword, or topic tied to Israel and want a major Hebrew-language national portal (news, search, email) to surface
 - **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
 - **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
 - **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie

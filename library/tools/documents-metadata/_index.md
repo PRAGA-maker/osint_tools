@@ -48,7 +48,6 @@ kind: group-index
 - **`diffnow-com`** (low) — Use when you have two documents, code files, or web pages and want to spot exactly what changed between them — returns a highlighted side-by
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
-- **`doppelme`** (low) — Online avatar creator
 - **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor

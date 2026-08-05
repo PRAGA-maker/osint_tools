@@ -15,7 +15,6 @@ kind: group-index
 ## Skills here
 - **`10minutemail-com`** (low) — Use when you need a throwaway `email` inbox to receive a one-off verification code without exposing a real address — an investigator OpSec t
 - **`2-682-783-free-ai-generated-photos`** (low) — Use when you need a realistic face for a sock-puppet account (or a control image to study GAN faces) — returns free AI-generated portrait ph
-- **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
 - **`9-steps-to-security-in-the-digital-age`** (low) — Use when you're hardening your investigator OPSEC — a free plain-language online-privacy guide covering passwords, VPNs, tracking, and accou
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
 - **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
@@ -31,7 +30,6 @@ kind: group-index
 - **`anonymouse-web-proxy`** (low) — Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so 
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
 - **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
-- **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
 - **`archstrike`** (low) — Use when you want an Arch Linux environment preloaded with security/OSINT tooling — provides an installable distro and package repository, n
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
@@ -188,7 +186,6 @@ kind: group-index
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
 - **`police-scanner-radio-app-mobile-android`** (low) — Use when you have a geolocation and want to monitor live public-safety radio (police/fire/EMS) feeds for that area to catch real-time incide
-- **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
 - **`privacy-net`** (low) — Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach l
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
@@ -197,7 +194,6 @@ kind: group-index
 - **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num
 - **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
-- **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
 - **`rss-subscription-extension-chrome`** (low) — Use when you have a `domain`/site and want to monitor it for new posts — a Google-published Chrome extension that auto-detects RSS/Atom feed
@@ -208,7 +204,6 @@ kind: group-index
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
 - **`scrapersnbots`** (low) — Use when you have a `username`, `image` or URL and want quick free web utilities — username search on dating sites, reverse-image/one-domain
 - **`scrim-email-protector`** (low) — Use when you (the investigator) want to share a sock-puppet email as a captcha-gated short link, or when you encounter an scr.im link hiding
-- **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
 - **`send-text-free`** (low) — Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, no
@@ -230,7 +225,6 @@ kind: group-index
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
 - **`tempmail-org-bot`** (low) — Use when you (the investigator) need a throwaway email address to register a sock-puppet account or receive a verification code without expo
-- **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
 - **`the-osint-puppeteer`** (low) — Use when you need to build a durable sock-puppet identity for investigation — returns a step-by-step tradecraft guide for creating and maint
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
 - **`thexifer`** (low) — Use when you have an `image` and want to read, strip or forge its EXIF/IPTC/XMP metadata — returns viewed or rewritten metadata-exif.
@@ -238,7 +232,6 @@ kind: group-index
 - **`this-rental-does-not-exist`** (low) — Use when you need an AI-generated fake rental-listing `image` for sock-puppet cover, or as a reference for spotting AI-fabricated property s
 - **`thispersondoesnotexistapi-unofficial`** (low) — Use when you need to fetch AI-generated sock-puppet `face`/`image` files programmatically at scale — returns a random non-existent person's 
 - **`thisxdoesnotexist`** (low) — Use when you need a synthetic, non-reverse-searchable image for a sock-puppet avatar — a directory of GAN generators (fake faces, etc.); als
-- **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
@@ -277,10 +270,8 @@ kind: group-index
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
-- **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
-- **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe

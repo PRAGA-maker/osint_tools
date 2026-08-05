@@ -248,7 +248,6 @@ kind: group-index
 - **`docinfo-org`** (high) — Use when you have a doctor's `name` and want to confirm and locate them professionally — returns the states they're licensed in, medical sch
 - **`doe-data-explorer`** (medium) — Use when you have a researcher `name` or `employer-org` and want their U.S. Department of Energy scientific datasets — returns author, affil
 - **`drug-enforcement-administration`** (medium) — Use when you have a `name` and want DEA public records — returns fugitive listings, press-release arrest details and (via Diversion Control)
-- **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
 - **`easybib-citation-generator`** (medium) — Use when you have a source URL/document and want a formatted citation for a report — returns a bibliographic reference (a write-up aid, not 
@@ -894,7 +893,6 @@ kind: group-index
 - **`uspages-business-directory-united-states`** (medium) — Use when you have an `employer-org` or `name` and want a US business listing — returns company address, category, and contact details.
 - **`usrealtyrecords-com`** (high) — Use when you have a US `address` (or owner `name`) and want property ownership, value, sale history and possible owner contact info — return
 - **`ustitlerecords-com`** (high) — Use when you have a `name` or `address` and want US property/title records — returns property ownership, transfer history, liens and all pro
-- **`utah-gun-exchange`** (low) — OSINT tool: Utah Gun Exchange.
 - **`utah`** (high) — Use when you have a `name` and want to check whether the person is under Utah Department of Corrections supervision — returns name, offender
 - **`vat-lookup-co-uk`** (high) — Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and 
 - **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na

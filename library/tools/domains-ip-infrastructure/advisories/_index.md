@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/advisories
 
 ## Skills here
-- **`australian-cyber-security-centre`** (low) — OSINT tool: Australian Cyber Security Centre.
+- **`australian-cyber-security-centre`** (low) — Use when you're researching a threat, vulnerability, or campaign and want authoritative Australian-government cyber advisories, alerts, and 
 - **`canadian-centre-for-cyber-security`** (low) — Use when you have a product/CVE or domain-context question and want authoritative Canadian government security alerts and guidance — returns
 - **`cve-details`** (low) — Use when you have a `domain`/product and version (or a CVE id) and want its known vulnerabilities and severity — returns CVE listings, CVSS 
 - **`cve-mitre`** (low) — Use when you have a CVE ID or a product/keyword and want the authoritative vulnerability record — returns the official CVE description, affe

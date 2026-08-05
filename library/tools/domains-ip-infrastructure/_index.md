@@ -86,7 +86,7 @@ kind: group-index
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — Use when you want a live visual of attacks blocked across BunkerWeb WAF deployments worldwide — returns aggregate attack geography/categorie
 - **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
 - **`cdnstrip`** (low) — Use when you have a list of IP addresses and want to separate CDN/WAF-fronted IPs from real origin IPs — returns two lists (CDN vs non-CDN) 
-- **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
+- **`cellmapper`** (low) — Use when you have a cell tower ID (CID/eNB), a carrier, or a geolocation and want to map cell towers, decode tower/sector IDs, and see cover
 - **`censys-certificates`** (low) — Use when you have a `domain`, org name, or cert detail and want to search TLS/SSL certificates for related hosts — returns certificates, the
 - **`censys-ipv4`** (low) — Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, 
 - **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
@@ -94,7 +94,6 @@ kind: group-index
 - **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — Use when you have a `domain` and want to know if it's reachable from mainland China — returns a real-time accessible/blocked verdict tested 
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
-- **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
 - **`check-point-live-cyber-threat-map`** (low) — Use when you want situational awareness of live global attack activity (source/target countries, attack types) — returns a real-time threat 
 - **`checkphishai`** (low) — Use when you have a `domain`/URL and want to detect phishing or typosquats of it — returns scan verdicts, screenshots, and lookalike `domain
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact

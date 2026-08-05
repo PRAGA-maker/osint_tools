@@ -26,7 +26,6 @@ kind: group-index
 - **`conveythis-free-translation`** (low) — Use when you have a foreign-language website and want it rendered in your language — returns an auto-translated view of the site across 200+
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
 - **`definitions-net`** (low) — Use when you have a foreign or unfamiliar term from collected material and want a definition plus translation in 40+ languages — returns pla
-- **`dictionary-com`** (low) — Search for definitions, grammar, slang, acronyms, and more
 - **`emojitranslate-com`** (low) — Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji s
 - **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
