@@ -32,7 +32,7 @@ kind: group-index
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
 - **`anonaddy`** (low) — Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses tha
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
-- **`anonymouse-web-proxy`** (low) — Anonymous browsing service provider
+- **`anonymouse-web-proxy`** (low) — Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so 
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
 - **`anydo-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
@@ -88,7 +88,7 @@ kind: group-index
 - **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
-- **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
+- **`electronic-frontier-foundation-eff-tools`** (low) — Use when you want to harden an investigator browser against tracking/fingerprinting and learn OpSec tradecraft — returns privacy tooling and
 - **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
 - **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
 - **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
@@ -146,7 +146,6 @@ kind: group-index
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
-- **`hide-my-ass-proxy-website`** (low) — Anonymous browsing service provider
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
 - **`hola-vpn`** (low) — Use when you want to change your apparent egress country for casual geo-unblocking — but note it is a peer-to-peer network with a poor priva
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
@@ -215,7 +214,7 @@ kind: group-index
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
 - **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
 - **`password-generator`** (low) — Password generator for creating strong passwords
-- **`password-safe`** (low) — Program that enhances security by offering password management services
+- **`password-safe`** (low) — Use when you need to store the many sock-puppet logins and credentials of an investigation in one encrypted local vault — returns secure, of
 - **`paxful`** (low) — OSINT tool: Paxful.
 - **`pentoo-linux`** (low) — Use when you want a ready-made, isolated OS for security/OSINT work — returns a bootable Gentoo-based live environment preloaded with pentes
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
@@ -293,8 +292,7 @@ kind: group-index
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
-- **`tor-browser`** (low) — OSINT tool: Tor Browser.
-- **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
+- **`tor-browser`** (low) — Use when you need to browse investigation targets without exposing your real IP, or to reach .onion dark-web sites — returns anonymized web 
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information

@@ -151,7 +151,7 @@ kind: group-index
 - **`leaflet`** (high) — Use when you need to build a custom interactive web map to plot OSINT findings — a developer library, not a lookup service.
 - **`light-pollution-world-map`** (low) — Use when you have a candidate `geolocation` and a night photo and want to test whether the sky brightness/darkness matches — returns a layer
 - **`lightingmaps`** (low) — Use when you have an `image`/video showing a storm or a claimed time+place and want to verify lightning activity there and then — returns re
-- **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
+- **`live-cams-iplivecams`** (low) — Use when you have a `geolocation`/place and want a live public webcam view of it for real-time verification — returns streaming feeds of bea
 - **`localfocus-nl-geokit`** (medium) — Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocod
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o

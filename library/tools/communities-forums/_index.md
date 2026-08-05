@@ -199,7 +199,6 @@ kind: group-index
 - **`refdesk-newspaper-search`** (medium) — Use when you have a subject's `name` and a `geolocation` and want the right local newspaper to search for coverage of them — returns links t
 - **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en
 - **`restaurant-news-united-states`** (medium) — Use when you have an `employer-org`/`name` in US foodservice and want press-release coverage — returns announcements, franchise info, and na
-- **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
 - **`safenote`** (medium) — Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (y
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent

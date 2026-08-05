@@ -44,7 +44,6 @@ kind: group-index
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
 - **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
-- **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
 - **`blender`** (low) — Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulati
 - **`botster`** (low) — Use when you have a query, `username`, or `domain` and want no-code bots to scrape/monitor data from Google, LinkedIn, YouTube, Amazon, TikT
@@ -74,7 +73,6 @@ kind: group-index
 - **`cybergordon`** (low) — Use when you have an `ip-address`, `domain`, `email`, or file hash and want a one-query reputation/threat check across dozens of sources — r
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — Use when you have investigation data (relationships, timelines, geodata) and want to build custom interactive visualizations — provides a Ja
-- **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
 - **`data-visualization-catalogue`** (low) — Use when you have investigation data to present and want to pick the right chart type — returns a reference of 80+ visualization methods ind
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfu
@@ -159,7 +157,6 @@ kind: group-index
 - **`keyfinder`** (low) — Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, to
 - **`krebs-on-security`** (low) — Use when you have a threat-actor alias, breach name, scam pattern, or malware/campaign name and want deep investigative background — returns
 - **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
-- **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
 - **`listify`** (low) — OSINT tool: Listify.
@@ -237,7 +234,7 @@ kind: group-index
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
 - **`pixxa`** (low) — OSINT tool: Pixxa.
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
-- **`preceden`** (low) — OSINT tool: Preceden.
+- **`preceden`** (low) — Use when you have a set of dated events from an investigation and want to lay them out as a shareable visual timeline — returns a timeline c
 - **`prism`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and buil
 - **`privacy-badger`** (low) — Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a def
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 

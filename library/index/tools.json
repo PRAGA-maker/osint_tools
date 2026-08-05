@@ -1454,46 +1454,6 @@
     "_file": "library/tools/ai-analysis-automation/bevigil-cli.md"
   },
   {
-    "id": "big-number-calculator",
-    "name": "Big Number Calculator",
-    "description": "OSINT tool: Big Number Calculator.",
-    "url": "https://defuse.ca/big-number-calculator.htm",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "defuse",
-      "html-sanitizer-tool",
-      "text-and-file-hash-calculator",
-      "x86-and-x64-intel-assembler"
-    ],
-    "_file": "library/tools/ai-analysis-automation/big-number-calculator.md"
-  },
-  {
     "id": "bitwarden",
     "name": "Bitwarden",
     "description": "Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. Investigator opsec, not a lookup.",
@@ -2958,40 +2918,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/d3js.md"
-  },
-  {
-    "id": "data-structure-infix-postfix-prefix-converter-and-evaluator",
-    "name": "Data Structure : Infix Postfix Prefix - Converter & Evaluator",
-    "description": "OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.",
-    "url": "https://raj457036.github.io/Simple-Tools/prefixAndPostfixConvertor.html",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/data-structure-infix-postfix-prefix-converter-and-evaluator.md"
   },
   {
     "id": "data-visualization-catalogue",
@@ -7512,42 +7438,6 @@
     "_file": "library/tools/ai-analysis-automation/lastfm-monitor.md"
   },
   {
-    "id": "leakcop",
-    "name": "Leakcop",
-    "description": "service that monitors in real-time the illegal use of source code from certain repositories on Github",
-    "url": "https://leakcop.info/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/leakcop.md"
-  },
-  {
     "id": "linkscope",
     "name": "LinkScope",
     "description": "Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and visualizes connections — returns associate, social-profile, domain and email leads.",
@@ -11630,37 +11520,44 @@
   {
     "id": "preceden",
     "name": "Preceden",
-    "description": "OSINT tool: Preceden.",
+    "description": "Use when you have a set of dated events from an investigation and want to lay them out as a shareable visual timeline — returns a timeline chart (analysis/presentation aid, no subject PII).",
     "url": "https://www.preceden.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a case's dated events into a clear, shareable visual timeline for analysis or presentation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows unlimited timelines with up to 10 events each; paid tiers ($10+/mo) unlock unlimited events, export, and collaboration.",
+    "opsec": "passive",
+    "opsecNote": "You enter your own case events into a hosted service — treat the data as leaving your control. Do NOT upload sensitive PII or case details to the cloud version; use generic labels, keep timelines private/password-protected, or build the timeline in a local tool instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established commercial timeline-maker (since 2010); reliable as a visualization aid, but a third-party host — mind what case data you put in it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "preceden.com"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "timeline",
+      "analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/preceden.md"
   },
   {
@@ -32056,42 +31953,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/reddit-communities/reveddit.md"
-  },
-  {
-    "id": "rick-and-morty-screencaps-search",
-    "name": "Rick and Morty screencaps search",
-    "description": "OSINT tool: Rick and Morty screencaps search.",
-    "url": "https://masterofallscience.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Movies"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/rick-and-morty-screencaps-search.md"
   },
   {
     "id": "saafe-info",
@@ -63834,42 +63695,6 @@
     "_file": "library/tools/domains-ip-infrastructure/blacklists/firehol-ip-lists.md"
   },
   {
-    "id": "focsec",
-    "name": "Focsec",
-    "description": "OSINT tool: Focsec.",
-    "url": "https://focsec.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/focsec.md"
-  },
-  {
     "id": "follow-that-page",
     "name": "Follow That Page",
     "description": "Use when you have a `domain`/page URL tied to a subject and want to be alerted when it changes — returns emailed diffs of detected page edits over time.",
@@ -70764,42 +70589,49 @@
   {
     "id": "lfitester",
     "name": "LFITester",
-    "description": "Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack",
+    "description": "Use when you have a `domain`/URL and are authorised to test it for Local File Inclusion — returns detected LFI vulnerabilities and (optionally) proof-of-concept file reads.",
     "url": "https://github.com/kostas-pa/LFITester",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting (and, with authorisation, exploiting) Local File Inclusion vulnerabilities on a target web app.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open source under GPL-3.0; free Python 3 CLI.",
+    "opsec": "active",
+    "opsecNote": "This sends crafted attack payloads directly to the target server, which are logged and may trigger WAF/IDS alerts. Its autopwn/RCE features are genuinely intrusive. Only run against systems you have explicit written authorisation to test; route through controlled infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source offensive-security script; auditable, but an attack tool — use only within an authorised engagement and expect false positives to need manual confirmation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LFITester"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "lfi",
+      "web-app-testing"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/lfitester.md"
   },
   {
@@ -112970,36 +112802,53 @@
   },
   {
     "id": "live-cams-iplivecams",
-    "name": "Live Cams \\| Iplivecams",
-    "description": "OSINT tool: Live Cams \\| Iplivecams.",
+    "name": "IpLiveCams",
+    "description": "Use when you have a `geolocation`/place and want a live public webcam view of it for real-time verification — returns streaming feeds of beaches, cities, traffic, and landmarks worldwide.",
     "url": "https://www.iplivecams.com/live-cams/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding a live public webcam covering a specific location to verify conditions or landmarks in real time.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free; no sign-up or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public directory of already-public webcam feeds — nothing you do touches a subject or the camera owner. Use a sock-puppet browser only if the location you are researching would reveal your case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A curated directory aggregating third-party public webcams; feeds and their stated locations are operator-provided, so corroborate a camera's true location before relying on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "iplivecams.com",
+      "Live Cams"
+    ],
+    "tags": [
+      "webcam",
+      "live-cam",
+      "geolocation",
+      "verification"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/live-cams-iplivecams.md"
   },
   {
@@ -162784,25 +162633,26 @@
   },
   {
     "id": "anonymouse-web-proxy",
-    "name": "Anonymouse Web Proxy",
-    "description": "Anonymous browsing service provider",
+    "name": "Anonymouse (AnonWWW)",
+    "description": "Use when you want a quick throwaway anonymous view of a web page without configuring anything — returns the page fetched through a proxy so the site sees Anonymouse's IP, not yours.",
     "url": "http://anonymouse.org/anonwww.html",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a fast, no-setup anonymized look at a web page via a browser-based proxy.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account; one of the oldest web anonymizers (running since 1997), ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It hides your IP from the destination site, but you are trusting Anonymouse to see your traffic. Critically, the free AnonWWW does NOT support HTTPS — never send credentials or anything sensitive through it, and use it only for low-stakes, read-only page views. Tor Browser is the stronger choice for anything that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running free anonymizer, but a single-hop proxy that sees your traffic and lacks HTTPS; treat it as convenience, not real anonymity.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -162811,18 +162661,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "anonymouse-org"
     ],
+    "aliases": [
+      "AnonWWW",
+      "anonymouse.org"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "proxy-servers-online-privacy-security-tools",
+      "web-proxy",
+      "anonymity"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymouse-web-proxy.md"
   },
   {
@@ -165635,49 +165490,54 @@
   },
   {
     "id": "electronic-frontier-foundation-eff-tools",
-    "name": "Electronic Frontier Foundation (EFF) Tools",
-    "description": "Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more",
-    "url": "https://www.eff.org",
+    "name": "EFF Tools (Privacy Badger, Cover Your Tracks, SSD)",
+    "description": "Use when you want to harden an investigator browser against tracking/fingerprinting and learn OpSec tradecraft — returns privacy tooling and self-defense guidance (investigator OpSec).",
+    "url": "https://www.eff.org/pages/tools",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Hardening your investigation browser against trackers/fingerprinting and grounding your OpSec in EFF's guidance.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source, published by the non-profit Electronic Frontier Foundation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "These protect the investigator, not a subject. Privacy Badger blocks trackers; Cover Your Tracks shows how identifiable/fingerprintable your browser is; Surveillance Self-Defense teaches threat-modelling. Note HTTPS Everywhere is retired (its function is now built into major browsers), so rely on the browser's HTTPS-only mode instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Published by the EFF, a respected digital-rights non-profit; open source and well-audited privacy tooling and guidance.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "coveryourtracks-eff-org",
+      "privacy-badger",
+      "panopticlick",
+      "surveilliance-self-defense"
+    ],
+    "aliases": [
+      "EFF",
+      "Electronic Frontier Foundation tools"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "privacy",
+      "anti-tracking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "coveryourtracks-eff-org",
-      "https-everywhere",
-      "panopticlick",
-      "privacy-badger",
-      "surveilliance-self-defense"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/electronic-frontier-foundation-eff-tools.md"
   },
   {
@@ -168505,46 +168365,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/hack-this-page.md"
-  },
-  {
-    "id": "hide-my-ass-proxy-website",
-    "name": "Hide My Ass Proxy Website",
-    "description": "Anonymous browsing service provider",
-    "url": "https://www.hidemyass.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/hide-my-ass-proxy-website.md"
   },
   {
     "id": "hola-better-internet-extension-chrome",
@@ -172043,41 +171863,49 @@
   {
     "id": "password-safe",
     "name": "Password Safe",
-    "description": "Program that enhances security by offering password management services",
+    "description": "Use when you need to store the many sock-puppet logins and credentials of an investigation in one encrypted local vault — returns secure, offline password management (investigator OpSec).",
     "url": "https://pwsafe.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Keeping investigation sock-puppet accounts and credentials in a single encrypted, offline vault.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (originally designed by Bruce Schneier's team); no account or cloud dependency.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A local, offline vault — nothing syncs to a third party by default, which is exactly what you want for sensitive credentials. Its safety rests on a strong master passphrase and securing the .psafe3 database file; if that file and passphrase leak, every sock puppet is exposed at once.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-standing open-source password manager conceived by Bruce Schneier; auditable code, no cloud, widely trusted for offline credential storage.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "pwsafe",
+      "pwsafe.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "password-manager",
+      "opsec"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/password-safe.md"
   },
   {
@@ -175830,84 +175658,53 @@
   {
     "id": "tor-browser",
     "name": "Tor Browser",
-    "description": "OSINT tool: Tor Browser.",
-    "url": "https://www.torproject.org/projects/torbrowser.html.en",
+    "description": "Use when you need to browse investigation targets without exposing your real IP, or to reach .onion dark-web sites — returns anonymized web access (investigator OpSec).",
+    "url": "https://www.torproject.org/download/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing targets and dark-web (.onion) sites with your origin IP hidden behind the Tor network.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "exonerator",
-      "exonerator-ip-address-checker",
-      "tor-download",
-      "tor-project"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/tor-browser.md"
-  },
-  {
-    "id": "torch-flashlight-tool-app-mobile-ios",
-    "name": "Torch Flashlight Tool App (Mobile – iOS)",
-    "description": "App for mobile devices for using your device as a flashlight",
-    "url": "https://apps.apple.com/au/app/torch/id384365348",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "costNote": "Free and open source, published by the non-profit Tor Project.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The core OpSec tool — it hides your real IP from sites you visit by routing through three Tor relays. But logging into any real/attributable account over Tor destroys that anonymity; keep sock-puppet identities strictly separate, and never resize the window or install plugins (both aid fingerprinting).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by the Tor Project non-profit; the reference implementation for anonymous browsing, open source and widely audited.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+    "relatedTools": [
+      "exonerator",
+      "exonerator-ip-address-checker",
+      "tor-download",
+      "tor-project"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/torch-flashlight-tool-app-mobile-ios.md"
+    "aliases": [
+      "Tor",
+      "torbrowser"
+    ],
+    "tags": [
+      "browsers",
+      "anonymity",
+      "dark-web",
+      "opsec"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
+    "_file": "library/tools/opsec-investigator-tooling/tor-browser.md"
   },
   {
     "id": "trace-labs-osint-vm-tlosint-vm",
@@ -280021,40 +279818,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/search-engines/slack-discord-zoom-invites-search.md"
-  },
-  {
-    "id": "slideshare-search-engine",
-    "name": "SlideShare Search Engine",
-    "description": "OSINT tool: SlideShare Search Engine.",
-    "url": "https://cse.google.com/cse?cx=465eeeb114c7f523f",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/slideshare-search-engine.md"
   },
   {
     "id": "snipplr",

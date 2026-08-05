@@ -525,7 +525,6 @@ kind: group-index
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
 - **`sitelike`** (medium) — Use when you have a `domain` and want to find related/similar websites (competitors, clones, same-niche sites) — returns candidate `domain`s
 - **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
-- **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
 - **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
 - **`snowfl-com`** (low) — Use when you have a filename, title, or `username` (uploader/release tag) and want to search many public torrent indexes at once — returns f
 - **`sogou-china`** (low) — Use when you have a `name`, `username`, or Chinese-language term and want results a Western engine misses — Sogou also searches WeChat publi

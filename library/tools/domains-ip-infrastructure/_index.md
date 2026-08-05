@@ -153,7 +153,6 @@ kind: group-index
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
 - **`find-plus`** (low) — Use when you have a page full of text and want to pull every `email`, `domain`, `phone` or ID matching a pattern — a regex find-in-page Chro
 - **`findmyass-hostspider`** (low) — Use when you have a `domain` and want a one-shot recon dump — returns subdomains, DNS records, WHOIS data, and Cloudflare detection.
-- **`focsec`** (low) — OSINT tool: Focsec.
 - **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
 - **`free-online-network-tools`** (low) — Use when you have a `domain`, `ip-address` or `email` and want a combined WHOIS/DNS/traceroute/email-validation dossier — returns registrati
 - **`fuzzuli`** (low) — Use when you have a `domain` and want to hunt exposed backup/sensitive files on its web server — generates a domain-tailored wordlist and pr
@@ -243,7 +242,7 @@ kind: group-index
 - **`larger-io`** (low) — Use when you have a `domain` and want the technologies running on it — returns the site's tech stack (analytics IDs, CMS, hosting, payment, 
 - **`lazarusholic`** (low) — Use when you have an IoC or actor name tied to North Korean APT activity — returns linked reports, incidents, and indicators (domains, IPs, 
 - **`leakix`** (low) — Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed service
-- **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
+- **`lfitester`** (low) — Use when you have a `domain`/URL and are authorised to test it for Local File Inclusion — returns detected LFI vulnerabilities and (optional
 - **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu
 - **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
 - **`listly`** (low) — Use when you have a data-rich web page and want its lists/tables extracted — returns the page's structured rows (names, links, contacts) as 
