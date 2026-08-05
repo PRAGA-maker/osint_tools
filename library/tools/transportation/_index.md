@@ -71,7 +71,7 @@ kind: group-index
 - **`fleetmon`** (low) — Use when you have a vessel `name`/IMO/MMSI (or a port) and want its live AIS position, voyage history, and particulars — returns geolocation
 - **`flight-radar-24`** (low) — Use when you have a flight number, aircraft registration, or callsign and want its live/last-known position and route — returns geolocation 
 - **`flight-stats`** (low) — Use when you have a flight number, route or airport and want status/history — returns real-time and historical flight data to confirm a pers
-- **`flight-status-info`** (low) — - get a list of airports by city name; - view the flight schedule of a particular airport; - view the flight schedule of a particular airlin
+- **`flight-status-info`** (low) — Use when you have a flight number, airline, or route and want live status and schedules — returns real-time flight status, aircraft/gate det
 - **`flight-tracker`** (low) — Use when you have an aircraft registration/callsign or a location and want live flight positions — returns real-time aircraft geolocation an
 - **`flightairmap`** (low) — Use when you have an aircraft/vessel `vehicle-plate` registration or callsign and want live position and history — returns `geolocation` tra
 - **`flightaware`** (medium) — Use when you have a flight number, tail number (aircraft registration), or airport and want live and historical flight tracking — returns ro

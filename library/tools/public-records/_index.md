@@ -671,7 +671,7 @@ kind: group-index
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
 - **`parler-capitol-videos`** (low) — Use when you have a time or `geolocation` at the US Capitol on Jan 6, 2021 and want ProPublica's archive of geolocated, timestamped Parler v
 - **`paul-hensel-s-general-informational-data-page`** (low) — Use when you need country/state-level reference datasets for context — returns curated links to political-science, geography, and demographi
-- **`penn-world-table`** (low) — OSINT tool: Penn World Table.
+- **`penn-world-table`** (low) — Use when you need comparable macroeconomic data (GDP, prices, productivity) across countries and years — returns national-accounts indicator
 - **`pennsylvania-registered-voter-verification`** (medium) — Use when you have a `name` (plus DOB and county) for a Pennsylvania resident and want to confirm voter registration — returns registration s
 - **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB
 - **`people-search-4`** (high) — Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and

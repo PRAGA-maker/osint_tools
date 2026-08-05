@@ -52,7 +52,6 @@ kind: group-index
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
-- **`ccleaner`** (low) — OSINT tool: CCleaner.
 - **`chart-js`** (low) — Use when you have structured findings (timelines, frequencies, link counts) and want to render them as clean web charts — an open-source JS 
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
@@ -232,7 +231,6 @@ kind: group-index
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
 - **`palladio`** (low) — Use when you have tabular relationship data (people, places, dates, links) and want to visualise it as a network graph, map, or timeline — a
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
-- **`peerblock`** (low) — OSINT tool: Peerblock.
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
 - **`perspective`** (low) — Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interacti
 - **`pgpkeyanalyser`** (low) — Use when you have a PGP/OpenPGP public key and want the identities baked into it — returns `name`, `email`, and key metadata (fingerprint, d
@@ -246,7 +244,6 @@ kind: group-index
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
 - **`pixxa`** (low) — OSINT tool: Pixxa.
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
-- **`plotly`** (low) — OSINT tool: Plotly.
 - **`preceden`** (low) — OSINT tool: Preceden.
 - **`prism`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and buil
 - **`privacy-badger`** (low) — Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a def
@@ -326,7 +323,6 @@ kind: group-index
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
 - **`vis-js`** (low) — OSINT tool: Vis.js.
 - **`visme`** (low) — OSINT tool: Visme.
-- **`visualize-free`** (low) — OSINT tool: Visualize Free.
 - **`visually`** (low) — OSINT tool: visually.
 - **`vocal-remover`** (low) — Use when you have an audio clip and want to separate speech from background music/noise — an AI stem splitter that isolates vocals from inst
 - **`voidaccess`** (low) — Use when you have a selector (email, username, domain) and want to sweep dark-web and open-source threat feeds for it — returns leaked crede

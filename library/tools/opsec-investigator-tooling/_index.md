@@ -43,7 +43,6 @@ kind: group-index
 - **`argos-osint-workstation`** (low) — Use when you want a ready-to-work investigator machine and want to auto-provision 30+ OSINT tools on a clean Ubuntu VM — returns a configure
 - **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
-- **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
 - **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
@@ -107,7 +106,6 @@ kind: group-index
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
 - **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
-- **`facebook-social-networking-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook,
 - **`fake-company-name-generator`** (low) — Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net'
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
@@ -118,7 +116,6 @@ kind: group-index
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
-- **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
 - **`firefox`** (low) — OSINT tool: Firefox.
 - **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
@@ -139,7 +136,6 @@ kind: group-index
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`gofoss-net`** (low) — OSINT tool: gofoss.net.
-- **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
 - **`google-chrome`** (low) — Web browser developed by Google
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
@@ -220,7 +216,6 @@ kind: group-index
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
-- **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`opera`** (low) — OSINT tool: Opera.
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
@@ -292,7 +287,6 @@ kind: group-index
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`speech-jammer`** (low) — OSINT tool: Speech Jammer.
-- **`spotify-music-app-mobile-android`** (low) — App for mobile devices for searching and listening to music
 - **`spotify-music-app-mobile-ios`** (low) — App for mobile devices for searching and listening to music
 - **`spybot-search-and-destroy`** (low) — Malware and virus detection and elimination program
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
@@ -302,7 +296,6 @@ kind: group-index
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`tagged-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photos
 - **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
-- **`tapatalk-messaging-app-mobile-android`** (low) — App for mobile devices for social networking and messaging
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
 - **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
@@ -333,7 +326,6 @@ kind: group-index
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
-- **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
 - **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Use when you need a quick, free way to hide your IP / bypass a block while browsing a target's content — provides an encrypted circumvention
@@ -368,7 +360,6 @@ kind: group-index
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
-- **`yahoo-finance-app-mobile-ios`** (low) — App for mobile devices for monitoring stocks and finance
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`yahoo-mail-app-mobile-ios`** (low) — App for mobile devices for email services
 - **`yandex-browser`** (low) — OSINT tool: Yandex Browser.
@@ -377,7 +368,6 @@ kind: group-index
 - **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
-- **`zxing-barcode-scanner-app-mobile-android`** (low) — App for mobile devices for scanning and recognizing items with bar codes
 - **`zz-fo`** (low) — OSINT tool: Zz.fo.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

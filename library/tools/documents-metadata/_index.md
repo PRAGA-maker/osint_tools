@@ -10,7 +10,7 @@ kind: group-index
 - **`android/`** — 13 skill(s) below.
 - **`app-analysis/`** — 4 skill(s) below.
 - **`device-forensics/`** — 2 skill(s) below.
-- **`hosted-automated-analysis/`** — 16 skill(s) below.
+- **`hosted-automated-analysis/`** — 14 skill(s) below.
 - **`ios/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
@@ -19,14 +19,12 @@ kind: group-index
 
 ## Skills here
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
-- **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
+- **`2023-world-report`** (low) — Use when you have a country tied to a case and want a documented human-rights summary for it — returns HRW's country-by-country account of e
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
-- **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
 - **`apple-icloud-usa`** (medium) — Use when you have an `email` or `phone` and want to test whether it is a registered Apple ID — returns account-existence signal (and, in a w
-- **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
@@ -51,7 +49,6 @@ kind: group-index
 - **`cylect-io`** (medium) — Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggre
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
 - **`de-digger`** (low) — Use when you have a `name`, keyword, or filename and want publicly shared Google Drive files about a subject — returns links to exposed docu
-- **`designcrowd`** (low) — Graphic design outsourcing website
 - **`dictation-online-dictation-tool`** (low) — Use when you have audio/video and want a quick free browser transcription to text — a speech-to-text utility for turning spoken evidence int
 - **`diffnow-com`** (low) — Use when you have two documents, code files, or web pages and want to spot exactly what changed between them — returns a highlighted side-by
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
@@ -109,7 +106,6 @@ kind: group-index
 - **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
 - **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
-- **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations
 - **`inmatrix-zoomplayer`** (low) — Use when you have a recovered/unusual `image` or video file that standard players will not open — plays a very wide range of media formats s
 - **`instapaper`** (low) — Use when you have a target `domain`/URL and want to capture its readable text for offline review and evidence-keeping — returns a saved, de-
 - **`intensedebate`** (low) — Use when you have an IntenseDebate `username` and want that commenter's cross-site history and profile — returns their comment history, link

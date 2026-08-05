@@ -248,7 +248,6 @@ kind: group-index
 - **`planet-gallery`** (medium) — Use when you have a `geolocation` and a notable event and want before/after satellite imagery of that place — returns curated Planet satelli
 - **`playboard-co`** (medium) — Use when you have a YouTube channel `social-profile`/`username` and want independent analytics — returns channel stats, rankings, growth, ea
 - **`playlists-at`** (high) — Use when you have a `name` or `username` and want to find a subject's YouTube uploads or appearances via advanced search operators — returns
-- **`pocket`** (low) — OSINT tool: Pocket.
 - **`podbean`** (high) — Use when you have a subject's `name` or `username` and suspect they host a podcast — returns their public podcast `social-profile`, episode 
 - **`podcast-alley`** (high) — Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo an
 - **`podomatic`** (high) — Use when you have a `name`/`username` and want to find a subject's podcast presence — returns a social-profile with episodes, avatar and any

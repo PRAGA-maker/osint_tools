@@ -7,11 +7,10 @@ kind: group-index
 # documents-metadata/hosted-automated-analysis
 
 ## Sub-groups
-- **`android/`** — 2 skill(s) below.
+- **`android/`** — 1 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 
 ## Skills here
-- **`detux-linux-sandbox`** (low) — Linux malware analysis across multiple architectures
 - **`ether`** (low) — Transparent malware analysis resistant to anti-analysis evasion
 - **`hybrid-analysis`** (low) — Use when you have a suspicious file/URL or a file hash and want a behavioural malware report — returns sandbox verdict, IOCs, and related sa
 - **`joe-file-analyzer`** (low) — Use when you have a suspicious file (`document-id`/hash) and want dynamic malware analysis — returns behaviour, IOCs, and system-interaction

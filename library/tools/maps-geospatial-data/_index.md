@@ -97,7 +97,6 @@ kind: group-index
 - **`police-records-access-project`** (low) — Use when you have a California officer `name` or agency (`employer-org`) and want misconduct/use-of-force records — returns searchable inter
 - **`policy-map`** (low) — Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housin
 - **`power-plants-in-the-united-states`** (medium) — Use when you have a US `geolocation`/`address` and want to identify nearby electricity-generating facilities, their fuel type and operator —
-- **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
 - **`quick-geolocation-search`** (low) — Use when you have a `geolocation` or `address` and want to jump the same coordinates across 160+ online maps at once — returns geolocation v
 - **`radar-interference-tracker-rit`** (low) — Use when you have a `geolocation`/`address` and want to detect active military radar near it — returns the coordinates of radar systems from
 - **`radio-garden`** (low) — Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language cont
@@ -126,7 +125,7 @@ kind: group-index
 - **`what3words`** (low) — Use when you have a three-word what3words code (or a `geolocation`/`address`) and want to resolve it to precise lat/long — returns a 3-metre
 - **`whentaken-com`** (low) — Use when you want to practice chronolocation and geolocation — a game that shows a photo and asks you to guess where and when it was taken, 
 - **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.
-- **`wildlife-trade-portal`** (low) — An open-source tool to search wildlife seizure data worldwide.
+- **`wildlife-trade-portal`** (low) — Use when you have a species, country, or date range and want documented wildlife-seizure/trafficking incidents — returns incident records wi
 - **`wildme-and-wildbook`** (low) — Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.
 - **`world-database-on-protected-and-conserved-areas`** (low) — Use when you have a `geolocation`/`address` and want to know whether it falls in a protected or conserved area — returns the area's boundary
 - **`worldofo-com`** (medium) — Use when you have a `geolocation` and want a highly detailed terrain map of that spot — returns competition/training orienteering maps overl

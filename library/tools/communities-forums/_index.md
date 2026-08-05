@@ -207,7 +207,6 @@ kind: group-index
 - **`sciencedaily-com`** (medium) — Use when you have a researcher `name` or `employer-org` and want their reported studies for background — returns science/health research new
 - **`scrt-link`** (low) — Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
-- **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
 - **`seattle-times-news`** (medium) — Use when you have a `name` and a Seattle/Pacific-Northwest tie and want news, obituary or local-event coverage — returns articles, obituarie
 - **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
 - **`seniorfriendfinder`** (medium) — Use when you have a `name`/`username`/`geolocation` for an older subject and want a dating-profile check — returns a `social-profile` with p
@@ -249,7 +248,6 @@ kind: group-index
 - **`tilersforums-co-uk`** (medium) — Use when you have a `username` and want a UK tiling-trade professional's forum footprint — returns `social-profile`, reused `username` and d
 - **`time-news`** (low) — Use when you have a `name` that may have drawn national/international press and want to search a major magazine's archive for coverage — ret
 - **`tinychat`** (low) — Use when you have a `username` and want to check for a presence on Tinychat's video-chat platform — a long-running live video-chat community
-- **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
