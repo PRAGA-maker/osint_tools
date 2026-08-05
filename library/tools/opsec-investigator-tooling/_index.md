@@ -47,7 +47,7 @@ kind: group-index
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
-- **`bool`** (low) — Boolean search assistant
+- **`bool`** (low) — Use when you have a name/username/employer and want to construct precise Boolean search strings (AND/OR/NOT, quotes, site:) for Google/Linke
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
 - **`canadian-anti-fraud-centre`** (low) — Use when you have a suspected scam/fraud pattern in Canada and want to identify the fraud type or report it — an official reference/reportin
@@ -216,7 +216,6 @@ kind: group-index
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
-- **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rss-subscription-extension-chrome`** (low) — Use when you have a `domain`/site and want to monitor it for new posts — a Google-published Chrome extension that auto-detects RSS/Atom feed
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
@@ -224,7 +223,7 @@ kind: group-index
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
 - **`scrapersnbots`** (low) — Use when you have a `username`, `image` or URL and want quick free web utilities — username search on dating sites, reverse-image/one-domain
-- **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
+- **`scrim-email-protector`** (low) — Use when you (the investigator) want to share a sock-puppet email as a captcha-gated short link, or when you encounter an scr.im link hiding
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
@@ -232,7 +231,6 @@ kind: group-index
 - **`septor-linux`** (low) — Use when you need a preconfigured Tor-routed live OS for anonymous OSINT work — returns a hardened Debian/KDE workstation that pushes all tr
 - **`sessionbox`** (low) — Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session conta
 - **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
-- **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
@@ -250,13 +248,11 @@ kind: group-index
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`speech-jammer`** (low) — OSINT tool: Speech Jammer.
-- **`spotify-music-app-mobile-ios`** (low) — App for mobile devices for searching and listening to music
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
-- **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
 - **`the-osint-puppeteer`** (low) — Use when you need to build a durable sock-puppet identity for investigation — returns a step-by-step tradecraft guide for creating and maint
@@ -266,7 +262,6 @@ kind: group-index
 - **`this-rental-does-not-exist`** (low) — Use when you need an AI-generated fake rental-listing `image` for sock-puppet cover, or as a reference for spotting AI-fabricated property s
 - **`thispersondoesnotexistapi-unofficial`** (low) — Use when you need to fetch AI-generated sock-puppet `face`/`image` files programmatically at scale — returns a random non-existent person's 
 - **`thisxdoesnotexist`** (low) — Use when you need a synthetic, non-reverse-searchable image for a sock-puppet avatar — a directory of GAN generators (fake faces, etc.); als
-- **`timehop-past-activity-app-mobile-android`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu

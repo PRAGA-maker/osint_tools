@@ -104,7 +104,7 @@ kind: group-index
 - **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t
 - **`fotor`** (low) — OSINT tool: Fotor.
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
-- **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
+- **`functions-online`** (low) — Use when you have an encoded/hashed string encountered mid-investigation (base64, url-encoded, md5, serialized PHP) and want to quickly tran
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
 - **`geekflare-tools`** (low) — Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-h
 - **`gephi`** (medium) — Use when you have a set of `associate`/entity relationships and want to visualize and analyze them as a network graph — returns clustered li
@@ -114,7 +114,6 @@ kind: group-index
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`glit`** (low) — OSINT tool: Glit.
 - **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
-- **`gnu-pg`** (low) — OSINT tool: GNU PG.
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
@@ -165,7 +164,7 @@ kind: group-index
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
 - **`lucidchart`** (low) — Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org
 - **`mailvelope`** (low) — Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-e
-- **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
+- **`maltego-transforms-list`** (low) — Use when you already work in Maltego and want to discover which community transforms can turn a given selector (email, domain, name, etc.) i
 - **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
 - **`master-password`** (low) — Use when you need per-account passwords for many sock-puppet identities without a stored vault — returns deterministic passwords generated o
@@ -177,7 +176,6 @@ kind: group-index
 - **`mp3-spectrum-analyzer`** (low) — Use when you have an audio clip and want to see its frequency content — returns a live spectrogram to help identify or verify sounds (sirens
 - **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
-- **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
 - **`nixintel`** (low) — Use when you need a technique or tool reference for an OSINT problem — returns tutorials, methodology write-ups, and a curated OSINT resourc
 - **`nodebox`** (low) — Use when you have a dataset (connections, entities) and want to build custom node-based visualizations without heavy coding — returns genera
 - **`observable`** (low) — Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and 
@@ -227,7 +225,6 @@ kind: group-index
 - **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (medium) — Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns i
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
-- **`pixxa`** (low) — OSINT tool: Pixxa.
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
 - **`preceden`** (low) — Use when you have a set of dated events from an investigation and want to lay them out as a shareable visual timeline — returns a timeline c
 - **`prism`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and buil
@@ -252,7 +249,6 @@ kind: group-index
 - **`s-i-g-i-t`** (low) — Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks,
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
-- **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
 - **`script-safe`** (low) — Use when you want to harden the investigator's browser against scripts and fingerprinting while visiting hostile pages — provides granular s
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
@@ -312,7 +308,7 @@ kind: group-index
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
 - **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
-- **`webassistant`** (low) — OSINT tool: WebAssistant.
+- **`webassistant`** (low) — Use when you have a domain/URL and want a local, timestamped offline copy of a site's pages captured as you browse — returns an archived cop
 - **`world-monitor`** (low) — Use when you have a `geolocation` or event and want a live fused picture of conflicts, flights, shipping and markets there — returns geoloca
 - **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
 - **`x86-and-x64-intel-assembler`** (low) — Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disa

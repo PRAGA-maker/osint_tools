@@ -140,7 +140,6 @@ kind: group-index
 - **`photosint-chrome-google-com`** (medium) — Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — re
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — Use when you (the investigator) are about to share an image and want to strip its EXIF metadata first — a Firefox add-on that removes embedd
 - **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
-- **`powtoon-animation-program`** (low) — Program that creates and animates videos and presentations
 - **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 
 - **`printwhatyoulike`** (low) — Use when you want to keep or print only selected parts of a web page — strip and edit a page to the content you care about, then save it as 
 - **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and

@@ -4459,40 +4459,45 @@
   {
     "id": "functions-online",
     "name": "Functions Online",
-    "description": "Quick PHP-specific encoding and decoding checks in browser",
+    "description": "Use when you have an encoded/hashed string encountered mid-investigation (base64, url-encoded, md5, serialized PHP) and want to quickly transform or hash it in-browser — a decode/encode utility, not a data source.",
     "url": "https://www.functions-online.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Quick PHP-specific encoding and decoding checks in browser",
-    "input": "Function parameters and data strings for selected PHP routines",
-    "output": "Computed function results and transformed data values",
+    "bestFor": "Quick in-browser PHP-function encoding/decoding/hashing of strings during analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account required.",
     "opsec": "active",
-    "opsecNote": "Data is processed server-side, so avoid submitting sensitive payloads directly.",
+    "opsecNote": "Input is processed server-side, so anything you paste leaves your machine and could be logged by the site. Never submit sensitive, evidentiary, or identifying payloads here — use a local/offline decoder (CyberChef desktop, a shell one-liner) for those.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party utility site that runs PHP functions on its own server; fine for throwaway public strings, but you cannot verify its logging, so treat it as untrusted with your data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "functions-online.com"
+    ],
+    "tags": [
+      "decoding",
+      "encoding"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/functions-online.md"
   },
   {
@@ -4925,45 +4930,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gmapcatcher.md"
-  },
-  {
-    "id": "gnu-pg",
-    "name": "GNU PG",
-    "description": "OSINT tool: GNU PG.",
-    "url": "https://www.gnupg.org/download/index.html",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "gnupg-pgp-encryption"
-    ],
-    "_file": "library/tools/ai-analysis-automation/gnu-pg.md"
   },
   {
     "id": "gomapenum",
@@ -7880,37 +7846,42 @@
   {
     "id": "maltego-transforms-list",
     "name": "Maltego transforms list",
-    "description": "list of tools that handle different data and make it usable in Maltego",
+    "description": "Use when you already work in Maltego and want to discover which community transforms can turn a given selector (email, domain, name, etc.) into new graph entities — returns pointers to transform packages, not data itself.",
     "url": "https://github.com/cipher387/maltego-transforms-list",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right community/third-party Maltego transform to enrich a selector inside a Maltego graph.",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open GitHub reference list (curated by cipher387/cyb-detective); the listed transforms vary — some free, some need their own API keys.",
+    "opsec": "passive",
+    "opsecNote": "Reading the list is passive. Running any transform it points to is as active/passive as that specific transform — a transform that queries a target's infrastructure is active and may leave traces, so review each one before firing it in a live graph.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained catalog by a well-known OSINT curator (cipher387). It indexes third-party transforms whose individual quality/currency you must judge per entry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "My Projects"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "advanced-search-operators-list",
       "apis-for-osint",
@@ -7920,6 +7891,16 @@
       "grep-for-osint",
       "python-osint-automation-examples"
     ],
+    "aliases": [
+      "Maltego transforms catalog",
+      "cipher387 maltego transforms"
+    ],
+    "tags": [
+      "My Projects"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/maltego-transforms-list.md"
   },
   {
@@ -8476,45 +8457,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ncptf-national-child-protection-task-force.md"
-  },
-  {
-    "id": "nginxconfig",
-    "name": "NGINXconfig",
-    "description": "Online tool to configure stable and secure #nginx server. Select the options and then download the config files.",
-    "url": "https://www.digitalocean.com/community/tools/nginx",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "spf-explainer"
-    ],
-    "_file": "library/tools/ai-analysis-automation/nginxconfig.md"
   },
   {
     "id": "nixintel",
@@ -11288,42 +11230,6 @@
     "_file": "library/tools/ai-analysis-automation/pixel-block.md"
   },
   {
-    "id": "pixxa",
-    "name": "Pixxa",
-    "description": "OSINT tool: Pixxa.",
-    "url": "http://www.pixxa.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/pixxa.md"
-  },
-  {
     "id": "pldb",
     "name": "PLDB",
     "description": "Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, references) — returns encyclopedic language facts.",
@@ -12470,42 +12376,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sarenka.md"
-  },
-  {
-    "id": "sayhello",
-    "name": "SayHello",
-    "description": "#AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.",
-    "url": "https://beta.sayhello.so/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/sayhello.md"
   },
   {
     "id": "script-safe",
@@ -15013,7 +14883,7 @@
   {
     "id": "unxor",
     "name": "unxor",
-    "description": "Known-plaintext XOR cracking against malware and encoded artifacts",
+    "description": "Use when you have a file XOR-encoded against a known plaintext fragment (e.g. a malware config or obfuscated blob) and want to recover the key and decode it — returns decoded content that may itself contain selectors.",
     "url": "https://github.com/tomchop/unxor",
     "category": "ai-analysis-automation",
     "path": [
@@ -15021,34 +14891,41 @@
       "xor",
       "unix"
     ],
-    "bestFor": "Known-plaintext XOR cracking against malware and encoded artifacts",
-    "input": "XOR-encoded file plus known plaintext fragments",
-    "output": "Recovered keystream segments and decoded content",
+    "bestFor": "Known-plaintext XOR key recovery against malware and obfuscated artifacts.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source Python tool on GitHub (tomchop/unxor); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Local command-line analysis avoids submitting artifacts to remote services.",
+    "opsecNote": "Runs entirely locally on the command line, so the artifact is never uploaded to a third party — the right choice when the encoded file is sensitive/evidentiary. Analyse malware in an isolated VM.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source utility by a known malware-analysis author (tomchop); small and auditable, but unmaintained-adjacent — read the code before trusting output on important evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "tomchop unxor"
+    ],
+    "tags": [
+      "malware-analysis",
+      "decoding"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/xor/unix/unxor.md"
   },
   {
@@ -15734,38 +15611,49 @@
   },
   {
     "id": "webassistant",
-    "name": "WebAssistant",
-    "description": "OSINT tool: WebAssistant.",
+    "name": "WebAssistant (MM3 Proxy Offline Browser)",
+    "description": "Use when you have a domain/URL and want a local, timestamped offline copy of a site's pages captured as you browse — returns an archived copy of web content for later analysis, not new selectors.",
     "url": "http://www.proxy-offline-browser.com/download.html",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Capturing and preserving a browsed website locally (via a local proxy) so pages survive takedown/edits.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "MM3-WebAssistant is free/open-source (GPL) Java software; no purchase or account required, though the project is long-standing and not actively marketed.",
+    "opsec": "active",
+    "opsecNote": "It works by proxying your live browsing to the target site to cache each page, so the target's server does see your requests in real time — this is active collection. Route it through a VPN/sock-puppet and avoid logging in to the target while capturing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A veteran open-source Java project (MM3-WebAssistant); legitimate but niche and infrequently updated, so test on a current OS/JRE before relying on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MM3-WebAssistant",
+      "Proxy Offline Browser"
+    ],
     "tags": [
       "offline-browsing"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/webassistant.md"
   },
   {
@@ -51646,46 +51534,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/popurls.md"
-  },
-  {
-    "id": "powtoon-animation-program",
-    "name": "PowToon Animation Program",
-    "description": "Program that creates and animates videos and presentations",
-    "url": "http://www.powtoon.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/powtoon-animation-program.md"
   },
   {
     "id": "prezi",
@@ -151339,38 +151187,51 @@
   {
     "id": "wildme-and-wildbook",
     "name": "WildMe & WildBook",
-    "description": "Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.",
+    "description": "Use when you have a photo of an individual animal (whale fluke, shark, zebra, jaguar) and want to match it against a collaborative catalog to identify the specific animal and its prior sightings — returns image-match identity and geolocation history.",
     "url": "https://wildme.org/#/platforms/bass",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Re-identifying a specific wild animal from its markings across a shared sighting database.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Wild Me is a nonprofit; Wildbook platforms are open to researchers/citizen scientists).",
+    "opsec": "passive",
+    "opsecNote": "You upload an animal photo to a conservation platform — not a person-tracking service. Standard sock-puppet/account hygiene applies if you register. Photos you upload may carry EXIF (including GPS) — strip metadata first if you don't intend to share the capture location.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Wild Me is an established conservation-tech nonprofit; Wildbook is its widely-used open-source platform relied on by wildlife researchers worldwide.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Wild Me",
+      "Wildbook"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "environment-wildlife"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/wildme-and-wildbook.md"
   },
   {
@@ -162975,41 +162836,55 @@
   {
     "id": "bool",
     "name": "Bool",
-    "description": "Boolean search assistant",
+    "description": "Use when you have a name/username/employer and want to construct precise Boolean search strings (AND/OR/NOT, quotes, site:) for Google/LinkedIn people-sourcing — a query builder, not a data source.",
     "url": "https://chromewebstore.google.com/detail/bool-boolean-search-assis/cfpmoigmhcehoegokjllchipdiindpkc",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Building and refining Boolean search strings for people-sourcing across search engines and LinkedIn.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome/Edge extension; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The extension only assembles a query string in your browser — it does not send anything anywhere until you run the search. Running the resulting query is passive against Google/Bing (the target isn't contacted), but LinkedIn searches can leave viewer traces, so run those from a sock-puppet LinkedIn account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A third-party productivity extension aimed at recruiters/sourcers; it constructs queries only, so there is no data-quality risk — just vet the extension's permissions before installing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "advanced-search-operators-list",
+      "dorks-collections-list"
+    ],
+    "aliases": [
+      "Bool Boolean Search Assistant"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/bool.md"
   },
   {
@@ -171883,46 +171758,6 @@
     "_file": "library/tools/opsec-investigator-tooling/ripoff-report.md"
   },
   {
-    "id": "rosetta-stone-learn-languages-app-mobile-ios",
-    "name": "Rosetta Stone Learn Languages App (Mobile – iOS)",
-    "description": "App for mobile devices for learning words and phrases in up to 19 languages",
-    "url": "https://itunes.apple.com/gb/app/rosetta-course/id435588892?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/rosetta-stone-learn-languages-app-mobile-ios.md"
-  },
-  {
     "id": "rss-subscription-extension-chrome",
     "name": "RSS Subscription Extension (Chrome)",
     "description": "Use when you have a `domain`/site and want to monitor it for new posts — a Google-published Chrome extension that auto-detects RSS/Atom feeds on any page.",
@@ -172265,24 +172100,31 @@
   {
     "id": "scrim-email-protector",
     "name": "Scrim Email Protector",
-    "description": "Tool that converts an email address into a short link for sharing on the web to prevent spam",
+    "description": "Use when you (the investigator) want to share a sock-puppet email as a captcha-gated short link, or when you encounter an scr.im link hiding a target's email and need to recognise/resolve it — deals in email obfuscation.",
     "url": "http://scr.im",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Publishing your own decoy/sock-puppet email as a spam-proof scr.im short link (an opsec-side utility).",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free service; no account historically required to create a link. Note the site has been intermittently unreachable — verify it loads before relying on it.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Primarily a defensive/opsec tool for YOUR side — turning a sock-puppet email into a captcha-gated link so scrapers can't harvest it. If you resolve someone else's scr.im link, you only view a public page; the email owner is not notified. Do not create links from your real address.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing but lightly-maintained anti-spam link service; treat its uptime and longevity as uncertain (status degraded).",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -172291,15 +172133,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "scr.im",
+      "scrim"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/scrim-email-protector.md"
   },
   {
@@ -172636,46 +172482,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md"
-  },
-  {
-    "id": "shazam-music-entertainment-app-mobile-ios",
-    "name": "Shazam Music Entertainment App (Mobile – iOS)",
-    "description": "App for mobile devices for searching for and playing music",
-    "url": "https://itunes.apple.com/ca/app/shazam-discover-music-artists/id284993459?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/shazam-music-entertainment-app-mobile-ios.md"
   },
   {
     "id": "shiftyjelly-pocketcasts-networking-app-mobile-android",
@@ -173464,46 +173270,6 @@
     "_file": "library/tools/opsec-investigator-tooling/speech-jammer.md"
   },
   {
-    "id": "spotify-music-app-mobile-ios",
-    "name": "Spotify Music App (Mobile – iOS)",
-    "description": "App for mobile devices for searching and listening to music",
-    "url": "https://itunes.apple.com/ca/app/spotify-music/id324684580?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/spotify-music-app-mobile-ios.md"
-  },
-  {
     "id": "srware-iron",
     "name": "SRWare Iron",
     "description": "OSINT tool: SRWare Iron.",
@@ -173727,46 +173493,6 @@
       "norton-safeweb-rating-search"
     ],
     "_file": "library/tools/opsec-investigator-tooling/symantec-norton-anti-virus.md"
-  },
-  {
-    "id": "tango-social-networking-app-mobile-android",
-    "name": "Tango Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking, free video calls, and chat",
-    "url": "https://play.google.com/store/apps/details?id=com.sgiggle.production",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/tango-social-networking-app-mobile-android.md"
   },
   {
     "id": "tempmail-org-bot",
@@ -174236,46 +173962,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/thisxdoesnotexist.md"
-  },
-  {
-    "id": "timehop-past-activity-app-mobile-android",
-    "name": "Timehop Past Activity App (Mobile – Android)",
-    "description": "App for mobile devices for locating and reviewing past online postings and activity",
-    "url": "https://play.google.com/store/apps/details?id=com.timehop",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/timehop-past-activity-app-mobile-android.md"
   },
   {
     "id": "timehop-past-activity-app-mobile-ios",
@@ -257910,46 +257596,6 @@
     "_file": "library/tools/search-engines/dib-dab-doo-and-dilly-too-kids-search-engine.md"
   },
   {
-    "id": "digle",
-    "name": "Digle",
-    "description": "OSINT tool: Digle.",
-    "url": "https://www.digle.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/digle.md"
-  },
-  {
     "id": "direct-download-almost-anything",
     "name": "Direct Download Almost Anything",
     "description": "OSINT tool: Direct Download Almost Anything.",
@@ -269417,46 +269063,6 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "_file": "library/tools/search-engines/mybuilder-north-america.md"
-  },
-  {
-    "id": "mymunka-safe-search-engine-for-kids",
-    "name": "Mymunka Safe Search Engine for Kids",
-    "description": "Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content",
-    "url": "http://mymunka.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/mymunka-safe-search-engine-for-kids.md"
   },
   {
     "id": "najdsi-slovenia",

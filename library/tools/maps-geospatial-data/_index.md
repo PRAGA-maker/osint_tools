@@ -126,7 +126,7 @@ kind: group-index
 - **`whentaken-com`** (low) — Use when you want to practice chronolocation and geolocation — a game that shows a photo and asks you to guess where and when it was taken, 
 - **`wildeye`** (medium) — Use when you have a `name`, location or case tied to wildlife/environmental crime and want documented seizures, arrests, court cases and con
 - **`wildlife-trade-portal`** (low) — Use when you have a species, country, or date range and want documented wildlife-seizure/trafficking incidents — returns incident records wi
-- **`wildme-and-wildbook`** (low) — Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.
+- **`wildme-and-wildbook`** (low) — Use when you have a photo of an individual animal (whale fluke, shark, zebra, jaguar) and want to match it against a collaborative catalog t
 - **`world-database-on-protected-and-conserved-areas`** (low) — Use when you have a `geolocation`/`address` and want to know whether it falls in a protected or conserved area — returns the area's boundary
 - **`worldofo-com`** (medium) — Use when you have a `geolocation` and want a highly detailed terrain map of that spot — returns competition/training orienteering maps overl
 

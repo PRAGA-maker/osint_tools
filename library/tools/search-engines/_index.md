@@ -156,7 +156,6 @@ kind: group-index
 - **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/tee
-- **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
 - **`disconnect-search`** (low) — Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. Duck
@@ -359,7 +358,6 @@ kind: group-index
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
-- **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
 - **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
 - **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere

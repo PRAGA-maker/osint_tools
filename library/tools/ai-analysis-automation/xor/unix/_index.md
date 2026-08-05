@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/xor/unix
 
 ## Skills here
-- **`unxor`** (low) — Known-plaintext XOR cracking against malware and encoded artifacts
+- **`unxor`** (low) — Use when you have a file XOR-encoded against a known plaintext fragment (e.g. a malware config or obfuscated blob) and want to recover the k
 - **`xorsearch-and-xorstrings`** (low) — Use when you have a binary blob or obfuscated file and want to find strings (URLs, IPs, keys, IOCs) hidden behind XOR/ROT/ROL encoding — ret
 - **`xortool`** (low) — Use when you have a file or blob you suspect is XOR-encrypted and want to recover the repeating key and plaintext — returns candidate key le
 
