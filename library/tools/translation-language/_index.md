@@ -34,7 +34,6 @@ kind: group-index
 - **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
 - **`free-website-translation`** (low) — OSINT tool: Free Website Translation.
 - **`freetranslation`** (low) — OSINT tool: FreeTranslation.
-- **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
 - **`gizoogle-textilizer`** (low) — Use when you have a block of text and want it rendered into (or read back from) US "gangsta"/AAVE-style slang — a novelty language aid, retu
 - **`handspeak-english-sign-language`** (low) — Use when you have footage of someone signing and want to identify the signs — a video ASL dictionary to look up American Sign Language signs

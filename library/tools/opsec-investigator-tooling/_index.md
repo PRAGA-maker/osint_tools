@@ -75,7 +75,6 @@ kind: group-index
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
 - **`dracos-linux`** (low) — Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment 
-- **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Use when you want to harden an investigator browser against tracking/fingerprinting and learn OpSec tradecraft — returns privacy tooling and
@@ -91,7 +90,6 @@ kind: group-index
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
-- **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
 - **`fake-company-name-generator`** (low) — Use when you need a plausible fictitious company name for a sock-puppet cover story — returns invented business names (part of FakeInfo.net'
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
@@ -113,7 +111,6 @@ kind: group-index
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
-- **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
@@ -121,7 +118,6 @@ kind: group-index
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other s
-- **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Use when you want your investigator browser to warn you if you type your Google password into a phishing/non-Google page — returns real-time
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
@@ -234,8 +230,6 @@ kind: group-index
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
 - **`snapchat-social-networking-app-mobile-android`** (low) — Use when you have a username or geolocation and want to view a subject's public Snapchat presence and geotagged public stories via Snap Map 
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
-- **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
-- **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers
 - **`soundcloud-music-app-mobile-android`** (low) — Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, a
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music

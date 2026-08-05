@@ -109,7 +109,7 @@ kind: group-index
 - **`contacts-details-scraper`** (low) — Use when you have a `domain`/website and want to harvest its published contact points — returns emails, phone numbers and linked social prof
 - **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
 - **`cookieserve-com`** (low) — Use when you have a `domain` and want an itemized audit of the cookies and trackers it sets — returns tracker/third-party `domain` links for
-- **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
+- **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Use when you have a web page and want to extract every hyperlink and image URL on it as structured CSV/JSON in one click — returns domains a
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
 - **`crab`** (low) — Use when you have a `domain`/`ip-address` and want a one-command port scan plus WHOIS/IP-info and OS guess — returns open ports, ip-address 
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — Use when you have a `domain`/URL (or want to enrich one) and want to check it against a free feed of known crypto-scam/phishing sites — retu
@@ -285,7 +285,7 @@ kind: group-index
 - **`nmap-online`** (low) — Use when you have a `domain` or `ip-address` and want a quick browser-based Nmap port scan without a local install — returns open ports and 
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — Use when you have a `geolocation`/`address` and want to know which mobile operators have 5G there — returns crowdsourced 5G coverage by carr
-- **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
+- **`nperf-com-map`** (low) — Use when you have a geolocation and want to see which cellular operators (2G/3G/4G/5G) have coverage there, backed by crowdsourced speed-tes
 - **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab fo
@@ -359,7 +359,6 @@ kind: group-index
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-cli
-- **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu

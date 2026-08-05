@@ -63,7 +63,7 @@ kind: group-index
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
 - **`arabbarometer`** (medium) — Use when you need regional public-opinion context for an Arab country and want survey data by topic — returns aggregate statistics (not indi
 - **`architecture-com`** (medium) — Use when you have a `name` and think the person is a UK architect — returns their RIBA chartered status, practice/employer-org, and professi
-- **`archived-moe`** (low) — OSINT tool: archived.moe.
+- **`archived-moe`** (low) — Use when you have a username/tripcode, keyword, or post ID and want to search deleted/archived 4chan threads across many boards — returns so
 - **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres
 - **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
 - **`archives`** (high) — Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, na

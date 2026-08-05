@@ -41,7 +41,6 @@ kind: group-index
 - **`directory-of-open-access-journals`** (low) — Use when you have a `name`/topic and want peer-reviewed open-access articles and journals — returns free full-text scholarly records for res
 - **`distill-io`** (low) — Use when you have a `domain`/URL and want to be alerted the moment a page changes — returns change notifications and a diff of what changed.
 - **`factinsect`** (low) — Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict wi
-- **`feed-exileed`** (low) — OSINT tool: Feed Exileed.
 - **`feed-filter-maker`** (low) — Use when you have a `name`/`username` to monitor and want alerts only on relevant items — returns a filtered RSS/Atom feed URL matching your
 - **`feedly`** (low) — Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, se
 - **`feedreader`** (low) — Use when you have a subject's blog/site/news `domain` and want to monitor its updates over time — subscribe to its RSS feed and aggregate ne

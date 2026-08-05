@@ -31,7 +31,6 @@ kind: group-index
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
-- **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
 - **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
@@ -103,7 +102,6 @@ kind: group-index
 - **`intensedebate`** (low) — Use when you have an IntenseDebate `username` and want that commenter's cross-site history and profile — returns their comment history, link
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
 - **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
-- **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
 - **`json-to-csv`** (low) — Use when you have JSON data (an API dump, a breach export, a scraped file) and want it flattened into a spreadsheet-friendly CSV — a data-wr
 - **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
@@ -117,13 +115,11 @@ kind: group-index
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`mediainforobot`** (low) — Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/conta
-- **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
 - **`mendeley-academic-research-manager`** (low) — Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
 - **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mutagen`** (low) — Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) 
-- **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`occupational-outlook-handbook-it-united-states`** (low) — Use when you have a claimed US IT job title or salary and want to sanity-check it against official occupation data — a reference source, ret
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR

@@ -19,7 +19,6 @@ kind: group-index
 - **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
-- **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
 - **`api-guesser`** (low) — Use when you have a leaked API key/token and want to know which service it belongs to — returns the likely provider inferred from the key's 
 - **`apis-for-osint`** (low) — Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapp
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
@@ -83,7 +82,7 @@ kind: group-index
 - **`dfir-platform`** (low) — Use when you have an `email`, `domain` or `ip-address` (or a suspicious message) and want automated enrichment/verdicts — returns IOC reputa
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi
-- **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
+- **`disasm-pro`** (low) — Use when you have a chunk of machine-code bytes (shellcode, a hex blob from a malware sample) and want to disassemble it live in the browser
 - **`disconnect`** (low) — Use when you want to block trackers during investigative browsing or understand who tracks a site — returns a tracker-blocking layer and tra
 - **`discover`** (medium) — Use when you have a `name`, `domain` or `email` and want to run the standard passive/active recon playbook in one command — returns aggregat
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
@@ -224,7 +223,7 @@ kind: group-index
 - **`pidgin`** (low) — Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once 
 - **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (medium) — Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns i
-- **`pixel-block`** (low) — OSINT tool: Pixel Block.
+- **`pixel-block`** (low) — Use when you (the investigator) read email in Gmail and want to block tracking pixels so senders can't learn you opened their message — an o
 - **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
 - **`preceden`** (low) — Use when you have a set of dated events from an investigation and want to lay them out as a shareable visual timeline — returns a timeline c
 - **`prism`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `phone` or `username` and want a self-hosted platform to run 20+ recon modules and buil
@@ -297,7 +296,7 @@ kind: group-index
 - **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co
 - **`uforio`** (low) — Generate word clouds from Reddit threads.
 - **`url-decoder-encoder`** (low) — Use when you have a percent-encoded URL/parameter and want to read or build it — returns the decoded/encoded string in the browser.
-- **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
+- **`vedbex-com`** (low) — Use when you have an IP, domain, or Skype username/email/phone and want a free grab-bag of web/network lookup tools (traceroute, DNS, whois,
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
 - **`vis-js`** (low) — OSINT tool: Vis.js.

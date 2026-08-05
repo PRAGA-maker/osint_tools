@@ -199,42 +199,6 @@
     "_file": "library/tools/ai-analysis-automation/ai-or-not.md"
   },
   {
-    "id": "amazing-mind-reader-reveals-his-gift",
-    "name": "Amazing mind reader reveals his ‘gift’",
-    "description": "OSINT tool: Amazing mind reader reveals his ‘gift’.",
-    "url": "https://www.youtube.com/watch?v=F7pYHN9iC9I",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-videos"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/amazing-mind-reader-reveals-his-gift.md"
-  },
-  {
     "id": "analyst-research-tools",
     "name": "Analyst Research Tools",
     "description": "Use when you have a name, email, username, phone, plate or VIN and want a curated launchpad routing you to the right free lookup services across people-search, social, email, archives and domains — returns links to pivot into, not data itself.",
@@ -3454,36 +3418,46 @@
   },
   {
     "id": "disasm-pro",
-    "name": "Disasm.pro",
-    "description": "OSINT tool: Disasm.pro.",
+    "name": "disasm.pro",
+    "description": "Use when you have a chunk of machine-code bytes (shellcode, a hex blob from a malware sample) and want to disassemble it live in the browser, or assemble instructions back to bytes — an analysis utility, not a data source.",
     "url": "https://disasm.pro/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Live in-browser assembling/disassembling of machine code (x86/x64/ARM) for reverse engineering.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "active",
+    "opsecNote": "Bytes you paste are processed by the site (server/client side), so treat submissions as leaving your control — do not paste sensitive or case-identifying payloads. For confidential samples, use a local disassembler (objdump/Ghidra/Cutter) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A convenient third-party online (dis)assembler; fine for quick public snippets, but for authoritative analysis verify against a local, trusted toolchain.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "disasm pro",
+      "online disassembler"
+    ],
+    "tags": [
+      "reverse-engineering",
+      "malware-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/disasm-pro.md"
   },
   {
@@ -11230,38 +11204,45 @@
   },
   {
     "id": "pixel-block",
-    "name": "Pixel Block",
-    "description": "OSINT tool: Pixel Block.",
+    "name": "PixelBlock",
+    "description": "Use when you (the investigator) read email in Gmail and want to block tracking pixels so senders can't learn you opened their message — an opsec/counter-surveillance utility, and it also flags which senders track.",
     "url": "https://chrome.google.com/webstore/detail/pixelblock/jmpmfcjnflbcoidlgapblgpgbilinlem",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Blocking and flagging email tracking pixels in Gmail to protect your read-status privacy.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension; no account required.",
+    "opsec": "passive",
+    "opsecNote": "This is defensive opsec for your side — it stops open-tracking pixels from firing so a sender can't confirm you (or your sock-puppet) opened their email or capture your IP/user-agent at open time. It also shows a marker when a message contains a tracker, which is itself a small intel signal about the sender.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-used (30k+ installs) free Gmail privacy extension; the developer states no personal-data collection, but as with any extension, verify permissions before installing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Pixel Block",
+      "PixelBlock Gmail"
+    ],
     "tags": [
       "privacy-and-encryption-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/pixel-block.md"
   },
   {
@@ -15013,40 +14994,54 @@
   {
     "id": "vedbex-com",
     "name": "Vedbex.com",
-    "description": "OSINT tool: Vedbex.com.",
+    "description": "Use when you have an IP, domain, or Skype username/email/phone and want a free grab-bag of web/network lookup tools (traceroute, DNS, whois, IP geolocation, subdomain finder, Skype resolvers) — returns ip-address, domain, and geolocation leads.",
     "url": "https://www.vedbex.com/tools/home",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "A free multi-tool site bundling IP/domain lookups and Skype-resolution utilities in one place.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tools; some features (e.g. resolvers) may be rate-limited or ad-supported.",
+    "opsec": "active",
+    "opsecNote": "Several tools here (traceroute, ping, resolvers) actively probe or query third-party infrastructure and pass your input to Vedbex's servers, which may log it. The Skype-resolver features are deanonymization tools — use only for authorised investigations, never for harassment, and assume Vedbex sees whatever you submit. Route through a sock-puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free multi-tool portal of mixed provenance; results (especially resolver/geolocation) are unvetted and can be inaccurate, so treat everything as a lead.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "4-vedbex-email-to-skype"
+    ],
+    "aliases": [
+      "Vedbex tools"
+    ],
     "tags": [
       "Tools collections/toolkits"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "4-vedbex-email-to-skype"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/vedbex-com.md"
   },
   {
@@ -17790,42 +17785,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/factinsect.md"
-  },
-  {
-    "id": "feed-exileed",
-    "name": "Feed Exileed",
-    "description": "OSINT tool: Feed Exileed.",
-    "url": "http://feed.exileed.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/feed-exileed.md"
   },
   {
     "id": "feed-filter-maker",
@@ -44805,46 +44764,6 @@
     "_file": "library/tools/documents-metadata/bubbl-us-online-flow-chart-tool.md"
   },
   {
-    "id": "canadavisa-it-salary-ranges",
-    "name": "CanadaVisa IT Salary Ranges",
-    "description": "Online organization website providing information on computer and information technology occupations",
-    "url": "http://www.canadavisa.com/canadian-salary-range-it.html",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/canadavisa-it-salary-ranges.md"
-  },
-  {
     "id": "catchvideo",
     "name": "Catchvideo",
     "description": "Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `metadata-exif` and frame analysis.",
@@ -48778,46 +48697,6 @@
     "_file": "library/tools/documents-metadata/app-analysis/jadx.md"
   },
   {
-    "id": "jeff-sagarin-north-america",
-    "name": "Jeff Sagarin (North America)",
-    "description": "Website related to sports ratings",
-    "url": "http://sagarin.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/jeff-sagarin-north-america.md"
-  },
-  {
     "id": "jeffrey-friedl-s-image-metadata-viewer",
     "name": "Jeffrey Friedl's Image Metadata Viewer",
     "description": "Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestamps and GPS `geolocation`.",
@@ -49922,46 +49801,6 @@
     "_file": "library/tools/documents-metadata/mediainforobot.md"
   },
   {
-    "id": "meltwater-blog-search",
-    "name": "Meltwater Blog Search",
-    "description": "Media intelligence company providing media monitoring and social media monitoring to help grow brands",
-    "url": "https://www.meltwater.com/#",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/meltwater-blog-search.md"
-  },
-  {
     "id": "mendeley-academic-research-manager",
     "name": "Mendeley Academic Research Manager",
     "description": "Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author profiles and shared libraries.",
@@ -50316,46 +50155,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/mutagen.md"
-  },
-  {
-    "id": "national-restaurant-association-united-states",
-    "name": "National Restaurant Association (United States)",
-    "description": "Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "http://www.restaurant.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/national-restaurant-association-united-states.md"
   },
   {
     "id": "nox-app-player",
@@ -51345,41 +51144,53 @@
   {
     "id": "pikker-ee-cuckoo-sandbox",
     "name": "Pikker.ee Cuckoo Sandbox",
-    "description": "Free automated dynamic malware analysis with detailed behavioral reports",
+    "description": "Use when you have a suspicious file or URL and want free automated dynamic (behavioral) malware analysis — returns a behavior report with contacted domains/IPs and dropped-file metadata.",
     "url": "https://sandbox.pikker.ee/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Free automated dynamic malware analysis with detailed behavioral reports",
-    "input": "Executable files, documents, archives",
-    "output": "Process monitoring, API calls, file system changes, network traffic, behavioral analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free automated dynamic malware analysis with detailed behavioral reports.",
+    "selectorsIn": [
+      "domain",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public Cuckoo Sandbox instance; you can submit URLs/files/hashes without payment (an account may be needed for full history).",
     "opsec": "active",
-    "opsecNote": "Public instance; files uploaded to external infrastructure; Estonian-hosted",
+    "opsecNote": "Submissions can become visible to other researchers and are detonated on infrastructure you don't control — never submit files/URLs containing sensitive, private, or case-identifying data, as that would leak it. The detonation also makes real network requests to the sample's C2, which may tip off the operator. Treat submission as public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community/CERT-hosted Cuckoo Sandbox; the analysis engine is the well-known open-source Cuckoo, but this specific public instance's uptime and retention aren't guaranteed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pikker sandbox",
+      "sandbox.pikker.ee"
+    ],
+    "tags": [
+      "malware-analysis",
+      "sandbox"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/pikker-ee-cuckoo-sandbox.md"
   },
   {
@@ -59423,43 +59234,50 @@
   },
   {
     "id": "copy-all-links-and-image-links-to-csv-or-json",
-    "name": "Copy all links and image links to CSV or JSON",
-    "description": "Download all links from current webpage in CSV (for open in #Excel) or JSON",
+    "name": "Copy All Links and Image Links to CSV or JSON",
+    "description": "Use when you have a web page and want to extract every hyperlink and image URL on it as structured CSV/JSON in one click — returns domains and image links to pivot from.",
     "url": "https://chrome.google.com/webstore/detail/copy-all-links-and-image/ccddopnnikeeoogpfbnfommfoeliaidg/related",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click export of all links and image URLs on a page to CSV/JSON for analysis.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Extraction runs locally in your browser against the page already loaded — it sends nothing to the page's server beyond your normal page view. Loading the page itself is the only server-visible action, so use a sock-puppet browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party productivity extension that parses the current page's DOM; vet its permissions before installing, but it introduces no external data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Copy All Links extension"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Source Code Analyzes"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/copy-all-links-and-image-links-to-csv-or-json.md"
   },
   {
@@ -72754,45 +72572,50 @@
   {
     "id": "nperf-com-map",
     "name": "nperf.com/map",
-    "description": "view the coverage area of different #cellular operators in different countries",
+    "description": "Use when you have a geolocation and want to see which cellular operators (2G/3G/4G/5G) have coverage there, backed by crowdsourced speed-test data — returns geolocation-tied network-coverage context.",
     "url": "http://nperf.com/en/map",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking mobile-operator coverage and measured signal quality at a location worldwide.",
     "selectorsIn": [
-      "domain"
+      "geolocation"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public coverage map; no account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "A read-only public map — you disclose nothing about a target by browsing it. Standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "nPerf is an established connectivity-benchmarking company; coverage layers combine operator data with crowdsourced user tests, so accuracy varies by how much local data exists.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nperf-com-map-5g"
+    ],
+    "aliases": [
+      "nPerf coverage map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Communications, Internet, Technologies"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "nperf-com-map-5g"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nperf-com-map.md"
   },
   {
@@ -76977,42 +76800,53 @@
   },
   {
     "id": "secai-ai",
-    "name": "SecAI.ai",
-    "description": "Security research and threat intelligence",
+    "name": "SecAI",
+    "description": "Use when you have a domain or IP (e.g. from a phishing lure or C2) and want AI-assisted threat intelligence — IOC verdicts, WHOIS/cert context, and threat-actor associations — returns domain, ip-address, and infrastructure links.",
     "url": "https://secai.ai/research",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "phishing"
     ],
-    "bestFor": "Security research and threat intelligence",
-    "input": "Threat indicator or research topic",
-    "output": "Research articles and threat analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "AI-assisted enrichment of a domain/IP into an IOC verdict with actor and infrastructure context.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Has a public \"try it now\" research interface; sign-in is needed to save history, and deeper/API features are likely gated behind paid tiers.",
     "opsec": "passive",
-    "opsecNote": "Passive threat intelligence platform",
+    "opsecNote": "You query SecAI's own aggregated intelligence about an indicator rather than touching the target's infrastructure, so lookups are passive from the target's view. SecAI does see and may retain what you query — avoid submitting indicators that would reveal a sensitive investigation, and use a sock-puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial AI threat-intelligence vendor; its verdicts are model- and data-driven aggregations, useful as enrichment but worth corroborating against primary sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "secai.ai",
+      "SecAI threat intelligence"
+    ],
+    "tags": [
+      "phishing",
+      "threat-intelligence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/phishing/secai-ai.md"
   },
   {
@@ -78594,47 +78428,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/sputnik.md"
-  },
-  {
-    "id": "spyoffers-com",
-    "name": "Spyoffers.com",
-    "description": "tool that allows you to do a full trace of a URL Redirect",
-    "url": "https://www.spyoffers.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Redirect lookup"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/spyoffers-com.md"
   },
   {
     "id": "spyonweb",
@@ -164341,46 +164134,6 @@
     "_file": "library/tools/opsec-investigator-tooling/dracos-linux.md"
   },
   {
-    "id": "duolingo-learn-languages-app-mobile-ios",
-    "name": "Duolingo Learn Languages App (Mobile – iOS)",
-    "description": "App for mobile devices for learning words and phrases in up to 10 languages",
-    "url": "https://itunes.apple.com/us/app/duolingo-learn-languages-for/id570060128?mt=8&ign-mpt=uo%3D4",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/duolingo-learn-languages-app-mobile-ios.md"
-  },
-  {
     "id": "ebay-auctionsniper-app-mobile-android",
     "name": "Ebay AuctionSniper App (Mobile – Android)",
     "description": "App for mobile devices for online auction monitoring",
@@ -165147,46 +164900,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-ios.md"
-  },
-  {
-    "id": "facebook-social-networking-app-mobile-android",
-    "name": "Facebook Social Networking App (Mobile – Android)",
-    "description": "Facebook mobile app for connecting users on a single social network platform",
-    "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/facebook-social-networking-app-mobile-android.md"
   },
   {
     "id": "fake-company-name-generator",
@@ -166369,46 +166082,6 @@
     "_file": "library/tools/opsec-investigator-tooling/giphy-cam-gif-editor-app-mobile-android.md"
   },
   {
-    "id": "glassdoor-business-app-mobile-ios",
-    "name": "Glassdoor Business App (Mobile – iOS)",
-    "description": "App for mobile devices for employment, company reviews, and company information posted by other users",
-    "url": "https://itunes.apple.com/ca/app/glassdoor-job-search-salaries/id589698942?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/glassdoor-business-app-mobile-ios.md"
-  },
-  {
     "id": "gmail-messaging-app-mobile-ios",
     "name": "Gmail Messaging App (Mobile – iOS)",
     "description": "App for mobile devices for email and messaging services",
@@ -166727,46 +166400,6 @@
     "lastVerified": "2026-08-05",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-image-search-extension-chrome.md"
-  },
-  {
-    "id": "google-maps-app-mobile-android",
-    "name": "Google Maps App (Mobile – Android)",
-    "description": "App for mobile devices for mapping and geolocation services",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-maps-app-mobile-android.md"
   },
   {
     "id": "google-password-alert-extension-chrome",
@@ -172576,42 +172209,6 @@
     "_file": "library/tools/opsec-investigator-tooling/snopes-fact-checker.md"
   },
   {
-    "id": "snow",
-    "name": "Snow",
-    "description": "A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. \"Show\" shows non-printable characters (spaces, tabs, page breaks, indents, etc.)",
-    "url": "https://workspace.google.com/u/0/marketplace/app/show/82177279234?hl=ru&pann=docs_addon_widget",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/snow.md"
-  },
-  {
     "id": "social-media-fingerprint",
     "name": "Social Media Fingerprint",
     "description": "Use when you want to verify your own OpSec — checks in-browser which social networks you are logged into, so you can confirm an investigation profile is isolated — returns `social-profile` (your own session exposure).",
@@ -172660,46 +172257,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/social-media-fingerprint.md"
-  },
-  {
-    "id": "sophos-mac-antivirus",
-    "name": "Sophos Mac Antivirus",
-    "description": "Free malware and virus detection and elimination program for Mac computers",
-    "url": "https://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/sophos-mac-antivirus.md"
   },
   {
     "id": "soundcloud-music-app-mobile-android",
@@ -199592,35 +199149,51 @@
   {
     "id": "archived-moe",
     "name": "archived.moe",
-    "description": "OSINT tool: archived.moe.",
+    "description": "Use when you have a username/tripcode, keyword, or post ID and want to search deleted/archived 4chan threads across many boards — returns social-profile-adjacent posts, images, and their metadata.",
     "url": "https://archived.moe/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching archived (including deleted) 4chan threads and posts across boards.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public archive; no account needed to search or read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading a third-party archive, not 4chan itself, so the original posters aren't notified. Content can be extreme/illegal — view in a sandboxed sock-puppet browser, and never download unknown files to your host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-run FoolFuuka archive of 4chan; coverage varies by board and it preserves posts 4chan itself deletes, but it is not an official or authenticated record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "archived.moe 4chan archive"
+    ],
+    "tags": [
+      "4chan-archive",
+      "imageboard"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/archived-moe.md"
   },
   {
@@ -268673,49 +268246,6 @@
     "_file": "library/tools/search-engines/national-criminal-justice-service.md"
   },
   {
-    "id": "national-geographic-kids",
-    "name": "National Geographic Kids",
-    "description": "National Geographic's website intended for kids",
-    "url": "http://kids.nationalgeographic.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "national-geographic-magazine"
-    ],
-    "_file": "library/tools/search-engines/national-geographic-kids.md"
-  },
-  {
     "id": "naver-com",
     "name": "naver.com",
     "description": "Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q&A and profiles from Korea's dominant portal.",
@@ -281570,49 +281100,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/wiby.md"
-  },
-  {
-    "id": "wiki-for-kids",
-    "name": "Wiki For Kids",
-    "description": "Website that provides a search engine that searches wiki-type websites",
-    "url": "https://www.safesearchkids.com/wikipedia-for-kids/#.Xg5LbS3Mxp8",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "safesearchkids"
-    ],
-    "_file": "library/tools/search-engines/wiki-for-kids.md"
   },
   {
     "id": "wiki-search-engine",
@@ -327106,46 +326593,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/freetranslation.md"
-  },
-  {
-    "id": "frengly-free-online-translator",
-    "name": "Frengly Free Online Translator",
-    "description": "Tool for translating text and web content from one language to another",
-    "url": "http://www.frengly.com/#!/translate",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/frengly-free-online-translator.md"
   },
   {
     "id": "get-otter-ai",

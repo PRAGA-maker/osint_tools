@@ -360,7 +360,6 @@ kind: group-index
 - **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
 - **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere
-- **`national-geographic-kids`** (low) — National Geographic's website intended for kids
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
 - **`naver-south-korea`** (medium) — Use when your subject or topic is South Korean and you want Korea-specific web, blog, café and news results Google misses — returns Korean `
 - **`nerdydata-source-code-search-engine`** (medium) — Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`
@@ -592,7 +591,6 @@ kind: group-index
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`white-house-disclosures`** (medium) — Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 
 - **`wiby`** (medium) — Use when you have a `name` or `username` and want to surface mentions on old, small, independent "classic web" pages that mainstream engines
-- **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (low) — Use when you have a `name` or `username` tied to entertainment/fan communities and want crowdsourced wiki detail — returns biographical/fan-
 - **`wikibooks`** (medium) — Use when you have an author `name`/`username` or a subject-matter lead and want open textbooks/manuals and their contributor histories — ret
