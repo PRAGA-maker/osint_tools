@@ -22,7 +22,7 @@ kind: group-index
 - **`acfcs-org`** (low) — Use when you want reference material and technique guides for tracing crypto/financial crime (e.g. Bitcoin tracking for investigators) — ret
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
 - **`aib-gov-uk`** (medium) — Use when you have a `name` and want to check Scotland's statutory insolvency register — returns `address`, `dob` and case `document-id` for 
-- **`analytics-engine`** (low) — OSINT tool: analytics-engine.
+- **`analytics-engine`** (low) — Use when you want a self-hosted pipeline that pulls live crypto/stock market data into dashboards for ongoing financial monitoring — returns
 - **`binbase-com`** (medium) — Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-o
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch a

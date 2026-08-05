@@ -448,7 +448,7 @@ kind: group-index
 - **`redditp-reddtip`** (low) — Use when you have a Reddit `username` (or subreddit) and want to rapidly triage their image submissions in a slideshow — returns the subject
 - **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
-- **`redditvids`** (low) — Watch videos posted on Reddit.
+- **`redditvids`** (low) — Use when you have a Reddit post/video URL and want to view or save the clip with its audio merged — returns a playable/downloadable video fi
 - **`redective`** (medium) — Use when you have a Reddit `username` (or subreddit/keyword) and want a fast activity profile — returns their subreddits, most-used words, a
 - **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Use when you have a Reddit `username` (or subreddit) and want to browse their posts/comments in a lightweight, login-free web reader — retur
@@ -583,7 +583,7 @@ kind: group-index
 - **`toutatis`** (high) — Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric u
 - **`treeverse-2`** (high) — Use when you have an X/Twitter thread or `username` and want to visualize a conversation as a navigable tree to map participants and replies
 - **`trendhero`** (medium) — Use when you have an Instagram `username` and want deep profile analytics and a fake-follower audit — returns follower quality, engagement s
-- **`trends-tool`** (low) — OSINT tool: Trends Tool.
+- **`trends-tool`** (low) — Use when you have a hashtag, keyword, or URL and want to chart how its volume on Twitter/X rose and fell over time — returns a time-series o
 - **`trends24`** (low) — Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city wi
 - **`trevorfox-com-2`** (high) — Use when you have a LinkedIn post/activity URL (a `social-profile` artifact) and want its true publication timestamp — returns the exact `do
 - **`trevorfox-com`** (high) — Use when you have a Reddit post/comment `social-profile` URL and want its exact creation timestamp — returns precise UTC/local date-time met

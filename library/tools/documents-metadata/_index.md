@@ -25,7 +25,6 @@ kind: group-index
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
 - **`apple-icloud-usa`** (medium) — Use when you have an `email` or `phone` and want to test whether it is a registered Apple ID — returns account-existence signal (and, in a w
-- **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta

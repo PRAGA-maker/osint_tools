@@ -229,7 +229,6 @@ kind: group-index
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
 - **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
-- **`google-adwords`** (low) — OSINT tool: Google Adwords.
 - **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
 - **`google-books-ngram-viewer`** (low) — Use when you want to date a word, phrase, name, or slang by its frequency in published books over time — returns a usage-over-time chart, a 
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
@@ -311,7 +310,6 @@ kind: group-index
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
-- **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
 - **`keywordpeopleuse`** (low) — Use when you have a keyword/`name`/topic and want the real questions people ask about it across Google, Reddit, and Quora — returns clustere
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
 - **`kiddle`** (low) — Use when you want to see the child-safe, filtered web view of a topic or name — a kid-oriented Google Custom Search that shows what young us
@@ -398,7 +396,6 @@ kind: group-index
 - **`odin`** (medium) — Use when you have an `ip-address` or `domain` and want its exposed hosts/services — returns open ports, services, banners, and certificate/h
 - **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
 - **`oh-shint-osint-web-resources`** (medium) — Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real 
-- **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
 - **`one-liner-osint`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want ready-made shell one-liners to enumerate it fast — returns copy-
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
@@ -628,7 +625,7 @@ kind: group-index
 - **`wolfram-alpha`** (low) — Use when you have a factual/quantitative question or a structured selector (a `name`, place, date, or number) and want a computed, sourced a
 - **`word-tracker`** (low) — Use when you have a topic, brand, or `username`/handle keyword and want to see the real search phrases and related terms people use around i
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
-- **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
+- **`wordpress-content-snatcher`** (low) — Use when you have a name, handle, or keyword and want to search across WordPress-hosted blogs specifically — returns matching blog posts/pag
 - **`wordpress-custom-search`** (low) — Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable S
 - **`wordstat-yandex-ru`** (low) — Use when you have a `name`/keyword/brand and want its Yandex search demand — returns query volumes, related terms, and regional interest acr
 - **`world-digital-library`** (low) — Use when you have a place, era, or name tied to history and want primary sources — search digitized manuscripts, maps and documents; returns

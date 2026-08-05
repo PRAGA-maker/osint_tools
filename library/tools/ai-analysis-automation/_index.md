@@ -229,7 +229,7 @@ kind: group-index
 - **`pgpkeyanalyser`** (low) — Use when you have a PGP/OpenPGP public key and want the identities baked into it — returns `name`, `email`, and key metadata (fingerprint, d
 - **`phantom-tide`** (low) — Use when you have a `geolocation` or maritime/air area of interest and want to see where vessel, aircraft and signal activity converge — ret
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
-- **`pharos-ai`** (low) — OSINT tool: Pharos AI.
+- **`pharos-ai`** (low) — Use when you have a region or ongoing conflict and want an AI-curated live feed of events, actors, and signals mapped from open sources — re
 - **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
 - **`pidgin`** (low) — Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once 
 - **`piktochart`** (low) — OSINT tool: Piktochart.

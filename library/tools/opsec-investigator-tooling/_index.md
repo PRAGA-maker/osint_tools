@@ -112,8 +112,7 @@ kind: group-index
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
-- **`firefox`** (low) — OSINT tool: Firefox.
-- **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
+- **`fireshot`** (low) — Use when you have a web page you need to preserve as evidence and want a full-length screenshot saved as PDF/PNG — returns a captured, times
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
@@ -244,7 +243,6 @@ kind: group-index
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
 - **`scrapersnbots`** (low) — Use when you have a `username`, `image` or URL and want quick free web utilities — username search on dating sites, reverse-image/one-domain
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
-- **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
