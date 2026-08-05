@@ -15,7 +15,6 @@ kind: group-index
 - **`abbreviations-com`** (low) — Use when you have an unknown acronym or abbreviation from a document/chat/handle and want its expansions — returns candidate meanings to dec
 - **`acronym-finder`** (low) — Use when you have an unfamiliar acronym/abbreviation in a document or chat and want its likely expansions — a large searchable database of a
 - **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
-- **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing
 - **`alphadictionary-com`** (low) — Use when you have unfamiliar English text, slang, regionalisms or a foreign word and want its meaning across many dictionaries at once — ret
 - **`apertium-org`** (low) — Use when you have foreign-language text (a `name`, post, or document) and want a free, private machine translation — returns readable transl
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
@@ -57,7 +56,7 @@ kind: group-index
 - **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use
 - **`online-translator`** (low) — OSINT tool: Online Translator.
 - **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
-- **`paulschou-binary-translator`** (low) — Tool used to encode and decode ASCII and ANSI text
+- **`paulschou-binary-translator`** (low) — Use when you have an encoded string (binary, hex, octal, base64, ASCII/ANSI) and want to convert it to readable text or between formats — re
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return

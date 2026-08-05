@@ -36,7 +36,6 @@ kind: group-index
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
 - **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
-- **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -90,7 +89,6 @@ kind: group-index
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (medium) — Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s an
-- **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers
 - **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
 - **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
 - **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic

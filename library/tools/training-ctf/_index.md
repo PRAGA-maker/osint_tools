@@ -11,7 +11,6 @@ kind: group-index
 
 ## Skills here
 - **`cyber-intelligence-toolkit-oryon`** (medium) — Use when you need investigation methodology rather than a lookup — a curated GitHub library of OSINT/OPSEC manuals, playbooks, and checklist
-- **`defcon-database`** (low) — Searchable database of DEFCON talks/resources (shared in TL #library-submissions).
 - **`forensic-osint-kb-guides`** (low) — Use when you need process guidance for defensible OSINT — returns how-to guides on evidence preservation, chain-of-custody, and court-ready 
 - **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.
 - **`gralhix-osint-exercises`** (medium) — Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercis

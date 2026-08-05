@@ -14,7 +14,7 @@ kind: group-index
 
 ## Skills here
 - **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
-- **`4-ever-proxy`** (low) — OSINT tool: 4 Ever Proxy.
+- **`4-ever-proxy`** (low) — Use when you want to open a web page (or a Tor2Web-style .onion) from a throwaway IP in a chosen country without installing anything — retur
 - **`activetk`** (low) — OSINT tool: ActiveTK.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
@@ -29,12 +29,11 @@ kind: group-index
 - **`dargle`** (low) — Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s,
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
-- **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
+- **`darkscrape`** (low) — Use when you have a Tor `.onion` `domain` and want to harvest the images/media it hosts (with optional face recognition) — returns downloade
 - **`darkweb-archive`** (low) — Use when you have a `.onion` `domain` and want a preserved snapshot of the site's files — returns a downloadable ZIP of its HTML, CSS, JavaS
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
-- **`eucanna`** (low) — OSINT tool: EuCanna.
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.

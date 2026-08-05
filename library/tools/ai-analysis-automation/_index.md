@@ -16,7 +16,6 @@ kind: group-index
 
 ## Skills here
 - **`a1-website-download`** (low) — Use when you have a `domain`/URL and want a complete offline mirror of a site for preservation and analysis — returns document-id, image, me
-- **`adium`** (low) — OSINT tool: Adium.
 - **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
@@ -89,11 +88,10 @@ kind: group-index
 - **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
 - **`disconnect`** (low) — Use when you want to block trackers during investigative browsing or understand who tracks a site — returns a tracker-blocking layer and tra
-- **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
+- **`discover`** (medium) — Use when you have a `name`, `domain` or `email` and want to run the standard passive/active recon playbook in one command — returns aggregat
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
 - **`docmind-ai`** (low) — Use when you have sensitive documents to query and want a local RAG chat over them with no cloud exposure — returns summaries, Q&A and extra
 - **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do
-- **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`duckduckgo-ai-chat`** (low) — Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy 
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`e4gl30s1nt`** (medium) — Use when you have a `username`, `email`, `phone`, `domain` or `image` and want a single CLI toolkit that sweeps 70+ platforms, breach databa
@@ -114,7 +112,7 @@ kind: group-index
 - **`geekflare-tools`** (low) — Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-h
 - **`gephi`** (medium) — Use when you have a set of `associate`/entity relationships and want to visualize and analyze them as a network graph — returns clustered li
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
-- **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
+- **`ghoulbond`** (low) — Use when you have a `phone`, `username` or `ip-address` and want quick enrichment from one CLI — returns carrier/geo for a number, account p
 - **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`glit`** (low) — OSINT tool: Glit.
@@ -149,7 +147,6 @@ kind: group-index
 - **`i2p`** (low) — Use when you need to reach or research I2P hidden services anonymously — returns access to the I2P overlay network (an anonymity layer, not 
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
 - **`illuminarty`** (low) — Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating mod
-- **`infogr-am`** (low) — OSINT tool: Infogr.am.
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
 - **`infosec-reference`** (low) — Use when you need a curated knowledge base to point you to the right infosec/OSINT technique, tool, or reading — returns reference material.
 - **`inkscape`** (low) — Use when you need to edit, trace, measure, or annotate images/vectors during analysis — a free vector-graphics editor useful for image foren
@@ -162,7 +159,6 @@ kind: group-index
 - **`keyfinder`** (low) — Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, to
 - **`krebs-on-security`** (low) — Use when you have a threat-actor alias, breach name, scam pattern, or malware/campaign name and want deep investigative background — returns
 - **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
-- **`lastpass`** (low) — OSINT tool: Lastpass.
 - **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
@@ -219,7 +215,6 @@ kind: group-index
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
 - **`osint-techniques`** (low) — Use when you need a technique reference or a vetted tool for a selector — returns methodology write-ups and a curated OSINT tools directory.
-- **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — Use when you want to keep your tooling and tradecraft current — a free weekly newsletter rounding up new OSINT tools, techniques, and news f
 - **`osintcombine-tools`** (medium) — Use when you want a free, browser-based hub of OSINT pivots and utilities — returns a launcher of search/social/domain/crypto/username tools
@@ -330,7 +325,6 @@ kind: group-index
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
 - **`world-monitor`** (low) — Use when you have a `geolocation` or event and want a live fused picture of conflicts, flights, shipping and markets there — returns geoloca
 - **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
-- **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
 - **`x86-and-x64-intel-assembler`** (low) — Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disa
 - **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 
 - **`you-com`** (low) — Use when you have a `name`/`username` and want an AI-summarized web sweep with citations — returns synthesized answers plus linked source pa

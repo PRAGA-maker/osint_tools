@@ -437,7 +437,7 @@ kind: group-index
 - **`osint-toolkit-cybersight-security`** (low) — Use when you have a selector but need the right tool and want a categorized catalog of OSINT tools/websites to pick from — returns tool poin
 - **`osint-tools-howtofind-bot`** (low) — Use when you've exhausted your known tools for a selector and want more options — a categorised catalog of 300+ OSINT tools/scripts to pull 
 - **`osint-tools-yogsec`** (low) — Use when you have a selector and don't know which tool fits — returns a categorised directory of OSINT tools and methods to pick from.
-- **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
+- **`osintbookmarks`** (low) — Use when you want a ready-made, categorised set of OSINT tool links loaded straight into your browser — returns an importable bookmarks tree
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
 - **`oxford-journals`** (low) — Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, 
@@ -482,7 +482,6 @@ kind: group-index
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
-- **`reuters`** (low) — OSINT tool: Reuters.
 - **`rfc-fyi`** (low) — Use when you have a protocol, keyword, or working-group name and want to find and read the relevant IETF RFC — returns RFC documents and the
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth
@@ -566,7 +565,6 @@ kind: group-index
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
 - **`toddington-online-research-cheat-sheets`** (medium) — Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PD
 - **`topix`** (low) — OSINT tool: Topix.
-- **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — Use when you have a `name`, `username`, or keyword and want to search dozens of torrent indexes at once — returns torrent listings and uploa
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style

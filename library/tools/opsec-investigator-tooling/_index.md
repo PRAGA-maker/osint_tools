@@ -118,7 +118,6 @@ kind: group-index
 - **`firefox`** (low) — OSINT tool: Firefox.
 - **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
-- **`foursquare-swarm-social-networking-app-mobile-android`** (low) — App for mobile devices for social messaging and reviews
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
 - **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
@@ -129,7 +128,6 @@ kind: group-index
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
-- **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
 - **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
@@ -143,7 +141,6 @@ kind: group-index
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-password-alert-extension-chrome`** (low) — Add-on for Google Chrome that alerts you if you enter your Google password into any non-Google page or form
-- **`google-play-movies-and-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
@@ -175,7 +172,6 @@ kind: group-index
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`kali-anonsurf`** (low) — Use for investigator opsec — routes your entire system's network traffic through Tor at the OS level and adds anti-forensic helpers, so all 
 - **`kasm`** (low) — Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware a
-- **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
@@ -231,7 +227,6 @@ kind: group-index
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
-- **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
 - **`privacy-net`** (low) — Use when you want a vetted starting list of privacy and browser-security tools for your own OpSec — returns links to leak-checkers, breach l
@@ -352,7 +347,6 @@ kind: group-index
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
-- **`yahoo-mail-app-mobile-ios`** (low) — App for mobile devices for email services
 - **`yandex-browser`** (low) — OSINT tool: Yandex Browser.
 - **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing

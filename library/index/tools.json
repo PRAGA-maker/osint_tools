@@ -54,42 +54,6 @@
     "_file": "library/tools/ai-analysis-automation/a1-website-download.md"
   },
   {
-    "id": "adium",
-    "name": "Adium",
-    "description": "OSINT tool: Adium.",
-    "url": "https://adium.im",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/adium.md"
-  },
-  {
     "id": "advanced-search-operators-list",
     "name": "Advanced Search Operators List",
     "description": "Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links to each platform's official operator docs.",
@@ -3648,37 +3612,57 @@
   {
     "id": "discover",
     "name": "Discover",
-    "description": "Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 tools in one)",
+    "description": "Use when you have a `name`, `domain` or `email` and want to run the standard passive/active recon playbook in one command — returns aggregated OSINT (subdomains, people, emails, hosts) as a report.",
     "url": "https://github.com/leebaird/discover",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-command orchestration of many recon/OSINT tools (domain, person, and network reconnaissance) on Kali/Ubuntu.",
+    "selectorsIn": [
+      "name",
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain",
+      "ip-address",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (MIT); it wraps other free tools you install alongside it.",
+    "opsec": "active",
+    "opsecNote": "The active recon modules (Nmap scans, host enumeration) touch the target directly and are noisy; the passive/person-OSINT modules query third parties. Choose passive modes and route through a VPN when you must stay quiet, and only run active scans against infrastructure you're authorised to test.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-maintained, widely used pentest/OSINT automation suite by Lee Baird (bundled in many Kali workflows); 1,700+ commits and active upkeep.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "discover.sh",
+      "Lee Baird discover"
+    ],
     "tags": [
+      "recon",
+      "automation",
       "Tools collections/toolkits"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/discover.md"
   },
   {
@@ -3844,42 +3828,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/dorks-collections-list.md"
-  },
-  {
-    "id": "dropbase",
-    "name": "Dropbase",
-    "description": "OSINT tool: Dropbase.",
-    "url": "https://dropbase.fun",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-intelligence"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/dropbase.md"
   },
   {
     "id": "duckduckgo-ai-chat",
@@ -4832,42 +4780,52 @@
   {
     "id": "ghoulbond",
     "name": "Ghoulbond",
-    "description": "Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac address, port scanner)+some features for nickname and phone number #osint.",
+    "description": "Use when you have a `phone`, `username` or `ip-address` and want quick enrichment from one CLI — returns carrier/geo for a number, account presence for a handle, and IP geolocation.",
     "url": "https://github.com/hitesh22rana/ghoulbond",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A grab-bag command-line toolkit combining light phone/username/IP OSINT with local system info and a port scanner.",
     "selectorsIn": [
       "phone",
-      "username"
+      "username",
+      "ip-address"
     ],
     "selectorsOut": [
-      "address"
+      "geolocation",
+      "social-profile",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; Python (pip) with Docker support.",
+    "opsec": "active",
+    "opsecNote": "The username-verification and website email-scraping modules query third-party platforms/sites directly, and the port scanner touches targets — run from a sock-puppet/VPN context and only scan hosts you're authorised to. Note it can also read local Wi-Fi passwords, so run it on your own analysis box, not a client's.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small community project (few dozen GitHub stars); handy as a convenience wrapper but its lookups are only as good as the free sources behind them — verify hits elsewhere.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ghoulbond CLI"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "Tools collections/toolkits",
+      "multi-tool"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ghoulbond.md"
   },
   {
@@ -6584,42 +6542,6 @@
     "_file": "library/tools/ai-analysis-automation/illuminarty.md"
   },
   {
-    "id": "infogr-am",
-    "name": "Infogr.am",
-    "description": "OSINT tool: Infogr.am.",
-    "url": "https://infogr.am",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/infogr-am.md"
-  },
-  {
     "id": "infooze",
     "name": "Infooze",
     "description": "Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whois/DNS, Insta/Git recon, EXIF) — returns `social-profile`s, `email`s, `domain` data and `metadata-exif`.",
@@ -7567,45 +7489,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/lastfm-monitor.md"
-  },
-  {
-    "id": "lastpass",
-    "name": "Lastpass",
-    "description": "OSINT tool: Lastpass.",
-    "url": "https://lastpass.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "username-generator"
-    ],
-    "_file": "library/tools/ai-analysis-automation/lastpass.md"
   },
   {
     "id": "leakcop",
@@ -10347,46 +10230,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-techniques.md"
-  },
-  {
-    "id": "osint-tool",
-    "name": "OSINT-Tool",
-    "description": "OSINT tool: OSINT-Tool.",
-    "url": "https://www.osint-tool.com/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "find-osint-tool",
-      "search-by-exif"
-    ],
-    "_file": "library/tools/ai-analysis-automation/osint-tool.md"
   },
   {
     "id": "osint-tools-mcp-server",
@@ -16274,42 +16117,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/wot.md"
-  },
-  {
-    "id": "wynyard-group",
-    "name": "Wynyard Group",
-    "description": "OSINT tool: Wynyard Group.",
-    "url": "https://wynyardgroup.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "social-network-analysis"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/wynyard-group.md"
   },
   {
     "id": "x86-and-x64-intel-assembler",
@@ -36192,44 +35999,47 @@
   },
   {
     "id": "4-ever-proxy",
-    "name": "4 Ever Proxy",
-    "description": "OSINT tool: 4 Ever Proxy.",
+    "name": "4everproxy",
+    "description": "Use when you want to open a web page (or a Tor2Web-style .onion) from a throwaway IP in a chosen country without installing anything — returns the page proxied through 4everproxy.",
     "url": "https://www.4everproxy.com/tor-proxy",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "bestFor": "Quick, install-free web proxying with selectable exit country and a Tor gateway for opening links from a disposable IP.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web proxy; no account required for basic use.",
+    "opsec": "active",
+    "opsecNote": "A free web proxy sees everything you route through it — it is NOT a trust anchor. Use it only to open low-sensitivity links from a throwaway IP, never for logins, credentials, or anything you need kept private. Its Tor gateway lets you peek at an .onion without Tor Browser, but it deanonymises you to the proxy and is far weaker than the real Tor Browser; prefer Tor Browser for actual dark-web work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous free-proxy operator with no accountability; convenient for disposable browsing but you are trusting an unknown middleman with your traffic.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "4everproxy",
+      "4 Ever Proxy"
+    ],
     "tags": [
+      "proxy",
       "darkweb",
-      "Dark Web Links"
+      "opsec"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/4-ever-proxy.md"
   },
   {
@@ -36975,30 +36785,30 @@
   {
     "id": "darkscrape",
     "name": "DarkScrape",
-    "description": "OSINT tool for scraping dark websites (.onion).",
+    "description": "Use when you have a Tor `.onion` `domain` and want to harvest the images/media it hosts (with optional face recognition) — returns downloaded `image` files and `face` matches.",
     "url": "https://github.com/itsmehacker/DarkScrape",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "Crawling/scraping Tor hidden services",
+    "bestFor": "Bulk-extracting and downloading media (images) from .onion sites, with a face-recognition option for triage.",
     "selectorsIn": [
-      "domain",
-      "social-profile"
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image"
+      "image",
+      "face"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT); costs only your own Tor infrastructure.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "It fetches and downloads content directly from the target .onion over Tor, so run it on an isolated VM through Tor only, never clearnet. Downloading dark-web media carries legal/malware risk — sandbox everything and know the legal limits in your jurisdiction before scraping.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community dark-web scraper (508 stars); older project.",
+    "trustNote": "Popular open-source project (500+ GitHub stars); code is auditable, but it's a community tool — review it before running and treat downloaded content as untrusted.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -37007,17 +36817,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "darkscrape"
+      "DarkScrape onion scraper"
     ],
     "tags": [
-      "dark-web",
-      "tor",
-      "scraper"
+      "darkweb",
+      "scraper",
+      "media"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/darkscrape.md"
   },
   {
@@ -37199,48 +37010,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/discounted-apple-products.md"
-  },
-  {
-    "id": "eucanna",
-    "name": "EuCanna",
-    "description": "OSINT tool: EuCanna.",
-    "url": "http://n6qisfgjauj365pxccpr5vizmtb5iavqaug7m7e4ewkxuygk5iim6yyd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/eucanna.md"
   },
   {
     "id": "federal-bureau-of-investigations-value",
@@ -46036,46 +45805,6 @@
     "_file": "library/tools/documents-metadata/chief-information-officers-council-united-states.md"
   },
   {
-    "id": "choice-consumer-australia",
-    "name": "Choice Consumer (Australia)",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "https://www.choice.com.au",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/choice-consumer-australia.md"
-  },
-  {
     "id": "cloudconvert",
     "name": "CloudConvert",
     "description": "Converts between some 100 different document and file formats and saves them in the cloud",
@@ -48910,46 +48639,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/github-search-engine.md"
-  },
-  {
-    "id": "gmail-help-for-identifying-email-headers",
-    "name": "Gmail Help For Identifying Email Headers",
-    "description": "Google webpage providing information about identifying email headers",
-    "url": "https://support.google.com/mail/answer/22454?hl=en",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/gmail-help-for-identifying-email-headers.md"
   },
   {
     "id": "gmx-mail",
@@ -167858,46 +167547,6 @@
     "_file": "library/tools/opsec-investigator-tooling/forager.md"
   },
   {
-    "id": "foursquare-swarm-social-networking-app-mobile-android",
-    "name": "Foursquare Swarm Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social messaging and reviews",
-    "url": "https://play.google.com/store/apps/details?id=com.foursquare.robin&hl=en_CA",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/foursquare-swarm-social-networking-app-mobile-android.md"
-  },
-  {
     "id": "foursquare-swarm-social-networking-app-mobile-ios",
     "name": "Foursquare Swarm Social Networking App (Mobile – iOS)",
     "description": "App for mobile devices for social messaging and reviews",
@@ -168349,46 +167998,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/giphy-cam-gif-editor-app-mobile-android.md"
-  },
-  {
-    "id": "giphy-the-gif-search-engine-app-mobile-ios",
-    "name": "Giphy: The GIF Search Engine App (Mobile – iOS)",
-    "description": "App for mobile devices for creating and sharing GIF format multimedia",
-    "url": "https://apps.apple.com/ca/app/giphy-the-gif-search-engine/id974748812",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/giphy-the-gif-search-engine-app-mobile-ios.md"
   },
   {
     "id": "glassdoor-business-app-mobile-ios",
@@ -168927,46 +168536,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/google-password-alert-extension-chrome.md"
-  },
-  {
-    "id": "google-play-movies-and-tv-app-mobile-android",
-    "name": "Google Play Movies and TV App (Mobile – Android)",
-    "description": "App for mobile devices for locating and playing movies and TV shows",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.videos",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-android.md"
   },
   {
     "id": "google-play-movies-and-tv-app-mobile-ios",
@@ -170513,50 +170082,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/kasm.md"
-  },
-  {
-    "id": "kaspersky-tdsskiller-anti-rootkit-tool",
-    "name": "Kaspersky TDSSKiller Anti-Rootkit Tool",
-    "description": "Specialized anti-rootkit tool for advanced PC users",
-    "url": "http://usa.kaspersky.com/downloads/TDSSKiller",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cybermap",
-      "kaspersky-cyberthreat-live-map"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/kaspersky-tdsskiller-anti-rootkit-tool.md"
   },
   {
     "id": "khan-academy-education-app-mobile-ios",
@@ -173326,46 +172851,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-ios.md"
-  },
-  {
-    "id": "plex-management-app-mobile-android",
-    "name": "Plex Management App (Mobile – Android)",
-    "description": "App for mobile devices for managing and organizing photos and videos",
-    "url": "https://play.google.com/store/apps/details?id=com.plexapp.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/plex-management-app-mobile-android.md"
   },
   {
     "id": "police-scanner-radio-app-mobile-android",
@@ -179242,46 +178727,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-android.md"
-  },
-  {
-    "id": "yahoo-mail-app-mobile-ios",
-    "name": "Yahoo Mail App (Mobile – iOS)",
-    "description": "App for mobile devices for email services",
-    "url": "https://itunes.apple.com/us/app/yahoo-mail-free-email-and-news/id577586159?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-ios.md"
   },
   {
     "id": "yandex-browser",
@@ -200737,30 +200182,31 @@
   {
     "id": "whoseno",
     "name": "WhoseNo",
-    "description": "Crowd-reported reverse-phone lookup.",
+    "description": "Use when you have a `phone` number and want crowd-sourced caller identity and spam/scam reports — returns a safety rating plus community notes (possible `name`/`employer-org`).",
     "url": "https://www.whoseno.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Community reverse-phone lookup and caller reports.",
+    "bestFor": "Free reverse-phone lookup driven by community spam/scam reports and caller-ID votes.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "phone"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reverse lookup on the website (also a mobile app); no account needed for basic searches. States it does not sell personal data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit only the target number to a third-party lookup — nothing links it to you or alerts the number's owner. Standard sock-puppet browsing is enough; avoid contributing your own reports from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trustNote": "Crowd-sourced — entries are user-submitted reports and votes, so identities and labels are indicative, not authoritative; corroborate before relying on a name.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -200768,14 +200214,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WhoseNo.com",
+      "Whose Number"
+    ],
     "tags": [
       "phone",
-      "reverse-phone"
+      "reverse-phone",
+      "caller-id"
     ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/phone/whoseno.md"
   },
   {
@@ -250438,48 +249889,6 @@
     "_file": "library/tools/public-records/court-criminal-records/unicourt.md"
   },
   {
-    "id": "unstats-social-indicators",
-    "name": "UNStats Social Indicators",
-    "description": "OSINT tool: UNStats Social Indicators.",
-    "url": "http://unstats.un.org/unsd/demographic/products/socind",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "statistics-and-data",
-      "un-comtrade-database",
-      "un-data",
-      "un-security-council-consolidated-list"
-    ],
-    "_file": "library/tools/public-records/unstats-social-indicators.md"
-  },
-  {
     "id": "upsala-conflict-data-program",
     "name": "Uppsala Conflict Data Program (UCDP)",
     "description": "Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates, actors and fatality estimates.",
@@ -276355,24 +275764,25 @@
   {
     "id": "osintbookmarks",
     "name": "OSINTBookmarks",
-    "description": "OSINT bookmarks file for Firefox/Chrome/Edge/Safari.",
+    "description": "Use when you want a ready-made, categorised set of OSINT tool links loaded straight into your browser — returns an importable bookmarks tree, not lookup data.",
     "url": "https://github.com/5nacks/OSINTBookmarks",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Importing a large curated set of OSINT site bookmarks into a browser",
+    "bestFor": "Bootstrapping an investigation browser with a curated, categorised bookmarks file of OSINT resources.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; just download the HTML file from GitHub.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — it's a static bookmarks file, no queries run on import. Import it into your sock-puppet browser profile rather than your personal one to keep investigation tooling compartmented.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
+    "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community curated bookmark set (66 stars).",
+    "trustNote": "Community-curated bookmarks (built on SPMedia, the Bellingcat toolkit and Trace Labs contributions); links inevitably rot over time, so treat it as a starting map, not a guaranteed-live index.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -276381,15 +275791,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bookmarks",
-      "directory",
-      "reference"
+    "relatedTools": [],
+    "aliases": [
+      "OSINT Bookmarks"
     ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "Tools collections/toolkits",
+      "bookmarks"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osintbookmarks.md"
   },
   {
@@ -278865,42 +278277,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/reuser-s-repertorium.md"
-  },
-  {
-    "id": "reuters",
-    "name": "Reuters",
-    "description": "OSINT tool: Reuters.",
-    "url": "http://www.reuters.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/reuters.md"
   },
   {
     "id": "rfc-fyi",
@@ -283474,46 +282850,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/topix.md"
-  },
-  {
-    "id": "topmarks-education",
-    "name": "Topmarks Education",
-    "description": "Children's educational search engine for locating educational resources, along with games and other learning tools",
-    "url": "https://www.topmarks.co.uk/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/topmarks-education.md"
   },
   {
     "id": "topuniversities",
@@ -329832,42 +329168,6 @@
     "_file": "library/tools/training-ctf/cyber-intelligence-toolkit-oryon.md"
   },
   {
-    "id": "defcon-database",
-    "name": "DEFCON Database",
-    "description": "Searchable database of DEFCON talks/resources (shared in TL #library-submissions).",
-    "url": "https://defcondatabase.com",
-    "category": "training-ctf",
-    "path": [
-      "training-ctf"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "tl-discord"
-    ],
-    "source": "tl-discord",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/training-ctf/defcon-database.md"
-  },
-  {
     "id": "forensic-osint-kb-guides",
     "name": "Forensic OSINT KB Guides",
     "description": "Use when you need process guidance for defensible OSINT — returns how-to guides on evidence preservation, chain-of-custody, and court-ready reporting.",
@@ -330467,46 +329767,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/acronym-server.md"
-  },
-  {
-    "id": "after-the-deadline-language-tool",
-    "name": "After the Deadline Language Tool",
-    "description": "Language-related tool that checks spelling, style and grammar of writing",
-    "url": "http://www.polishmywriting.com",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/after-the-deadline-language-tool.md"
   },
   {
     "id": "alphadictionary-com",
@@ -332763,25 +332023,26 @@
   },
   {
     "id": "paulschou-binary-translator",
-    "name": "Paulschou Binary Translator",
-    "description": "Tool used to encode and decode ASCII and ANSI text",
+    "name": "Paulschou Binary Translator (xlate)",
+    "description": "Use when you have an encoded string (binary, hex, octal, base64, ASCII/ANSI) and want to convert it to readable text or between formats — returns the decoded/re-encoded value.",
     "url": "https://paulschou.com/tools/xlate",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Fast in-browser conversion between text and binary/hex/octal/decimal/base64 encodings.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free single-page web tool; no account. (Occasionally unreachable — server returned a transient 5xx at last check — but historically stable.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste your string into a third-party page, so don't decode anything sensitive (keys, credentials, case data) there — for that, use an offline converter. For harmless CTF-style or public encoded blobs it's fine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing personal-site utility (paulschou.com); simple and reliable in function, but a one-person site with no uptime guarantee.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -332790,15 +332051,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
+    "relatedTools": [],
+    "aliases": [
+      "xlate",
+      "paulschou xlate"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "encoding",
+      "decoder",
+      "translation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/paulschou-binary-translator.md"
   },
   {

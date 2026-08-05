@@ -890,7 +890,6 @@ kind: group-index
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r
 - **`unesco-institute-for-statistics`** (low) — Use when you need education, science, culture or communication statistics for a country — returns internationally-comparable indicators (lit
 - **`unicorn-riot-discord-leaks`** (low) — Use when you have a `username`/`name` possibly tied to far-right groups — searches leaked Discord chats and returns messages, `associate` li
-- **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates
 - **`us-data-and-statistics`** (low) — Use when you have a place, agency, or topic and want the official US federal source for that statistic — returns links to Census, BLS, and o
 - **`us-dept-of-energy-office-of-science-search`** (medium) — Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
