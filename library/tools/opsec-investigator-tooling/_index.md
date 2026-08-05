@@ -261,7 +261,7 @@ kind: group-index
 - **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
-- **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
+- **`the-osint-puppeteer`** (low) — Use when you need to build a durable sock-puppet identity for investigation — returns a step-by-step tradecraft guide for creating and maint
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
 - **`thexifer`** (low) — Use when you have an `image` and want to read, strip or forge its EXIF/IPTC/XMP metadata — returns viewed or rewritten metadata-exif.
 - **`this-baseball-player-does-not-exist`** (low) — Use when you need a disposable synthetic `face`/`image` for a sock-puppet account and want a photo that no reverse-image search will tie to 

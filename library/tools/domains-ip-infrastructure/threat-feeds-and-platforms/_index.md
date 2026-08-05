@@ -16,7 +16,7 @@ kind: group-index
 - **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 
 - **`maltiverse`** (low) — Use when you have an `ip-address`, `domain`, URL, or file hash and want a threat-intel verdict — returns malicious/suspicious classification
 - **`malware-patrol`** (low) — Use when you have a `domain`, URL, or `ip-address` and want to know if it's flagged as malware/C2/phishing in a curated threat feed — return
-- **`mlsecproject-combine`** (low) — Threat feed aggregation
+- **`mlsecproject-combine`** (low) — Use when you have a set of threat-intel feeds and want them fetched and normalized into one IOC dataset — returns unified CSV/CRITs indicato
 - **`pulsedive`** (low) — Use when you have an `ip-address`, `domain` or URL (IOC) and want enrichment, risk scoring and linked indicators — returns threat context an
 - **`scam-database`** (low) — Use when you have a `phone`, `email`, `domain`, social handle, or `crypto-wallet` and want to check crowd-reported scam activity — returns c
 

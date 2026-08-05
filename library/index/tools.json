@@ -38677,48 +38677,6 @@
     "_file": "library/tools/dark-web/state-of-delaware-professional-license-validator.md"
   },
   {
-    "id": "swp-cx",
-    "name": "swp.cx",
-    "description": "OSINT tool: swp.cx.",
-    "url": "http://uicrmrl3i4r66c4fx4l5gv5hdb6jrzy72bitrk25w5dhv5o6sxmajxqd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/swp-cx.md"
-  },
-  {
     "id": "tails-the-amnesic-incognito-live-system",
     "name": "Tails — The Amnesic Incognito Live System",
     "description": "Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a lookup tool.",
@@ -71496,41 +71454,54 @@
   {
     "id": "mlsecproject-combine",
     "name": "mlsecproject / combine",
-    "description": "Threat feed aggregation",
+    "description": "Use when you have a set of threat-intel feeds and want them fetched and normalized into one IOC dataset — returns unified CSV/CRITs indicator output.",
     "url": "https://github.com/mlsecproject/combine",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Threat feed aggregation",
-    "input": "Multiple threat intelligence feeds",
-    "output": "Normalized IOC data in CSV or CRITs format",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Pulling multiple public threat-intel feeds and normalizing their indicators (IPs, domains) into a single structured dataset.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (Python); no account or key. You run it locally.",
     "opsec": "passive",
-    "opsecNote": "Local processing of public feeds",
+    "opsecNote": "It fetches public threat feeds to wherever you run it, then processes them locally — no target is probed. The fetches reveal your IP to the feed hosts; run from a controlled egress if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An open-source project from MLSec Project (mlsecproject/combine); the code is public and inspectable, but it is old and unmaintained (Python 2-era), so expect broken feed URLs and dependency friction.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "combine",
+      "MLSec combine"
+    ],
+    "tags": [
+      "threat-intelligence",
+      "ioc",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/mlsecproject-combine.md"
   },
   {
@@ -173909,41 +173880,48 @@
   {
     "id": "the-osint-puppeteer",
     "name": "The OSINT Puppeteer",
-    "description": "OSINT tool: The OSINT Puppeteer.",
-    "url": "https://osintcurio.us/2018/12/27/the-puppeteer",
+    "description": "Use when you need to build a durable sock-puppet identity for investigation — returns a step-by-step tradecraft guide for creating and maintaining research personas.",
+    "url": "https://osintcurio.us/2018/12/27/the-puppeteer/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Learning how to design, provision, and maintain a believable sock-puppet account without burning your real identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free article on the OSINT Curious blog; no account required to read.",
+    "opsec": "passive",
+    "opsecNote": "This is the OpSec guidance itself — reading it is passive. Its whole purpose is to keep your investigative persona separated from your real identity; follow it before you interact with any target, because a leaky sock puppet can expose you and tip off the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by OSINT Curious (osintcurio.us), a respected practitioner community; widely cited tradecraft guidance authored by experienced investigators.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "sockpuppet"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "cosint-osint-on-cars",
       "osintcurious"
     ],
+    "aliases": [
+      "The Puppeteer",
+      "OSINT Curious sock puppet guide"
+    ],
+    "tags": [
+      "sockpuppet",
+      "tradecraft",
+      "opsec"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/the-osint-puppeteer.md"
   },
   {
@@ -238153,45 +238131,56 @@
   },
   {
     "id": "rechercher-par-r-pondant",
-    "name": "Rechercher par répondant",
-    "description": "OSINT tool: Rechercher par répondant.",
+    "name": "Rechercher par répondant (RBQ Québec)",
+    "description": "Use when you have a `name` and want to find the Québec construction licences that person is the designated responsible party for — returns linked contractor businesses and licence numbers.",
     "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Repondant",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Québec's RBQ contractor-licence registry by \"répondant\" (the individual accountable for a licence) to link a person to businesses.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search on the Régie du bâtiment du Québec (RBQ) official licence registry; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying an official government registry is passive — the subject is not notified. Your search goes to a Québec government site (your IP is logged there); this is a public record, so the lookup itself is low-risk, but use a research connection if you prefer not to associate the query with you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party government registry operated by the Régie du bâtiment du Québec; authoritative licensing data for the province.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
-      "association-assq-qc-ca",
-      "banq-num-rique",
       "rechercher-par-entreprise",
       "rechercher-par-r-gion-ou-type-de-travaux",
-      "services-en-ligne",
-      "trouver-une-d-cision"
+      "services-en-ligne"
     ],
+    "aliases": [
+      "RBQ search by respondent",
+      "Registre des licences RBQ - répondant"
+    ],
+    "tags": [
+      "public-records",
+      "licensing",
+      "quebec"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rechercher-par-r-pondant.md"
   },
   {
@@ -249920,44 +249909,6 @@
       "ratemyteachers-north-america"
     ],
     "_file": "library/tools/public-records/www-ratemyteachers-com.md"
-  },
-  {
-    "id": "xbrl-voluntary-filing-program",
-    "name": "XBRL Voluntary Filing Program",
-    "description": "OSINT tool: XBRL Voluntary Filing Program.",
-    "url": "https://www.sedar.com/issuers/issuers_en.htm",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-for-company-documents",
-      "search-for-investment-fund-documents"
-    ],
-    "_file": "library/tools/public-records/xbrl-voluntary-filing-program.md"
   },
   {
     "id": "xhibit",
@@ -262816,44 +262767,6 @@
     "_file": "library/tools/search-engines/google-drive-folder-search-engine.md"
   },
   {
-    "id": "google-email-extractor",
-    "name": "Google Email Extractor",
-    "description": "Extract emails from Google Search Results",
-    "url": "https://chrome.google.com/webstore/detail/google-email-extractor/aabpdmlmkpedpigeignclfmodjhplllj/related",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-email-extractor.md"
-  },
-  {
     "id": "google-ftp-search",
     "name": "Google FTP Search",
     "description": "Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable files and listings.",
@@ -274909,24 +274822,25 @@
   {
     "id": "r3mlab-datajournalism-resources",
     "name": "r3mlab datajournalism-resources",
-    "description": "GitHub collection of data-journalism and OSINT research resources.",
+    "description": "Use when you want data-journalism-oriented research tools and datasets — returns a curated GitHub directory of sources for data-driven investigation.",
     "url": "https://github.com/r3mlab/datajournalism-resources",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Data-journalism oriented research tools and datasets",
+    "bestFor": "A curated GitHub index of data-journalism tools, datasets, and research resources for evidence-driven investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public GitHub list is passive and touches no target. It is a resource-discovery index — the value is finding datasets/tools, not data on a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community GitHub list (r3mlab).",
+    "trustNote": "Community-curated GitHub list (r3mlab) with public commit history; one curator's selection, oriented to data journalism rather than person-finding.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -274935,15 +274849,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "r3mlab data journalism resources"
+    ],
     "tags": [
       "tool-collection",
       "data-journalism",
       "github"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/r3mlab-datajournalism-resources.md"
   },
   {
@@ -330021,43 +329938,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/stars21-com.md"
-  },
-  {
-    "id": "superemojitranslator-com",
-    "name": "superemojitranslator.com",
-    "description": "OSINT tool: superemojitranslator.com.",
-    "url": "http://superemojitranslator.com/",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/superemojitranslator-com.md"
   },
   {
     "id": "symbols-com",

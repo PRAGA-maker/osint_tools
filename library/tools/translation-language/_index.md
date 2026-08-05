@@ -67,7 +67,6 @@ kind: group-index
 - **`smallseotools-plagiarism-checker`** (low) — Use when you have a block of `text` and want to find where else it appears online — returns the source `domain`/URLs that match, exposing co
 - **`smart-words-org`** (low) — Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbrevi
 - **`stars21-com`** (low) — OSINT tool: stars21.com.
-- **`superemojitranslator-com`** (low) — OSINT tool: superemojitranslator.com.
 - **`symbols-com`** (low) — Use when you have an unidentified symbol, sign, flag, or glyph (from an `image`) and want to identify its meaning — returns encyclopedic ent
 - **`synonyms-net`** (low) — Use when you have a word or phrase and want its synonyms, antonyms, definitions and translations in 40+ languages — returns alternative term
 - **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated

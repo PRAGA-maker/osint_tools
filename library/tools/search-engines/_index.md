@@ -239,7 +239,6 @@ kind: group-index
 - **`google-docs-cse`** (low) — Use when you have a `name`, `email`, or keyword and want to find publicly exposed Google Docs/Sheets/Slides — a Google Custom Search Engine 
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
-- **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
 - **`google-search-scraper`** (low) — Use when you have a query and a target `geolocation`/language and want structured Google SERP data at scale (organic, ads, related) — return
@@ -455,7 +454,7 @@ kind: group-index
 - **`quetzal-search`** (low) — Use when you have a `name` or research topic and want biomedical literature — returns relevant PubMed/MEDLINE articles via natural-language 
 - **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
 - **`qwant`** (low) — Use when you have a `name`, `username`, `email` or `phone` and want a privacy-preserving web search with a different result set than Google/
-- **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
+- **`r3mlab-datajournalism-resources`** (low) — Use when you want data-journalism-oriented research tools and datasets — returns a curated GitHub directory of sources for data-driven inves
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
 - **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe
 - **`rapusia`** (medium) — Use when you want an alternative, non-tracking general web search that may surface results your primary engine ranks differently — returns w

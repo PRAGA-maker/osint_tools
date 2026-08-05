@@ -715,7 +715,7 @@ kind: group-index
 - **`realtor`** (medium) — Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `
 - **`rechercher-par-entreprise`** (low) — Use when you have an `employer-org`/company name in Québec and want its construction-licence record — returns licence status, respondents, a
 - **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — Use when you have a `geolocation`/region or trade type in Québec and want to enumerate licensed construction contractors there — returns emp
-- **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
+- **`rechercher-par-r-pondant`** (low) — Use when you have a `name` and want to find the Québec construction licences that person is the designated responsible party for — returns l
 - **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site
 - **`refseek`** (medium) — Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that genera
 - **`regional-municipality-of-durham`** (medium) — Use when a case touches Durham Region (Ontario, Canada) and you need geospatial/municipal context — returns open datasets (boundaries, facil
@@ -922,7 +922,6 @@ kind: group-index
 - **`wto-statistics`** (low) — Use when you have an `employer-org` or country and want its merchandise/services trade profile — returns official bilateral trade, tariff an
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
-- **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
 - **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`
 - **`yahoo-finance`** (medium) — Use when you have a company `name`/ticker or an `employer-org` and want its corporate profile — returns HQ `address`, key executives (`name`
 - **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye

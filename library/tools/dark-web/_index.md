@@ -67,7 +67,6 @@ kind: group-index
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
 - **`stark-county-auditor`** (medium) — Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner nam
 - **`state-of-delaware-professional-license-validator`** (medium) — Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, a
-- **`swp-cx`** (low) — OSINT tool: swp.cx.
 - **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
 - **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
 - **`tool-path`** (low) — Use when you have a `crypto-wallet` xpub or seed and want to enumerate the addresses it derives — returns the child addresses/keys for a giv
