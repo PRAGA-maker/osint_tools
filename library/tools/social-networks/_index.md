@@ -172,7 +172,7 @@ kind: group-index
 - **`find-my-facebook-id-2`** (high) — Use when you have a Facebook profile/page/group URL or vanity name and want its stable numeric ID — returns the numeric Facebook ID for use 
 - **`find-my-facebook-id-3`** (high) — Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile ag
 - **`find-my-facebook-id`** (high) — Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID th
-- **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
+- **`finddit-viralharia`** (low) — Use when you have a `username` or a keyword and want to search Reddit posts/comments — returns matching Reddit `social-profile` activity.
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit

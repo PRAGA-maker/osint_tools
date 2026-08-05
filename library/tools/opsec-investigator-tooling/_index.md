@@ -135,7 +135,6 @@ kind: group-index
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
-- **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
@@ -266,7 +265,6 @@ kind: group-index
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
-- **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
 - **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
 - **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
 - **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT

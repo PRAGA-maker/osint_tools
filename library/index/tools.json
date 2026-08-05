@@ -444,37 +444,45 @@
   {
     "id": "appsec-fyi-osint-resources",
     "name": "appsec.fyi OSINT Resources",
-    "description": "OSINT tool: appsec.fyi OSINT Resources.",
+    "description": "Use when you want a curated jump-list of OSINT reconnaissance tools and techniques — returns a vetted directory of external resources, not selector lookups.",
     "url": "https://appsec.fyi/osint.html",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A hand-curated index (~74 entries) of OSINT recon tools, frameworks, and technique write-ups for attack-surface mapping.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, public, ad-free resource page; no account or key required.",
+    "opsec": "passive",
+    "opsecNote": "You are only reading a static curated list on a third-party site — no target interaction occurs. Standard web hygiene (your IP is logged by the host) applies, but nothing about a subject is queried here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by application-security practitioner Carl Sampson as part of a broader AppSec resource library (XSS, SSRF, RCE, etc.); curated by a single named individual, so it reflects one expert's selection rather than an institution.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Open-Source Intelligence Resources (appsec.fyi)",
+      "Carl Sampson OSINT list"
+    ],
     "tags": [
-      "other-resources"
+      "other-resources",
+      "curated-directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/appsec-fyi-osint-resources.md"
   },
   {
@@ -6013,42 +6021,6 @@
     "_file": "library/tools/ai-analysis-automation/html-sanitizer-tool.md"
   },
   {
-    "id": "http-cat",
-    "name": "HTTP Cat",
-    "description": "free #API to get pictures with cats for different HTTP response codes",
-    "url": "https://github.com/httpcats/http.cat",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/http-cat.md"
-  },
-  {
     "id": "httpie-io",
     "name": "HTTPie",
     "description": "Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.",
@@ -8390,40 +8362,47 @@
   {
     "id": "mp3-spectrum-analyzer",
     "name": "MP3 Spectrum Analyzer",
-    "description": "OSINT tool: MP3 Spectrum Analyzer.",
+    "description": "Use when you have an audio clip and want to see its frequency content — returns a live spectrogram to help identify or verify sounds (sirens, tones, background noise).",
     "url": "https://academo.org/demos/spectrum-analyzer/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "In-browser FFT spectrogram of an uploaded or sample audio clip for quick audio-forensics triage.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser demo; no upload to a server, no account. Audio is processed client-side via the Web Audio API.",
+    "opsec": "passive",
+    "opsecNote": "Analysis runs entirely in your browser — the audio file is not sent anywhere, so there is no exposure of evidence to a third party. Safe to use on sensitive case audio, but confirm the page is genuinely client-side (it is, via Web Audio API) before relying on that.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Educational demo hosted by academo.org; it is a generic FFT visualizer, not a forensic-grade tool, so treat readings as leads for a human ear, not court evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Academo Spectrum Analyzer",
+      "Audio Spectrum Analyzer"
+    ],
     "tags": [
-      "Sound indefication and analyze"
+      "Sound indefication and analyze",
+      "audio-forensics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "geodesics-on-the-earth"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/mp3-spectrum-analyzer.md"
   },
   {
@@ -73825,38 +73804,52 @@
   },
   {
     "id": "openhunting-io",
-    "name": "OPENHUNTING.IO",
-    "description": "OSINT tool: OPENHUNTING.IO.",
+    "name": "OPENHUNTING.IO Threat Library",
+    "description": "Use when you have a `domain`/`ip-address` or a malware/threat-actor name and want threat-intelligence context — returns associated IOCs, aliases, and infrastructure.",
     "url": "https://openhunting.io/threat-library",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up malware families, threat-actor tools, and their indicators of compromise, with a built-in WHOIS lookup.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public web interface with free access to the threat library and WHOIS lookup; some advanced hunting features and reports may be gated.",
+    "opsec": "passive",
+    "opsecNote": "Searching the threat library and running its WHOIS is a lookup against openhunting.io's own dataset, not a direct probe of the target host, so it does not alert an operator. As always, submitting a live domain/IP tells the service what you are investigating — use a sock-puppet account/IP if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent threat-intelligence project (openhunting.io) aggregating malware/tooling IOCs with update timestamps and a public GitHub presence; community-maintained, so coverage and freshness vary by entry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OpenHunting Threat Library",
+      "openhunting.io"
+    ],
     "tags": [
-      "threat-actor-search"
+      "threat-actor-search",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/openhunting-io.md"
   },
   {
@@ -75944,45 +75937,52 @@
   {
     "id": "regex-checker",
     "name": "Regex Checker",
-    "description": "Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses",
+    "description": "Use when you are viewing a `domain`/webpage and want to auto-highlight and extract selectors from it — returns `email`, `phone`, and `address` matches found on the page.",
     "url": "https://chrome.google.com/webstore/detail/regex-checker/gkcnkoebkkppbapcjifgokmpcflfhbde",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click extraction of emails, phone numbers, dates, prices, and addresses from the page you are currently viewing.",
     "selectorsIn": [
-      "domain",
-      "email",
-      "phone"
-    ],
-    "selectorsOut": [
-      "address",
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "email",
+      "phone",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account, key, or in-app purchase. Runs locally in your browser.",
+    "opsec": "passive",
+    "opsecNote": "The extension parses the already-loaded page in your own browser — it generates no new request to the target and sends nothing to a server. Vet the extension's permissions on install (it needs to read page content); use a dedicated research browser profile to keep it off your personal browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Chrome Web Store extension by an independent developer; it runs client-side and does not call home, but it is not from a vetted vendor — review its store listing/permissions before trusting it on sensitive pages.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Regex Checker Chrome extension",
+      "Regex Scanner"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "Searchers, scrapers, extractors, parsers",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/regex-checker.md"
   },
   {
@@ -116808,39 +116808,54 @@
   {
     "id": "radioreference",
     "name": "RadioReference",
-    "description": "OSINT tool: RadioReference.",
+    "description": "Use when you have a `geolocation`/`address` or an agency name and want the radio frequencies, talkgroups, and scanner systems serving that area — returns local comms infrastructure tied to `employer-org`.",
     "url": "https://www.radioreference.com/apps/db/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up police/fire/EMS and other radio frequencies and trunked systems by US county, city, or agency.",
+    "selectorsIn": [
+      "geolocation",
+      "address",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core database browsing (frequencies, agencies, systems by location) is free; a paid Premium subscription unlocks full trunking/talkgroup detail, downloads, and live audio feeds.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are browsing a public database of publicly licensed radio infrastructure — no target is queried and nothing is notified. Optional free/Premium account ties browsing to an identity; browse logged-out or with a sock-puppet account to avoid linking searches to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running, well-known crowd-sourced database (RadioReference/RadioReference.com) cross-referenced with FCC ULS licensing data; entries are user-submitted so freshness varies by locality.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "radioreference-communications-wiki",
       "radioreference-station-search"
     ],
+    "aliases": [
+      "RadioReference Database",
+      "RR DB"
+    ],
+    "tags": [
+      "radio-frequencies",
+      "scanner"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/radioreference.md"
   },
   {
@@ -167722,46 +167737,6 @@
     "_file": "library/tools/opsec-investigator-tooling/google-translate-extension-chrome.md"
   },
   {
-    "id": "grammarly-lite-extension-chrome",
-    "name": "Grammarly Lite Extension (Chrome)",
-    "description": "Add-on for Google Chrome that performs spell-checking tasks",
-    "url": "https://chrome.google.com/webstore/detail/grammarly-spell-checker-g/kbfnbcaeplbcioakkpcpgfkobkghlhen",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/grammarly-lite-extension-chrome.md"
-  },
-  {
     "id": "grok-knowledge-base-for-phishing-scams",
     "name": "GROK Knowledge Base For Phishing Scams",
     "description": "Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns definitional/reference material, not lookup data.",
@@ -174297,46 +174272,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/tempmail-org-bot.md"
-  },
-  {
-    "id": "text-on-pictures-multimedia-app-mobile-ios",
-    "name": "Text On Pictures Multimedia App (Mobile – iOS)",
-    "description": "App for mobile devices for adding text to images",
-    "url": "https://itunes.apple.com/ca/app/text-on-pictures-add-text/id595086167?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/text-on-pictures-multimedia-app-mobile-ios.md"
   },
   {
     "id": "text-to-ascii-art-generator-taag",
@@ -258746,46 +258681,6 @@
     "_file": "library/tools/search-engines/disconnect-search.md"
   },
   {
-    "id": "discovery-family-channel",
-    "name": "Discovery Family Channel",
-    "description": "Kid-friendly website including television programs, educational programs",
-    "url": "https://www.discovery.com/discovery-family-channel",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/discovery-family-channel.md"
-  },
-  {
     "id": "disneysearch",
     "name": "DisneySearch",
     "description": "Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general OSINT value.",
@@ -266113,39 +266008,48 @@
   },
   {
     "id": "inventory-raw-pm",
-    "name": "Inventory Raw Pm",
-    "description": "Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.",
+    "name": "Rawsec Cybersecurity Inventory",
+    "description": "Use when you want to find a security/CTF/OSINT tool or resource by capability — returns a large searchable catalog of tools, platforms, and OSes (not selector lookups).",
     "url": "https://inventory.raw.pm/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a curated, tagged inventory (~1,700+ entries) of cybersecurity tools, CTF/bug-bounty platforms, operating systems, and resources.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open (MPL-2.0); no account or key. Fully browsable and searchable in-browser.",
+    "opsec": "passive",
+    "opsecNote": "A read-only tool directory — no target is queried and nothing about a subject is submitted. Only your own browsing (IP) is exposed to the host; the intelligence value is discovering the right tool, not data on a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Rawsec's CyberSecurity Inventory, maintained openly by Alexandre \"noraj\" Zanni under MPL-2.0 with a public git history; a well-known, actively curated meta-resource rather than an authoritative registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Rawsec Inventory",
+      "Rawsec's CyberSecurity Inventory",
+      "inventory.raw.pm"
+    ],
     "tags": [
       "Search engines",
-      "Bugbounty/vulnerabilities search tools"
+      "Bugbounty/vulnerabilities search tools",
+      "curated-directory"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/inventory-raw-pm.md"
   },
   {
@@ -295093,13 +294997,13 @@
   {
     "id": "finddit-viralharia",
     "name": "Finddit (viralharia)",
-    "description": "Reddit search tool (Finddit).",
+    "description": "Use when you have a `username` or a keyword and want to search Reddit posts/comments — returns matching Reddit `social-profile` activity.",
     "url": "https://viralharia.github.io/finddit",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Searching Reddit content",
+    "bestFor": "Keyword/username search across Reddit posts and comments from a lightweight web front-end.",
     "selectorsIn": [
       "username",
       "name"
@@ -295107,15 +295011,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-page web app; no account or key needed. Runs against Reddit's public search endpoints.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Reddit's public search, not the target's account, so the subject is not notified. The request originates from your browser/IP — use a sock-puppet session if you are searching a sensitive handle. No login means no footprint on your own Reddit identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community-built GitHub Pages front-end by a single developer (viralharia); it is a thin wrapper over Reddit's own search, so result accuracy tracks Reddit, but availability depends on one unaffiliated maintainer.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -295124,6 +295029,7 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
       "Reddit Search (viralharia)"
     ],
@@ -295132,8 +295038,8 @@
       "search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/finddit-viralharia.md"
   },
   {
@@ -328559,45 +328465,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/dictionary-com.md"
-  },
-  {
-    "id": "dictionary-com-translation",
-    "name": "Dictionary.com: Translation",
-    "description": "OSINT tool: Dictionary.com: Translation.",
-    "url": "http://translate.reference.com",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "reference-com"
-    ],
-    "_file": "library/tools/translation-language/dictionary-com-translation.md"
   },
   {
     "id": "emojitranslate-com",

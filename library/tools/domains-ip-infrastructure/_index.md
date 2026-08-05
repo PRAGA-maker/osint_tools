@@ -290,7 +290,7 @@ kind: group-index
 - **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab fo
-- **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
+- **`openhunting-io`** (low) — Use when you have a `domain`/`ip-address` or a malware/threat-actor name and want threat-intelligence context — returns associated IOCs, ali
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
 - **`openlink-structured-data-sniffer`** (low) — Use when you have a `domain`/page and want to extract the structured metadata embedded in it — returns schema.org Person/Organization data s
 - **`openlinkprofiler`** (low) — Use when you have a `domain` and want its backlink profile — returns the sites linking to it, revealing related properties, partners, and ne
@@ -315,7 +315,7 @@ kind: group-index
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
 - **`reconnor`** (low) — Use when you have a `domain`, `username`, or `email` and want a broad Python recon/OSINT toolkit in one place — returns subdomains, `social-
 - **`redirectdetective`** (low) — Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting i
-- **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
+- **`regex-checker`** (low) — Use when you are viewing a `domain`/webpage and want to auto-highlight and extract selectors from it — returns `email`, `phone`, and `addres
 - **`regexper`** (low) — Use when you have a regular expression and want to understand or debug it — pastes a regex and returns a railroad-diagram visualization; a h
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
 - **`remote-dns-lookup`** (low) — Use when you have an `ip-address` and want the domain name(s) and ISP behind it — returns reverse-DNS host and provider, a pivot from IP bac

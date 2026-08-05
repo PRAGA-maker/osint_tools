@@ -23,7 +23,7 @@ kind: group-index
 - **`api-guesser`** (low) — Use when you have a leaked API key/token and want to know which service it belongs to — returns the likely provider inferred from the key's 
 - **`apis-for-osint`** (low) — Use when you have a `phone`, `email`, `domain` or `ip-address` and want an API to enrich it — returns a curated directory of OSINT APIs mapp
 - **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
-- **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
+- **`appsec-fyi-osint-resources`** (low) — Use when you want a curated jump-list of OSINT reconnaissance tools and techniques — returns a vetted directory of external resources, not s
 - **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
 - **`ashok`** (low) — Use when you have a `domain`/URL (or GitHub `username`) and want a fast one-command recon sweep — returns subdomains, tech/CMS, DNS, open po
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
@@ -137,7 +137,6 @@ kind: group-index
 - **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
 - **`html-editor`** (low) — Use when you have raw or scraped HTML and want to view/clean/preview it — a free online WYSIWYG+source editor for inspecting markup and conv
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
-- **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
 - **`httrack`** (low) — Use when you have a `domain`/website URL and want a complete offline copy for preservation and analysis — returns a local mirror of the site
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
@@ -176,7 +175,7 @@ kind: group-index
 - **`mihari`** (low) — Use when you have an `ip-address`/`domain` indicator and want to hunt and monitor related infrastructure across many OSINT sources at once —
 - **`mitaka`** (low) — Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel ser
 - **`mozilla-http-observatory`** (low) — Use when you have a `domain` and want to assess a site's HTTP security posture (headers, TLS, cookies) — returns a security grade and config
-- **`mp3-spectrum-analyzer`** (low) — OSINT tool: MP3 Spectrum Analyzer.
+- **`mp3-spectrum-analyzer`** (low) — Use when you have an audio clip and want to see its frequency content — returns a live spectrogram to help identify or verify sounds (sirens
 - **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
 - **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.

@@ -231,7 +231,7 @@ kind: group-index
 - **`radio-sherlock`** (low) — Use when you have a radio callsign/term and want related amateur-radio data — returns search results across DX/ham-radio sources, useful for
 - **`radiocells-org`** (low) — Use when you have a WiFi BSSID (`mac-address`) or a cell-tower ID and want its physical location — returns `geolocation` from a community-co
 - **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa
-- **`radioreference`** (low) — OSINT tool: RadioReference.
+- **`radioreference`** (low) — Use when you have a `geolocation`/`address` or an agency name and want the radio frequencies, talkgroups, and scanner systems serving that a
 - **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.

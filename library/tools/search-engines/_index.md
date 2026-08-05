@@ -161,7 +161,6 @@ kind: group-index
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
 - **`disconnect-search`** (low) — Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. Duck
-- **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
 - **`document-search`** (low) — OSINT tool: Document Search.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
@@ -286,7 +285,7 @@ kind: group-index
 - **`international-trademark-search`** (medium) — Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and d
 - **`internet-archive`** (medium) — Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, a
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
-- **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
+- **`inventory-raw-pm`** (low) — Use when you want to find a security/CTF/OSINT tool or resource by capability — returns a large searchable catalog of tools, platforms, and 
 - **`irbis-by-espy`** (medium) — Use when you have a `name`, `email`, `phone`, `username`, or `image` and want an aggregated digital-identity profile — returns linked social
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
 - **`islegitsite`** (low) — Use when you have a `domain` and want a quick trust/scam assessment of a website — returns reputation, blocklist status, and HTTPS/popularit
