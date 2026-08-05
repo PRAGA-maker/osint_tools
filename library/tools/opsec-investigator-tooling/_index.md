@@ -77,7 +77,6 @@ kind: group-index
 - **`crontab-guru`** (low) — Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and ne
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
-- **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
 - **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
 - **`delete-me-free-opt-out-guide`** (low) — Use when you have a `name` exposed on data-broker/people-search sites and want to remove it — returns step-by-step opt-out instructions per 
@@ -262,7 +261,7 @@ kind: group-index
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
-- **`smstome-com`** (low) — OSINT tool: Smstome.com.
+- **`smstome-com`** (low) — Use when you need a free disposable phone number to receive an SMS verification code for a sock-puppet account — returns public temporary nu
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
 - **`snapchat-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and self-deleting messages
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 

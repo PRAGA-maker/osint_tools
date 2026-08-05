@@ -53,7 +53,7 @@ kind: group-index
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s
-- **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use
+- **`online-slang-dictionary`** (low) — Use when you have an unfamiliar slang term, abbreviation, or coded phrase from a subject's posts/messages and want its meaning, register, an
 - **`online-translator`** (low) — OSINT tool: Online Translator.
 - **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
 - **`paulschou-binary-translator`** (low) — Use when you have an encoded string (binary, hex, octal, base64, ASCII/ANSI) and want to convert it to readable text or between formats — re

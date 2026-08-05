@@ -467,7 +467,7 @@ kind: group-index
 - **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci
 - **`search-for-a-twitch-channel`** (low) — Use when you have a Twitch `username`/channel and want streaming stats, schedule and activity history — returns social-profile plus behaviou
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
-- **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
+- **`search-noc-social`** (low) — Use when you have a `username`, handle, or keyword and want to find matching accounts and posts across Mastodon/Fediverse instances — return
 - **`search-reddit-comments-by-user`** (medium) — Use when you have a Reddit `username` and want to search that user's comment history for keywords — returns matching comments with subreddit
 - **`search-reddit`** (medium) — Use when you have a `username` or keyword and want a subject's Reddit activity — returns matching posts/comments as a front-end over Reddit'
 - **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc

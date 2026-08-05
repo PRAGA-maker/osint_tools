@@ -82,7 +82,7 @@ kind: group-index
 - **`decopy-ai-image-detector`** (low) — Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to 
 - **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
-- **`defend-network`** (low) — OSINT tool: defend.network.
+- **`defend-network`** (low) — Use when you have a CVE, vendor, or product and want an AI-summarised, CISA/NVD-cross-referenced briefing on the current threat and exploita
 - **`dfir-platform`** (low) — Use when you have an `email`, `domain` or `ip-address` (or a suspicious message) and want automated enrichment/verdicts — returns IOC reputa
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Use when you want a broad reference index of OSINT and privacy tools/techniques — a curated (now archived) directory pointing to search engi

@@ -43,7 +43,6 @@ kind: group-index
 - **`factinsect`** (low) — Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict wi
 - **`feed-exileed`** (low) — OSINT tool: Feed Exileed.
 - **`feed-filter-maker`** (low) — Use when you have a `name`/`username` to monitor and want alerts only on relevant items — returns a filtered RSS/Atom feed URL matching your
-- **`feederator`** (low) — OSINT tool: Feederator.
 - **`feedly`** (low) — Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, se
 - **`feedreader`** (low) — Use when you have a subject's blog/site/news `domain` and want to monitor its updates over time — subscribe to its RSS feed and aggregate ne
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or

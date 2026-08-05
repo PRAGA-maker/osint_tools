@@ -276,7 +276,6 @@ kind: group-index
 - **`https-vulmon-com`** (medium) — Use when you have a `domain`/software or a CVE and want vulnerability intelligence — returns CVE details, affected products and exploit refe
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
-- **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
 - **`indeed-job-search-engine-canada`** (low) — Use when you have an `employer-org` or a person's trade/role in Canada and want employment context — returns job postings that reveal locati
@@ -317,7 +316,7 @@ kind: group-index
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
 - **`kiddle`** (low) — Use when you want to see the child-safe, filtered web view of a topic or name — a kid-oriented Google Custom Search that shows what young us
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
-- **`kids-search`** (low) — Kid-friendly search engine.
+- **`kids-search`** (low) — Use when you want to run a query through a child-safe search engine that surfaces kid-oriented pages and educational content — returns filte
 - **`kidsnet-search-engine-australia`** (low) — Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with
 - **`kidtopia`** (low) — Use when you want a teacher-curated, safe-search view of the web on a topic — returns filtered educational results from a Google Custom Sear
 - **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
@@ -627,7 +626,7 @@ kind: group-index
 - **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —
 - **`woboq-code-browser`** (medium) — Use when you need to read/navigate a C/C++ open-source codebase in the browser — returns cross-referenced, hyperlinked source for projects l
 - **`wolfram-alpha`** (low) — Use when you have a factual/quantitative question or a structured selector (a `name`, place, date, or number) and want a computed, sourced a
-- **`word-tracker`** (low) — OSINT tool: Word Tracker.
+- **`word-tracker`** (low) — Use when you have a topic, brand, or `username`/handle keyword and want to see the real search phrases and related terms people use around i
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
 - **`wordpress-custom-search`** (low) — Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable S
