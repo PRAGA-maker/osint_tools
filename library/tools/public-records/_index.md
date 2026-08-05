@@ -444,7 +444,7 @@ kind: group-index
 - **`international-trade-center`** (low) — Use when you have a country and want its official import/export trade statistics, top products and trading partners — returns aggregate trad
 - **`interpol-most-wanted-search-engine`** (low) — Use when you have a `name` and want to check for an Interpol notice — returns wanted/notice hits with photo, physical description, and natio
 - **`investing-com`** (medium) — Use when you have a public company or ticker and want its profile — returns business description, key executives, financials and filings con
-- **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — OSINT tool: Ioserv.com/en/jurisdictions/jurisdlist/.
+- **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — Use when you have an `employer-org` structured offshore and want a reference on its jurisdiction — returns jurisdiction/company-type context
 - **`iowa-cities-police-budgets`** (low) — Use when you need Iowa municipal police-budget figures for context or accountability research — returns a published comparison of police spe
 - **`iowa-courts-online-search`** (high) — Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/a
 - **`iowa-judicial-branch`** (high) — Use when you have a `name` and want Iowa state court cases — returns civil, criminal, traffic and other case records with parties, charges a

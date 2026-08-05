@@ -32,7 +32,7 @@ kind: group-index
 - **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
-- **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
+- **`cloudconvert`** (low) — Use when you have a `document-id`/file in an awkward format and want it in one you can inspect — returns a converted file whose `metadata-ex
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
@@ -141,7 +141,7 @@ kind: group-index
 - **`scoop-it`** (low) — Use when you have a `name`/`username` or a topic and want to find someone's publicly curated content pages — returns themed collections that
 - **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
 - **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima
-- **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
+- **`search-the-current-site`** (low) — Use when you're on a site and have a `name`/`username`/keyword to find across all its pages — returns matching pages via a one-click `site:`
 - **`shared-count`** (low) — Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-UR
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — Use when you have an RSS/Atom feed `url` and want a filtered version that only emits items matching your terms — returns a new feed `url` fo

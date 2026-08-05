@@ -31,7 +31,6 @@ kind: group-index
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
 - **`flockwatch`** (low) — Use when you have a corpus of collected social-media text (tweets/Reddit) and want it to surface trending or associated terms/usernames to e
 - **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
-- **`free-website-translation`** (low) — OSINT tool: Free Website Translation.
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
 - **`gizoogle-textilizer`** (low) — Use when you have a block of text and want it rendered into (or read back from) US "gangsta"/AAVE-style slang — a novelty language aid, retu
 - **`handspeak-english-sign-language`** (low) — Use when you have footage of someone signing and want to identify the signs — a video ASL dictionary to look up American Sign Language signs
@@ -53,7 +52,7 @@ kind: group-index
 - **`online-translator`** (low) — Use when a subject's text is in a language you don't read and you want it translated — returns a machine translation of pasted text or a phr
 - **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
 - **`paulschou-binary-translator`** (low) — Use when you have an encoded string (binary, hex, octal, base64, ASCII/ANSI) and want to convert it to readable text or between formats — re
-- **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
+- **`phrases-net`** (low) — Use when you have text from a subject and want to decode an unfamiliar idiom, phrase, or expression — returns meaning/usage to interpret `na
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
 - **`reddit-r-translator`** (low) — Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced la

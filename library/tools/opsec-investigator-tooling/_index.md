@@ -37,7 +37,6 @@ kind: group-index
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
-- **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
@@ -57,7 +56,6 @@ kind: group-index
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Use when you need to choose or vet investigator OpSec tooling (VPN, cloud storage, password manager, antivirus) — returns independent review
 - **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files
-- **`coowon`** (low) — OSINT tool: Coowon.
 - **`coveryourtracks-eff-org`** (low) — Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uni
 - **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
 - **`credit-card-generator`** (low) — Use when building a sock-puppet persona and a form demands a Luhn-valid card number for format validation — generates fake, non-functional t
@@ -89,7 +87,6 @@ kind: group-index
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
-- **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`fireball-search-engine-germany`** (low) — Use when you have a `name`, `username`, or German-language term and want a privacy-focused, non-tracking search over German/European web con
 - **`fireshot`** (low) — Use when you have a web page you need to preserve as evidence and want a full-length screenshot saved as PDF/PNG — returns a captured, times
 - **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
@@ -256,7 +253,6 @@ kind: group-index
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
-- **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects

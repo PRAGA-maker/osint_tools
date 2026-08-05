@@ -182,7 +182,6 @@ kind: group-index
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.
 - **`monitor-tracking-civic-space-worldwide-map`** (low) — Use when you have a country/`geolocation` and want its civic-space rating and recent rights conditions — returns country civic-freedom ratin
 - **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc
-- **`murph-live`** (low) — OSINT tool: @murph\_live.
 - **`native-land-ca`** (medium) — Use when you have a `geolocation` and want the Indigenous nations, languages and treaties historically tied to that point — returns territor
 - **`natural-hazards-map-worldwide`** (medium) — Use when you have a `geolocation`/`address` and want its natural-hazard exposure (flood, quake, wind/hail) — returns hazard-zone `geolocatio
 - **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
@@ -231,6 +230,7 @@ kind: group-index
 - **`radiocells-org`** (low) — Use when you have a WiFi BSSID (`mac-address`) or a cell-tower ID and want its physical location — returns `geolocation` from a community-co
 - **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa
 - **`radioreference`** (low) — Use when you have a `geolocation`/`address` or an agency name and want the radio frequencies, talkgroups, and scanner systems serving that a
+- **`railcabrides`** (low) — Use when you have a rough `geolocation` on or near a railway line and want ground-level video to confirm it — returns cab-view footage as `g
 - **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.

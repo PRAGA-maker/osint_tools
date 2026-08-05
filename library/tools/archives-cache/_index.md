@@ -68,7 +68,7 @@ kind: group-index
 - **`ricks-apps-com`** (medium) — Use when you have a `domain`/URL and want a full local, offline copy of the site before it changes or disappears — returns a browsable mirro
 - **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
 - **`rss-feed-reader`** (low) — Use when you have a `domain`/site tied to a subject and want to monitor its new posts passively via RSS — a monitoring aid, surfaces social-
-- **`rss-micro`** (low) — OSINT tool: RSS Micro.
+- **`rss-micro`** (low) — Use when you have a `name`, `domain`, or keyword and want to find and monitor RSS/Atom feeds mentioning it — returns matching feeds/posts po
 - **`rssowl`** (low) — Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS
 - **`scrapestorm-com`** (medium) — Use when you have a `domain` or target web page and want to bulk-extract structured data (emails, phones, names, listings) without coding — 
 - **`selfoss`** (low) — Use when you want a private, self-hosted feed of many sources (RSS/Atom, scraped pages, social feeds) to monitor a subject or topic over tim

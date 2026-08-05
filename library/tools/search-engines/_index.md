@@ -27,7 +27,7 @@ kind: group-index
 - **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
 - **`abc-search-engine`** (medium) — Use when you have a name, username, or domain and want an alternate general web-search index to catch links a mainstream engine ranks differ
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
-- **`abilogic`** (low) — Business web directory
+- **`abilogic`** (low) — Use when you have an `employer-org` or business `name` and want a directory listing for it — returns the business's `domain` and `address`.
 - **`aboutus`** (low) — Use when you have a `domain` and want a legacy profile of a website/business — a wiki of site descriptions and contact info, now largely arc
 - **`abusech`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `d
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
@@ -160,7 +160,7 @@ kind: group-index
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
 - **`dorkgenius`** (low) — Use when you have a target (a `name`, `domain`, filetype, or keyword) and want ready-made advanced search-engine dorks for Google/Bing/DuckD
 - **`dorkgpt`** (low) — Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced searc
-- **`dpa-international`** (low) — OSINT tool: DPA International.
+- **`dpa-international`** (low) — Use when you have a `name` or `employer-org` and want English-language wire coverage of them — returns news mentions surfacing `associate` a
 - **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
 - **`duckduckgo-bangs`** (low) — Use when you want to jump a query straight into a specific site's search from one box — thousands of !shortcuts (e.g. !g, !w, !gh) that rout
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
@@ -334,7 +334,6 @@ kind: group-index
 - **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
 - **`mamont-s-open-ftp-index`** (low) — Use when you have a filename/keyword and want files exposed on public FTP servers — returns FTP hosts and paths hosting matching files.
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
-- **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
 - **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
@@ -372,7 +371,7 @@ kind: group-index
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
-- **`oa-mg`** (low) — OSINT tool: OA.mg.
+- **`oa-mg`** (low) — Use when you have a `name` and want their academic output — returns papers, co-authors (`associate`), and affiliation (`employer-org`) from 
 - **`occrp-org`** (medium) — Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated di
 - **`oceanhero`** (medium) — Use when you want a Bing-backed alternate search front-end to cross-check or de-personalize web results — returns web results powered by Mic
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with

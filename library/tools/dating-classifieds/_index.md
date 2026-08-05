@@ -78,7 +78,7 @@ kind: group-index
 - **`searchalljunk`** (high) — Use when you want to query multiple classifieds/marketplace sources from one box — a meta-search front-end for second-hand listings across p
 - **`secretfans`** (low) — Use when you have a `name`/`username` or traits and want a subject's OnlyFans presence — returns matching creator `social-profile`s.
 - **`sotugas-net`** (medium) — Use when you have a `username` or `name` and want a Portuguese creator profile — returns a directory listing of Portugal-based OnlyFans crea
-- **`sotugas`** (low) — Portuguese OnlyFans directory.
+- **`sotugas`** (low) — Use when you have a `name` or `username` you suspect belongs to a Portuguese adult-content creator — returns their OnlyFans `social-profile`
 - **`spark-com`** (high) — Use when a subject may use a relationship-oriented dating site — search Spark by area/age/interests to surface a profile photo, bio, and app
 - **`tantan`** (high) — Use when an East-Asia / Chinese-diaspora subject may use a Tinder-style swipe app — surface a profile photo, age, and approximate location v
 - **`the-west-classifieds-australia`** (medium) — Use when you have a `name` or `phone` tied to Western Australia and want ads, notices or listings they posted — returns contact `phone`, `ad

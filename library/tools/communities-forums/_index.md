@@ -82,7 +82,6 @@ kind: group-index
 - **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`financial-post`** (low) — Use when you have a `name` or `employer-org` and want to search Canadian business-news coverage for mentions — returns article context linki
 - **`flicksurfer-com`** (low) — Use when you want to rank/discover Netflix titles by aggregated critic and user ratings — a niche media-discovery site, not a people or infr
-- **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`footballforums-net`** (medium) — Use when you have a `username` tied to football fandom and want their forum presence — returns their profile, posts and club allegiance, exp
 - **`forum-cyclinguk-org`** (medium) — Use when you have a `username` that may belong to a UK cyclist and want their forum footprint — returns the member's `social-profile`, posts
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi

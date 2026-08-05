@@ -57,7 +57,6 @@ kind: group-index
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
 - **`pirate-bay`** (low) — Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public to
 - **`pitch`** (low) — Use when you have a `username` or handle and want to check a Tor-based Twitter/X-style social network frequented by threat actors — returns 
-- **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose serv
@@ -69,7 +68,6 @@ kind: group-index
 - **`tool-path`** (low) — Use when you have a `crypto-wallet` xpub or seed and want to enumerate the addresses it derives — returns the child addresses/keys for a giv
 - **`top-guns`** (low) — OSINT tool: Top Guns.
 - **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
-- **`torbox`** (low) — OSINT tool: TorBox.
 - **`torry-io`** (low) — Use when you have a keyword, `username`, or onion `domain` and want to search Tor/dark-web content from a normal browser — returns onion lin
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil

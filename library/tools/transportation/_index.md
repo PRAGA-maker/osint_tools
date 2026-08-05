@@ -124,7 +124,7 @@ kind: group-index
 - **`openstreetmap-public-transport`** (low) — Use when you have a `geolocation`/area and want its public-transit network — returns downloadable tram/bus/metro/train route data from OpenS
 - **`orto-website`** (medium) — Use when you have a US `vehicle-plate`, `vin`, or photo of a car and want its history and specs — returns make/model/year, VIN, specs, valua
 - **`oscar-job-function-codes-united-kingdom`** (medium) — Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a p
-- **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
+- **`osint-on-the-ocean`** (low) — Use when your subject involves a ship, port, or the sea and you want a method — returns a techniques playbook pointing to `geolocation`/vess
 - **`partial-number-plate-search`** (medium) — Use when you have only part of a UK `vehicle-plate` (from a witness or dashcam) and want to shortlist the full plate — narrow candidates wit
 - **`passenger-airlines-wiki`** (low) — Use when you have an airline `name`, IATA/ICAO code, or callsign and want to resolve it to its country, hub and operating status — returns g
 - **`plane-finder`** (low) — Use when you have a flight number, aircraft registration, or `geolocation` and want live/historical ADS-B flight tracking — returns geolocat

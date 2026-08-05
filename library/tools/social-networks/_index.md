@@ -505,7 +505,7 @@ kind: group-index
 - **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
 - **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
 - **`social-stats`** (medium) — Use when you have a VK community/user `username` or `name` and want engagement and activity statistics for that VKontakte page — returns soc
-- **`social-trends`** (low) — OSINT tool: Social Trends.
+- **`social-trends`** (low) — Use when you have a `name`, `username`, or keyword and want public social posts about it — returns cross-network `social-profile` mentions v
 - **`socialbearing`** (high) — Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns 
 - **`socialblade`** (high) — Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles
 - **`socialdata-api`** (medium) — Use when you have a `username` or `name` and want Twitter/X profile and tweet data programmatically — returns social profiles, posts, and fo
