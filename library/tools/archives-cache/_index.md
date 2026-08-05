@@ -51,7 +51,6 @@ kind: group-index
 - **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
 - **`index-commoncrawl-org`** (medium) — Use when you have a `domain` and want every URL Common Crawl captured for it — returns archived URLs (`document-id`s) with pointers to the s
 - **`industrydocuments-ucsf-edu`** (medium) — Use when you have a `name` (executive, scientist, lobbyist) or `employer-org` and want their internal industry documents — returns document-
-- **`infominder`** (low) — OSINT tool: InfoMinder.
 - **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
 - **`lumen`** (low) — Use when you have a `domain`, URL, or company/person `name` and want to find legal takedown notices (DMCA, court orders) filed against onlin
 - **`lux-leaks`** (medium) — Use when you have an `employer-org` (a large company) and want to know if it appears in the Luxembourg Leaks tax-ruling investigation — retu

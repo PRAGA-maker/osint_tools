@@ -34,7 +34,6 @@ kind: group-index
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — Use when you need to discover a category of OSINT/recon tool (username enumeration, breach lookup, subdomain discovery) and want a vetted, c
-- **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — Use when you need to discover threat-intelligence sources, feeds and tools — a curated GitHub directory; returns pointers to other tools rat
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
@@ -142,7 +141,6 @@ kind: group-index
 - **`intelhub`** (medium) — Use when you are investigating in-browser and have a `username`, `image`, url or block of text — a browser extension that runs Telegram prof
 - **`intellyweave`** (medium) — Use when you have a pile of documents (`document-id`, PDFs/DOCX) and want AI-driven entity extraction and link analysis — returns names, org
 - **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic
-- **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — Use when you have a `domain` and want to catch secrets it leaks in front-end code — scans a site's pages/JS and returns exposed API keys, to
@@ -224,7 +222,7 @@ kind: group-index
 - **`probe-spider`** (medium) — Use when you have a mixed selector (username, email, phone, domain, IP, image) and want a single Python tool to run broad recon across each 
 - **`profounder`** (low) — Use when you have a `username`/nickname and want to hunt for accounts and harvest URLs from a page — returns candidate profiles and scraped 
 - **`psn-monitor`** (low) — Use when you have a subject's PlayStation Network `username`/PSN ID and want to track their online presence — monitors online/offline status
-- **`pyba`** (low) — OSINT tool: Pyba.
+- **`pyba`** (low) — Use when a lookup needs repeatable browser steps and you have an `email`/`username`/`domain` to run — returns extracted data plus a reusable
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
 - **`python-osint-automation-examples`** (low) — Use when you want to script or automate an OSINT task in Python — returns copy-ready code snippets for common OSINT workflows.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
@@ -232,7 +230,6 @@ kind: group-index
 - **`quick-hashtags-and-keywords-search`** (low) — Use when you have a `username`, hashtag or keyword and want to sweep it across ~89 social platforms at once — returns direct search links pe
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
-- **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries 
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — Use when you have RSA key parameters (n, e, d, p, q) or ciphertext from a CTF/crypto artifact and want to encrypt, decrypt, or factor small 
 - **`s-i-g-i-t`** (low) — Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks,

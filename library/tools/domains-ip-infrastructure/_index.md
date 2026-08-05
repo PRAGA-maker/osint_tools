@@ -344,7 +344,7 @@ kind: group-index
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Use when you have a `domain` or `ip-address` and want automated recon (WHOIS, reverse-IP, subdomains, nameservers, Cloudflare detection) — r
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
-- **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
+- **`smallseotools`** (low) — Use when you have an `image` or a block of a subject's text and want to find where it came from — returns reverse-image hits and duplicate-c
 - **`smart-ruler`** (low) — Use when you have an on-screen `image`/web element and want to measure pixel distances, angles, and dimensions — a measurement aid for image
 - **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
 - **`snyk-io`** (low) — Use when you have a `domain`/codebase and want to find its known-vulnerable dependencies and web weaknesses — returns a vulnerability report
@@ -354,7 +354,6 @@ kind: group-index
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-cli
-- **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
 - **`stylifyme`** (low) — Use when you have a `domain` and want its visual style fingerprint — returns the site's colour palette, fonts, sizes and spacing as a downlo

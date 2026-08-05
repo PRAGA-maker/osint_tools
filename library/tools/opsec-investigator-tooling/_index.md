@@ -99,7 +99,7 @@ kind: group-index
 - **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
-- **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
+- **`google-analytics-opt-out-extension-chrome`** (low) — Use when you're browsing targets and want to shrink your own analytics footprint — returns nothing about a subject; it hardens the investiga
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other s
@@ -108,12 +108,10 @@ kind: group-index
 - **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
-- **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
 - **`hola-vpn`** (low) — Use when you want to change your apparent egress country for casual geo-unblocking — but note it is a peer-to-peer network with a poor priva
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
-- **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
 - **`iid-generator-by-georgy-bunin`** (low) — Use when you have an Israeli ID number (`document-id`) to validate, or need a format-valid Israeli ID for a sock puppet — returns a valid/in
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
@@ -125,7 +123,6 @@ kind: group-index
 - **`kasm`** (low) — Use when you need a disposable, isolated browser/desktop for safe investigative browsing — returns a streamed container that keeps malware a
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
-- **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
 - **`ldplayer-net`** (low) — Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for s
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
@@ -142,16 +139,14 @@ kind: group-index
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
 - **`mega`** (low) — Use when you have a MEGA share link (from a breach dump, dark-web post, or a subject's shared folder) and want to inspect/preserve its conte
-- **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
+- **`memuplay-com`** (low) — Use when a lead lives in a mobile-only app and you have no phone to run it — returns a sandboxed Android environment to operate the app from
 - **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
-- **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Use when you want a lightweight, minimal-footprint web browser for a disposable/low-resource investigation VM — a small independent browser,
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
 - **`nino-generator`** (low) — Use when you're building a UK sock-puppet identity and need a plausibly-formatted but fake National Insurance Number for a test field — retu
-- **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
@@ -238,7 +233,6 @@ kind: group-index
 - **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
 - **`upload-files-to-ipfs-from-browser`** (low) — Use when you (an investigator) need censorship-resistant, tamper-evident hosting of a file — a browser panel that pins a file to IPFS and re
-- **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.
 - **`vcc-generator`** (low) — Use when you are building a sock-puppet identity and need a Luhn-valid test card number to satisfy a signup form — returns fake but structur
 - **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
@@ -252,7 +246,6 @@ kind: group-index
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
-- **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects

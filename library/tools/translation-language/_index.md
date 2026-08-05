@@ -28,7 +28,6 @@ kind: group-index
 - **`definitions-net`** (low) — Use when you have a foreign or unfamiliar term from collected material and want a definition plus translation in 40+ languages — returns pla
 - **`emojitranslate-com`** (low) — Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji s
 - **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
-- **`evernote-com`** (low) — OSINT tool: evernote.com.
 - **`flockwatch`** (low) — Use when you have a corpus of collected social-media text (tweets/Reddit) and want it to surface trending or associated terms/usernames to e
 - **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake

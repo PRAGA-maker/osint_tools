@@ -68,7 +68,7 @@ kind: group-index
 - **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
 - **`awesome-public-datasets`** (low) — Use when you need a free public dataset on a topic (government, geography, health, social, finance) and want a curated index of where to get
-- **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
+- **`awesome-recon-tools`** (low) — Use when you're stuck for the right tool and want a categorized menu of recon/footprinting options — returns a curated directory pointing to
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
 - **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
 - **`ballotpedia-united-states`** (medium) — Use when you have a `name` of a US politician, candidate, or public official and want their verified biography, offices held, and campaign/e
@@ -161,7 +161,6 @@ kind: group-index
 - **`dorkgenius`** (low) — Use when you have a target (a `name`, `domain`, filetype, or keyword) and want ready-made advanced search-engine dorks for Google/Bing/DuckD
 - **`dorkgpt`** (low) — Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced searc
 - **`dpa-international`** (low) — Use when you have a `name` or `employer-org` and want English-language wire coverage of them — returns news mentions surfacing `associate` a
-- **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
 - **`duckduckgo-bangs`** (low) — Use when you want to jump a query straight into a specific site's search from one box — thousands of !shortcuts (e.g. !g, !w, !gh) that rout
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
 - **`ecosia-search-engine`** (medium) — Use when you want a privacy-respecting general web search from a different index than Google — returns web results (name/username/domain men
@@ -567,7 +566,6 @@ kind: group-index
 - **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
 - **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie
 - **`web-archive-search-tool`** (low) — Use when you have a `name`, `username`, or keyword and want archived (Wayback/Archive.org) texts, images, video, audio, and software — retur
-- **`web-directories`** (low) — Directory of web directories
 - **`web-search-navigator`** (low) — Use when you run high volumes of searches and want keyboard-driven navigation of results across Google, YouTube, GitHub and more — a product
 - **`webcam-hopper`** (medium) — Use when you have a `geolocation`/`address` and want live public webcam views of that area — returns live `image` feeds searchable by countr
 - **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof

@@ -91,7 +91,7 @@ kind: group-index
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
 - **`identify-plans`** (low) — Use when you have an `image` of vegetation in a photo and want to identify the plant species — narrows the `geolocation` by matching flora t
 - **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
-- **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`indiegogo`** (low) — Use when you have a `name`, `username`, or project and want their crowdfunding footprint — returns campaigns exposing `employer-org`, `assoc
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
 - **`inmatrix-zoomplayer`** (low) — Use when you have a recovered/unusual `image` or video file that standard players will not open — plays a very wide range of media formats s
 - **`instapaper`** (low) — Use when you have a target `domain`/URL and want to capture its readable text for offline review and evidence-keeping — returns a saved, de-
@@ -113,7 +113,6 @@ kind: group-index
 - **`mendeley-academic-research-manager`** (low) — Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
 - **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
-- **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mutagen`** (low) — Use when you have an audio file and want its embedded metadata — returns `metadata-exif`-style tags (artist, encoder, timestamps, comments) 
 - **`occupational-outlook-handbook-it-united-states`** (low) — Use when you have a claimed US IT job title or salary and want to sanity-check it against official occupation data — a reference source, ret
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
@@ -147,7 +146,6 @@ kind: group-index
 - **`siftrss-com`** (low) — Use when you have an RSS/Atom feed `url` and want a filtered version that only emits items matching your terms — returns a new feed `url` fo
 - **`site-dorks`** (low) — Use when you have a search term (a `name`, email, or keyword) and want to dork it across many curated OSINT sites and multiple engines at on
 - **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
-- **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (medium) — Use when you have a `username`, `email`, key, or code string and want to search across public open-source repositories at scale — returns em
