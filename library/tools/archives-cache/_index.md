@@ -37,7 +37,6 @@ kind: group-index
 - **`cybdetective-com`** (medium) — Use when you have a `domain`/URL and want a fast year-by-year view of its history — pulls one Wayback Machine snapshot per year for side-by-
 - **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 
 - **`deltafeed`** (low) — Use when you have a `domain` or web page with no RSS feed and want to be alerted when it changes — returns an RSS/email feed of page-content
-- **`diggreader`** (low) — OSINT tool: DiggReader.
 - **`directory-of-open-access-journals`** (low) — Use when you have a `name`/topic and want peer-reviewed open-access articles and journals — returns free full-text scholarly records for res
 - **`distill-io`** (low) — Use when you have a `domain`/URL and want to be alerted the moment a page changes — returns change notifications and a diff of what changed.
 - **`factinsect`** (low) — Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict wi

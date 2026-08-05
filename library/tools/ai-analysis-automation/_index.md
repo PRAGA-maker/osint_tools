@@ -30,7 +30,7 @@ kind: group-index
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
 - **`awesome-forensics`** (low) — Use when you need to pick a digital-forensics tool for a task — returns a curated, categorised list of free/open-source forensic analysis to
 - **`awesome-hacking`** (low) — Use when you need to discover a technique or tool for a specific security/forensics task — returns a curated index of hacking tutorials, too
-- **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
+- **`awesome-honeypots`** (low) — Use when you need to stand up a honeypot or understand deception tooling — returns a curated, categorized index of free/open-source honeypot
 - **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — Use when you need to discover a category of OSINT/recon tool (username enumeration, breach lookup, subdomain discovery) and want a vetted, c
@@ -150,7 +150,7 @@ kind: group-index
 - **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
-- **`listify`** (low) — OSINT tool: Listify.
+- **`listify`** (low) — Use when you have case data in a Google Sheet and want a fast searchable web listing of it — returns a formatted, filterable page from your 
 - **`localfocus`** (low) — Use when you have a dataset (or an `address`/region) and want to turn it into maps and charts for analysis — returns geographic visualizatio
 - **`lockbin`** (low) — Use when you need to send sensitive findings/files to a recipient securely — returns an encrypted, browser-accessible message the recipient 
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi

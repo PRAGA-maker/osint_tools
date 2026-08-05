@@ -138,7 +138,6 @@ kind: group-index
 - **`crt-certificate-search`** (medium) — Use when you have a `domain` and want every TLS certificate ever issued for it — returns subdomains, issuance dates, issuing CA and any `ema
 - **`cse-utopia`** (medium) — Use when you have any selector and want a big curated set of Google Custom Search Engines to pivot it — returns links to purpose-built CSEs 
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
-- **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
 - **`cyber-criminals-most-wanted`** (low) — Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource p
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — Use when you have a keyword, `domain` or filename and want cybersecurity documents, reports and datasets — a curated Google CSE scoped to in
@@ -153,7 +152,7 @@ kind: group-index
 - **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/tee
-- **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
+- **`direct-download-almost-anything`** (low) — Use when you have a filename, title, or keyword and want to find it sitting on a publicly-exposed open directory — returns direct-download l
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
 - **`disconnect-search`** (low) — Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. Duck
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
@@ -324,7 +323,6 @@ kind: group-index
 - **`library-genesis`** (low) — Use when you have an author `name` or a title and want to find/read the books or academic papers behind it — returns document metadata and `
 - **`lilo`** (medium) — Use when you want an alternate (French) search front-end to cross-check results outside your usual engine — returns general web results with
 - **`limetorrents`** (medium) — Use when you have a `username`/uploader handle or a content keyword and want to see torrents linked to it — returns uploader `social-profile
-- **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results

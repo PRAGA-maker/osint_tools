@@ -804,40 +804,45 @@
   {
     "id": "awesome-honeypots",
     "name": "awesome-honeypots",
-    "description": "OSINT tool: awesome-honeypots.",
+    "description": "Use when you need to stand up a honeypot or understand deception tooling — returns a curated, categorized index of free/open-source honeypots and related components (no selectors).",
     "url": "https://github.com/paralax/awesome-honeypots",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A comprehensive, maintained catalog of open-source honeypots and deception components by category.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public GitHub \"awesome list\"; free to read, the listed tools are themselves free/open source.",
+    "opsec": "passive",
+    "opsecNote": "Reading the list is passive. The tools it catalogs are defensive/deception software — deploying a honeypot is an infrastructure decision with its own exposure and legal considerations; scope and authorize any deployment properly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known, heavily-starred (~10k) community awesome-list with hundreds of commits and active maintenance; a reference index, not a single tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "awesome honeypots",
+      "paralax/awesome-honeypots"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "honeypots",
+      "defensive-security"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "recon-ng-paralax-fork"
-    ],
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/awesome-honeypots.md"
   },
   {
@@ -7212,37 +7217,44 @@
   {
     "id": "listify",
     "name": "Listify",
-    "description": "OSINT tool: Listify.",
+    "description": "Use when you have case data in a Google Sheet and want a fast searchable web listing of it — returns a formatted, filterable page from your spreadsheet (a presentation utility, no selectors).",
     "url": "http://listify.okfnlabs.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a Google Spreadsheet of records into a searchable, shareable web listing in seconds.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool from Open Knowledge Foundation Labs; you supply your own Google Sheet.",
+    "opsec": "passive",
+    "opsecNote": "Listify renders a listing from a Google Sheet you control. Anything you publish/embed becomes web-accessible, so never Listify sensitive case data you don't intend to expose. It is a presentation layer for data you already hold — no target is contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by the Open Knowledge Foundation; a simple, transparent spreadsheet-to-listing converter, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OKFN Listify",
+      "listify.okfnlabs.org"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-presentation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/listify.md"
   },
   {
@@ -17076,45 +17088,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/deltafeed.md"
-  },
-  {
-    "id": "diggreader",
-    "name": "DiggReader",
-    "description": "OSINT tool: DiggReader.",
-    "url": "http://digg.com/login?next=%2Freader",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "digg"
-    ],
-    "_file": "library/tools/archives-cache/diggreader.md"
   },
   {
     "id": "directory-of-open-access-journals",
@@ -30811,46 +30784,6 @@
       "reddit-r-translator"
     ],
     "_file": "library/tools/communities-forums/reddit-old-reddit-search.md"
-  },
-  {
-    "id": "redditlist",
-    "name": "Redditlist",
-    "description": "OSINT tool: Redditlist.",
-    "url": "http://redditlist.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/redditlist.md"
   },
   {
     "id": "rediff-web-portal-india",
@@ -45142,24 +45075,31 @@
   {
     "id": "evite",
     "name": "Evite",
-    "description": "Website related to event invitation and party planning",
-    "url": "http://www.evite.com",
+    "description": "Use when you have a `name` or an event and want a subject's party/event footprint — returns event details, host/guest `name`s, dates, and locations from public or shared Evite invitations.",
+    "url": "https://www.evite.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering event context (host, guests, date, venue) from a shared or indexed Evite invitation.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to create/receive invitations; premium designs are paid. There is no public search — you reach content via a shared link or a search engine.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a shared/public invite link is passive. Do NOT RSVP, comment, or sign in to an invitation you are investigating — that notifies the host and other guests and burns your access. Open links in a sock-puppet browser and never interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Evite is a legitimate, long-running invitation platform, but it is not a searchable OSINT database — its value is incidental, when an invite URL leaks or gets indexed.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -45168,15 +45108,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Evite.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "events"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/evite.md"
   },
   {
@@ -46412,37 +46355,46 @@
   {
     "id": "gdrive-copy",
     "name": "Gdrive-copy",
-    "description": "The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done using third-party applications",
+    "description": "Use when you have a shared Google Drive folder you need to preserve or clone (you cannot copy folders natively) — returns a full copy owned by you, with subfolders and files.",
     "url": "https://script.google.com/macros/s/AKfycbxbGNGajrxv-HbX2sVY2OTu7yj9VvxlOMOeQblZFuq7rYm7uyo/exec",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Cloning an entire shared Google Drive folder tree into your own account for preservation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free open-source Google Apps Script web app (ericyd/gdrive-copy); no payment, only Google OAuth.",
+    "opsec": "active",
+    "opsecNote": "Copying reads the source folder with YOUR authenticated Google account — the copy operation and access can appear in the owner's Drive activity/audit log if they own or watch the folder. To preserve evidence quietly, prefer downloading files individually, or use a dedicated sock-puppet Google account that you have deliberately given access. The app itself stores no data about your account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by ericyd; the source is public on GitHub and the app declares it stores no user data, but you are granting a third-party Apps Script broad Drive OAuth scope — review before authorizing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "gdrive-copy",
+      "Google Drive folder copier"
+    ],
     "tags": [
-      "Files"
+      "Files",
+      "evidence-preservation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/gdrive-copy.md"
   },
   {
@@ -47891,8 +47843,8 @@
   },
   {
     "id": "joe-apk-analyzer",
-    "name": "Joe APK Analyzer",
-    "description": "Android malware analysis with dynamic behavior monitoring",
+    "name": "Joe APK Analyzer (Joe Sandbox)",
+    "description": "Use when you have an Android `.apk` (e.g. stalkerware or a suspicious app off a subject's device) and want its behavior and IOCs — returns a malware/behavior report with network, permissions, and device-id artifacts.",
     "url": "https://www.apk-analyzer.net/",
     "category": "documents-metadata",
     "path": [
@@ -47900,34 +47852,50 @@
       "hosted-automated-analysis",
       "android"
     ],
-    "bestFor": "Android malware analysis with dynamic behavior monitoring",
-    "input": "Android APK files",
-    "output": "Malware detection, behavioral analysis, threat intelligence IOCs",
+    "bestFor": "Dynamic + static analysis of an Android APK to reveal its behavior, network callbacks, and IOCs.",
+    "input": "Android APK file",
+    "output": "Behavior report, network/C2 indicators, permissions, extracted artifacts (`ip-address`, `domain`, `device-id`)",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "freemium",
     "opsec": "active",
-    "opsecNote": "File uploads to external sandbox; free tier has limitations",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You upload the APK to Joe Sandbox's cloud, so the file leaves your control and the analysis is visible to the vendor; free/Community reports may be published publicly. Never upload an APK that itself contains a victim's private data, and assume any C2 the sample contacts may log the sandbox's activity. Use the paid tier if you need private reports.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Joe Sandbox (Joe Security) is a well-established commercial malware-analysis platform; apk-analyzer.net now redirects to its unified Cloud service, which has a free Community/Basic tier.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Joe Sandbox",
+      "Joe Sandbox Cloud Basic",
+      "apk-analyzer.net"
+    ],
+    "tags": [
+      "android",
+      "malware-analysis",
+      "sandbox"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/android/joe-apk-analyzer.md"
   },
   {
@@ -60267,43 +60235,49 @@
   },
   {
     "id": "dorks-faisalahmed-me",
-    "name": "dorks.faisalahmed.me",
-    "description": "online constructor of google dorks for searching \"sensitive\" wesite pages",
+    "name": "dorks.faisalahmed.me (ReconNexus)",
+    "description": "Use when you have a `domain` and want a one-page launcher of recon/OSINT lookups (DNS, breach, dork-style queries) for it — returns links out to those tools, not data itself.",
     "url": "https://dorks.faisalahmed.me",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A single-page recon dashboard that fans a target domain out to ~15+ DNS/OSINT/breach lookups.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web app; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The page itself just builds and links out to queries, so loading it is passive. But each link you follow runs a real lookup against the target `domain` on a third-party service — some (breach lookups, active DNS/port tools) are active or logged. Treat the OpSec of each destination tool individually and use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A personal project (formerly a Google-dork constructor, now branded \"ReconNexus\"); it aggregates links to external tools, so its value is convenience, not any first-party data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ReconNexus",
+      "faisalahmed dorks"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dorks-faisalahmed-me.md"
   },
   {
@@ -73390,40 +73364,6 @@
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/pulsedive.md"
   },
   {
-    "id": "punkspider",
-    "name": "Punkspider",
-    "description": "OSINT tool: Punkspider.",
-    "url": "https://punkspider.org/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/punkspider.md"
-  },
-  {
     "id": "pydork",
     "name": "PyDork",
     "description": "Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yahoo Japan — returns result URLs, domains and matching images from multiple engines at once.",
@@ -75720,29 +75660,31 @@
   {
     "id": "securityfocus",
     "name": "SecurityFocus",
-    "description": "OSINT tool: SecurityFocus.",
+    "description": "Use when you have a software product/version and want its historical vulnerability advisories and Bugtraq discussion — returns BID vulnerability records and mailing-list posts (no personal selectors).",
     "url": "https://www.securityfocus.com/bid",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "advisories"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
+    "bestFor": "Looking up historical vulnerability (BID) records and Bugtraq mailing-list history for a product.",
+    "input": "Software product / vendor / keyword",
+    "output": "Vulnerability advisory records (BID) and Bugtraq mailing-list threads",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "Reading public vulnerability advisories is passive and touches no target. Note that historical scope only — the BID database was frozen for years; do not treat absence of a recent entry as absence of a vulnerability.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The classic SecurityFocus/Bugtraq resource; after years dormant under Symantec/Broadcom/Accenture it was revived under independent community stewardship, but the legacy BID database is essentially frozen and coverage stops in the late 2010s.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -75750,11 +75692,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Bugtraq",
+      "SecurityFocus BID"
+    ],
+    "tags": [
+      "vulnerability-advisories",
+      "bugtraq"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/advisories/securityfocus.md"
   },
   {
@@ -83786,40 +83734,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/wordpress.md"
-  },
-  {
-    "id": "xboxresolver-com",
-    "name": "Xboxresolver.com",
-    "description": "OSINT tool: Xboxresolver.com.",
-    "url": "https://xboxresolver.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/xboxresolver-com.md"
   },
   {
     "id": "xnlinkfinder",
@@ -253051,42 +252965,6 @@
     "_file": "library/tools/search-engines/cyb-detective-osint-stuff-tool-collection.md"
   },
   {
-    "id": "cyber-alert",
-    "name": "Cyber Alert",
-    "description": "OSINT tool: Cyber Alert.",
-    "url": "http://www.cyberalert.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/cyber-alert.md"
-  },
-  {
     "id": "cyber-criminals-most-wanted",
     "name": "Cyber Criminals Most Wanted",
     "description": "Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource pointers — returns educational content, not a searchable database.",
@@ -253786,35 +253664,46 @@
   {
     "id": "direct-download-almost-anything",
     "name": "Direct Download Almost Anything",
-    "description": "OSINT tool: Direct Download Almost Anything.",
+    "description": "Use when you have a filename, title, or keyword and want to find it sitting on a publicly-exposed open directory — returns direct-download links from indexed open dirs.",
     "url": "https://ewasion.github.io/opendirectory-finder/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding files (documents, media, leaked archives) hosted on misconfigured open directories via prebuilt search queries.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static web tool (GitHub Pages); it just builds queries for Google/Startpage/Searx/FilePursuit.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool only assembles search-engine queries; running them queries Google/Startpage/etc., not any target server directly, so it is passive at that stage. Actually opening a discovered open directory does hit that host and can be logged there — use a sock-puppet browser/VPN before browsing a live open dir.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Simple open-source query-builder on GitHub Pages; transparent (you can read what queries it makes), but it points at third-party content of unknown legality/safety.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "opendirectory-finder",
+      "open directory search"
+    ],
+    "tags": [
+      "open-directories",
+      "file-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/direct-download-almost-anything.md"
   },
   {
@@ -263649,46 +263538,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/limetorrents.md"
-  },
-  {
-    "id": "linkosaurus-news-blog",
-    "name": "Linkosaurus News Blog",
-    "description": "News blog covering topics such as science, politics, auto, and property",
-    "url": "http://www.linkasaurus.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/linkosaurus-news-blog.md"
   },
   {
     "id": "live-traffic-cameras-in-europe",
@@ -323369,42 +323218,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/free-website-translation.md"
-  },
-  {
-    "id": "freetranslation",
-    "name": "FreeTranslation",
-    "description": "OSINT tool: FreeTranslation.",
-    "url": "https://www.freetranslation.com",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/freetranslation.md"
   },
   {
     "id": "get-otter-ai",

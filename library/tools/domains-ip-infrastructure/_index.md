@@ -131,7 +131,7 @@ kind: group-index
 - **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (medium) — Use when you have a `domain` and want the public documents Google has indexed on it — downloads them and returns their `metadata-exif`.
-- **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
+- **`dorks-faisalahmed-me`** (low) — Use when you have a `domain` and want a one-page launcher of recon/OSINT lookups (DNS, breach, dork-style queries) for it — returns links ou
 - **`dorks-hunter`** (low) — Use when you have a `domain` and want to auto-run a battery of Google dorks against it — returns exposed URLs, documents, login pages and er
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
 - **`dpulse`** (low) — Use when you have a `domain` and want an all-in-one recon pass with a written report — enumerates subdomains, IPs, emails, and infrastructur
@@ -299,7 +299,6 @@ kind: group-index
 - **`pidrila`** (low) — Use when you have a `domain`/URL and want to discover hidden or unlinked paths, directories and files on the web server — returns a list of 
 - **`poodle-check`** (low) — Use when you have a `domain`/host and want to know if its SSL/TLS is vulnerable to the POODLE (SSLv3) downgrade attack — returns a pass/fail
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
-- **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (medium) — Use when you have a `name`, `username`, `domain` or `image` and want to automate dork queries across Google, Bing, DuckDuckGo, Baidu and Yah
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
 - **`r3con1z3r`** (low) — Use when you have a `domain` and want a one-command passive footprint bundled into an HTML report — returns WHOIS, DNS, headers, links and t
@@ -438,7 +437,6 @@ kind: group-index
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
 - **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
 - **`wordpress`** (medium) — Use when you have a `domain` or `username` and want to enumerate a WordPress site's authors — returns usernames, display names and linked so
-- **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Use when you have a target `domain`/URL and want to discover its endpoints, parameters, and leaked secrets — returns a list of discovered li
 - **`xurlfind3r`** (low) — Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns
 - **`yougetsignal-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain

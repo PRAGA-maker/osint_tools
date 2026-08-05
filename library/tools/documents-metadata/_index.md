@@ -52,7 +52,7 @@ kind: group-index
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Use when you have a `name`/organisation and want their public events — returns organiser identity, venue/`address`, dates and attendee/assoc
 - **`eventbrite-united-states`** (low) — Use when you have a `name`, `username`, or an event/organizer and want to find events a subject organized or attended — returns organizer pr
-- **`evite`** (low) — Website related to event invitation and party planning
+- **`evite`** (low) — Use when you have a `name` or an event and want a subject's party/event footprint — returns event details, host/guest `name`s, dates, and lo
 - **`evuln`** (low) — Use when you have a `domain` and want a free scan for injected malware, malicious redirects, or defacement — returns a compromise verdict fo
 - **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
@@ -75,7 +75,7 @@ kind: group-index
 - **`forensicdots-de`** (low) — Use when you have a scanned printed `document-id` and want to reveal the hidden printer tracking dots (Machine Identification Code) — return
 - **`free-full-pdf`** (low) — Use when you have a subject's `name` or a research topic and want free full-text scientific PDFs they authored — returns document-id, employ
 - **`fundrazr`** (low) — Use when you have a `name` and want their public crowdfunding campaigns — returns organiser identity, story details, location hints and bene
-- **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
+- **`gdrive-copy`** (low) — Use when you have a shared Google Drive folder you need to preserve or clone (you cannot copy folders natively) — returns a full copy owned 
 - **`ghidra`** (low) — Use when you have a suspicious executable or `document-id`/binary artifact and want to disassemble and decompile it to recover behaviour, st
 - **`git-hound`** (low) — Use when you have a keyword, `domain`, `employer-org`, or username and want secrets/credentials leaked across public GitHub — returns matchi
 - **`gitdorker`** (low) — Use when you have a `username`, `employer-org`, or `domain` and want secrets/emails/keys exposed across public GitHub — returns `email` and 
