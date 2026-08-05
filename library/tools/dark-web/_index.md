@@ -31,9 +31,7 @@ kind: group-index
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
 - **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
 - **`darkweb-archive`** (low) — Use when you have a `.onion` `domain` and want a preserved snapshot of the site's files — returns a downloadable ZIP of its HTML, CSS, JavaS
-- **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
-- **`dedope`** (low) — OSINT tool: DeDope.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
 - **`eucanna`** (low) — OSINT tool: EuCanna.
@@ -63,7 +61,7 @@ kind: group-index
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
 - **`pirate-bay`** (low) — Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public to
-- **`pitch`** (low) — OSINT tool: Pitch.
+- **`pitch`** (low) — Use when you have a `username` or handle and want to check a Tor-based Twitter/X-style social network frequented by threat actors — returns 
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
 - **`raklet`** (low) — OSINT tool: Raklet.
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 

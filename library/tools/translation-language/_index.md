@@ -39,7 +39,6 @@ kind: group-index
 - **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
 - **`gizoogle-textilizer`** (low) — Use when you have a block of text and want it rendered into (or read back from) US "gangsta"/AAVE-style slang — a novelty language aid, retu
-- **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
 - **`handspeak-english-sign-language`** (low) — Use when you have footage of someone signing and want to identify the signs — a video ASL dictionary to look up American Sign Language signs
 - **`happyscribe-com`** (low) — Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) —
 - **`imtranslator-comparison-tool`** (low) — Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagre
@@ -60,7 +59,6 @@ kind: group-index
 - **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
 - **`paulschou-binary-translator`** (low) — Tool used to encode and decode ASCII and ANSI text
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
-- **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
 - **`reddit-r-translator`** (low) — Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced la

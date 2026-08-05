@@ -78,7 +78,6 @@ kind: group-index
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
 - **`bgpview-io`** (low) — Use when you have an `ip-address`, ASN, or `domain` and want to map the routing/hosting infrastructure and owning organisation behind it — r
-- **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`breachhq`** (low) — Use when you have a threat-actor or APT-group name and want a reference profile — returns actor origin, type, aliases, and linked references
@@ -305,7 +304,7 @@ kind: group-index
 - **`owasp-amass`** (low) — Use when you have a `domain` and want its full external attack surface — returns subdomains, associated IPs, ASNs, and related infrastructur
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
 - **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 
-- **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
+- **`pidrila`** (low) — Use when you have a `domain`/URL and want to discover hidden or unlinked paths, directories and files on the web server — returns a list of 
 - **`poodle-check`** (low) — Use when you have a `domain`/host and want to know if its SSL/TLS is vulnerable to the POODLE (SSLv3) downgrade attack — returns a pass/fail
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`punkspider`** (low) — OSINT tool: Punkspider.

@@ -145,7 +145,6 @@ kind: group-index
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
 - **`httrack`** (low) — Use when you have a `domain`/website URL and want a complete offline copy for preservation and analysis — returns a local mirror of the site
-- **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
 - **`i2p`** (low) — Use when you need to reach or research I2P hidden services anonymously — returns access to the I2P overlay network (an anonymity layer, not 
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
@@ -228,7 +227,7 @@ kind: group-index
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
 - **`osinttracker`** (low) — Use when you have multiple entry points (`email`, `domain`, `crypto-wallet`, phone, accounts) and want to map and document an investigation 
 - **`outwit`** (low) — Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages i
-- **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
+- **`overview`** (medium) — Use when you have a large `document-id` set (leaks, FOIA dumps, PDFs) and want to search, cluster and tag them at scale — returns entities l
 - **`palladio`** (low) — Use when you have tabular relationship data (people, places, dates, links) and want to visualise it as a network graph, map, or timeline — a
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
@@ -275,7 +274,6 @@ kind: group-index
 - **`sector035`** (low) — OSINT tool: Sector035.
 - **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
-- **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
@@ -296,7 +294,7 @@ kind: group-index
 - **`tableau-public`** (low) — Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
-- **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
+- **`telegram-howtofindbot`** (low) — Use when you have a `username` or `email` and want a per-platform checklist of where and how to look for it — returns curated OSINT method l
 - **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
 - **`text-and-file-hash-calculator`** (low) — Use when you need to compute or verify MD5/SHA hashes of text or a file — to confirm integrity, match a known/blocklisted hash, or fingerpri
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
@@ -330,7 +328,6 @@ kind: group-index
 - **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
-- **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
 - **`world-monitor`** (low) — Use when you have a `geolocation` or event and want a live fused picture of conflicts, flights, shipping and markets there — returns geoloca
 - **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.

@@ -79,7 +79,6 @@ kind: group-index
 - **`bbc-news`** (low) — Use when you have a `name`, event or place and want reputable news coverage to corroborate it — returns published reporting, dates and named
 - **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
 - **`bespacific`** (medium) — Use when you have a topic, agency, or `name` tied to law/tech/government and want a curated, searchable feed of primary-source reporting on 
-- **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
 - **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
@@ -87,7 +86,6 @@ kind: group-index
 - **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
 - **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
 - **`bing-news`** (low) — Use when you have a `name`, org, or event and want news coverage as a second engine to Google — returns news articles, dates, and outlets th
-- **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
 - **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
@@ -178,7 +176,6 @@ kind: group-index
 - **`ecosia-search-engine`** (medium) — Use when you want a privacy-respecting general web search from a different index than Google — returns web results (name/username/domain men
 - **`ecosia`** (low) — Use when you want an alternative general web search index (Bing-backed) to cross-check a `name`, `username` or `email` against Google — retu
 - **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
-- **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
 - **`egerin-search-engine-kurdish`** (low) — Use when you have a `name`, `username`, or keyword in a Kurdish context and want Kurdish-language web/news results — returns regional pages 
 - **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
 - **`elocalfinder-hybrid-meta-search`** (low) — Use when you have a US `name` or business term and want the same query run across several web engines side by side — returns social-profile 
@@ -213,7 +210,6 @@ kind: group-index
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
-- **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
@@ -323,7 +319,6 @@ kind: group-index
 - **`kiddle`** (low) — Use when you want to see the child-safe, filtered web view of a topic or name — a kid-oriented Google Custom Search that shows what young us
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
 - **`kids-search`** (low) — Kid-friendly search engine.
-- **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
 - **`kidsnet-search-engine-australia`** (low) — Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with
 - **`kidtopia`** (low) — Use when you want a teacher-curated, safe-search view of the web on a topic — returns filtered educational results from a Google Custom Sear
 - **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
@@ -512,7 +507,7 @@ kind: group-index
 - **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
 - **`search-engines-scraper`** (low) — Use when you have a `name`, `username`, or `email` and want to sweep many engines at once — returns aggregated result URLs (`social-profile`
 - **`search-it`** (medium) — Use when you have one selector and want to query it fast across many engines/platforms — returns a single-page launcher for Google, Bing, Re
-- **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
+- **`search-patterns`** (low) — Use when you have a `name`, topic or keyword and want to see the real questions and phrasings people search around it — returns Google/YouTu
 - **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi
 - **`searchall-net`** (low) — Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — r
 - **`searchdorks`** (low) — Use when you want a ready-made search dork for Google/Shodan/Censys/FOFA/ZoomEye and want to describe your goal in plain English — returns c

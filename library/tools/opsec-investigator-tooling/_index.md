@@ -92,7 +92,6 @@ kind: group-index
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
-- **`emailformat-de`** (low) — OSINT tool: Emailformat.de.
 - **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
 - **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
 - **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
@@ -149,15 +148,14 @@ kind: group-index
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
-- **`google-translate-extension-chrome`** (low) — Add-on for Google Chrome that allows you to see translations of text directly on the webpage
+- **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
 - **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
 - **`hide-my-ass-proxy-website`** (low) — Anonymous browsing service provider
-- **`hipstamatic-camera-app-mobile-ios`** (low) — App for mobile devices for social networking and picture sharing
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
-- **`hola-vpn`** (low) — VPN for unblocking wesbites and anonymous browsing
+- **`hola-vpn`** (low) — Use when you want to change your apparent egress country for casual geo-unblocking — but note it is a peer-to-peer network with a poor priva
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
@@ -182,7 +180,6 @@ kind: group-index
 - **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — Use when a `domain`/article is paywalled and you need to read it — a self-hosted proxy that fetches pages as a crawler would, returning the 
-- **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`ldplayer-net`** (low) — Use when you need to run a target's mobile app on a desktop in a controlled, disposable environment — provides a free Android emulator for s
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
 - **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
@@ -207,7 +204,6 @@ kind: group-index
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
-- **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Use when you want a lightweight, minimal-footprint web browser for a disposable/low-resource investigation VM — a small independent browser,
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
@@ -246,7 +242,6 @@ kind: group-index
 - **`receive-sms-online`** (low) — Use when you need a disposable public `phone` number to receive an SMS verification code for a sock-puppet account — returns free shared num
 - **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
-- **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
@@ -273,7 +268,6 @@ kind: group-index
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
 - **`sin-generator`** (low) — Use when a form demands a Canadian Social Insurance Number for format validation on a sock-puppet account — generates Luhn-valid TEST SINs w
-- **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
@@ -288,13 +282,11 @@ kind: group-index
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`speech-jammer`** (low) — OSINT tool: Speech Jammer.
 - **`spotify-music-app-mobile-ios`** (low) — App for mobile devices for searching and listening to music
-- **`spybot-search-and-destroy`** (low) — Malware and virus detection and elimination program
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
-- **`tagged-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photos
 - **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
 - **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
 - **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
@@ -311,7 +303,6 @@ kind: group-index
 - **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
 - **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
-- **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.

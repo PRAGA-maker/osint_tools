@@ -74,7 +74,7 @@ kind: group-index
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.
 - **`rssowl`** (low) — Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS
 - **`scrapestorm-com`** (medium) — Use when you have a `domain` or target web page and want to bulk-extract structured data (emails, phones, names, listings) without coding — 
-- **`selfoss`** (low) — OSINT tool: Selfoss.
+- **`selfoss`** (low) — Use when you want a private, self-hosted feed of many sources (RSS/Atom, scraped pages, social feeds) to monitor a subject or topic over tim
 - **`send-to-internet-archive-addons-mozilla-org`** (medium) — Use when you have a live page/URL you want preserved as evidence — one click sends it to the Wayback Machine, returning a timestamped archiv
 - **`send-to-internet-archive-chrome-google-com`** (medium) — Use when you have a page open and want a one-click permanent Wayback capture — a browser extension that saves the current URL to the Interne
 - **`swap-stanford-edu`** (medium) — Use when a site has changed or vanished and you want an archived copy — returns Stanford-preserved snapshots of selected websites by URL.

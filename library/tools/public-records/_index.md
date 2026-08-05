@@ -68,7 +68,6 @@ kind: group-index
 - **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
 - **`archives`** (high) — Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, na
 - **`argo-scholar`** (low) — Use when you have a `name` (a researcher) or a paper and want to map their academic network — returns co-author `associate`s and `employer-o
-- **`ariadne2-isti-cnr-it`** (low) — OSINT tool: Ariadne2.isti.cnr.it.
 - **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
 - **`arizona-genealogy-birth-and-death-certificates`** (medium) — Use when you have a `name` (and roughly a date/place) and want scanned Arizona birth or death certificates in the public window — returns im
 - **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
@@ -783,7 +782,7 @@ kind: group-index
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
 - **`services-en-ligne`** (low) — Use when you have a `name` or `employer-org` in Québec and want their transport-registry file — heavy-vehicle owner/operator status, permits
 - **`sesac-com`** (high) — Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns
-- **`sesric-basic-social-and-economic-indicators`** (low) — OSINT tool: SESRIC Basic Social and Economic Indicators.
+- **`sesric-basic-social-and-economic-indicators`** (low) — Use when you need country-level socio-economic context for one of the 57 OIC member states — returns statistical indicators (demographics, h
 - **`sesric-databases`** (low) — Use when you need socio-economic statistics for OIC (Muslim-majority) countries — returns indicators by country/year for context on a place 
 - **`setlist-fm`** (high) — Use when you have a performer/band `name` and want their concert history — dates, venues and cities — returns geolocation and address of gig
 - **`sex-offender-korea`** (high) — Use when you need to check South Korea's official sex-offender registry for a `name`/location — returns offender name, photo, address area a
@@ -891,7 +890,6 @@ kind: group-index
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r
 - **`unesco-institute-for-statistics`** (low) — Use when you need education, science, culture or communication statistics for a country — returns internationally-comparable indicators (lit
 - **`unicorn-riot-discord-leaks`** (low) — Use when you have a `username`/`name` possibly tied to far-right groups — searches leaked Discord chats and returns messages, `associate` li
-- **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — Use when you have a place/date/actor and want authoritative armed-conflict data — returns geo-coded violent events with `geolocation`, dates
 - **`us-data-and-statistics`** (low) — Use when you have a place, agency, or topic and want the official US federal source for that statistic — returns links to Census, BLS, and o

@@ -7,7 +7,6 @@ kind: group-index
 # documents-metadata/search
 
 ## Skills here
-- **`decalage-malware-search`** (low) — Quick metasearch across multiple malware analysis databases by hash, string, or filename
 - **`id-ransomware`** (low) — Use when you have a ransom note or encrypted file and want to identify the ransomware — returns the family/variant plus decryptor and refere
 - **`virusshare-com`** (low) — Use when you have a file hash (`document-id`) and want to confirm it's a known malware sample or obtain it for analysis — returns sample met
 - **`vx-vault`** (low) — Use when you have a malware `domain`/URL or file hash and want to check a live malware-URL tracker — returns recent malicious URLs, hosting 

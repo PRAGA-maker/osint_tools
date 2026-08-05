@@ -15,7 +15,7 @@ kind: group-index
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
 - **`pdfs/`** — 1 skill(s) below.
-- **`search/`** — 4 skill(s) below.
+- **`search/`** — 3 skill(s) below.
 
 ## Skills here
 - **`1-free-online-ocr`** (low) — Use when you have an `image` or scanned document and want the text pulled out of it — returns machine-readable text that may expose name, ad
@@ -55,7 +55,6 @@ kind: group-index
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
 - **`doppelme`** (low) — Online avatar creator
 - **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
-- **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Use when you have a `name`/organisation and want their public events — returns organiser identity, venue/`address`, dates and attendee/assoc
@@ -120,7 +119,6 @@ kind: group-index
 - **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
 - **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mactech-apple-technology`** (low) — Use when you have an Apple device model/spec reference (from `metadata-exif` or a device string) and want to understand the hardware — retur
-- **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`madeit-australia`** (low) — Use when you have a `name`/`username` of an Australian maker/seller and want their shop profile — returns seller identity, location hints an
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
@@ -141,7 +139,6 @@ kind: group-index
 - **`osintdashboard-azurewebsites-net`** (medium) — Use when you have a `domain`, `image`, or `phone` and want a quick combined lookup — returns URL/IP/DNS details, image EXIF/GPS, and phone c
 - **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
 - **`pastes-search-engine`** (low) — Use when you have an `email`/`username`/keyword and want to search across paste sites (Pastebin et al.) for leaked/dumped text — returns pas
-- **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`pdfmyurl`** (low) — Use when you have a `domain`/URL and want to capture the live web page as a PDF for evidence preservation — returns a timestamped PDF snapsh
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
