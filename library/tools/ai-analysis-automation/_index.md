@@ -187,7 +187,6 @@ kind: group-index
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
 - **`ollama`** (low) — Use when you have collected OSINT text/documents and want to run an LLM over them entirely offline — returns local model output with no data
 - **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
-- **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — Use when you have an encoded/hashed string from collected data and want to decode, hash, encrypt or reformat it in the browser — returns the
 - **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
@@ -279,7 +278,7 @@ kind: group-index
 - **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai
 - **`tableau-public`** (low) — Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
-- **`taranis-ai`** (low) — OSINT tool: Taranis AI.
+- **`taranis-ai`** (low) — Use when you want to continuously collect and AI-summarize open-source news/feeds into structured intelligence reports — returns a self-host
 - **`telegram-howtofindbot`** (low) — Use when you have a `username` or `email` and want a per-platform checklist of where and how to look for it — returns curated OSINT method l
 - **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
 - **`text-and-file-hash-calculator`** (low) — Use when you need to compute or verify MD5/SHA hashes of text or a file — to confirm integrity, match a known/blocklisted hash, or fingerpri

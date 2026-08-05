@@ -11,7 +11,6 @@ kind: group-index
 - **`default-passwords-db`** (low) — Use when you have a device/vendor `employer-org` or product model and want its factory default credentials — returns candidate default `pass
 - **`default-passwords-list`** (low) — Use when you have a `device-id` (make/model of a router, camera or appliance) and want its factory-set credentials — returns default usernam
 - **`default-router-passwords`** (low) — Use when you have a router/DVR/camera make and model (`device-id`) and want its factory default login — returns the default `password` and u
-- **`hashes-org`** (low) — OSINT tool: Hashes.org.
 - **`open-sez-me-default-passwords`** (low) — Use when you have a `device-id` (router/printer/appliance make and model) and want its factory default credentials — returns known default `
 - **`phenoelit-default-password-list`** (low) — Use when you have a device make/model (`device-id`) and want its factory-default credentials — returns the vendor's default username/`passwo
 

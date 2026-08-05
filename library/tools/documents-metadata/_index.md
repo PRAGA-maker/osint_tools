@@ -174,7 +174,6 @@ kind: group-index
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
 - **`textise-net`** (low) — Use when you have a cluttered web page and want just its text — strips a URL to plain text so you can read, copy, or preserve the content wi
-- **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
 - **`the-time-now`** (low) — Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence an
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded

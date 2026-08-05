@@ -211,7 +211,7 @@ kind: group-index
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
-- **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
+- **`gerdoo-iran`** (low) — Use when you have a `name`/`username` or Persian keyword and want Iran-focused web results — returns a Persian-language meta-search over maj
 - **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
 - **`gibiru`** (low) — Use when you have a `name`/keyword and want uncensored, non-personalised web results that a mainstream engine may filter or rank down — retu
 - **`gifcities-org`** (low) — Use when you have a keyword and want to find animated GIFs salvaged from 1990s GeoCities pages — returns period GIFs each linked back to its

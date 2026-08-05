@@ -86,7 +86,7 @@ kind: group-index
 - **`b2bhint-com`** (high) — Use when you have an `employer-org` or officer `name` and want company data across 190 countries — returns company details, current/former d
 - **`backgroundchecks-org`** (medium) — Use when you have a US `name` and need to find which public-records/genealogy database to search — a curated directory of free record source
 - **`bahrainbourse-com`** (low) — Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announce
-- **`bank-for-international-settlements-statistics`** (low) — OSINT tool: Bank for International Settlements Statistics.
+- **`bank-for-international-settlements-statistics`** (low) — Use when you need authoritative cross-border banking, debt, FX, or credit statistics for a country or sector — returns official BIS macro-fi
 - **`banq-num-rique`** (medium) — Use when you have a `name`/`address` connected to Québec and want historical records — returns civil-registry, newspaper, notarial, photo an
 - **`barcode-lookup`** (medium) — Use when you have a barcode/UPC/EAN number (a `document-id`) — read off a product, package, or object in a photo — and want to identify the 
 - **`base-academic-search-engine`** (medium) — Use when you have a `name` and want their scholarly output across repositories worldwide — returns papers, theses, and documents (with autho

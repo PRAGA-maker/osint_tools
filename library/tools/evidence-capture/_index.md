@@ -24,7 +24,7 @@ kind: group-index
 - **`megatools`** (low) — Use when you have a MEGA.nz link or account and want to list/download its contents from the command line — returns the downloaded files (lea
 - **`online-tool-to-extract-links-from-any-web-page`** (low) — Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subje
 - **`page-links-extractor-tool`** (low) — Use when you have a `domain`/URL and want every hyperlink on that page pulled out — returns a list of internal and external links (further d
-- **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
+- **`slideshare-downloader`** (low) — Use when you have a SlideShare presentation URL and want to capture it as a PDF for evidence — returns a downloaded, offline copy of the sli
 - **`soundscrape`** (low) — Use when you have a `social-profile` on SoundCloud/Bandcamp/Mixcloud/Audiomack and want to archive the target's audio uploads as evidence — 
 - **`stream-downloader`** (low) — Use when you have a `url` to a video/audio/live-stream page (mostly Chinese platforms) and want to archive the media as evidence — returns a
 - **`timeline-js3`** (medium) — Use when you have a set of dated events/evidence and want to build an interactive multimedia chronology — returns a shareable/embeddable web

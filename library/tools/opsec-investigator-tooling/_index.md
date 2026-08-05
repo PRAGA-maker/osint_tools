@@ -146,7 +146,6 @@ kind: group-index
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
 - **`international-name-generator`** (low) — Use when you need a culturally-consistent persona `name` for a sock puppet — returns randomized first/middle/surname combinations filtered b
-- **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati

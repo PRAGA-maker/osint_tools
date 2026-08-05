@@ -9043,40 +9043,6 @@
     "_file": "library/tools/ai-analysis-automation/onion-lookup.md"
   },
   {
-    "id": "online-color-picker",
-    "name": "Online Color Picker",
-    "description": "OSINT tool: Online Color Picker.",
-    "url": "https://colorpicker.me/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/online-color-picker.md"
-  },
-  {
     "id": "online-loudness-meter",
     "name": "Online Loudness Meter",
     "description": "allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.",
@@ -13977,37 +13943,49 @@
   {
     "id": "taranis-ai",
     "name": "Taranis AI",
-    "description": "OSINT tool: Taranis AI.",
+    "description": "Use when you want to continuously collect and AI-summarize open-source news/feeds into structured intelligence reports — returns a self-hosted OSINT/threat-intel workflow.",
     "url": "https://github.com/taranis-ai/taranis-ai",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Self-hosted, AI-assisted aggregation of news/RSS/social sources into deduplicated, analyst-ready threat-intelligence reports.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (EUPL-1.2); no license fee. You supply the hosting (Docker) and any LLM/NLP compute it uses.",
+    "opsec": "active",
+    "opsecNote": "This is your own server that fetches configured sources on a schedule — those fetches originate from wherever you host it, so give it an egress you control (VPS/proxy) if source sites shouldn't see your organization's IP. Data stays in your instance, which is good for sensitive collection.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Actively developed open-source project (taranis-ai on GitHub, successor to Taranis NG) under EUPL-1.2; auditable code and public releases, community-maintained rather than a commercial vendor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Taranis NG"
+    ],
     "tags": [
-      "threat-intelligence"
+      "threat-intelligence",
+      "news-monitoring",
+      "self-hosted"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/taranis-ai.md"
   },
   {
@@ -53542,49 +53520,6 @@
     "_file": "library/tools/documents-metadata/textise-net.md"
   },
   {
-    "id": "the-internet-clipboard-url-tool",
-    "name": "The Internet Clipboard URL Tool",
-    "description": "Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL",
-    "url": "http://cl1p.net",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cl1p"
-    ],
-    "_file": "library/tools/documents-metadata/the-internet-clipboard-url-tool.md"
-  },
-  {
     "id": "the-time-now",
     "name": "The Time Now",
     "description": "Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence and align a subject's post times to a real timezone.",
@@ -65321,46 +65256,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hakrawler.md"
-  },
-  {
-    "id": "hashes-org",
-    "name": "Hashes.org",
-    "description": "OSINT tool: Hashes.org.",
-    "url": "https://hashes.org/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "default-passwords"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/default-passwords/hashes-org.md"
   },
   {
     "id": "hcl-threat-map",
@@ -79156,7 +79051,7 @@
   {
     "id": "start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism",
     "name": "START Consortium for the Study of Terrorism and Responses to Terrorism",
-    "description": "Terrorism research and education",
+    "description": "Use when you need vetted academic research or incident data on terrorism and extremism — returns University of Maryland studies, datasets, and the Global Terrorism Database.",
     "url": "https://www.start.umd.edu/",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -79164,37 +79059,46 @@
       "terrorism-and-extremism",
       "academic-research"
     ],
-    "bestFor": "Terrorism research and education",
-    "input": "Research topics and publications",
-    "output": "Academic research and threat intelligence",
+    "bestFor": "Peer-reviewed terrorism research and structured incident datasets (home of the Global Terrorism Database).",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public access to research, reports, and most datasets; some datasets require a short registration/request form for download.",
     "opsec": "passive",
-    "opsecNote": "Passive academic research access",
+    "opsecNote": "Reading a public university research center; no target is queried. A dataset download may ask you to register — use a research/sock-puppet identity if you'd rather not tie the request to your real name.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "START is a University of Maryland-based research center (a former DHS Center of Excellence) producing peer-reviewed, methodologically documented research and the widely cited Global Terrorism Database.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "global-terrorism-database",
       "street-drug-slang"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "START UMD",
+      "National Consortium for the Study of Terrorism and Responses to Terrorism"
+    ],
+    "tags": [
+      "terrorism",
+      "academic-research",
+      "dataset"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/academic-research/start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism.md"
   },
   {
@@ -99869,37 +99773,44 @@
   {
     "id": "slideshare-downloader",
     "name": "Slideshare Downloader",
-    "description": "A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)",
+    "description": "Use when you have a SlideShare presentation URL and want to capture it as a PDF for evidence — returns a downloaded, offline copy of the slides.",
     "url": "https://github.com/mohan3d/slideshare-go",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a public SlideShare deck to a local PDF so it is preserved before the uploader can edit or remove it.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Go CLI; no account or key. You run it yourself.",
+    "opsec": "active",
+    "opsecNote": "The tool fetches the deck (and its slide images) directly from SlideShare's servers, so your IP/user-agent hits SlideShare on download — a normal viewer footprint, not a notification to the uploader. Route through a VPN/proxy if the download volume or target is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-developer GitHub project (mohan3d/slideshare-go); the code is inspectable, but it scrapes SlideShare's changing HTML/CDN, so it can break without notice and is not officially supported.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "slideshare-go"
+    ],
     "tags": [
-      "Downloaders"
+      "Downloaders",
+      "evidence-capture"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/slideshare-downloader.md"
   },
   {
@@ -168227,46 +168138,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ipv6-leak-tests.md"
   },
   {
-    "id": "ipvanish-proxy-website",
-    "name": "IPVanish Proxy Website",
-    "description": "Anonymous browsing service provider",
-    "url": "https://www.ipvanish.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ipvanish-proxy-website.md"
-  },
-  {
     "id": "itranslate-language-translation-app-mobile-ios",
     "name": "iTranslate Language Translation App (Mobile – iOS)",
     "description": "App for mobile devices for language translation services",
@@ -201850,37 +201721,45 @@
   {
     "id": "bank-for-international-settlements-statistics",
     "name": "Bank for International Settlements Statistics",
-    "description": "OSINT tool: Bank for International Settlements Statistics.",
-    "url": "http://www.bis.org/statistics/index.htm",
+    "description": "Use when you need authoritative cross-border banking, debt, FX, or credit statistics for a country or sector — returns official BIS macro-financial datasets.",
+    "url": "https://www.bis.org/statistics/index.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official, standardized international banking and financial statistics for country/sector-level economic context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public access to all BIS statistical releases and data (browser tables, charts, and bulk downloads); no account required.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public central-bank data portal; no target is queried and nothing about a subject is submitted. Only your own IP is visible to bis.org — standard web hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Bank for International Settlements is the central bank of central banks; its statistics are authoritative, methodologically documented, and internationally standardized.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BIS Statistics",
+      "Bank for International Settlements data"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "financial-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bank-for-international-settlements-statistics.md"
   },
   {
@@ -261203,37 +261082,49 @@
   {
     "id": "gerdoo-iran",
     "name": "Gerdoo (Iran)",
-    "description": "OSINT tool: Gerdoo (Iran).",
+    "description": "Use when you have a `name`/`username` or Persian keyword and want Iran-focused web results — returns a Persian-language meta-search over major providers.",
     "url": "http://gerdoo.me",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Persian-language and Iran-focused web search via a meta-search engine that refines results from major providers.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search; no account required.",
+    "opsec": "active",
+    "opsecNote": "Queries are sent to Iranian-operated search infrastructure, which may log and be subject to state surveillance/filtering. Do not query from an attributable connection — use a VPN and a sock-puppet browser session, and assume searches are observed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-recommended active Iranian meta-search engine (cited in OSINT lists as a working replacement for the defunct Parsijoo, alongside Zarebin); it aggregates/refines third-party results rather than running its own index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ir"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "gerdoo.me"
+    ],
     "tags": [
-      "main-national-search-engines"
+      "main-national-search-engines",
+      "persian-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/gerdoo-iran.md"
   },
   {
