@@ -36,7 +36,6 @@ kind: group-index
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
-- **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
@@ -69,7 +68,6 @@ kind: group-index
 - **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
 - **`delete-me-free-opt-out-guide`** (low) — Use when you have a `name` exposed on data-broker/people-search sites and want to remove it — returns step-by-step opt-out instructions per 
 - **`distill-web-monitor-firefox-add-on`** (low) — Use when you have a `domain`/web page or feed and want to be alerted the moment it changes — returns email/SMS/push notifications on detecte
-- **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
 - **`dracos-linux`** (low) — Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment 
@@ -105,7 +103,6 @@ kind: group-index
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
-- **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the f
 - **`gnunet`** (low) — Use when you need a privacy-preserving, decentralized network stack for your own OpSec — it protects the investigator's metadata rather than
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
@@ -113,7 +110,6 @@ kind: group-index
 - **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Use when you have an image on any web page and want to reverse-image-search it in one right-click — returns visually-matching pages, other s
 - **`google-password-alert-extension-chrome`** (low) — Use when you want your investigator browser to warn you if you type your Google password into a phishing/non-Google page — returns real-time
-- **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
 - **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Use when you land on a foreign-language page or selector and want inline translation without leaving the site — returns readable English (or
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
@@ -265,12 +261,10 @@ kind: group-index
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
-- **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
-- **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
 

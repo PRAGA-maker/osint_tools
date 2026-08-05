@@ -158,7 +158,6 @@ kind: group-index
 - **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
 - **`disconnect-search`** (low) — Use when you want a search that isn't tied to your profile or logged with your identity — returns results from your chosen engine (e.g. Duck
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
-- **`document-search`** (low) — OSINT tool: Document Search.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
 - **`dorkgenius`** (low) — Use when you have a target (a `name`, `domain`, filetype, or keyword) and want ready-made advanced search-engine dorks for Google/Bing/DuckD

@@ -28,7 +28,7 @@ kind: group-index
 - **`awasu`** (low) — Use when you want to monitor many web/RSS sources for new mentions of a subject and keep an archived, searchable feed history — returns chan
 - **`bellingcat-tiktok-hashtag-analysis`** (medium) — Use when you have a hashtag tied to a person, event or place and want to archive the TikTok posts under it — returns downloaded videos/image
 - **`blackwidow`** (medium) — Use when you have a `domain`/website and want to mirror or harvest it — a Windows site scanner that crawls a target site and extracts its li
-- **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
+- **`bridge-leslibres`** (low) — Use when you have a `social-profile`/site that has no RSS feed and you want to monitor it — a public RSS-Bridge instance that turns social/w
 - **`bridge-suumitsu`** (low) — Use when a site/social profile has no RSS and you want to monitor it — returns a generated RSS/Atom feed of its updates for change-tracking.
 - **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as
 - **`carbon-dating-the-web`** (low) — Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shortener

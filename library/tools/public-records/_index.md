@@ -221,7 +221,6 @@ kind: group-index
 - **`data-ddosecrets-search`** (low) — Use when you have a `name`, `email` or `domain` and want to find it inside published leaked/hacked datasets — returns matching documents and
 - **`data-gov-uk`** (low) — Use when you have a UK `name`, `employer-org`, `address` or place and want official open datasets about it — returns government records on c
 - **`data-gov`** (low) — Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keywor
-- **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
 - **`datasetlist-com`** (low) — Use when you need a public machine-learning dataset (faces, images, text, audio) to build or benchmark a recognition/analysis model — return

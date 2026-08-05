@@ -59,7 +59,6 @@ kind: group-index
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
 - **`reddit-r-translator`** (low) — Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced la
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
-- **`riverside-com`** (low) — OSINT tool: riverside.com.
 - **`scphillips-morse-code-translator`** (low) — Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibrati
 - **`signing-savvy-sign-language-translator`** (low) — Use when a subject, witness or source communicates in American Sign Language and you need to look up or verify a sign — returns ASL video de
 - **`smallseotools-plagiarism-checker`** (low) — Use when you have a block of `text` and want to find where else it appears online — returns the source `domain`/URLs that match, exposing co

@@ -259,7 +259,6 @@ kind: group-index
 - **`vrbo`** (medium) — Use when you have a name or a location and want to check a vacation-rental platform for a host's listing — returns address-area, image and s
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
 - **`washington-times-news`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want US national/political news coverage and its searchable archive — retur
-- **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Use when you want to listen to radio from a specific place (or geolocate a transmission) — a world map of public online SDR receivers you ca
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — Use when you have a `username` and want to check whether it owns a Wix-hosted site — returns a `social-profile`/personal site at that handle

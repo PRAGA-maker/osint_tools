@@ -11820,40 +11820,6 @@
     "_file": "library/tools/ai-analysis-automation/regular-expression-analyzer.md"
   },
   {
-    "id": "relational-algebra-calculator",
-    "name": "relational algebra calculator",
-    "description": "OSINT tool: relational algebra calculator.",
-    "url": "https://dbis-uibk.github.io/relax/calc/local/uibk/local/0",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/relational-algebra-calculator.md"
-  },
-  {
     "id": "rescure-threat-intel-feed",
     "name": "REScure Threat Intel Feed",
     "description": "OSINT tool: REScure Threat Intel Feed.",
@@ -12373,42 +12339,6 @@
     "lastVerified": "2026-08-05",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sector035.md"
-  },
-  {
-    "id": "securesha",
-    "name": "Securesha",
-    "description": "OSINT tool: Securesha.",
-    "url": "https://securesha.re",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/securesha.md"
   },
   {
     "id": "security-list",
@@ -16689,38 +16619,51 @@
   },
   {
     "id": "bridge-leslibres",
-    "name": "Bridge.Leslibres",
-    "description": "OSINT tool: Bridge.Leslibres.",
+    "name": "Bridge.Leslibres (RSS-Bridge)",
+    "description": "Use when you have a `social-profile`/site that has no RSS feed and you want to monitor it — a public RSS-Bridge instance that turns social/web pages into subscribable feeds.",
     "url": "https://bridge.leslibres.org",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Generating an RSS/Atom feed from a social-media profile or website that doesn't publish one, so you can passively monitor a subject's activity.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public RSS-Bridge instance; no account. Self-hostable (open-source) if the public instance is overloaded.",
+    "opsec": "passive",
+    "opsecNote": "The bridge server fetches the target page on your behalf, so requests to the target come from the instance, not your IP — good for passive monitoring. But you are trusting a third-party instance with knowledge of which profiles you follow; for sensitive work, self-host RSS-Bridge rather than using a public node.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A public instance of the open-source RSS-Bridge project. The software is well-established; individual public instances (including this one) go up and down and can lag as sites change their markup — hence degraded.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RSS-Bridge",
+      "leslibres bridge"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "rss"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/bridge-leslibres.md"
   },
   {
@@ -34515,43 +34458,6 @@
     "_file": "library/tools/communities-forums/washington-times-news.md"
   },
   {
-    "id": "whatthehellshouldiwatchonnetflix-com",
-    "name": "whatthehellshouldiwatchonnetflix.com",
-    "description": "alternative way to find anything interesting on Netflix",
-    "url": "http://whatthehellshouldiwatchonnetflix.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Movies",
-      "Netflix"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/whatthehellshouldiwatchonnetflix-com.md"
-  },
-  {
     "id": "wideband-shortware-radio-receiver-map",
     "name": "KiwiSDR Receiver Map",
     "description": "Use when you want to listen to radio from a specific place (or geolocate a transmission) — a world map of public online SDR receivers you can tune in-browser, returning geolocation context.",
@@ -35854,43 +35760,49 @@
   {
     "id": "daunt-link",
     "name": "daunt.link",
-    "description": "OSINT tool: daunt.link.",
+    "description": "Use when you have a dark-web service name or want to reach a known onion site and need a verified, current .onion address — a clearnet-accessible, verified directory of Tor links and mirrors.",
     "url": "https://daunt.link/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a verified, working onion address (and backup mirrors) for a dark-web market, forum or service, from the clear web.",
     "selectorsIn": [
-      "username",
-      "email"
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free clearnet directory; no account. Following the links themselves requires Tor Browser.",
+    "opsec": "active",
+    "opsecNote": "Browsing daunt.link's clearnet page is passive, but it deliberately warns you to DISABLE JavaScript, and any link you follow drops you onto Tor hidden services — reachable only through Tor Browser (ideally Tails/VM). Never open an onion link it lists in a normal browser. Treat every listed destination as hostile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community-run onion directory with a per-link \"verify\" feature and mirror tracking; it curates addresses but vouches for nothing about the destinations. Onion listings churn — confirm freshness before relying on an address.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Daunt",
+      "daunt.link directory"
+    ],
     "tags": [
       "darkweb",
       "Dark Web Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/daunt-link.md"
   },
   {
@@ -37645,48 +37557,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/pro-for-bro.md"
-  },
-  {
-    "id": "raklet",
-    "name": "Raklet",
-    "description": "OSINT tool: Raklet.",
-    "url": "http://iwr4usy33opfclmbyemzbmnwwnmmqpqltezpac7fyqqkdv3mabtm6kqd.onion.pet/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepsearch",
-      "facebook-scraped-data-search",
-      "kilos-darknet-search-engine",
-      "ransomware-group-sites",
-      "recon",
-      "related-list"
-    ],
-    "_file": "library/tools/dark-web/raklet.md"
   },
   {
     "id": "ransomware-darknet-websites",
@@ -47705,45 +47575,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/identify-plans.md"
-  },
-  {
-    "id": "image-analyzer-addon",
-    "name": "Image Analyzer Addon",
-    "description": "View all images on a page and expose image properties, EXIF data, and one-click download",
-    "url": "https://chrome.google.com/webstore/detail/image-analyzer/bgadhpbbppdihhbfcjbbihfcckbblcek",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Exif Analyze and editing"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/image-analyzer-addon.md"
   },
   {
     "id": "imgonline-com-ua",
@@ -101730,44 +101561,51 @@
   {
     "id": "global-suppliers-online",
     "name": "Global Suppliers Online",
-    "description": "A site dedicated to connect suppliers and buyers of goods from all over the world.",
+    "description": "Use when you have a company/product (`employer-org`) or country and want to find manufacturers/exporters behind it — a B2B supplier directory returning company listings, `address`, contacts.",
     "url": "https://www.globalsuppliersonline.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a product or trade name to the companies that make/export it, and enumerating suppliers by country or category.",
     "selectorsIn": [
       "employer-org",
       "name"
     ],
     "selectorsOut": [
       "employer-org",
+      "address",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search supplier listings and post buy requirements; contacting suppliers or premium membership features may prompt registration.",
+    "opsec": "passive",
+    "opsecNote": "You search a public B2B directory with company/product terms — no target person is queried and nothing is tipped off. Only registration (to message a supplier) exposes an identity; use a sock-puppet account if you go that far.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running B2B marketplace/directory (akin to Alibaba/Global Sources); listings are self-submitted by companies, so treat contact details as claimed-not-verified and corroborate against a corporate registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "globalsuppliersonline.com"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
+      "companies-finance",
+      "b2b-directory"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-05",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/global-suppliers-online.md"
   },
   {
@@ -161270,46 +161108,6 @@
     "_file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-mac.md"
   },
   {
-    "id": "avira-free-antivirus",
-    "name": "Avira Free Antivirus",
-    "description": "Malware and virus detection and elimination program",
-    "url": "https://www.avira.com/en/avira-free-antivirus",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/avira-free-antivirus.md"
-  },
-  {
     "id": "awesome-browser-extensions-for-osint",
     "name": "Awesome Browser Extensions for OSINT",
     "description": "Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with use-case notes.",
@@ -163003,46 +162801,6 @@
     "lastVerified": "2026-08-04",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/distill-web-monitor-firefox-add-on.md"
-  },
-  {
-    "id": "distraction-free-youtube-extension-chrome",
-    "name": "Distraction Free Youtube Extension (Chrome)",
-    "description": "Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video",
-    "url": "https://chromewebstore.google.com/detail/df-tube-distraction-free/mjdepdfccjgcndkmemponafgioodelna",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/distraction-free-youtube-extension-chrome.md"
   },
   {
     "id": "dns-leak-test",
@@ -165076,46 +164834,6 @@
     "_file": "library/tools/opsec-investigator-tooling/giphy-cam-gif-editor-app-mobile-android.md"
   },
   {
-    "id": "gmail-messaging-app-mobile-ios",
-    "name": "Gmail Messaging App (Mobile – iOS)",
-    "description": "App for mobile devices for email and messaging services",
-    "url": "https://itunes.apple.com/ca/app/gmail-email-from-google/id422689480?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/gmail-messaging-app-mobile-ios.md"
-  },
-  {
     "id": "gnu-icecat",
     "name": "GNU IceCat",
     "description": "Use when you want a privacy-hardened, telemetry-free browser for investigative browsing — a free/libre Firefox derivative that reduces the fingerprint you leave on target sites.",
@@ -165442,46 +165160,6 @@
     "lastVerified": "2026-08-05",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-password-alert-extension-chrome.md"
-  },
-  {
-    "id": "google-play-movies-and-tv-app-mobile-ios",
-    "name": "Google Play Movies and TV App (Mobile – iOS)",
-    "description": "App for mobile devices for locating and playing movies and TV shows",
-    "url": "https://itunes.apple.com/ca/app/google-play-movies-tv/id746894884?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-ios.md"
   },
   {
     "id": "google-search-results-scraper",
@@ -173528,46 +173206,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/webrtc-leak-test.md"
   },
   {
-    "id": "wechat-messaging-app-mobile-android-china",
-    "name": "Wechat Messaging App (Mobile – Android) (China)",
-    "description": "App for mobile devices for messaging services in China",
-    "url": "https://play.google.com/store/apps/details?id=com.tencent.mm",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/wechat-messaging-app-mobile-android-china.md"
-  },
-  {
     "id": "wechat-messaging-app-mobile-ios-china",
     "name": "Wechat Messaging App (Mobile – iOS) (China)",
     "description": "App for mobile devices for messaging services in China",
@@ -173838,46 +173476,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-android.md"
-  },
-  {
-    "id": "youtube-social-networking-app-mobile-android",
-    "name": "Youtube Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and video sharing",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/youtube-social-networking-app-mobile-android.md"
   },
   {
     "id": "youtube-transcript-search",
@@ -206501,40 +206099,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/public-records/data-gov-uk.md"
-  },
-  {
-    "id": "database-of-suspected-terrorists",
-    "name": "Database of suspected terrorists",
-    "description": "OSINT tool: Database of suspected terrorists.",
-    "url": "https://www.nsatt.org/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/database-of-suspected-terrorists.md"
   },
   {
     "id": "databasesets-com",
@@ -254961,50 +254525,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/search-engines/disneysearch.md"
-  },
-  {
-    "id": "document-search",
-    "name": "Document Search",
-    "description": "OSINT tool: Document Search.",
-    "url": "https://one-plus.github.io/DocumentSearch",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bookmarks",
-      "google-and-bing",
-      "google-plus-and-linkedin",
-      "instagram-reddit-and-snapchat",
-      "osint-toolkit",
-      "twitter-monitoring",
-      "website-information",
-      "youtube-periscope-twitch-and-dailymotion"
-    ],
-    "_file": "library/tools/search-engines/document-search.md"
   },
   {
     "id": "dog-bites-search-engine",
@@ -326099,43 +325619,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/translation-language/reverso-free-online-translator.md"
-  },
-  {
-    "id": "riverside-com",
-    "name": "riverside.com",
-    "description": "OSINT tool: riverside.com.",
-    "url": "https://riverside.com/transcription",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/riverside-com.md"
   },
   {
     "id": "scphillips-morse-code-translator",

@@ -28,7 +28,7 @@ kind: group-index
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
 - **`darkscrape`** (low) — Use when you have a Tor `.onion` `domain` and want to harvest the images/media it hosts (with optional face recognition) — returns downloade
 - **`darkweb-archive`** (low) — Use when you have a `.onion` `domain` and want a preserved snapshot of the site's files — returns a downloadable ZIP of its HTML, CSS, JavaS
-- **`daunt-link`** (low) — OSINT tool: daunt.link.
+- **`daunt-link`** (low) — Use when you have a dark-web service name or want to reach a known onion site and need a verified, current .onion address — a clearnet-acces
 - **`deep-search`** (low) — Use when you have a `name`, `username` or `email` and want to see where it appears across Tor hidden services — searches indexed .onion page
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
 - **`github-apurv-singh-gautam`** (low) — Use when you're starting dark-web research and want a curated GitHub list of tools for finding, scraping, and monitoring Tor/onion services 
@@ -58,7 +58,6 @@ kind: group-index
 - **`pirate-bay`** (low) — Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public to
 - **`pitch`** (low) — Use when you have a `username` or handle and want to check a Tor-based Twitter/X-style social network frequented by threat actors — returns 
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
-- **`raklet`** (low) — OSINT tool: Raklet.
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose serv

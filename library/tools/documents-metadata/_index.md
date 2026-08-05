@@ -91,7 +91,6 @@ kind: group-index
 - **`grep-for-osint`** (low) — Use when you have a text corpus or file directory (a dump, scraped pages, logs) and want to bulk-extract selectors — returns email, phone, i
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
 - **`identify-plans`** (low) — Use when you have an `image` of vegetation in a photo and want to identify the plant species — narrows the `geolocation` by matching flora t
-- **`image-analyzer-addon`** (low) — View all images on a page and expose image properties, EXIF data, and one-click download
 - **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
 - **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —

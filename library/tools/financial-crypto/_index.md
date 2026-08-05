@@ -60,7 +60,7 @@ kind: group-index
 - **`fdic-search`** (low) — Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, his
 - **`flowscan-org`** (low) — Use when you have a Flow blockchain `crypto-wallet` address (or tx hash) and want to trace its transactions, token holdings and NFT activity
 - **`freebin-checker`** (low) — Use when you have a payment-card BIN (first 6–8 digits) and want to identify its issuing bank, country, and card type — returns issuer name,
-- **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
+- **`global-suppliers-online`** (low) — Use when you have a company/product (`employer-org`) or country and want to find manufacturers/exporters behind it — a B2B supplier director
 - **`iban-com`** (low) — Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) a
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
 - **`importyeti`** (low) — Use when you have a company `name`/`employer-org` and want its overseas suppliers and shipment history from US customs data — returns suppli

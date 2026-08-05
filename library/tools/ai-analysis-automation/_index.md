@@ -235,7 +235,6 @@ kind: group-index
 - **`quick-hashtags-and-keywords-search`** (low) — Use when you have a `username`, hashtag or keyword and want to sweep it across ~89 social platforms at once — returns direct search links pe
 - **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`regular-expression-analyzer`** (low) — Use when you have a regex (from a config, a scraper, or someone else's code) and want it parsed into a readable tree to understand what it m
-- **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries 
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — Use when you have RSA key parameters (n, e, d, p, q) or ciphertext from a CTF/crypto artifact and want to encrypt, decrypt, or factor small 
@@ -246,7 +245,6 @@ kind: group-index
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
 - **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
 - **`sector035`** (low) — Use when you want to learn OSINT technique and keep current — Sector035's blog runs the weekly "Week in OSINT" roundup of new tools, methods
-- **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — Use when you need to find a tool or resource for a security/OSINT task — returns a large curated GitHub directory of security and OSINT tool
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns
