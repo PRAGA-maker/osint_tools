@@ -19,7 +19,7 @@ kind: group-index
 - **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Use when you have audio (e.g. from a subject's video) with birdsong and want to narrow location — identifies bird species from sound and map
-- **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
+- **`bulletpicker-com`** (low) — Use when you have an `image` of munitions/ordnance and want a reference to identify the type, origin or markings — returns matches from mili
 - **`cat-uxo`** (low) — Use when you have an `image` of a suspected munition/ordnance and want to identify it — a reference database of bombs, mines, rockets, and I
 - **`cites-trade-database`** (low) — Use when you have a species, country or `employer-org` in a wildlife-trafficking case and want the official record of legal international wi
 - **`convert-geographic-units`** (low) — Use when you have a `geolocation` in one coordinate format and want it in another (DD, DMS, UTM, NATO) across map datums — returns the conve

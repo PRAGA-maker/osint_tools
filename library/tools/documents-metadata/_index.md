@@ -38,7 +38,6 @@ kind: group-index
 - **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
 - **`compressedcrack`** (low) — Use when you have a password-protected ZIP/RAR/7z archive (from a leak, seizure, or evidence set) and want to brute-force the password — a l
-- **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
 - **`consumerreports-north-america`** (low) — Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context
@@ -142,7 +141,6 @@ kind: group-index
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
 - **`photosint-chrome-google-com`** (medium) — Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — re
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — Use when you (the investigator) are about to share an image and want to strip its EXIF metadata first — a Firefox add-on that removes embedd
-- **`pixelprivacy`** (low) — Blog related to online privacy and protection
 - **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
 - **`powtoon-animation-program`** (low) — Program that creates and animates videos and presentations
 - **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 

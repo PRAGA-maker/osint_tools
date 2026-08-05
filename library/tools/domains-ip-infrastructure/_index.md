@@ -127,7 +127,7 @@ kind: group-index
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` na
-- **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
+- **`domain-intelligence`** (low) — Use when you have a `domain` and want WHOIS/DNS/SSL/subdomains/email-security in one JSON call — returns registration, records, certs, subdo
 - **`domain-investigation-toolbox`** (low) — Use when you have a `domain` and want a single launchpad to 40+ WHOIS, subdomain, hosting-history and tech-profiling lookups — returns links
 - **`domainbigdata`** (low) — Use when you have a registrant `name`, `email` or `domain` and want the other domains and contact details tied to it — returns reverse-WHOIS
 - **`domainrecon`** (low) — Use when you have a `domain` and want a one-shot recon report — DNS records, WHOIS/RDAP, SSL certs and discovered subdomains — returns infra
@@ -142,7 +142,6 @@ kind: group-index
 - **`dumpsterdiver`** (low) — Use when you have a `domain`'s file dump / repo / large dataset and want to surface hardcoded secrets (keys, passwords) via entropy analysis
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
-- **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — Use when you have a threat-actor name/alias and want its profile — returns aliases, suspected origin, targeted sectors and associated tools/
 - **`eurodns`** (low) — Use when you have a list of `domain` names and want their registration status in bulk — returns availability/taken status with a quick link 
 - **`expandurl`** (low) — Use when you have a shortened or suspicious `domain`/link and want its true final destination and redirect chain without clicking it — retur
@@ -234,7 +233,6 @@ kind: group-index
 - **`ismalicious`** (low) — Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+
 - **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
-- **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
 - **`jsleak`** (low) — Use when you have a `domain`/URL list and want to mine its JavaScript for secrets, emails, endpoints and links — returns leaked emails, API 
 - **`jsluice`** (low) — Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns
 - **`kali-intelligence-suite-kis`** (low) — Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nm

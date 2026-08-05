@@ -24,7 +24,6 @@ kind: group-index
 - **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
-- **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is a
 - **`amazon-mobile-app-mobile-android`** (low) — Use when you have a `name`, `email`, or `username` and want to surface a subject's public Amazon presence — returns wishlist-derived `addres
@@ -88,7 +87,6 @@ kind: group-index
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
 - **`dracos-linux`** (low) — Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment 
 - **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
-- **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
@@ -156,7 +154,6 @@ kind: group-index
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
-- **`hulu-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing TV-related media
 - **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
 - **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
@@ -192,7 +189,6 @@ kind: group-index
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
-- **`mcafee-internet-security-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
 - **`mega`** (low) — OSINT tool: MEGA.
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
@@ -329,10 +325,8 @@ kind: group-index
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
 - **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
-- **`voicebooking`** (low) — fake voice generator
 - **`vpn`** (low) — Database of VPNs
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
-- **`walmart-shopping-app-mobile-ios`** (low) — App for mobile devices for online shopping through Walmart
 - **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
 - **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
 - **`web-history-stat`** (low) — detailed statistics of your browser history
@@ -344,7 +338,6 @@ kind: group-index
 - **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
 - **`windows-phone-imei-generator`** (low) — OSINT tool: Windows Phone IMEI Generator.
 - **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
-- **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`yandex-browser`** (low) — OSINT tool: Yandex Browser.

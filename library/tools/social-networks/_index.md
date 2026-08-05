@@ -436,7 +436,6 @@ kind: group-index
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Use when you have a `username`, keyword, or subreddit and want a clean browser-based way to search and browse Reddit content — returns socia
-- **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Use when you have a live Reddit thread (or a `username` active in one) and want its comments to update in real time — returns a live-refresh
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
 - **`reddit-timer`** (low) — Use when you have a subreddit (`social-profile`) and want its weekly posting-activity pattern — returns an hourly heatmap of when that commu

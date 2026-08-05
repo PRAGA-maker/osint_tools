@@ -164,7 +164,6 @@ kind: group-index
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
 - **`document-search`** (low) — OSINT tool: Document Search.
-- **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
 - **`dorkgenius`** (low) — Use when you have a target (a `name`, `domain`, filetype, or keyword) and want ready-made advanced search-engine dorks for Google/Bing/DuckD
@@ -325,7 +324,6 @@ kind: group-index
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`law-enforcement-resource-portal`** (medium) — Use when you have a `name` or agency and want US law-enforcement news, products and community context — returns `social-profile`/mention and
-- **`lawforkids`** (low) — Law-related search engine for kids
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Use when you have a name (of an attorney) or a location + practice area and want a professional profile — returns employer-org (firm), addre
 - **`leaklooker`** (medium) — Use when you have a `domain`/keyword and want to discover exposed, unauthenticated databases and services associated with it — returns `ip-a
@@ -544,7 +542,6 @@ kind: group-index
 - **`startpagina-search-netherlands`** (low) — Use when you have a `name` or keyword tied to the Netherlands and want Dutch-focused web results and directory links — returns `social-profi
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
-- **`storyful`** (low) — OSINT tool: Storyful.
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — Use when you have a filename/keyword and want to find files offered by XDCC bots on IRC — returns the network, bot, pack number, and filenam
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
@@ -626,7 +623,6 @@ kind: group-index
 - **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
 - **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
 - **`wiley`** (low) — Use when you have a `name` (an author) or research topic and want scholarly articles and books that tie a person to a field, institution, an
-- **`wintria`** (low) — OSINT tool: Wintria.
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
 - **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —
 - **`woboq-code-browser`** (medium) — Use when you need to read/navigate a C/C++ open-source codebase in the browser — returns cross-referenced, hyperlinked source for projects l

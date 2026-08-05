@@ -352,7 +352,6 @@ kind: group-index
 - **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
 - **`gogettr`** (low) — Use when you have a GETTR `username`, hashtag or post and want to archive its data — a Python client pulling posts, comments, followers and 
-- **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
 - **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
 - **`google-public-data-explorer`** (low) — Use when you need public statistical/demographic data for a place — Google's Public Data Explorer now redirects to Data Commons, which retur
 - **`google-scholar-search-tips`** (medium) — Use when you want to sharpen a Google Scholar query (author operators, phrase/field syntax) — returns the official help/reference for search
@@ -510,7 +509,6 @@ kind: group-index
 - **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
 - **`library-of-congress-united-states`** (medium) — Use when you have a `name`, place or topic and want historical records — newspapers, directories, photos, manuscripts, maps — that can place
-- **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
 - **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo
 - **`list-of-criminal-charges-findlaw`** (high) — Use when you have a charge or offense name from a court/arrest record and want to understand what it means — returns plain-English legal def
 - **`list-org`** (medium) — Use when you have a Russian company `name`, tax ID, or a director's `name` and want the linked officers, address and business connections — 
@@ -866,7 +864,6 @@ kind: group-index
 - **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re
 - **`trump-twitter-archive`** (low) — Use when you need the complete, searchable record of Donald Trump's tweets (including deleted ones) — returns dated social-profile posts you
 - **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
-- **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.
 - **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return
 - **`uglymugs-org`** (high) — Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `
 - **`uk-census-online`** (medium) — Use when you have a UK `name` and want historical births/deaths/marriages and census records (1841–early 1900s) — returns life-event records
